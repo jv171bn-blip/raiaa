@@ -510,7 +510,6 @@
     margin-top: 4px;
     margin-bottom: 2px;
     position: relative;
-    animation: fadeIn 0.15s ease-out;
   }
 
   .header__search-form--mobile {

@@ -63,8 +63,6 @@ const popularSearches = [
 const Header: React.FC = () => {
   const [searchValue, setSearchValue] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileSearchActive, setIsMobileSearchActive] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [cartBadgeBump, setCartBadgeBump] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
@@ -94,22 +92,6 @@ const Header: React.FC = () => {
       setSearchValue(searchQuery);
     }
   }, [searchQuery]);
-
-  // Track scroll position to collapse/expand search bar on mobile
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolled = window.scrollY > 25;
-      setIsScrolled(scrolled);
-      if (!scrolled) {
-        setIsMobileSearchActive(false);
-      }
-    };
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const showMobileSearchBar = isSearchPage || !isScrolled || isMobileSearchActive;
 
   // Bump animation on cart update
   useEffect(() => {
@@ -147,14 +129,12 @@ const Header: React.FC = () => {
     if (e) e.preventDefault();
     if (!searchValue.trim()) return;
     setIsSearchOpen(false);
-    setIsMobileSearchActive(false);
     goToSearchPage(searchValue.trim());
   };
 
   const handleSelectPopular = (term: string) => {
     setSearchValue(term);
     setIsSearchOpen(false);
-    setIsMobileSearchActive(false);
     goToSearchPage(term);
   };
 
@@ -171,7 +151,6 @@ const Header: React.FC = () => {
                 onClick={() => {
                   goToProductPage(p);
                   setIsSearchOpen(false);
-                  setIsMobileSearchActive(false);
                 }}
               >
                 <img src={p.image} alt={p.name} className="search-result-img" />
@@ -198,7 +177,6 @@ const Header: React.FC = () => {
               className="search-view-all-item"
               onClick={() => {
                 setIsSearchOpen(false);
-                setIsMobileSearchActive(false);
                 goToSearchPage(searchValue.trim());
               }}
               style={{
@@ -388,30 +366,8 @@ const Header: React.FC = () => {
             </button>
           </div>
 
-          {/* Mobile Actions: Search (when scrolled), Basket, Hamburger Menu */}
+          {/* Mobile Actions: Basket, Hamburger Menu */}
           <div className="header__mobile-actions">
-            {/* Search Icon: visible when scrolled */}
-            {isScrolled && (
-              <button
-                type="button"
-                className="header__mobile-icon-btn"
-                id="mobile-search-toggle"
-                onClick={() => {
-                  setIsMobileSearchActive(prev => {
-                    const next = !prev;
-                    if (next) {
-                      setTimeout(() => mobileSearchInputRef.current?.focus(), 100);
-                    }
-                    return next;
-                  });
-                }}
-                aria-label="Buscar produtos"
-                title="Buscar"
-              >
-                <Search size={22} color="#1c1c1c" strokeWidth={1.8} />
-              </button>
-            )}
-
             {/* Cart Basket */}
             <button
               type="button"
@@ -447,52 +403,50 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Search Bar (visible at top, hides when scrolled) */}
-        {showMobileSearchBar && (
-          <div className="header__mobile-search-bar" ref={mobileSearchRef}>
-            <form onSubmit={handleSearchSubmit} className="header__search-form header__search-form--mobile">
-              <input
-                ref={mobileSearchInputRef}
-                type="text"
-                className="header__search-input"
-                placeholder="Buscar na Raia"
-                value={searchValue}
-                onChange={e => {
-                  setSearchValue(e.target.value);
-                  setIsSearchOpen(true);
-                }}
-                onFocus={() => setIsSearchOpen(true)}
-                autoComplete="off"
-              />
-              {searchValue && (
-                <button
-                  type="button"
-                  className="header__search-clear-circle"
-                  onClick={() => {
-                    setSearchValue('');
-                    setSearchQuery('');
-                  }}
-                  aria-label="Limpar busca"
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1c1c1c" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <line x1="15" y1="9" x2="9" y2="15" />
-                    <line x1="9" y1="9" x2="15" y2="15" />
-                  </svg>
-                </button>
-              )}
+        {/* Mobile Search Bar (permanently visible, stable header height, zero blink) */}
+        <div className="header__mobile-search-bar" ref={mobileSearchRef}>
+          <form onSubmit={handleSearchSubmit} className="header__search-form header__search-form--mobile">
+            <input
+              ref={mobileSearchInputRef}
+              type="text"
+              className="header__search-input"
+              placeholder="Buscar na Raia"
+              value={searchValue}
+              onChange={e => {
+                setSearchValue(e.target.value);
+                setIsSearchOpen(true);
+              }}
+              onFocus={() => setIsSearchOpen(true)}
+              autoComplete="off"
+            />
+            {searchValue && (
               <button
                 type="button"
-                className="header__search-camera"
-                onClick={() => setActiveModal('prescription')}
-                aria-label="Buscar por foto ou receita médica"
+                className="header__search-clear-circle"
+                onClick={() => {
+                  setSearchValue('');
+                  setSearchQuery('');
+                }}
+                aria-label="Limpar busca"
               >
-                <Camera size={21} strokeWidth={1.8} color="#1c1c1c" />
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1c1c1c" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="15" y1="9" x2="9" y2="15" />
+                  <line x1="9" y1="9" x2="15" y2="15" />
+                </svg>
               </button>
-            </form>
-            {isSearchOpen && renderSearchDropdown(true)}
-          </div>
-        )}
+            )}
+            <button
+              type="button"
+              className="header__search-camera"
+              onClick={() => setActiveModal('prescription')}
+              aria-label="Buscar por foto ou receita médica"
+            >
+              <Camera size={21} strokeWidth={1.8} color="#1c1c1c" />
+            </button>
+          </form>
+          {isSearchOpen && renderSearchDropdown(true)}
+        </div>
 
         {/* Mobile CEP Row: Pin + Street and CEP or Inserir CEP */}
         <div
