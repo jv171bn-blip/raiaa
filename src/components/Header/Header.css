@@ -380,10 +380,6 @@
   display: none;
 }
 
-.header__mobile-cep {
-  display: none;
-}
-
 .header__mobile-search-bar {
   display: none;
 }
@@ -558,42 +554,6 @@
     left: 0;
     right: 0;
     max-height: 380px;
-  }
-
-  /* Mobile CEP Row */
-  .header__mobile-cep {
-    display: flex !important;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    padding: 6px 0 8px 0;
-    width: 100%;
-    user-select: none;
-    transition: opacity 0.15s;
-  }
-
-  .header__mobile-cep:hover {
-    opacity: 0.8;
-  }
-
-  .header__mobile-cep-pin {
-    color: #1c1c1c;
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-  }
-
-  .header__mobile-cep-text {
-    font-size: 14px;
-    font-weight: 700;
-    color: #1c1c1c;
-  }
-
-  .header__mobile-cep-text u {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    color: #1c1c1c;
-    font-weight: 700;
   }
 }
 
