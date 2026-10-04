@@ -1,0 +1,155 @@
+.cat-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+  z-index: 999;
+}
+
+.cat-nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 52px;
+  gap: 16px;
+}
+
+.cat-nav__left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.cat-nav__cep {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b2d33;
+  padding: 4px 2px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+
+.cat-nav__cep:hover {
+  opacity: 0.8;
+}
+
+.cat-nav__cep-icon {
+  color: #2b2d33;
+  flex-shrink: 0;
+}
+
+.cat-nav__cep-text {
+  white-space: nowrap;
+}
+
+.cat-nav__cep-street {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2b2d33;
+}
+
+.cat-nav__cep-text u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+  color: #2b2d33;
+}
+
+.cat-nav__categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  padding: 6px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.cat-nav__categories:hover,
+.cat-nav__categories--active {
+  color: #007380;
+}
+
+.cat-nav__menu-icon {
+  color: #222;
+  flex-shrink: 0;
+}
+
+.cat-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cat-nav__link {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #444;
+  padding: 4px 0;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.cat-nav__link:hover {
+  color: #007380;
+}
+
+.cat-nav__cta {
+  background-color: #007380;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  height: 42px;
+  padding: 0 24px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background-color 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-nav__cta:hover {
+  background-color: #00606b;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1100px) {
+  .cat-nav__links {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cat-nav__links button:nth-child(n+4) {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .cat-nav {
+    display: none !important;
+  }
+}

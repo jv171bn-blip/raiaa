@@ -1,0 +1,246 @@
+.footer {
+  margin-top: 16px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.footer__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Light Gray Rounded Container */
+.footer__support-box {
+  background-color: #f1f3f4;
+  border-radius: 24px;
+  padding: 24px 20px 28px;
+  margin-bottom: 28px;
+}
+
+.footer__support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Support Card */
+.footer-support-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.footer-support-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.footer-support-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.footer-support-card__phone-icon-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-support-card__phone-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -6px;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.footer-support-card__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+  margin: 0 0 6px 0;
+}
+
+.footer-support-card__sub {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* RD Saúde Logo Section */
+.footer__rdsaude {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+.footer__rd-label {
+  color: #444444;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.footer__rd-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer__rd-symbol {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer__rd-text-main {
+  font-size: 24px;
+  font-weight: 900;
+  color: #063b33;
+  letter-spacing: -0.5px;
+}
+
+.footer__rd-text-sub {
+  font-size: 24px;
+  font-weight: 500;
+  color: #063b33;
+  letter-spacing: -0.3px;
+}
+
+/* Voltar ao topo Pill Button */
+.footer__btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__back-to-top {
+  background: #ffffff;
+  border: 1px solid #b5b5b5;
+  border-radius: 9999px;
+  padding: 8px 30px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, transform 0.1s;
+  outline: none;
+}
+
+.footer__back-to-top:hover {
+  background-color: #f8f9fa;
+  border-color: #333333;
+}
+
+.footer__back-to-top:active {
+  transform: scale(0.98);
+}
+
+/* ANVISA Section */
+.footer__anvisa-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0 44px 0;
+  text-align: center;
+}
+
+.footer__anvisa-text {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.footer__anvisa-logo {
+  width: 52px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Responsive adjustments */
+@media (max-width: 680px) {
+  .footer__support-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .footer__support-box {
+    padding: 16px 12px 20px;
+    border-radius: 20px;
+  }
+
+  .footer-support-card {
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+
+  .footer-support-card__title {
+    font-size: 13.5px;
+    margin-bottom: 4px;
+  }
+
+  .footer-support-card__sub {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .footer-support-card__top {
+    margin-bottom: 10px;
+  }
+
+  .footer__rdsaude {
+    margin-top: 18px;
+    margin-bottom: 14px;
+    gap: 6px;
+  }
+
+  .footer__rd-label {
+    font-size: 12.5px;
+  }
+
+  .footer__rd-symbol {
+    height: 20px;
+  }
+
+  .footer__rd-text-main,
+  .footer__rd-text-sub {
+    font-size: 20px;
+  }
+
+  .footer__back-to-top {
+    padding: 7px 24px;
+    font-size: 12.5px;
+  }
+
+  .footer__anvisa-section {
+    margin: 20px 0 36px 0;
+  }
+
+  .footer__anvisa-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__support-grid {
+    grid-template-columns: 1fr;
+  }
+}

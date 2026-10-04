@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Leave-in Elseve Cicatri Renov 100ml",
+    "size": "100ml",
+    "brand": "Elseve",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "oldPrice": 28.9,
+    "price": 21.9,
+    "image": "https://product-data.raiadrogasil.io/images/3501259.webp",
+    "bullets": [
+      "Finalizador com 10 benefícios: sela pontas, desembaraça, protege do calor e elimina o frizz.",
+      "Reparação instantânea que não precisa de enxágue.",
+      "Pode ser usado no cabelo úmido ou seco a qualquer hora."
+    ],
+    "description": "O produto coringa para levar na bolsa: cicatrização diária dos fios com proteção térmica e toque aveludado instantâneo.",
+    "id": 30042,
+    "discount": 24,
+    "rating": 4.8,
+    "reviews": 320,
+    "productCode": "30042"
+  },
+  {
+    "name": "Shampoo Pantene Bambu Nutre & Cresce 400ml",
+    "size": "400ml",
+    "brand": "Pantene",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "oldPrice": 34.9,
+    "price": 27.9,
+    "image": "https://product-data.raiadrogasil.io/images/15925906.webp",
+    "bullets": [
+      "Extrato de Bambu, Óleo de Rícino e Cafeína revigorante.",
+      "Estimula o crescimento capilar saudável e combate a queda por quebra.",
+      "0% sulfatos pesados, parabenos e óleos minerais."
+    ],
+    "description": "Pantene Bambu fortalece os fios desde a raiz até as pontas, proporcionando resistência contra a tração da escovação diária.",
+    "id": 30016,
+    "discount": 20,
+    "rating": 4.8,
+    "reviews": 71,
+    "productCode": "30016"
+  },
+  {
+    "name": "Shampoo TRESemmé Brilho Lamelar 400ml",
+    "size": "400ml",
+    "brand": "TRESemmé",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "oldPrice": 35.9,
+    "price": 27.9,
+    "image": "https://product-data.raiadrogasil.io/images/3501320.webp",
+    "bullets": [
+      "Inovadora tecnologia lamelar que alinha as microestruturas do fio.",
+      "Efeito gloss luminoso com 7x mais brilho.",
+      "Cabelos impecavelmente polidos e fluidos."
+    ],
+    "description": "TRESemmé Brilho Lamelar transforma a superfície capilar para refletir a luz com máxima intensidade, proporcionando efeito de passarela.",
+    "id": 30027,
+    "discount": 22,
+    "rating": 4.8,
+    "reviews": 477,
+    "productCode": "30027"
+  },
+  {
+    "name": "Banho de Creme Bio Extratus Tutano 250g",
+    "size": "250g",
+    "brand": "Bio Extratus",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "oldPrice": 42.9,
+    "price": 34.9,
+    "image": "https://product-data.raiadrogasil.io/images/3501370.webp",
+    "bullets": [
+      "Pioneiro no uso do Tutano com Ceramidas e Manteiga de Karité.",
+      "Poderoso reconstrutor lipídico para cabelos ressecados e crespos.",
+      "Nutrição de alto impacto que devolve a maciez perdida."
+    ],
+    "description": "O Banho de Creme Tutano é a fórmula clássica da Bio Extratus que recupera profundamente fios secos e desvitalizados.",
+    "id": 30051,
+    "discount": 19,
+    "rating": 4.9,
+    "reviews": 262,
+    "productCode": "30051"
+  },
+  {
+    "name": "Máscara Haskell Cavalo Forte 300g",
+    "size": "300g",
+    "brand": "Haskell",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "oldPrice": 49.9,
+    "price": 41.9,
+    "image": "https://product-data.raiadrogasil.io/images/3501372.webp",
+    "bullets": [
+      "Tratamento reconstrutor intensivo com Biotina e Queratina pura.",
+      "Aumenta a resistência dos fios e acelera o crescimento saudável.",
+      "Proporciona brilho espelhado e maleabilidade absoluta."
+    ],
+    "description": "A Máscara Cavalo Forte restaura as partes mais fragilizadas dos fios, criando uma barreira protetora que impede a quebra.",
+    "id": 30052,
+    "discount": 16,
+    "rating": 4.9,
+    "reviews": 385,
+    "productCode": "30052"
+  },
+  {
+    "name": "Gel de Limpeza Facial Principia GL-01 350g",
+    "size": "350g",
+    "brand": "Principia",
+    "category": "Dermocosméticos",
+    "subcategory": "Limpeza Facial",
+    "oldPrice": 59.9,
+    "price": 49.9,
+    "image": "/products/principia_gel.png",
+    "bullets": [
+      "Fórmula minimalista de alta eficácia com tensoativos suaves e Glicerina.",
+      "Limpa profundamente sem agredir a barreira cutânea nem repuxar.",
+      "Sem parabenos, petrolatos, corantes artificiais e fragrâncias."
+    ],
+    "description": "Principia GL-01 entrega limpeza diária eficiente e balanceada para todos os tipos de pele, preparando o rosto para os séruns de tratamento.",
+    "id": 30092,
+    "discount": 17,
+    "rating": 4.7,
+    "reviews": 111,
+    "productCode": "30092"
+  },
+  {
+    "name": "Aparelho de Barbear Gillette Mach3 Recarregável com 2 Cargas",
+    "size": "1 aparelho + 2 cargas",
+    "brand": "Gillette",
+    "category": "Beleza & Higiene",
+    "subcategory": "Barbear",
+    "oldPrice": 38.9,
+    "price": 29.9,
+    "image": "/products/dove_original_90g.webp",
+    "bullets": [
+      "3 lâminas mais fortes do que aço que duram até 15 barbearias confortáveis.",
+      "Fita lubrificante Indicator com microtensores protetores da pele.",
+      "Cabo metálico ergonômico antiderrapante de alta precisão."
+    ],
+    "description": "O aparelho de barbear mais consagrado do mundo: Gillette Mach3 desliza com facilidade, proporcionando um barbear rente sem irritações.",
+    "id": 30134,
+    "discount": 23,
+    "rating": 4.8,
+    "reviews": 281,
+    "productCode": "30134"
+  },
+  {
+    "name": "Carga para Aparelho Gillette Mach3 com 4 Unidades",
+    "size": "4 unidades",
+    "brand": "Gillette",
+    "category": "Beleza & Higiene",
+    "subcategory": "Barbear",
+    "oldPrice": 56.9,
+    "price": 44.9,
+    "image": "/products/protex_limpeza_profunda.webp",
+    "bullets": [
+      "Pack econômico com 4 refis para toda a linha de cabos Mach3.",
+      "Lâminas alinhadas progressivamente para cortar o pelo rente à raiz.",
+      "Fita de gel lubrificante para deslize suave."
+    ],
+    "description": "Mantenha o seu barbear sempre impecável com o kit de refil original Gillette Mach3, sinônimo de precisão e durabilidade.",
+    "id": 30135,
+    "discount": 21,
+    "rating": 4.9,
+    "reviews": 365,
+    "productCode": "30135"
+  },
+  {
+    "name": "Espuma de Barbear Gillette Foamy Pele Sensível 312g",
+    "size": "312g",
+    "brand": "Gillette",
+    "category": "Beleza & Higiene",
+    "subcategory": "Barbear",
+    "oldPrice": 32.9,
+    "price": 26.9,
+    "image": "/products/phebo_odor_de_rosas_90g.webp",
+    "bullets": [
+      "Espuma densa e cremosa que amolece a barba instantaneamente.",
+      "Com Aloe Vera para acalmar a pele e prevenir a foliculite.",
+      "Fragrância suave hipoalergênica."
+    ],
+    "description": "Gillette Foamy Pele Sensível forma uma barreira protetora entre a lâmina e a pele, tornando o barbear muito mais confortável.",
+    "id": 30136,
+    "discount": 18,
+    "rating": 4.9,
+    "reviews": 462,
+    "productCode": "30136"
+  },
+  {
+    "name": "Creme Depilatório Corporal Veet Peles Delicadas 100ml",
+    "size": "100ml",
+    "brand": "Veet",
+    "category": "Beleza & Higiene",
+    "subcategory": "Depilação",
+    "oldPrice": 36.9,
+    "price": 29.9,
+    "image": "/products/soapex_barra.webp",
+    "bullets": [
+      "Enriquecido com Aloe Vera e Vitamina E calmante.",
+      "Remove os pelos rentes à raiz em apenas 5 minutos no banho.",
+      "Pele macia e lisinha por até o dobro de tempo da lâmina."
+    ],
+    "description": "Depilação corporal sem cortes e sem dor: Veet Peles Delicadas dissolve os pelos suavemente, deixando a pele incrivelmente aveludada.",
+    "id": 30137,
+    "discount": 19,
+    "rating": 4.8,
+    "reviews": 349,
+    "productCode": "30137"
+  }
+]

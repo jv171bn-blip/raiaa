@@ -1,0 +1,164 @@
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 6px 0 14px 0;
+  margin: 0;
+  margin-right: -16px; /* Allows next slide to peek to the screen edge on mobile */
+  --hero-slide-width: calc(100% - 50px);
+  --hero-slide-gap: 12px;
+  --hero-slide-step: calc(100% - 50px + 12px);
+}
+
+@media (min-width: 900px) {
+  .hero {
+    margin: 0 auto;
+    margin-right: 0;
+    padding: 10px 0 18px 0;
+    width: 100%;
+    max-width: 100%;
+    --hero-slide-width: 100%;
+    --hero-slide-gap: 0px;
+    --hero-slide-step: 100%;
+  }
+}
+
+.hero__viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .hero__viewport {
+    border-radius: 16px;
+  }
+}
+
+.hero__slider-track {
+  display: flex;
+  align-items: stretch;
+  will-change: transform;
+}
+
+.hero__slider-track--animated {
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hero__slide {
+  flex: 0 0 var(--hero-slide-width);
+  width: var(--hero-slide-width);
+  margin-right: var(--hero-slide-gap);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hero__slide:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.hero__banner-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  pointer-events: none;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+@media (min-width: 900px) {
+  .hero__banner-img {
+    aspect-ratio: 1318 / 300;
+    border-radius: 16px;
+  }
+}
+
+/* Indicators */
+.hero__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  padding: 0;
+  padding-right: 16px; /* Offsets negative right margin so dots stay centered */
+}
+
+@media (min-width: 900px) {
+  .hero__indicators {
+    padding-right: 0;
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+}
+
+.hero__dot {
+  width: 6.5px;
+  height: 6.5px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__dot--active {
+  background-color: #374151;
+  transform: scale(1.3);
+}
+
+/* Desktop Arrows */
+.hero__arrow {
+  display: none;
+  position: absolute;
+  top: calc(50% - 10px);
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  color: #007380;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 900px) {
+  .hero__arrow {
+    display: flex;
+  }
+}
+
+.hero__arrow:hover {
+  background: #ffffff;
+  color: #004d57;
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+.hero__arrow--left {
+  left: 12px;
+}
+
+.hero__arrow--right {
+  right: 12px;
+}

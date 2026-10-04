@@ -1,0 +1,92 @@
+.product-carousel {
+  margin-top: 28px;
+  animation: carouselFadeIn 0.35s ease-out;
+}
+
+@keyframes carouselFadeIn {
+  from {
+    opacity: 0.4;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.product-carousel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-carousel__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.product-carousel__arrows {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-arrow {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #d5d5d5;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.carousel-arrow:hover:not(.carousel-arrow--disabled) {
+  background: #f0f0f0;
+  border-color: #bbb;
+}
+
+.carousel-arrow--disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.product-carousel__track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.product-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.product-carousel__track > * {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  .product-carousel {
+    margin-top: 22px;
+  }
+
+  .product-carousel__header {
+    margin-bottom: 12px;
+  }
+
+  .product-carousel__title {
+    font-size: 19px;
+    letter-spacing: -0.3px;
+  }
+}

@@ -1,0 +1,1106 @@
+[
+  [
+    "https://product-data.raiadrogasil.io/images/3501259.webp",
+    [
+      {
+        "name": "Shampoo Elseve Cicatri Renov 400ml",
+        "size": "400ml",
+        "brand": "Elseve",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 33.9,
+        "price": 26.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501259.webp",
+        "bullets": [
+          "Tecnologia reparadora com 10 benefícios em 1 único produto.",
+          "Reparação instantânea de danos acumulados.",
+          "Proteção térmica e blindagem anti-umidade."
+        ],
+        "description": "Elseve Cicatri Renov age como uma plástica capilar diária, limpando suavemente e preparando os fios para uma renovação completa.",
+        "id": 30009,
+        "discount": 21,
+        "rating": 4.9,
+        "reviews": 441,
+        "productCode": "30009"
+      },
+      {
+        "name": "Leave-in Elseve Cicatri Renov 100ml",
+        "size": "100ml",
+        "brand": "Elseve",
+        "category": "Cabelos",
+        "subcategory": "Tratamentos Capilares",
+        "oldPrice": 28.9,
+        "price": 21.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501259.webp",
+        "bullets": [
+          "Finalizador com 10 benefícios: sela pontas, desembaraça, protege do calor e elimina o frizz.",
+          "Reparação instantânea que não precisa de enxágue.",
+          "Pode ser usado no cabelo úmido ou seco a qualquer hora."
+        ],
+        "description": "O produto coringa para levar na bolsa: cicatrização diária dos fios com proteção térmica e toque aveludado instantâneo.",
+        "id": 30042,
+        "discount": 24,
+        "rating": 4.8,
+        "reviews": 320,
+        "productCode": "30042"
+      }
+    ]
+  ],
+  [
+    "https://product-data.raiadrogasil.io/images/15925906.webp",
+    [
+      {
+        "name": "Shampoo Pantene Hidratação 400ml",
+        "size": "400ml",
+        "brand": "Pantene",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 32.9,
+        "price": 26.9,
+        "image": "https://product-data.raiadrogasil.io/images/15925906.webp",
+        "bullets": [
+          "Fórmula Pro-Vitaminas com óleo de coco e lipídios hidratantes.",
+          "Hidratação intensa desde o primeiro uso para cabelos secos e sem vida.",
+          "Limpeza suave e refrescante com pH balanceado."
+        ],
+        "description": "Pantene Hidratação penetra profundamente na fibra capilar, devolvendo a umidade natural e a maciez aos fios ressecados.",
+        "id": 30011,
+        "discount": 18,
+        "rating": 4.9,
+        "reviews": 455,
+        "productCode": "30011"
+      },
+      {
+        "name": "Shampoo Pantene Bambu Nutre & Cresce 400ml",
+        "size": "400ml",
+        "brand": "Pantene",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 34.9,
+        "price": 27.9,
+        "image": "https://product-data.raiadrogasil.io/images/15925906.webp",
+        "bullets": [
+          "Extrato de Bambu, Óleo de Rícino e Cafeína revigorante.",
+          "Estimula o crescimento capilar saudável e combate a queda por quebra.",
+          "0% sulfatos pesados, parabenos e óleos minerais."
+        ],
+        "description": "Pantene Bambu fortalece os fios desde a raiz até as pontas, proporcionando resistência contra a tração da escovação diária.",
+        "id": 30016,
+        "discount": 20,
+        "rating": 4.8,
+        "reviews": 71,
+        "productCode": "30016"
+      }
+    ]
+  ],
+  [
+    "https://product-data.raiadrogasil.io/images/3501320.webp",
+    [
+      {
+        "name": "Shampoo TRESemmé Hidratação Profunda 400ml",
+        "size": "400ml",
+        "brand": "TRESemmé",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 32.9,
+        "price": 24.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501320.webp",
+        "bullets": [
+          "Enriquecido com Pantenol e Aloe Vera para hidratação de salão.",
+          "Restaura a maciez sem pesar os fios.",
+          "Indicado para uso diário em todos os tipos de cabelo."
+        ],
+        "description": "TRESemmé Hidratação Profunda entrega acabamento profissional em casa, garantindo fios macios, sedosos e protegidos contra o ressecamento.",
+        "id": 30023,
+        "discount": 24,
+        "rating": 4.8,
+        "reviews": 480,
+        "productCode": "30023"
+      },
+      {
+        "name": "Shampoo TRESemmé Brilho Lamelar 400ml",
+        "size": "400ml",
+        "brand": "TRESemmé",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 35.9,
+        "price": 27.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501320.webp",
+        "bullets": [
+          "Inovadora tecnologia lamelar que alinha as microestruturas do fio.",
+          "Efeito gloss luminoso com 7x mais brilho.",
+          "Cabelos impecavelmente polidos e fluidos."
+        ],
+        "description": "TRESemmé Brilho Lamelar transforma a superfície capilar para refletir a luz com máxima intensidade, proporcionando efeito de passarela.",
+        "id": 30027,
+        "discount": 22,
+        "rating": 4.8,
+        "reviews": 477,
+        "productCode": "30027"
+      }
+    ]
+  ],
+  [
+    "https://product-data.raiadrogasil.io/images/3501370.webp",
+    [
+      {
+        "name": "Shampoo Bio Extratus Jaborandi Antiqueda 250ml",
+        "size": "250ml",
+        "brand": "Bio Extratus",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 42.9,
+        "price": 34.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501370.webp",
+        "bullets": [
+          "Extrato de Jaborandi, Alecrim e Quilaia associados a Vitaminas A, B e E.",
+          "Tonifica e nutre o bulbo capilar, estimulando o crescimento forte.",
+          "Combate a queda excessiva e fortalece fios enfraquecidos."
+        ],
+        "description": "Tratamento fitoterápico consagrado da Bio Extratus para revitalizar os cabelos e promover crescimento saudável com força redobrada.",
+        "id": 30038,
+        "discount": 19,
+        "rating": 4.7,
+        "reviews": 251,
+        "productCode": "30038"
+      },
+      {
+        "name": "Banho de Creme Bio Extratus Tutano 250g",
+        "size": "250g",
+        "brand": "Bio Extratus",
+        "category": "Cabelos",
+        "subcategory": "Tratamentos Capilares",
+        "oldPrice": 42.9,
+        "price": 34.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501370.webp",
+        "bullets": [
+          "Pioneiro no uso do Tutano com Ceramidas e Manteiga de Karité.",
+          "Poderoso reconstrutor lipídico para cabelos ressecados e crespos.",
+          "Nutrição de alto impacto que devolve a maciez perdida."
+        ],
+        "description": "O Banho de Creme Tutano é a fórmula clássica da Bio Extratus que recupera profundamente fios secos e desvitalizados.",
+        "id": 30051,
+        "discount": 19,
+        "rating": 4.9,
+        "reviews": 262,
+        "productCode": "30051"
+      }
+    ]
+  ],
+  [
+    "https://product-data.raiadrogasil.io/images/3501372.webp",
+    [
+      {
+        "name": "Shampoo Haskell Cavalo Forte Força e Brilho 300ml",
+        "size": "300ml",
+        "brand": "Haskell",
+        "category": "Cabelos",
+        "subcategory": "Shampoos",
+        "oldPrice": 44.9,
+        "price": 36.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501372.webp",
+        "bullets": [
+          "Biotina, Pantenol e Queratina para reconstrução profunda.",
+          "Aumenta a elasticidade do fio e previne a quebra.",
+          "Estimula o crescimento capilar e recupera o brilho extremo."
+        ],
+        "description": "Haskell Cavalo Forte é a linha pioneira desenvolvida para fortalecer cabelos fracos, opacos e com dificuldade de crescimento.",
+        "id": 30039,
+        "discount": 18,
+        "rating": 4.8,
+        "reviews": 198,
+        "productCode": "30039"
+      },
+      {
+        "name": "Máscara Haskell Cavalo Forte 300g",
+        "size": "300g",
+        "brand": "Haskell",
+        "category": "Cabelos",
+        "subcategory": "Tratamentos Capilares",
+        "oldPrice": 49.9,
+        "price": 41.9,
+        "image": "https://product-data.raiadrogasil.io/images/3501372.webp",
+        "bullets": [
+          "Tratamento reconstrutor intensivo com Biotina e Queratina pura.",
+          "Aumenta a resistência dos fios e acelera o crescimento saudável.",
+          "Proporciona brilho espelhado e maleabilidade absoluta."
+        ],
+        "description": "A Máscara Cavalo Forte restaura as partes mais fragilizadas dos fios, criando uma barreira protetora que impede a quebra.",
+        "id": 30052,
+        "discount": 16,
+        "rating": 4.9,
+        "reviews": 385,
+        "productCode": "30052"
+      }
+    ]
+  ],
+  [
+    "/products/principia_gel.png",
+    [
+      {
+        "name": "Shampoo Cetoconazol 20mg/g Genérico EMS 100ml",
+        "size": "100ml",
+        "brand": "EMS Genérico",
+        "category": "Medicamentos",
+        "subcategory": "Dermatológicos",
+        "oldPrice": 28.9,
+        "price": 22.9,
+        "image": "/products/principia_gel.png",
+        "bullets": [
+          "Antifúngico comprovado no tratamento da caspa e dermatite seborreica.",
+          "Combate diretamente o fungo causador da descamação capilar.",
+          "Uso indicado de 2 a 3 vezes por semana."
+        ],
+        "description": "Medicamento antifúngico de uso tópico para tratamento e prevenção da dermatite seborreica, caspa e pitiríase versicolor.",
+        "warnings": [
+          "CETOCONAZOL É UM MEDICAMENTO. SEU USO PODE TRAZER RISCOS. LEIA A BULA."
+        ],
+        "id": 30068,
+        "discount": 21,
+        "rating": 4.9,
+        "reviews": 370,
+        "productCode": "30068"
+      },
+      {
+        "name": "Gel de Limpeza Facial Principia GL-01 350g",
+        "size": "350g",
+        "brand": "Principia",
+        "category": "Dermocosméticos",
+        "subcategory": "Limpeza Facial",
+        "oldPrice": 59.9,
+        "price": 49.9,
+        "image": "/products/principia_gel.png",
+        "bullets": [
+          "Fórmula minimalista de alta eficácia com tensoativos suaves e Glicerina.",
+          "Limpa profundamente sem agredir a barreira cutânea nem repuxar.",
+          "Sem parabenos, petrolatos, corantes artificiais e fragrâncias."
+        ],
+        "description": "Principia GL-01 entrega limpeza diária eficiente e balanceada para todos os tipos de pele, preparando o rosto para os séruns de tratamento.",
+        "id": 30092,
+        "discount": 17,
+        "rating": 4.7,
+        "reviews": 111,
+        "productCode": "30092"
+      }
+    ]
+  ],
+  [
+    "/products/cetaphil_pro_ac_espuma.webp",
+    [
+      {
+        "name": "Espuma de Limpeza Cetaphil Pro AC Dermacontrol 236ml",
+        "size": "236ml",
+        "brand": "Cetaphil",
+        "category": "Dermocosméticos",
+        "subcategory": "Limpeza Facial",
+        "oldPrice": 99.9,
+        "price": 84.9,
+        "image": "/products/cetaphil_pro_ac_espuma.webp",
+        "bullets": [
+          "Espuma aerada rica em Zinco que remove 98% do excesso de sebo.",
+          "Ação calmante com extrato de raiz de alcaçuz para peles acneicas sensibilizadas.",
+          "Não obstrui os poros e mantém o pH fisiológico equilibrado."
+        ],
+        "description": "Cetaphil Pro AC é formulado para limpar com suavidade peles acneicas sob tratamento médico, reduzindo o brilho sem causar irritação.",
+        "id": 30090,
+        "discount": 15,
+        "rating": 4.9,
+        "reviews": 174,
+        "productCode": "30090"
+      },
+      {
+        "name": "Gel de Limpeza Facial Avène Cleanance 300ml",
+        "size": "300ml",
+        "brand": "Avène",
+        "category": "Dermocosméticos",
+        "subcategory": "Limpeza Facial",
+        "oldPrice": 104.9,
+        "price": 84.9,
+        "image": "/products/cetaphil_pro_ac_espuma.webp",
+        "bullets": [
+          "Com Comedoclastin ativo patenteado que reduz a produção de sebo na origem.",
+          "Água Termal Avène calmante e suavizante da vermelhidão.",
+          "Base lavante biodegradável sem sabão."
+        ],
+        "description": "Cleanance Gel de Limpeza é o tratamento higienizante diário de Avène para manter a pele purificada, matificada e com sensação de frescor.",
+        "id": 30095,
+        "discount": 19,
+        "rating": 4.9,
+        "reviews": 102,
+        "productCode": "30095"
+      }
+    ]
+  ],
+  [
+    "/products/cetaphil_locao_limpeza.webp",
+    [
+      {
+        "name": "Loção de Limpeza Suave Cetaphil 473ml",
+        "size": "473ml",
+        "brand": "Cetaphil",
+        "category": "Dermocosméticos",
+        "subcategory": "Limpeza Facial",
+        "oldPrice": 114.9,
+        "price": 94.9,
+        "image": "/products/cetaphil_locao_limpeza.webp",
+        "bullets": [
+          "Com Niacinamida, Pantenol e Glicerina hidratante.",
+          "Pode ser utilizada com ou sem enxágue com algodão.",
+          "Hipoalergênica e recomendada para peles secas e pós-procedimentos."
+        ],
+        "description": "A clássica Loção de Limpeza Cetaphil remove resíduos e impurezas com carinho absoluto, mantendo a pele macia e hidratada.",
+        "id": 30091,
+        "discount": 17,
+        "rating": 4.8,
+        "reviews": 158,
+        "productCode": "30091"
+      },
+      {
+        "name": "Hidratante Facial Neutrogena Hydro Boost Water Gel 50g",
+        "size": "50g",
+        "brand": "Neutrogena",
+        "category": "Dermocosméticos",
+        "subcategory": "Hidratantes Faciais",
+        "oldPrice": 94.9,
+        "price": 79.9,
+        "image": "/products/cetaphil_locao_limpeza.webp",
+        "bullets": [
+          "Ácido Hialurônico puro que retém até 1000x seu peso em água.",
+          "Textura water gel ultraleve e refrescante com absorção instantânea.",
+          "Hidratação intensa por 48 horas sem obstruir os poros nem deixar oleosidade."
+        ],
+        "description": "O hidratante queridinho dos dermatologistas: Neutrogena Hydro Boost restabelece os níveis saudáveis de água na pele com acabamento invisível.",
+        "id": 30096,
+        "discount": 16,
+        "rating": 4.9,
+        "reviews": 281,
+        "productCode": "30096"
+      }
+    ]
+  ],
+  [
+    "/products/cetaphil_optimal_hydration_serum.png",
+    [
+      {
+        "name": "Hidratante Labial Nivea Morango Shine 4,8g",
+        "size": "4,8g",
+        "brand": "Nivea",
+        "category": "Beleza & Higiene",
+        "subcategory": "Lábios",
+        "oldPrice": 21.9,
+        "price": 17.9,
+        "image": "/products/cetaphil_optimal_hydration_serum.png",
+        "bullets": [
+          "Aroma delicioso de morango com brilho avermelhado suave.",
+          "Hidratação por até 24 horas com óleos naturais.",
+          "Livre de óleos minerais, aprovado dermatologicamente."
+        ],
+        "description": "Nivea Morango Shine colore discretamente os lábios enquanto entrega maciez intensa e proteção diária contra o ressecamento.",
+        "id": 30113,
+        "discount": 18,
+        "rating": 4.8,
+        "reviews": 400,
+        "productCode": "30113"
+      },
+      {
+        "name": "Sérum Hidratante Facial Cetaphil Optimal Hydration 30ml",
+        "size": "30ml",
+        "brand": "Cetaphil",
+        "category": "Dermocosméticos",
+        "subcategory": "Hidratantes Faciais",
+        "oldPrice": 139.9,
+        "price": 109.9,
+        "image": "/products/cetaphil_optimal_hydration_serum.png",
+        "bullets": [
+          "Complexo HydroSensitiv com Flor de Globularia e Ácido Hialurônico.",
+          "Aumenta a hidratação em até 50% e retém a umidade por 48 horas.",
+          "Textura ultraleve de rápida absorção, perfeita para peles sensíveis."
+        ],
+        "description": "Cetaphil Optimal Hydration Sérum Renovador Facial proporciona hidratação profunda por 48 horas, acalmando a sensibilidade e melhorando a textura e o viço da pele.",
+        "howToUse": "Aplique de manhã e à noite sobre o rosto e pescoço limpos antes do seu creme hidratante.",
+        "id": 30170,
+        "discount": 21,
+        "rating": 4.8,
+        "reviews": 367,
+        "productCode": "30170"
+      }
+    ]
+  ],
+  [
+    "/products/dove_original_90g.webp",
+    [
+      {
+        "name": "Sabonete em Barra Dove Original Hidratação 90g",
+        "size": "90g",
+        "brand": "Dove",
+        "category": "Beleza & Higiene",
+        "subcategory": "Sabonetes",
+        "oldPrice": 5.99,
+        "price": 4.89,
+        "image": "/products/dove_original_90g.webp",
+        "bullets": [
+          "Contém 1/4 de creme hidratante Dove que não resseca a pele como sabão comum.",
+          "Mantém a barreira de hidratação natural do corpo e rosto.",
+          "Dermatologicamente recomendado para uso diário."
+        ],
+        "description": "O sabonete em barra mais icônico do mundo: Dove limpa com gentileza incomparável, deixando a pele radiante, macia e aveludada.",
+        "id": 30115,
+        "discount": 18,
+        "rating": 4.9,
+        "reviews": 180,
+        "productCode": "30115"
+      },
+      {
+        "name": "Aparelho de Barbear Gillette Mach3 Recarregável com 2 Cargas",
+        "size": "1 aparelho + 2 cargas",
+        "brand": "Gillette",
+        "category": "Beleza & Higiene",
+        "subcategory": "Barbear",
+        "oldPrice": 38.9,
+        "price": 29.9,
+        "image": "/products/dove_original_90g.webp",
+        "bullets": [
+          "3 lâminas mais fortes do que aço que duram até 15 barbearias confortáveis.",
+          "Fita lubrificante Indicator com microtensores protetores da pele.",
+          "Cabo metálico ergonômico antiderrapante de alta precisão."
+        ],
+        "description": "O aparelho de barbear mais consagrado do mundo: Gillette Mach3 desliza com facilidade, proporcionando um barbear rente sem irritações.",
+        "id": 30134,
+        "discount": 23,
+        "rating": 4.8,
+        "reviews": 281,
+        "productCode": "30134"
+      }
+    ]
+  ],
+  [
+    "/products/protex_limpeza_profunda.webp",
+    [
+      {
+        "name": "Sabonete em Barra Protex Antibacteriano Limpeza Profunda 85g",
+        "size": "85g",
+        "brand": "Protex",
+        "category": "Beleza & Higiene",
+        "subcategory": "Sabonetes",
+        "oldPrice": 5.49,
+        "price": 4.49,
+        "image": "/products/protex_limpeza_profunda.webp",
+        "bullets": [
+          "Elimina 99,9% das bactérias naturalmente com Óleo de Linhaça.",
+          "Cria uma barreira de proteção contínua por até 12 horas.",
+          "Remove impurezas e excesso de oleosidade dos poros."
+        ],
+        "description": "Protex Limpeza Profunda oferece proteção bacteriana avançada fortalecendo as defesas naturais da pele com segurança total.",
+        "id": 30116,
+        "discount": 18,
+        "rating": 4.7,
+        "reviews": 216,
+        "productCode": "30116"
+      },
+      {
+        "name": "Carga para Aparelho Gillette Mach3 com 4 Unidades",
+        "size": "4 unidades",
+        "brand": "Gillette",
+        "category": "Beleza & Higiene",
+        "subcategory": "Barbear",
+        "oldPrice": 56.9,
+        "price": 44.9,
+        "image": "/products/protex_limpeza_profunda.webp",
+        "bullets": [
+          "Pack econômico com 4 refis para toda a linha de cabos Mach3.",
+          "Lâminas alinhadas progressivamente para cortar o pelo rente à raiz.",
+          "Fita de gel lubrificante para deslize suave."
+        ],
+        "description": "Mantenha o seu barbear sempre impecável com o kit de refil original Gillette Mach3, sinônimo de precisão e durabilidade.",
+        "id": 30135,
+        "discount": 21,
+        "rating": 4.9,
+        "reviews": 365,
+        "productCode": "30135"
+      }
+    ]
+  ],
+  [
+    "/products/granado_bebe_glicerina_250ml.webp",
+    [
+      {
+        "name": "Sabonete Líquido Tradicional Glicerina Granado Bebê 250ml",
+        "size": "250ml",
+        "brand": "Granado",
+        "category": "Mamãe & Bebê",
+        "subcategory": "Higiene do Bebê",
+        "oldPrice": 22.9,
+        "price": 18.9,
+        "image": "/products/granado_bebe_glicerina_250ml.webp",
+        "bullets": [
+          "100% vegetal com base de glicerina pura com ação hidratante.",
+          "pH fisiológico que não irrita os olhos nem a pele sensível do bebê.",
+          "Fragrância clássica e reconfortante amada por gerações brasileiras."
+        ],
+        "description": "O sabonete líquido infantil mais tradicional do Brasil: Granado Glicerina limpa suavemente da cabeça aos pés desde o primeiro dia de vida.",
+        "id": 30117,
+        "discount": 17,
+        "rating": 4.9,
+        "reviews": 64,
+        "productCode": "30117"
+      },
+      {
+        "name": "Multivitamínico Centrum de A a Zinco 60 Comprimidos",
+        "size": "60 Comprimidos",
+        "brand": "Centrum",
+        "category": "Vida Saudável",
+        "subcategory": "Vitaminas e Suplementos",
+        "oldPrice": 114.9,
+        "price": 89.9,
+        "image": "/products/granado_bebe_glicerina_250ml.webp",
+        "bullets": [
+          "Fórmula balanceada com 25 vitaminas e minerais essenciais.",
+          "Apoia a imunidade, energia física, disposição e defesa antioxidante.",
+          "A marca de multivitamínicos número 1 recomendada por médicos no mundo."
+        ],
+        "description": "Centrum De A a Zinco complementa a alimentação diária, garantindo os micronutrientes necessários para a vitalidade e bem-estar geral.",
+        "dosage": "Tomar 1 comprimido ao dia junto com uma das refeições principais.",
+        "id": 30138,
+        "discount": 22,
+        "rating": 4.9,
+        "reviews": 429,
+        "productCode": "30138"
+      }
+    ]
+  ],
+  [
+    "/products/phebo_odor_de_rosas_90g.webp",
+    [
+      {
+        "name": "Sabonete em Barra Tradicional Phebo Odor de Rosas 90g",
+        "size": "90g",
+        "brand": "Phebo",
+        "category": "Beleza & Higiene",
+        "subcategory": "Sabonetes",
+        "oldPrice": 6.49,
+        "price": 5.29,
+        "image": "/products/phebo_odor_de_rosas_90g.webp",
+        "bullets": [
+          "Fórmula à base de glicerina vegetal com fragrância lendária de rosas.",
+          "Espuma cremosa e perfumação marcante de longa duração.",
+          "Livre de ingredientes de origem animal."
+        ],
+        "description": "Lançado em 1930, o sabonete Phebo Odor de Rosas é um símbolo nacional de perfumaria fina e hidratação profunda no banho.",
+        "id": 30118,
+        "discount": 18,
+        "rating": 4.7,
+        "reviews": 278,
+        "productCode": "30118"
+      },
+      {
+        "name": "Espuma de Barbear Gillette Foamy Pele Sensível 312g",
+        "size": "312g",
+        "brand": "Gillette",
+        "category": "Beleza & Higiene",
+        "subcategory": "Barbear",
+        "oldPrice": 32.9,
+        "price": 26.9,
+        "image": "/products/phebo_odor_de_rosas_90g.webp",
+        "bullets": [
+          "Espuma densa e cremosa que amolece a barba instantaneamente.",
+          "Com Aloe Vera para acalmar a pele e prevenir a foliculite.",
+          "Fragrância suave hipoalergênica."
+        ],
+        "description": "Gillette Foamy Pele Sensível forma uma barreira protetora entre a lâmina e a pele, tornando o barbear muito mais confortável.",
+        "id": 30136,
+        "discount": 18,
+        "rating": 4.9,
+        "reviews": 462,
+        "productCode": "30136"
+      }
+    ]
+  ],
+  [
+    "/products/soapex_barra.webp",
+    [
+      {
+        "name": "Sabonete em Barra Antibacteriano Soapex 1% 80g",
+        "size": "80g",
+        "brand": "Soapex",
+        "category": "Dermocosméticos",
+        "subcategory": "Sabonetes",
+        "oldPrice": 27.9,
+        "price": 22.9,
+        "image": "/products/soapex_barra.webp",
+        "bullets": [
+          "Com Triclosano a 1% de ação antisséptica de amplo espectro.",
+          "Combate odores corporais e proliferação bacteriana em peles acneicas.",
+          "Recomendado por cirurgiões e dermatologistas para assepsia diária."
+        ],
+        "description": "Soapex 1% proporciona limpeza bactericida eficaz sem agredir a pele, auxiliando no controle da acne e na desinfecção corporal.",
+        "id": 30119,
+        "discount": 18,
+        "rating": 4.9,
+        "reviews": 380,
+        "productCode": "30119"
+      },
+      {
+        "name": "Creme Depilatório Corporal Veet Peles Delicadas 100ml",
+        "size": "100ml",
+        "brand": "Veet",
+        "category": "Beleza & Higiene",
+        "subcategory": "Depilação",
+        "oldPrice": 36.9,
+        "price": 29.9,
+        "image": "/products/soapex_barra.webp",
+        "bullets": [
+          "Enriquecido com Aloe Vera e Vitamina E calmante.",
+          "Remove os pelos rentes à raiz em apenas 5 minutos no banho.",
+          "Pele macia e lisinha por até o dobro de tempo da lâmina."
+        ],
+        "description": "Depilação corporal sem cortes e sem dor: Veet Peles Delicadas dissolve os pelos suavemente, deixando a pele incrivelmente aveludada.",
+        "id": 30137,
+        "discount": 19,
+        "rating": 4.8,
+        "reviews": 349,
+        "productCode": "30137"
+      }
+    ]
+  ],
+  [
+    "/products/rexona_clinical_classic_feminino.webp",
+    [
+      {
+        "name": "Desodorante Antitranspirante Rexona Clinical Classic Aerosol 150ml",
+        "size": "150ml",
+        "brand": "Rexona",
+        "category": "Beleza & Higiene",
+        "subcategory": "Desodorantes",
+        "oldPrice": 29.9,
+        "price": 24.9,
+        "image": "/products/rexona_clinical_classic_feminino.webp",
+        "bullets": [
+          "3x mais proteção contra a transpiração do que um antitranspirante comum.",
+          "Tecnologia Defense+ que forma barreira de microgel contra o suor.",
+          "Proteção clínica comprovada que dura 96 horas."
+        ],
+        "description": "Para quem busca máxima segurança contra o suor e o mau odor: Rexona Clinical Classic entrega performance extrema para o dia a dia.",
+        "id": 30120,
+        "discount": 17,
+        "rating": 4.9,
+        "reviews": 453,
+        "productCode": "30120"
+      },
+      {
+        "name": "Escova Dental Curaprox CS 5460 Ultra Macia Cores Sortidas",
+        "size": "1 unidade",
+        "brand": "Curaprox",
+        "category": "Beleza & Higiene",
+        "subcategory": "Higiene Bucal",
+        "oldPrice": 49.9,
+        "price": 42.9,
+        "image": "/products/rexona_clinical_classic_feminino.webp",
+        "bullets": [
+          "5.460 filamentos ultrafinos de Curen de 0,10mm que não machucam a gengiva.",
+          "Limpeza extraordinariamente suave e profunda da linha gengival.",
+          "Design octogonal ergonômico fabricado com precisão suíça."
+        ],
+        "description": "A escova dental mais famosa do mundo: Curaprox CS 5460 redefine o conceito de escovação com cerdas macias como veludo.",
+        "id": 30129,
+        "discount": 14,
+        "rating": 4.9,
+        "reviews": 302,
+        "productCode": "30129"
+      }
+    ]
+  ],
+  [
+    "/products/bioderma_abcderm_gel_moussant.jpg",
+    [
+      {
+        "name": "Suplemento Lavitan Cabelos e Unhas 60 Cápsulas",
+        "size": "60 Cápsulas",
+        "brand": "Lavitan",
+        "category": "Vida Saudável",
+        "subcategory": "Vitaminas e Suplementos",
+        "oldPrice": 49.9,
+        "price": 39.9,
+        "image": "/products/bioderma_abcderm_gel_moussant.jpg",
+        "bullets": [
+          "Com Biotina concentrada, Zinco, Selênio e Vitaminas do Complexo B.",
+          "Reduz a queda capilar e acelera o crescimento de fios e unhas fortes.",
+          "Combate a quebra e a opacidade dos cabelos fragilizados."
+        ],
+        "description": "Lavitan Cabelos e Unhas nutre de dentro para fora, promovendo fios volumosos, brilhantes e unhas resistentes à quebra.",
+        "id": 30141,
+        "discount": 20,
+        "rating": 4.8,
+        "reviews": 145,
+        "productCode": "30141"
+      },
+      {
+        "name": "Gel de Banho Infantil Suave Bioderma ABCDerm Gel Moussant 1 Litro",
+        "size": "1000ml",
+        "brand": "Bioderma",
+        "category": "Bebês e Infantil",
+        "subcategory": "Higiene do Bebê",
+        "oldPrice": 159.9,
+        "price": 119.9,
+        "image": "/products/bioderma_abcderm_gel_moussant.jpg",
+        "bullets": [
+          "Formulado de acordo com o Compromisso de Segurança Dermatológica ABCDerm.",
+          "Base lavante não deslipidante: limpa suavemente a pele delicada e o couro cabeludo dos bebês.",
+          "Não arde os olhos, livre de sabão, parabenos e corantes."
+        ],
+        "description": "Bioderma ABCDerm Gel Moussant higieniza delicadamente o corpo e os cabelos do bebê desde o primeiro dia de vida, mantendo a hidratação e o equilíbrio cutâneo.",
+        "howToUse": "Aplique na pele e cabelos úmidos do bebê, ensaboe suavemente e enxágue com água abundante.",
+        "id": 30208,
+        "discount": 25,
+        "rating": 4.7,
+        "reviews": 132,
+        "productCode": "30208"
+      }
+    ]
+  ],
+  [
+    "/products/acnase_gel_20g.webp",
+    [
+      {
+        "name": "Vitamina C Redoxon 1g Efervescente Laranja 10 Comprimidos",
+        "size": "10 Comprimidos",
+        "brand": "Redoxon",
+        "category": "Vida Saudável",
+        "subcategory": "Vitaminas e Suplementos",
+        "oldPrice": 28.9,
+        "price": 22.9,
+        "image": "/products/acnase_gel_20g.webp",
+        "bullets": [
+          "Dose potente de 1.000mg de Vitamina C por comprimido efervescente.",
+          "Reforça o sistema imunológico contra gripes e resfriados sazonais.",
+          "Ação antioxidante que combate o estresse oxidativo celular."
+        ],
+        "description": "Redoxon 1g efervescente dissolve rapidamente na água com delicioso sabor de laranja, garantindo absorção veloz de Vitamina C.",
+        "id": 30144,
+        "discount": 21,
+        "rating": 4.8,
+        "reviews": 230,
+        "productCode": "30144"
+      },
+      {
+        "name": "Creme Dermatológico Antiacne Acnase 20g",
+        "size": "20g",
+        "brand": "Acnase",
+        "category": "Medicamentos",
+        "subcategory": "Acne e Pele Oleosa",
+        "oldPrice": 28.9,
+        "price": 21.9,
+        "image": "/products/acnase_gel_20g.webp",
+        "bullets": [
+          "Associação eficaz de Enxofre 5% e Sulfacetamida Sódica 10%.",
+          "Ação secativa, anti-inflamatória e antibacteriana contra cravos e espinhas.",
+          "Tratamento consagrado de uso tópico para acne vulgar e seborreia."
+        ],
+        "description": "Acnase Creme é indicado no tratamento tópico da acne vulgar. Age diretamente secando as lesões acneicas e combatendo os agentes infecciosos responsáveis pela inflamação.",
+        "howToUse": "Lave o rosto com água morna e sabonete, seque bem e aplique uma camada fina sobre as lesões da acne uma a duas vezes ao dia.",
+        "id": 30166,
+        "discount": 24,
+        "rating": 4.9,
+        "reviews": 139,
+        "productCode": "30166"
+      }
+    ]
+  ],
+  [
+    "/products/adapaleno_medley_30g.webp",
+    [
+      {
+        "name": "Benegrip Analgésico e Descongestionante 20 Comprimidos",
+        "size": "20 Comprimidos",
+        "brand": "Benegrip",
+        "category": "Medicamentos",
+        "subcategory": "Gripes e Resfriados",
+        "oldPrice": 32.9,
+        "price": 24.9,
+        "image": "/products/adapaleno_medley_30g.webp",
+        "bullets": [
+          "Dupla ação com comprimidos verde e amarelo (Dipirona + Cafeína + Clorfeniramina).",
+          "Alívio rápido de febre, dor no corpo, congestão nasal e coriza.",
+          "O antigripal mais tradicional e confiado pelas famílias brasileiras."
+        ],
+        "description": "Benegrip combate os múltiplos sintomas da gripe e do resfriado comum, devolvendo a disposição para enfrentar a rotina.",
+        "warnings": [
+          "BENEGRIP É UM MEDICAMENTO. SEU USO PODE TRAZER RISCOS. LEIA A BULA."
+        ],
+        "id": 30146,
+        "discount": 24,
+        "rating": 4.8,
+        "reviews": 388,
+        "productCode": "30146"
+      },
+      {
+        "name": "Gel Adapaleno 1mg/g Tratamento da Acne Medley Genérico 30g",
+        "size": "30g",
+        "brand": "Medley",
+        "category": "Medicamentos",
+        "subcategory": "Acne e Pele Oleosa",
+        "oldPrice": 49.9,
+        "price": 36.9,
+        "image": "/products/adapaleno_medley_30g.webp",
+        "bullets": [
+          "Retinoide tópico de terceira geração: normaliza a diferenciação das células epiteliais foliculares.",
+          "Potente ação anti-inflamatória e comedolítica contra comedões e espinhas.",
+          "Medicamento genérico registrado e com eficácia comprovada."
+        ],
+        "description": "O Adapaleno gel 1mg/g é indicado para o tratamento tópico da acne vulgar leve a moderada, onde predominam cravos (comedões), pápulas e pústulas.",
+        "howToUse": "Aplicar uma camada fina sobre as áreas afetadas do rosto uma vez ao dia, preferencialmente à noite antes de deitar, após lavagem suave.",
+        "id": 30168,
+        "discount": 26,
+        "rating": 4.7,
+        "reviews": 459,
+        "productCode": "30168"
+      }
+    ]
+  ],
+  [
+    "/products/acnezil_sabonete_cimed.webp",
+    [
+      {
+        "name": "Coristina D Descongestionante e Antialérgico 16 Comprimidos",
+        "size": "16 Comprimidos",
+        "brand": "Coristina D",
+        "category": "Medicamentos",
+        "subcategory": "Gripes e Resfriados",
+        "oldPrice": 34.9,
+        "price": 26.9,
+        "image": "/products/acnezil_sabonete_cimed.webp",
+        "bullets": [
+          "Ação 4 em 1: descongestionante, analgésico, antitérmico e antialérgico.",
+          "Desobstrui o nariz entupido e cessa a coriza e os espirros rapidamente.",
+          "Eficácia comprovada para alívio dos quadros gripais agudos."
+        ],
+        "description": "Coristina D é indicada para o alívio dos sintomas associados a gripes, resfriados e congestão nasal alérgica.",
+        "warnings": [
+          "CORISTINA D É UM MEDICAMENTO. SE PERSISTIREM OS SINTOMAS, O MÉDICO DEVERÁ SER CONSULTADO."
+        ],
+        "id": 30147,
+        "discount": 23,
+        "rating": 4.8,
+        "reviews": 126,
+        "productCode": "30147"
+      },
+      {
+        "name": "Gel Peróxido de Benzoíla 5% Acnezil Cimed 60g",
+        "size": "60g",
+        "brand": "Cimed",
+        "category": "Medicamentos",
+        "subcategory": "Acne e Pele Oleosa",
+        "oldPrice": 32.9,
+        "price": 23.9,
+        "image": "/products/acnezil_sabonete_cimed.webp",
+        "bullets": [
+          "Ação bactericida potente e rápida contra a bactéria Cutibacterium acnes.",
+          "Ação queratolítica que desobstrui os poros e reduz os comedões.",
+          "Concentração a 5% ideal para eficácia antiacne com ótima tolerância cutânea."
+        ],
+        "description": "O Peróxido de Benzoíla 5% é um consagrado agente antibacteriano e secativo de uso tópico, amplamente recomendado por dermatologistas no combate às espinhas inflamadas.",
+        "howToUse": "Lave o local com água e sabonete neutro. Aplique uma camada fina do gel sobre a área afetada 1 a 2 vezes ao dia.",
+        "id": 30169,
+        "discount": 27,
+        "rating": 4.8,
+        "reviews": 102,
+        "productCode": "30169"
+      }
+    ]
+  ],
+  [
+    "/products/lansinoh_lanolina_40g.jpg",
+    [
+      {
+        "name": "Pomada de Lanolina Pura HPA para Seios e Mamilos Lansinoh 40g",
+        "size": "40g",
+        "brand": "Lansinoh",
+        "category": "Mamãe e Bebê",
+        "subcategory": "Gestante e Maternidade",
+        "oldPrice": 89.9,
+        "price": 69.9,
+        "image": "/products/lansinoh_lanolina_40g.jpg",
+        "bullets": [
+          "100% Lanolina ultra-pura HPA: a mais segura do mundo, recomendada por pediatras.",
+          "Previne e trata rachaduras, fissuras e dor nos mamilos durante a amamentação.",
+          "Hipoalergênica e sem aditivos: NÃO precisa ser retirada antes de amamentar o bebê."
+        ],
+        "description": "Lansinoh Lanolina HPA cria um ambiente de cicatrização úmida que acalma a dor e regenera a pele dos mamilos sem oferecer risco à saúde do recém-nascido.",
+        "howToUse": "Espalhe uma quantidade do tamanho de uma ervilha entre os dedos e aplique em toda a área do mamilo após cada mamada.",
+        "id": 30298,
+        "discount": 22,
+        "rating": 4.9,
+        "reviews": 128,
+        "productCode": "30298"
+      },
+      {
+        "name": "Aparelho de Barbear Gillette Fusion5 ProGlide com Tecnologia FlexBall",
+        "size": "1 unidade com 1 carga",
+        "brand": "Gillette",
+        "category": "Cuidados Pessoais",
+        "subcategory": "Barba e Depilação",
+        "oldPrice": 69.9,
+        "price": 52.9,
+        "image": "/products/lansinoh_lanolina_40g.jpg",
+        "bullets": [
+          "Cabo com tecnologia FlexBall que se move em múltiplos ângulos acompanhando os contornos do rosto.",
+          "5 lâminas com cobertura antifricção mais finas que cortam o pelo quase sem resistência.",
+          "Micro-pente protetor que guia o pelo para a lâmina e fita lubrificante aprimorada."
+        ],
+        "description": "Gillette ProGlide representa o ápice da engenharia de barbear da Gillette, capturando praticamente todos os pelos sem irritar a pele.",
+        "howToUse": "Umedeça o rosto com água morna, aplique gel de barbear e faça passadas suaves.",
+        "id": 30364,
+        "discount": 24,
+        "rating": 4.9,
+        "reviews": 336,
+        "productCode": "30364"
+      }
+    ]
+  ],
+  [
+    "/products/regenesis_premium_60caps.webp",
+    [
+      {
+        "name": "Suplemento Vitamínico Pré-Natal Regenesis Premium 60 Cápsulas",
+        "size": "60 cápsulas",
+        "brand": "Regenesis",
+        "category": "Mamãe e Bebê",
+        "subcategory": "Gestante e Maternidade",
+        "oldPrice": 129.9,
+        "price": 99.9,
+        "image": "/products/regenesis_premium_60caps.webp",
+        "bullets": [
+          "Metilfolato (forma ativa do Ácido Fólico) para prevenção de defeitos do tubo neural.",
+          "Alta concentração de Ômega-3 DHA (600mg) essencial para o desenvolvimento cerebral do feto.",
+          "Ferro quelato de alta absorção que não provoca constipação, náusea ou azia."
+        ],
+        "description": "Regenesis Premium é o polivitamínico mais completo para gestantes e lactantes, contendo todas as vitaminas e minerais essenciais para o binômio mãe-bebê.",
+        "howToUse": "Ingerir 2 cápsulas ao dia com líquido antes de uma das principais refeições.",
+        "id": 30299,
+        "discount": 23,
+        "rating": 4.8,
+        "reviews": 378,
+        "productCode": "30299"
+      },
+      {
+        "name": "Alicate de Cutícula Aço Inox Mundial Classic 522",
+        "size": "1 unidade",
+        "brand": "Mundial",
+        "category": "Cuidados Pessoais",
+        "subcategory": "Unhas e Manicure",
+        "oldPrice": 38.9,
+        "price": 28.9,
+        "image": "/products/regenesis_premium_60caps.webp",
+        "bullets": [
+          "Aço inoxidável de alta durabilidade com afiação de fábrica profissional de alta precisão.",
+          "Cabo antideslizante com textura aderente que proporciona firmeza e segurança no corte.",
+          "Esterilizável em estufa e autoclave para uso profissional ou pessoal."
+        ],
+        "description": "Mundial Classic 522 é o alicate de cutícula mais vendido e consagrado do Brasil, garantindo corte preciso e suave sem repuxar a pele.",
+        "howToUse": "Amoleça as cutículas com água morna ou emoliente e corte suavemente o excesso de pele.",
+        "id": 30367,
+        "discount": 26,
+        "rating": 4.7,
+        "reviews": 316,
+        "productCode": "30367"
+      }
+    ]
+  ],
+  [
+    "/products/lillo_aspirador_nasal.webp",
+    [
+      {
+        "name": "Aspirador Nasal Infantil com Estojo de Sucção Lillo",
+        "size": "1 unidade",
+        "brand": "Lillo",
+        "category": "Bebês e Infantil",
+        "subcategory": "Nariz e Respiratórios",
+        "oldPrice": 34.9,
+        "price": 26.9,
+        "image": "/products/lillo_aspirador_nasal.webp",
+        "bullets": [
+          "Sucção mecânica segura e higiênica que desobstrui as vias aéreas do bebê.",
+          "Ponta de silicone macia com válvula interna de retenção que impede o refluxo de secreções.",
+          "Fácil de desmontar e higienizar, acompanha estojo protetor para transporte."
+        ],
+        "description": "O Aspirador Nasal Lillo permite aos pais retirarem delicadamente o excesso de muco do nariz do bebê, facilitando a respiração e a amamentação.",
+        "howToUse": "Aperte a pera de borracha, posicione a ponta na narina e solte lentamente para aspirar o muco.",
+        "id": 30320,
+        "discount": 23,
+        "rating": 4.8,
+        "reviews": 207,
+        "productCode": "30320"
+      },
+      {
+        "name": "Batom Líquido Matte Maybelline SuperStay Matte Ink Longa Duração",
+        "size": "5ml",
+        "brand": "Maybelline",
+        "category": "Maquiagem",
+        "subcategory": "Lábios",
+        "oldPrice": 69.9,
+        "price": 52.9,
+        "image": "/products/lillo_aspirador_nasal.webp",
+        "bullets": [
+          "Até 16 horas de duração sem borrar, sem transferir e à prova de beijos e bebidas.",
+          "Aplicador exclusivo em flecha que contorna os lábios com precisão impecável.",
+          "Acabamento 100% matte com cor hiperpigmentada e confortável."
+        ],
+        "description": "SuperStay Matte Ink é o batom líquido que não sai por nada, garantindo lábios impecáveis e radiantes durante o dia e a noite inteira.",
+        "howToUse": "Aplique começando no centro do lábio superior seguindo o contorno da boca e preencha o lábio inferior.",
+        "id": 30369,
+        "discount": 24,
+        "rating": 4.9,
+        "reviews": 239,
+        "productCode": "30369"
+      }
+    ]
+  ],
+  [
+    "/products/mustela_maternite_antiestrias.webp",
+    [
+      {
+        "name": "Creme Antiestrias Maternité Mustela Ação Dupla 150ml",
+        "size": "150ml",
+        "brand": "Mustela",
+        "category": "Mamãe e Bebê",
+        "subcategory": "Gestante e Maternidade",
+        "oldPrice": 119.9,
+        "price": 94.9,
+        "image": "/products/mustela_maternite_antiestrias.webp",
+        "bullets": [
+          "Polifenóis de Maracujá e Óleo de Abacate 100% de origem natural.",
+          "Aumenta a elasticidade da pele em 98% prevenindo estrias na gravidez.",
+          "Seguro para a mamãe e para o bebê desde o primeiro mês de gestação e amamentação."
+        ],
+        "description": "Mustela Maternité é o creme número um em prescrições obstétricas para manter a pele hidratada, elástica e livre de estrias durante as mudanças da gravidez.",
+        "howToUse": "Massageie de manhã e à noite na barriga, quadris, coxas e seios.",
+        "id": 30355,
+        "discount": 21,
+        "rating": 4.9,
+        "reviews": 173,
+        "productCode": "30355"
+      },
+      {
+        "name": "Base Facial Líquida Maybelline Fit Me Efeito Matte 30ml",
+        "size": "30ml",
+        "brand": "Maybelline",
+        "category": "Maquiagem",
+        "subcategory": "Rosto",
+        "oldPrice": 54.9,
+        "price": 42.9,
+        "image": "/products/mustela_maternite_antiestrias.webp",
+        "bullets": [
+          "Micropartículas de pó que absorvem a oleosidade e disfarçam a aparência dos poros.",
+          "Efeito matte natural de longa duração sem craquelar ou ressecar.",
+          "Formulada para atender com precisão aos múltiplos tons da pele brasileira."
+        ],
+        "description": "A Base Fit Me de Maybelline controla a oleosidade e o brilho facial por até 12 horas, deixando a pele com acabamento uniforme e aveludado.",
+        "howToUse": "Espalhe uma pequena quantidade no rosto com pincel, esponja úmida ou ponta dos dedos.",
+        "id": 30370,
+        "discount": 22,
+        "rating": 4.8,
+        "reviews": 424,
+        "productCode": "30370"
+      }
+    ]
+  ]
+]

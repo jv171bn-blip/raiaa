@@ -1,0 +1,233 @@
+.mobile-app-banner {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .mobile-app-banner {
+    display: none;
+  }
+}
+
+.mobile-app-banner__inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.mobile-app-banner__close {
+  background: none;
+  border: none;
+  color: #222222;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mobile-app-banner__icon-box {
+  width: 38px;
+  height: 38px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 3px;
+}
+
+.mobile-app-banner__icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.mobile-app-banner__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  min-width: 0;
+}
+
+.mobile-app-banner__title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-app-banner__sub {
+  font-size: 11.5px;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-app-banner__btn {
+  background-color: #007380;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 700;
+  padding: 8px 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color 0.15s;
+}
+
+.mobile-app-banner__btn:hover {
+  background-color: #00606b;
+}
+
+/* Error Popup Modal */
+.mobile-app-error-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: mobileFadeIn 0.2s ease-out;
+}
+
+@keyframes mobileFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.mobile-app-error-popup {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 360px;
+  padding: 28px 22px 22px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: mobilePopupScale 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes mobilePopupScale {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mobile-app-error-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f3f4f6;
+  border: none;
+  color: #666666;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.mobile-app-error-close:hover {
+  background: #e5e7eb;
+  color: #111111;
+}
+
+.mobile-app-error-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fde8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.mobile-app-error-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 8px;
+  letter-spacing: -0.3px;
+}
+
+.mobile-app-error-message {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #555555;
+  margin: 0 0 16px;
+}
+
+.mobile-app-error-code {
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 11.5px;
+  color: #6b7280;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.mobile-app-error-code span {
+  font-family: monospace;
+  font-weight: 700;
+  color: #d32f2f;
+}
+
+.mobile-app-error-actions {
+  width: 100%;
+}
+
+.mobile-app-error-btn-primary {
+  width: 100%;
+  background-color: #007380;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.mobile-app-error-btn-primary:hover {
+  background-color: #005d66;
+}
+
+.mobile-app-error-btn-primary:active {
+  transform: scale(0.98);
+}

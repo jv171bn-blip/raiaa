@@ -1,0 +1,266 @@
+const fs = require('fs');
+const path = require('path');
+const esbuild = require('esbuild');
+
+const tsCode = fs.readFileSync('src/data/novosProdutosCatalogo.ts', 'utf8');
+const result = esbuild.transformSync(tsCode, { loader: 'ts', format: 'cjs', target: 'node18' });
+const m = { exports: {} };
+new Function('module', 'exports', result.code)(m, m.exports);
+const items = m.exports.novosProdutosCatalogo;
+
+// Full master dictionary
+const masterMapping = {
+  // --- Sabonetes em barra ---
+  30115: '/products/dove_original_90g.webp',
+  30116: '/products/protex_limpeza_profunda.webp',
+  30118: '/products/phebo_odor_de_rosas_90g.webp',
+  30119: '/products/soapex_barra.webp',
+  30117: '/products/granado_bebe_glicerina_250ml.webp',
+
+  // --- Barbear & Depilação ---
+  30134: '/products/gillette_mach3_aparelho_2cargas.jpg',
+  30135: '/products/gillette_mach3_carga_4un.jpg',
+  30136: '/products/gillette_foamy_pele_sensivel_312g.jpg',
+  30137: '/products/veet_creme_depilatorio_delicadas_100ml.jpg',
+
+  // --- Cabelos Shampoos, Condicionadores, Máscaras ---
+  30001: '/products/elseve_glycolic_1.webp',
+  30002: '/products/elseve_glycolic_condicionador_400ml.webp',
+  30004: '/products/elseve_glycolic_acidificante.webp',
+  30007: '/products/elseve_hidra_hialuronico_shampoo.webp',
+  30010: '/products/elseve_longo_dos_sonhos_shampoo.webp',
+  30013: '/products/pantene_restauracao_shampoo_400ml.webp',
+  30016: '/products/pantene_shampoo_bambu_400ml.jpg',
+  30020: '/products/dove_shampoo_hidratacao_intensa_400ml.webp',
+  30025: '/products/tresemme_blindagem_antifrizz_400ml.webp',
+  30026: '/products/tresemme_detox_capilar_400ml.webp',
+  30027: '/products/tresemme_brilho_lamelar_400ml.jpg',
+  30029: '/products/head_shoulders_remocao_oleosidade_400ml.webp',
+  30042: '/products/elseve_cicatri_renov_leavein_100ml.png',
+  30044: '/products/pantene_mascara_colageno.jpg',
+  30045: '/products/dove_mascara_10em1.jpg',
+  30050: '/products/salon_line_gelatina_todecacho_550g.jpg',
+  30051: '/products/bio_extratus_tutano_creme_250g.jpg',
+  30052: '/products/haskell_cavalo_forte_mascara_300g.jpg',
+  30054: '/products/truss_night_spa_250ml.jpg',
+  30056: '/products/kerastase_masquintense_200ml.jpg',
+  30057: '/products/wella_oil_reflections_100ml.jpg',
+  30059: '/products/sebastian_dark_oil_95ml.jpg',
+  30060: '/products/vichy_dercos_energy_400ml.webp',
+  30061: '/products/dercos_ds_anticaspa.webp',
+  30063: '/products/kerium_ds_anticaspa_125ml.webp',
+  30064: '/products/ducray_kelual_ds.webp',
+  30065: '/products/ducray_anaphase_200ml.jpg',
+  30066: '/products/pielus_di_shampoo_120ml.jpg',
+  30067: '/products/darrow_doctar_plus_140ml.jpg',
+  30068: '/products/cetoconazol_shampoo_ems_100ml.jpg',
+
+  // --- Protetores Solares, Skincare & Dermocosméticos ---
+  30070: '/products/anthelios_ultra_cover_fps60_cor2.jpg',
+  30073: '/products/isdin_age_repair_fps50.webp',
+  30075: '/products/episol_color_fps70_morena.jpg',
+  30076: '/products/neutrogena_sun_fresh_fps70.webp',
+  30077: '/products/nivea_sun_fps50_200ml.webp',
+  30078: '/products/vichy_capital_soleil_fps60.webp',
+  30079: '/products/avene_mat_perfect_fps60.webp',
+  30080: '/products/eucerin_sun_oil_control_fps60.webp',
+  30081: '/products/australian_gold_spray_gel.webp',
+  30085: '/products/effaclar_alta_tolerancia_300g.jpg',
+  30088: '/products/bioderma_sensibio_gel_moussant_200ml.jpg',
+  30090: '/products/cetaphil_pro_ac_espuma.webp',
+  30091: '/products/cetaphil_locao_limpeza.webp',
+  30093: '/products/principia_gel_gl02_350g.jpg',
+  30094: '/products/vichy_normaderm_phytosolution_300g.jpg',
+  30097: '/products/cerave_locao_facial_52ml.jpg',
+  30101: '/products/epidrat_acqua_50g.webp',
+  30103: '/products/principia_serum_vc10.jpg',
+  30104: '/products/principia_serum_ag10.jpg',
+  30105: '/products/principia_serum_rn03.jpg',
+  30106: '/products/laroche_hyalu_b5.jpg',
+  30107: '/products/laroche_pure_vit_c.webp',
+  30108: '/products/laroche_mela_b3.webp',
+  30109: '/products/vichy_liftactiv_b3.webp',
+  30111: '/products/carmed_fini_bananas_10g.jpg',
+  30112: '/products/nivea_med_repair_fps15.jpg',
+  30113: '/products/nivea_morango_shine.jpg',
+  30114: '/products/cicaplast_labios_7_5ml.jpg',
+  30120: '/products/rexona_clinical_classic_feminino.webp',
+  30122: '/products/herbissimo_creme_tradicional_55g.jpg',
+  30124: '/products/colgate_luminous_white_brilliant_70g.jpg',
+  30126: '/products/oralb_3d_white_glamorous_70g.jpg',
+  30133: '/products/dermacyd_femina.webp',
+  30139: '/products/centrum_mulher_60comp.jpg',
+  30141: '/products/lavitan_cabelos_unhas_60caps.jpg',
+  30150: '/products/vick_inalador_portatil_0_5ml.jpg',
+  30153: '/products/estomazil_abacaxi.webp',
+  30156: '/products/engov_12comp.webp',
+  30158: '/products/merthiolate_spray_45ml.webp',
+  30159: '/products/nebacetin_15g.webp',
+  30160: '/products/lacrifilm_15ml.webp',
+  30161: '/products/systane_ultra_15ml.webp',
+  30162: '/products/renu_fresh_355ml.webp',
+  30166: '/products/acnase_gel_20g.webp',
+  30168: '/products/adapaleno_medley_30g.webp',
+  30169: '/products/acnezil_sabonete_cimed.webp',
+  30170: '/products/cetaphil_optimal_hydration_serum.png',
+  30173: '/products/principia_serum_am10.jpg',
+  30191: '/products/bioderma_atoderm_creme_500ml.jpg',
+  30193: '/products/avene_xeracalm_ad_400ml.jpg',
+  30194: '/products/nivea_amora_shine.jpg',
+  30198: '/products/lipikar_surgras_barra_150g.webp',
+  30200: '/products/rexona_men_invisible_150ml.jpg',
+  30204: '/products/colgate_periogard_90g.jpg',
+  30208: '/products/bioderma_abcderm_gel_moussant.jpg',
+  30210: '/products/tampax_perola_regular_8un.jpg',
+  30220: '/products/growth_whey_concentrado_80_1kg.webp',
+  30222: '/products/dprev_50000ui_4caps.jpg',
+  30223: '/products/vick_pyrena_mel_limao.webp',
+  30224: '/products/salsep_360_50ml.jpg',
+  30226: '/products/gaviscon_menta_150ml.jpg',
+  30227: '/products/pepsamar_230mg.jpg',
+  30228: '/products/repoflor_250mg.webp',
+  30229: '/products/lactulona_ameixa_120ml.webp',
+  30230: '/products/nexcare_curativos_mickey_10un.jpg',
+  30231: '/products/algodao_cremer.webp',
+  30232: '/products/agua_oxigenada_farmax.webp',
+  30233: '/products/esparadrapo_cremer.webp',
+  30234: '/products/nexcare_micropore_branca.jpg',
+  30235: '/products/atadura_cremer.webp',
+  30236: '/products/gaze_cremer.webp',
+  30237: '/products/optive_15ml.webp',
+  30238: '/products/fresh_tears_15ml.webp',
+  30239: '/products/biotrue_300ml.webp',
+  30240: '/products/opti_free_puremoist_300ml.webp',
+  30241: '/products/alcon_estojo_lentes_contato.jpg',
+  30243: '/products/tadalafila_20mg_eurofarma_4comp.jpg',
+  30245: '/products/tadalafila_20mg_ems_4comp.jpg',
+  30247: '/products/tadalafila_5mg_eurofarma_30comp.jpg',
+  30248: '/products/tadalafila_5mg_cimed_30comp.jpg',
+  30250: '/products/cialis_diario_5mg_30comp.jpg',
+  30252: '/products/anador_500mg.webp',
+  30253: '/products/lisador_dipi.webp',
+  30254: '/products/torsilax_30comp.png',
+  30255: '/products/tandrilax_30comp.jpg',
+  30256: '/products/mioflex_a_12comp.png',
+  30257: '/products/flanax_550mg.webp',
+  30258: '/products/alivium_100mg.webp',
+  30259: '/products/sumax_50mg.jpg',
+  30260: '/products/naratriptana_2_5mg_ems.jpg',
+  30261: '/products/diclofenaco_potassico_medley_50mg.jpg',
+  30262: '/products/cetoprofeno_150mg_eurofarma.jpg',
+  30263: '/products/resfenol_20caps.jpg',
+  30264: '/products/multigrip_20caps.jpg',
+  30265: '/products/naldecon_noite_24comp.jpg',
+  30266: '/products/strepsils_mel_limao.webp',
+  30267: '/products/benalet_menta.webp',
+  30268: '/products/ciflogex_menta.webp',
+  30269: '/products/fluimucil_600mg.webp',
+  30270: '/products/bisolvon_adulto_120ml.webp',
+  30271: '/products/melagriao_xarope_150ml.webp',
+  30272: '/products/melagriao_spray_30ml.webp',
+  30274: '/products/loratadina_10mg.webp',
+  30277: '/products/pantoprazol_40mg_eurofarma.jpg',
+  30278: '/products/sonrisal_2comp.webp',
+  30279: '/products/lacday_10000fcc_30comp.jpg',
+  30280: '/products/tamarine_geleia_150g.jpg',
+  30281: '/products/dulcolax_5mg.webp',
+  30284: '/products/omron_hem_6124.webp',
+  30286: '/products/gtech_termometro_infravermelho.webp',
+  30287: '/products/gtech_oximetro_oled.webp',
+  30289: '/products/accuchek_guide_50tiras.webp',
+  30290: '/products/gtech_inalador_mesh.jpg',
+  30291: '/products/omron_balanca_hbf514c.webp',
+  30292: '/products/joelheira_mercur.webp',
+  30293: '/products/bolsa_termica_termogel.webp',
+  30294: '/products/meia_kendall.webp',
+  30296: '/products/mamadeira_avent_petala_260ml.webp',
+  30297: '/products/enfamil_premium_1_800g.jpg',
+  30298: '/products/lansinoh_lanolina_40g.jpg',
+  30299: '/products/regenesis_premium_60caps.webp',
+  30300: '/products/jontex_sensitive_8un.webp',
+  30301: '/products/kmed_tradicional_50g.webp',
+  30302: '/products/clearblue_digital.webp',
+  30312: '/products/cerave_kit_cuidados_essenciais.jpg',
+  30313: '/products/kit_laroche_antiacne_effaclar.jpg',
+  30315: '/products/maxalt_10mg.jpg',
+  30317: '/products/maresis_100ml.webp',
+  30318: '/products/vick_pastilhas_cereja.png',
+  30319: '/products/nosewash_seringa.webp',
+  30320: '/products/lillo_aspirador_nasal.webp',
+  30321: '/products/medicate_espacador.webp',
+  30322: '/products/gtech_umidificador_allergy_free.webp',
+  30323: '/products/loratamed_10mg.webp',
+  30324: '/products/zyrtec_10mg.png',
+  30325: '/products/mucosolvan_adulto_120ml.webp',
+  30327: '/products/esomeprazol_40mg_ems.jpg',
+  30328: '/products/pedialyte_uva_500ml.webp',
+  30329: '/products/floralyte_maca_500ml.jpg',
+  30330: '/products/bolsa_gelo_mercur.webp',
+  30331: '/products/bolsa_agua_quente_mercur.webp',
+  30332: '/products/luvas_supermax.webp',
+  30333: '/products/tornozeleira_mercur.webp',
+  30334: '/products/munhequeira_kestal.jpeg',
+  30335: '/products/cinta_lombar_mercur.webp',
+  30336: '/products/palmilha_ortho_pauher.webp',
+  30337: '/products/protetor_joanete_ortho_pauher.webp',
+  30338: '/products/tipoia_velpeau_mercur.webp',
+  30339: '/products/bengala_mercur.webp',
+  30340: '/products/muleta_mercur.webp',
+  30341: '/products/colar_cervical_mercur.jpg',
+  30352: '/products/principia_tonico_al8.jpg',
+  30353: '/products/principia_serum_at01.jpg',
+  30355: '/products/mustela_maternite_antiestrias.webp',
+  30361: '/products/chupeta_avent_ultra_air.png',
+  30362: '/products/milnutri_complete_800g.webp',
+  30363: '/products/nestogeno_1_800g.webp',
+  30371: '/products/macks_protetor_auricular_silicone.jpg',
+  30372: '/products/cerumin_8ml.jpg',
+  30374: '/products/color_andina_stevia_liquido.jpg',
+  30379: '/products/prudence_cores_sabores.webp',
+  30401: '/products/vick_inalador.webp',
+  30402: '/products/alcool_70_1000ml.webp',
+  30403: '/products/accuchek_softclix_lancetas.png',
+  30404: '/products/bomba_tiraleite_avent.webp',
+  30405: '/products/alicate_mundial_522.webp'
+};
+
+// Check that every single image file in masterMapping exists on disk
+let missingFiles = 0;
+for (const [id, imgPath] of Object.entries(masterMapping)) {
+  if (imgPath.startsWith('/products/')) {
+    const full = path.join('public', imgPath);
+    if (!fs.existsSync(full)) {
+      console.error(`[DISK MISSING] ID ${id}: ${full}`);
+      missingFiles++;
+    }
+  }
+}
+console.log(`Missing files on disk: ${missingFiles}`);
+
+// Simulate
+const finalItems = items.map(it => {
+  if (masterMapping[it.id]) {
+    return { ...it, image: masterMapping[it.id] };
+  }
+  return it;
+});
+
+// Check duplicates
+const imgMap = {};
+for (const it of finalItems) {
+  if (!imgMap[it.image]) imgMap[it.image] = [];
+  imgMap[it.image].push(it);
+}
+
+const dups = Object.entries(imgMap).filter(([img, list]) => list.length > 1);
+console.log(`\n=== RESULT AFTER COMPLETE MAPPING ===`);
+console.log(`Duplicate image groups: ${dups.length}`);
+
+for (const [img, list] of dups) {
+  console.log(`\nGroup with image ${img} (${list.length} items):`);
+  list.forEach(i => console.log(`   ID ${i.id} | ${i.brand} | ${i.name}`));
+}
+
+if (dups.length === 0 && missingFiles === 0) {
+  console.log('\n>>> SUCCESS! 100% OF PRODUCTS IN novosProdutosCatalogo HAVE UNIQUE, EXISTING IMAGES! <<<');
+}

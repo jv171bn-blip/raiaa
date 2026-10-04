@@ -1,0 +1,1523 @@
+/* ========================================================
+   DROGA RAIA - PRODUCT DETAIL PAGE (PDP) EXACT MOBILE LAYOUT
+   ======================================================== */
+
+.pdp-page {
+  background-color: #ffffff;
+  padding-bottom: 84px; /* Space for the sticky bottom bar on mobile */
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 1. Breadcrumbs */
+.pdp-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background-color: #f7f7f7;
+  font-size: 11.5px;
+  color: #666666;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-bottom: 1px solid #ededed;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.pdp-breadcrumb::-webkit-scrollbar {
+  display: none;
+}
+
+.pdp-breadcrumb__link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #555555;
+  font-size: 11.5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  transition: color 0.15s;
+}
+
+.pdp-breadcrumb__link:hover {
+  color: #007380;
+  text-decoration: underline;
+}
+
+.pdp-breadcrumb__sep {
+  color: #aaaaaa;
+  font-size: 10px;
+}
+
+.pdp-breadcrumb__current {
+  color: #222222;
+  font-weight: 600;
+}
+
+/* Container */
+.pdp-content-container {
+  width: 100%;
+}
+
+.pdp-main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2. Header / Title Row */
+.pdp-header {
+  padding: 16px 16px 6px 16px;
+}
+
+.pdp-title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1.25;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.2px;
+}
+
+/* Rating row directly beneath title (EXACT Screenshot Model) */
+.pdp-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.pdp-rating-stars-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5px;
+}
+
+.pdp-rating-count-amber {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #ffa100;
+  margin-left: 2px;
+}
+
+.pdp-rating-tag-highlight {
+  font-size: 13.5px;
+  color: #555555;
+  font-weight: 400;
+}
+
+.pdp-meta-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.pdp-brand-size {
+  font-size: 14px;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.pdp-brand {
+  font-weight: 500;
+  color: #444444;
+}
+
+.pdp-dot {
+  color: #777777;
+}
+
+.pdp-size {
+  color: #555555;
+}
+
+/* Floating Scroll-to-Top Button (Images 1, 2, 3, 4) */
+.pdp-floating-top-btn {
+  position: fixed;
+  bottom: 84px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9998;
+  color: #1c1c1c;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.pdp-floating-top-btn:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.pdp-floating-top-btn:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 900px) {
+  .pdp-floating-top-btn {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+.pdp-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.pdp-circle-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  padding: 0;
+  color: #222222;
+}
+
+.pdp-circle-btn:hover {
+  border-color: #9ca3af;
+  background-color: #f9fafb;
+}
+
+.pdp-circle-btn--active {
+  border-color: #d32f2f;
+  background: #fff5f5;
+}
+
+/* 3. Product Image Area with "+1 nº da sorte" badge and 10 indicator dots */
+.pdp-image-container {
+  position: relative;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+.pdp-lucky-badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #730014;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  margin-bottom: 4px;
+  letter-spacing: -0.1px;
+}
+
+.pdp-image-wrap {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.pdp-main-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.pdp-dots-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 14px auto 16px auto;
+}
+
+.pdp-dot-circle {
+  width: 6.5px;
+  height: 6.5px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pdp-dot-circle--active {
+  background-color: #555555;
+}
+
+/* 4. Sticky Navigation Tabs Bar (Ofertas, Sobre, Avaliações) */
+.pdp-nav-tabs-bar {
+  display: flex;
+  align-items: flex-end;
+  gap: 36px;
+  padding: 0 16px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.pdp-nav-tab {
+  background: none;
+  border: none;
+  padding: 0 0 8px 0;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdp-nav-tab__pill {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111111;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  transition: all 0.15s ease;
+}
+
+.pdp-nav-tab--active .pdp-nav-tab__pill {
+  background-color: #d1d5db;
+  color: #111111;
+}
+
+.pdp-nav-tab:not(.pdp-nav-tab--active) .pdp-nav-tab__pill {
+  background: transparent;
+  color: #1c1c1c;
+  padding: 8px 0;
+}
+
+.pdp-nav-tab:not(.pdp-nav-tab--active):hover .pdp-nav-tab__pill {
+  color: #007189;
+}
+
+.pdp-nav-tab__indicator {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: #111111;
+  border-radius: 1px;
+}
+
+/* 5. "Vendido e entregue por Raia" */
+.pdp-seller-line {
+  font-size: 13.5px;
+  color: #555555;
+  padding: 0 16px;
+  margin: 10px 0 14px 0;
+}
+
+.pdp-seller-raia {
+  color: #00384d;
+  font-weight: 700;
+}
+
+/* 5.1 Size Selection Card (Matches exact screenshot) */
+.pdp-size-trigger-card {
+  margin: 0 16px 14px 16px;
+  padding: 10px 14px;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.pdp-size-trigger-card:hover {
+  border-color: #888888;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.pdp-size-trigger-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pdp-size-trigger-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 2px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.pdp-size-trigger-text {
+  font-size: 14.5px;
+  color: #262626;
+  font-weight: 400;
+}
+
+.pdp-size-trigger-text strong {
+  font-weight: 700;
+  color: #111111;
+}
+
+.pdp-size-trigger-chevron {
+  color: #1c1c1c;
+  flex-shrink: 0;
+}
+
+/* 8. Size Selection Bottom Sheet Modal (Exact screenshot replica) */
+.pdp-size-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  animation: sizeSheetFade 0.22s ease-out forwards;
+}
+
+@keyframes sizeSheetFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.pdp-size-modal__container {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  max-height: 85vh;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+  padding: 10px 20px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.22);
+  animation: sizeSheetSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-sizing: border-box;
+}
+
+@keyframes sizeSheetSlideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.pdp-size-modal__handle-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 6px 0 10px 0;
+}
+
+.pdp-size-modal__handle-bar {
+  width: 38px;
+  height: 4.5px;
+  background-color: #c4c4c4;
+  border-radius: 3px;
+}
+
+.pdp-size-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.pdp-size-modal__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: -0.2px;
+}
+
+.pdp-size-modal__close-btn {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #1c1c1c;
+  outline: none;
+}
+
+.pdp-size-modal__close-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.pdp-size-modal__subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.pdp-size-modal__sublabel {
+  font-size: 15px;
+  color: #222222;
+  font-weight: 400;
+}
+
+.pdp-size-modal__sublabel strong {
+  font-weight: 700;
+  color: #111111;
+}
+
+.pdp-size-modal__options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 48vh;
+  margin-bottom: 18px;
+  padding: 2px;
+}
+
+.pdp-size-modal__option-item {
+  width: 100%;
+  padding: 13px 16px;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1c1c;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.12s ease;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pdp-size-modal__option-item:hover {
+  background-color: #fbfbfb;
+}
+
+.pdp-size-modal__option-item--selected {
+  border: 2px solid #111111;
+  background-color: #ffffff;
+  font-weight: 700;
+}
+
+.pdp-size-modal__footer {
+  width: 100%;
+}
+
+.pdp-size-modal__apply-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #007380;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  font-family: inherit;
+}
+
+.pdp-size-modal__apply-btn:hover {
+  background-color: #005c66;
+}
+
+/* 5. Buy Box Option Cards */
+.pdp-buy-options {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pdp-option-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 16px;
+  padding: 16px 18px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.pdp-option-card--selected {
+  border: 2px solid #1a1a1a;
+  background: #ffffff;
+}
+
+.pdp-option-card--unselected {
+  border: 1px solid #e2e2e2;
+  background: #fbfbfb;
+}
+
+.pdp-option-card--promo {
+  background: #f5f5f5;
+  border: 1px solid #e2e2e2;
+}
+
+.pdp-option-card--promo.pdp-option-card--selected {
+  border: 2px solid #1a1a1a;
+  background: #ffffff;
+}
+
+.pdp-option-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pdp-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pdp-radio__outer {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+
+.pdp-radio__outer--checked {
+  border-color: #1a1a1a;
+  border-width: 2.2px;
+}
+
+.pdp-radio__inner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1a1a1a;
+}
+
+.pdp-option-card__title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #00505b;
+}
+
+.pdp-option-card__body {
+  margin-top: 10px;
+}
+
+.pdp-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pdp-price-value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.3px;
+}
+
+.pdp-qty-btn {
+  position: relative;
+  background: #e2e4e8;
+  border: 1px solid #b8bcc4;
+  border-radius: 12px;
+  min-width: 68px;
+  height: 42px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.pdp-qty-btn:hover {
+  background: #d8dbdf;
+  border-color: #a4aab4;
+}
+
+.pdp-qty-btn--open {
+  background: #d8dbdf;
+  border-color: #717782;
+}
+
+.pdp-qty-arrow {
+  color: #222222;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+/* Quantity Selection Bottom Sheet Modal */
+.pdp-qty-sheet-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.52);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: pdpOverlayFadeIn 0.2s ease;
+}
+
+@keyframes pdpOverlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pdp-qty-sheet {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px 18px 0 0;
+  padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  animation: pdpSheetSlideUp 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+}
+
+@keyframes pdpSheetSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.pdp-qty-sheet__handle {
+  width: 38px;
+  height: 4px;
+  background: #c7cbd1;
+  border-radius: 2px;
+  margin: 10px auto 14px auto;
+}
+
+.pdp-qty-sheet__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 14px 20px;
+}
+
+.pdp-qty-sheet__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0;
+}
+
+.pdp-qty-sheet__close {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.15s;
+}
+
+.pdp-qty-sheet__close:hover {
+  background-color: #f0f0f0;
+}
+
+.pdp-qty-sheet__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pdp-qty-sheet__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 17px 20px;
+  font-size: 15px;
+  color: #222222;
+  background: #ffffff;
+  border: none;
+  border-top: 1px solid #ededed;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.12s;
+  font-family: inherit;
+}
+
+.pdp-qty-sheet__item:hover {
+  background-color: #f7f9fa;
+}
+
+.pdp-qty-sheet__item--selected {
+  font-weight: 600;
+  color: #007380;
+  background: #f0f8f9;
+}
+
+.pdp-qty-sheet__custom-wrap {
+  padding: 16px 20px 20px 20px;
+  border-top: 1px solid #ededed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fbfbfc;
+}
+
+.pdp-qty-sheet__custom-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.pdp-qty-sheet__custom-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pdp-qty-sheet__custom-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1.5px solid #007380;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #ffffff;
+}
+
+.pdp-qty-sheet__custom-btn {
+  background: #007380;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 22px;
+  height: 46px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.pdp-qty-sheet__custom-btn:hover {
+  background-color: #005b66;
+}
+
+.pdp-installment-badge {
+  background: #eaf7ee;
+  color: #11693e;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 9999px;
+  padding: 4px 10px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.pdp-payment-methods-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a1a;
+  cursor: pointer;
+  display: block;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.pdp-payment-methods-link u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pdp-card-buy-btn {
+  background: #007380;
+  color: #ffffff;
+  width: 100%;
+  height: 48px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: background-color 0.15s;
+}
+
+.pdp-card-buy-btn:hover {
+  background: #00606b;
+}
+
+/* Leve + Pague - promo card */
+.pdp-promo-sub {
+  font-size: 13px;
+  color: #555555;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pdp-promo-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pdp-promo-price-info {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.pdp-promo-price {
+  font-size: 21px;
+  font-weight: 800;
+  color: #111111;
+}
+
+.pdp-promo-each {
+  font-size: 13.5px;
+  color: #666666;
+  font-weight: 400;
+}
+
+/* Dividers */
+.pdp-divider {
+  height: 1px;
+  background: #ededed;
+  margin: 24px 16px;
+}
+
+/* 6. Consultar formas de entrega */
+.pdp-delivery-section {
+  padding: 0 16px;
+}
+
+.pdp-delivery-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.pdp-delivery-label {
+  font-size: 13px;
+  color: #333333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.pdp-delivery-form {
+  margin-bottom: 4px;
+}
+
+.pdp-delivery-input {
+  width: 100%;
+  height: 46px;
+  background: #ebebeb;
+  border: none;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #111111;
+  outline: none;
+  transition: background-color 0.15s, box-shadow 0.15s;
+}
+
+.pdp-delivery-input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #007380;
+}
+
+.pdp-delivery-helper {
+  font-size: 11.5px;
+  color: #777777;
+  display: block;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+.pdp-shipping-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.pdp-shipping-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fcfcfc;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+.pdp-shipping-opt-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdp-shipping-opt-info strong {
+  font-size: 12.5px;
+  color: #1a1a1a;
+}
+
+.pdp-shipping-opt-info span {
+  font-size: 11px;
+  color: #666666;
+}
+
+.pdp-shipping-opt-price {
+  font-weight: 700;
+  color: #222222;
+}
+
+.pdp-shipping-opt-price--free {
+  color: #0d5c3a;
+}
+
+/* 7. Specs Box: Marca & Quantidade */
+.pdp-quick-specs {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pdp-quick-spec-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #444444;
+}
+
+.pdp-quick-spec-icon {
+  color: #666666;
+  flex-shrink: 0;
+}
+
+.pdp-quick-spec-label {
+  color: #444444;
+  margin-right: 4px;
+}
+
+.pdp-quick-spec-val {
+  color: #111111;
+  font-weight: 700;
+}
+
+/* 8. Descrição do produto Card */
+.pdp-desc-card {
+  background: #f8f9fa;
+  border-radius: 14px;
+  padding: 20px 16px;
+  margin: 16px 16px 0 16px;
+}
+
+.pdp-desc-main-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 14px 0;
+}
+
+.pdp-desc-section {
+  margin-bottom: 16px;
+}
+
+.pdp-desc-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px 0;
+  line-height: 1.35;
+}
+
+.pdp-desc-paragraph {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.pdp-desc-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pdp-desc-bullets li {
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 14px;
+}
+
+.pdp-desc-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #666666;
+  font-size: 15px;
+}
+
+/* Características Table */
+.pdp-features-section {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e5e7;
+}
+
+.pdp-features-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+}
+
+.pdp-features-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdp-feature-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.pdp-feature-row:last-child {
+  border-bottom: none;
+}
+
+.pdp-feature-key {
+  color: #555555;
+}
+
+.pdp-feature-val {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* 9 & 10. Carousels */
+.pdp-carousel-section {
+  padding: 12px 0 20px 16px;
+}
+
+.pdp-carousel-heading {
+  font-size: 17px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 14px 0;
+  padding-right: 16px;
+}
+
+.pdp-cards-scroll-track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  padding-right: 16px;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.pdp-cards-scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+.pdp-carousel-card-wrap {
+  flex: 0 0 165px;
+  scroll-snap-align: start;
+}
+
+/* 11. Support Cards & RD Saúde (Exact reproduction) */
+.pdp-support-box {
+  background: #f1f3f5;
+  border-radius: 24px;
+  padding: 16px 14px 22px 14px;
+  margin: 24px 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdp-support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.pdp-support-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px 14px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+  min-height: 130px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.pdp-support-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pdp-support-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.pdp-support-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.25;
+  margin: 0 0 6px 0;
+}
+
+.pdp-support-card__sub {
+  font-size: 12px;
+  color: #555555;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.pdp-rdsaude-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+
+.pdp-rd-label {
+  color: #444444;
+  font-size: 13.5px;
+}
+
+.pdp-rd-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pdp-rd-symbol {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.pdp-rd-text-main {
+  font-size: 24px;
+  font-weight: 900;
+  color: #00384d;
+  letter-spacing: -0.5px;
+}
+
+.pdp-rd-text-sub {
+  font-size: 24px;
+  font-weight: 400;
+  color: #00384d;
+}
+
+.pdp-back-to-top-btn {
+  background: #ffffff;
+  border: 1px solid #717171;
+  border-radius: 9999px;
+  padding: 10px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.pdp-back-to-top-btn:hover {
+  background-color: #f8f9fa;
+  border-color: #333333;
+}
+
+/* Anvisa Compliance Section */
+.pdp-anvisa-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0 44px 0;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.pdp-anvisa-text {
+  font-size: 12.5px;
+  color: #555555;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.pdp-anvisa-logo {
+  width: 50px;
+  height: 58px;
+  object-fit: contain;
+}
+
+/* 12. Fixed Sticky Bottom Bar on Mobile (only when buy options is not in view) */
+.pdp-sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 70px;
+  background-color: #ffffff;
+  border-top: 1px solid #ededed;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  z-index: 9999;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+.pdp-sticky-bar--visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pdp-sticky-bar__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+
+.pdp-sticky-bar__title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #00505b;
+  line-height: 1.2;
+}
+
+.pdp-sticky-bar__sub {
+  font-size: 12px;
+  color: #555555;
+  line-height: 1.25;
+}
+
+.pdp-sticky-bar__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-top: 1px;
+}
+
+.pdp-sticky-bar__price {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.3px;
+  line-height: 1.15;
+}
+
+.pdp-sticky-bar__each {
+  font-size: 13.5px;
+  color: #555555;
+  font-weight: 400;
+}
+
+.pdp-sticky-bar__btn {
+  background-color: #007380;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  height: 44px;
+  padding: 0 26px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.pdp-sticky-bar__btn:hover {
+  background-color: #005d66;
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 900px) {
+  .pdp-page {
+    padding-bottom: 60px;
+  }
+
+  .pdp-sticky-bar {
+    display: none !important;
+  }
+
+  .pdp-content-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .pdp-main-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .pdp-header {
+    grid-column: 1 / -1;
+    padding: 16px 0 8px 0;
+  }
+
+  .pdp-image-container {
+    grid-column: 1;
+    padding: 0;
+  }
+
+  .pdp-image-wrap {
+    height: 380px;
+    padding: 24px;
+  }
+
+  .pdp-nav-tabs-bar {
+    grid-column: 1;
+    padding: 8px 0 0 0;
+    top: 70px;
+  }
+
+  .pdp-seller-line {
+    padding: 0;
+  }
+
+  .pdp-buy-options {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    padding: 0;
+    position: sticky;
+    top: 90px;
+  }
+
+  .pdp-divider {
+    margin: 24px 0;
+  }
+
+  .pdp-delivery-section {
+    padding: 0;
+  }
+
+  .pdp-quick-specs {
+    margin: 0 0 16px 0;
+  }
+
+  .pdp-desc-card {
+    margin: 16px 0 0 0;
+  }
+
+  .pdp-carousel-section {
+    grid-column: 1 / -1;
+    padding: 24px 0;
+  }
+
+  .pdp-support-box {
+    grid-column: 1 / -1;
+    margin: 32px 0 16px 0;
+  }
+
+  .pdp-anvisa-section {
+    grid-column: 1 / -1;
+    margin: 20px 0 60px 0;
+  }
+
+  .pdp-reviews-section {
+    grid-column: 1 / -1;
+    max-width: 860px;
+    width: 100%;
+    margin: 32px auto 0 auto;
+    padding: 36px 0 48px 0;
+    box-sizing: border-box;
+  }
+}

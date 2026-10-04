@@ -1,0 +1,195 @@
+.flash-offer-section {
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
+.flash-offer-card {
+  position: relative;
+  overflow: hidden;
+  background-color: #fbebd0;
+  border-radius: 18px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
+  outline: none;
+}
+
+.flash-offer-card:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px rgba(182, 32, 47, 0.08);
+  background-color: #f8e5c8;
+}
+
+.flash-offer-card:active {
+  transform: scale(0.99);
+}
+
+.flash-offer-card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(182, 32, 47, 0.35);
+}
+
+/* Top Accent / Progress Stripe matching reference image */
+.flash-offer-card__top-bar {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 56%;
+  height: 4px;
+  background-color: #b6202f;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+/* Left Side */
+.flash-offer-card__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.flash-offer-card__icon {
+  color: #b6202f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.flash-offer-card__texts {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.flash-offer-card__title {
+  color: #b6202f;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.flash-offer-card__subtitle {
+  color: #1f3647;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.flash-offer-card__subtitle strong {
+  font-weight: 700;
+  color: #1f3647;
+}
+
+/* Right Side */
+.flash-offer-card__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.flash-offer-card__timer-pill {
+  background-color: #b6202f;
+  color: #ffffff;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.flash-offer-card__arrow {
+  color: #1f3647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.18s ease;
+}
+
+.flash-offer-card:hover .flash-offer-card__arrow {
+  transform: translateX(3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .flash-offer-section {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+
+  .flash-offer-card {
+    padding: 11px 14px;
+    border-radius: 18px;
+    min-height: 62px;
+  }
+
+  .flash-offer-card__top-bar {
+    left: 10px;
+    width: 56%;
+    height: 4px;
+  }
+
+  .flash-offer-card__left {
+    gap: 10px;
+  }
+
+  .flash-offer-card__icon svg {
+    width: 20px;
+    height: 24px;
+  }
+
+  .flash-offer-card__title {
+    font-size: 14.5px;
+  }
+
+  .flash-offer-card__subtitle {
+    font-size: 12.5px;
+  }
+
+  .flash-offer-card__right {
+    gap: 8px;
+  }
+
+  .flash-offer-card__timer-pill {
+    padding: 5px 12px;
+    font-size: 12.5px;
+    letter-spacing: 0.2px;
+  }
+
+  .flash-offer-card__arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .flash-offer-card {
+    padding: 9px 10px;
+  }
+
+  .flash-offer-card__title {
+    font-size: 13.5px;
+  }
+
+  .flash-offer-card__subtitle {
+    font-size: 11.5px;
+  }
+
+  .flash-offer-card__timer-pill {
+    padding: 4px 8px;
+    font-size: 11.5px;
+  }
+}

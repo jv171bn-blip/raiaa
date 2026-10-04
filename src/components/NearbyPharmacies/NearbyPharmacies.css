@@ -1,0 +1,940 @@
+/* ══════════════════════════════════════════════════════════
+   Nearby Pharmacies (Farmácias Próximas Droga Raia & Drogasil)
+   Responsive, modern, pixel-faithful to official Droga Raia design
+   ══════════════════════════════════════════════════════════ */
+
+.nearby-pharmacies-section {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 16px 20px 32px 20px;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+.nearby-pharmacies-section--embedded {
+  padding: 0;
+  max-width: 100%;
+}
+
+/* ── Header ── */
+.nearby-pharmacies-header {
+  margin-bottom: 16px;
+}
+
+.nearby-pharmacies-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.3px;
+  margin: 0 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nearby-pharmacies-sub {
+  font-size: 14.5px;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ── Address Banner ── */
+.nearby-pharmacies-address-bar {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.nearby-pharmacies-address-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1 1 240px;
+}
+
+.nearby-pharmacies-address-pin {
+  color: #007f91;
+  flex-shrink: 0;
+}
+
+.nearby-pharmacies-address-texts {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.nearby-pharmacies-address-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #64748b;
+}
+
+.nearby-pharmacies-address-main {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nearby-pharmacies-address-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nearby-pharmacies-btn-alter {
+  background: transparent;
+  border: 1px solid #007f91;
+  color: #007f91;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.nearby-pharmacies-btn-alter:hover {
+  background: #e6f4f6;
+}
+
+.nearby-pharmacies-btn-geolocation {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.nearby-pharmacies-btn-geolocation:hover {
+  border-color: #007f91;
+  color: #007f91;
+  background: #f0fdfa;
+}
+
+/* ── Filter Row & View Toggles ── */
+.nearby-pharmacies-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.nearby-pharmacies-brand-filters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nearby-pharmacies-filter-pill {
+  background: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  color: #4b5563;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.nearby-pharmacies-filter-pill:hover {
+  border-color: #007f91;
+  color: #007f91;
+}
+
+.nearby-pharmacies-filter-pill--active {
+  background: #007f91 !important;
+  border-color: #007f91 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 127, 145, 0.25);
+}
+
+.nearby-pharmacies-view-toggles {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 9999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.nearby-pharmacies-view-btn {
+  background: transparent;
+  border: none;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nearby-pharmacies-view-btn--active {
+  background: #ffffff;
+  color: #007f91;
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Interactive Map Wrap ── */
+.nearby-pharmacies-map-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid #e2e8f0;
+  margin-bottom: 12px;
+  background: #e2e8f0;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.nearby-pharmacies-map-canvas {
+  width: 100%;
+  height: 280px;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .nearby-pharmacies-map-canvas {
+    height: 340px;
+  }
+}
+
+.nearby-pharmacies-map-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #4b5563;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.map-legend-dot--user {
+  background-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+.map-legend-dot--raia {
+  background-color: #006877;
+}
+
+.map-legend-dot--drogasil {
+  background-color: #d91438;
+}
+
+/* ── Leaflet Pin Styles ── */
+.custom-user-leaflet-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-map-pin-core {
+  width: 32px;
+  height: 32px;
+  background-color: #2563eb;
+  border: 2.5px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.user-map-pin-pulse {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.25);
+  animation: mapPulse 2s infinite ease-out;
+  z-index: 1;
+}
+
+@keyframes mapPulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.custom-pharmacy-leaflet-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.custom-pharmacy-leaflet-pin:hover {
+  transform: scale(1.15);
+}
+
+.store-map-pin-wrap {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+.custom-pharmacy-leaflet-pin--selected .store-map-pin-wrap {
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 0 0 3px #f5821f, 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.store-map-pin-symbol {
+  font-size: 15px;
+  line-height: 1;
+}
+
+/* ── Leaflet Popups ── */
+.map-store-popup {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #1a1a1a;
+  min-width: 200px;
+  padding: 4px;
+}
+
+.map-store-popup__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.map-store-popup__brand {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.map-store-popup__dist {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.map-store-popup__name {
+  font-size: 13.5px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.map-store-popup__addr {
+  font-size: 12px;
+  color: #64748b;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.map-store-popup__phone {
+  font-size: 11.5px;
+  color: #4b5563;
+  margin: 0 0 8px 0;
+}
+
+.map-store-popup__actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-store-popup__btn-route {
+  display: inline-block;
+  background-color: #007f91;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  transition: background-color 0.15s ease;
+}
+
+.map-store-popup__btn-route:hover {
+  background-color: #005461;
+}
+
+.map-popup-user {
+  font-family: 'Inter', sans-serif;
+  padding: 2px;
+}
+
+.map-popup-user strong {
+  font-size: 13px;
+  color: #1a1a1a;
+}
+
+.map-popup-user p {
+  font-size: 11.5px;
+  color: #64748b;
+  margin: 2px 0 0 0;
+}
+
+/* ── Stores List Grid ── */
+.nearby-pharmacies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.nearby-pharmacy-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px 42px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  text-align: left;
+}
+
+.nearby-pharmacy-card:hover {
+  border-color: #007f91;
+  box-shadow: 0 4px 14px rgba(0, 127, 145, 0.08);
+}
+
+.nearby-pharmacy-card--selected {
+  border-color: #007f91 !important;
+  background-color: #f7fdfd !important;
+  box-shadow: 0 0 0 1.5px #007f91, 0 4px 14px rgba(0, 127, 145, 0.1) !important;
+}
+
+/* 1. Brand Row */
+.nearby-pharmacy-card__brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nearby-pharmacy-card__raia-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.nearby-pharmacy-card__raia-symbol-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.nearby-pharmacy-card__raia-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.2px;
+  line-height: 1;
+}
+
+.nearby-pharmacy-card__drogasil-brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nearby-pharmacy-card__drogasil-logo {
+  height: 20px;
+  width: auto;
+  max-width: 135px;
+  object-fit: contain;
+  display: block;
+}
+
+.nearby-pharmacy-card__badge-pill {
+  background: #eceef1;
+  color: #4b5563;
+  border-radius: 9999px;
+  padding: 2.5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 1.3;
+}
+
+/* 2. Address Group */
+.nearby-pharmacy-card__address-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nearby-pharmacy-card__neighborhood {
+  font-size: 14px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.3;
+}
+
+.nearby-pharmacy-card__street {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.35;
+}
+
+/* 3. Bottom Row */
+.nearby-pharmacy-card__bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.nearby-pharmacy-card__status {
+  font-size: 13px;
+}
+
+.nearby-pharmacy-card__status-open {
+  font-weight: 600;
+  color: #2e8b57;
+}
+
+.nearby-pharmacy-card__status-hours {
+  font-weight: 400;
+  color: #374151;
+}
+
+.nearby-pharmacy-card__drogasil-symbol {
+  width: 22px;
+  height: 22px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.nearby-pharmacy-card__distance-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* 4. Right Chevron Arrow */
+.nearby-pharmacy-card__arrow {
+  position: absolute;
+  right: 18px;
+  top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  pointer-events: none;
+}
+
+/* ── Unavailable Banner (Nenhum produto disponível) ── */
+.nearby-pharmacy-card__unavailable-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #fdf0f4;
+  border-radius: 14px;
+  padding: 12px 18px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nearby-pharmacy-card__unavailable-icon {
+  color: #be185d;
+  flex-shrink: 0;
+}
+
+.nearby-pharmacy-card__unavailable-text {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: #374151;
+  letter-spacing: -0.1px;
+  line-height: 1.35;
+}
+
+.nearby-pharmacy-card--unavailable {
+  cursor: not-allowed !important;
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.nearby-pharmacy-card--unavailable:hover {
+  border-color: #e5e7eb !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Aspecto cinza para farmácias indisponíveis */
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__raia-name {
+  color: #64748b !important;
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__raia-symbol-img,
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__drogasil-symbol {
+  opacity: 0.6;
+  filter: grayscale(25%);
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__neighborhood {
+  color: #88909d !important;
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__street {
+  color: #64748b !important;
+  font-weight: 600;
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__status-open {
+  color: #6b8f71 !important;
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__status-hours {
+  color: #88909d !important;
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__distance-tag {
+  color: #64748b !important;
+}
+
+.nearby-pharmacy-card--unavailable .nearby-pharmacy-card__arrow {
+  color: #94a3b8 !important;
+}
+
+/* ── Botão Escolher Outra ── */
+.nearby-pharmacies-choose-other-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 16px 0;
+}
+
+.nearby-pharmacies-btn-choose-other {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1.5px solid #007f91;
+  color: #007f91;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  box-shadow: 0 1px 4px rgba(0, 127, 145, 0.08);
+}
+
+.nearby-pharmacies-btn-choose-other:hover {
+  background: #f0fdfa;
+  border-color: #005f6d;
+  color: #005f6d;
+  box-shadow: 0 2px 8px rgba(0, 127, 145, 0.16);
+}
+
+.nearby-pharmacies-btn-choose-other--active {
+  background: #007f91;
+  color: #ffffff;
+  border-color: #007f91;
+}
+
+.nearby-pharmacies-btn-choose-other--active:hover {
+  background: #005f6d;
+  color: #ffffff;
+  border-color: #005f6d;
+}
+
+.nearby-pharmacies-choose-arrow {
+  transition: transform 0.25s ease;
+}
+
+.nearby-pharmacies-choose-arrow--open {
+  transform: rotate(180deg);
+}
+
+.nearby-pharmacy-btn-select:hover {
+  background-color: #005461;
+}
+
+.nearby-pharmacy-btn-select--selected {
+  background-color: #008a4b;
+}
+
+/* ── Ver Mais Farmácias Toggle ── */
+.nearby-pharmacies-show-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.nearby-pharmacies-btn-show-more {
+  background: #f8fafc;
+  border: 1.5px solid #d1d5db;
+  color: #1a1a1a;
+  border-radius: 9999px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.nearby-pharmacies-btn-show-more:hover {
+  background: #ffffff;
+  border-color: #007f91;
+  color: #007f91;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ── Loading Skeleton State ── */
+.nearby-pharmacies-skeleton-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.nearby-pharmacies-loading-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+  color: #007f91;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.nearby-pharmacies-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #b2e2e8;
+  border-top-color: #007f91;
+  border-radius: 50%;
+  animation: spinNear 0.7s linear infinite;
+}
+
+@keyframes spinNear {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nearby-pharmacies-skeleton-card {
+  height: 120px;
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: skeletonShimmer 1.5s infinite;
+  border-radius: 16px;
+}
+
+@keyframes skeletonShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ── Empty / Error State ── */
+.nearby-pharmacies-empty-box {
+  background: #fff8f6;
+  border: 1.5px solid #fed7aa;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.nearby-pharmacies-empty-icon {
+  color: #f97316;
+  margin-bottom: 8px;
+}
+
+.nearby-pharmacies-empty-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #9a3412;
+  margin: 0 0 6px 0;
+}
+
+.nearby-pharmacies-empty-desc {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.nearby-pharmacies-empty-btn {
+  background-color: #006877;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  font-family: inherit;
+}
+
+.nearby-pharmacies-empty-btn:hover {
+  background-color: #005461;
+}
+
+/* ── Responsive Mobile ── */
+@media (max-width: 640px) {
+  .nearby-pharmacies-section {
+    padding: 12px 14px 24px 14px;
+  }
+
+  .nearby-pharmacies-title {
+    font-size: 18px;
+  }
+
+  .nearby-pharmacy-card {
+    padding: 14px;
+  }
+
+  .nearby-pharmacy-card__name {
+    font-size: 15px;
+  }
+
+  .nearby-pharmacy-card__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .nearby-pharmacy-btn-route,
+  .nearby-pharmacy-btn-focus-map,
+  .nearby-pharmacy-btn-select {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+}
+
+/* ── Botão Alterar Endereço Abaixo do Mapa ── */
+.nearby-pharmacies-map-alterar-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.nearby-pharmacies-map-alterar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  border: 1.5px solid #007f91;
+  color: #007f91;
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+}
+
+.nearby-pharmacies-map-alterar-btn:hover {
+  background-color: #f0fdfa;
+  border-color: #006877;
+  color: #006877;
+}
+
+.nearby-pharmacies-map-alterar-btn:active {
+  transform: scale(0.99);
+}

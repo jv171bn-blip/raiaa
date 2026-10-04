@@ -1,0 +1,254 @@
+/* Mobile Bottom Sheet Overlay */
+.mobile-sheet__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  animation: sheetFadeIn 0.25s ease-out forwards;
+}
+
+@keyframes sheetFadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
+
+/* Bottom Sheet Container that slides UP from the bottom */
+.mobile-sheet__container {
+  width: 100%;
+  height: 92vh;
+  max-height: 94vh;
+  background-color: #ffffff;
+  border-radius: 18px 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.22);
+  animation: sheetSlideUp 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes sheetSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Top Drag Handle Indicator */
+.mobile-sheet__handle-wrap {
+  padding: 10px 0 4px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.mobile-sheet__handle-bar {
+  width: 38px;
+  height: 4.5px;
+  border-radius: 3px;
+  background-color: #c4c4c4;
+}
+
+/* Top Header Bar (Raia Green Symbol & Close Button) */
+.mobile-sheet__top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px 12px 18px;
+  border-bottom: 1px solid #f0f0f0;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.mobile-sheet__logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-sheet__logo {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  display: block;
+}
+
+.mobile-sheet__close-btn {
+  background: transparent;
+  border: none;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #1c1c1c;
+  transition: background-color 0.15s ease;
+  outline: none;
+}
+
+.mobile-sheet__close-btn:hover,
+.mobile-sheet__close-btn:active {
+  background-color: #f2f2f2;
+}
+
+/* Scrollable Menu Body */
+.mobile-sheet__scrollable-body {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 34px;
+}
+
+/* Custom Sleek Scrollbar */
+.mobile-sheet__scrollable-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+.mobile-sheet__scrollable-body::-webkit-scrollbar-track {
+  background: #fbfbfb;
+}
+
+.mobile-sheet__scrollable-body::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 3px;
+}
+
+.mobile-sheet__group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu Item Row */
+.mobile-sheet__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 18px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.12s ease;
+  outline: none;
+  font-family: inherit;
+}
+
+.mobile-sheet__item:hover,
+.mobile-sheet__item:active {
+  background-color: #f7f9fa;
+}
+
+.mobile-sheet__item--plain {
+  padding: 13.5px 18px;
+}
+
+.mobile-sheet__item-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+
+.mobile-sheet__item-icon {
+  color: #262626;
+  flex-shrink: 0;
+  stroke-width: 1.8;
+}
+
+.mobile-sheet__icon-with-badge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-sheet__badge-check {
+  position: absolute;
+  bottom: -2px;
+  right: -3px;
+  background-color: #262626;
+  color: #ffffff;
+  font-size: 8px;
+  font-weight: 900;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ffffff;
+}
+
+.mobile-sheet__raia-icon-dark {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.15);
+  display: block;
+}
+
+.mobile-sheet__item-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 1.25;
+}
+
+.mobile-sheet__item-label--regular {
+  font-weight: 500;
+  font-size: 14.5px;
+  color: #333333;
+}
+
+.mobile-sheet__item-chevron {
+  color: #8c8c8c;
+  flex-shrink: 0;
+  stroke-width: 1.9;
+}
+
+/* Divider Line */
+.mobile-sheet__divider {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 4px 0;
+}
+
+/* Categorias Header Title */
+.mobile-sheet__section-title {
+  padding: 16px 18px 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #6e6e6e;
+  letter-spacing: 0.2px;
+}
+
+/* Institutional & Support Group (Image 2 & 3) */
+.mobile-sheet__group--institutional {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 12px;
+}
+
+.mobile-sheet__group--institutional .mobile-sheet__item {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.mobile-sheet__group--institutional .mobile-sheet__item:hover,
+.mobile-sheet__group--institutional .mobile-sheet__item:active {
+  background-color: #eef1f3;
+}

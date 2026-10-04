@@ -1,0 +1,120 @@
+.discount-blocks-section {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.discount-blocks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.discount-block {
+  background: #f2f2f2;
+  border-radius: 18px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  user-select: none;
+  min-height: 156px;
+}
+
+.discount-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.discount-block:focus-visible {
+  outline: 2px solid #007f91;
+  outline-offset: 2px;
+}
+
+.discount-block__img-wrap {
+  width: 108px;
+  height: 144px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount-block__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.discount-block__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding-right: 8px;
+}
+
+.discount-block__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.discount-block__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.22;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.discount-block__arrow {
+  color: #1a1a1a;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: transform 0.2s ease;
+}
+
+.discount-block:hover .discount-block__arrow {
+  transform: translateX(3px);
+}
+
+.discount-block__desc {
+  font-size: 13px;
+  color: #4a4a4a;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .discount-blocks {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .discount-block {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .discount-block__img-wrap {
+    width: 100px;
+    height: 134px;
+    border-radius: 12px;
+  }
+
+  .discount-block__title {
+    font-size: 16px;
+  }
+
+  .discount-block__desc {
+    font-size: 12.5px;
+  }
+}

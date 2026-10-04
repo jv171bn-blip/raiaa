@@ -1,0 +1,1367 @@
+[
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19504050.webp",
+    "isFirstInGroup": true,
+    "id": 30005,
+    "brand": "Elseve",
+    "name": "Shampoo Elseve Reparação Total 5 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19504050.webp",
+    "isFirstInGroup": false,
+    "id": 30045,
+    "brand": "Dove",
+    "name": "Máscara de Tratamento Dove 10 em 1 Fator de Nutrição 350g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501259.webp",
+    "isFirstInGroup": true,
+    "id": 30009,
+    "brand": "Elseve",
+    "name": "Shampoo Elseve Cicatri Renov 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501259.webp",
+    "isFirstInGroup": false,
+    "id": 30042,
+    "brand": "Elseve",
+    "name": "Leave-in Elseve Cicatri Renov 100ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/15925906.webp",
+    "isFirstInGroup": true,
+    "id": 30011,
+    "brand": "Pantene",
+    "name": "Shampoo Pantene Hidratação 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/15925906.webp",
+    "isFirstInGroup": false,
+    "id": 30016,
+    "brand": "Pantene",
+    "name": "Shampoo Pantene Bambu Nutre & Cresce 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/15413686.webp",
+    "isFirstInGroup": true,
+    "id": 30015,
+    "brand": "Pantene",
+    "name": "Shampoo Pantene Colágeno Hidrata e Resgata 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/15413686.webp",
+    "isFirstInGroup": false,
+    "id": 30044,
+    "brand": "Pantene",
+    "name": "Máscara de Tratamento Pantene Pro-V Miracles Colágeno 270g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501310.webp",
+    "isFirstInGroup": true,
+    "id": 30018,
+    "brand": "Dove",
+    "name": "Shampoo Dove Reconstrução + Aminoácido 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501310.webp",
+    "isFirstInGroup": false,
+    "id": 30020,
+    "brand": "Dove",
+    "name": "Shampoo Dove Hidratação Intensa 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501320.webp",
+    "isFirstInGroup": true,
+    "id": 30023,
+    "brand": "TRESemmé",
+    "name": "Shampoo TRESemmé Hidratação Profunda 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501320.webp",
+    "isFirstInGroup": false,
+    "id": 30025,
+    "brand": "TRESemmé",
+    "name": "Shampoo TRESemmé Blindagem Antifrizz 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501320.webp",
+    "isFirstInGroup": false,
+    "id": 30026,
+    "brand": "TRESemmé",
+    "name": "Shampoo TRESemmé Detox Capilar 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501320.webp",
+    "isFirstInGroup": false,
+    "id": 30027,
+    "brand": "TRESemmé",
+    "name": "Shampoo TRESemmé Brilho Lamelar 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501330.webp",
+    "isFirstInGroup": true,
+    "id": 30028,
+    "brand": "Head & Shoulders",
+    "name": "Shampoo Head & Shoulders Anticaspa Limpeza Diária 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501330.webp",
+    "isFirstInGroup": false,
+    "id": 30029,
+    "brand": "Head & Shoulders",
+    "name": "Shampoo Head & Shoulders Remoção da Oleosidade 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501370.webp",
+    "isFirstInGroup": true,
+    "id": 30038,
+    "brand": "Bio Extratus",
+    "name": "Shampoo Bio Extratus Jaborandi Antiqueda 250ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501370.webp",
+    "isFirstInGroup": false,
+    "id": 30051,
+    "brand": "Bio Extratus",
+    "name": "Banho de Creme Bio Extratus Tutano 250g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501372.webp",
+    "isFirstInGroup": true,
+    "id": 30039,
+    "brand": "Haskell",
+    "name": "Shampoo Haskell Cavalo Forte Força e Brilho 300ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501372.webp",
+    "isFirstInGroup": false,
+    "id": 30052,
+    "brand": "Haskell",
+    "name": "Máscara Haskell Cavalo Forte 300g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501368.webp",
+    "isFirstInGroup": true,
+    "id": 30049,
+    "brand": "Salon Line",
+    "name": "Tônico Fortalecedor Salon Line S.O.S Bomba 100ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3501368.webp",
+    "isFirstInGroup": false,
+    "id": 30050,
+    "brand": "Salon Line",
+    "name": "Gelatina Salon Line #todecacho Alta Definição 550g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20024795.webp",
+    "isFirstInGroup": true,
+    "id": 30053,
+    "brand": "Truss",
+    "name": "Reconstrutor Capilar Truss Uso Obrigatório 260ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20024795.webp",
+    "isFirstInGroup": false,
+    "id": 30054,
+    "brand": "Truss",
+    "name": "Sérum Noturno Truss Night Spa 250ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20024793.webp",
+    "isFirstInGroup": true,
+    "id": 30055,
+    "brand": "Kérastase",
+    "name": "Óleo Kérastase Elixir Ultime L'Huile Originale 100ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20024793.webp",
+    "isFirstInGroup": false,
+    "id": 30056,
+    "brand": "Kérastase",
+    "name": "Máscara Kérastase Nutritive Masquintense 200ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20024793.webp",
+    "isFirstInGroup": false,
+    "id": 30057,
+    "brand": "Wella Professionals",
+    "name": "Óleo Capilar Wella Professionals Oil Reflections 100ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20024793.webp",
+    "isFirstInGroup": false,
+    "id": 30059,
+    "brand": "Sebastian Professional",
+    "name": "Óleo Capilar Sebastian Professional Dark Oil 95ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684359.webp",
+    "isFirstInGroup": true,
+    "id": 30062,
+    "brand": "Vichy",
+    "name": "Shampoo Vichy Dercos Oil-Correction Regulador 300ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684359.webp",
+    "isFirstInGroup": false,
+    "id": 30065,
+    "brand": "Ducray",
+    "name": "Shampoo Antiqueda Ducray Anaphase+ 200ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684359.webp",
+    "isFirstInGroup": false,
+    "id": 30066,
+    "brand": "Pielus",
+    "name": "Shampoo Anticaspa Pielus DI Theraskin 120ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684359.webp",
+    "isFirstInGroup": false,
+    "id": 30067,
+    "brand": "Darrow",
+    "name": "Shampoo Anticaspa Doctar Plus Darrow 140ml"
+  },
+  {
+    "groupImage": "/products/principia_gel.png",
+    "isFirstInGroup": true,
+    "id": 30068,
+    "brand": "EMS Genérico",
+    "name": "Shampoo Cetoconazol 20mg/g Genérico EMS 100ml"
+  },
+  {
+    "groupImage": "/products/principia_gel.png",
+    "isFirstInGroup": false,
+    "id": 30092,
+    "brand": "Principia",
+    "name": "Gel de Limpeza Facial Principia GL-01 350g"
+  },
+  {
+    "groupImage": "/products/principia_gel.png",
+    "isFirstInGroup": false,
+    "id": 30093,
+    "brand": "Principia",
+    "name": "Gel de Limpeza com Ácido Salicílico Principia GL-02 350g"
+  },
+  {
+    "groupImage": "/products/principia_gel.png",
+    "isFirstInGroup": false,
+    "id": 30166,
+    "brand": "Acnase",
+    "name": "Creme Dermatológico Antiacne Acnase 20g"
+  },
+  {
+    "groupImage": "/products/principia_gel.png",
+    "isFirstInGroup": false,
+    "id": 30168,
+    "brand": "Medley",
+    "name": "Gel Adapaleno 1mg/g Tratamento da Acne Medley Genérico 30g"
+  },
+  {
+    "groupImage": "/products/principia_gel.png",
+    "isFirstInGroup": false,
+    "id": 30169,
+    "brand": "Cimed",
+    "name": "Gel Peróxido de Benzoíla 5% Acnezil Cimed 60g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20320747.webp",
+    "isFirstInGroup": true,
+    "id": 30069,
+    "brand": "La Roche-Posay",
+    "name": "Protetor Solar Facial La Roche-Posay Anthelios Airlicium FPS 70 Sem Cor 40g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20320747.webp",
+    "isFirstInGroup": false,
+    "id": 30070,
+    "brand": "La Roche-Posay",
+    "name": "Protetor Solar La Roche-Posay Anthelios Ultra Cover FPS 60 Cor 2.0 40g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684360.webp",
+    "isFirstInGroup": true,
+    "id": 30071,
+    "brand": "ISDIN",
+    "name": "Fotoprotetor ISDIN Fusion Water FPS 60 50ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684360.webp",
+    "isFirstInGroup": false,
+    "id": 30073,
+    "brand": "ISDIN",
+    "name": "Fotoprotetor ISDIN FotoUltra Age Repair FPS 50 50ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/15416032.webp",
+    "isFirstInGroup": true,
+    "id": 30074,
+    "brand": "Mantecorp",
+    "name": "Protetor Solar Mantecorp Episol Sec FPS 60 60g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/15416032.webp",
+    "isFirstInGroup": false,
+    "id": 30075,
+    "brand": "Mantecorp",
+    "name": "Protetor Solar Mantecorp Episol Color FPS 70 Pele Morena 40g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452311.webp",
+    "isFirstInGroup": true,
+    "id": 30082,
+    "brand": "CeraVe",
+    "name": "Gel de Limpeza Facial CeraVe Pele Normal a Oleosa 473ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452311.webp",
+    "isFirstInGroup": false,
+    "id": 30312,
+    "brand": "CeraVe",
+    "name": "Kit CeraVe Cuidados Essenciais Pele Normal a Seca: Loção 473ml + Gel de Limpeza 473ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/12732453.webp",
+    "isFirstInGroup": true,
+    "id": 30083,
+    "brand": "CeraVe",
+    "name": "Loção de Limpeza Hidratante CeraVe Pele Normal a Seca 473ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/12732453.webp",
+    "isFirstInGroup": false,
+    "id": 30097,
+    "brand": "CeraVe",
+    "name": "Loção Facial Hidratante CeraVe com Niacinamida 52ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452312.webp",
+    "isFirstInGroup": true,
+    "id": 30084,
+    "brand": "La Roche-Posay",
+    "name": "Gel de Limpeza La Roche-Posay Effaclar Concentrado 300g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452312.webp",
+    "isFirstInGroup": false,
+    "id": 30085,
+    "brand": "La Roche-Posay",
+    "name": "Gel de Limpeza La Roche-Posay Effaclar Alta Tolerância 300g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452312.webp",
+    "isFirstInGroup": false,
+    "id": 30313,
+    "brand": "La Roche-Posay",
+    "name": "Kit La Roche-Posay Antiacne: Effaclar Concentrado 300g + Sérum Ultra Concentrado 30ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684355.webp",
+    "isFirstInGroup": true,
+    "id": 30086,
+    "brand": "Darrow",
+    "name": "Gel de Limpeza Facial Darrow Actine 400g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18684355.webp",
+    "isFirstInGroup": false,
+    "id": 30094,
+    "brand": "Vichy",
+    "name": "Gel de Limpeza Facial Vichy Normaderm Phytosolution 300g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/4583907.webp",
+    "isFirstInGroup": true,
+    "id": 30087,
+    "brand": "Bioderma",
+    "name": "Gel de Limpeza Bioderma Sébium Gel Moussant Actif 200ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/4583907.webp",
+    "isFirstInGroup": false,
+    "id": 30088,
+    "brand": "Bioderma",
+    "name": "Gel de Limpeza Facial Bioderma Sensibio Gel Moussant 200ml"
+  },
+  {
+    "groupImage": "/products/cetaphil_lotion.jpg",
+    "isFirstInGroup": true,
+    "id": 30090,
+    "brand": "Cetaphil",
+    "name": "Espuma de Limpeza Cetaphil Pro AC Dermacontrol 236ml"
+  },
+  {
+    "groupImage": "/products/cetaphil_lotion.jpg",
+    "isFirstInGroup": false,
+    "id": 30091,
+    "brand": "Cetaphil",
+    "name": "Loção de Limpeza Suave Cetaphil 473ml"
+  },
+  {
+    "groupImage": "/products/cetaphil_lotion.jpg",
+    "isFirstInGroup": false,
+    "id": 30170,
+    "brand": "Cetaphil",
+    "name": "Sérum Hidratante Facial Cetaphil Optimal Hydration 30ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3533676.webp",
+    "isFirstInGroup": true,
+    "id": 30098,
+    "brand": "La Roche-Posay",
+    "name": "Hidratante Facial La Roche-Posay Toleriane Sensitive Creme 40ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3533676.webp",
+    "isFirstInGroup": false,
+    "id": 30114,
+    "brand": "La Roche-Posay",
+    "name": "Bálsamo Reparador Labial La Roche-Posay Cicaplast Lábios 7,5ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546025.webp",
+    "isFirstInGroup": true,
+    "id": 30099,
+    "brand": "Vichy",
+    "name": "Fortalecedor Facial Diário Vichy Minéral 89 50ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546025.webp",
+    "isFirstInGroup": false,
+    "id": 30193,
+    "brand": "Avène",
+    "name": "Bálsamo Relipidante Nutritivo Avène XeraCalm A.D 400ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546022.webp",
+    "isFirstInGroup": true,
+    "id": 30100,
+    "brand": "Mantecorp",
+    "name": "Hidratante Restaurador Facial Mantecorp Epidrat Calm 40g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546022.webp",
+    "isFirstInGroup": false,
+    "id": 30101,
+    "brand": "Mantecorp",
+    "name": "Gel Hidratante Facial Mantecorp Epidrat Acqua 50g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546022.webp",
+    "isFirstInGroup": false,
+    "id": 30191,
+    "brand": "Bioderma",
+    "name": "Creme Hidratante Corporal Ultra Nutritivo Bioderma Atoderm 500ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": true,
+    "id": 30102,
+    "brand": "Principia",
+    "name": "Sérum Principia Niacinamida 10% + Zinco PCA 1% NC-01 30ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": false,
+    "id": 30103,
+    "brand": "Principia",
+    "name": "Sérum Principia Vitamina C 10% + Ácido Ferúlico VC-10 30ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": false,
+    "id": 30104,
+    "brand": "Principia",
+    "name": "Sérum Principia Ácido Glicólico 7% AL-01 30ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": false,
+    "id": 30105,
+    "brand": "Principia",
+    "name": "Sérum Principia Retinol 0,3% RN-03 30ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": false,
+    "id": 30173,
+    "brand": "Principia",
+    "name": "Sérum Facial Principia Ácido Mandélico 10% + Alfa-Arbutin 1% AM-10 30ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": false,
+    "id": 30352,
+    "brand": "Principia",
+    "name": "Tônico Esfoliante Facial Principia Ácido Lático 8% + Aloe Vera AL-8 100ml"
+  },
+  {
+    "groupImage": "/products/principia_serum.jpg",
+    "isFirstInGroup": false,
+    "id": 30353,
+    "brand": "Principia",
+    "name": "Sérum Uniformizador Facial Principia Ácido Tranexâmico 3% + Niacinamida AT-01 30ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546026.webp",
+    "isFirstInGroup": true,
+    "id": 30110,
+    "brand": "Carmed",
+    "name": "Hidratante Labial Carmed Fini Beijos 10g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546026.webp",
+    "isFirstInGroup": false,
+    "id": 30111,
+    "brand": "Carmed",
+    "name": "Hidratante Labial Carmed Fini Bananas 10g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546026.webp",
+    "isFirstInGroup": false,
+    "id": 30112,
+    "brand": "Nivea",
+    "name": "Protetor Labial Nivea Med Repair FPS 15 4,8g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546026.webp",
+    "isFirstInGroup": false,
+    "id": 30113,
+    "brand": "Nivea",
+    "name": "Hidratante Labial Nivea Morango Shine 4,8g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546026.webp",
+    "isFirstInGroup": false,
+    "id": 30194,
+    "brand": "Nivea",
+    "name": "Protetor Labial Nivea Amora Shine 4,8g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546030.webp",
+    "isFirstInGroup": true,
+    "id": 30115,
+    "brand": "Dove",
+    "name": "Sabonete em Barra Dove Original Hidratação 90g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546030.webp",
+    "isFirstInGroup": false,
+    "id": 30116,
+    "brand": "Protex",
+    "name": "Sabonete em Barra Protex Antibacteriano Limpeza Profunda 85g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546030.webp",
+    "isFirstInGroup": false,
+    "id": 30118,
+    "brand": "Phebo",
+    "name": "Sabonete em Barra Tradicional Phebo Odor de Rosas 90g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546030.webp",
+    "isFirstInGroup": false,
+    "id": 30119,
+    "brand": "Soapex",
+    "name": "Sabonete em Barra Antibacteriano Soapex 1% 80g"
+  },
+  {
+    "groupImage": "/products/bepantol_baby.jpg",
+    "isFirstInGroup": true,
+    "id": 30117,
+    "brand": "Granado",
+    "name": "Sabonete Líquido Tradicional Glicerina Granado Bebê 250ml"
+  },
+  {
+    "groupImage": "/products/bepantol_baby.jpg",
+    "isFirstInGroup": false,
+    "id": 30208,
+    "brand": "Bioderma",
+    "name": "Gel de Banho Infantil Suave Bioderma ABCDerm Gel Moussant 1 Litro"
+  },
+  {
+    "groupImage": "/products/bepantol_baby.jpg",
+    "isFirstInGroup": false,
+    "id": 30298,
+    "brand": "Lansinoh",
+    "name": "Pomada de Lanolina Pura HPA para Seios e Mamilos Lansinoh 40g"
+  },
+  {
+    "groupImage": "/products/bepantol_baby.jpg",
+    "isFirstInGroup": false,
+    "id": 30299,
+    "brand": "Regenesis",
+    "name": "Suplemento Vitamínico Pré-Natal Regenesis Premium 60 Cápsulas"
+  },
+  {
+    "groupImage": "/products/bepantol_baby.jpg",
+    "isFirstInGroup": false,
+    "id": 30320,
+    "brand": "Lillo",
+    "name": "Aspirador Nasal Infantil com Estojo de Sucção Lillo"
+  },
+  {
+    "groupImage": "/products/bepantol_baby.jpg",
+    "isFirstInGroup": false,
+    "id": 30355,
+    "brand": "Mustela",
+    "name": "Creme Antiestrias Maternité Mustela Ação Dupla 150ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546032.webp",
+    "isFirstInGroup": true,
+    "id": 30121,
+    "brand": "Perspirex",
+    "name": "Desodorante Antitranspirante Roll-On Perspirex Original 20ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546032.webp",
+    "isFirstInGroup": false,
+    "id": 30122,
+    "brand": "Herbíssimo",
+    "name": "Desodorante Creme Tradicional Herbíssimo 55g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546032.webp",
+    "isFirstInGroup": false,
+    "id": 30200,
+    "brand": "Rexona",
+    "name": "Desodorante Antitranspirante Aerossol Rexona Men Invisible 150ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18425072.webp",
+    "isFirstInGroup": true,
+    "id": 30123,
+    "brand": "Colgate",
+    "name": "Creme Dental Colgate Total 12 Clean Mint 90g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18425072.webp",
+    "isFirstInGroup": false,
+    "id": 30124,
+    "brand": "Colgate",
+    "name": "Creme Dental Colgate Luminous White Brilliant 70g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/18425072.webp",
+    "isFirstInGroup": false,
+    "id": 30126,
+    "brand": "Oral-B",
+    "name": "Creme Dental Oral-B 3D White Glamorous White 70g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546036.webp",
+    "isFirstInGroup": true,
+    "id": 30127,
+    "brand": "Elmex",
+    "name": "Creme Dental Elmex Anticárie com Fluoreto de Amina 75ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/17546036.webp",
+    "isFirstInGroup": false,
+    "id": 30204,
+    "brand": "Colgate",
+    "name": "Creme Dental Colgate PerioGard Proteção Gengival 90g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19575682.webp",
+    "isFirstInGroup": true,
+    "id": 30132,
+    "brand": "O.B.",
+    "name": "Absorvente Interno O.B. ProComfort Médio 16 Unidades"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19575682.webp",
+    "isFirstInGroup": false,
+    "id": 30210,
+    "brand": "Tampax",
+    "name": "Absorvente Interno Tampax Pérola Regular com Aplicador Plástico 8 Unidades"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/10890497.webp",
+    "isFirstInGroup": true,
+    "id": 30138,
+    "brand": "Centrum",
+    "name": "Multivitamínico Centrum de A a Zinco 60 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/10890497.webp",
+    "isFirstInGroup": false,
+    "id": 30139,
+    "brand": "Centrum",
+    "name": "Multivitamínico Centrum Mulher 60 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/16727697.webp",
+    "isFirstInGroup": true,
+    "id": 30140,
+    "brand": "Lavitan",
+    "name": "Multivitamínico Lavitan A-Z Original 60 Drágeas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/16727697.webp",
+    "isFirstInGroup": false,
+    "id": 30141,
+    "brand": "Lavitan",
+    "name": "Suplemento Lavitan Cabelos e Unhas 60 Cápsulas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19575692.webp",
+    "isFirstInGroup": true,
+    "id": 30143,
+    "brand": "Dux Nutrition",
+    "name": "Whey Protein Concentrado Dux Nutrition Baunilha 900g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19575692.webp",
+    "isFirstInGroup": false,
+    "id": 30220,
+    "brand": "Growth Supplements",
+    "name": "Whey Protein Concentrado 80% Growth Supplements Natural 1kg"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539180.webp",
+    "isFirstInGroup": true,
+    "id": 30145,
+    "brand": "Addera D3",
+    "name": "Vitamina D Addera D3 7.000UI 4 Cápsulas Gelatinosas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539180.webp",
+    "isFirstInGroup": false,
+    "id": 30222,
+    "brand": "Dprev",
+    "name": "Suplemento de Vitamina D3 Dprev 50.000 UI 4 Cápsulas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539180.webp",
+    "isFirstInGroup": false,
+    "id": 30374,
+    "brand": "Color Andina",
+    "name": "Adoçante 100% Stevia Líquido Color Andina 60ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539201.webp",
+    "isFirstInGroup": true,
+    "id": 30148,
+    "brand": "Cimegripe",
+    "name": "Cimegripe Paracetamol 400mg 20 Cápsulas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539201.webp",
+    "isFirstInGroup": false,
+    "id": 30263,
+    "brand": "Resfenol",
+    "name": "Resfenol Antigripal Kley Hertz 20 Cápsulas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539201.webp",
+    "isFirstInGroup": false,
+    "id": 30264,
+    "brand": "Multigrip",
+    "name": "Multigrip Paracetamol + Clorfeniramina + Fenilefrina 20 Cápsulas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539201.webp",
+    "isFirstInGroup": false,
+    "id": 30265,
+    "brand": "Naldecon",
+    "name": "Naldecon Noite Paracetamol + Clorfeniramina 24 Comprimidos"
+  },
+  {
+    "groupImage": "/products/vick_vaporub_50g.jpg",
+    "isFirstInGroup": true,
+    "id": 30149,
+    "brand": "Vick",
+    "name": "Pomada Descongestionante Vick VapoRub 50g"
+  },
+  {
+    "groupImage": "/products/vick_vaporub_50g.jpg",
+    "isFirstInGroup": false,
+    "id": 30150,
+    "brand": "Vick",
+    "name": "Inalador Nasal Portátil Vick 0,5ml"
+  },
+  {
+    "groupImage": "/products/vick_vaporub_50g.jpg",
+    "isFirstInGroup": false,
+    "id": 30223,
+    "brand": "Vick",
+    "name": "Chá Antigripal Vick Pyrena Paracetamol 500mg Mel e Limão 1 Sachê 5g"
+  },
+  {
+    "groupImage": "/products/vick_vaporub_50g.jpg",
+    "isFirstInGroup": false,
+    "id": 30318,
+    "brand": "Vick",
+    "name": "Pastilhas Vick Sabor Cereja Caixa com 5 Sachês"
+  },
+  {
+    "groupImage": "/products/vick_vaporub_50g.jpg",
+    "isFirstInGroup": false,
+    "id": 30401,
+    "brand": "Vick",
+    "name": "Vick Inalador Nasal Portátil Descongestionante 415mg"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539205.webp",
+    "isFirstInGroup": true,
+    "id": 30151,
+    "brand": "Neosoro",
+    "name": "Descongestionante Nasal Neosoro Adulto 30ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539205.webp",
+    "isFirstInGroup": false,
+    "id": 30224,
+    "brand": "Salsep",
+    "name": "Solução Nasal Spray 360 Graus Salsep 50ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539205.webp",
+    "isFirstInGroup": false,
+    "id": 30317,
+    "brand": "Maresis",
+    "name": "Maresis Solução Nasal e Spray Nasal Jato Contínuo 100ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539220.webp",
+    "isFirstInGroup": true,
+    "id": 30152,
+    "brand": "Eno",
+    "name": "Sal de Fruta Eno Tradicional Efervescente 100g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539220.webp",
+    "isFirstInGroup": false,
+    "id": 30153,
+    "brand": "Estomazil",
+    "name": "Antiácido Estomazil Pó Sabor Abacaxi 6 Envelopes de 5g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539220.webp",
+    "isFirstInGroup": false,
+    "id": 30226,
+    "brand": "Gaviscon",
+    "name": "Suspensão Oral para Azia Gaviscon Sabor Menta 150ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539220.webp",
+    "isFirstInGroup": false,
+    "id": 30227,
+    "brand": "Pepsamar",
+    "name": "Antiácido Pepsamar 230mg Hidróxido de Alumínio 20 Comprimidos Mastigáveis"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539220.webp",
+    "isFirstInGroup": false,
+    "id": 30278,
+    "brand": "Sonrisal",
+    "name": "Sonrisal 2 Comprimidos Efervescentes Limão"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19502999.webp",
+    "isFirstInGroup": true,
+    "id": 30155,
+    "brand": "Epocler",
+    "name": "Protetor Hepático Epocler 6 Flaconetes de 10ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19502999.webp",
+    "isFirstInGroup": false,
+    "id": 30156,
+    "brand": "Engov",
+    "name": "Analgésico e Antiácido Engov 12 Comprimidos"
+  },
+  {
+    "groupImage": "/products/curativo_bandaid.jpg",
+    "isFirstInGroup": true,
+    "id": 30157,
+    "brand": "Band-Aid",
+    "name": "Curativo Band-Aid Transparente Johnson's 40 Unidades"
+  },
+  {
+    "groupImage": "/products/curativo_bandaid.jpg",
+    "isFirstInGroup": false,
+    "id": 30230,
+    "brand": "Nexcare",
+    "name": "Curativos À Prova D'Água Nexcare Mickey Mouse / Tradicional 10 Unidades"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": true,
+    "id": 30160,
+    "brand": "Lacrifilm",
+    "name": "Colírio Lubrificante Ocular Lacrifilm 0,5% 15ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30161,
+    "brand": "Systane",
+    "name": "Colírio Lubrificante Oftálmico Systane Ultra 15ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30162,
+    "brand": "Renu",
+    "name": "Solução Multiuso para Lentes de Contato Renu Fresh 355ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30237,
+    "brand": "Optive",
+    "name": "Solução Oftálmica Lubrificante Optive Allergan 15ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30238,
+    "brand": "Fresh Tears",
+    "name": "Colírio Lubrificante Ocular Fresh Tears Allergan 15ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30239,
+    "brand": "BioTrue",
+    "name": "Solução Multiuso para Lentes de Contato BioTrue Bausch+Lomb 300ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30240,
+    "brand": "Opti-Free",
+    "name": "Solução para Lentes de Contato Opti-Free PureMoist Alcon 300ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30241,
+    "brand": "Alcon",
+    "name": "Estojo para Lentes de Contato Antibacteriano com Pinça e Aplicador"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19897415.webp",
+    "isFirstInGroup": false,
+    "id": 30372,
+    "brand": "Cerumin",
+    "name": "Gotas Otológicas Cerumin Removedor de Cera Auricular 8ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": true,
+    "id": 30228,
+    "brand": "Repoflor",
+    "name": "Probiótico Repoflor 250mg 6 Cápsulas"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": false,
+    "id": 30229,
+    "brand": "Lactulona",
+    "name": "Laxativo Osmótico Lactulona Xarope Sabor Ameixa 120ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": false,
+    "id": 30279,
+    "brand": "Lacday",
+    "name": "Enzima Lactase Lacday 10.000 FCC ALU 30 Comprimidos Mastigáveis"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": false,
+    "id": 30280,
+    "brand": "Tamarine",
+    "name": "Laxativo Fitoterápico Tamarine Geleia Ameixa 150g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": false,
+    "id": 30281,
+    "brand": "Dulcolax",
+    "name": "Dulcolax 5mg Bisacodil 20 Drágeas Gastrorresistentes"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": false,
+    "id": 30328,
+    "brand": "Pedialyte",
+    "name": "Pedialyte Pro Solução Eletrolítica Sabor Uva 500ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/19926624.webp",
+    "isFirstInGroup": false,
+    "id": 30329,
+    "brand": "Floralyte",
+    "name": "Floralyte 45 Solução Reidratante Oral Sabor Maçã 500ml"
+  },
+  {
+    "groupImage": "/products/tadalafila_medley_20mg.jpg",
+    "isFirstInGroup": true,
+    "id": 30242,
+    "brand": "Medley",
+    "name": "Tadalafila 20mg Medley Genérico 4 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/tadalafila_medley_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30243,
+    "brand": "Eurofarma",
+    "name": "Tadalafila 20mg Eurofarma Genérico 4 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/tadalafila_medley_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30245,
+    "brand": "EMS",
+    "name": "Tadalafila 20mg EMS Genérico 4 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/tadalafila_5mg_diario.jpg",
+    "isFirstInGroup": true,
+    "id": 30246,
+    "brand": "Medley",
+    "name": "Tadalafila 5mg Medley Uso Diário 30 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/tadalafila_5mg_diario.jpg",
+    "isFirstInGroup": false,
+    "id": 30247,
+    "brand": "Eurofarma",
+    "name": "Tadalafila 5mg Eurofarma Uso Diário 30 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/tadalafila_5mg_diario.jpg",
+    "isFirstInGroup": false,
+    "id": 30248,
+    "brand": "Cimed",
+    "name": "Tadalafila 5mg Cimed Uso Diário 30 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/cialis_20mg.jpg",
+    "isFirstInGroup": true,
+    "id": 30249,
+    "brand": "Cialis",
+    "name": "Cialis 20mg Eli Lilly 4 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/cialis_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30250,
+    "brand": "Cialis",
+    "name": "Cialis Diário 5mg Eli Lilly 30 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/cialis_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30300,
+    "brand": "Jontex",
+    "name": "Preservativo Masculino Jontex Sensitive Lubrificado 8 Unidades"
+  },
+  {
+    "groupImage": "/products/cialis_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30301,
+    "brand": "K-Med",
+    "name": "Gel Lubrificante Íntimo à Base de Água K-Med Tradicional 50g"
+  },
+  {
+    "groupImage": "/products/cialis_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30379,
+    "brand": "Prudence",
+    "name": "Preservativo Masculino Prudence Cores e Sabores Sortidos 3 Unidades"
+  },
+  {
+    "groupImage": "/products/dipirona_prati_500mg.png",
+    "isFirstInGroup": true,
+    "id": 30252,
+    "brand": "Anador",
+    "name": "Anador 500mg Dipirona Monoidratada 24 Comprimidos"
+  },
+  {
+    "groupImage": "/products/dipirona_prati_500mg.png",
+    "isFirstInGroup": false,
+    "id": 30253,
+    "brand": "Lisador",
+    "name": "Lisador Dipi Dipirona + Prometazina + Adifenina 16 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/14982036.webp",
+    "isFirstInGroup": true,
+    "id": 30254,
+    "brand": "Torsilax",
+    "name": "Torsilax Relaxante Muscular e Anti-inflamatório 30 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/14982036.webp",
+    "isFirstInGroup": false,
+    "id": 30255,
+    "brand": "Tandrilax",
+    "name": "Tandrilax Relaxante Muscular e Anti-inflamatório 30 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/14982036.webp",
+    "isFirstInGroup": false,
+    "id": 30256,
+    "brand": "Mioflex",
+    "name": "Mioflex A Relaxante Muscular e Analgésico 12 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20032441.webp",
+    "isFirstInGroup": true,
+    "id": 30259,
+    "brand": "Sumax",
+    "name": "Sumax 50mg Succinato de Sumatriptana 2 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20032441.webp",
+    "isFirstInGroup": false,
+    "id": 30260,
+    "brand": "EMS",
+    "name": "Naratriptana 2,5mg Cloridrato EMS Genérico 10 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/20032441.webp",
+    "isFirstInGroup": false,
+    "id": 30315,
+    "brand": "Maxalt",
+    "name": "Maxalt 10mg Benzoato de Rizatriptana 2 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3557045.webp",
+    "isFirstInGroup": true,
+    "id": 30261,
+    "brand": "Medley",
+    "name": "Diclofenaco Potássico 50mg Medley Genérico 20 Comprimidos"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3557045.webp",
+    "isFirstInGroup": false,
+    "id": 30262,
+    "brand": "Eurofarma",
+    "name": "Cetoprofeno 150mg Eurofarma Genérico 10 Comprimidos de Liberação Prolongada"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539240.webp",
+    "isFirstInGroup": true,
+    "id": 30271,
+    "brand": "Melagrião",
+    "name": "Xarope Fitoterápico Melagrião Guaco e Própolis 150ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3539240.webp",
+    "isFirstInGroup": false,
+    "id": 30272,
+    "brand": "Melagrião",
+    "name": "Spray Bucal Melagrião Própolis e Gengibre 30ml"
+  },
+  {
+    "groupImage": "/products/allegra_120mg.jpg",
+    "isFirstInGroup": true,
+    "id": 30273,
+    "brand": "Allegra",
+    "name": "Antialérgico Allegra 120mg Fexofenadina 10 Comprimidos"
+  },
+  {
+    "groupImage": "/products/allegra_120mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30274,
+    "brand": "Medley",
+    "name": "Loratadina 10mg Medley Genérico 12 Comprimidos"
+  },
+  {
+    "groupImage": "/products/allegra_120mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30324,
+    "brand": "Zyrtec",
+    "name": "Zyrtec 10mg Dicloridrato de Cetirizina 12 Comprimidos"
+  },
+  {
+    "groupImage": "/products/omeprazol_medley_20mg.jpg",
+    "isFirstInGroup": true,
+    "id": 30276,
+    "brand": "Medley",
+    "name": "Omeprazol 20mg Medley Genérico 28 Cápsulas"
+  },
+  {
+    "groupImage": "/products/omeprazol_medley_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30277,
+    "brand": "Eurofarma",
+    "name": "Pantoprazol 40mg Eurofarma Genérico 28 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/omeprazol_medley_20mg.jpg",
+    "isFirstInGroup": false,
+    "id": 30327,
+    "brand": "EMS",
+    "name": "Esomeprazol 40mg Magnésico EMS Genérico 28 Comprimidos Revestidos"
+  },
+  {
+    "groupImage": "/products/aparelho_pressao_omron.jpg",
+    "isFirstInGroup": true,
+    "id": 30283,
+    "brand": "Omron",
+    "name": "Aparelho de Pressão Digital Automático de Braço Omron HEM-7122"
+  },
+  {
+    "groupImage": "/products/aparelho_pressao_omron.jpg",
+    "isFirstInGroup": false,
+    "id": 30284,
+    "brand": "Omron",
+    "name": "Aparelho de Pressão Digital de Pulso Omron Control HEM-6124"
+  },
+  {
+    "groupImage": "/products/aparelho_pressao_omron.jpg",
+    "isFirstInGroup": false,
+    "id": 30291,
+    "brand": "Omron",
+    "name": "Balança Digital de Bioimpedância Omron HBF-514C com 7 Indicadores"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": true,
+    "id": 30285,
+    "brand": "G-Tech",
+    "name": "Termômetro Digital Clínico com Alarme Sonoro G-Tech"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30286,
+    "brand": "G-Tech",
+    "name": "Termômetro Digital e Termômetro Infravermelho Sem Contato G-Tech Baby"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30287,
+    "brand": "G-Tech",
+    "name": "Oxímetro Digital de Dedo Portátil G-Tech OLED"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30290,
+    "brand": "G-Tech",
+    "name": "Inalador e Nebulizador Ultrassônico de Rede Vibratória Portátil Mesh G-Tech"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30302,
+    "brand": "Clearblue",
+    "name": "Teste de Gravidez Digital Clearblue com Indicador de Semanas"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30319,
+    "brand": "NoseWash",
+    "name": "Seringa para Lavagem Nasal com Bico de Silicone NoseWash"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30321,
+    "brand": "Medicate",
+    "name": "Espaçador Valvulado para Inalação Infantil Medicate"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30322,
+    "brand": "G-Tech",
+    "name": "Umidificador de Ar Ultrassônico Bivolt Allergy Free G-Tech 3 Litros"
+  },
+  {
+    "groupImage": "/products/termometro_digital_gtech.jpg",
+    "isFirstInGroup": false,
+    "id": 30371,
+    "brand": "Mack's",
+    "name": "Protetor Auricular de Silicone Macio Mack's 2 Pares"
+  },
+  {
+    "groupImage": "/products/glicosimetro_accuchek.jpg",
+    "isFirstInGroup": true,
+    "id": 30288,
+    "brand": "Accu-Chek",
+    "name": "Glicosímetro e Monitor de Glicemia Accu-Chek Guide Me Sistema de Teste"
+  },
+  {
+    "groupImage": "/products/glicosimetro_accuchek.jpg",
+    "isFirstInGroup": false,
+    "id": 30289,
+    "brand": "Accu-Chek",
+    "name": "Tiras Reagentes para Glicemia Accu-Chek Guide 50 Tiras"
+  },
+  {
+    "groupImage": "/products/glicosimetro_accuchek.jpg",
+    "isFirstInGroup": false,
+    "id": 30403,
+    "brand": "Accu-Chek",
+    "name": "Lancetas Descartáveis para Teste de Glicemia Accu-Chek Softclix 100 un"
+  },
+  {
+    "groupImage": "/products/aptamil_profutura.jpg",
+    "isFirstInGroup": true,
+    "id": 30296,
+    "brand": "Philips Avent",
+    "name": "Mamadeira Pétala 260ml Philips Avent Bico Anticólica"
+  },
+  {
+    "groupImage": "/products/aptamil_profutura.jpg",
+    "isFirstInGroup": false,
+    "id": 30361,
+    "brand": "Philips Avent",
+    "name": "Chupeta Ortodôntica Ultra Air 0-6 Meses Philips Avent 2 Unidades"
+  },
+  {
+    "groupImage": "/products/aptamil_profutura.jpg",
+    "isFirstInGroup": false,
+    "id": 30404,
+    "brand": "Philips Avent",
+    "name": "Bomba Tira-Leite Manual com Almofada Massageadora Philips Avent"
+  },
+  {
+    "groupImage": "/products/nan_supreme_1.jpg",
+    "isFirstInGroup": true,
+    "id": 30297,
+    "brand": "Enfamil",
+    "name": "Fórmula Infantil Enfamil Premium 1 com MFGM e DHA 800g"
+  },
+  {
+    "groupImage": "/products/nan_supreme_1.jpg",
+    "isFirstInGroup": false,
+    "id": 30362,
+    "brand": "Milnutri",
+    "name": "Composto Lácteo Infantil Milnutri Complete Danone 800g"
+  },
+  {
+    "groupImage": "/products/nan_supreme_1.jpg",
+    "isFirstInGroup": false,
+    "id": 30363,
+    "brand": "Nestogeno",
+    "name": "Fórmula Infantil Nestogeno 1 Nestlé 800g"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452318.webp",
+    "isFirstInGroup": true,
+    "id": 30344,
+    "brand": "Batiste",
+    "name": "Shampoo a Seco Batiste Original Fresh 200ml"
+  },
+  {
+    "groupImage": "https://product-data.raiadrogasil.io/images/3452318.webp",
+    "isFirstInGroup": false,
+    "id": 30405,
+    "brand": "Mundial",
+    "name": "Alicate de Unha e Cutícula Aço Inox Mundial 522 Classic"
+  }
+]

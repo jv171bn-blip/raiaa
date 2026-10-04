@@ -1,0 +1,1598 @@
+[
+  {
+    "id": 11012,
+    "name": "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Rosto",
+    "image": "https://product-data.raiadrogasil.io/images/3533676.webp"
+  },
+  {
+    "id": 1007146,
+    "name": "Sensor de Monitoramento de Glicose FreeStyle Libre 2 Plus Sistema Flash",
+    "category": "Medicamentos",
+    "subcategory": "Monitores e Testes",
+    "image": "https://product-data.raiadrogasil.io/images/8310106.webp"
+  },
+  {
+    "id": 14951,
+    "name": "Colírio Hyabak 0,15% 10ml",
+    "category": "Vida Saudável",
+    "subcategory": "Colírios",
+    "image": "https://product-data.raiadrogasil.io/images/19897415.webp"
+  },
+  {
+    "id": 11003,
+    "name": "Novalgina Dipirona 1g 20 comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Dor e Febre",
+    "image": "https://product-data.raiadrogasil.io/images/19575688.webp"
+  },
+  {
+    "id": 11004,
+    "name": "Nicorette Icemint 4mg Goma Mastigável para Parar de Fumar 30 unidades",
+    "category": "Medicamentos",
+    "subcategory": "Anti-tabagismo",
+    "image": "https://product-data.raiadrogasil.io/images/3539200.webp"
+  },
+  {
+    "id": 11005,
+    "name": "Buscopan Composto Butilbrometo de Escopolamina 10mg + Dipirona Sódica 250mg 20 comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Dores Abdominais",
+    "image": "https://product-data.raiadrogasil.io/images/6936879.webp"
+  },
+  {
+    "id": 11006,
+    "name": "Probiótico Enterogermina 10 frascos de 5ml",
+    "category": "Medicamentos",
+    "subcategory": "Digestão",
+    "image": "https://product-data.raiadrogasil.io/images/19926624.webp"
+  },
+  {
+    "id": 11007,
+    "name": "Dipirona Monoidratada 1g 10 comprimidos Cimed Genérico",
+    "category": "Medicamentos",
+    "subcategory": "Genéricos",
+    "image": "https://product-data.raiadrogasil.io/images/3821266.webp"
+  },
+  {
+    "id": 1065925,
+    "name": "Polivitamínico Neosil Attack Cabelo, Pele E Unha 90 comprimidos",
+    "category": "Vida Saudável",
+    "subcategory": "Cabelo e Unhas",
+    "image": "https://product-data.raiadrogasil.io/images/19779862.webp"
+  },
+  {
+    "id": 11013,
+    "name": "Loção Hidratante Corporal CeraVe Pele Seca a Extra Seca Hidratação Prolongada 473ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/12732453.webp"
+  },
+  {
+    "id": 11014,
+    "name": "Azelan 150mg/g Gel 30g",
+    "category": "Dermocosméticos",
+    "subcategory": "Tratamento de Acne",
+    "image": "https://product-data.raiadrogasil.io/images/3452298.webp"
+  },
+  {
+    "id": 11015,
+    "name": "Fórmula Infantil Ninho Fases 1+ Nestlé 1 a 3 anos 800g",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Compostos Lácteos",
+    "image": "https://product-data.raiadrogasil.io/images/13076606.webp"
+  },
+  {
+    "id": 11016,
+    "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Séruns e Tratamento",
+    "image": "https://product-data.raiadrogasil.io/images/17546022.webp"
+  },
+  {
+    "id": 2043,
+    "name": "Lenços Umedecidos Pampers Fresh Clean 144 Toalhinhas (Embalagem Tripla)",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Higiene do Bebê",
+    "image": "https://product-data.raiadrogasil.io/images/17547850.webp"
+  },
+  {
+    "id": 102,
+    "name": "Hidratante Facial Nivea Antissinais Creme 100g",
+    "category": "Dermocosméticos",
+    "subcategory": "Rosto",
+    "image": "https://product-data.raiadrogasil.io/images/20142242.webp"
+  },
+  {
+    "id": 103,
+    "name": "Desodorante Antitranspirante Aerosol Rexona Men Sem Perfume 72h 150ml",
+    "category": "Beleza & Higiene",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/19644592.webp"
+  },
+  {
+    "id": 108,
+    "name": "Melatonina 0,21mg bwell Gotas 30ml",
+    "category": "Vida Saudável",
+    "subcategory": "Suplementos",
+    "image": "https://product-data.raiadrogasil.io/images/14052840.webp"
+  },
+  {
+    "id": 109,
+    "name": "Protetor Solar Facial Needs Beauty FPS 70 40g",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/3474545.webp"
+  },
+  {
+    "id": 110,
+    "name": "Lenço Umedecido Needs Baby Recém-Nascido 176 Unidades",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Higiene do Bebê",
+    "image": "https://product-data.raiadrogasil.io/images/11719163.webp"
+  },
+  {
+    "id": 111,
+    "name": "Creatina Hardcore Integralmedica 150g",
+    "category": "Vida Saudável",
+    "subcategory": "Performance & Fitness",
+    "image": "https://product-data.raiadrogasil.io/images/3448861.webp"
+  },
+  {
+    "id": 117,
+    "name": "Creme Multirrestaurador Bepantol Derma Toque Seco 30g",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratação Facial",
+    "image": "https://product-data.raiadrogasil.io/images/3468536.webp"
+  },
+  {
+    "id": 118,
+    "name": "Shampoo Anticaspa Darrow Doctar Plus 120ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoo",
+    "image": "https://product-data.raiadrogasil.io/images/18684359.webp"
+  },
+  {
+    "id": 119,
+    "name": "Vitamina C Efervescente Redoxon Tripla Ação 10 Comprimidos",
+    "category": "Vida Saudável",
+    "subcategory": "Vitaminas",
+    "image": "https://product-data.raiadrogasil.io/images/3501712.webp"
+  },
+  {
+    "id": 120,
+    "name": "Desodorante Antitranspirante Roll-On Dove Original 50ml",
+    "category": "Beleza & Higiene",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/18091662.webp"
+  },
+  {
+    "id": 201,
+    "name": "Creme Dental Colgate Total Prevenção Ativa Original Mint 90g",
+    "category": "Higiene Pessoal",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/18425072.webp"
+  },
+  {
+    "id": 202,
+    "name": "Protetor Solar Facial La Roche-Posay Anthelios Ultra Cover+ FPS 85 Cor 03 30g",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/20320747.webp"
+  },
+  {
+    "id": 203,
+    "name": "Creme Dental Bioniq White Filler 75ml",
+    "category": "Higiene Pessoal",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/17012076.webp"
+  },
+  {
+    "id": 204,
+    "name": "Óleo + Sérum Bifásico Dove Bond Intense Repair + Peptídeo 110ml",
+    "category": "Beleza",
+    "subcategory": "Finalizadores para Cabelo",
+    "image": "https://product-data.raiadrogasil.io/images/16880229.webp"
+  },
+  {
+    "id": 205,
+    "name": "Probiótico Enterogermina Criança e Adulto 5 Frascos 5ml",
+    "category": "Medicamentos",
+    "subcategory": "Digestão",
+    "image": "https://product-data.raiadrogasil.io/images/19927491.webp"
+  },
+  {
+    "id": 206,
+    "name": "Novalgina Infantil Dipirona 50mg/ml Solução Oral 100ml + Seringa Dosadora",
+    "category": "Medicamentos",
+    "subcategory": "Dor e Febre",
+    "image": "https://product-data.raiadrogasil.io/images/6760143.webp"
+  },
+  {
+    "id": 207,
+    "name": "Absorvente Intimus Noturno Toda Protegida Cobertura Suave Com Abas 30 unidades",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Cuidados para a Mamãe",
+    "image": "https://product-data.raiadrogasil.io/images/19704051.webp"
+  },
+  {
+    "id": 208,
+    "name": "Vitamina B6 Materna Nause Nestlé para Gestantes 60 Cápsulas",
+    "category": "Vida Saudável",
+    "subcategory": "Vitaminas",
+    "image": "https://product-data.raiadrogasil.io/images/20253124.webp"
+  },
+  {
+    "id": 209,
+    "name": "Suplemento Alimentar Nestlé Nutren Control Chocolate 200ml",
+    "category": "Vida Saudável",
+    "subcategory": "Nutrição Especializada",
+    "image": "https://product-data.raiadrogasil.io/images/20172305.webp"
+  },
+  {
+    "id": 210,
+    "name": "Lactobacillus Materna Optic-Lac Nestlé Pós-Parto 30 Cápsulas",
+    "category": "Vida Saudável",
+    "subcategory": "Probióticos",
+    "image": "https://product-data.raiadrogasil.io/images/20253133.webp"
+  },
+  {
+    "id": 211,
+    "name": "Complemento Alimentar Nutren Sênior 50+ Baunilha 200ml",
+    "category": "Vida Saudável",
+    "subcategory": "Complementos Alimentares",
+    "image": "https://product-data.raiadrogasil.io/images/16391193.webp"
+  },
+  {
+    "id": 212,
+    "name": "Lenço Umedecido Needs Baby Aloe Vera 176 Unidades",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Higiene do Bebê",
+    "image": "https://product-data.raiadrogasil.io/images/19458486.webp"
+  },
+  {
+    "id": 213,
+    "name": "Spray para Garganta Natz Mel e Própolis 30ml",
+    "category": "Medicamentos",
+    "subcategory": "Remédios Naturais",
+    "image": "https://product-data.raiadrogasil.io/images/3814476.webp"
+  },
+  {
+    "id": 301,
+    "name": "Flosser Infantil para Limpeza dos Dentes GU",
+    "category": "Higiene Bucal",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/3463387.webp"
+  },
+  {
+    "id": 302,
+    "name": "Energético Relâmpago 1 flaconete de 10ml",
+    "category": "Vida Saudável",
+    "subcategory": "Performance & Fitness",
+    "image": "https://product-data.raiadrogasil.io/images/14181353.webp"
+  },
+  {
+    "id": 303,
+    "name": "Sabonete em Barra Nivea Antibacteriana 3 em 1",
+    "category": "Beleza & Higiene",
+    "subcategory": "Sabonetes",
+    "image": "https://product-data.raiadrogasil.io/images/10728164.webp"
+  },
+  {
+    "id": 304,
+    "name": "Cálcio 600mg + Vitamina D 400UI Osteonutri 30",
+    "category": "Vida Saudável",
+    "subcategory": "Vitaminas",
+    "image": "https://product-data.raiadrogasil.io/images/3517035.webp"
+  },
+  {
+    "id": 305,
+    "name": "Água Micelar Demaquilante Bioderma Sensibio H2O",
+    "category": "Dermocosméticos",
+    "subcategory": "Rosto",
+    "image": "https://product-data.raiadrogasil.io/images/4583907.webp"
+  },
+  {
+    "id": 306,
+    "name": "Fumagum 2mg Menta 36 Gomas",
+    "category": "Medicamentos",
+    "subcategory": "Anti-tabagismo",
+    "image": "https://product-data.raiadrogasil.io/images/15263858.webp"
+  },
+  {
+    "id": 307,
+    "name": "Protetor Solar Facial Toque Seco FPS 50",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/19866257.webp"
+  },
+  {
+    "id": 308,
+    "name": "Shampoo Pantene Pro-V Liso Extremo",
+    "category": "Cabelos",
+    "subcategory": "Shampoo",
+    "image": "https://product-data.raiadrogasil.io/images/15925906.webp"
+  },
+  {
+    "id": 701,
+    "name": "Pente de Cabelo Dentes Largos Ricca Rosa",
+    "category": "Cabelos",
+    "subcategory": "Pentes e Escovas",
+    "image": "https://product-data.raiadrogasil.io/images/17026725.webp"
+  },
+  {
+    "id": 702,
+    "name": "Escova de Cabelo Desembaraçadora Ricca Flex Oval",
+    "category": "Cabelos",
+    "subcategory": "Pentes e Escovas",
+    "image": "https://product-data.raiadrogasil.io/images/3671366.webp"
+  },
+  {
+    "id": 703,
+    "name": "Condicionador Pantene Pro-V Liso Extremo 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionador",
+    "image": "https://product-data.raiadrogasil.io/images/15925924.webp"
+  },
+  {
+    "id": 704,
+    "name": "Máscara de Tratamento Elseve Reparação Total 5 300g",
+    "category": "Cabelos",
+    "subcategory": "Máscara Capilar",
+    "image": "https://product-data.raiadrogasil.io/images/19504050.webp"
+  },
+  {
+    "id": 1202,
+    "name": "Neosaldina Analgésico para Enxaqueca e Dor de Cabeça 20 Drágeas",
+    "category": "Medicamentos",
+    "subcategory": "Dor e Febre",
+    "image": "https://product-data.raiadrogasil.io/images/20032441.webp"
+  },
+  {
+    "id": 1203,
+    "name": "Torsilax Relaxante Muscular e Anti-inflamatório 30 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Dores Musculares",
+    "image": "https://product-data.raiadrogasil.io/images/14982036.webp"
+  },
+  {
+    "id": 1206,
+    "name": "Paracetamol 750mg Genérico EMS 20 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Genéricos",
+    "image": "https://product-data.raiadrogasil.io/images/3557049.webp"
+  },
+  {
+    "id": 1207,
+    "name": "Nimesulida 100mg Genérico Eurofarma 12 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Genéricos",
+    "image": "https://product-data.raiadrogasil.io/images/14982032.webp"
+  },
+  {
+    "id": 1209,
+    "name": "Luftal Gel Caps 125mg para Gases 10 Cápsulas Gelatinosas",
+    "category": "Medicamentos",
+    "subcategory": "Digestão",
+    "image": "https://product-data.raiadrogasil.io/images/19139208.webp"
+  },
+  {
+    "id": 1210,
+    "name": "Epocler Flaconete Sabor Abacaxi 10ml",
+    "category": "Medicamentos",
+    "subcategory": "Digestão",
+    "image": "https://product-data.raiadrogasil.io/images/19502999.webp"
+  },
+  {
+    "id": 1211,
+    "name": "Omeprazol 20mg Genérico Teuto 28 Cápsulas",
+    "category": "Medicamentos",
+    "subcategory": "Genéricos",
+    "image": "https://product-data.raiadrogasil.io/images/14966168.webp"
+  },
+  {
+    "id": 1301,
+    "name": "Protetor Solar Anthelios Airlicium+ FPS 80 La Roche-Posay 40g",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/4514499.webp"
+  },
+  {
+    "id": 1304,
+    "name": "Hidratante Facial Neutrogena Hydro Boost Water Gel 50g",
+    "category": "Dermocosméticos",
+    "subcategory": "Rosto",
+    "image": "https://product-data.raiadrogasil.io/images/15959745.webp"
+  },
+  {
+    "id": 1401,
+    "name": "100% Whey Protein Max Titanium Baunilha 900g",
+    "category": "Vida Saudável",
+    "subcategory": "Performance & Fitness",
+    "image": "https://product-data.raiadrogasil.io/images/3515001.webp"
+  },
+  {
+    "id": 1402,
+    "name": "Creatina Monoidratada Pura Max Titanium 300g",
+    "category": "Vida Saudável",
+    "subcategory": "Performance & Fitness",
+    "image": "https://product-data.raiadrogasil.io/images/3514982.webp"
+  },
+  {
+    "id": 1403,
+    "name": "Multivitamínico Centrum de A a Zinco 60 Comprimidos",
+    "category": "Vida Saudável",
+    "subcategory": "Vitaminas",
+    "image": "https://product-data.raiadrogasil.io/images/10890497.webp"
+  },
+  {
+    "id": 1404,
+    "name": "Suplemento Lavitan A-Z Original 60 Comprimidos",
+    "category": "Vida Saudável",
+    "subcategory": "Vitaminas",
+    "image": "https://product-data.raiadrogasil.io/images/16727697.webp"
+  },
+  {
+    "id": 1501,
+    "name": "Enxaguante Bucal Listerine Cool Mint 500ml",
+    "category": "Beleza & Higiene",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/20130345.webp"
+  },
+  {
+    "id": 1503,
+    "name": "Óleo Extraordinário Elseve L'Oréal Paris 100ml",
+    "category": "Cabelos",
+    "subcategory": "Finalizadores para Cabelo",
+    "image": "https://product-data.raiadrogasil.io/images/20024799.webp"
+  },
+  {
+    "id": 1504,
+    "name": "Shampoo Elseve Bond Repair Reparação Molecular 250ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoo",
+    "image": "https://product-data.raiadrogasil.io/images/15109462.webp"
+  },
+  {
+    "id": 1505,
+    "name": "Óleo Capilar Pantene Miracles Óleo Poderoso 95ml",
+    "category": "Cabelos",
+    "subcategory": "Finalizadores para Cabelo",
+    "image": "https://product-data.raiadrogasil.io/images/10596917.webp"
+  },
+  {
+    "id": 2002,
+    "name": "Tylenol Sinus Paracetamol 500mg + Pseudoefedrina 24 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Dor e Febre",
+    "image": "https://product-data.raiadrogasil.io/images/3539196.webp"
+  },
+  {
+    "id": 2005,
+    "name": "Losartana Potássica 50mg EMS Genérico 30 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Genéricos",
+    "image": "https://product-data.raiadrogasil.io/images/3557041.webp"
+  },
+  {
+    "id": 2006,
+    "name": "Glifage XR 500mg Cloridrato de Metformina Merck 30 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Diabetes & Glicemia",
+    "image": "https://product-data.raiadrogasil.io/images/3539180.webp"
+  },
+  {
+    "id": 2007,
+    "name": "Allegra 120mg Antialérgico Sanofi 10 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Alergias",
+    "image": "https://product-data.raiadrogasil.io/images/3539185.webp"
+  },
+  {
+    "id": 2008,
+    "name": "Allegra 180mg Antialérgico Sanofi 10 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Alergias",
+    "image": "https://product-data.raiadrogasil.io/images/19575690.webp"
+  },
+  {
+    "id": 2009,
+    "name": "Neosoro Solução Nasal Cloridrato de Nafazolina 30ml",
+    "category": "Medicamentos",
+    "subcategory": "Respiratório",
+    "image": "https://product-data.raiadrogasil.io/images/3539205.webp"
+  },
+  {
+    "id": 2010,
+    "name": "Vick Vaporub Pomada Descongestionante 50g",
+    "category": "Medicamentos",
+    "subcategory": "Respiratório",
+    "image": "https://product-data.raiadrogasil.io/images/3539215.webp"
+  },
+  {
+    "id": 2011,
+    "name": "Sal de Frutas Eno Tradicional Efervescente 100g",
+    "category": "Medicamentos",
+    "subcategory": "Digestão",
+    "image": "https://product-data.raiadrogasil.io/images/3539220.webp"
+  },
+  {
+    "id": 2012,
+    "name": "Dramin B6 Dimenidrinato + Vitamina B6 30 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Enjoo & Náusea",
+    "image": "https://product-data.raiadrogasil.io/images/3539230.webp"
+  },
+  {
+    "id": 2013,
+    "name": "Vonau Flash 4mg Ondansetrona Biolab 10 Comprimidos Dissolução Rápida",
+    "category": "Medicamentos",
+    "subcategory": "Enjoo & Náusea",
+    "image": "https://product-data.raiadrogasil.io/images/3539235.webp"
+  },
+  {
+    "id": 2014,
+    "name": "Alivium Gotas 100mg/ml Ibuprofeno Mantecorp 20ml",
+    "category": "Medicamentos",
+    "subcategory": "Dor e Febre",
+    "image": "https://product-data.raiadrogasil.io/images/3539240.webp"
+  },
+  {
+    "id": 2015,
+    "name": "Ibuprofeno 600mg EMS Genérico 20 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Genéricos",
+    "image": "https://product-data.raiadrogasil.io/images/3557045.webp"
+  },
+  {
+    "id": 2016,
+    "name": "Dorflex Relaxante Muscular e Analgésico Sanofi 36 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Dores Musculares",
+    "image": "https://product-data.raiadrogasil.io/images/19575685.webp"
+  },
+  {
+    "id": 2017,
+    "name": "Cimegripe 20 Cápsulas Antigripal Cimed",
+    "category": "Medicamentos",
+    "subcategory": "Gripes e Resfriados",
+    "image": "https://product-data.raiadrogasil.io/images/3539201.webp"
+  },
+  {
+    "id": 2018,
+    "name": "Benegrip Multi Alívio de Gripes e Resfriados 20 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Gripes e Resfriados",
+    "image": "https://product-data.raiadrogasil.io/images/3539202.webp"
+  },
+  {
+    "id": 2019,
+    "name": "Coristina D Descongestionante e Antigripal 16 Comprimidos",
+    "category": "Medicamentos",
+    "subcategory": "Gripes e Resfriados",
+    "image": "https://product-data.raiadrogasil.io/images/3539203.webp"
+  },
+  {
+    "id": 2020,
+    "name": "Histamin 2mg Maleato de Dexclorfeniramina 20 Comprimidos Neo Química",
+    "category": "Medicamentos",
+    "subcategory": "Alergias",
+    "image": "https://product-data.raiadrogasil.io/images/3557042.webp"
+  },
+  {
+    "id": 2021,
+    "name": "Deocil SL 10mg Cetorolaco Trometamol 10 Comprimidos Sublinguais",
+    "category": "Medicamentos",
+    "subcategory": "Dor e Febre",
+    "image": "https://product-data.raiadrogasil.io/images/3539204.webp"
+  },
+  {
+    "id": 2022,
+    "name": "Floratil 200mg Probiótico Saccharomyces boulardii 4 Cápsulas",
+    "category": "Medicamentos",
+    "subcategory": "Digestão",
+    "image": "https://product-data.raiadrogasil.io/images/3539208.webp"
+  },
+  {
+    "id": 2025,
+    "name": "Protetor Solar Facial ISDIN Fotoprotetor Fusion Water Magic FPS 50 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/18684360.webp"
+  },
+  {
+    "id": 2026,
+    "name": "Protetor Solar Facial com Cor ISDIN Fusion Water Color FPS 50 Cor Clara 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/15416035.webp"
+  },
+  {
+    "id": 2027,
+    "name": "Fortalecedor Facial Diário Vichy Minéral 89 Concentrado 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Séruns e Tratamento",
+    "image": "https://product-data.raiadrogasil.io/images/17546025.webp"
+  },
+  {
+    "id": 2028,
+    "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+    "category": "Dermocosméticos",
+    "subcategory": "Limpeza Facial",
+    "image": "https://product-data.raiadrogasil.io/images/18684355.webp"
+  },
+  {
+    "id": 2029,
+    "name": "Água Termal Calmante Avène Spray 300ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Rosto",
+    "image": "https://product-data.raiadrogasil.io/images/15416040.webp"
+  },
+  {
+    "id": 2030,
+    "name": "Gel de Limpeza Facial Needs Controle de Oleosidade 300g",
+    "category": "Dermocosméticos",
+    "subcategory": "Limpeza Facial",
+    "image": "https://product-data.raiadrogasil.io/images/14181355.webp"
+  },
+  {
+    "id": 2031,
+    "name": "Protetor Solar Facial Needs FPS 70 Toque Seco 40g",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/14181356.webp"
+  },
+  {
+    "id": 2032,
+    "name": "Água Micelar Demaquilante Bioderma Sensibio H2O 250ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Limpeza Facial",
+    "image": "https://product-data.raiadrogasil.io/images/15416031.webp"
+  },
+  {
+    "id": 2033,
+    "name": "Mantecorp Episol Sec OC FPS 60 Protetor Solar Facial 60g",
+    "category": "Dermocosméticos",
+    "subcategory": "Proteção Solar",
+    "image": "https://product-data.raiadrogasil.io/images/15416032.webp"
+  },
+  {
+    "id": 2044,
+    "name": "Mustela Bebê Gel Lavante Suave com Abacate Orgânico 500ml",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Higiene do Bebê",
+    "image": "https://product-data.raiadrogasil.io/images/15416045.webp"
+  },
+  {
+    "id": 2046,
+    "name": "Sabonete Líquido Johnson's Baby Da Cabeça Aos Pés 400ml",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Higiene do Bebê",
+    "image": "https://product-data.raiadrogasil.io/images/20130341.webp"
+  },
+  {
+    "id": 20491,
+    "name": "Fórmula Infantil Danone Aptamil Premium 1 800g",
+    "category": "Mamãe & Bebê",
+    "subcategory": "Fórmulas Infantis",
+    "image": "https://product-data.raiadrogasil.io/images/19503007.webp"
+  },
+  {
+    "id": 2051,
+    "name": "Colágeno Hidrolisado Verisol Sanavita Sabor Neutro 300g",
+    "category": "Vida Saudável",
+    "subcategory": "Colágeno",
+    "image": "https://product-data.raiadrogasil.io/images/3514980.webp"
+  },
+  {
+    "id": 2052,
+    "name": "Creatina Creapure 100% Pura Darkness Integralmédica 250g",
+    "category": "Vida Saudável",
+    "subcategory": "Performance & Fitness",
+    "image": "https://product-data.raiadrogasil.io/images/3514985.webp"
+  },
+  {
+    "id": 2053,
+    "name": "Redoxon Vitamina C Efervescente 1g Sabor Laranja 10 Comprimidos",
+    "category": "Vida Saudável",
+    "subcategory": "Vitaminas",
+    "image": "https://product-data.raiadrogasil.io/images/10890499.webp"
+  },
+  {
+    "id": 2054,
+    "name": "Ômega 3 1000mg EPA DHA Catarinense Nutrição 120 Cápsulas",
+    "category": "Vida Saudável",
+    "subcategory": "Suplementos",
+    "image": "https://product-data.raiadrogasil.io/images/14181358.webp"
+  },
+  {
+    "id": 2055,
+    "name": "bwell Ômega 3 1000mg 120 Cápsulas",
+    "category": "Vida Saudável",
+    "subcategory": "Suplementos",
+    "image": "https://product-data.raiadrogasil.io/images/14181359.webp"
+  },
+  {
+    "id": 2061,
+    "name": "Creme Dental Sensodyne Limpeza Profunda Ação Desensibilizante 90g",
+    "category": "Beleza & Higiene",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/20130346.webp"
+  },
+  {
+    "id": 2062,
+    "name": "Escova Dental Curaprox CS 5460 Ultra Soft Trio (3 Unidades)",
+    "category": "Beleza & Higiene",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/20130350.webp"
+  },
+  {
+    "id": 2063,
+    "name": "Fio Dental Johnson's Reach Essencial Menta 100 Metros",
+    "category": "Beleza & Higiene",
+    "subcategory": "Higiene Bucal",
+    "image": "https://product-data.raiadrogasil.io/images/20130352.webp"
+  },
+  {
+    "id": 2064,
+    "name": "Desodorante Antitranspirante Dove Original Aerossol 150ml (Kit Leve 2)",
+    "category": "Beleza & Higiene",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/19644590.webp"
+  },
+  {
+    "id": 2065,
+    "name": "Absorvente Always Noturno Seca com Abas 32 Unidades",
+    "category": "Beleza & Higiene",
+    "subcategory": "Cuidados Íntimos",
+    "image": "https://product-data.raiadrogasil.io/images/17547840.webp"
+  },
+  {
+    "id": 2067,
+    "name": "Algodão em Disco Needs com 100 Unidades",
+    "category": "Beleza & Higiene",
+    "subcategory": "Cuidados Diários",
+    "image": "https://product-data.raiadrogasil.io/images/14181357.webp"
+  },
+  {
+    "id": 2071,
+    "name": "Tratamento Reconstrutor Capilar Truss Uso Obrigatório 260ml",
+    "category": "Cabelos",
+    "subcategory": "Finalizadores para Cabelo",
+    "image": "https://product-data.raiadrogasil.io/images/20024795.webp"
+  },
+  {
+    "id": 2072,
+    "name": "Máscara de Nutrição Wella Professionals Invigo Nutri-Enrich 500ml",
+    "category": "Cabelos",
+    "subcategory": "Máscara Capilar",
+    "image": "https://product-data.raiadrogasil.io/images/20024792.webp"
+  },
+  {
+    "id": 2073,
+    "name": "Óleo Capilar Wella Professionals Oil Reflections Luminous Reflective 100ml",
+    "category": "Cabelos",
+    "subcategory": "Finalizadores para Cabelo",
+    "image": "https://product-data.raiadrogasil.io/images/20024793.webp"
+  },
+  {
+    "id": 2074,
+    "name": "Máscara Capilar Lola Cosmetics Morte Súbita Hidratação Total 450g",
+    "category": "Cabelos",
+    "subcategory": "Máscara Capilar",
+    "image": "https://product-data.raiadrogasil.io/images/20024794.webp"
+  },
+  {
+    "id": 2078,
+    "name": "Curativo Band-Aid Transparente Johnson's 40 Unidades",
+    "category": "Medicamentos",
+    "subcategory": "Primeiros Socorros",
+    "image": "https://product-data.raiadrogasil.io/images/20130355.webp"
+  },
+  {
+    "id": 2082,
+    "name": "Soro Fisiológico 0,9% Solução Fisiológica Farmax 500ml",
+    "category": "Medicamentos",
+    "subcategory": "Primeiros Socorros",
+    "image": "https://product-data.raiadrogasil.io/images/19502995.webp"
+  },
+  {
+    "id": 30004,
+    "name": "Condicionador Elseve Óleo Extraordinário Nutrição 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionadores",
+    "image": "https://product-data.raiadrogasil.io/images/3501255.webp"
+  },
+  {
+    "id": 30006,
+    "name": "Condicionador Elseve Reparação Total 5 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionadores",
+    "image": "https://product-data.raiadrogasil.io/images/3501251.webp"
+  },
+  {
+    "id": 30008,
+    "name": "Condicionador Elseve Hidra Hialurônico 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionadores",
+    "image": "https://product-data.raiadrogasil.io/images/15413671.webp"
+  },
+  {
+    "id": 30012,
+    "name": "Condicionador Pantene Hidratação 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionadores",
+    "image": "https://product-data.raiadrogasil.io/images/3501301.webp"
+  },
+  {
+    "id": 30014,
+    "name": "Condicionador Pantene Restauração 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionadores",
+    "image": "https://product-data.raiadrogasil.io/images/3501303.webp"
+  },
+  {
+    "id": 30017,
+    "name": "Shampoo Pantene Micelar Purifica & Hidrata 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/15413684.webp"
+  },
+  {
+    "id": 30018,
+    "name": "Shampoo Dove Reconstrução + Aminoácido 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501310.webp"
+  },
+  {
+    "id": 30019,
+    "name": "Condicionador Dove Reconstrução + Aminoácido 400ml",
+    "category": "Cabelos",
+    "subcategory": "Condicionadores",
+    "image": "https://product-data.raiadrogasil.io/images/3501311.webp"
+  },
+  {
+    "id": 30021,
+    "name": "Shampoo Dove Ritual de Reparação 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501314.webp"
+  },
+  {
+    "id": 30023,
+    "name": "Shampoo TRESemmé Hidratação Profunda 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501320.webp"
+  },
+  {
+    "id": 30024,
+    "name": "Shampoo TRESemmé Reconstrução e Força 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501322.webp"
+  },
+  {
+    "id": 30028,
+    "name": "Shampoo Head & Shoulders Anticaspa Limpeza Diária 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501330.webp"
+  },
+  {
+    "id": 30030,
+    "name": "Shampoo Head & Shoulders Hidratação 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501334.webp"
+  },
+  {
+    "id": 30031,
+    "name": "Shampoo Head & Shoulders Men 3 em 1 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501336.webp"
+  },
+  {
+    "id": 30032,
+    "name": "Shampoo Clear Men Anticaspa Limpeza Profunda 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501340.webp"
+  },
+  {
+    "id": 30033,
+    "name": "Shampoo Clear Detox Diário 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501342.webp"
+  },
+  {
+    "id": 30034,
+    "name": "Shampoo Clear Hidratação Intensa 400ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501344.webp"
+  },
+  {
+    "id": 30035,
+    "name": "Shampoo Seda Ceramidas 325ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501350.webp"
+  },
+  {
+    "id": 30036,
+    "name": "Shampoo Palmolive Naturals Óleo de Argan 350ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501352.webp"
+  },
+  {
+    "id": 30037,
+    "name": "Shampoo Salon Line Meu Liso Muito + Liso 300ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3501354.webp"
+  },
+  {
+    "id": 30040,
+    "name": "Óleo Capilar Elseve Extraordinário L'Oréal Paris 100ml",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501257.webp"
+  },
+  {
+    "id": 30042,
+    "name": "Leave-in Elseve Cicatri Renov 100ml",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501259.webp"
+  },
+  {
+    "id": 30043,
+    "name": "Ampola Pantene 3 Minutos Milagrosos Restauração 3x15ml",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501305.webp"
+  },
+  {
+    "id": 30044,
+    "name": "Máscara de Tratamento Pantene Pro-V Miracles Colágeno 270g",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/15413686.webp"
+  },
+  {
+    "id": 30047,
+    "name": "Máscara Lola Cosmetics Dream Cream 450g",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501362.webp"
+  },
+  {
+    "id": 30048,
+    "name": "Tônico do Crescimento Lola Cosmetics Rapunzel 250ml",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501364.webp"
+  },
+  {
+    "id": 30050,
+    "name": "Gelatina Salon Line #todecacho Alta Definição 550g",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501368.webp"
+  },
+  {
+    "id": 30051,
+    "name": "Banho de Creme Bio Extratus Tutano 250g",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501370.webp"
+  },
+  {
+    "id": 30052,
+    "name": "Máscara Haskell Cavalo Forte 300g",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3501372.webp"
+  },
+  {
+    "id": 30163,
+    "name": "Gel de Limpeza Facial Neutrogena Acne Proofing 200ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Limpeza Facial",
+    "image": "https://product-data.raiadrogasil.io/images/3533670.webp"
+  },
+  {
+    "id": 30164,
+    "name": "Gel de Limpeza Facial Eucerin DermoPure Oil Control 200ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Limpeza Facial",
+    "image": "https://product-data.raiadrogasil.io/images/3533671.webp"
+  },
+  {
+    "id": 30165,
+    "name": "Sérum Eucerin DermoPure Triple Effect Efeito Clareador Anti-Acne 40ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Séruns e Tratamento Facial",
+    "image": "https://product-data.raiadrogasil.io/images/3533672.webp"
+  },
+  {
+    "id": 30167,
+    "name": "Sabonete em Barra Antiacne Acnase Limpeza Profunda 80g",
+    "category": "Dermocosméticos",
+    "subcategory": "Sabonetes",
+    "image": "https://product-data.raiadrogasil.io/images/3533674.webp"
+  },
+  {
+    "id": 30171,
+    "name": "Sérum Hidratante Facial Concentrado Bioderma Hydrabio Hyalu+ 40ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Faciais",
+    "image": "https://product-data.raiadrogasil.io/images/3533678.webp"
+  },
+  {
+    "id": 30172,
+    "name": "Creme Hidratante Facial Eucerin Aquaporin Active 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Faciais",
+    "image": "https://product-data.raiadrogasil.io/images/3533679.webp"
+  },
+  {
+    "id": 30174,
+    "name": "Creme Facial Anti-Idade L'Oréal Revitalift Hialurônico Diurno FPS 20 49g",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533680.webp"
+  },
+  {
+    "id": 30175,
+    "name": "Sérum Noturno L'Oréal Revitalift Retinol Puro 30ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533681.webp"
+  },
+  {
+    "id": 30176,
+    "name": "Creme Anti-Idade L'Oréal Revitalift Laser X3 Tripla Ação 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533682.webp"
+  },
+  {
+    "id": 30177,
+    "name": "Sérum Clareador Facial Nivea Cellular Luminous 630 Antispot 30ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533683.webp"
+  },
+  {
+    "id": 30178,
+    "name": "Creme Redensificador Vichy Neovadiol Menopausa Dia 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533684.webp"
+  },
+  {
+    "id": 30179,
+    "name": "Creme Anti-Idade Noite Eucerin Hyaluron-Filler Elasticity 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533685.webp"
+  },
+  {
+    "id": 30180,
+    "name": "Creme Regenerador Celular Avène Hyaluron Activ B3 50ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533686.webp"
+  },
+  {
+    "id": 30181,
+    "name": "Sérum Tri-Therapy Lifting Anti-Idade Neostrata Skin Active 30ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533687.webp"
+  },
+  {
+    "id": 30182,
+    "name": "Sérum Rejuvenescedor Facial Mantecorp Ivy C Aox 30ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Antissinais",
+    "image": "https://product-data.raiadrogasil.io/images/3533689.webp"
+  },
+  {
+    "id": 30183,
+    "name": "Hidratante Corporal Neutrogena Norwegian Formula Sem Fragrância 500ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533691.webp"
+  },
+  {
+    "id": 30184,
+    "name": "Loção Hidratante Corporal Neutrogena Body Care Intensive Hidrata & Repara 400ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533692.webp"
+  },
+  {
+    "id": 30185,
+    "name": "Loção Deo-Hidratante Corporal Nivea Milk Pele Seca a Extrasseca 400ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533694.webp"
+  },
+  {
+    "id": 30186,
+    "name": "Loção Deo-Hidratante Corporal Nivea Soft Milk Pele Seca 400ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533695.webp"
+  },
+  {
+    "id": 30187,
+    "name": "Loção Desodorante Hidratante Corporal Dove Body Love Manteiga de Karité 400ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533696.webp"
+  },
+  {
+    "id": 30188,
+    "name": "Loção Hidratante Corporal Eucerin pH5 Pele Sensível 400ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533697.webp"
+  },
+  {
+    "id": 30189,
+    "name": "Loção Hidratante Corporal Eucerin UreaRepair Plus 10% Ureia 400ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533698.webp"
+  },
+  {
+    "id": 30190,
+    "name": "Loção Hidratante Corporal Diária ISDIN Ureadin 10 400ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/3533699.webp"
+  },
+  {
+    "id": 30192,
+    "name": "Bálsamo Reparador Triplo La Roche-Posay Lipikar Baume AP+M 400ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Hidratantes Corporais",
+    "image": "https://product-data.raiadrogasil.io/images/17546024.webp"
+  },
+  {
+    "id": 30194,
+    "name": "Protetor Labial Nivea Amora Shine 4,8g",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Lábios",
+    "image": "https://product-data.raiadrogasil.io/images/17546026.webp"
+  },
+  {
+    "id": 30195,
+    "name": "Protetor Labial Regenerador Bepantol Derma 7,5ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Lábios",
+    "image": "https://product-data.raiadrogasil.io/images/17546027.webp"
+  },
+  {
+    "id": 30196,
+    "name": "Reparador Labial SOS Eucerin Aquaphor 10ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Lábios",
+    "image": "https://product-data.raiadrogasil.io/images/17546028.webp"
+  },
+  {
+    "id": 30197,
+    "name": "Protetor Labial Vaseline Lip Therapy Original 7g",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Lábios",
+    "image": "https://product-data.raiadrogasil.io/images/17546029.webp"
+  },
+  {
+    "id": 30198,
+    "name": "Sabonete em Barra Fisiológico La Roche-Posay Lipikar Surgras 150g",
+    "category": "Dermocosméticos",
+    "subcategory": "Sabonetes",
+    "image": "https://product-data.raiadrogasil.io/images/17546030.webp"
+  },
+  {
+    "id": 30199,
+    "name": "Sabonete em Barra Purificante Bioderma Atoderm Pain Ultra 150g",
+    "category": "Dermocosméticos",
+    "subcategory": "Sabonetes",
+    "image": "https://product-data.raiadrogasil.io/images/17546031.webp"
+  },
+  {
+    "id": 30200,
+    "name": "Desodorante Antitranspirante Aerossol Rexona Men Invisible 150ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/17546032.webp"
+  },
+  {
+    "id": 30201,
+    "name": "Desodorante Antitranspirante Aerossol Dove Invisible Dry 150ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/17546033.webp"
+  },
+  {
+    "id": 30202,
+    "name": "Desodorante Antitranspirante Aerossol Nivea Pearl & Beauty 150ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/17546034.webp"
+  },
+  {
+    "id": 30203,
+    "name": "Desodorante Antitranspirante Aerossol Masculino Above Elements 150ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/17546035.webp"
+  },
+  {
+    "id": 30204,
+    "name": "Creme Dental Colgate PerioGard Proteção Gengival 90g",
+    "category": "Higiene Bucal",
+    "subcategory": "Cremes Dentais",
+    "image": "https://product-data.raiadrogasil.io/images/17546036.webp"
+  },
+  {
+    "id": 30205,
+    "name": "Enxaguante Bucal Colgate PerioGard Sem Álcool 250ml",
+    "category": "Higiene Bucal",
+    "subcategory": "Enxaguantes",
+    "image": "https://product-data.raiadrogasil.io/images/17546037.webp"
+  },
+  {
+    "id": 30206,
+    "name": "Creme Dental Parodontax Original com Flúor 90g",
+    "category": "Higiene Bucal",
+    "subcategory": "Cremes Dentais",
+    "image": "https://product-data.raiadrogasil.io/images/17546038.webp"
+  },
+  {
+    "id": 30207,
+    "name": "Enxaguante Bucal Colgate Plax Fresh Mint Sem Álcool 500ml",
+    "category": "Higiene Bucal",
+    "subcategory": "Enxaguantes",
+    "image": "https://product-data.raiadrogasil.io/images/17546039.webp"
+  },
+  {
+    "id": 30209,
+    "name": "Protetor Diário Carefree TodoDia Flexi Sem Perfume 80 Unidades",
+    "category": "Higiene Feminina",
+    "subcategory": "Protetores Diários",
+    "image": "https://product-data.raiadrogasil.io/images/19575681.webp"
+  },
+  {
+    "id": 30210,
+    "name": "Absorvente Interno Tampax Pérola Regular com Aplicador Plástico 8 Unidades",
+    "category": "Higiene Feminina",
+    "subcategory": "Absorventes",
+    "image": "https://product-data.raiadrogasil.io/images/19575682.webp"
+  },
+  {
+    "id": 30211,
+    "name": "Coletor Menstrual de Silicone Medicinal Inciclo Tipo A",
+    "category": "Higiene Feminina",
+    "subcategory": "Coletores Menstruais",
+    "image": "https://product-data.raiadrogasil.io/images/19575683.webp"
+  },
+  {
+    "id": 30212,
+    "name": "Aparelho de Barbear Gillette Fusion5 com 1 Carga",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Barba e Depilação",
+    "image": "https://product-data.raiadrogasil.io/images/19575684.webp"
+  },
+  {
+    "id": 30214,
+    "name": "Aparelho de Depilar Feminino Gillette Venus Breeze com 2 Cargas",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Barba e Depilação",
+    "image": "https://product-data.raiadrogasil.io/images/19575686.webp"
+  },
+  {
+    "id": 30215,
+    "name": "Espuma de Barbear Bozzano Pele Sensível 200ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Barba e Depilação",
+    "image": "https://product-data.raiadrogasil.io/images/19575687.webp"
+  },
+  {
+    "id": 30217,
+    "name": "Suplemento Vitamínico Líquido Lavitan Kids Tutti-Frutti 240ml",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Vitaminas Infantis",
+    "image": "https://product-data.raiadrogasil.io/images/19575689.webp"
+  },
+  {
+    "id": 30219,
+    "name": "Suplemento Ômega 3 Óleo de Peixe Equaliv 1000mg 120 Cápsulas",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Ômega 3",
+    "image": "https://product-data.raiadrogasil.io/images/19575691.webp"
+  },
+  {
+    "id": 30220,
+    "name": "Whey Protein Concentrado 80% Growth Supplements Natural 1kg",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Proteínas e Treino",
+    "image": "https://product-data.raiadrogasil.io/images/19575692.webp"
+  },
+  {
+    "id": 30221,
+    "name": "Vitamina C Efervescente Cewin 500mg 30 Comprimidos",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Vitamina C",
+    "image": "https://product-data.raiadrogasil.io/images/19575693.webp"
+  },
+  {
+    "id": 30282,
+    "name": "Fibras Naturais Psyllium 100% Puro Jasmine 200g",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Intestino",
+    "image": "https://product-data.raiadrogasil.io/images/12732465.webp"
+  },
+  {
+    "id": 30303,
+    "name": "Fralda Geriátrica Descartável TENA Slip Ultra Tamanho G 16 Unidades",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Cuidados Geriátricos",
+    "image": "https://product-data.raiadrogasil.io/images/3452300.webp"
+  },
+  {
+    "id": 30304,
+    "name": "Roupa Íntima Descartável Plenitud Protect Plus G/XG 16 Unidades",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Cuidados Geriátricos",
+    "image": "https://product-data.raiadrogasil.io/images/3452302.webp"
+  },
+  {
+    "id": 30305,
+    "name": "Repelente de Insetos Aerossol OFF! Family 200ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Repelentes",
+    "image": "https://product-data.raiadrogasil.io/images/3452303.webp"
+  },
+  {
+    "id": 30306,
+    "name": "Repelente Exposis Extrême Spray com Icaridina 100ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Repelentes",
+    "image": "https://product-data.raiadrogasil.io/images/3452304.webp"
+  },
+  {
+    "id": 30307,
+    "name": "Talco Desodorante Antisséptico para Pés Tenys Pé Baruel Tradicional 100g",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Cuidados com os Pés",
+    "image": "https://product-data.raiadrogasil.io/images/3452305.webp"
+  },
+  {
+    "id": 30308,
+    "name": "Óleo para Cuidado da Pele Bio-Oil 125ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Corpo e Banho",
+    "image": "https://product-data.raiadrogasil.io/images/3452306.webp"
+  },
+  {
+    "id": 30309,
+    "name": "Máscara Noturna Labial Coreana Laneige Lip Sleeping Mask Berry 20g",
+    "category": "K-Beauty",
+    "subcategory": "Lábios",
+    "image": "https://product-data.raiadrogasil.io/images/3452308.webp"
+  },
+  {
+    "id": 30310,
+    "name": "Essência de Mucina de Caracol Coreana COSRX Advanced Snail 96 100ml",
+    "category": "K-Beauty",
+    "subcategory": "Séruns e Essências",
+    "image": "https://product-data.raiadrogasil.io/images/3452310.webp"
+  },
+  {
+    "id": 30312,
+    "name": "Kit CeraVe Cuidados Essenciais Pele Normal a Seca: Loção 473ml + Gel de Limpeza 473ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Kits de Tratamento",
+    "image": "https://product-data.raiadrogasil.io/images/3452311.webp"
+  },
+  {
+    "id": 30313,
+    "name": "Kit La Roche-Posay Antiacne: Effaclar Concentrado 300g + Sérum Ultra Concentrado 30ml",
+    "category": "Dermocosméticos",
+    "subcategory": "Kits de Tratamento",
+    "image": "https://product-data.raiadrogasil.io/images/3452312.webp"
+  },
+  {
+    "id": 30326,
+    "name": "Pastilhas Valda Tradicional Própolis e Mentol Lata 50g",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Tosse e Garganta",
+    "image": "https://product-data.raiadrogasil.io/images/3452292.webp"
+  },
+  {
+    "id": 30342,
+    "name": "Acidificante Capilar Redensificador Lola Cosmetics Densidade 250g",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3452315.webp"
+  },
+  {
+    "id": 30343,
+    "name": "Queratina Líquida Carga de Proteínas Niely Gold 120ml",
+    "category": "Cabelos",
+    "subcategory": "Tratamentos Capilares",
+    "image": "https://product-data.raiadrogasil.io/images/3452317.webp"
+  },
+  {
+    "id": 30344,
+    "name": "Shampoo a Seco Batiste Original Fresh 200ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3452318.webp"
+  },
+  {
+    "id": 30345,
+    "name": "Kit de Coloração Permanente Imédia Excellence L'Oréal Paris Castanho Escuro 3.0",
+    "category": "Cabelos",
+    "subcategory": "Coloração",
+    "image": "https://product-data.raiadrogasil.io/images/13076600.webp"
+  },
+  {
+    "id": 30346,
+    "name": "Tonalizante Casting Creme Gloss L'Oréal Paris Chocolate 670",
+    "category": "Cabelos",
+    "subcategory": "Coloração",
+    "image": "https://product-data.raiadrogasil.io/images/13076605.webp"
+  },
+  {
+    "id": 30348,
+    "name": "Spray Retoque de Raiz Instantâneo Magic Retouch L'Oréal Castanho Claro 75ml",
+    "category": "Cabelos",
+    "subcategory": "Coloração",
+    "image": "https://product-data.raiadrogasil.io/images/13076626.webp"
+  },
+  {
+    "id": 30349,
+    "name": "Shampoo Roxo Matizador Desamarelador Haskell Silver 300ml",
+    "category": "Cabelos",
+    "subcategory": "Shampoos",
+    "image": "https://product-data.raiadrogasil.io/images/3710001.webp"
+  },
+  {
+    "id": 30351,
+    "name": "Cleansing Balm Bálsamo Demaquilante de Limpeza Banila Co Clean It Zero 100ml",
+    "category": "K-Beauty",
+    "subcategory": "Limpeza Facial",
+    "image": "https://product-data.raiadrogasil.io/images/3710003.webp"
+  },
+  {
+    "id": 30354,
+    "name": "Adesivos Secativos Hidrocoloides para Acne Needs 24 Patches",
+    "category": "Dermocosméticos",
+    "subcategory": "Acne e Pele Oleosa",
+    "image": "https://product-data.raiadrogasil.io/images/3710005.webp"
+  },
+  {
+    "id": 30357,
+    "name": "Óleo de Banho Hidratante Bioderma Atoderm Huile de Douche 1 Litro",
+    "category": "Dermocosméticos",
+    "subcategory": "Corpo e Banho",
+    "image": "https://product-data.raiadrogasil.io/images/3710009.webp"
+  },
+  {
+    "id": 30358,
+    "name": "Desodorante Antitranspirante Aerossol Masculino Old Spice VIP 150ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Desodorantes",
+    "image": "https://product-data.raiadrogasil.io/images/3710010.webp"
+  },
+  {
+    "id": 30359,
+    "name": "Escova Dental Elétrica e Escova Elétrica Recarregável Oral-B Vitality 100 CrossAction",
+    "category": "Higiene Bucal",
+    "subcategory": "Escovas Elétricas",
+    "image": "https://product-data.raiadrogasil.io/images/3710011.webp"
+  },
+  {
+    "id": 30360,
+    "name": "Fixador de Dentaduras e Próteses Corega Ultra Sem Sabor 68g",
+    "category": "Higiene Bucal",
+    "subcategory": "Próteses Dentárias",
+    "image": "https://product-data.raiadrogasil.io/images/3710012.webp"
+  },
+  {
+    "id": 30364,
+    "name": "Aparelho de Barbear Gillette Fusion5 ProGlide com Tecnologia FlexBall",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Barba e Depilação",
+    "image": "https://product-data.raiadrogasil.io/images/3710019.webp"
+  },
+  {
+    "id": 30365,
+    "name": "Balm Pós-Barba Hidratante Calmante Nivea Men Sensitive 100ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Barba e Depilação",
+    "image": "https://product-data.raiadrogasil.io/images/3710020.webp"
+  },
+  {
+    "id": 30366,
+    "name": "Removedor de Esmalte e Acetona Tradicional Lutex 100ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Unhas e Manicure",
+    "image": "https://product-data.raiadrogasil.io/images/3710022.webp"
+  },
+  {
+    "id": 30367,
+    "name": "Alicate de Cutícula Aço Inox Mundial Classic 522",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Unhas e Manicure",
+    "image": "https://product-data.raiadrogasil.io/images/3710024.webp"
+  },
+  {
+    "id": 30368,
+    "name": "Máscara de Cílios The Colossal Lavável Maybelline Preto",
+    "category": "Maquiagem",
+    "subcategory": "Olhos",
+    "image": "https://product-data.raiadrogasil.io/images/10701920.webp"
+  },
+  {
+    "id": 30369,
+    "name": "Batom Líquido Matte Maybelline SuperStay Matte Ink Longa Duração",
+    "category": "Maquiagem",
+    "subcategory": "Lábios",
+    "image": "https://product-data.raiadrogasil.io/images/10701921.webp"
+  },
+  {
+    "id": 30370,
+    "name": "Base Facial Líquida Maybelline Fit Me Efeito Matte 30ml",
+    "category": "Maquiagem",
+    "subcategory": "Rosto",
+    "image": "https://product-data.raiadrogasil.io/images/10701922.webp"
+  },
+  {
+    "id": 30373,
+    "name": "Suplemento L-Triptofano 500mg Catarinense 60 Cápsulas",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Sono e Relaxamento",
+    "image": "https://product-data.raiadrogasil.io/images/10701934.webp"
+  },
+  {
+    "id": 30375,
+    "name": "Adoçante Natural Xilitol Essential Nutrition 300g",
+    "category": "Alimentação Saudável",
+    "subcategory": "Diet e Adoçantes",
+    "image": "https://product-data.raiadrogasil.io/images/3539184.webp"
+  },
+  {
+    "id": 30377,
+    "name": "Fralda Geriátrica Descartável Bigfral DermaPlus Tamanho G 16 Unidades",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Cuidados Geriátricos",
+    "image": "https://product-data.raiadrogasil.io/images/3539186.webp"
+  },
+  {
+    "id": 30378,
+    "name": "Protetor de Colchão e Lençol Descartável Bigfral 10 Unidades",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Cuidados Geriátricos",
+    "image": "https://product-data.raiadrogasil.io/images/3539187.webp"
+  },
+  {
+    "id": 30380,
+    "name": "Repelente de Insetos Loção Repelex Family Care 100ml",
+    "category": "Cuidados Pessoais",
+    "subcategory": "Repelentes",
+    "image": "https://product-data.raiadrogasil.io/images/3539192.webp"
+  }
+]

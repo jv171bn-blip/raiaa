@@ -1,0 +1,690 @@
+[
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30001,
+    "name": "Shampoo Elseve Glycolic Gloss L'Oréal Paris 400ml",
+    "brand": "Elseve",
+    "image": "/products/mascara_elseve.jpg",
+    "reason": "Hair mask pot image on Shampoo product (Shampoo Elseve Glycolic Gloss L'Oréal Paris 400ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30007,
+    "name": "Shampoo Elseve Hidra Hialurônico 400ml",
+    "brand": "Elseve",
+    "image": "/products/mascara_elseve.jpg",
+    "reason": "Hair mask pot image on Shampoo product (Shampoo Elseve Hidra Hialurônico 400ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30010,
+    "name": "Shampoo Elseve Longo dos Sonhos 400ml",
+    "brand": "Elseve",
+    "image": "/products/mascara_elseve.jpg",
+    "reason": "Hair mask pot image on Shampoo product (Shampoo Elseve Longo dos Sonhos 400ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30013,
+    "name": "Shampoo Pantene Restauração 400ml",
+    "brand": "Pantene",
+    "image": "/products/condicionador_pantene.jpg",
+    "reason": "Conditioner image on Shampoo product (Shampoo Pantene Restauração 400ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30068,
+    "name": "Shampoo Cetoconazol 20mg/g Genérico EMS 100ml",
+    "brand": "EMS Genérico",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Shampoo Cetoconazol 20mg/g Genérico EMS 100ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30106,
+    "name": "Sérum Antirrugas La Roche-Posay Hyalu B5 30ml",
+    "brand": "La Roche-Posay",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Antirrugas La Roche-Posay Hyalu B5 30ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30107,
+    "name": "Sérum Antioxidante La Roche-Posay Pure Vitamin C10 30ml",
+    "brand": "La Roche-Posay",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Antioxidante La Roche-Posay Pure Vitamin C10 30ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30108,
+    "name": "Sérum Clareador La Roche-Posay Mela B3 30ml",
+    "brand": "La Roche-Posay",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Clareador La Roche-Posay Mela B3 30ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30109,
+    "name": "Sérum Antimanchas Vichy Liftactiv B3 30ml",
+    "brand": "Vichy",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Antimanchas Vichy Liftactiv B3 30ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30158,
+    "name": "Antisséptico Merthiolate Clorexidina Spray 45ml",
+    "brand": "Merthiolate",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Antisséptico Merthiolate Clorexidina Spray 45ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30159,
+    "name": "Pomada Antibiótica Cicatrizante Nebacetin 15g",
+    "brand": "Nebacetin",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Pomada Antibiótica Cicatrizante Nebacetin 15g)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30166,
+    "name": "Creme Dermatológico Antiacne Acnase 20g",
+    "brand": "Acnase",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Creme Dermatológico Antiacne Acnase 20g)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30168,
+    "name": "Gel Adapaleno 1mg/g Tratamento da Acne Medley Genérico 30g",
+    "brand": "Medley",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Gel Adapaleno 1mg/g Tratamento da Acne Medley Genérico 30g)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30169,
+    "name": "Gel Peróxido de Benzoíla 5% Acnezil Cimed 60g",
+    "brand": "Cimed",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Gel Peróxido de Benzoíla 5% Acnezil Cimed 60g)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30231,
+    "name": "Algodão Hidrófilo em Rolo Cremer 500g",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Algodão Hidrófilo em Rolo Cremer 500g)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30232,
+    "name": "Água Oxigenada 10 Volumes Solução Antisséptica Farmax 100ml",
+    "brand": "Farmax",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Água Oxigenada 10 Volumes Solução Antisséptica Farmax 100ml)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30233,
+    "name": "Esparadrapo Impermeável Hospitalar Cremer Branco 10cm x 4,5m",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Esparadrapo Impermeável Hospitalar Cremer Branco 10cm x 4,5m)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30234,
+    "name": "Fita Cirúrgica Microporosa Micropore Nexcare Branca 25mm x 4,5m",
+    "brand": "Nexcare",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Fita Cirúrgica Microporosa Micropore Nexcare Branca 25mm x 4,5m)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30235,
+    "name": "Atadura de Crepom Elástica Cremer 15cm x 1,8m",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Atadura de Crepom Elástica Cremer 15cm x 1,8m)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30236,
+    "name": "Compressa de Gaze Estéril 100% Algodão Cremer 7,5cm x 7,5cm 10 Unidades",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Compressa de Gaze Estéril 100% Algodão Cremer 7,5cm x 7,5cm 10 Unidades)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30274,
+    "name": "Loratadina 10mg Medley Genérico 12 Comprimidos",
+    "brand": "Medley",
+    "image": "/products/allegra_120mg.jpg",
+    "reason": "Allegra image on non-Allegra product (Loratadina 10mg Medley Genérico 12 Comprimidos)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30277,
+    "name": "Pantoprazol 40mg Eurofarma Genérico 28 Comprimidos Revestidos",
+    "brand": "Eurofarma",
+    "image": "/products/omeprazol_medley_20mg.jpg",
+    "reason": "Omeprazol image on non-Omeprazol product (Pantoprazol 40mg Eurofarma Genérico 28 Comprimidos Revestidos)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30292,
+    "name": "Joelheira Elástica Articulada com Reforço Patelar Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Joelheira Elástica Articulada com Reforço Patelar Mercur)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30293,
+    "name": "Bolsa Térmica Gel para Compressas Quente e Frio Termogel",
+    "brand": "Termogel",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bolsa Térmica Gel para Compressas Quente e Frio Termogel)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30294,
+    "name": "Meia de Compressão Suave 15-20 mmHg Kendall Unissex Panturrilha",
+    "brand": "Kendall",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Meia de Compressão Suave 15-20 mmHg Kendall Unissex Panturrilha)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30300,
+    "name": "Preservativo Masculino Jontex Sensitive Lubrificado 8 Unidades",
+    "brand": "Jontex",
+    "image": "/products/cialis_20mg.jpg",
+    "reason": "Tadalafila/Cialis image on non-Tadalafila product (Preservativo Masculino Jontex Sensitive Lubrificado 8 Unidades)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30301,
+    "name": "Gel Lubrificante Íntimo à Base de Água K-Med Tradicional 50g",
+    "brand": "K-Med",
+    "image": "/products/cialis_20mg.jpg",
+    "reason": "Tadalafila/Cialis image on non-Tadalafila product (Gel Lubrificante Íntimo à Base de Água K-Med Tradicional 50g)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30323,
+    "name": "Loratamed 10mg Cimed 12 Comprimidos",
+    "brand": "Cimed",
+    "image": "/products/allegra_120mg.jpg",
+    "reason": "Allegra image on non-Allegra product (Loratamed 10mg Cimed 12 Comprimidos)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30324,
+    "name": "Zyrtec 10mg Dicloridrato de Cetirizina 12 Comprimidos",
+    "brand": "Zyrtec",
+    "image": "/products/allegra_120mg.jpg",
+    "reason": "Allegra image on non-Allegra product (Zyrtec 10mg Dicloridrato de Cetirizina 12 Comprimidos)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30330,
+    "name": "Bolsa de Gelo para Crioterapia com Fecho Hermético Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bolsa de Gelo para Crioterapia com Fecho Hermético Mercur)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30331,
+    "name": "Bolsa de Água Quente em Borracha Tradicional Mercur 1,4L",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bolsa de Água Quente em Borracha Tradicional Mercur 1,4L)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30332,
+    "name": "Luvas Descartáveis de Procedimento Nitrílicas Sem Pó Supermax Caixa com 100",
+    "brand": "Supermax",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Luvas Descartáveis de Procedimento Nitrílicas Sem Pó Supermax Caixa com 100)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30333,
+    "name": "Tornozeleira Elástica com Suporte Anatômico Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Tornozeleira Elástica com Suporte Anatômico Mercur)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30334,
+    "name": "Munhequeira Elástica Ajustável com Tala para Punho Kestal",
+    "brand": "Kestal",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Munhequeira Elástica Ajustável com Tala para Punho Kestal)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30335,
+    "name": "Cinta Lombar com Hastes Flexíveis Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Cinta Lombar com Hastes Flexíveis Mercur)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30336,
+    "name": "Palmilha Ortopédica de Silicone com Ponto Azul Ortho Pauher",
+    "brand": "Ortho Pauher",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Palmilha Ortopédica de Silicone com Ponto Azul Ortho Pauher)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30337,
+    "name": "Protetor e Corretivo de Joanete de Silicone Ortho Pauher",
+    "brand": "Ortho Pauher",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Protetor e Corretivo de Joanete de Silicone Ortho Pauher)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30338,
+    "name": "Tipoia Estofada Velpeau Imobilizadora de Braço Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Tipoia Estofada Velpeau Imobilizadora de Braço Mercur)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30339,
+    "name": "Bengala de Alumínio Dobrável com Regulagem de Altura Sequencial",
+    "brand": "Sequencial",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bengala de Alumínio Dobrável com Regulagem de Altura Sequencial)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30340,
+    "name": "Muleta Axilar de Alumínio Regulável Mercur (Par)",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Muleta Axilar de Alumínio Regulável Mercur (Par))"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30341,
+    "name": "Colar Cervical de Espuma Anatômico Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Colar Cervical de Espuma Anatômico Mercur)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30379,
+    "name": "Preservativo Masculino Prudence Cores e Sabores Sortidos 3 Unidades",
+    "brand": "Prudence",
+    "image": "/products/cialis_20mg.jpg",
+    "reason": "Tadalafila/Cialis image on non-Tadalafila product (Preservativo Masculino Prudence Cores e Sabores Sortidos 3 Unidades)"
+  },
+  {
+    "source": "novosProdutosCatalogo.ts",
+    "id": 30402,
+    "name": "Álcool 70% Líquido Antisséptico Hospitalar Needs 1000ml",
+    "brand": "Needs",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Álcool 70% Líquido Antisséptico Hospitalar Needs 1000ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30001,
+    "name": "Shampoo Elseve Glycolic Gloss L'Oréal Paris 400ml",
+    "brand": "Elseve",
+    "image": "/products/mascara_elseve.jpg",
+    "reason": "Hair mask pot image on Shampoo product (Shampoo Elseve Glycolic Gloss L'Oréal Paris 400ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30007,
+    "name": "Shampoo Elseve Hidra Hialurônico 400ml",
+    "brand": "Elseve",
+    "image": "/products/mascara_elseve.jpg",
+    "reason": "Hair mask pot image on Shampoo product (Shampoo Elseve Hidra Hialurônico 400ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30010,
+    "name": "Shampoo Elseve Longo dos Sonhos 400ml",
+    "brand": "Elseve",
+    "image": "/products/mascara_elseve.jpg",
+    "reason": "Hair mask pot image on Shampoo product (Shampoo Elseve Longo dos Sonhos 400ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30013,
+    "name": "Shampoo Pantene Restauração 400ml",
+    "brand": "Pantene",
+    "image": "/products/condicionador_pantene.jpg",
+    "reason": "Conditioner image on Shampoo product (Shampoo Pantene Restauração 400ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30068,
+    "name": "Shampoo Cetoconazol 20mg/g Genérico EMS 100ml",
+    "brand": "EMS Genérico",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Shampoo Cetoconazol 20mg/g Genérico EMS 100ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30106,
+    "name": "Sérum Antirrugas La Roche-Posay Hyalu B5 30ml",
+    "brand": "La Roche-Posay",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Antirrugas La Roche-Posay Hyalu B5 30ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30107,
+    "name": "Sérum Antioxidante La Roche-Posay Pure Vitamin C10 30ml",
+    "brand": "La Roche-Posay",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Antioxidante La Roche-Posay Pure Vitamin C10 30ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30108,
+    "name": "Sérum Clareador La Roche-Posay Mela B3 30ml",
+    "brand": "La Roche-Posay",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Clareador La Roche-Posay Mela B3 30ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30109,
+    "name": "Sérum Antimanchas Vichy Liftactiv B3 30ml",
+    "brand": "Vichy",
+    "image": "/products/skinceuticals_ptiox.jpg",
+    "reason": "SkinCeuticals image on non-SkinCeuticals product (Sérum Antimanchas Vichy Liftactiv B3 30ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30158,
+    "name": "Antisséptico Merthiolate Clorexidina Spray 45ml",
+    "brand": "Merthiolate",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Antisséptico Merthiolate Clorexidina Spray 45ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30159,
+    "name": "Pomada Antibiótica Cicatrizante Nebacetin 15g",
+    "brand": "Nebacetin",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Pomada Antibiótica Cicatrizante Nebacetin 15g)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30166,
+    "name": "Creme Dermatológico Antiacne Acnase 20g",
+    "brand": "Acnase",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Creme Dermatológico Antiacne Acnase 20g)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30168,
+    "name": "Gel Adapaleno 1mg/g Tratamento da Acne Medley Genérico 30g",
+    "brand": "Medley",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Gel Adapaleno 1mg/g Tratamento da Acne Medley Genérico 30g)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30169,
+    "name": "Gel Peróxido de Benzoíla 5% Acnezil Cimed 60g",
+    "brand": "Cimed",
+    "image": "/products/principia_gel.png",
+    "reason": "Principia image on non-Principia product (Gel Peróxido de Benzoíla 5% Acnezil Cimed 60g)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30231,
+    "name": "Algodão Hidrófilo em Rolo Cremer 500g",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Algodão Hidrófilo em Rolo Cremer 500g)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30232,
+    "name": "Água Oxigenada 10 Volumes Solução Antisséptica Farmax 100ml",
+    "brand": "Farmax",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Água Oxigenada 10 Volumes Solução Antisséptica Farmax 100ml)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30233,
+    "name": "Esparadrapo Impermeável Hospitalar Cremer Branco 10cm x 4,5m",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Esparadrapo Impermeável Hospitalar Cremer Branco 10cm x 4,5m)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30234,
+    "name": "Fita Cirúrgica Microporosa Micropore Nexcare Branca 25mm x 4,5m",
+    "brand": "Nexcare",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Fita Cirúrgica Microporosa Micropore Nexcare Branca 25mm x 4,5m)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30235,
+    "name": "Atadura de Crepom Elástica Cremer 15cm x 1,8m",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Atadura de Crepom Elástica Cremer 15cm x 1,8m)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30236,
+    "name": "Compressa de Gaze Estéril 100% Algodão Cremer 7,5cm x 7,5cm 10 Unidades",
+    "brand": "Cremer",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Compressa de Gaze Estéril 100% Algodão Cremer 7,5cm x 7,5cm 10 Unidades)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30274,
+    "name": "Loratadina 10mg Medley Genérico 12 Comprimidos",
+    "brand": "Medley",
+    "image": "/products/allegra_120mg.jpg",
+    "reason": "Allegra image on non-Allegra product (Loratadina 10mg Medley Genérico 12 Comprimidos)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30277,
+    "name": "Pantoprazol 40mg Eurofarma Genérico 28 Comprimidos Revestidos",
+    "brand": "Eurofarma",
+    "image": "/products/omeprazol_medley_20mg.jpg",
+    "reason": "Omeprazol image on non-Omeprazol product (Pantoprazol 40mg Eurofarma Genérico 28 Comprimidos Revestidos)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30292,
+    "name": "Joelheira Elástica Articulada com Reforço Patelar Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Joelheira Elástica Articulada com Reforço Patelar Mercur)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30293,
+    "name": "Bolsa Térmica Gel para Compressas Quente e Frio Termogel",
+    "brand": "Termogel",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bolsa Térmica Gel para Compressas Quente e Frio Termogel)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30294,
+    "name": "Meia de Compressão Suave 15-20 mmHg Kendall Unissex Panturrilha",
+    "brand": "Kendall",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Meia de Compressão Suave 15-20 mmHg Kendall Unissex Panturrilha)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30300,
+    "name": "Preservativo Masculino Jontex Sensitive Lubrificado 8 Unidades",
+    "brand": "Jontex",
+    "image": "/products/cialis_20mg.jpg",
+    "reason": "Tadalafila/Cialis image on non-Tadalafila product (Preservativo Masculino Jontex Sensitive Lubrificado 8 Unidades)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30301,
+    "name": "Gel Lubrificante Íntimo à Base de Água K-Med Tradicional 50g",
+    "brand": "K-Med",
+    "image": "/products/cialis_20mg.jpg",
+    "reason": "Tadalafila/Cialis image on non-Tadalafila product (Gel Lubrificante Íntimo à Base de Água K-Med Tradicional 50g)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30323,
+    "name": "Loratamed 10mg Cimed 12 Comprimidos",
+    "brand": "Cimed",
+    "image": "/products/allegra_120mg.jpg",
+    "reason": "Allegra image on non-Allegra product (Loratamed 10mg Cimed 12 Comprimidos)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30324,
+    "name": "Zyrtec 10mg Dicloridrato de Cetirizina 12 Comprimidos",
+    "brand": "Zyrtec",
+    "image": "/products/allegra_120mg.jpg",
+    "reason": "Allegra image on non-Allegra product (Zyrtec 10mg Dicloridrato de Cetirizina 12 Comprimidos)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30330,
+    "name": "Bolsa de Gelo para Crioterapia com Fecho Hermético Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bolsa de Gelo para Crioterapia com Fecho Hermético Mercur)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30331,
+    "name": "Bolsa de Água Quente em Borracha Tradicional Mercur 1,4L",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bolsa de Água Quente em Borracha Tradicional Mercur 1,4L)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30332,
+    "name": "Luvas Descartáveis de Procedimento Nitrílicas Sem Pó Supermax Caixa com 100",
+    "brand": "Supermax",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Luvas Descartáveis de Procedimento Nitrílicas Sem Pó Supermax Caixa com 100)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30333,
+    "name": "Tornozeleira Elástica com Suporte Anatômico Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Tornozeleira Elástica com Suporte Anatômico Mercur)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30334,
+    "name": "Munhequeira Elástica Ajustável com Tala para Punho Kestal",
+    "brand": "Kestal",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Munhequeira Elástica Ajustável com Tala para Punho Kestal)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30335,
+    "name": "Cinta Lombar com Hastes Flexíveis Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Cinta Lombar com Hastes Flexíveis Mercur)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30336,
+    "name": "Palmilha Ortopédica de Silicone com Ponto Azul Ortho Pauher",
+    "brand": "Ortho Pauher",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Palmilha Ortopédica de Silicone com Ponto Azul Ortho Pauher)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30337,
+    "name": "Protetor e Corretivo de Joanete de Silicone Ortho Pauher",
+    "brand": "Ortho Pauher",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Protetor e Corretivo de Joanete de Silicone Ortho Pauher)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30338,
+    "name": "Tipoia Estofada Velpeau Imobilizadora de Braço Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Tipoia Estofada Velpeau Imobilizadora de Braço Mercur)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30339,
+    "name": "Bengala de Alumínio Dobrável com Regulagem de Altura Sequencial",
+    "brand": "Sequencial",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Bengala de Alumínio Dobrável com Regulagem de Altura Sequencial)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30340,
+    "name": "Muleta Axilar de Alumínio Regulável Mercur (Par)",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Muleta Axilar de Alumínio Regulável Mercur (Par))"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30341,
+    "name": "Colar Cervical de Espuma Anatômico Mercur",
+    "brand": "Mercur",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Colar Cervical de Espuma Anatômico Mercur)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30379,
+    "name": "Preservativo Masculino Prudence Cores e Sabores Sortidos 3 Unidades",
+    "brand": "Prudence",
+    "image": "/products/cialis_20mg.jpg",
+    "reason": "Tadalafila/Cialis image on non-Tadalafila product (Preservativo Masculino Prudence Cores e Sabores Sortidos 3 Unidades)"
+  },
+  {
+    "source": "catalogExpanded.ts",
+    "id": 30402,
+    "name": "Álcool 70% Líquido Antisséptico Hospitalar Needs 1000ml",
+    "brand": "Needs",
+    "image": "/products/curativo_bandaid.jpg",
+    "reason": "Band-Aid image on non-Band-Aid product (Álcool 70% Líquido Antisséptico Hospitalar Needs 1000ml)"
+  }
+]
