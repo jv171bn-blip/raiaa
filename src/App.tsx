@@ -3,7 +3,6 @@ import { CartProvider, useCart } from './context/CartContext';
 import TopBar from './components/TopBar/TopBar';
 import MobileAppBanner from './components/MobileAppBanner/MobileAppBanner';
 import Header from './components/Header/Header';
-import MobileCepBar from './components/MobileCepBar/MobileCepBar';
 import CategoryNavigation from './components/CategoryNavigation/CategoryNavigation';
 import OrderTrackingCard from './components/OrderTrackingCard/OrderTrackingCard';
 import ShortcutMenu from './components/ShortcutMenu/ShortcutMenu';
@@ -244,9 +243,6 @@ const PageContent: React.FC = () => {
         {/* Header */}
         <Header />
       </div>
-
-      {/* Mobile CEP Bar (scrolls naturally with page content so OrderTrackingCard never goes behind it) */}
-      <MobileCepBar />
 
       {/* Category Navigation */}
       <CategoryNavigation />

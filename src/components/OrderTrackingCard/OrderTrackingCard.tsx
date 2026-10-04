@@ -13,8 +13,7 @@ const OrderTrackingCard: React.FC = () => {
         className="order-tracking-card"
         onClick={() => setActiveModal('orders')}
         id="btn-order-tracking"
-        title="Acompanhar seus pedidos"
-        aria-label="Acompanhar seus pedidos"
+        title="Acompanhe seus pedidos"
       >
         <div className="order-tracking-card__left">
           <div className="order-tracking-card__icon-box">

@@ -447,6 +447,28 @@ const Header: React.FC = () => {
           </form>
           {isSearchOpen && renderSearchDropdown(true)}
         </div>
+
+        {/* Mobile CEP Row: Pin + Street and CEP or Inserir CEP */}
+        <div
+          className="header__mobile-cep"
+          id="mobile-cep-btn"
+          onClick={() => setActiveModal('cep')}
+          role="button"
+          tabIndex={0}
+          title={addressDisplay ? `${addressDisplay.street} ${addressDisplay.cep}` : 'Inserir CEP para entrega'}
+        >
+          <MapPin size={16} color="#1c1c1c" strokeWidth={1.8} className="header__mobile-cep-pin" />
+          <span className="header__mobile-cep-text">
+            {addressDisplay ? (
+              <>
+                <span className="header__mobile-cep-street">{addressDisplay.street}</span>{' '}
+                <u>{addressDisplay.cep}</u>
+              </>
+            ) : (
+              <u>Inserir CEP</u>
+            )}
+          </span>
+        </div>
       </div>
 
       {/* Mobile Menu Bottom Sheet (matching Droga Raia official app without login/register) */}

@@ -2,7 +2,7 @@
   background-color: #ffffff;
   border-bottom: 1px solid #ededed;
   position: relative;
-  z-index: 10;
+  z-index: 999;
 }
 
 .cat-nav__inner {
