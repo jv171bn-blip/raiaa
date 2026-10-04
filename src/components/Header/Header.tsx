@@ -292,6 +292,28 @@ const Header: React.FC = () => {
               </button>
             </form>
 
+            {/* Desktop Inserir CEP row fixed directly below search field */}
+            <div
+              className="header__desktop-cep"
+              id="desktop-cep-btn"
+              onClick={() => setActiveModal('cep')}
+              role="button"
+              tabIndex={0}
+              title={addressDisplay ? `${addressDisplay.street} ${addressDisplay.cep}` : 'Inserir CEP para entrega'}
+            >
+              <MapPin size={15} className="header__desktop-cep-pin" strokeWidth={2} />
+              <span className="header__desktop-cep-text">
+                {addressDisplay ? (
+                  <>
+                    <span className="header__desktop-cep-street">{addressDisplay.street}</span>{' '}
+                    <u>{addressDisplay.cep}</u>
+                  </>
+                ) : (
+                  <u>Inserir CEP</u>
+                )}
+              </span>
+            </div>
+
             {/* Autocomplete Dropdown (Desktop) */}
             {isSearchOpen && renderSearchDropdown(false)}
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MapPin, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import MegaMenu from '../MegaMenu/MegaMenu';
 import './CategoryNavigation.css';
@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 const CategoryNavigation: React.FC = () => {
-  const { setActiveModal, addressDisplay, showToast } = useCart();
+  const { setActiveModal, showToast } = useCart();
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
   const handleNavClick = (link: typeof navLinks[0]) => {
@@ -31,26 +31,6 @@ const CategoryNavigation: React.FC = () => {
       <nav className="cat-nav" id="category-navigation">
         <div className="cat-nav__inner container">
           <div className="cat-nav__left">
-            {/* CEP Location */}
-            <button
-              className="cat-nav__cep"
-              id="cep-button"
-              onClick={() => setActiveModal('cep')}
-              title={addressDisplay ? `${addressDisplay.street} ${addressDisplay.cep}` : 'Informar CEP de entrega'}
-            >
-              <MapPin size={18} className="cat-nav__cep-icon" />
-              <span className="cat-nav__cep-text">
-                {addressDisplay ? (
-                  <>
-                    <span className="cat-nav__cep-street">{addressDisplay.street}</span>{' '}
-                    <u>{addressDisplay.cep}</u>
-                  </>
-                ) : (
-                  <u>Inserir CEP</u>
-                )}
-              </span>
-            </button>
-
             {/* Todas as Categorias */}
             <button
               className={`cat-nav__categories ${isMegaMenuOpen ? 'cat-nav__categories--active' : ''}`}

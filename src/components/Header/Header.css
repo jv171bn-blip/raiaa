@@ -41,8 +41,59 @@
 /* Search */
 .header__search {
   flex: 1;
-  max-width: 440px;
+  max-width: 460px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop Inserir CEP directly below search field */
+.header__desktop-cep {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 1px 4px;
+  width: fit-content;
+  user-select: none;
+  transition: opacity 0.15s ease;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2b2d33;
+}
+
+.header__desktop-cep:hover {
+  opacity: 0.8;
+}
+
+.header__desktop-cep-pin {
+  color: #007f91;
+  flex-shrink: 0;
+}
+
+.header__desktop-cep-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.header__desktop-cep-street {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header__desktop-cep-text u {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #007f91;
+  font-weight: 600;
 }
 
 .header__search-form {
@@ -145,7 +196,7 @@
 /* Dropdown */
 .header__search-dropdown {
   position: absolute;
-  top: calc(100% + 6px);
+  top: 52px;
   left: 0;
   right: 0;
   background: #ffffff;
