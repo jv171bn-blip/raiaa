@@ -42,6 +42,7 @@ const Modals: React.FC = () => {
     items,
     finalTotal,
     setUserAddress,
+    userAddress,
   } = useCart();
 
   // CEP State
@@ -124,15 +125,15 @@ const Modals: React.FC = () => {
 
   const handleConfirmAddress = () => {
     if (foundAddress) {
-      const street = foundAddress.logradouro || 'Rua Manoel Pereira';
-      const cleanCep = foundAddress.cep || cepInput || '02324-210';
+      const street = foundAddress.logradouro || (foundAddress.bairro ? `Bairro ${foundAddress.bairro}` : 'Endereço');
+      const cleanCep = foundAddress.cep || cepInput;
       setCepAddress(cleanCep);
       if (setUserAddress) {
         setUserAddress({
           cep: cleanCep,
-          street: street,
-          number: '100',
-          neighborhood: foundAddress.bairro || 'Centro',
+          street: foundAddress.logradouro || '',
+          number: '',
+          neighborhood: foundAddress.bairro || '',
           city: foundAddress.localidade || 'São Paulo',
           state: foundAddress.uf || 'SP',
           country: 'Brasil',
@@ -487,7 +488,7 @@ const Modals: React.FC = () => {
                   Previsão de entrega: <strong>Hoje até as 13:00</strong>
                 </span>
                 <span className="order-address">
-                  Entregar em: Av. Paulista, 1000 - Bela Vista, São Paulo - SP
+                  Entregar em: {userAddress && userAddress.street ? `${userAddress.street}${userAddress.number ? `, ${userAddress.number}` : ''} - ${userAddress.neighborhood || ''}, ${userAddress.city || 'São Paulo'} - ${userAddress.state || 'SP'}` : 'Endereço cadastrado no pedido'}
                 </span>
               </div>
 

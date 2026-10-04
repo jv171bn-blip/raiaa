@@ -129,7 +129,7 @@ export interface PharmacyStore {
 }
 
 export function getNearbyPharmacies(
-  neighborhood = 'Jardim Ataliba Leonel',
+  neighborhood = '',
   city = 'São Paulo',
   uf = 'SP'
 ): PharmacyStore[] {

@@ -654,28 +654,52 @@ const DeliveryModal: React.FC<{
         </div>
 
         {/* Address Card matching Image 1 */}
-        <div className="checkout-sub-modal__address-card">
-          <div className="checkout-sub-modal__address-info">
-            <strong className="checkout-sub-modal__address-nickname">
-              {savedAddress?.nomeEndereco || 'casa'}
-            </strong>
-            <p className="checkout-sub-modal__address-line">
-              {savedAddress?.endereco || 'Rua Manoel Pereira'}, {savedAddress?.numero || '100'}
-              {savedAddress?.complemento ? ` - ${savedAddress.complemento}` : ''}
-            </p>
-            <p className="checkout-sub-modal__address-sub">
-              {savedAddress?.bairro || 'Jardim Ataliba Leonel'}, {savedAddress?.cidade || 'São Paulo'} - {savedAddress?.uf || 'SP'} • CEP {savedAddress?.cep || cepAddress || '02324-210'}
-            </p>
+        {savedAddress && (savedAddress.endereco || savedAddress.cep) ? (
+          <div className="checkout-sub-modal__address-card">
+            <div className="checkout-sub-modal__address-info">
+              {savedAddress.nomeEndereco && (
+                <strong className="checkout-sub-modal__address-nickname">
+                  {savedAddress.nomeEndereco}
+                </strong>
+              )}
+              <p className="checkout-sub-modal__address-line">
+                {savedAddress.endereco}{savedAddress.numero ? `, ${savedAddress.numero}` : ''}
+                {savedAddress.complemento ? ` - ${savedAddress.complemento}` : ''}
+              </p>
+              <p className="checkout-sub-modal__address-sub">
+                {[savedAddress.bairro, savedAddress.cidade ? `${savedAddress.cidade}${savedAddress.uf ? ` - ${savedAddress.uf}` : ''}` : ''].filter(Boolean).join(', ')}
+                {savedAddress.cep ? ` • CEP ${savedAddress.cep}` : ''}
+              </p>
+            </div>
+            <button
+              type="button"
+              className="checkout-sub-modal__alterar-btn"
+              onClick={onAlterAddress}
+              id="delivery-modal-alterar-btn"
+            >
+              Alterar
+            </button>
           </div>
-          <button
-            type="button"
-            className="checkout-sub-modal__alterar-btn"
-            onClick={onAlterAddress}
-            id="delivery-modal-alterar-btn"
-          >
-            Alterar
-          </button>
-        </div>
+        ) : (
+          <div className="checkout-sub-modal__address-card" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className="checkout-sub-modal__address-info">
+              <p className="checkout-sub-modal__address-line" style={{ fontWeight: 600 }}>
+                Nenhum endereço cadastrado
+              </p>
+              <p className="checkout-sub-modal__address-sub">
+                Cadastre um endereço para calcular o frete e prazos.
+              </p>
+            </div>
+            <button
+              type="button"
+              className="checkout-sub-modal__alterar-btn"
+              onClick={onAlterAddress}
+              id="delivery-modal-alterar-btn"
+            >
+              Cadastrar
+            </button>
+          </div>
+        )}
 
         {/* Select prompt */}
         <h4 className="checkout-sub-modal__select-heading">Selecione o tipo de entrega:</h4>
@@ -964,7 +988,7 @@ const CadastrarEnderecoSheet: React.FC<{
 
   // Dynamic nearby real Droga Raia and Drogasil pharmacies based on user's address
   const nearbyStores = React.useMemo(() => {
-    const neigh = bairro || resolvedAddress?.neighborhood || 'Jardim Ataliba Leonel';
+    const neigh = bairro || resolvedAddress?.neighborhood || '';
     const cit = cidade || resolvedAddress?.city || 'São Paulo';
     const state = uf || resolvedAddress?.uf || 'SP';
     return getNearbyPharmacies(neigh, cit, state);
@@ -1104,18 +1128,20 @@ const CadastrarEnderecoSheet: React.FC<{
 
     if (targetMode === 'address') {
       const finalAddress: AddressData = {
-        cep: cep || '01001-000',
+        cep: cep || '',
         nomeEndereco: nomeEndereco.trim() || 'casa',
-        endereco: endereco.trim() || 'Rua Manoel Pereira',
-        bairro: bairro.trim() || 'Jardim Ataliba Leonel',
+        endereco: endereco.trim(),
+        bairro: bairro.trim(),
         cidade: cidade.trim() || 'São Paulo',
         uf: uf.trim() || 'SP',
         complemento: complemento.trim(),
-        numero: numero.trim() || '100',
-        telefone: telefone.trim() || '(11) 92829 - 0992',
+        numero: numero.trim(),
+        telefone: telefone.trim(),
       };
       try {
-        localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
+        if (finalAddress.nomeEndereco) {
+          localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
+        }
       } catch {}
       if (setUserAddress) {
         setUserAddress({
@@ -1131,7 +1157,7 @@ const CadastrarEnderecoSheet: React.FC<{
           phone: finalAddress.telefone,
         });
       }
-      onConfirm(cep || '01001-000', finalAddress);
+      onConfirm(cep || '', finalAddress);
       return;
     }
 
@@ -1143,18 +1169,20 @@ const CadastrarEnderecoSheet: React.FC<{
     setIsSubmitting(true);
     const storeToConfirm = selectedPharmacyObj || selectedStore;
     const finalAddress: AddressData = {
-      cep: cep || '01001-000',
+      cep: cep || '',
       nomeEndereco: nomeEndereco.trim() || 'Meu Endereço',
-      endereco: endereco.trim() || 'Rua Manoel Pereira',
-      bairro: bairro.trim() || 'Jardim Ataliba Leonel',
+      endereco: endereco.trim(),
+      bairro: bairro.trim(),
       cidade: cidade.trim() || 'São Paulo',
       uf: uf.trim() || 'SP',
       complemento: complemento.trim(),
-      numero: numero.trim() || '100',
-      telefone: telefone.trim() || '(11) 98765-4321',
+      numero: numero.trim(),
+      telefone: telefone.trim(),
     };
     try {
-      localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
+      if (finalAddress.nomeEndereco) {
+        localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
+      }
     } catch {}
 
     if (setUserAddress) {
@@ -1172,7 +1200,7 @@ const CadastrarEnderecoSheet: React.FC<{
       });
     }
 
-    onConfirm(cep || '01001-000', finalAddress, storeToConfirm);
+    onConfirm(cep || '', finalAddress, storeToConfirm);
     setIsSubmitting(false);
   };
 
@@ -1408,11 +1436,11 @@ const CadastrarEnderecoSheet: React.FC<{
             {/* Complete Nearby Pharmacies System with Map, Real Stores & Distance */}
             <NearbyPharmacies
               address={{
-                cep: cep || '02324-210',
-                street: endereco || 'Rua Manoel Pereira',
-                number: numero || '100',
+                cep: cep || '',
+                street: endereco || '',
+                number: numero || '',
                 complement: complemento,
-                neighborhood: bairro || 'Jardim Ataliba Leonel',
+                neighborhood: bairro || '',
                 city: cidade || 'São Paulo',
                 state: uf || 'SP',
                 country: 'Brasil',
@@ -2154,7 +2182,7 @@ const Step1: React.FC<{
   onBack: () => void;
   onContinue: (m: DeliveryMode, t: DeliveryType) => void;
 }> = ({ onBack, onContinue }) => {
-  const { items, subtotal, couponDiscount, montaDiscount, showToast, cepAddress, setCepAddress } = useCart();
+  const { items, subtotal, couponDiscount, montaDiscount, showToast, cepAddress, setCepAddress, userAddress } = useCart();
   const displayItems = items.length > 0 ? items : [{ product: fraldasProducts[0], quantity: 1 }];
   const currentSubtotal = subtotal > 0 ? subtotal : 125.90;
   const rates = getShippingRates(currentSubtotal);
@@ -2208,14 +2236,25 @@ const Step1: React.FC<{
       const raw = localStorage.getItem('drogaraia_user_address');
       if (raw) {
         const p = JSON.parse(raw);
+        if (
+          (!p.endereco && !p.street) ||
+          p.endereco === 'Rua Manoel Pereira' ||
+          p.street === 'Rua Manoel Pereira' ||
+          p.cep === '02324-210' ||
+          p.cep === '01001-000'
+        ) {
+          localStorage.removeItem('drogaraia_user_address');
+          localStorage.removeItem('drogaraia_address_name');
+          return null;
+        }
         return {
           cep: p.cep || '',
           nomeEndereco: p.nomeEndereco || p.name || 'casa',
-          endereco: p.endereco || p.street || 'Rua Manoel Pereira',
-          bairro: p.bairro || p.neighborhood || 'Jardim Ataliba Leonel',
+          endereco: p.endereco || p.street || '',
+          bairro: p.bairro || p.neighborhood || '',
           complemento: p.complemento || p.complement || '',
-          numero: p.numero || p.number || '100',
-          telefone: p.telefone || p.phone || '(11) 92829 - 0992',
+          numero: p.numero || p.number || '',
+          telefone: p.telefone || p.phone || '',
           cidade: p.cidade || p.city || 'São Paulo',
           uf: p.uf || p.state || 'SP',
         };
@@ -2223,6 +2262,24 @@ const Step1: React.FC<{
     } catch {}
     return null;
   });
+
+  useEffect(() => {
+    if (userAddress && (userAddress.street || userAddress.cep)) {
+      setSavedAddress({
+        cep: userAddress.cep || '',
+        nomeEndereco: userAddress.name || 'casa',
+        endereco: userAddress.street || '',
+        bairro: userAddress.neighborhood || '',
+        complemento: userAddress.complement || '',
+        numero: userAddress.number || '',
+        telefone: userAddress.phone || '',
+        cidade: userAddress.city || 'São Paulo',
+        uf: userAddress.state || 'SP',
+      });
+    } else if (!userAddress) {
+      setSavedAddress(null);
+    }
+  }, [userAddress]);
 
   const typeInfo: Record<string, { label: string; desc: string; price: number; orange?: boolean }> = {
     express: { label: 'Entrega Expressa', desc: 'Tempo médio para entrega: de 3h a 5h', price: rates.expressPrice, orange: true },
@@ -2555,26 +2612,52 @@ const Step1: React.FC<{
             <div className="checkout-step__opcao-card">
               {/* Top part: Address details + Alterar */}
               <div className="checkout-step__opcao-addr-row">
-                <div className="checkout-step__opcao-addr-info">
-                  <strong className="checkout-step__opcao-addr-name">
-                    {savedAddress?.nomeEndereco || 'casa'}
-                  </strong>
-                  <p className="checkout-step__opcao-addr-street">
-                    {savedAddress?.endereco || 'Rua Manoel Pereira'}, {savedAddress?.numero || '100'}
-                    {savedAddress?.complemento ? ` - ${savedAddress.complemento}` : ''}
-                  </p>
-                  <p className="checkout-step__opcao-addr-sub">
-                    {savedAddress?.bairro || 'Jardim Ataliba Leonel'}, {savedAddress?.cidade || 'São Paulo'} - {savedAddress?.uf || 'SP'}
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  className="checkout-step__opcao-alterar-btn"
-                  onClick={() => setShowModal(true)}
-                  id="checkout-step-alterar-endereco-btn"
-                >
-                  Alterar
-                </button>
+                {savedAddress && (savedAddress.endereco || savedAddress.cep) ? (
+                  <>
+                    <div className="checkout-step__opcao-addr-info">
+                      {savedAddress.nomeEndereco && (
+                        <strong className="checkout-step__opcao-addr-name">
+                          {savedAddress.nomeEndereco}
+                        </strong>
+                      )}
+                      <p className="checkout-step__opcao-addr-street">
+                        {savedAddress.endereco}{savedAddress.numero ? `, ${savedAddress.numero}` : ''}
+                        {savedAddress.complemento ? ` - ${savedAddress.complemento}` : ''}
+                      </p>
+                      <p className="checkout-step__opcao-addr-sub">
+                        {[savedAddress.bairro, savedAddress.cidade ? `${savedAddress.cidade}${savedAddress.uf ? ` - ${savedAddress.uf}` : ''}` : ''].filter(Boolean).join(', ')}
+                        {savedAddress.cep ? ` • CEP ${savedAddress.cep}` : ''}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      className="checkout-step__opcao-alterar-btn"
+                      onClick={() => setShowModal(true)}
+                      id="checkout-step-alterar-endereco-btn"
+                    >
+                      Alterar
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <div className="checkout-step__opcao-addr-info">
+                      <strong className="checkout-step__opcao-addr-name">
+                        Nenhum endereço cadastrado
+                      </strong>
+                      <p className="checkout-step__opcao-addr-sub">
+                        Cadastre ou selecione um endereço de entrega
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      className="checkout-step__opcao-alterar-btn"
+                      onClick={() => setShowModal(true)}
+                      id="checkout-step-cadastrar-endereco-btn"
+                    >
+                      Cadastrar
+                    </button>
+                  </>
+                )}
               </div>
 
               {/* Divider */}
@@ -2871,9 +2954,14 @@ const Step1: React.FC<{
           </button>
           <button
             type="button"
-            className={`checkout-step__continuar-btn ${!canGo ? 'checkout-step__continuar-btn--disabled' : ''}`}
-            onClick={() => canGo && onContinue(mode!, type || 'express')}
-            disabled={!canGo}
+            className="checkout-step__continuar-btn"
+            onClick={() => {
+              if (mode === 'address' && !(savedAddress?.endereco || userAddress?.street)) {
+                setShowModal(true);
+                return;
+              }
+              onContinue(mode!, type || 'express');
+            }}
             id="step1-continue-btn"
           >
             Continuar
@@ -4078,15 +4166,17 @@ const Step3: React.FC<{
         const rawAddr = localStorage.getItem('drogaraia_user_address');
         if (rawAddr) {
           const parsed = JSON.parse(rawAddr);
-          addressObj = {
-            street: parsed.endereco || parsed.street || 'Avenida Paulista',
-            number: parsed.numero || parsed.number || '1000',
-            complement: parsed.complemento || parsed.complement || '',
-            neighborhood: parsed.bairro || parsed.neighborhood || 'Bela Vista',
-            city: parsed.cidade || parsed.city || 'São Paulo',
-            state: parsed.uf || parsed.state || 'SP',
-            zipcode: parsed.cep ? parsed.cep.replace(/\D/g, '') : '01310100',
-          };
+          if (parsed.endereco || parsed.street) {
+            addressObj = {
+              street: parsed.endereco || parsed.street,
+              number: parsed.numero || parsed.number || '',
+              complement: parsed.complemento || parsed.complement || '',
+              neighborhood: parsed.bairro || parsed.neighborhood || '',
+              city: parsed.cidade || parsed.city || 'São Paulo',
+              state: parsed.uf || parsed.state || 'SP',
+              zipcode: parsed.cep ? parsed.cep.replace(/\D/g, '') : '',
+            };
+          }
         }
       } catch {}
 
@@ -4650,16 +4740,18 @@ const CheckoutFlow: React.FC = () => {
         const rawAddr = localStorage.getItem('drogaraia_user_address');
         if (rawAddr) {
           const parsed = JSON.parse(rawAddr);
-          addressObj = {
-            street: parsed.endereco || parsed.street || 'Avenida Paulista',
-            number: parsed.numero || parsed.number || '1000',
-            complement: parsed.complemento || parsed.complement || '',
-            neighborhood: parsed.bairro || parsed.neighborhood || 'Bela Vista',
-            city: parsed.cidade || parsed.city || 'São Paulo',
-            state: parsed.uf || parsed.state || 'SP',
-            zipcode: parsed.cep ? parsed.cep.replace(/\D/g, '') : '01310100',
-            telefone: parsed.telefone || parsed.phone,
-          };
+          if (parsed.endereco || parsed.street) {
+            addressObj = {
+              street: parsed.endereco || parsed.street,
+              number: parsed.numero || parsed.number || '',
+              complement: parsed.complemento || parsed.complement || '',
+              neighborhood: parsed.bairro || parsed.neighborhood || '',
+              city: parsed.cidade || parsed.city || 'São Paulo',
+              state: parsed.uf || parsed.state || 'SP',
+              zipcode: parsed.cep ? parsed.cep.replace(/\D/g, '') : '',
+              telefone: parsed.telefone || parsed.phone,
+            };
+          }
         }
       } catch {}
 

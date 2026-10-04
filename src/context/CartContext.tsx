@@ -176,28 +176,34 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   });
   const [cepAddress, setCepAddress] = useState<string | null>(() => {
     try {
-      return localStorage.getItem('drogaraia_cep') || '02324-210';
+      const saved = localStorage.getItem('drogaraia_cep');
+      if (saved === '02324-210' || saved === '01001-000') {
+        localStorage.removeItem('drogaraia_cep');
+        return null;
+      }
+      return saved || null;
     } catch {
-      return '02324-210';
+      return null;
     }
   });
 
   const [userAddress, setUserAddressState] = useState<UserAddress | null>(() => {
     try {
       const saved = localStorage.getItem('drogaraia_user_address');
-      if (saved) return JSON.parse(saved);
-      const savedCep = localStorage.getItem('drogaraia_cep') || '02324-210';
-      return {
-        cep: savedCep,
-        street: 'Rua Manoel Pereira',
-        number: '100',
-        neighborhood: 'Jardim Ataliba Leonel',
-        city: 'São Paulo',
-        state: 'SP',
-        country: 'Brasil',
-        name: 'Principal',
-        phone: '(11) 98765-4321',
-      };
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (
+          parsed.street === 'Rua Manoel Pereira' ||
+          parsed.endereco === 'Rua Manoel Pereira' ||
+          parsed.cep === '02324-210'
+        ) {
+          localStorage.removeItem('drogaraia_user_address');
+          localStorage.removeItem('drogaraia_address_name');
+          return null;
+        }
+        return parsed;
+      }
+      return null;
     } catch {
       return null;
     }
@@ -205,12 +211,12 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const addressDisplay = useMemo((): AddressDisplay | null => {
     if (userAddress && (userAddress.street || userAddress.cep)) {
-      const rawStreet = userAddress.street || 'Rua Manoel Pereira';
-      const street = rawStreet.trim().toUpperCase();
-      const rawCep = userAddress.cep || cepAddress || '02324-210';
+      const street = (userAddress.street || '').trim().toUpperCase();
+      const rawCep = userAddress.cep || cepAddress || '';
       const digits = rawCep.replace(/\D/g, '');
       const cep = digits.length === 8 ? `${digits.slice(0, 5)}-${digits.slice(5)}` : rawCep;
-      return { street, cep };
+      if (!street && !cep) return null;
+      return { street: street || 'ENDEREÇO', cep };
     }
 
     if (cepAddress && cepAddress.trim()) {
@@ -221,15 +227,16 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         ? cepMatch[0] 
         : digits.length === 8 
           ? `${digits.slice(0, 5)}-${digits.slice(5)}` 
-          : '02324-210';
+          : trimmed;
 
-      let street = 'RUA MANOEL PEREIRA';
+      let street = '';
       if (trimmed.includes(',')) {
         street = trimmed.split(',')[0].trim().toUpperCase();
       } else if (trimmed.includes('-') && !trimmed.match(/^\d{5}-\d{3}$/)) {
         street = trimmed.split('-')[0].trim().toUpperCase();
       }
 
+      if (!street && !cep) return null;
       return { street, cep };
     }
 

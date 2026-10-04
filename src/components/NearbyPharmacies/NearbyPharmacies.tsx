@@ -78,10 +78,10 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
 }) => {
   // Current active address
   const currentAddress: UserAddress = address || {
-    cep: '02324-210',
-    street: 'Rua Manoel Pereira',
-    number: '100',
-    neighborhood: 'Jardim Ataliba Leonel',
+    cep: '',
+    street: '',
+    number: '',
+    neighborhood: '',
     city: 'São Paulo',
     state: 'SP',
     country: 'Brasil',
