@@ -2208,28 +2208,19 @@ const Step1: React.FC<{
   });
   const [showDetails, setShowDetails] = useState(false);
   const [showSummaryDetails, setShowSummaryDetails] = useState(false);
-  const [selectedPharmacy, setSelectedPharmacy] = useState<PharmacyStore>(() => {
+  const [selectedPharmacy, setSelectedPharmacy] = useState<PharmacyStore | null>(() => {
     try {
+      const hasAddress = Boolean(
+        localStorage.getItem('drogaraia_user_address') || localStorage.getItem('drogaraia_cep')
+      );
       const saved = localStorage.getItem('drogaraia_selected_pharmacy');
-      if (saved) return JSON.parse(saved);
-    } catch {}
-    const list = getNearbyPharmacies();
-    const raia = list.find((s) => s.brand === 'raia') || list[0];
-    return (
-      raia || {
-        id: 'store-raia-treze-de-maio',
-        brand: 'raia',
-        name: 'Droga Raia - Treze De Maio',
-        address: 'Treze De Maio, 23',
-        neighborhood: 'Vila Galvão',
-        city: 'Guarulhos',
-        uf: 'SP',
-        distance: '2,01 km',
-        openingHours: 'Aberta • 24 horas',
-        pickupTime: 'Pronto em até 1h',
-        badge: 'Mais próxima',
+      if (saved) {
+        if (hasAddress) return JSON.parse(saved);
+        // Stale auto-selected pharmacy without any user address: discard it.
+        localStorage.removeItem('drogaraia_selected_pharmacy');
       }
-    );
+    } catch {}
+    return null;
   });
   const [savedAddress, setSavedAddress] = useState<AddressData | null>(() => {
     try {
@@ -2365,7 +2356,7 @@ const Step1: React.FC<{
   const isRaia = !selectedPharmacy?.brand || selectedPharmacy.brand.toLowerCase().includes('raia');
 
   const displayAddress = React.useMemo(() => {
-    if (!selectedPharmacy) return 'Treze De Maio, 23 Vila Galvão';
+    if (!selectedPharmacy) return '';
     const addr = (selectedPharmacy.address || '').trim();
     const neigh = (selectedPharmacy.neighborhood || '').trim();
     if (neigh && !addr.toLowerCase().includes(neigh.toLowerCase())) {
@@ -2375,7 +2366,7 @@ const Step1: React.FC<{
   }, [selectedPharmacy]);
 
   const displayHours = React.useMemo(() => {
-    if (!selectedPharmacy) return '24 horas';
+    if (!selectedPharmacy) return '';
     const raw = selectedPharmacy.openingHours || '';
     if (raw.toLowerCase().includes('24')) return '24 horas';
     const match = raw.match(/(\d{1,2})(:00|h)?\s*(?:às|até|-)\s*(\d{1,2})(:00|h)?/i);
@@ -2394,7 +2385,7 @@ const Step1: React.FC<{
   }, [selectedPharmacy]);
 
   const displayDistance = React.useMemo(() => {
-    if (!selectedPharmacy?.distance) return '2,01 km';
+    if (!selectedPharmacy?.distance) return '';
     const dist = selectedPharmacy.distance.trim();
     return dist.toLowerCase().includes('km') ? dist : `${dist} km`;
   }, [selectedPharmacy]);
@@ -2515,6 +2506,11 @@ const Step1: React.FC<{
               try {
                 localStorage.setItem('drogaraia_delivery_mode', 'pickup');
               } catch {}
+              // No pharmacy is chosen until the user types a CEP/address.
+              if (!selectedPharmacy) {
+                setSheetInitialStep('form');
+                setShowCepSheet(true);
+              }
             }}
             id="mode-pickup-btn"
           >
@@ -2545,6 +2541,32 @@ const Step1: React.FC<{
           </button>
         </div>
 
+        {/* Pickup mode without a chosen pharmacy: ask for CEP/address first (no API call yet) */}
+        {mode === 'pickup' && !selectedPharmacy && (
+          <div className="checkout-step__pickup-container">
+            <h3 className="checkout-step__pickup-heading">Farmácia para retirada:</h3>
+            <div className="checkout-step__pickup-card">
+              <div className="checkout-step__pickup-addr-row">
+                <span className="checkout-step__pickup-address-text">
+                  Informe seu CEP ou endereço para ver as farmácias próximas
+                </span>
+                <button
+                  type="button"
+                  className="checkout-step__pickup-alterar-btn"
+                  onClick={() => {
+                    setTargetMode('pickup');
+                    setSheetInitialStep('form');
+                    setShowCepSheet(true);
+                  }}
+                  id="checkout-step-escolher-farmacia-btn"
+                >
+                  Informar CEP
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* If pickup mode is selected: show exact official selected pharmacy card */}
         {mode === 'pickup' && selectedPharmacy && (
           <div className="checkout-step__pickup-container">
@@ -2572,7 +2594,7 @@ const Step1: React.FC<{
                   className="checkout-step__pickup-alterar-btn"
                   onClick={() => {
                     setTargetMode('pickup');
-                    setSheetInitialStep('pharmacies');
+                    setSheetInitialStep(cepAddress || savedAddress ? 'pharmacies' : 'form');
                     setShowCepSheet(true);
                   }}
                   id="checkout-step-alterar-farmacia-btn"
@@ -2956,6 +2978,12 @@ const Step1: React.FC<{
             type="button"
             className="checkout-step__continuar-btn"
             onClick={() => {
+              if (mode === 'pickup' && !selectedPharmacy) {
+                setTargetMode('pickup');
+                setSheetInitialStep('form');
+                setShowCepSheet(true);
+                return;
+              }
               if (mode === 'address' && !(savedAddress?.endereco || userAddress?.street)) {
                 setShowModal(true);
                 return;
@@ -3814,7 +3842,7 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
 
             {method === 'pix' && (
               <div className="checkout-payment__pix-promo-box">
-                A partir de R$ 75 no Pix, ganhe mais um número da sorte
+                No Pix tem desconto de 10%
               </div>
             )}
           </div>

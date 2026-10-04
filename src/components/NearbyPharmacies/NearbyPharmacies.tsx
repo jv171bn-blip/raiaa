@@ -105,8 +105,23 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
   }, [controlledSelectedId]);
 
   // Main geocoding & nearby search effect
+  // The API only runs once the user has typed a valid CEP (8 digits) or a street.
   useEffect(() => {
     let isMounted = true;
+    const hasUserAddress =
+      (currentAddress.cep || '').replace(/\D/g, '').length === 8 ||
+      Boolean((currentAddress.street || '').trim());
+
+    if (!hasUserAddress) {
+      setPharmacies([]);
+      setUserLocation(null);
+      setGeoError(null);
+      setIsLoading(false);
+      return () => {
+        isMounted = false;
+      };
+    }
+
     setIsLoading(true);
     setGeoError(null);
 
@@ -126,24 +141,6 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
         const firstAvailable = available[0] || nearby[0];
         if (firstAvailable && !selectedId) {
           setSelectedId(firstAvailable.id);
-          const storeObj = {
-            id: firstAvailable.id,
-            brand: firstAvailable.brand === 'Droga Raia' ? 'raia' : 'drogasil',
-            name: firstAvailable.name,
-            address: firstAvailable.address,
-            neighborhood: firstAvailable.neighborhood || '',
-            city: firstAvailable.city || '',
-            uf: firstAvailable.state || '',
-            distance: firstAvailable.formattedDistance,
-            openingHours: firstAvailable.openingHours ? firstAvailable.openingHours[0] : 'Aberta • de 07h até 23h',
-            pickupTime: firstAvailable.pickupReadyTime || 'Pronto em até 1h',
-            badge: firstAvailable.badge,
-          };
-          try {
-            if (!localStorage.getItem('drogaraia_selected_pharmacy')) {
-              localStorage.setItem('drogaraia_selected_pharmacy', JSON.stringify(storeObj));
-            }
-          } catch {}
           if (onSelectPharmacy) {
             onSelectPharmacy(firstAvailable);
           }
