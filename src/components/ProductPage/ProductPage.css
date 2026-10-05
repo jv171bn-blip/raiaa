@@ -534,6 +534,424 @@
   font-weight: 700;
 }
 
+/* ==========================================================================
+   DIAPER VARIANT SELECTOR & MULTI-OFFER SYSTEM (Droga Raia style)
+   ========================================================================== */
+
+.pdp-diaper-selector {
+  margin: 14px 16px 18px 16px;
+  padding: 16px;
+  background-color: #fcfcfc;
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pdp-diaper-selector__row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pdp-diaper-selector__header-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pdp-diaper-selector__label {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.pdp-diaper-selector__label strong {
+  color: #111111;
+  font-weight: 700;
+}
+
+.pdp-diaper-selector__compare-btn {
+  background: transparent;
+  border: none;
+  color: #007380;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.15s ease;
+}
+
+.pdp-diaper-selector__compare-btn:hover {
+  color: #005660;
+  text-decoration: underline;
+}
+
+.pdp-diaper-selector__subhint {
+  font-size: 12px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.pdp-diaper-size-highlight {
+  color: #007380;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* Size Chips (P, M, G, XG, XXG) */
+.pdp-size-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pdp-size-chip {
+  min-width: 44px;
+  height: 38px;
+  padding: 0 12px;
+  background-color: #ffffff;
+  border: 1.5px solid #d4d4d4;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c1c1c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.pdp-size-chip:hover {
+  border-color: #007380;
+  background-color: #f7fafb;
+}
+
+.pdp-size-chip--active {
+  background-color: #007380;
+  border-color: #007380;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 115, 128, 0.25);
+}
+
+.pdp-size-chip__text {
+  display: inline-block;
+}
+
+.pdp-size-chip__badge-count {
+  font-size: 10px;
+  background: rgba(0, 115, 128, 0.12);
+  color: #007380;
+  border-radius: 9999px;
+  padding: 1px 5px;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.pdp-size-chip--active .pdp-size-chip__badge-count {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+/* Unit Quantity Offer Chips (e.g. 60 un • R$ 59,61) */
+.pdp-diaper-selector__row--offers {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed #e2e5e8;
+}
+
+.pdp-units-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.pdp-unit-chip {
+  background-color: #ffffff;
+  border: 1.5px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+  text-align: left;
+  font-family: inherit;
+}
+
+.pdp-unit-chip:hover {
+  border-color: #007380;
+  background-color: #f8fbfb;
+}
+
+.pdp-unit-chip--active {
+  border: 2px solid #007380;
+  background-color: #f0f8f9;
+  box-shadow: 0 2px 8px rgba(0, 115, 128, 0.12);
+}
+
+.pdp-unit-chip__main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.pdp-unit-chip__qty {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.pdp-unit-chip__price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #007380;
+}
+
+.pdp-unit-chip__unit-price {
+  font-size: 11.5px;
+  color: #555555;
+  font-weight: 500;
+}
+
+.pdp-unit-chip__badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #b51212;
+  background-color: #ffeaea;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.pdp-unit-chip__badge--best {
+  background-color: #e6f4ea !important;
+  color: #137333 !important;
+  font-weight: 700;
+}
+
+.pdp-unit-chip__selected-tag {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #007380;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Modal Steps & Offers List */
+.pdp-size-modal__subtitle {
+  font-size: 13px;
+  color: #666666;
+  margin-top: 2px;
+}
+
+.pdp-modal-step {
+  margin-bottom: 20px;
+}
+
+.pdp-modal-step__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pdp-modal-step__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.pdp-modal-step__title strong {
+  color: #111111;
+  font-weight: 700;
+}
+
+.pdp-modal-step__count {
+  font-size: 12px;
+  color: #007380;
+  font-weight: 600;
+}
+
+.pdp-modal-sizes-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pdp-modal-size-btn {
+  flex: 1;
+  min-width: 48px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 1.5px solid #d4d4d4;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1c1c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.pdp-modal-size-btn:hover {
+  border-color: #007380;
+  background-color: #f7fafb;
+}
+
+.pdp-modal-size-btn--selected {
+  background-color: #007380;
+  border-color: #007380;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 115, 128, 0.25);
+}
+
+.pdp-modal-offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 46vh;
+  overflow-y: auto;
+  padding: 2px;
+}
+
+.pdp-modal-offer-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border: 1.5px solid #e2e2e2;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pdp-modal-offer-card:hover {
+  background-color: #fbfbfb;
+  border-color: #007380;
+}
+
+.pdp-modal-offer-card--selected {
+  border: 2px solid #007380;
+  background-color: #f4fafb;
+}
+
+.pdp-modal-offer-card__img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.pdp-modal-offer-card__details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pdp-modal-offer-card__title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pdp-modal-offer-card__units {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.pdp-modal-offer-card__badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #b51212;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.pdp-modal-offer-card__name {
+  font-size: 12px;
+  color: #666666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pdp-modal-offer-card__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.pdp-modal-offer-card__price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.pdp-modal-offer-card__unit-price {
+  font-size: 12px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.pdp-modal-offer-card__radio-col {
+  flex-shrink: 0;
+}
+
+.pdp-modal-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #b8b8b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.pdp-modal-radio--checked {
+  border-color: #007380;
+}
+
+.pdp-modal-radio__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #007380;
+}
+
 .pdp-size-modal__footer {
   width: 100%;
 }

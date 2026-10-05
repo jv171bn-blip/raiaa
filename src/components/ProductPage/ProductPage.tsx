@@ -18,6 +18,7 @@ import { Product, quemComprouTambem, getSimilarProducts, isCosmeticOrPersonalCar
 import { getProductReviewsData } from '../../data/productReviewsData';
 import { useCart } from '../../context/CartContext';
 import { handleImageError } from '../../utils/imageFallback';
+import { getDiaperFamilyInfo, DiaperOffer } from '../../utils/diaperVariants';
 import ProductCard from '../ProductCard/ProductCard';
 import ProductReviews from '../ProductReviews/ProductReviews';
 import './ProductPage.css';
@@ -28,7 +29,7 @@ interface Props {
 }
 
 const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
-  const { addToCart, openCart, showToast, goToHome, goToProductPage } = useCart();
+  const { addToCart, openCart, showToast, goToHome, goToProductPage, setSelectedProduct } = useCart();
 
   // Dynamically compute similar products based on category / subcategory / name keywords
   const similarProducts = getSimilarProducts(product, allProducts);
@@ -51,7 +52,82 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
     product: Product;
   } | null>(null);
 
-  // Size options resolution for current product family (All 7 Diaper lines: P, M, G, XG, XXG)
+  // Diaper family multi-offer resolution (supports multiple unit packages per size)
+  const diaperFamilyInfo = useMemo(() => {
+    return getDiaperFamilyInfo(product, allProducts);
+  }, [product, allProducts]);
+
+  // Active selected size for the inline diaper selector
+  const [selectedInlineSize, setSelectedInlineSize] = useState<string>(() => {
+    return diaperFamilyInfo?.currentSize || 'G';
+  });
+
+  // Modal active size & offer states
+  const [modalSelectedSize, setModalSelectedSize] = useState<string>(() => {
+    return diaperFamilyInfo?.currentSize || 'G';
+  });
+
+  const [modalSelectedOffer, setModalSelectedOffer] = useState<DiaperOffer | null>(null);
+
+  // Sync state whenever product or diaperFamilyInfo changes
+  useEffect(() => {
+    if (diaperFamilyInfo) {
+      setSelectedInlineSize(diaperFamilyInfo.currentSize);
+      setModalSelectedSize(diaperFamilyInfo.currentSize);
+      const offersForCurSize = diaperFamilyInfo.sizesMap[diaperFamilyInfo.currentSize] || [];
+      const current = offersForCurSize.find(o => o.id === product.id) || offersForCurSize[0] || null;
+      setModalSelectedOffer(current);
+    }
+  }, [diaperFamilyInfo, product.id]);
+
+  // Offers available for the selected inline size
+  const inlineOffers = useMemo(() => {
+    if (!diaperFamilyInfo) return [];
+    return diaperFamilyInfo.sizesMap[selectedInlineSize] || [];
+  }, [diaperFamilyInfo, selectedInlineSize]);
+
+  const handleModalSizeClick = (size: string) => {
+    setModalSelectedSize(size);
+    const offers = diaperFamilyInfo?.sizesMap[size] || [];
+    if (offers.length > 0) {
+      // Pick best value offer or first
+      const best = offers.find(o => o.isBestValue) || offers[0];
+      setModalSelectedOffer(best);
+    } else {
+      setModalSelectedOffer(null);
+    }
+  };
+
+  const handleApplyOffer = () => {
+    setIsSizeModalOpen(false);
+    if (modalSelectedOffer && modalSelectedOffer.product.id !== product.id) {
+      setSelectedProduct(modalSelectedOffer.product);
+      try {
+        window.history.replaceState({ productId: modalSelectedOffer.product.id }, '', `#produto-${modalSelectedOffer.product.id}`);
+      } catch (e) {
+        // ignore
+      }
+    }
+  };
+
+  // User clicks a size: DO NOT navigate away! Immediately update selected size and show offers below
+  const handleInlineSizeClick = (size: string) => {
+    setSelectedInlineSize(size);
+  };
+
+  // User clicks an offer / units package: updates the active product seamlessly
+  const handleInlineOfferClick = (offer: DiaperOffer) => {
+    if (offer.product.id !== product.id) {
+      setSelectedProduct(offer.product);
+      try {
+        window.history.replaceState({ productId: offer.product.id }, '', `#produto-${offer.product.id}`);
+      } catch (e) {
+        // ignore
+      }
+    }
+  };
+
+  // Fallback size options resolution for non-diaper product families
   const { sizeOptions, currentSizeCode } = useMemo(() => {
     const pName = (product.name || '').toLowerCase();
     const isDiaper = pName.includes('fralda') || (product.subcategory || '').toLowerCase().includes('fraldas');
@@ -516,13 +592,20 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
             <strong className="pdp-seller-raia">Raia</strong>
           </div>
 
-          {/* 5.1 Size Selection Card (Matches exact user screenshot) */}
-          {sizeOptions.length > 0 && (
+          {/* 5.1 Size Selection Card (Matches exact user screenshot - "mantenha do jeito que estava") */}
+          {(diaperFamilyInfo || sizeOptions.length > 0) && (
             <div
               className="pdp-size-trigger-card"
               onClick={() => {
-                const cur = sizeOptions.find(o => o.product.id === product.id) || sizeOptions[0];
-                setTempSelectedOption(cur);
+                if (diaperFamilyInfo) {
+                  setModalSelectedSize(diaperFamilyInfo.currentSize);
+                  const offers = diaperFamilyInfo.sizesMap[diaperFamilyInfo.currentSize] || [];
+                  const cur = offers.find(o => o.id === product.id) || offers[0] || null;
+                  setModalSelectedOffer(cur);
+                } else if (sizeOptions.length > 0) {
+                  const cur = sizeOptions.find(o => o.product.id === product.id) || sizeOptions[0];
+                  setTempSelectedOption(cur);
+                }
                 setIsSizeModalOpen(true);
               }}
               role="button"
@@ -538,7 +621,8 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
                   onError={(e) => handleImageError(e, product)}
                 />
                 <span className="pdp-size-trigger-text">
-                  Tamanho: <strong>{currentSizeCode}</strong>
+                  Tamanho: <strong>{diaperFamilyInfo ? diaperFamilyInfo.currentSize : currentSizeCode}</strong>
+                  {diaperFamilyInfo?.currentUnits ? ` • ${diaperFamilyInfo.currentUnits} unidades` : (product.size ? ` • ${product.size}` : '')}
                 </span>
               </div>
               <ChevronRight size={20} color="#1c1c1c" className="pdp-size-trigger-chevron" />
@@ -1016,7 +1100,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
         </div>
       )}
 
-      {/* 8. Size Selection Modal Sheet (Matches exact user screenshot) */}
+      {/* 8. Size & Offers Selection Modal Sheet */}
       {isSizeModalOpen && (
         <div
           className="pdp-size-modal__overlay"
@@ -1043,43 +1127,115 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
               </button>
             </div>
 
-            {/* Sub-header: Tamanho: {selectedSize} + Chevron Up ^ */}
-            <div className="pdp-size-modal__subheader">
-              <span className="pdp-size-modal__sublabel">
-                Tamanho: <strong>{tempSelectedOption?.sizeCode || currentSizeCode}</strong>
-              </span>
-              <ChevronUp size={20} color="#1c1c1c" />
-            </div>
+            {diaperFamilyInfo ? (
+              <div>
+                {/* Sub-header: Tamanho */}
+                <div className="pdp-size-modal__subheader">
+                  <span className="pdp-size-modal__sublabel">
+                    Tamanho: <strong>{modalSelectedSize}</strong>
+                  </span>
+                </div>
 
-            {/* Options List with Rounded Buttons */}
-            <div className="pdp-size-modal__options-list">
-              {sizeOptions.map(opt => {
-                const isSelected = (tempSelectedOption?.product.id || product.id) === opt.product.id;
-                return (
+                {/* Size buttons */}
+                <div className="pdp-modal-sizes-row">
+                  {diaperFamilyInfo.availableSizes.map(s => {
+                    const isSel = s === modalSelectedSize;
+                    return (
+                      <button
+                        key={s}
+                        type="button"
+                        className={`pdp-modal-size-btn ${isSel ? 'pdp-modal-size-btn--selected' : ''}`}
+                        onClick={() => handleModalSizeClick(s)}
+                      >
+                        <span>{s}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Quantidade de fraldas no pacote */}
+                <div className="pdp-size-modal__subheader" style={{ marginTop: '18px' }}>
+                  <span className="pdp-size-modal__sublabel">
+                    Quantidade de fraldas: <strong>{modalSelectedOffer?.unitsLabel || ''}</strong>
+                  </span>
+                </div>
+
+                <div className="pdp-size-modal__options-list">
+                  {(diaperFamilyInfo.sizesMap[modalSelectedSize] || []).map(offer => {
+                    const isChosen = (modalSelectedOffer?.id || product.id) === offer.id;
+                    return (
+                      <button
+                        key={offer.id}
+                        type="button"
+                        className={`pdp-size-modal__option-item ${
+                          isChosen ? 'pdp-size-modal__option-item--selected' : ''
+                        }`}
+                        onClick={() => setModalSelectedOffer(offer)}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                          <span>{offer.unitsLabel}</span>
+                          <span style={{ fontWeight: 700, color: '#007380' }}>
+                            R$ {offer.price.toFixed(2).replace('.', ',')}
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Footer with Aplicar Button */}
+                <div className="pdp-size-modal__footer">
                   <button
-                    key={opt.product.id}
                     type="button"
-                    className={`pdp-size-modal__option-item ${
-                      isSelected ? 'pdp-size-modal__option-item--selected' : ''
-                    }`}
-                    onClick={() => setTempSelectedOption(opt)}
+                    className="pdp-size-modal__apply-btn"
+                    onClick={handleApplyOffer}
+                    disabled={!modalSelectedOffer}
                   >
-                    <span>{opt.sizeCode}</span>
+                    Aplicar
                   </button>
-                );
-              })}
-            </div>
+                </div>
+              </div>
+            ) : (
+              <div>
+                {/* Sub-header: Tamanho: {selectedSize} + Chevron Up ^ */}
+                <div className="pdp-size-modal__subheader">
+                  <span className="pdp-size-modal__sublabel">
+                    Tamanho: <strong>{tempSelectedOption?.sizeCode || currentSizeCode}</strong>
+                  </span>
+                  <ChevronUp size={20} color="#1c1c1c" />
+                </div>
 
-            {/* Footer with Aplicar Button */}
-            <div className="pdp-size-modal__footer">
-              <button
-                type="button"
-                className="pdp-size-modal__apply-btn"
-                onClick={handleApplySize}
-              >
-                Aplicar
-              </button>
-            </div>
+                {/* Options List with Rounded Buttons */}
+                <div className="pdp-size-modal__options-list">
+                  {sizeOptions.map(opt => {
+                    const isSelected = (tempSelectedOption?.product.id || product.id) === opt.product.id;
+                    return (
+                      <button
+                        key={opt.product.id}
+                        type="button"
+                        className={`pdp-size-modal__option-item ${
+                          isSelected ? 'pdp-size-modal__option-item--selected' : ''
+                        }`}
+                        onClick={() => setTempSelectedOption(opt)}
+                      >
+                        <span>{opt.sizeCode}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Footer with Aplicar Button */}
+                <div className="pdp-size-modal__footer">
+                  <button
+                    type="button"
+                    className="pdp-size-modal__apply-btn"
+                    onClick={handleApplySize}
+                  >
+                    Aplicar
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
