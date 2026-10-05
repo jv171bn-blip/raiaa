@@ -942,6 +942,7 @@ const ScheduledDeliverySheet: React.FC<{
 interface AddressData {
   cep: string;
   nomeEndereco: string;
+  nomeCompleto?: string;
   endereco: string;
   bairro: string;
   complemento: string;
@@ -965,6 +966,9 @@ const CadastrarEnderecoSheet: React.FC<{
   const [cep, setCep] = useState(initialCep || '');
   const [isManual, setIsManual] = useState(false);
   const [nomeEndereco, setNomeEndereco] = useState('');
+  const [nomeCompleto, setNomeCompleto] = useState(() => {
+    try { return localStorage.getItem('drogaraia_recipient_name') || ''; } catch { return ''; }
+  });
   const [endereco, setEndereco] = useState('');
   const [bairro, setBairro] = useState('');
   const [cidade, setCidade] = useState('São Paulo');
@@ -1110,7 +1114,8 @@ const CadastrarEnderecoSheet: React.FC<{
   // Required: nomeEndereco, endereco, bairro, numero, telefone
   const rawTel = telefone.replace(/\D/g, '');
   const isFormValid = isManual
-    ? (nomeEndereco.trim().length > 0 &&
+    ? (nomeCompleto.trim().length > 0 &&
+       nomeEndereco.trim().length > 0 &&
        endereco.trim().length > 0 &&
        bairro.trim().length > 0 &&
        numero.trim().length > 0 &&
@@ -1130,6 +1135,7 @@ const CadastrarEnderecoSheet: React.FC<{
       const finalAddress: AddressData = {
         cep: cep || '',
         nomeEndereco: nomeEndereco.trim() || 'casa',
+        nomeCompleto: nomeCompleto.trim(),
         endereco: endereco.trim(),
         bairro: bairro.trim(),
         cidade: cidade.trim() || 'São Paulo',
@@ -1139,6 +1145,9 @@ const CadastrarEnderecoSheet: React.FC<{
         telefone: telefone.trim(),
       };
       try {
+        if (finalAddress.nomeCompleto) {
+          localStorage.setItem('drogaraia_recipient_name', finalAddress.nomeCompleto);
+        }
         if (finalAddress.nomeEndereco) {
           localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
         }
@@ -1171,6 +1180,7 @@ const CadastrarEnderecoSheet: React.FC<{
     const finalAddress: AddressData = {
       cep: cep || '',
       nomeEndereco: nomeEndereco.trim() || 'Meu Endereço',
+      nomeCompleto: nomeCompleto.trim(),
       endereco: endereco.trim(),
       bairro: bairro.trim(),
       cidade: cidade.trim() || 'São Paulo',
@@ -1180,6 +1190,9 @@ const CadastrarEnderecoSheet: React.FC<{
       telefone: telefone.trim(),
     };
     try {
+      if (finalAddress.nomeCompleto) {
+        localStorage.setItem('drogaraia_recipient_name', finalAddress.nomeCompleto);
+      }
       if (finalAddress.nomeEndereco) {
         localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
       }
@@ -1308,6 +1321,22 @@ const CadastrarEnderecoSheet: React.FC<{
               {/* Manual / Expanded Address Fields (Exactly matching user screenshot) */}
               {isManual && (
                 <div className="cadastrar-cep-manual-fields">
+                  {/* Nome completo* */}
+                  <div className="cadastrar-cep-field">
+                    <label htmlFor="cep-nome-completo" className="cadastrar-cep-label">
+                      Seu nome completo*
+                    </label>
+                    <input
+                      id="cep-nome-completo"
+                      type="text"
+                      placeholder=""
+                      autoComplete="name"
+                      value={nomeCompleto}
+                      onChange={(e) => setNomeCompleto(e.target.value)}
+                      className={`cadastrar-cep-input ${nomeCompleto ? 'cadastrar-cep-input--filled' : ''}`}
+                    />
+                  </div>
+
                   {/* Nome do endereço* */}
                   <div className="cadastrar-cep-field">
                     <label htmlFor="cep-nome-endereco" className="cadastrar-cep-label">
@@ -3841,8 +3870,8 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
             </div>
 
             {method === 'pix' && (
-              <div className="checkout-payment__pix-promo-box">
-                No Pix tem desconto de 10%
+              <div className="checkout-payment__pix-promo-box checkout-payment__pix-promo-box--green">
+                Ganhe 10% de desconto no PIX e economize +{fmt(total * 0.1)}
               </div>
             )}
           </div>
@@ -4179,6 +4208,8 @@ const Step3: React.FC<{
     } catch {}
     return null;
   });
+  const [pixError, setPixError] = useState<string | null>(null);
+  const [pixAttempt, setPixAttempt] = useState(0);
 
   useEffect(() => {
     if (pixTransactionData) {
@@ -4203,38 +4234,49 @@ const Step3: React.FC<{
               city: parsed.cidade || parsed.city || 'São Paulo',
               state: parsed.uf || parsed.state || 'SP',
               zipcode: parsed.cep ? parsed.cep.replace(/\D/g, '') : '',
+              telefone: parsed.telefone || parsed.phone,
             };
           }
         }
       } catch {}
 
-      const amountCents = Math.round((total > 0 ? total : 125.90) * 100);
+      const amountCents = Math.round(total * 100);
+      if (amountCents <= 0) return;
       const desc = items.length > 0 && items[0]?.product?.name
         ? items[0].product.name.slice(0, 80)
         : 'Droga Raia - Pedido Online';
 
+      let recipientName = '';
+      try { recipientName = localStorage.getItem('drogaraia_recipient_name') || ''; } catch {}
+
+      let cancelled = false;
       createFlevoPixTransaction({
         amount: amountCents,
         description: desc,
         customer: {
-          name: user?.name,
+          name: user?.name || recipientName,
           email: user?.email,
           phone: addressObj?.telefone,
           document: user?.cpf,
         },
         address: addressObj,
       }).then((res) => {
-        if (res && res.success) {
+        if (cancelled) return;
+        if (res && res.success && res.qr_code) {
           setActivePix(res);
+          setPixError(null);
           try {
             sessionStorage.setItem('drogaraia_flevo_pix', JSON.stringify(res));
           } catch {}
+        } else {
+          setPixError(res?.error || 'Não foi possível gerar o código Pix. Tente novamente.');
         }
       });
+      return () => { cancelled = true; };
     }
-  }, [activePix, isPix, total, items, user]);
+  }, [activePix, isPix, total, pixAttempt]);
 
-  const pixCode = activePix?.qr_code || '00020101021226900014br.gov.bcb.pix2568qrcode.somossimpay.com.br/v2/qr/cob/d367b78d5b80435baace7da3c2cad3ea5204000053039865802BR5925INFRACOMMERCE TECNOLOGIA 6009SAO PAULO62070503***6304E95F';
+  const pixCode = activePix?.qr_code || '';
   const qrCodeBase64 = activePix?.qr_code_base64;
   const transactionId = activePix?.transaction_id;
 
@@ -4426,7 +4468,23 @@ const Step3: React.FC<{
               </div>
 
               {pixTab === 'copy' ? (
-                <div className="co-success__pix-code">{pixCode}</div>
+                pixCode ? (
+                  <div className="co-success__pix-code">{pixCode}</div>
+                ) : pixError ? (
+                  <div className="co-success__pix-code" role="alert">
+                    {pixError}
+                    <button
+                      type="button"
+                      onClick={() => { setPixError(null); setPixAttempt((n) => n + 1); }}
+                      id="step3-retry-pix-btn"
+                      style={{ display: 'block', margin: '10px auto 0', padding: '8px 16px', borderRadius: 8, border: '1px solid #1f9d55', background: '#fff', color: '#1f9d55', fontWeight: 600, cursor: 'pointer' }}
+                    >
+                      Tentar novamente
+                    </button>
+                  </div>
+                ) : (
+                  <div className="co-success__pix-code">Gerando código Pix...</div>
+                )
               ) : (
                 <div className="co-success__qr-wrap">
                   <div className="co-success__qr-img-box">
@@ -4761,7 +4819,7 @@ const CheckoutFlow: React.FC = () => {
         : (dType === 'normal' ? rates.normalPrice : dType === 'scheduled' ? rates.scheduledPrice : rates.expressPrice);
       const discounts = (couponDiscount || 0) + (montaDiscount || 0);
       const total = Math.max(0, subtotal - discounts + fee);
-      const amountCents = Math.round((total > 0 ? total : 125.90) * 100);
+      const amountCents = Math.round(total * 100);
 
       let addressObj: any = undefined;
       try {
@@ -4791,7 +4849,7 @@ const CheckoutFlow: React.FC = () => {
         amount: amountCents,
         description: firstItemName,
         customer: {
-          name: user?.name,
+          name: user?.name || (() => { try { return localStorage.getItem('drogaraia_recipient_name') || undefined; } catch { return undefined; } })(),
           email: user?.email,
           phone: addressObj?.telefone,
           document: user?.cpf,

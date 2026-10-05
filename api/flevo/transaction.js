@@ -1,12 +1,7 @@
-const QRCode = require('qrcode');
+import QRCode from 'qrcode';
 
-function getFlevoCredentials() {
-  const apiKey = process.env.FLEVO_API_KEY || 'sk_3476ac27a86bffb0ac912200ffc8c1688545ae36c90acd384d3e1389390e4000';
-  const accountId = process.env.FLEVO_ACCOUNT_ID || '10038';
-  return { apiKey, accountId };
-}
-
-module.exports = async function handler(req, res) {
+// O package.json usa "type": "module", então as funções da Vercel precisam ser ESM.
+export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -19,8 +14,12 @@ module.exports = async function handler(req, res) {
     return res.status(405).json({ success: false, error: 'Method not allowed' });
   }
 
+  const apiKey = process.env.FLEVO_API_KEY;
+  if (!apiKey) {
+    return res.status(500).json({ success: false, error: 'FLEVO_API_KEY não configurada no servidor' });
+  }
+
   try {
-    const { apiKey } = getFlevoCredentials();
     const payload = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
 
     const response = await fetch('https://app.flevopay.com.br/api/v1/transaction', {
@@ -51,4 +50,4 @@ module.exports = async function handler(req, res) {
     console.error('[FlevoPay Vercel] Erro na transação:', err);
     return res.status(500).json({ success: false, error: err.message || 'Erro interno no proxy FlevoPay' });
   }
-};
+}

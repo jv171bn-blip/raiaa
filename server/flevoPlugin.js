@@ -58,9 +58,8 @@ function getFlevoCredentials() {
             console.error('[FlevoPay Proxy] Erro ao ler .env:', e);
         }
     }
-    // Chave secreta de fallback segura
     if (!apiKey) {
-        apiKey = 'sk_3476ac27a86bffb0ac912200ffc8c1688545ae36c90acd384d3e1389390e4000';
+        console.error('[FlevoPay Proxy] FLEVO_API_KEY não configurada (.env ou variável de ambiente)');
     }
     return { apiKey: apiKey, accountId: accountId };
 }
