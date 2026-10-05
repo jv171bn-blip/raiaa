@@ -1152,6 +1152,21 @@ const CadastrarEnderecoSheet: React.FC<{
         if (finalAddress.nomeEndereco) {
           localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
         }
+        const fullToSave = {
+          ...finalAddress,
+          street: finalAddress.endereco,
+          number: finalAddress.numero,
+          complement: finalAddress.complemento,
+          neighborhood: finalAddress.bairro,
+          city: finalAddress.cidade,
+          state: finalAddress.uf,
+          name: finalAddress.nomeEndereco,
+          phone: finalAddress.telefone,
+        };
+        localStorage.setItem('drogaraia_user_address', JSON.stringify(fullToSave));
+        if (finalAddress.cep) {
+          localStorage.setItem('drogaraia_cep', finalAddress.cep);
+        }
       } catch {}
       if (setUserAddress) {
         setUserAddress({
@@ -1196,6 +1211,21 @@ const CadastrarEnderecoSheet: React.FC<{
       }
       if (finalAddress.nomeEndereco) {
         localStorage.setItem('drogaraia_address_name', finalAddress.nomeEndereco);
+      }
+      const fullToSave = {
+        ...finalAddress,
+        street: finalAddress.endereco,
+        number: finalAddress.numero,
+        complement: finalAddress.complemento,
+        neighborhood: finalAddress.bairro,
+        city: finalAddress.cidade,
+        state: finalAddress.uf,
+        name: finalAddress.nomeEndereco,
+        phone: finalAddress.telefone,
+      };
+      localStorage.setItem('drogaraia_user_address', JSON.stringify(fullToSave));
+      if (finalAddress.cep) {
+        localStorage.setItem('drogaraia_cep', finalAddress.cep);
       }
     } catch {}
 
@@ -2230,7 +2260,7 @@ const Step1: React.FC<{
   onBack: () => void;
   onContinue: (m: DeliveryMode, t: DeliveryType) => void;
 }> = ({ initialMode = 'address', onBack, onContinue }) => {
-  const { items, subtotal, couponDiscount, montaDiscount, showToast, cepAddress, setCepAddress, userAddress } = useCart();
+  const { items, subtotal, couponDiscount, montaDiscount, showToast, cepAddress, setCepAddress, userAddress, setUserAddress } = useCart();
   const displayItems = items.length > 0 ? items : [{ product: fraldasProducts[0], quantity: 1 }];
   const currentSubtotal = subtotal > 0 ? subtotal : 125.90;
   const rates = getShippingRates(currentSubtotal);
@@ -2277,28 +2307,20 @@ const Step1: React.FC<{
       const raw = localStorage.getItem('drogaraia_user_address');
       if (raw) {
         const p = JSON.parse(raw);
-        if (
-          (!p.endereco && !p.street) ||
-          p.endereco === 'Rua Manoel Pereira' ||
-          p.street === 'Rua Manoel Pereira' ||
-          p.cep === '02324-210' ||
-          p.cep === '01001-000'
-        ) {
-          localStorage.removeItem('drogaraia_user_address');
-          localStorage.removeItem('drogaraia_address_name');
-          return null;
+        if (p && (p.endereco || p.street || p.cep)) {
+          return {
+            cep: p.cep || '',
+            nomeEndereco: p.nomeEndereco || p.name || 'casa',
+            nomeCompleto: p.nomeCompleto || '',
+            endereco: p.endereco || p.street || '',
+            bairro: p.bairro || p.neighborhood || '',
+            complemento: p.complemento || p.complement || '',
+            numero: p.numero || p.number || '',
+            telefone: p.telefone || p.phone || '',
+            cidade: p.cidade || p.city || 'São Paulo',
+            uf: p.uf || p.state || 'SP',
+          };
         }
-        return {
-          cep: p.cep || '',
-          nomeEndereco: p.nomeEndereco || p.name || 'casa',
-          endereco: p.endereco || p.street || '',
-          bairro: p.bairro || p.neighborhood || '',
-          complemento: p.complemento || p.complement || '',
-          numero: p.numero || p.number || '',
-          telefone: p.telefone || p.phone || '',
-          cidade: p.cidade || p.city || 'São Paulo',
-          uf: p.uf || p.state || 'SP',
-        };
       }
     } catch {}
     return null;
@@ -2317,8 +2339,6 @@ const Step1: React.FC<{
         cidade: userAddress.city || 'São Paulo',
         uf: userAddress.state || 'SP',
       });
-    } else if (!userAddress) {
-      setSavedAddress(null);
     }
   }, [userAddress]);
 
@@ -2445,8 +2465,37 @@ const Step1: React.FC<{
     if (addressData) {
       setSavedAddress(addressData);
       try {
+        const fullToSave = {
+          ...addressData,
+          street: addressData.endereco,
+          number: addressData.numero,
+          complement: addressData.complemento,
+          neighborhood: addressData.bairro,
+          city: addressData.cidade || 'São Paulo',
+          state: addressData.uf || 'SP',
+          name: addressData.nomeEndereco,
+          phone: addressData.telefone,
+        };
+        localStorage.setItem('drogaraia_user_address', JSON.stringify(fullToSave));
         localStorage.setItem('drogaraia_address_name', addressData.nomeEndereco);
+        if (addressData.cep) {
+          localStorage.setItem('drogaraia_cep', addressData.cep);
+        }
       } catch {}
+      if (setUserAddress) {
+        setUserAddress({
+          cep: addressData.cep,
+          street: addressData.endereco,
+          number: addressData.numero,
+          complement: addressData.complemento,
+          neighborhood: addressData.bairro,
+          city: addressData.cidade || 'São Paulo',
+          state: addressData.uf || 'SP',
+          country: 'Brasil',
+          name: addressData.nomeEndereco,
+          phone: addressData.telefone,
+        });
+      }
     }
     if (store) {
       setSelectedPharmacy(store);

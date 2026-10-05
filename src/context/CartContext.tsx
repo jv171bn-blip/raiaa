@@ -177,10 +177,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [cepAddress, setCepAddress] = useState<string | null>(() => {
     try {
       const saved = localStorage.getItem('drogaraia_cep');
-      if (saved === '02324-210' || saved === '01001-000') {
-        localStorage.removeItem('drogaraia_cep');
-        return null;
-      }
       return saved || null;
     } catch {
       return null;
@@ -192,16 +188,20 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const saved = localStorage.getItem('drogaraia_user_address');
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (
-          parsed.street === 'Rua Manoel Pereira' ||
-          parsed.endereco === 'Rua Manoel Pereira' ||
-          parsed.cep === '02324-210'
-        ) {
-          localStorage.removeItem('drogaraia_user_address');
-          localStorage.removeItem('drogaraia_address_name');
-          return null;
+        if (parsed && (parsed.street || parsed.endereco || parsed.cep)) {
+          return {
+            cep: parsed.cep || '',
+            street: parsed.street || parsed.endereco || '',
+            number: parsed.number || parsed.numero || '',
+            complement: parsed.complement || parsed.complemento || '',
+            neighborhood: parsed.neighborhood || parsed.bairro || '',
+            city: parsed.city || parsed.cidade || 'São Paulo',
+            state: parsed.state || parsed.uf || 'SP',
+            country: parsed.country || 'Brasil',
+            name: parsed.name || parsed.nomeEndereco || parsed.nomeCompleto || 'casa',
+            phone: parsed.phone || parsed.telefone || '',
+          };
         }
-        return parsed;
       }
       return null;
     } catch {
@@ -244,16 +244,35 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, [userAddress, cepAddress]);
 
   const setUserAddress = (addr: UserAddress | null) => {
+    if (!addr) return;
     setUserAddressState(addr);
     try {
-      if (addr) {
-        localStorage.setItem('drogaraia_user_address', JSON.stringify(addr));
-        if (addr.cep) {
-          localStorage.setItem('drogaraia_cep', addr.cep);
-          setCepAddress(addr.cep);
-        }
-      } else {
-        localStorage.removeItem('drogaraia_user_address');
+      const fullAddr = {
+        ...addr,
+        street: addr.street || (addr as any).endereco || '',
+        endereco: addr.street || (addr as any).endereco || '',
+        number: addr.number || (addr as any).numero || '',
+        numero: addr.number || (addr as any).numero || '',
+        complement: addr.complement || (addr as any).complemento || '',
+        complemento: addr.complement || (addr as any).complemento || '',
+        neighborhood: addr.neighborhood || (addr as any).bairro || '',
+        bairro: addr.neighborhood || (addr as any).bairro || '',
+        city: addr.city || (addr as any).cidade || 'São Paulo',
+        cidade: addr.city || (addr as any).cidade || 'São Paulo',
+        state: addr.state || (addr as any).uf || 'SP',
+        uf: addr.state || (addr as any).uf || 'SP',
+        phone: addr.phone || (addr as any).telefone || '',
+        telefone: addr.phone || (addr as any).telefone || '',
+        name: addr.name || (addr as any).nomeEndereco || 'casa',
+        nomeEndereco: addr.name || (addr as any).nomeEndereco || 'casa',
+      };
+      localStorage.setItem('drogaraia_user_address', JSON.stringify(fullAddr));
+      if (fullAddr.name) {
+        localStorage.setItem('drogaraia_address_name', fullAddr.name);
+      }
+      if (fullAddr.cep) {
+        localStorage.setItem('drogaraia_cep', fullAddr.cep);
+        setCepAddress(fullAddr.cep);
       }
     } catch {
       // Ignore storage errors
