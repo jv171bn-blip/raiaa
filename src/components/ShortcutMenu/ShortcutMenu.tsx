@@ -1,5 +1,4 @@
 import React from 'react';
-import { useCart } from '../../context/CartContext';
 import './ShortcutMenu.css';
 
 // Exact SVG icons matching the reference screenshot
@@ -90,39 +89,31 @@ interface ShortcutDef {
   label: string;
   icon: React.ComponentType;
   anchor?: string;
-  modal?: 'coupons' | 'pbm' | 'prescription' | 'login';
-  actionToast?: string;
 }
 
 // Exactly the 10 items in the exact order shown in the reference image
 const shortcuts: ShortcutDef[] = [
   { label: 'Mais Buscados', icon: IconMedal, anchor: 'section-mais-comprados' },
-  { label: 'Produtos Salvos', icon: IconHeart, modal: 'login', actionToast: 'Acesse sua conta para ver seus produtos favoritados!' },
-  { label: 'Dose Certa', icon: IconMedal, modal: 'prescription' },
-  { label: 'Manipulação', icon: IconFlask, modal: 'prescription' },
-  { label: 'Seu tratamento com desconto', icon: IconPillHalfFilled, modal: 'pbm' },
-  { label: 'Cupons', icon: IconCouponPercent, modal: 'coupons' },
-  { label: 'Ofertas do dia', icon: IconTagSimple, anchor: 'section-black-do-dia' },
-  { label: 'Suas ofertas', icon: IconTagPercent, anchor: 'section-destaque-semana' },
-  { label: 'Perfumes', icon: IconPerfumeBottle, anchor: 'section-marcas-favoritas' },
-  { label: 'Serviços e Vacinas', icon: IconMedicalKit, anchor: 'service-section' },
+  { label: 'Produtos Salvos', icon: IconHeart },
+  { label: 'Dose Certa', icon: IconMedal },
+  { label: 'Manipulação', icon: IconFlask },
+  { label: 'Seu tratamento com desconto', icon: IconPillHalfFilled },
+  { label: 'Cupons', icon: IconCouponPercent },
+  { label: 'Ofertas do dia', icon: IconTagSimple },
+  { label: 'Suas ofertas', icon: IconTagPercent },
+  { label: 'Perfumes', icon: IconPerfumeBottle },
+  { label: 'Serviços e Vacinas', icon: IconMedicalKit },
 ];
 
 const ShortcutMenu: React.FC = () => {
-  const { setActiveModal, user } = useCart();
-
   const handleShortcutClick = (item: ShortcutDef) => {
-    if (item.modal) {
-      if (item.label === 'Produtos Salvos' && user) {
-        return;
-      }
-      setActiveModal(item.modal);
-    } else if (item.anchor) {
+    if (item.label === 'Mais Buscados' && item.anchor) {
       const el = document.getElementById(item.anchor);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
+    // Todos os outros botões não têm função
   };
 
   return (

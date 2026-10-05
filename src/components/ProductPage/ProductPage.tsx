@@ -34,6 +34,67 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
   // Dynamically compute similar products based on category / subcategory / name keywords
   const similarProducts = getSimilarProducts(product, allProducts);
 
+  // Dynamically compute cross-sell "Quem comprou, também se interessou" products
+  const quemComprouList = useMemo(() => {
+    const candidatePool = allProducts && allProducts.length > 0 ? allProducts : quemComprouTambem;
+    const otherProducts = candidatePool.filter(p => p.id !== product.id);
+
+    const currentCat = (product.category || '').toLowerCase();
+    const currentSub = (product.subcategory || '').toLowerCase();
+    const currentName = (product.name || '').toLowerCase();
+
+    // Identify complementary category items
+    let complementary: Product[] = [];
+    if (currentCat.includes('bebê') || currentCat.includes('bebe') || currentSub.includes('fralda') || currentName.includes('fralda')) {
+      complementary = otherProducts.filter(p => {
+        const cat = (p.category || '').toLowerCase();
+        const sub = (p.subcategory || '').toLowerCase();
+        const name = (p.name || '').toLowerCase();
+        return (
+          cat.includes('bebê') ||
+          cat.includes('bebe') ||
+          sub.includes('bebê') ||
+          sub.includes('bebe') ||
+          sub.includes('assadura') ||
+          name.includes('lenço') ||
+          name.includes('lenco') ||
+          name.includes('pomada') ||
+          name.includes('huggies') ||
+          name.includes('ninho') ||
+          name.includes('mucilon')
+        );
+      });
+    } else if (currentCat.includes('dermo') || currentCat.includes('beleza') || currentCat.includes('higiene') || currentCat.includes('cabelo')) {
+      complementary = otherProducts.filter(p => {
+        const cat = (p.category || '').toLowerCase();
+        return cat.includes('dermo') || cat.includes('beleza') || cat.includes('higiene') || cat.includes('cabelo');
+      });
+    } else {
+      complementary = otherProducts.filter(p => {
+        const cat = (p.category || '').toLowerCase();
+        return cat.includes('medicamento') || cat.includes('saudável') || cat.includes('saudavel');
+      });
+    }
+
+    const combined = [
+      ...complementary,
+      ...quemComprouTambem.filter(p => p.id !== product.id),
+      ...otherProducts
+    ];
+
+    const seen = new Set<number>();
+    const result: Product[] = [];
+    for (const p of combined) {
+      if (p && p.id && !seen.has(p.id) && p.id !== product.id) {
+        seen.add(p.id);
+        result.push(p);
+      }
+      if (result.length >= 10) break;
+    }
+
+    return result.length > 0 ? result : quemComprouTambem;
+  }, [product, allProducts]);
+
   const [selectedOption, setSelectedOption] = useState<'oferta-raia' | 'leve-pague'>('oferta-raia');
   const [ofertaQty, setOfertaQty] = useState(1);
   const [promoQty, setPromoQty] = useState(2);
@@ -905,7 +966,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
           <section className="pdp-carousel-section">
             <h3 className="pdp-carousel-heading">Quem comprou, também se interessou</h3>
             <div className="pdp-cards-scroll-track" ref={boughtTrackRef}>
-              {quemComprouTambem.map(item => (
+              {quemComprouList.map(item => (
                 <div key={item.id} className="pdp-carousel-card-wrap">
                   <ProductCard product={item} />
                 </div>

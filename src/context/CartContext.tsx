@@ -704,8 +704,12 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
         return;
       }
-      if (hash && hash.startsWith('#produto-')) {
-        const id = Number(hash.replace('#produto-', ''));
+      const searchParams = new URLSearchParams(window.location.search);
+      const queryProdId = searchParams.get('produto') || searchParams.get('id');
+      const isProductHash = hash && hash.startsWith('#produto-');
+      const targetId = queryProdId ? Number(queryProdId) : (isProductHash ? Number(hash.replace('#produto-', '')) : null);
+
+      if (targetId) {
         const all = [
           ...ultraBrasilProducts,
           flexoneProduct,
@@ -725,7 +729,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
           ...montaProducts,
           ...todosProdutosExpandidos,
         ];
-        const found = all.find(p => p.id === id);
+        const found = all.find(p => p.id === targetId);
         if (found) {
           setSelectedProduct(found);
           setIsOffersPage(false);

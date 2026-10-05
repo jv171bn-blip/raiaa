@@ -48,6 +48,9 @@ const MIME_TYPES = {
   '.mp4': 'video/mp4',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
+  '.xml': 'application/xml; charset=UTF-8',
+  '.tsv': 'text/plain; charset=UTF-8',
+  '.txt': 'text/plain; charset=UTF-8',
 };
 
 const server = http.createServer(async (req, res) => {
