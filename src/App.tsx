@@ -20,7 +20,6 @@ import Toast from './components/Toast/Toast';
 import Modals from './components/Modals/Modals';
 import CookieBanner from './components/CookieBanner/CookieBanner';
 import ProductPage from './components/ProductPage/ProductPage';
-import FlashOfferBanner from './components/FlashOfferBanner/FlashOfferBanner';
 import OffersPage from './components/OffersPage/OffersPage';
 import MontaQueDescontaPage from './components/MontaQueDescontaPage/MontaQueDescontaPage';
 import AllProductsPage from './components/AllProductsPage/AllProductsPage';
@@ -137,8 +136,6 @@ const MainContent: React.FC = () => {
         {/* Hero Carousel */}
         <HeroCarousel />
 
-        {/* Oferta Relâmpago */}
-        <FlashOfferBanner />
 
         {/* Shortcuts (Pills) */}
         <ShortcutMenu />
