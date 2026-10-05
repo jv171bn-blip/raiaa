@@ -29,12 +29,14 @@ import {
   deduplicateProducts,
   todosProdutosExpandidos,
 } from '../../data/products';
+import { ultraBrasilProducts } from '../../data/ultraBrasilProducts';
 import { montaProducts } from '../../data/montaOffers';
 import MobileMenuSheet from '../MobileMenuSheet/MobileMenuSheet';
 import './Header.css';
 
 // Combine all products for live search
 const allProducts: Product[] = deduplicateProducts([
+  ...ultraBrasilProducts,
   ...mostBought,
   ...blackDayProducts,
   ...weekHighlights,

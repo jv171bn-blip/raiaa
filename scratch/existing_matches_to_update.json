@@ -1,0 +1,410 @@
+[
+  {
+    "type": "high_overlap",
+    "existingId": 1401,
+    "existingName": "100% Whey Protein Max Titanium Baunilha 900g",
+    "existingPrice": 109.9,
+    "newPrice": 84.04,
+    "storeName": "100% Whey Refil (900G) &#8211; Baunilha &#8211; Max Titanium"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 207,
+    "existingName": "Absorvente Intimus Noturno Toda Protegida Cobertura Suave Com Abas 30 unidades",
+    "existingPrice": 28.99,
+    "newPrice": 17.99,
+    "newOldPrice": 19.99,
+    "storeName": "Absorvente Always Noturno Cobertura Suave com Abas Fluxo Intenso G 32 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 2032,
+    "existingName": "Água Micelar Demaquilante Bioderma Sensibio H2O 250ml",
+    "existingPrice": 68.9,
+    "newPrice": 63.99,
+    "storeName": "Água Micelar Bioderma Sébium H2O 250ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 2032,
+    "existingName": "Água Micelar Demaquilante Bioderma Sensibio H2O 250ml",
+    "existingPrice": 68.9,
+    "newPrice": 64.79,
+    "storeName": "Água Micelar Clareadora Bioderma Pigmentbio H2O 250ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30135,
+    "existingName": "Carga para Aparelho Gillette Mach3 com 4 Unidades",
+    "existingPrice": 44.9,
+    "newPrice": 71.99,
+    "newOldPrice": 79.99,
+    "storeName": "Carga para Aparelho de Barbear Gillette Mach3 Sensitive 16 unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1303,
+    "existingName": "Bálsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+    "existingPrice": 54.9,
+    "newPrice": 36,
+    "newOldPrice": 40,
+    "storeName": "Cicaplast Reparador Labial La Roche-Posay Cicaplast 7,5ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 111,
+    "existingName": "Creatina Hardcore Integralmedica 150g",
+    "existingPrice": 34.9,
+    "newPrice": 25.4,
+    "storeName": "Creatina Hardcore 150g Integralmedica"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30123,
+    "existingName": "Creme Dental Colgate Total 12 Clean Mint 90g",
+    "existingPrice": 8.9,
+    "newPrice": 10.19,
+    "storeName": "Creme Dental Colgate Total 12 Antitártaro 90g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 201,
+    "existingName": "Creme Dental Colgate Total Prevenção Ativa Original Mint 90g",
+    "existingPrice": 9.99,
+    "newPrice": 11.7,
+    "storeName": "Creme Dental Colgate Total Original Mint 90g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30179,
+    "existingName": "Creme Anti-Idade Noite Eucerin Hyaluron-Filler Elasticity 50ml",
+    "existingPrice": 219.9,
+    "newPrice": 137.69,
+    "storeName": "Creme Facial Anti-Idade Eucerin Hyaluron-Filler + Elasticity FPS30 50ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30098,
+    "existingName": "Hidratante Facial La Roche-Posay Toleriane Sensitive Creme 40ml",
+    "existingPrice": 89.9,
+    "newPrice": 143.91,
+    "newOldPrice": 159.9,
+    "storeName": "Creme Hidratante Facial La Roche-Posay Effaclar Mat 40ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30178,
+    "existingName": "Creme Redensificador Vichy Neovadiol Menopausa Dia 50ml",
+    "existingPrice": 229.9,
+    "newPrice": 153.82,
+    "storeName": "Creme Nutritivo Vichy Redensificador Neovadiol Menopausa 50g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 2045,
+    "existingName": "Pomada Bepantol Baby Creme Preventivo de Assaduras 120g",
+    "existingPrice": 68.9,
+    "newPrice": 35.01,
+    "newOldPrice": 38.9,
+    "storeName": "Creme Preventivo de Assaduras Bepantol Baby 120g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30121,
+    "existingName": "Desodorante Antitranspirante Roll-On Perspirex Original 20ml",
+    "existingPrice": 99.9,
+    "newPrice": 56.69,
+    "storeName": "Desodorante Roll On Perspirex &#8211; Comfort Roll-on 20ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21107,
+    "existingName": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper P 42 Unidades",
+    "existingPrice": 49.9,
+    "newPrice": 47.94,
+    "storeName": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1096085,
+    "existingName": "Fralda Calça Huggies Proteção Acolchoada Tamanho P 44 Unidades",
+    "existingPrice": 74.9,
+    "newPrice": 83.94,
+    "storeName": "Fralda Calça Huggies Proteção Acolchoada M 72 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1096085,
+    "existingName": "Fralda Calça Huggies Proteção Acolchoada Tamanho P 44 Unidades",
+    "existingPrice": 74.9,
+    "newPrice": 83.94,
+    "storeName": "Fralda Calça Huggies Proteção Acolchoada M 80 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 59.94,
+    "storeName": "Fralda Calça MamyPoko Dia &#038; Noite G 50 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 64.74,
+    "storeName": "Fralda Calça MamyPoko Dia &#038; Noite G 60 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 59.94,
+    "storeName": "Fralda Calça MamyPoko Dia &#038; Noite M 58 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 64.74,
+    "storeName": "Fralda Calça MamyPoko Dia &#038; Noite M 68 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 64.74,
+    "storeName": "Fralda Calça MamyPoko Dia &#038; Noite XG 52 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 64.74,
+    "storeName": "Fralda Calça MamyPoko Dia &#038; Noite XXG 44 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21118,
+    "existingName": "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
+    "existingPrice": 79.9,
+    "newPrice": 48.59,
+    "storeName": "Fralda calça MamyPoko Dia &#038; Noite XG 42 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 2038,
+    "existingName": "Fralda Huggies Supreme Care Tamanho G 78 Unidades",
+    "existingPrice": 119.9,
+    "newPrice": 59.93,
+    "storeName": "Fralda Huggies Supreme Care G com 66 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 2038,
+    "existingName": "Fralda Huggies Supreme Care Tamanho G 78 Unidades",
+    "existingPrice": 119.9,
+    "newPrice": 47.94,
+    "storeName": "Fralda Huggies Supreme Care M 40 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 2038,
+    "existingName": "Fralda Huggies Supreme Care Tamanho G 78 Unidades",
+    "existingPrice": 119.9,
+    "newPrice": 77.94,
+    "storeName": "Fralda Huggies Supreme Care M 72 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 62.94,
+    "storeName": "Fralda Pampers Confort Sec G 60 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 89.94,
+    "storeName": "Fralda Pampers Confort Sec G 98 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 78.48,
+    "newOldPrice": 87.2,
+    "storeName": "Fralda Pampers Confort Sec G 98 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 92.94,
+    "storeName": "Fralda Pampers Confort Sec M 112 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 47.94,
+    "storeName": "Fralda Pampers Confort Sec M 44 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 65.94,
+    "storeName": "Fralda Pampers Confort Sec M 70 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 57.51,
+    "newOldPrice": 63.9,
+    "storeName": "Fralda Pampers Confort Sec M 70 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 71.94,
+    "storeName": "Fralda Pampers Confort Sec M 80 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 36.63,
+    "storeName": "Fralda Pampers Confort Sec P 28 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 51.54,
+    "storeName": "Fralda Pampers Confort Sec P 50 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1250294,
+    "existingName": "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
+    "existingPrice": 32.9,
+    "newPrice": 50.95,
+    "storeName": "Fralda Pampers Confort Sec P 72 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21114,
+    "existingName": "Fralda Pom Pom Protek Proteção de Mãe P 36 Unidades",
+    "existingPrice": 39.9,
+    "newPrice": 26.94,
+    "storeName": "Fralda Pom Pom Protek Proteção de Mãe G 24 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21114,
+    "existingName": "Fralda Pom Pom Protek Proteção de Mãe P 36 Unidades",
+    "existingPrice": 39.9,
+    "newPrice": 65.94,
+    "storeName": "Fralda Pom Pom Protek Proteção de Mãe M 86 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21114,
+    "existingName": "Fralda Pom Pom Protek Proteção de Mãe P 36 Unidades",
+    "existingPrice": 39.9,
+    "newPrice": 26.94,
+    "storeName": "Fralda Pom Pom Protek Proteção de Mãe P 30 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21114,
+    "existingName": "Fralda Pom Pom Protek Proteção de Mãe P 36 Unidades",
+    "existingPrice": 39.9,
+    "newPrice": 38.94,
+    "storeName": "Fralda Pom Pom Protek Proteção de Mãe XG 38 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 21114,
+    "existingName": "Fralda Pom Pom Protek Proteção de Mãe P 36 Unidades",
+    "existingPrice": 39.9,
+    "newPrice": 35.94,
+    "storeName": "Fralda Pom Pom Protek Proteção de Mãe XXG 30 Unidades"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30095,
+    "existingName": "Gel de Limpeza Facial Avène Cleanance 300ml",
+    "existingPrice": 84.9,
+    "newPrice": 48.59,
+    "storeName": "Gel de Limpeza Facial Avène Cleanance Intense 300g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30087,
+    "existingName": "Gel de Limpeza Bioderma Sébium Gel Moussant Actif 200ml",
+    "existingPrice": 74.9,
+    "newPrice": 32.39,
+    "storeName": "Gel de Limpeza Facial Bioderma Sébium Gel Moussant 200ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 115,
+    "existingName": "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
+    "existingPrice": 67.9,
+    "newPrice": 48.59,
+    "storeName": "Gel De Limpeza Facial Darrow Actine Oil Control 400g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 1302,
+    "existingName": "Gel de Limpeza Facial Effaclar Concentrado La Roche-Posay 300g",
+    "existingPrice": 82.9,
+    "newPrice": 46.17,
+    "storeName": "Gel de Limpeza Facial La Roche-Posay Effaclar Concentrado 300g"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30163,
+    "existingName": "Gel de Limpeza Facial Neutrogena Acne Proofing 200ml",
+    "existingPrice": 43.9,
+    "newPrice": 35.99,
+    "newOldPrice": 39.99,
+    "storeName": "Gel de limpeza Neutrogena Acne Proofing 200ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30087,
+    "existingName": "Gel de Limpeza Bioderma Sébium Gel Moussant Actif 200ml",
+    "existingPrice": 74.9,
+    "newPrice": 32.4,
+    "storeName": "Gel de Limpeza Sébium Bioderma Gel Moussant Actif 200ml"
+  },
+  {
+    "type": "high_overlap",
+    "existingId": 30087,
+    "existingName": "Gel de Limpeza Bioderma Sébium Gel Moussant Actif 200ml",
+    "existingPrice": 74.9,
+    "newPrice": 64.8,
+    "storeName": "Gel de Limpeza Sébium Gel Moussant Actif 500ml"
+  }
+]

@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ProductCard from '../ProductCard/ProductCard';
 import { Product } from '../../data/products';
+import { useCart } from '../../context/CartContext';
 import './ProductCarousel.css';
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const ProductCarousel: React.FC<Props> = ({ title, products, id }) => {
+  const { goToAllProductsPage } = useCart();
   const trackRef = useRef<HTMLDivElement>(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
@@ -70,9 +72,25 @@ const ProductCarousel: React.FC<Props> = ({ title, products, id }) => {
         {products.map(p => (
           <ProductCard key={p.id} product={p} />
         ))}
+
+        {/* Botão circular ao lado direito - Ver mais (sem cor verde e sem Ver tudo) */}
+        <div
+          className="carousel-circle-btn"
+          onClick={goToAllProductsPage}
+          role="button"
+          tabIndex={0}
+          title="Ver mais produtos"
+          aria-label="Ver mais produtos"
+        >
+          <div className="carousel-circle-btn__circle">
+            <ChevronRight size={24} className="carousel-circle-btn__arrow" />
+          </div>
+          <span className="carousel-circle-btn__main">Ver mais</span>
+        </div>
       </div>
     </section>
   );
 };
 
 export default ProductCarousel;
+

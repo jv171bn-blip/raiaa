@@ -25,6 +25,7 @@ export interface Product {
   ean?: string;
   tierText?: string;
   consultStock?: boolean;
+  ultraId?: number;
 }
 
 export function isCosmeticOrPersonalCare(product?: Product | null): boolean {
@@ -139,7 +140,7 @@ export function isCosmeticOrPersonalCare(product?: Product | null): boolean {
     'vick',
     'strepsils',
     'spray para garganta',
-    'pastilha para garganta',
+    'pastilha para garganta'
   ];
 
   if (pharmaKeywords.some(keyword => name.includes(keyword))) {
@@ -237,7 +238,7 @@ export function isCosmeticOrPersonalCare(product?: Product | null): boolean {
     'trio',
     'mise en scène',
     'mise en scene',
-    'retinol',
+    'retinol'
   ];
 
   return cosmeticKeywords.some(keyword => name.includes(keyword));
@@ -723,26 +724,6 @@ export const mostBought: Product[] = [
     description: "Hipoglós Amêndoas forma uma camada protetora nutritiva com óleo de amêndoas e vitaminas A e E, mantendo a pele do bebê hidratada e livre de assaduras.",
   },
   {
-    id: 2043,
-    name: "Lenços Umedecidos Pampers Fresh Clean 144 Toalhinhas (Embalagem Tripla)",
-    size: "144un",
-    brand: "Pampers",
-    category: "Mamãe & Bebê",
-    subcategory: "Higiene do Bebê",
-    oldPrice: 41.90,
-    price: 34.90,
-    discount: 17,
-    rating: 4.8,
-    reviews: 280,
-    image: "https://product-data.raiadrogasil.io/images/17547850.webp",
-    bullets: [
-      "Toalhinhas suaves e resistentes com loção à base de água pura.",
-      "Ajudam a restabelecer o pH natural da pele do bebê a cada troca.",
-      "Dermatologicamente testadas, hipoalergênicas e com fragrância delicada.",
-    ],
-    description: "Toalhas umedecidas Pampers Fresh Clean limpam delicadamente a pele do bebê desde o nascimento, protegendo contra irritações e proporcionando frescor.",
-  },
-  {
     id: 2049,
     name: "Cereal Infantil Mucilon Multicereais Nestlé 600g",
     size: "600g",
@@ -761,7 +742,7 @@ export const mostBought: Product[] = [
       "Prático e nutritivo para o café da manhã ou lanchinho.",
     ],
     description: "Mucilon Multicereais combina grãos selecionados para oferecer textura aveludada e nutrição completa para a fase de introdução alimentar dos pequenos.",
-  },
+  }
 ];
 
 export const blackDayProducts: Product[] = [
@@ -772,8 +753,8 @@ export const blackDayProducts: Product[] = [
     brand: "Pampers",
     category: "Mamãe e Bebê",
     subcategory: "Fraldas",
-    price: 32.90,
-    oldPrice: 109.90,
+    price: 59.61,
+    oldPrice: 74.76,
     discount: 70,
     rating: 4.9,
     reviews: 626,
@@ -904,7 +885,7 @@ export const blackDayProducts: Product[] = [
     name: "Creatina Hardcore Integralmedica 150g",
     size: "150g",
     oldPrice: 49.99,
-    price: 34.90,
+    price: 25.4,
     discount: 30,
     options: 2,
     badges: ["Black do Dia"],
@@ -919,7 +900,7 @@ export const blackDayProducts: Product[] = [
     name: "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
     size: "400g",
     oldPrice: 84.90,
-    price: 67.90,
+    price: 48.59,
     discount: 20,
     badges: ["Black do Dia"],
     rating: 4.9,
@@ -1009,7 +990,7 @@ export const blackDayProducts: Product[] = [
     category: "Beleza & Higiene",
     subcategory: "Desodorantes",
     description: "Desodorante roll-on Dove Original com 1/4 de creme hidratante e proteção 48 horas contra o suor, deixando as axilas macias e suaves.",
-  },
+  }
 ];
 
 export const weekHighlights: Product[] = [
@@ -1018,7 +999,7 @@ export const weekHighlights: Product[] = [
     name: "Creme Dental Colgate Total Prevenção Ativa Original Mint 90g",
     size: "90g",
     oldPrice: 12.59,
-    price: 9.99,
+    price: 11.7,
     discount: 21,
     options: 2,
     sponsored: true,
@@ -1110,8 +1091,8 @@ export const weekHighlights: Product[] = [
     id: 207,
     name: "Absorvente Intimus Noturno Toda Protegida Cobertura Suave Com Abas 30 unidades",
     size: "30un",
-    oldPrice: 33.99,
-    price: 28.99,
+    oldPrice: 19.99,
+    price: 17.99,
     discount: 15,
     sponsored: true,
     rating: 4.8,
@@ -1210,7 +1191,7 @@ export const weekHighlights: Product[] = [
     subcategory: "Remédios Naturais",
     image: "https://product-data.raiadrogasil.io/images/3814476.webp",
     description: "Extrato de própolis e mel em spray da marca exclusiva Natz, proporcionando sensação refrescante e conforto na garganta.",
-  },
+  }
 ];
 
 export const favoriteBrands: Product[] = [
@@ -1309,7 +1290,7 @@ export const favoriteBrands: Product[] = [
     category: "Cabelos",
     subcategory: "Shampoo",
     image: "https://product-data.raiadrogasil.io/images/15925906.webp",
-  },
+  }
 ];
 
 export const asianBeauty: Product[] = [
@@ -1528,7 +1509,7 @@ export const asianBeauty: Product[] = [
     howToUse: "Aplique uma moeda de sérum nos cabelos úmidos antes da escova ou nos cabelos secos para fixação suave e brilho espelhado.",
     ean: "8809803560230",
     productCode: "409",
-  },
+  }
 ];
 
 export const quemComprouTambem: Product[] = [
@@ -1536,8 +1517,8 @@ export const quemComprouTambem: Product[] = [
     id: 501,
     name: "Fralda Pampers Pants Ajuste Total M 78 unidades",
     size: "78un",
-    oldPrice: 139.90,
-    price: 119.90,
+    oldPrice: 163.68,
+    price: 140.28,
     discount: 14,
     options: 5,
     badges: ["+1 nº da sorte"],
@@ -1593,7 +1574,7 @@ export const quemComprouTambem: Product[] = [
     brand: "Belíssima",
     category: "Vida Saudável",
     subcategory: "Colágeno",
-  },
+  }
 ];
 
 export const similaresVocePode: Product[] = [
@@ -1652,7 +1633,7 @@ export const similaresVocePode: Product[] = [
     brand: "Bemove",
     category: "Vida Saudável",
     subcategory: "Colágeno",
-  },
+  }
 ];
 
 export const hairCareProducts: Product[] = [
@@ -1731,7 +1712,7 @@ export const hairCareProducts: Product[] = [
       "Tratamento intensivo para hidratação e reparação profunda.",
     ],
     description: "A Máscara Elseve Reparação Total 5 repara profundamente a fibra capilar, devolvendo a vitalidade e a maciez dos cabelos.",
-  },
+  }
 ];
 
 // ===========================================================================
@@ -1770,8 +1751,8 @@ export const fraldasProducts: Product[] = [
     id: 1101,
     name: "Fralda Pampers Confort Sec Tamanho P 50 Unidades",
     size: "Tam P (50un)",
-    oldPrice: 89.90,
-    price: 74.90,
+    oldPrice: 105.18,
+    price: 87.63,
     discount: 17,
     rating: 4.9,
     reviews: 284,
@@ -1793,8 +1774,8 @@ export const fraldasProducts: Product[] = [
     id: 1250308,
     name: "Fralda Pampers Confort Sec Tamanho M 70 Unidades",
     size: "Tam M (70un)",
-    oldPrice: 104.90,
-    price: 89.90,
+    oldPrice: 77.15,
+    price: 54.49,
     discount: 14,
     rating: 4.9,
     reviews: 380,
@@ -1816,8 +1797,8 @@ export const fraldasProducts: Product[] = [
     id: 1250294,
     name: "Fralda Pampers Confort Sec Tamanho G 60 Unidades",
     size: "Tam G (60un)",
-    oldPrice: 109.90,
-    price: 92.50,
+    oldPrice: 74.76,
+    price: 59.61,
     discount: 16,
     rating: 4.9,
     reviews: 420,
@@ -1839,8 +1820,8 @@ export const fraldasProducts: Product[] = [
     id: 1250309,
     name: "Fralda Pampers Confort Sec Tamanho XG 92 Unidades",
     size: "Tam XG (92un)",
-    oldPrice: 134.90,
-    price: 114.90,
+    oldPrice: 157.83,
+    price: 134.43,
     discount: 15,
     rating: 5.0,
     reviews: 310,
@@ -1860,10 +1841,10 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 1250310,
-    name: "Fralda Pampers Confort Sec Tamanho XXG 84 Unidades",
-    size: "Tam XXG (84un)",
-    oldPrice: 139.90,
-    price: 119.90,
+    name: "Fralda Pampers Confort Sec Tamanho XXG 88 Unidades",
+    size: "Tam XXG (88un)",
+    oldPrice: 163.68,
+    price: 140.28,
     discount: 14,
     rating: 4.9,
     reviews: 215,
@@ -1874,7 +1855,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe e Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG indicado para bebês acima de 14kg com 84 unidades no pacote econômico.",
+      "Tamanho XXG indicado para bebês acima de 14kg com 88 unidades no pacote econômico.",
       "Canais de ar revolucionários que deixam a pele respirar.",
       "Gel Mágico que absorve e retém a umidade mantendo a pele seca por até 12 horas.",
       "Barreiras antivazamento reforçadas e cintura elástica confortável.",
@@ -1890,8 +1871,8 @@ export const fraldasProducts: Product[] = [
     id: 1104,
     name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho P 50 Unidades",
     size: "Tam P (50un)",
-    oldPrice: 94.90,
-    price: 79.90,
+    oldPrice: 111.03,
+    price: 93.48,
     discount: 16,
     rating: 4.8,
     reviews: 142,
@@ -1911,8 +1892,8 @@ export const fraldasProducts: Product[] = [
     id: 501,
     name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho M 78 Unidades",
     size: "Tam M (78un)",
-    oldPrice: 139.90,
-    price: 119.90,
+    oldPrice: 163.68,
+    price: 140.28,
     discount: 14,
     rating: 4.8,
     reviews: 160,
@@ -1932,8 +1913,8 @@ export const fraldasProducts: Product[] = [
     id: 2040,
     name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho G 72 Unidades",
     size: "Tam G (72un)",
-    oldPrice: 144.90,
-    price: 124.90,
+    oldPrice: 169.53,
+    price: 146.13,
     discount: 14,
     rating: 4.9,
     reviews: 410,
@@ -1951,10 +1932,10 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 20404,
-    name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho XG 60 Unidades",
-    size: "Tam XG (60un)",
-    oldPrice: 149.90,
-    price: 129.90,
+    name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho XG 64 Unidades",
+    size: "Tam XG (64un)",
+    oldPrice: 175.38,
+    price: 151.98,
     discount: 13,
     rating: 4.9,
     reviews: 290,
@@ -1964,7 +1945,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XG indicado para bebês de 12 a 15kg com 60 unidades.",
+      "Tamanho XG indicado para bebês de 12 a 15kg com 64 unidades.",
       "Cintura elástica 360° macia que não aperta.",
       "Até 12 horas de absorção sequinha e segura.",
     ],
@@ -1972,10 +1953,10 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 20405,
-    name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho XXG 54 Unidades",
-    size: "Tam XXG (54un)",
-    oldPrice: 154.90,
-    price: 134.90,
+    name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho XXG 74 Unidades",
+    size: "Tam XXG (74un)",
+    oldPrice: 181.23,
+    price: 157.83,
     discount: 13,
     rating: 4.9,
     reviews: 210,
@@ -1985,7 +1966,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG indicado para bebês acima de 14kg com 54 unidades.",
+      "Tamanho XXG indicado para bebês acima de 14kg com 74 unidades.",
       "Ajuste anatômico 360° perfeito para bebês grandes e ativos.",
       "Gel ultra-absorvente com barreiras duplas antivazamento.",
     ],
@@ -1993,8 +1974,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 20390,
-    name: "Fralda Huggies Natural Care Tamanho P 48 Unidades",
-    size: "Tam P (48un)",
+    name: "Fralda Huggies Natural Care Tamanho P 36 Unidades",
+    size: "Tam P (36un)",
     oldPrice: 84.90,
     price: 69.90,
     discount: 18,
@@ -2037,8 +2018,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 20392,
-    name: "Fralda Huggies Natural Care Tamanho G 68 Unidades",
-    size: "Tam G (68un)",
+    name: "Fralda Huggies Natural Care Tamanho G 66 Unidades",
+    size: "Tam G (66un)",
     oldPrice: 144.90,
     price: 124.90,
     discount: 14,
@@ -2051,7 +2032,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho G para 9 a 12,5kg com 68 unidades.",
+      "Tamanho G para 9 a 12,5kg com 66 unidades.",
       "Fibras naturais com toque macio e respirabilidade máxima.",
       "Cuidado hipoalergênico superior aprovado por pediatras.",
     ],
@@ -2081,8 +2062,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 20394,
-    name: "Fralda Huggies Natural Care Tamanho XXG 52 Unidades",
-    size: "Tam XXG (52un)",
+    name: "Fralda Huggies Natural Care Tamanho XXG 54 Unidades",
+    size: "Tam XXG (54un)",
     oldPrice: 154.90,
     price: 134.90,
     discount: 13,
@@ -2095,38 +2076,16 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG para bebês acima de 14kg com 52 unidades.",
+      "Tamanho XXG para bebês acima de 14kg com 54 unidades.",
       "Barreiras altas e suaves que evitam marcas na pele.",
       "Respirabilidade prolongada dia e noite.",
     ],
     description: "Huggies Natural Care XXG proporciona máxima proteção para bebês grandinhos, preservando o equilíbrio natural da pele com suavidade extrema.",
   },
   {
-    id: 1096085,
-    name: "Fralda Calça Huggies Proteção Acolchoada Tamanho P 44 Unidades",
-    size: "Tam P (44un)",
-    oldPrice: 89.90,
-    price: 74.90,
-    discount: 17,
-    rating: 4.8,
-    reviews: 130,
-    options: 5,
-    image: "/products/huggies_pants_xg.webp",
-    badges: ["Fácil de Vestir", "Ajuste 360°"],
-    brand: "Huggies",
-    category: "Mamãe e Bebê",
-    subcategory: "Fraldas",
-    bullets: [
-      "Tamanho P indicado para 5 a 8kg com 44 unidades.",
-      "Veste como roupinha com cós acolchoado e macio.",
-      "Absorção rápida e fácil descarte com fita adesiva.",
-    ],
-    description: "Fralda-calça Huggies Proteção Acolchoada P oferece praticidade imbatível na troca com toque macio e proteção reforçada.",
-  },
-  {
     id: 1096086,
-    name: "Fralda Calça Huggies Proteção Acolchoada Tamanho M 68 Unidades",
-    size: "Tam M (68un)",
+    name: "Fralda Huggies Máxima Proteção Tamanho M 104 Unidades",
+    size: "Tam M (104un)",
     oldPrice: 134.90,
     price: 114.90,
     discount: 15,
@@ -2139,7 +2098,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe e Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho M para 7 a 10kg com 68 unidades.",
+      "Tamanho M para 5,5 a 9,5kg com 104 unidades.",
       "Cintura elástica 360° que não marca a barriguinha.",
       "Canais acolchoados para distribuição uniforme do xixi.",
     ],
@@ -2147,8 +2106,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 1096087,
-    name: "Fralda Calça Huggies Proteção Acolchoada Tamanho G 60 Unidades",
-    size: "Tam G (60un)",
+    name: "Fralda Huggies Máxima Proteção Tamanho G 136 Unidades",
+    size: "Tam G (136un)",
     oldPrice: 139.90,
     price: 119.90,
     discount: 14,
@@ -2161,7 +2120,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe e Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho G para 9 a 12,5kg com 60 fraldas no pacote econômico.",
+      "Tamanho G para 9 a 12,5kg com 136 fraldas no pacote econômico.",
       "Camada protetora ultra-acolchoada de toque suave.",
       "Até 12 horas de proteção contra vazamentos.",
     ],
@@ -2169,8 +2128,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 1096088,
-    name: "Fralda Calça Huggies Proteção Acolchoada Tamanho XG 80 Unidades",
-    size: "Tam XG (80un)",
+    name: "Fralda Huggies Máxima Proteção Tamanho XG 82 Unidades",
+    size: "Tam XG (82un)",
     oldPrice: 149.90,
     price: 129.90,
     discount: 13,
@@ -2183,7 +2142,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe e Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XG para 12 a 15kg com 80 fraldas no pacote econômico.",
+      "Tamanho XG para 12 a 15kg com 82 fraldas no pacote econômico.",
       "Cintura elástica 360° macia que veste como roupinha.",
       "Proteção acolchoada com barreiras antivazamento duplas.",
     ],
@@ -2191,8 +2150,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 1096089,
-    name: "Fralda Calça Huggies Proteção Acolchoada Tamanho XXG 72 Unidades",
-    size: "Tam XXG (72un)",
+    name: "Fralda Huggies Máxima Proteção Tamanho XXG 80 Unidades",
+    size: "Tam XXG (80un)",
     oldPrice: 154.90,
     price: 134.90,
     discount: 13,
@@ -2205,33 +2164,11 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe e Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG para bebês acima de 14kg com 72 unidades.",
+      "Tamanho XXG para bebês de 14 a 20kg com 80 unidades no pacote econômico.",
       "Laterais rasga-fácil e fita de fechamento para descarte limpo.",
       "Núcleo acolchoado superabsorvente para noites tranquilas.",
     ],
     description: "Huggies Proteção Acolchoada formato roupinha tamanho XXG, perfeita para crianças em fase de desfralde com alta segurança antivazamento.",
-  },
-  {
-    id: 21107,
-    name: "Fralda Babysec Ultrasec Galinha Pintadinha Hiper P 42 Unidades",
-    size: "42un (P)",
-    oldPrice: 59.90,
-    price: 49.90,
-    discount: 17,
-    rating: 4.7,
-    reviews: 82,
-    options: 5,
-    image: "https://product-data.raiadrogasil.io/images/13179319.webp",
-    badges: ["Custo-Benefício", "Galinha Pintadinha"],
-    brand: "Babysec",
-    category: "Mamãe & Bebê",
-    subcategory: "Fraldas",
-    bullets: [
-      "Tamanho P indicado para bebês até 6kg com 42 unidades.",
-      "Até 12 horas de absorção com gel ultra-rápido.",
-      "Estampas divertidas e exclusivas da Galinha Pintadinha.",
-    ],
-    description: "Fralda descartável Babysec Ultrasec P com fitas reajustáveis e barreira antivazamento, proporcionando economia inteligente e bebê sequinho.",
   },
   {
     id: 21108,
@@ -2279,8 +2216,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21112,
-    name: "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XG 52 Unidades",
-    size: "52un (XG)",
+    name: "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XG 56 Unidades",
+    size: "56un (XG)",
     oldPrice: 89.90,
     price: 74.90,
     discount: 17,
@@ -2293,7 +2230,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XG indicado para 11 a 14kg com 52 unidades.",
+      "Tamanho XG indicado para 11 a 14kg com 56 unidades.",
       "Cintura anatômica com toque suave e barreiras reforçadas.",
       "Absorção eficiente que aguenta a noite toda sem vazar.",
     ],
@@ -2301,8 +2238,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21113,
-    name: "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XXG 46 Unidades",
-    size: "46un (XXG)",
+    name: "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XXG 48 Unidades",
+    size: "48un (XXG)",
     oldPrice: 94.90,
     price: 79.90,
     discount: 16,
@@ -2315,37 +2252,16 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG indicado para bebês acima de 13kg com 46 unidades.",
+      "Tamanho XXG indicado para bebês acima de 13kg com 48 unidades.",
       "Máximo rendimento e proteção duradoura.",
       "Materiais hipoalergênicos e cobertura respirável.",
     ],
     description: "Fralda Babysec Ultrasec XXG desenvolvida para garantir noites tranquilas de sono com excelente absorção e ótimo rendimento.",
   },
   {
-    id: 21114,
-    name: "Fralda Pom Pom Protek Proteção de Mãe P 36 Unidades",
-    size: "36un (P)",
-    oldPrice: 49.90,
-    price: 39.90,
-    discount: 20,
-    rating: 4.6,
-    reviews: 65,
-    options: 5,
-    image: "https://product-data.raiadrogasil.io/images/3490497.webp",
-    brand: "Pom Pom",
-    category: "Mamãe & Bebê",
-    subcategory: "Fraldas",
-    bullets: [
-      "Tamanho P indicado para 3 a 5kg com 36 unidades.",
-      "Canal superabsorvente com loção hidratante e extrato de camomila.",
-      "Orelhas elásticas macias que se ajustam sem apertar.",
-    ],
-    description: "Pom Pom Protek P protege a pele delicada desde os primeiros dias com loção hidratante com camomila e absorção rápida.",
-  },
-  {
     id: 21115,
-    name: "Fralda Pom Pom Protek Proteção de Mãe M 48 Unidades",
-    size: "48un (M)",
+    name: "Fralda Pom Pom Protek Proteção de Mãe M 28 Unidades",
+    size: "28un (M)",
     oldPrice: 54.90,
     price: 44.90,
     discount: 18,
@@ -2357,7 +2273,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho M indicado para 4 a 9kg com 48 unidades.",
+      "Tamanho M indicado para 4 a 9kg com 28 unidades.",
       "Camada de proteção de mãe com até 12 horas de absorção.",
       "Toque suave como algodão e barreiras reforçadas.",
     ],
@@ -2365,8 +2281,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 1110,
-    name: "Fralda Pom Pom Protek Proteção de Mãe G 42 Unidades",
-    size: "42un (G)",
+    name: "Fralda Pom Pom Protek Proteção de Mãe G 24 Unidades",
+    size: "24un (G)",
     oldPrice: 59.90,
     price: 49.90,
     discount: 17,
@@ -2386,8 +2302,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21116,
-    name: "Fralda Pom Pom Protek Proteção de Mãe XG 38 Unidades",
-    size: "38un (XG)",
+    name: "Fralda Pom Pom Protek Proteção de Mãe XG 20 Unidades",
+    size: "20un (XG)",
     oldPrice: 64.90,
     price: 54.90,
     discount: 15,
@@ -2399,7 +2315,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XG indicado para 12 a 15kg com 38 unidades.",
+      "Tamanho XG indicado para 12 a 15kg com 20 unidades.",
       "Canais de ar que auxiliam na respiração da pele infantil.",
       "Fitas laterais ajustáveis de fixação segura.",
     ],
@@ -2407,8 +2323,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21117,
-    name: "Fralda Pom Pom Protek Proteção de Mãe XXG 32 Unidades",
-    size: "32un (XXG)",
+    name: "Fralda Pom Pom Protek Proteção de Mãe XXG 18 Unidades",
+    size: "18un (XXG)",
     oldPrice: 69.90,
     price: 59.90,
     discount: 14,
@@ -2420,7 +2336,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG indicado para bebês acima de 14kg com 32 unidades.",
+      "Tamanho XXG indicado para bebês de 14 a 18kg com 18 unidades.",
       "Proteção de até 12 horas sem vazamento.",
       "Dermatologicamente testada para evitar assaduras.",
     ],
@@ -2428,10 +2344,10 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21118,
-    name: "Fralda MamyPoko Fralda-Calça Dia e Noite P 50 Unidades",
-    size: "50un (P)",
+    name: "Fralda MamyPoko Fralda-Calça Dia e Noite P 22 Unidades",
+    size: "22un (P)",
     oldPrice: 94.90,
-    price: 79.90,
+    price: 48.59,
     discount: 16,
     rating: 4.9,
     reviews: 120,
@@ -2442,7 +2358,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho P indicado para 4 a 8kg com 50 unidades.",
+      "Tamanho P indicado para 3 a 9kg com 22 unidades.",
       "Cintura superelástica e suave que não aperta.",
       "Absorção japonesa instantânea que não empelota.",
     ],
@@ -2450,10 +2366,10 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21119,
-    name: "Fralda MamyPoko Fralda-Calça Dia e Noite M 68 Unidades",
-    size: "68un (M)",
-    oldPrice: 104.90,
-    price: 89.90,
+    name: "Fralda MamyPoko Fralda-Calça Dia e Noite M 18 Unidades",
+    size: "18un (M)",
+    oldPrice: 89.90,
+    price: 64.72,
     discount: 14,
     rating: 4.9,
     reviews: 140,
@@ -2464,7 +2380,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho M indicado para 6 a 11kg com 68 unidades.",
+      "Tamanho M indicado para 7 a 10kg com 18 unidades.",
       "Caminhos de ar respiráveis que liberam calor e umidade.",
       "Veste rápido mesmo com o bebê em movimento.",
     ],
@@ -2472,8 +2388,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 1111,
-    name: "Fralda MamyPoko Fralda-Calça Dia e Noite Giga G 60 Unidades",
-    size: "60un (G)",
+    name: "Fralda MamyPoko Fralda-Calça Dia e Noite G 30 Unidades",
+    size: "30un (G)",
     oldPrice: 114.90,
     price: 94.90,
     discount: 17,
@@ -2494,8 +2410,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21120,
-    name: "Fralda MamyPoko Fralda-Calça Dia e Noite XG 50 Unidades",
-    size: "50un (XG)",
+    name: "Fralda MamyPoko Fralda-Calça Dia e Noite XG 26 Unidades",
+    size: "26un (XG)",
     oldPrice: 119.90,
     price: 99.90,
     discount: 17,
@@ -2508,7 +2424,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XG indicado para 12 a 17kg com 50 unidades.",
+      "Tamanho XG indicado para 12 a 17kg com 26 unidades.",
       "Dupla proteção contra vazamentos nas perninhas.",
       "Fita de descarte fácil e prática para o dia a dia.",
     ],
@@ -2516,8 +2432,8 @@ export const fraldasProducts: Product[] = [
   },
   {
     id: 21121,
-    name: "Fralda MamyPoko Fralda-Calça Dia e Noite XXG 42 Unidades",
-    size: "42un (XXG)",
+    name: "Fralda MamyPoko Fralda-Calça Dia e Noite XXG 22 Unidades",
+    size: "22un (XXG)",
     oldPrice: 124.90,
     price: 104.90,
     discount: 16,
@@ -2530,7 +2446,7 @@ export const fraldasProducts: Product[] = [
     category: "Mamãe & Bebê",
     subcategory: "Fraldas",
     bullets: [
-      "Tamanho XXG indicado para bebês de 15 a 26kg com 42 unidades.",
+      "Tamanho XXG indicado para bebês de 15 a 26kg com 22 unidades.",
       "Cintura super macia com ajuste amplo e seguro.",
       "Ultra-absorvente, mantendo a pele seca por até 12 horas.",
     ],
@@ -2556,7 +2472,7 @@ export const fraldasProducts: Product[] = [
       "Contém prebióticos que auxiliam na saúde intestinal.",
     ],
     description: "Ninho Fases 1+ formulado especialmente para crianças na fase pré-escolar com imunonutrientes essenciais (Zinco, Vitaminas A, C e D) e prebióticos.",
-  },
+  }
 ];
 
 // ===========================================================================
@@ -2905,7 +2821,7 @@ export const remediosProducts: Product[] = [
       "Alarmes opcionais personalizáveis para glicose alta ou baixa.",
     ],
     description: "Sensor de monitoramento de glicose contínuo que envia leituras a cada minuto diretamente para o smartphone sem necessidade de picada de dedo.",
-  },
+  }
 ];
 
 // ===========================================================================
@@ -2938,7 +2854,7 @@ export const dermocosmeticosProducts: Product[] = [
     name: "Gel de Limpeza Facial Effaclar Concentrado La Roche-Posay 300g",
     size: "300g",
     oldPrice: 94.90,
-    price: 82.90,
+    price: 46.17,
     discount: 13,
     rating: 4.9,
     reviews: 380,
@@ -2958,8 +2874,8 @@ export const dermocosmeticosProducts: Product[] = [
     id: 1303,
     name: "Bálsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
     size: "40ml",
-    oldPrice: 62.90,
-    price: 54.90,
+    oldPrice: 40,
+    price: 36,
     discount: 13,
     rating: 4.9,
     reviews: 410,
@@ -3119,7 +3035,7 @@ export const dermocosmeticosProducts: Product[] = [
       "Eficaz no clareamento de manchas pós-inflamatórias e alívio da rosácea.",
     ],
     description: "Gel dermatológico formulado com Ácido Azelaico para redução de espinhas, cravos e atenuação das manchas e vermelhidão da rosácea.",
-  },
+  }
 ];
 
 // ===========================================================================
@@ -3131,7 +3047,7 @@ export const vitaminasSuplementosProducts: Product[] = [
     name: "100% Whey Protein Max Titanium Baunilha 900g",
     size: "900g",
     oldPrice: 129.90,
-    price: 109.90,
+    price: 84.04,
     discount: 15,
     rating: 4.9,
     reviews: 412,
@@ -3272,7 +3188,7 @@ export const vitaminasSuplementosProducts: Product[] = [
       "Tratamento completo para 3 meses com 90 comprimidos.",
     ],
     description: "Tratamento inovador antiqueda enriquecido com silício biodisponível, biotina e zinco que fortalecem a haste capilar e estimulam novos fios.",
-  },
+  }
 ];
 
 // ===========================================================================
@@ -3382,7 +3298,7 @@ export const higieneBucalPersonalProducts: Product[] = [
       "Toque seco com rápida absorção sem oleosidade residual.",
     ],
     description: "Óleo multibenefícios com Pro-Vitaminas que controla o frizz, protege contra pontas duplas e sela a umidade natural do cabelo.",
-  },
+  }
 ];
 
 // ---------------------------------------------------------------------------
@@ -3707,7 +3623,7 @@ export const healthSpace: Array<{ id: number; title: string; description: string
     description: "Serviços de saúde, testes rápidos, aferição de pressão e vacinação na sua loja Raia.",
     image: "/banners/banner_05_raia_conceito.png",
     tag: "Serviços Raia"
-  },
+  }
 ];
 
 export const bebeMaisVendidos: Product[] = [

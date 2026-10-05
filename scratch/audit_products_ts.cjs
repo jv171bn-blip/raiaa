@@ -1,39 +1,53 @@
 const fs = require('fs');
-const ts = require('typescript');
 
-function loadTs(file) {
-  const code = fs.readFileSync(file, 'utf-8');
-  const res = ts.transpileModule(code, { compilerOptions: { module: ts.ModuleKind.CommonJS } });
-  const m = { exports: {} };
-  new Function('exports', 'module', 'require', res.outputText)(m.exports, m, (mod) => {
-    return {};
-  });
-  return m.exports;
-}
+const pContent = fs.readFileSync('src/data/products.ts', 'utf8');
 
-const prodMod = loadTs('src/data/products.ts');
+// Find all products in products.ts
+const pLines = pContent.split('\n');
 
-const lists = [
-  { name: 'mostBought', list: prodMod.mostBought },
-  { name: 'blackDayProducts', list: prodMod.blackDayProducts },
-  { name: 'weekHighlights', list: prodMod.weekHighlights },
-  { name: 'favoriteBrands', list: prodMod.favoriteBrands },
-  { name: 'fraldasProducts', list: prodMod.fraldasProducts },
-  { name: 'remediosProducts', list: prodMod.remediosProducts },
-  { name: 'dermocosmeticosProducts', list: prodMod.dermocosmeticosProducts },
-  { name: 'vitaminasSuplementosProducts', list: prodMod.vitaminasSuplementosProducts },
-  { name: 'higieneBucalPersonalProducts', list: prodMod.higieneBucalPersonalProducts },
-  { name: 'asianBeauty', list: prodMod.asianBeauty },
-  { name: 'quemComprouTambem', list: prodMod.quemComprouTambem },
-  { name: 'similaresVocePode', list: prodMod.similaresVocePode },
-  { name: 'hairCareProducts', list: prodMod.hairCareProducts },
-];
+const prods = [];
+let cur = {};
+let inP = false;
 
-console.log('--- PRODUCTS.TS ANALYSIS ---');
-lists.forEach(l => {
-  console.log(`\nList: ${l.name} (${l.list ? l.list.length : 0} items)`);
-  if (!l.list) return;
-  l.list.forEach(p => {
-    console.log(`[${p.id}] ${p.name} -> ${p.image}`);
-  });
+pLines.forEach((l, idx) => {
+  const line = l.trim();
+  if (line.startsWith('{')) {
+    cur = {};
+    inP = true;
+  } else if (inP) {
+    if (line.startsWith('id:')) cur.id = line.match(/id:\s*(\d+)/)?.[1];
+    if (line.startsWith('name:')) cur.name = line.match(/name:\s*["']([^"']+)["']/)?.[1];
+    if (line.startsWith('image:')) cur.image = line.match(/image:\s*["']([^"']+)["']/)?.[1];
+    if (line.startsWith('}') || line.startsWith('},')) {
+      inP = false;
+      if (cur.name && cur.image) {
+        prods.push({ ...cur, line: idx });
+      }
+    }
+  }
+});
+
+console.log(`Audited ${prods.length} products in products.ts`);
+
+// Check if images exist
+const missing = prods.filter(p => {
+  const path = p.image.startsWith('/') ? p.image.slice(1) : p.image;
+  return !fs.existsSync(`public/${path}`);
+});
+console.log(`Missing images in products.ts: ${missing.length}`);
+missing.forEach(m => console.log('  Missing:', m.id, m.name, m.image));
+
+// Check duplicated images
+const usage = {};
+prods.forEach(p => {
+  if (!usage[p.image]) usage[p.image] = [];
+  usage[p.image].push(p);
+});
+
+console.log('\n--- Duplicated images in products.ts ---');
+Object.entries(usage).forEach(([img, list]) => {
+  if (list.length > 1) {
+    console.log(`Image ${img} used by ${list.length} products:`);
+    list.forEach(p => console.log(`  [id ${p.id}] ${p.name}`));
+  }
 });

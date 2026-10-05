@@ -17,6 +17,7 @@ import {
   similaresVocePode,
   todosProdutosExpandidos,
 } from '../data/products';
+import { ultraBrasilProducts } from '../data/ultraBrasilProducts';
 import { montaProducts } from '../data/montaOffers';
 import { UserAddress } from '../services/pharmacyLocationService';
 
@@ -114,6 +115,11 @@ interface CartContextType {
   isOffersPage: boolean;
   setIsOffersPage: (isOffers: boolean) => void;
   goToOffersPage: () => void;
+
+  // All Products Page Navigation
+  isAllProductsPage: boolean;
+  setIsAllProductsPage: (isAll: boolean) => void;
+  goToAllProductsPage: () => void;
 
   // Search Results Page Navigation
   isSearchPage: boolean;
@@ -284,6 +290,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isOffersPage, setIsOffersPage] = useState<boolean>(() => {
     return typeof window !== 'undefined' && window.location.hash === '#ofertas';
+  });
+  const [isAllProductsPage, setIsAllProductsPage] = useState<boolean>(() => {
+    return typeof window !== 'undefined' && window.location.hash === '#todos-os-produtos';
   });
   const [isMontaPage, setIsMontaPage] = useState<boolean>(() => {
     return typeof window !== 'undefined' && (window.location.hash.startsWith('#monta-que-desconta'));
@@ -563,6 +572,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const goToProductPage = (product: Product) => {
     setIsOffersPage(false);
+    setIsAllProductsPage(false);
     setIsMontaPage(false);
     setIsSearchPage(false);
     setIsCartPage(false);
@@ -579,6 +589,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const goToOffersPage = () => {
     setSelectedProduct(null);
+    setIsAllProductsPage(false);
     setIsMontaPage(false);
     setIsSearchPage(false);
     setIsOffersPage(true);
@@ -590,9 +601,25 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  const goToAllProductsPage = () => {
+    setSelectedProduct(null);
+    setIsOffersPage(false);
+    setIsMontaPage(false);
+    setIsSearchPage(false);
+    setIsCartPage(false);
+    setIsAllProductsPage(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    try {
+      window.history.pushState({ page: 'todos-os-produtos' }, '', '#todos-os-produtos');
+    } catch (e) {
+      console.warn('History pushState error', e);
+    }
+  };
+
   const goToMontaPage = (brandId?: string) => {
     setSelectedProduct(null);
     setIsOffersPage(false);
+    setIsAllProductsPage(false);
     setIsSearchPage(false);
     setIsMontaPage(true);
     setSelectedMontaBrand(brandId || null);
@@ -608,6 +635,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const goToSearchPage = (query: string) => {
     setSelectedProduct(null);
     setIsOffersPage(false);
+    setIsAllProductsPage(false);
     setIsMontaPage(false);
     setIsSearchPage(true);
     setSearchQuery(query);
@@ -622,6 +650,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const goToHome = () => {
     setSelectedProduct(null);
     setIsOffersPage(false);
+    setIsAllProductsPage(false);
     setIsMontaPage(false);
     setIsSearchPage(false);
     setIsCartPage(false);
@@ -642,6 +671,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (hash === '#carrinho' || hash === '#cesta') {
         setSelectedProduct(null);
         setIsOffersPage(false);
+        setIsAllProductsPage(false);
         setIsMontaPage(false);
         setIsSearchPage(false);
         setIsCartPage(true);
@@ -649,14 +679,25 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       }
       if (hash === '#ofertas') {
         setSelectedProduct(null);
+        setIsAllProductsPage(false);
         setIsMontaPage(false);
         setIsCartPage(false);
         setIsOffersPage(true);
         return;
       }
+      if (hash === '#todos-os-produtos') {
+        setSelectedProduct(null);
+        setIsOffersPage(false);
+        setIsMontaPage(false);
+        setIsCartPage(false);
+        setIsSearchPage(false);
+        setIsAllProductsPage(true);
+        return;
+      }
       if (hash === '#monta-que-desconta' || hash.startsWith('#monta-que-desconta')) {
         setSelectedProduct(null);
         setIsOffersPage(false);
+        setIsAllProductsPage(false);
         setIsMontaPage(true);
         if (hash.startsWith('#monta-que-desconta-')) {
           setSelectedMontaBrand(hash.replace('#monta-que-desconta-', ''));
@@ -666,6 +707,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (hash && hash.startsWith('#produto-')) {
         const id = Number(hash.replace('#produto-', ''));
         const all = [
+          ...ultraBrasilProducts,
           flexoneProduct,
           ...mostBought,
           ...blackDayProducts,
@@ -687,6 +729,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (found) {
           setSelectedProduct(found);
           setIsOffersPage(false);
+          setIsAllProductsPage(false);
           setIsMontaPage(false);
           return;
         }
@@ -694,6 +737,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (hash.startsWith('#busca=')) {
         setSelectedProduct(null);
         setIsOffersPage(false);
+        setIsAllProductsPage(false);
         setIsMontaPage(false);
         setIsSearchPage(true);
         setSearchQuery(decodeURIComponent(hash.replace('#busca=', '')));
@@ -702,6 +746,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (!hash || hash === '#') {
         setSelectedProduct(null);
         setIsOffersPage(false);
+        setIsAllProductsPage(false);
         setIsMontaPage(false);
         setIsSearchPage(false);
         setSearchQuery('');
@@ -764,6 +809,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isOffersPage,
         setIsOffersPage,
         goToOffersPage,
+        isAllProductsPage,
+        setIsAllProductsPage,
+        goToAllProductsPage,
         isSearchPage,
         setIsSearchPage,
         goToSearchPage,

@@ -510,7 +510,7 @@ export const medicamentosExpandidos: Product[] = [
     warnings: ["FLORATIL É UM MEDICAMENTO. SE OS SINTOMAS PERSISTIREM, PROCURE ORIENTAÇÃO MÉDICA."],
     ean: "7891721021104",
     productCode: "2022",
-  },
+  }
 ];
 
 export const dermocosmeticosExpandidos: Product[] = [
@@ -680,7 +680,7 @@ export const dermocosmeticosExpandidos: Product[] = [
     category: "Dermocosméticos",
     subcategory: "Limpeza Facial",
     oldPrice: 79.90,
-    price: 68.90,
+    price: 64.79,
     discount: 14,
     rating: 4.9,
     reviews: 320,
@@ -715,54 +715,10 @@ export const dermocosmeticosExpandidos: Product[] = [
     description: "Episol Sec OC FPS 60 é formulado especificamente para peles oleosas, proporcionando efeito matte imediato e redução visível dos poros.",
     ean: "7891142203706",
     productCode: "2033",
-  },
+  }
 ];
 
 export const bebeInfantilExpandidos: Product[] = [
-  {
-    id: 2038,
-    name: "Fralda Huggies Supreme Care Tamanho G 78 Unidades",
-    size: "78un (G)",
-    brand: "Huggies",
-    category: "Mamãe & Bebê",
-    subcategory: "Fraldas",
-    oldPrice: 139.90,
-    price: 119.90,
-    discount: 14,
-    rating: 4.8,
-    reviews: 310,
-    image: "/products/huggies_pants_g.jpg",
-    bullets: [
-      "Canais em formato de X que distribuem melhor o xixi prevenindo que a fralda pese.",
-      "Cintura elástica 4 vezes mais ajustável que não aperta a barriguinha.",
-      "Até 12 horas de proteção com barreiras duplas antivazamento.",
-    ],
-    description: "A Fralda Huggies Supreme Care conta com a tecnologia Xtra-Flex com canais de absorção em formato X, oferecendo conforto e flexibilidade anatômica para o bebê se movimentar.",
-    ean: "7896007551000",
-    productCode: "2038",
-  },
-  {
-    id: 2039,
-    name: "Fralda Huggies Supreme Care Tamanho M 80 Unidades",
-    size: "80un (M)",
-    brand: "Huggies",
-    category: "Mamãe & Bebê",
-    subcategory: "Fraldas",
-    oldPrice: 139.90,
-    price: 119.90,
-    discount: 14,
-    rating: 4.8,
-    reviews: 260,
-    image: "/products/huggies_pants_m.jpg",
-    bullets: [
-      "Tamanho M para bebês de 5,5kg a 9,5kg com 80 unidades.",
-      "Toque suave como algodão testado dermatologicamente.",
-      "Pele 3 vezes mais sequinha para noites tranquilas de sono.",
-    ],
-    description: "Huggies Supreme Care M com tecnologia que acompanha todos os movimentos do bebê sem vazar, mantendo o bumbum protegido e seco a noite toda.",
-    ean: "7896007550997",
-    productCode: "2039",
-  },
   {
     id: 2040,
     name: "Fralda-Calça Pampers Pants Ajuste Total Tamanho G 72 Unidades",
@@ -830,28 +786,6 @@ export const bebeInfantilExpandidos: Product[] = [
     productCode: "2042",
   },
   {
-    id: 2043,
-    name: "Lenços Umedecidos Pampers Fresh Clean 144 Toalhinhas (Embalagem Tripla)",
-    size: "144un",
-    brand: "Pampers",
-    category: "Mamãe & Bebê",
-    subcategory: "Higiene do Bebê",
-    oldPrice: 41.90,
-    price: 34.90,
-    discount: 17,
-    rating: 4.8,
-    reviews: 280,
-    image: "/products/lencos_pampers.webp",
-    bullets: [
-      "Toalhinhas suaves e resistentes com loção à base de água pura.",
-      "Ajudam a restabelecer o pH natural da pele do bebê a cada troca.",
-      "Dermatologicamente testadas, hipoalergênicas e com fragrância delicada.",
-    ],
-    description: "Toalhas umedecidas Pampers Fresh Clean limpam delicadamente a pele do bebê desde o nascimento, protegendo contra irritações e proporcionando frescor.",
-    ean: "7500435137883",
-    productCode: "2043",
-  },
-  {
     id: 2044,
     name: "Mustela Bebê Gel Lavante Suave com Abacate Orgânico 500ml",
     size: "500ml",
@@ -880,8 +814,8 @@ export const bebeInfantilExpandidos: Product[] = [
     brand: "Bepantol",
     category: "Mamãe & Bebê",
     subcategory: "Higiene do Bebê",
-    oldPrice: 79.90,
-    price: 68.90,
+    oldPrice: 38.9,
+    price: 35.01,
     discount: 14,
     rating: 4.9,
     reviews: 430,
@@ -1049,27 +983,7 @@ export const bebeInfantilExpandidos: Product[] = [
     description: "Ninho Fases 1+ ajuda a complementar a nutrição de crianças a partir de 1 ano, fornecendo nutrientes fundamentais para a fase de descobertas e crescimento.",
     ean: "7891000100444",
     productCode: "20490",
-  },
-  {
-    id: 20491,
-    name: "Fórmula Infantil Danone Aptamil Premium 1 800g",
-    size: "800g",
-    brand: "Aptamil",
-    category: "Mamãe & Bebê",
-    subcategory: "Fórmulas Infantis",
-    oldPrice: 94.90,
-    price: 79.90,
-    discount: 16,
-    image: "/products/aptamil_profutura.jpg",
-    bullets: [
-      "Fórmula infantil indicada para bebês de 0 a 6 meses.",
-      "Prebióticos GOS/FOS para o conforto intestinal.",
-      "Com DHA e ARA para o desenvolvimento cerebral.",
-    ],
-    description: "Aptamil Premium 1 é formulado para suprir as necessidades nutricionais de lactentes em seus primeiros meses de vida.",
-    ean: "7891025114785",
-    productCode: "20491",
-  },
+  }
 ];
 
 export const vitaminasSuplementosExpandidos: Product[] = [
@@ -1207,7 +1121,7 @@ export const vitaminasSuplementosExpandidos: Product[] = [
     description: "Suplemento alimentar em cápsulas com ácidos graxos poli-insaturados que apoiam a saúde cardíaca e cerebral com qualidade exclusiva Raia.",
     ean: "7891066009910",
     productCode: "2055",
-  },
+  }
 ];
 
 export const higieneBucalCabelosExpandidos: Product[] = [
@@ -1452,7 +1366,7 @@ export const higieneBucalCabelosExpandidos: Product[] = [
     description: "Morte Súbita é a máscara de reparação intensiva da Lola Cosmetics indicada para restaurar a barreira de hidratação natural dos cabelos danificados.",
     ean: "7899572808015",
     productCode: "2074",
-  },
+  }
 ];
 
 export const saudeEquipamentosExpandidos: Product[] = [
@@ -1519,7 +1433,7 @@ export const saudeEquipamentosExpandidos: Product[] = [
     description: "A fita microporosa Needs é ideal para peles sensíveis de crianças e idosos, garantindo adesão segura e respirável para curativos.",
     ean: "7891066009934",
     productCode: "2083",
-  },
+  }
 ];
 
 /**
@@ -1532,5 +1446,5 @@ export const todosProdutosExpandidos: Product[] = [
   ...vitaminasSuplementosExpandidos,
   ...higieneBucalCabelosExpandidos,
   ...saudeEquipamentosExpandidos,
-  ...novosProdutosCatalogo,
+  ...novosProdutosCatalogo
 ];

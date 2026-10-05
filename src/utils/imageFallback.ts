@@ -106,7 +106,89 @@ export function getFallbackImage(product?: {
     return '/products/needs_beauty_fps70.jpg';
   }
 
-  // 4. Skincare / Dermocosméticos / Hidratantes
+  // 4. Bebê e Fraldas (Prioridade MÁXIMA antes de palavras genéricas como "pele", "creme" ou "hidratante")
+  if (
+    text.includes('fralda') ||
+    text.includes('pants') ||
+    text.includes('diaper') ||
+    text.includes('pampers') ||
+    text.includes('huggies')
+  ) {
+    if (text.includes('pants') && (text.includes('g') || text.includes('tam g'))) {
+      return '/products/pampers_pants_g.webp';
+    }
+    if (text.includes('pants')) {
+      return '/products/pampers_pants_m.webp';
+    }
+    if (text.includes('g') || text.includes('tam g') || text.includes('tamanho g')) {
+      return '/products/pampers_confort_sec_g.webp';
+    }
+    return '/products/pampers_confort_sec_m.webp';
+  }
+
+  // Cuidados específicos de Bebê (pomadas e nutrição infantil)
+  if (text.includes('bepantol baby') || text.includes('bepantol')) {
+    return '/products/bepantol_baby.jpg';
+  }
+  if (text.includes('desitin')) {
+    return '/products/desitin_roxa.jpg';
+  }
+  if (text.includes('hipogl')) {
+    return '/products/hipoglos_amendoas.jpg';
+  }
+  if (text.includes('lenço') || text.includes('lenco') || text.includes('toalha umedecida')) {
+    return '/products/lencos_pampers.webp';
+  }
+  if (text.includes('aptamil')) {
+    return '/products/aptamil_profutura.jpg';
+  }
+  if (text.includes('nan supreme') || text.includes('nan')) {
+    return '/products/nan_supreme_1.jpg';
+  }
+  if (text.includes('ninho')) {
+    return '/products/ninho_fases_1.jpg';
+  }
+  if (text.includes('mucilon')) {
+    return '/products/mucilon_milho.jpg';
+  }
+
+  // Cuidados Homem (Barba, lâminas, anticaspa masculino)
+  if (text.includes('mach3') || text.includes('gillette')) {
+    if (text.includes('espuma') || text.includes('foamy')) return '/products/gillette_foamy_pele_sensivel_312g.jpg';
+    if (text.includes('carga')) return '/products/gillette_mach3_carga_4un.jpg';
+    return '/products/gillette_mach3_aparelho_2cargas.jpg';
+  }
+  if (text.includes('rexona men')) {
+    return '/products/rexona_men_sem_perfume_aerosol.jpg';
+  }
+  if (text.includes('doctar')) {
+    return '/products/darrow_doctar_plus_140ml.jpg';
+  }
+  if (text.includes('cetoconazol')) {
+    return '/products/cetoconazol_shampoo_ems_100ml.jpg';
+  }
+
+  // Cuidados Mulher (Higiene íntima, absorventes)
+  if (text.includes('always') || text.includes('absorvente')) {
+    return '/products/always_platinum_noturno_28un.jpg';
+  }
+  if (text.includes('dermacyd') || text.includes('sabonete íntimo') || text.includes('sabonete intimo')) {
+    return '/products/dermacyd_femina.webp';
+  }
+  if (text.includes('carmed')) {
+    return '/products/carmed_fini_bananas_10g.jpg';
+  }
+  if (text.includes('wella')) {
+    if (text.includes('máscara') || text.includes('mascara') || text.includes('fusion')) {
+      return '/products/wella_fusion_mascara_150ml.jpg';
+    }
+    return '/products/wella_oil_reflections_100ml.jpg';
+  }
+  if (text.includes('truss')) {
+    return '/products/truss_night_spa_250ml.jpg';
+  }
+
+  // 5. Skincare / Dermocosméticos / Hidratantes (somente se NÃO for fralda nem produto de bebê)
   if (
     text.includes('cetaphil') ||
     text.includes('dermocosm') ||
@@ -118,18 +200,6 @@ export function getFallbackImage(product?: {
   ) {
     if (text.includes('pote')) return '/products/cetaphil_pote.jpg';
     return '/products/cetaphil_lotion.jpg';
-  }
-
-  // 5. Bebê e Fraldas
-  if (
-    text.includes('fralda') ||
-    text.includes('pampers') ||
-    text.includes('huggies') ||
-    text.includes('bebê') ||
-    text.includes('bebe')
-  ) {
-    if (text.includes('g') && !text.includes('kg')) return '/products/pampers_pants_g.webp';
-    return '/products/pampers_confort_sec_m.webp';
   }
 
   // 6. Higiene Bucal

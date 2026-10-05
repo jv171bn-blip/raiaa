@@ -85,7 +85,6 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
     // 3. Huggies Calça Proteção Acolchoada (Roupinha)
     else if (pName.includes('huggies') && (pName.includes('calça') || pName.includes('roupinha') || pName.includes('acolchoada'))) {
       familySizes = [
-        { code: 'P', id: 1096085, label: 'P' },
         { code: 'M', id: 1096086, label: 'M' },
         { code: 'G', id: 1096087, label: 'G' },
         { code: 'XG', id: 1096088, label: 'XG' },
@@ -105,7 +104,6 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
     // 5. Babysec Ultrasec Galinha Pintadinha
     else if (pName.includes('babysec')) {
       familySizes = [
-        { code: 'P', id: 21107, label: 'P' },
         { code: 'M', id: 21108, label: 'M' },
         { code: 'G', id: 1109, label: 'G' },
         { code: 'XG', id: 21112, label: 'XG' },
@@ -115,7 +113,6 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
     // 6. Pom Pom Protek
     else if (pName.includes('pom pom') || pName.includes('pompom')) {
       familySizes = [
-        { code: 'P', id: 21114, label: 'P' },
         { code: 'M', id: 21115, label: 'M' },
         { code: 'G', id: 1110, label: 'G' },
         { code: 'XG', id: 21116, label: 'XG' },

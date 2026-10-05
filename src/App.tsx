@@ -23,6 +23,7 @@ import ProductPage from './components/ProductPage/ProductPage';
 import FlashOfferBanner from './components/FlashOfferBanner/FlashOfferBanner';
 import OffersPage from './components/OffersPage/OffersPage';
 import MontaQueDescontaPage from './components/MontaQueDescontaPage/MontaQueDescontaPage';
+import AllProductsPage from './components/AllProductsPage/AllProductsPage';
 import { suggestionProducts } from './components/SuggestionsCarousel/SuggestionsCarousel';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPage';
 import CheckoutFlow, { AddedToCartModal } from './components/CheckoutFlow/CheckoutFlow';
@@ -50,6 +51,8 @@ import {
 } from './data/products';
 import { montaProducts } from './data/montaOffers';
 import { todosProdutosExpandidos } from './data/catalogExpanded';
+import { novosProdutosCatalogo } from './data/novosProdutosCatalogo';
+import { ultraBrasilProducts } from './data/ultraBrasilProducts';
 import { generateHomepageRotatingData, HomepageRotatingData, isAllowedOnHomepage } from './data/trendingProducts';
 
 import { X } from 'lucide-react';
@@ -57,6 +60,7 @@ import './App.css';
 
 
 const allProducts: Product[] = deduplicateProducts([
+  ...ultraBrasilProducts,
   ...mostBought,
   ...blackDayProducts,
   ...weekHighlights,
@@ -73,6 +77,7 @@ const allProducts: Product[] = deduplicateProducts([
   ...hairCareProducts,
   ...suggestionProducts,
   ...todosProdutosExpandidos,
+  ...novosProdutosCatalogo,
   viterganZincoProduct,
   flexoneProduct,
 ]);
@@ -206,6 +211,7 @@ const PageContent: React.FC = () => {
   const {
     selectedProduct,
     isOffersPage,
+    isAllProductsPage,
     isMontaPage,
     isSearchPage,
     isCartPage,
@@ -247,13 +253,15 @@ const PageContent: React.FC = () => {
       {/* Category Navigation */}
       <CategoryNavigation />
 
-      {/* Main Content (Homepage, Product Detail Page, Offers Page, Monta que Desconta Page, or Search Results Page) */}
+      {/* Main Content (Homepage, Product Detail Page, Offers Page, All Products Page, Monta que Desconta Page, or Search Results Page) */}
       {selectedProduct ? (
         <ProductPage product={selectedProduct} allProducts={allProducts} />
       ) : isOffersPage ? (
         <OffersPage />
       ) : isMontaPage ? (
         <MontaQueDescontaPage />
+      ) : isAllProductsPage ? (
+        <AllProductsPage allProducts={allProducts} />
       ) : showSearchPage ? (
         <SearchResultsPage allProducts={allProducts} />
       ) : (

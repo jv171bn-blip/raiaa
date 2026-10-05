@@ -14,12 +14,11 @@
   }
 }
 
-
 .product-carousel__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .product-carousel__title {
@@ -76,6 +75,74 @@
   scroll-snap-align: start;
 }
 
+/* Botão circular ao lado direito - Ver mais / Ver tudo (sem campo/card atrás) */
+.carousel-circle-btn {
+  width: 110px;
+  min-width: 110px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  flex-shrink: 0;
+  padding: 0 10px;
+  margin: 0 6px;
+  transition: transform 0.2s ease;
+}
+
+.carousel-circle-btn:hover {
+  transform: translateX(3px);
+}
+
+.carousel-circle-btn__circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #d2d2d2;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.carousel-circle-btn:hover .carousel-circle-btn__circle {
+  background: #f5f5f5;
+  border-color: #888888;
+  color: #111111;
+  transform: scale(1.06);
+}
+
+.carousel-circle-btn__arrow {
+  transition: transform 0.15s ease;
+}
+
+.carousel-circle-btn:hover .carousel-circle-btn__arrow {
+  transform: translateX(2px);
+}
+
+.carousel-circle-btn__main {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 1.25;
+  letter-spacing: -0.1px;
+  transition: color 0.15s ease;
+}
+
+.carousel-circle-btn:hover .carousel-circle-btn__main {
+  color: #000000;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .product-carousel {
     margin-top: 22px;
@@ -86,7 +153,23 @@
   }
 
   .product-carousel__title {
-    font-size: 19px;
+    font-size: 18px;
     letter-spacing: -0.3px;
+  }
+
+  .carousel-circle-btn {
+    width: 90px;
+    min-width: 90px;
+    padding: 0 4px;
+  }
+
+  .carousel-circle-btn__circle {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 6px;
+  }
+
+  .carousel-circle-btn__main {
+    font-size: 13px;
   }
 }

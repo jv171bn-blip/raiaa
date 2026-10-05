@@ -1,0 +1,330 @@
+/* All Products Page - Unified Grid (Droga Raia Professional Standards) */
+
+.all-products-page {
+  padding-top: 18px;
+  padding-bottom: 60px;
+  min-height: calc(100vh - 350px);
+}
+
+/* Breadcrumb */
+.all-products-page__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.all-products-page__breadcrumb-btn {
+  background: none;
+  border: none;
+  color: #008542;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+  transition: text-decoration 0.15s;
+}
+
+.all-products-page__breadcrumb-btn:hover {
+  text-decoration: underline;
+}
+
+.all-products-page__breadcrumb-sep {
+  color: #999999;
+}
+
+.all-products-page__breadcrumb-current {
+  color: #333333;
+  font-weight: 500;
+}
+
+/* Controls (Busca & Ordenação) */
+.all-products-page__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.all-products-page__search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  max-width: 440px;
+  display: flex;
+  align-items: center;
+}
+
+.all-products-page__search-icon {
+  position: absolute;
+  left: 14px;
+  color: #888888;
+  pointer-events: none;
+}
+
+.all-products-page__search-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 34px 0 40px;
+  border: 1px solid #d5d5d5;
+  border-radius: 20px;
+  font-size: 13.5px;
+  background: #ffffff;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.all-products-page__search-input:focus {
+  border-color: #008542;
+}
+
+.all-products-page__search-clear {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.all-products-page__search-clear:hover {
+  color: #111;
+}
+
+.all-products-page__sort-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.all-products-page__sort-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+  white-space: nowrap;
+}
+
+.all-products-page__sort-select {
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #d5d5d5;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.all-products-page__sort-select:focus {
+  border-color: #008542;
+}
+
+/* Products Grid Unificado */
+.all-products-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.all-products-page__grid .product-card {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Empty State */
+.all-products-page__empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fafafa;
+  border: 1px dashed #d5d5d5;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.all-products-page__empty-icon {
+  color: #999999;
+  margin-bottom: 12px;
+}
+
+.all-products-page__empty-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+  margin: 0 0 6px 0;
+}
+
+.all-products-page__empty-desc {
+  font-size: 13.5px;
+  color: #666666;
+  margin: 0 0 16px 0;
+}
+
+.all-products-page__empty-btn {
+  height: 38px;
+  padding: 0 24px;
+  background: #008542;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.all-products-page__empty-btn:hover {
+  background: #006834;
+}
+
+/* Load More / Pagination Area */
+.all-products-page__load-more-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 0 16px;
+}
+
+.all-products-page__progress-bar-bg {
+  width: 240px;
+  height: 5px;
+  background: #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.all-products-page__progress-bar-fill {
+  height: 100%;
+  background: #008542;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.all-products-page__progress-text {
+  font-size: 12.5px;
+  color: #666666;
+}
+
+.all-products-page__load-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.all-products-page__load-more-btn {
+  background: #ffffff;
+  color: #008542;
+  border: 1px solid #008542;
+  border-radius: 20px;
+  padding: 9px 26px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.all-products-page__load-more-btn:hover {
+  background: #f0f7f2;
+  border-color: #006834;
+  color: #006834;
+}
+
+.all-products-page__load-all-btn {
+  background: #f5f5f5;
+  color: #333333;
+  border: 1px solid #d5d5d5;
+  border-radius: 20px;
+  padding: 9px 20px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.all-products-page__load-all-btn:hover {
+  background: #ebebeb;
+}
+
+/* Floating Back to Top Button */
+.all-products-page__back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #d5d5d5;
+  border-radius: 50px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.all-products-page__back-to-top:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .all-products-page {
+    padding-top: 14px;
+    padding-bottom: 40px;
+  }
+
+  .all-products-page__title {
+    font-size: 21px;
+  }
+
+  .all-products-page__controls {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+
+  .all-products-page__search-wrap {
+    max-width: 100%;
+  }
+
+  .all-products-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .all-products-page__load-more-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .all-products-page__back-to-top {
+    bottom: 18px;
+    right: 14px;
+    padding: 7px 12px;
+  }
+}

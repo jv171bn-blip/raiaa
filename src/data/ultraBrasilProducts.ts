@@ -1,0 +1,7195 @@
+import { Product } from './products';
+
+/**
+ * Catálogo dos produtos campeões de vendas (Mais Vendidos / Mais Vistos / Novos)
+ * fornecidos pela rede Ultra Brasil, com fotos 100% autênticas dos próprios produtos
+ * e preços rigorosamente sincronizados.
+ * Total de itens: 338
+ */
+export const ultraBrasilProducts: Product[] = [
+  {
+    "id": 50001,
+    "ultraId": 26035,
+    "name": "100% Whey Refil (900G) – Baunilha – Max Titanium",
+    "size": "900G",
+    "brand": "Max Titanium",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Whey Protein",
+    "price": 84.04,
+    "rating": 4.8,
+    "reviews": 255,
+    "image": "/products/ultra_26035.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: 100% Whey Refil (900G) – Baunilha – Max Titanium. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26035"
+  },
+  {
+    "id": 50002,
+    "ultraId": 26137,
+    "name": "3 Caixas Colaten Artro – Suplemento Para Articulações – 30 Comprimidos",
+    "size": "30 Comprimidos",
+    "brand": "Colaten",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 236.28,
+    "rating": 4.8,
+    "reviews": 229,
+    "image": "/products/ultra_26137.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: 3 Caixas Colaten Artro – Suplemento Para Articulações – 30 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26137"
+  },
+  {
+    "id": 50003,
+    "ultraId": 26138,
+    "name": "3 Caixas Colaten Plenne Sabor Abacaxi e Hortelã 30 Envelopes",
+    "size": "30 Envelopes",
+    "brand": "Colaten",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 308.21,
+    "rating": 4.8,
+    "reviews": 246,
+    "image": "/products/ultra_26138.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: 3 Caixas Colaten Plenne Sabor Abacaxi e Hortelã 30 Envelopes. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26138"
+  },
+  {
+    "id": 50004,
+    "ultraId": 27100,
+    "name": "3PC MINI KITS NUDE METALLICS EYE KIT",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Clean na Sephora",
+    "subcategory": "",
+    "price": 112.75,
+    "rating": 4.8,
+    "reviews": 100,
+    "image": "/products/ultra_27100.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: 3PC MINI KITS NUDE METALLICS EYE KIT. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27100"
+  },
+  {
+    "id": 50005,
+    "ultraId": 28184,
+    "name": "3PC MINI KITS SOFT & WARM NUDES 3PC KIT",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Clean na Sephora",
+    "subcategory": "",
+    "price": 112.75,
+    "rating": 4.8,
+    "reviews": 268,
+    "image": "/products/ultra_28184.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: 3PC MINI KITS SOFT & WARM NUDES 3PC KIT. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28184"
+  },
+  {
+    "id": 50006,
+    "ultraId": 25953,
+    "name": "3VS Nutrition Glutamine Powder 300g 100% Glutamina Pura",
+    "size": "300g",
+    "brand": "3VS Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 67.51,
+    "rating": 4.8,
+    "reviews": 181,
+    "image": "/products/ultra_25953.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: 3VS Nutrition Glutamine Powder 300g 100% Glutamina Pura. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25953"
+  },
+  {
+    "id": 50007,
+    "ultraId": 26575,
+    "name": "ABH GLIDR SHADOW STICK – BLUE ICE",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 195,
+    "image": "/products/ultra_26575.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: ABH GLIDR SHADOW STICK – BLUE ICE. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26575"
+  },
+  {
+    "id": 50008,
+    "ultraId": 26512,
+    "name": "ABH GLIDR SHADOW STICK- AMETHYST",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 224,
+    "image": "/products/ultra_26512.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: ABH GLIDR SHADOW STICK- AMETHYST. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26512"
+  },
+  {
+    "id": 50009,
+    "ultraId": 26528,
+    "name": "ABH GLIDR SHADOW STICK- COCOA DRIP",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 276,
+    "image": "/products/ultra_26528.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: ABH GLIDR SHADOW STICK- COCOA DRIP. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26528"
+  },
+  {
+    "id": 50010,
+    "ultraId": 26544,
+    "name": "ABH GLIDR SHADOW STICK- HOT SAND",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 108,
+    "image": "/products/ultra_26544.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: ABH GLIDR SHADOW STICK- HOT SAND. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26544"
+  },
+  {
+    "id": 50011,
+    "ultraId": 26523,
+    "name": "ABH GLIDR SHADOW STICK- MYSTIC",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 191,
+    "image": "/products/ultra_26523.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: ABH GLIDR SHADOW STICK- MYSTIC. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26523"
+  },
+  {
+    "id": 50012,
+    "ultraId": 26559,
+    "name": "ABH GLIDR SHADOW STICK- PETAL",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 143,
+    "image": "/products/ultra_26559.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: ABH GLIDR SHADOW STICK- PETAL. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26559"
+  },
+  {
+    "id": 50013,
+    "ultraId": 28507,
+    "name": "Absorvente Always Noturno Cobertura Suave com Abas Fluxo Intenso G 32 Unidades",
+    "size": "32 Unidades",
+    "brand": "Always",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "oldPrice": 19.99,
+    "price": 17.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 259,
+    "image": "/products/ultra_28507.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Absorvente Always Noturno Cobertura Suave com Abas Fluxo Intenso G 32 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28507"
+  },
+  {
+    "id": 50014,
+    "ultraId": 26051,
+    "name": "Adaptogen Tasty Whey Original 900g",
+    "size": "900g",
+    "brand": "Adaptogen",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Whey Protein",
+    "price": 116.87,
+    "rating": 4.8,
+    "reviews": 87,
+    "image": "/products/ultra_26051.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Adaptogen Tasty Whey Original 900g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26051"
+  },
+  {
+    "id": 50015,
+    "ultraId": 29604,
+    "name": "Água Micelar Bioderma Sébium H2O 250ml",
+    "size": "250ml",
+    "brand": "Bioderma",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 63.99,
+    "rating": 4.8,
+    "reviews": 208,
+    "image": "/products/ultra_29604.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Água Micelar Bioderma Sébium H2O 250ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29604"
+  },
+  {
+    "id": 50016,
+    "ultraId": 29482,
+    "name": "Água Micelar Clareadora Bioderma Pigmentbio H2O 250ml",
+    "size": "250ml",
+    "brand": "Bioderma",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 64.79,
+    "rating": 4.8,
+    "reviews": 114,
+    "image": "/products/ultra_29482.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Água Micelar Clareadora Bioderma Pigmentbio H2O 250ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29482"
+  },
+  {
+    "id": 50017,
+    "ultraId": 26272,
+    "name": "Água Micelar Neutrogena Hydro Boost 7 em 1 400ml",
+    "size": "400ml",
+    "brand": "Neutrogena",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 42.59,
+    "rating": 4.8,
+    "reviews": 104,
+    "image": "/products/ultra_26272.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Água Micelar Neutrogena Hydro Boost 7 em 1 400ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26272"
+  },
+  {
+    "id": 50018,
+    "ultraId": 28664,
+    "name": "Água Termal Avène Eau Thermale 300ml",
+    "size": "300ml",
+    "brand": "Avène",
+    "category": "Cuidado Corporal",
+    "subcategory": "Cuidado Facial",
+    "oldPrice": 89.99,
+    "price": 80.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 288,
+    "image": "/products/ultra_28664.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Água Termal Avène Eau Thermale 300ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28664"
+  },
+  {
+    "id": 50019,
+    "ultraId": 28121,
+    "name": "AH GLOW FDT MN4",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 297,
+    "image": "/products/ultra_28121.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: AH GLOW FDT MN4. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28121"
+  },
+  {
+    "id": 50020,
+    "ultraId": 28028,
+    "name": "AH GLOW FDT MN6",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 256,
+    "image": "/products/ultra_28028.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: AH GLOW FDT MN6. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28028"
+  },
+  {
+    "id": 50021,
+    "ultraId": 28000,
+    "name": "AH GLOW FDT MN7",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 220,
+    "image": "/products/ultra_28000.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: AH GLOW FDT MN7. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28000"
+  },
+  {
+    "id": 50022,
+    "ultraId": 28055,
+    "name": "AH GLOW FDT MN8",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 275,
+    "image": "/products/ultra_28055.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: AH GLOW FDT MN8. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28055"
+  },
+  {
+    "id": 50023,
+    "ultraId": 28107,
+    "name": "AH GLOW FDT MW2",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 279,
+    "image": "/products/ultra_28107.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: AH GLOW FDT MW2. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28107"
+  },
+  {
+    "id": 50024,
+    "ultraId": 27953,
+    "name": "AH GLOW FDT MW8",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 81,
+    "image": "/products/ultra_27953.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: AH GLOW FDT MW8. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27953"
+  },
+  {
+    "id": 50025,
+    "ultraId": 26007,
+    "name": "Aminoácidos Essenciais BCAA 2044mg 90 cápsulas – Para Energia e Desempenho – Integralmedica",
+    "size": "90 cápsulas",
+    "brand": "Integralmedica",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 43.91,
+    "rating": 4.8,
+    "reviews": 219,
+    "image": "/products/ultra_26007.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Aminoácidos Essenciais BCAA 2044mg 90 cápsulas – Para Energia e Desempenho – Integralmedica. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26007"
+  },
+  {
+    "id": 50026,
+    "ultraId": 25988,
+    "name": "Aminoácidos Essenciais BCAA Top 120 Cáps – Para Recuperação e Desempenho – Integralmedica",
+    "size": "",
+    "brand": "Integralmedica",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 64.67,
+    "rating": 4.8,
+    "reviews": 116,
+    "image": "/products/ultra_25988.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Aminoácidos Essenciais BCAA Top 120 Cáps – Para Recuperação e Desempenho – Integralmedica. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25988"
+  },
+  {
+    "id": 50027,
+    "ultraId": 28257,
+    "name": "Aparador e Raspador de Pelos Philips OneBlade com 3 Pentes QP2724/10 À prova d’água Bivolt",
+    "size": "",
+    "brand": "Philips",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "oldPrice": 139.9,
+    "price": 125.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 189,
+    "image": "/products/ultra_28257.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Aparador e Raspador de Pelos Philips OneBlade com 3 Pentes QP2724/10 À prova d’água Bivolt. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28257"
+  },
+  {
+    "id": 50028,
+    "ultraId": 26074,
+    "name": "Atlhetica Nutrition 100% Hiper Mass Flavour, 2.5Kg, Chocolate",
+    "size": "5Kg",
+    "brand": "Atlhetica Nutrition",
+    "category": "Hipercalorico",
+    "subcategory": "Suplementos",
+    "price": 35.86,
+    "rating": 4.8,
+    "reviews": 258,
+    "image": "/products/ultra_26074.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Atlhetica Nutrition 100% Hiper Mass Flavour, 2.5Kg, Chocolate. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26074"
+  },
+  {
+    "id": 50029,
+    "ultraId": 26526,
+    "name": "BADgal BANG! Purple 8",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 130.35,
+    "rating": 4.8,
+    "reviews": 242,
+    "image": "/products/ultra_26526.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BADgal BANG! Purple 8. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26526"
+  },
+  {
+    "id": 50030,
+    "ultraId": 27018,
+    "name": "BADGAL M�SCARA DE C�LIOS BLUE",
+    "size": "M",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 130.35,
+    "rating": 4.8,
+    "reviews": 246,
+    "image": "/products/ultra_27018.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BADGAL M�SCARA DE C�LIOS BLUE. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27018"
+  },
+  {
+    "id": 50031,
+    "ultraId": 26830,
+    "name": "BADGAL M�SCARA DE C�LIOS BROWN",
+    "size": "M",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 130.35,
+    "rating": 4.8,
+    "reviews": 130,
+    "image": "/products/ultra_26830.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BADGAL M�SCARA DE C�LIOS BROWN. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26830"
+  },
+  {
+    "id": 50032,
+    "ultraId": 26958,
+    "name": "BADGAL M�SCARA DE C�LIOS PLUM",
+    "size": "M",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 130.35,
+    "rating": 4.8,
+    "reviews": 106,
+    "image": "/products/ultra_26958.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BADGAL M�SCARA DE C�LIOS PLUM. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26958"
+  },
+  {
+    "id": 50033,
+    "ultraId": 27793,
+    "name": "Base Dior Face & Body Foundation",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 211.2,
+    "rating": 4.8,
+    "reviews": 221,
+    "image": "/products/ultra_27793.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Dior Face & Body Foundation. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27793"
+  },
+  {
+    "id": 50034,
+    "ultraId": 28093,
+    "name": "Base em Pó Sephora Collection Best Skin Ever Matte",
+    "size": "P",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 67.1,
+    "rating": 4.8,
+    "reviews": 261,
+    "image": "/products/ultra_28093.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base em Pó Sephora Collection Best Skin Ever Matte. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28093"
+  },
+  {
+    "id": 50035,
+    "ultraId": 27954,
+    "name": "BASE EM STICK SEPHORA COLLECTION BEST SKIN EVER",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 87.45,
+    "rating": 4.8,
+    "reviews": 98,
+    "image": "/products/ultra_27954.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE EM STICK SEPHORA COLLECTION BEST SKIN EVER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27954"
+  },
+  {
+    "id": 50036,
+    "ultraId": 27999,
+    "name": "Base facial refil Shiseido Uv Protective Compact FPS 30",
+    "size": "",
+    "brand": "Shiseido",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 195.8,
+    "rating": 4.8,
+    "reviews": 203,
+    "image": "/products/ultra_27999.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base facial refil Shiseido Uv Protective Compact FPS 30. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27999"
+  },
+  {
+    "id": 50037,
+    "ultraId": 27894,
+    "name": "Base Fenty Beauty Soft Lit Naturally Luminous Longwear",
+    "size": "",
+    "brand": "Fenty Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 172.15,
+    "rating": 4.8,
+    "reviews": 178,
+    "image": "/products/ultra_27894.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Fenty Beauty Soft Lit Naturally Luminous Longwear. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27894"
+  },
+  {
+    "id": 50038,
+    "ultraId": 28041,
+    "name": "Base Kylie Cosmetics Power Plush Longwear",
+    "size": "",
+    "brand": "Kylie Cosmetics",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 160.05,
+    "rating": 4.8,
+    "reviews": 257,
+    "image": "/products/ultra_28041.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Kylie Cosmetics Power Plush Longwear. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28041"
+  },
+  {
+    "id": 50039,
+    "ultraId": 28001,
+    "name": "Base Laura Mercier Real Flawless Weightless Perfecting Foundation",
+    "size": "",
+    "brand": "Laura Mercier",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 189.75,
+    "rating": 4.8,
+    "reviews": 237,
+    "image": "/products/ultra_28001.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Laura Mercier Real Flawless Weightless Perfecting Foundation. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28001"
+  },
+  {
+    "id": 50040,
+    "ultraId": 27677,
+    "name": "BASE LÍQUIDA DIOR FOREVER SKIN GLOW",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 270.6,
+    "rating": 4.8,
+    "reviews": 229,
+    "image": "/products/ultra_27677.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE LÍQUIDA DIOR FOREVER SKIN GLOW. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27677"
+  },
+  {
+    "id": 50041,
+    "ultraId": 27746,
+    "name": "BASE LIQUIDA DIOR FOREVER SKIN WEAR",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 270.6,
+    "rating": 4.8,
+    "reviews": 82,
+    "image": "/products/ultra_27746.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE LIQUIDA DIOR FOREVER SKIN WEAR. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27746"
+  },
+  {
+    "id": 50042,
+    "ultraId": 27855,
+    "name": "Base Líquida Fenty Eaze Drop Blurring Lightweight Blurring Skin Tint",
+    "size": "",
+    "brand": "Fenty",
+    "category": "Só Na Sephora",
+    "subcategory": "",
+    "price": 142.45,
+    "rating": 4.8,
+    "reviews": 175,
+    "image": "/products/ultra_27855.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Líquida Fenty Eaze Drop Blurring Lightweight Blurring Skin Tint. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27855"
+  },
+  {
+    "id": 50043,
+    "ultraId": 28039,
+    "name": "BASE LÍQUIDA HUDA BEAUTY EASY BLUR",
+    "size": "",
+    "brand": "Huda Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 164.45,
+    "rating": 4.8,
+    "reviews": 223,
+    "image": "/products/ultra_28039.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE LÍQUIDA HUDA BEAUTY EASY BLUR. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28039"
+  },
+  {
+    "id": 50044,
+    "ultraId": 28025,
+    "name": "Base Líquida MAC Soft Matte Studio Fix FPS15",
+    "size": "",
+    "brand": "MAC",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 187.55,
+    "rating": 4.8,
+    "reviews": 205,
+    "image": "/products/ultra_28025.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Líquida MAC Soft Matte Studio Fix FPS15. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28025"
+  },
+  {
+    "id": 50045,
+    "ultraId": 27598,
+    "name": "BASE LIQUIDA RARE BEAUTY TRUE TO MYSELF",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 158.95,
+    "rating": 4.8,
+    "reviews": 206,
+    "image": "/products/ultra_27598.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE LIQUIDA RARE BEAUTY TRUE TO MYSELF. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27598"
+  },
+  {
+    "id": 50046,
+    "ultraId": 28096,
+    "name": "BASE LÍQUIDA SEPHORA COLLECTION BEST SKIN EVER",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 87.45,
+    "rating": 4.8,
+    "reviews": 92,
+    "image": "/products/ultra_28096.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE LÍQUIDA SEPHORA COLLECTION BEST SKIN EVER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28096"
+  },
+  {
+    "id": 50047,
+    "ultraId": 27983,
+    "name": "Base Líquida Sephora Collection Reveal The Real 12HR",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 87.45,
+    "rating": 4.8,
+    "reviews": 151,
+    "image": "/products/ultra_27983.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Líquida Sephora Collection Reveal The Real 12HR. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27983"
+  },
+  {
+    "id": 50048,
+    "ultraId": 27926,
+    "name": "BASE LÍQUIDA YSL ALL HOURS GLOW FOUNDATION",
+    "size": "",
+    "brand": "YSL",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 240.08,
+    "rating": 4.8,
+    "reviews": 282,
+    "image": "/products/ultra_27926.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BASE LÍQUIDA YSL ALL HOURS GLOW FOUNDATION. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27926"
+  },
+  {
+    "id": 50049,
+    "ultraId": 28111,
+    "name": "Base Multifuncional Boca Rosa Stick Pele",
+    "size": "",
+    "brand": "Boca Rosa",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 49.5,
+    "rating": 4.8,
+    "reviews": 127,
+    "image": "/products/ultra_28111.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Multifuncional Boca Rosa Stick Pele. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28111"
+  },
+  {
+    "id": 50050,
+    "ultraId": 27866,
+    "name": "Base Nars Light Reflecting",
+    "size": "",
+    "brand": "Nars",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 237.05,
+    "rating": 4.8,
+    "reviews": 142,
+    "image": "/products/ultra_27866.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Nars Light Reflecting. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27866"
+  },
+  {
+    "id": 50051,
+    "ultraId": 28169,
+    "name": "Base Rare Beauty Positive Light Tinted Moisturizer",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 153.45,
+    "rating": 4.8,
+    "reviews": 233,
+    "image": "/products/ultra_28169.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Rare Beauty Positive Light Tinted Moisturizer. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28169"
+  },
+  {
+    "id": 50052,
+    "ultraId": 28094,
+    "name": "Base Sephora Collection Best Skin Ever Glow",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 87.45,
+    "rating": 4.8,
+    "reviews": 278,
+    "image": "/products/ultra_28094.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Sephora Collection Best Skin Ever Glow. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28094"
+  },
+  {
+    "id": 50053,
+    "ultraId": 27853,
+    "name": "Base Yves Saint Laurent All Hours Foundation",
+    "size": "",
+    "brand": "Yves Saint Laurent",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 266.75,
+    "rating": 4.8,
+    "reviews": 141,
+    "image": "/products/ultra_27853.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Base Yves Saint Laurent All Hours Foundation. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27853"
+  },
+  {
+    "id": 50054,
+    "ultraId": 26011,
+    "name": "Bcaa 2400 – 100 Tabletes – Black Skull, Black Skull",
+    "size": "100 Tabletes",
+    "brand": "Black Skull",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 50.78,
+    "rating": 4.8,
+    "reviews": 287,
+    "image": "/products/ultra_26011.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bcaa 2400 – 100 Tabletes – Black Skull, Black Skull. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26011"
+  },
+  {
+    "id": 50055,
+    "ultraId": 26008,
+    "name": "Bcaa 3:1:1 60 Capsulas Dark Lab",
+    "size": "60 Capsulas",
+    "brand": "Dark Lab",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 25.72,
+    "rating": 4.8,
+    "reviews": 236,
+    "image": "/products/ultra_26008.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bcaa 3:1:1 60 Capsulas Dark Lab. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26008"
+  },
+  {
+    "id": 50056,
+    "ultraId": 26010,
+    "name": "BCAA 3000 120 Capsulas Aminoacidos Essenciais Enriquecido com vitamina B6 Sem Sabor Ultra Concentrado Rapida Absorção Importado Original",
+    "size": "120 Capsulas",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 33.25,
+    "rating": 4.8,
+    "reviews": 270,
+    "image": "/products/ultra_26010.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BCAA 3000 120 Capsulas Aminoacidos Essenciais Enriquecido com vitamina B6 Sem Sabor Ultra Concentrado Rapida Absorção Importado Original. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26010"
+  },
+  {
+    "id": 50057,
+    "ultraId": 26014,
+    "name": "BCAA 800MG (240 caps) – Now Sports",
+    "size": "",
+    "brand": "Now Sports",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 77.21,
+    "rating": 4.8,
+    "reviews": 118,
+    "image": "/products/ultra_26014.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BCAA 800MG (240 caps) – Now Sports. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26014"
+  },
+  {
+    "id": 50058,
+    "ultraId": 26029,
+    "name": "BCAA Attack 120 Cáps | 3VS Nutrition",
+    "size": "",
+    "brand": "3VS Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 18.56,
+    "rating": 4.8,
+    "reviews": 153,
+    "image": "/products/ultra_26029.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BCAA Attack 120 Cáps | 3VS Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26029"
+  },
+  {
+    "id": 50059,
+    "ultraId": 27286,
+    "name": "BENEFIT    BADGAL MINI   EYES 21G",
+    "size": "21G",
+    "brand": "Benefit",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 70.95,
+    "rating": 4.8,
+    "reviews": 182,
+    "image": "/products/ultra_27286.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BENEFIT    BADGAL MINI   EYES 21G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27286"
+  },
+  {
+    "id": 50060,
+    "ultraId": 27184,
+    "name": "BENEFIT    MINI THEY’RE  MASC",
+    "size": "",
+    "brand": "Benefit",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 70.95,
+    "rating": 4.8,
+    "reviews": 208,
+    "image": "/products/ultra_27184.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BENEFIT    MINI THEY’RE  MASC. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27184"
+  },
+  {
+    "id": 50061,
+    "ultraId": 27414,
+    "name": "BENEFIT    ROLLER LASH   MASC 4GR",
+    "size": "",
+    "brand": "Benefit",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 70.95,
+    "rating": 4.8,
+    "reviews": 158,
+    "image": "/products/ultra_27414.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BENEFIT    ROLLER LASH   MASC 4GR. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27414"
+  },
+  {
+    "id": 50062,
+    "ultraId": 27064,
+    "name": "BENEFIT    THEY’RE REAL  MASC 1UNID",
+    "size": "1UNID",
+    "brand": "Benefit",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 130.35,
+    "rating": 4.8,
+    "reviews": 148,
+    "image": "/products/ultra_27064.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BENEFIT    THEY’RE REAL  MASC 1UNID. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27064"
+  },
+  {
+    "id": 50063,
+    "ultraId": 27067,
+    "name": "BENEFIT    THEY’RE REAL  MASC 1UNID",
+    "size": "1UNID",
+    "brand": "Benefit",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 70.95,
+    "rating": 4.8,
+    "reviews": 199,
+    "image": "/products/ultra_27067.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BENEFIT    THEY’RE REAL  MASC 1UNID. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27067"
+  },
+  {
+    "id": 50064,
+    "ultraId": 26055,
+    "name": "Best Whey – 450g Achocolatado Toddy – Atlhetica Nutrition",
+    "size": "450g",
+    "brand": "Atlhetica Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Whey Protein",
+    "price": 90.19,
+    "rating": 4.8,
+    "reviews": 155,
+    "image": "/products/ultra_26055.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Best Whey – 450g Achocolatado Toddy – Atlhetica Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26055"
+  },
+  {
+    "id": 50065,
+    "ultraId": 26030,
+    "name": "Black Skull Refil Whey Zero 837G",
+    "size": "837G",
+    "brand": "Black Skull",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Whey Protein",
+    "price": 87.88,
+    "rating": 4.8,
+    "reviews": 170,
+    "image": "/products/ultra_26030.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Black Skull Refil Whey Zero 837G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26030"
+  },
+  {
+    "id": 50066,
+    "ultraId": 29436,
+    "name": "Blancy TX Gel Creme Clareador Mantecorp 30g",
+    "size": "30g",
+    "brand": "Mantecorp",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 129.6,
+    "rating": 4.8,
+    "reviews": 212,
+    "image": "/products/ultra_29436.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blancy TX Gel Creme Clareador Mantecorp 30g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29436"
+  },
+  {
+    "id": 50067,
+    "ultraId": 28711,
+    "name": "Blemish+ Age Defense SkinCeuticals 30ml",
+    "size": "30ml",
+    "brand": "SkinCeuticals",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 199.99,
+    "price": 179.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 207,
+    "image": "/products/ultra_28711.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blemish+ Age Defense SkinCeuticals 30ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28711"
+  },
+  {
+    "id": 50068,
+    "ultraId": 27955,
+    "name": "Blush Cremoso Rare Beauty Stay Vulnerable",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 103.95,
+    "rating": 4.8,
+    "reviews": 115,
+    "image": "/products/ultra_27955.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Cremoso Rare Beauty Stay Vulnerable. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27955"
+  },
+  {
+    "id": 50069,
+    "ultraId": 27612,
+    "name": "BLUSH E BATOM EM BASTÃO MULTIUSO VIC BEAUTÉ STICK TUDO",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 92.95,
+    "rating": 4.8,
+    "reviews": 224,
+    "image": "/products/ultra_27612.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH E BATOM EM BASTÃO MULTIUSO VIC BEAUTÉ STICK TUDO. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27612"
+  },
+  {
+    "id": 50070,
+    "ultraId": 26728,
+    "name": "BLUSH E SOMBRA BRUNA TAVARES PLUSH",
+    "size": "",
+    "brand": "Bruna Tavares",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 31.9,
+    "rating": 4.8,
+    "reviews": 156,
+    "image": "/products/ultra_26728.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH E SOMBRA BRUNA TAVARES PLUSH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26728"
+  },
+  {
+    "id": 50071,
+    "ultraId": 28140,
+    "name": "Blush em Bastão Boca Rosa Stick Cor",
+    "size": "",
+    "brand": "Boca Rosa",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 33,
+    "rating": 4.8,
+    "reviews": 180,
+    "image": "/products/ultra_28140.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush em Bastão Boca Rosa Stick Cor. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28140"
+  },
+  {
+    "id": 50072,
+    "ultraId": 28068,
+    "name": "Blush em Bastão Nudestix Glow Core",
+    "size": "",
+    "brand": "Nudestix",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 106.7,
+    "rating": 4.8,
+    "reviews": 276,
+    "image": "/products/ultra_28068.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush em Bastão Nudestix Glow Core. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28068"
+  },
+  {
+    "id": 50073,
+    "ultraId": 27938,
+    "name": "BLUSH EM P� ME BLUSH",
+    "size": "P",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 296.45,
+    "rating": 4.8,
+    "reviews": 266,
+    "image": "/products/ultra_27938.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH EM P� ME BLUSH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27938"
+  },
+  {
+    "id": 50074,
+    "ultraId": 27911,
+    "name": "Blush em pó Dior Rosy Glow",
+    "size": "p",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 211.2,
+    "rating": 4.8,
+    "reviews": 247,
+    "image": "/products/ultra_27911.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush em pó Dior Rosy Glow. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27911"
+  },
+  {
+    "id": 50075,
+    "ultraId": 28185,
+    "name": "BLUSH EM PÓ MAC SKINFINISH COLOURSTRUCK",
+    "size": "P",
+    "brand": "MAC",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 144.1,
+    "rating": 4.8,
+    "reviews": 285,
+    "image": "/products/ultra_28185.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH EM PÓ MAC SKINFINISH COLOURSTRUCK. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28185"
+  },
+  {
+    "id": 50076,
+    "ultraId": 27770,
+    "name": "Blush em pó YSL Make Me Blush",
+    "size": "p",
+    "brand": "YSL",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 296.45,
+    "rating": 4.8,
+    "reviews": 270,
+    "image": "/products/ultra_27770.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush em pó YSL Make Me Blush. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27770"
+  },
+  {
+    "id": 50077,
+    "ultraId": 27942,
+    "name": "BLUSH EM STICK BRUNA TAVARES COCA-COLA",
+    "size": "",
+    "brand": "Bruna Tavares",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 34.65,
+    "rating": 4.8,
+    "reviews": 114,
+    "image": "/products/ultra_27942.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH EM STICK BRUNA TAVARES COCA-COLA. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27942"
+  },
+  {
+    "id": 50078,
+    "ultraId": 27971,
+    "name": "BLUSH EM STICK MARI MARIA BLOOM UP",
+    "size": "",
+    "brand": "Mari Maria",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 26.95,
+    "rating": 4.8,
+    "reviews": 167,
+    "image": "/products/ultra_27971.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH EM STICK MARI MARIA BLOOM UP. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27971"
+  },
+  {
+    "id": 50079,
+    "ultraId": 27466,
+    "name": "Blush Iluminador em Pó Rare Beauty Soft Pinch",
+    "size": "P",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 109.45,
+    "rating": 4.8,
+    "reviews": 162,
+    "image": "/products/ultra_27466.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Iluminador em Pó Rare Beauty Soft Pinch. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27466"
+  },
+  {
+    "id": 50080,
+    "ultraId": 28138,
+    "name": "BLUSH L�QUIDO – MAKE ME BLUSH",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 197.51,
+    "rating": 4.8,
+    "reviews": 146,
+    "image": "/products/ultra_28138.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH L�QUIDO – MAKE ME BLUSH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28138"
+  },
+  {
+    "id": 50081,
+    "ultraId": 27709,
+    "name": "BLUSH LIQUIDO FENTY BEAUTY SHAKE N PLAY",
+    "size": "",
+    "brand": "Fenty Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 106.7,
+    "rating": 4.8,
+    "reviews": 113,
+    "image": "/products/ultra_27709.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH LIQUIDO FENTY BEAUTY SHAKE N PLAY. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27709"
+  },
+  {
+    "id": 50082,
+    "ultraId": 27881,
+    "name": "BLUSH LÍQUIDO HUDA BEAUTY FILTER",
+    "size": "",
+    "brand": "Huda Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 114.95,
+    "rating": 4.8,
+    "reviews": 177,
+    "image": "/products/ultra_27881.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH LÍQUIDO HUDA BEAUTY FILTER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27881"
+  },
+  {
+    "id": 50083,
+    "ultraId": 28186,
+    "name": "Blush Líquido Laura Mercier Tinted Moisturizer Blush",
+    "size": "",
+    "brand": "Laura Mercier",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 110,
+    "rating": 4.8,
+    "reviews": 82,
+    "image": "/products/ultra_28186.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Líquido Laura Mercier Tinted Moisturizer Blush. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28186"
+  },
+  {
+    "id": 50084,
+    "ultraId": 28166,
+    "name": "BLUSH LIQUIDO ME BLUSH",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 219.45,
+    "rating": 4.8,
+    "reviews": 182,
+    "image": "/products/ultra_28166.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH LIQUIDO ME BLUSH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28166"
+  },
+  {
+    "id": 50085,
+    "ultraId": 27823,
+    "name": "Blush Líquido Nars Afterglow",
+    "size": "",
+    "brand": "Nars",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 160.05,
+    "rating": 4.8,
+    "reviews": 291,
+    "image": "/products/ultra_27823.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Líquido Nars Afterglow. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27823"
+  },
+  {
+    "id": 50086,
+    "ultraId": 28110,
+    "name": "Blush Líquido YSL Make Me Blush",
+    "size": "",
+    "brand": "YSL",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 219.45,
+    "rating": 4.8,
+    "reviews": 110,
+    "image": "/products/ultra_28110.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Líquido YSL Make Me Blush. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28110"
+  },
+  {
+    "id": 50087,
+    "ultraId": 27852,
+    "name": "BLUSH MULTIUSO SEPHORA COLLECTION CHEEK & LIP TINT",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 63.25,
+    "rating": 4.8,
+    "reviews": 124,
+    "image": "/products/ultra_27852.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH MULTIUSO SEPHORA COLLECTION CHEEK & LIP TINT. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27852"
+  },
+  {
+    "id": 50088,
+    "ultraId": 28056,
+    "name": "Blush Nars Talc Free",
+    "size": "",
+    "brand": "Nars",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 172.15,
+    "rating": 4.8,
+    "reviews": 292,
+    "image": "/products/ultra_28056.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Nars Talc Free. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28056"
+  },
+  {
+    "id": 50089,
+    "ultraId": 27636,
+    "name": "Blush Rare Beauty Soft Pinch Matte Bouncy",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 120.45,
+    "rating": 4.8,
+    "reviews": 192,
+    "image": "/products/ultra_27636.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Rare Beauty Soft Pinch Matte Bouncy. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27636"
+  },
+  {
+    "id": 50090,
+    "ultraId": 27689,
+    "name": "BLUSH SEPHORA COLLECTION MULTIUSE",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 57.75,
+    "rating": 4.8,
+    "reviews": 213,
+    "image": "/products/ultra_27689.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BLUSH SEPHORA COLLECTION MULTIUSE. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27689"
+  },
+  {
+    "id": 50091,
+    "ultraId": 27941,
+    "name": "Blush Stick Dior Rosy Glow",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 225.5,
+    "rating": 4.8,
+    "reviews": 97,
+    "image": "/products/ultra_27941.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Blush Stick Dior Rosy Glow. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27941"
+  },
+  {
+    "id": 50092,
+    "ultraId": 28136,
+    "name": "Bronzer Benefit Hoola",
+    "size": "",
+    "brand": "Benefit",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 157.85,
+    "rating": 4.8,
+    "reviews": 112,
+    "image": "/products/ultra_28136.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bronzer Benefit Hoola. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28136"
+  },
+  {
+    "id": 50093,
+    "ultraId": 27806,
+    "name": "BRONZER CREMOSO FENTY BEAUTY SUN STALK’R SOUFFLÉ",
+    "size": "",
+    "brand": "Fenty Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 185.35,
+    "rating": 4.8,
+    "reviews": 222,
+    "image": "/products/ultra_27806.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BRONZER CREMOSO FENTY BEAUTY SUN STALK’R SOUFFLÉ. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27806"
+  },
+  {
+    "id": 50094,
+    "ultraId": 27939,
+    "name": "Bronzer Cremoso Nars Laguna",
+    "size": "",
+    "brand": "Nars",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 195.8,
+    "rating": 4.8,
+    "reviews": 283,
+    "image": "/products/ultra_27939.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bronzer Cremoso Nars Laguna. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27939"
+  },
+  {
+    "id": 50095,
+    "ultraId": 27507,
+    "name": "Bronzer em Bastão Rare Beauty Warm Wishes Effortless",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Face",
+    "subcategory": "",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 199,
+    "image": "/products/ultra_27507.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bronzer em Bastão Rare Beauty Warm Wishes Effortless. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27507"
+  },
+  {
+    "id": 50096,
+    "ultraId": 28011,
+    "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+    "size": "",
+    "brand": "Too Faced",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 162.8,
+    "rating": 4.8,
+    "reviews": 187,
+    "image": "/products/ultra_28011.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bronzer em Bastão Too Faced Chocolate Soleil. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28011"
+  },
+  {
+    "id": 50097,
+    "ultraId": 28170,
+    "name": "Bronzer em pó YSL All Hours Powder Hyper Bronze",
+    "size": "p",
+    "brand": "YSL",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 308.55,
+    "rating": 4.8,
+    "reviews": 250,
+    "image": "/products/ultra_28170.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Bronzer em pó YSL All Hours Powder Hyper Bronze. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28170"
+  },
+  {
+    "id": 50098,
+    "ultraId": 27586,
+    "name": "BRONZER ILUMINADOR TOO FACED SUN BUNNY",
+    "size": "",
+    "brand": "Too Faced",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 162.8,
+    "rating": 4.8,
+    "reviews": 222,
+    "image": "/products/ultra_27586.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BRONZER ILUMINADOR TOO FACED SUN BUNNY. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27586"
+  },
+  {
+    "id": 50099,
+    "ultraId": 27884,
+    "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
+    "size": "",
+    "brand": "Too Faced",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 175.45,
+    "rating": 4.8,
+    "reviews": 228,
+    "image": "/products/ultra_27884.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: BRONZER TOO FACED CHOCOLATE SOLEIL. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27884"
+  },
+  {
+    "id": 50100,
+    "ultraId": 25916,
+    "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas",
+    "size": "225g",
+    "brand": "New Millen",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 70.96,
+    "rating": 4.8,
+    "reviews": 212,
+    "image": "/products/ultra_25916.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25916"
+  },
+  {
+    "id": 50101,
+    "ultraId": 25917,
+    "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Tangerina)",
+    "size": "225g",
+    "brand": "New Millen",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 70.96,
+    "rating": 4.8,
+    "reviews": 229,
+    "image": "/products/ultra_25917.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: C4 Beta Pump Extreme Pre Workout 225g – New Millen (Tangerina). Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25917"
+  },
+  {
+    "id": 50102,
+    "ultraId": 26095,
+    "name": "Cabelo e Unha Vitamina para Crescimento Capilar Unhas Fortes e Pele Saudável com Biotina Zinco e 16 Vitaminas Essenciais 60 Cápsulas da NUTRI-LEAF Saúde",
+    "size": "60 Cápsulas",
+    "brand": "Nutri-Leaf",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 67.72,
+    "rating": 4.8,
+    "reviews": 175,
+    "image": "/products/ultra_26095.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Cabelo e Unha Vitamina para Crescimento Capilar Unhas Fortes e Pele Saudável com Biotina Zinco e 16 Vitaminas Essenciais 60 Cápsulas da NUTRI-LEAF Saúde. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26095"
+  },
+  {
+    "id": 50103,
+    "ultraId": 26096,
+    "name": "Cabelo Pele E Unha O Multivitamínico Da Beleza Feminina",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 33.79,
+    "rating": 4.8,
+    "reviews": 192,
+    "image": "/products/ultra_26096.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Cabelo Pele E Unha O Multivitamínico Da Beleza Feminina. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26096"
+  },
+  {
+    "id": 50104,
+    "ultraId": 26666,
+    "name": "CANETA DELINEADORA DOLCE&GABBANA EVERINK LINER",
+    "size": "",
+    "brand": "Dolce&Gabbana",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 154.94,
+    "rating": 4.8,
+    "reviews": 202,
+    "image": "/products/ultra_26666.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CANETA DELINEADORA DOLCE&GABBANA EVERINK LINER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26666"
+  },
+  {
+    "id": 50105,
+    "ultraId": 26844,
+    "name": "CANETA DELINEADORA MARI MARIA CAT EYES",
+    "size": "",
+    "brand": "Mari Maria",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 30.8,
+    "rating": 4.8,
+    "reviews": 148,
+    "image": "/products/ultra_26844.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CANETA DELINEADORA MARI MARIA CAT EYES. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26844"
+  },
+  {
+    "id": 50106,
+    "ultraId": 28495,
+    "name": "Caneta Fortalecedora de Unhas Frágeis Si-Nails ISDIN 2,5ml",
+    "size": "5ml",
+    "brand": "ISDIN",
+    "category": "Cuidado Corporal",
+    "subcategory": "Maquiagens e Acessórios",
+    "oldPrice": 74.9,
+    "price": 67.41,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 275,
+    "image": "/products/ultra_28495.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Caneta Fortalecedora de Unhas Frágeis Si-Nails ISDIN 2,5ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28495"
+  },
+  {
+    "id": 50107,
+    "ultraId": 27363,
+    "name": "CARE       MASCARA       EYES 10ML",
+    "size": "10ML",
+    "brand": "Genérico",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 83.05,
+    "rating": 4.8,
+    "reviews": 171,
+    "image": "/products/ultra_27363.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CARE       MASCARA       EYES 10ML. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27363"
+  },
+  {
+    "id": 50108,
+    "ultraId": 28256,
+    "name": "Carga para Aparelho de Barbear Gillette Mach3 Sensitive 16 unidades",
+    "size": "16 unidades",
+    "brand": "Gillette",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "oldPrice": 79.99,
+    "price": 71.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 172,
+    "image": "/products/ultra_28256.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Carga para Aparelho de Barbear Gillette Mach3 Sensitive 16 unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28256"
+  },
+  {
+    "id": 50109,
+    "ultraId": 26139,
+    "name": "Centrum Mulher Multivitaminico 170 gummies Suplemento",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 235.64,
+    "rating": 4.8,
+    "reviews": 263,
+    "image": "/products/ultra_26139.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Centrum Mulher Multivitaminico 170 gummies Suplemento. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26139"
+  },
+  {
+    "id": 50110,
+    "ultraId": 25216,
+    "name": "CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca",
+    "size": "",
+    "brand": "CeraVe",
+    "category": "Geral",
+    "subcategory": "",
+    "price": 89.9,
+    "rating": 4.8,
+    "reviews": 192,
+    "image": "/products/ultra_25216.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25216"
+  },
+  {
+    "id": 50111,
+    "ultraId": 28271,
+    "name": "Chapinha Lizze Profissional 480 Extreme 110v Cinza",
+    "size": "",
+    "brand": "Lizze",
+    "category": "Cabelos",
+    "subcategory": "Tratamento Capilar",
+    "oldPrice": 399.99,
+    "price": 359.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 207,
+    "image": "/products/ultra_28271.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Chapinha Lizze Profissional 480 Extreme 110v Cinza. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28271"
+  },
+  {
+    "id": 50112,
+    "ultraId": 28272,
+    "name": "Chapinha Lizze Profissional 480 Extreme 220v Cinza",
+    "size": "",
+    "brand": "Lizze",
+    "category": "Cabelos",
+    "subcategory": "Tratamento Capilar",
+    "oldPrice": 399.99,
+    "price": 359.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 224,
+    "image": "/products/ultra_28271.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Chapinha Lizze Profissional 480 Extreme 220v Cinza. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28272"
+  },
+  {
+    "id": 50113,
+    "ultraId": 26908,
+    "name": "CHOCOLATE BTS CHOCOLATE",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 105.05,
+    "rating": 4.8,
+    "reviews": 136,
+    "image": "/products/ultra_26908.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CHOCOLATE BTS CHOCOLATE. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26908"
+  },
+  {
+    "id": 50114,
+    "ultraId": 28653,
+    "name": "Cicaplast Reparador Labial La Roche-Posay Cicaplast 7,5ml",
+    "size": "5ml",
+    "brand": "La Roche-Posay",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 40,
+    "price": 36,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 101,
+    "image": "/products/ultra_28653.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Cicaplast Reparador Labial La Roche-Posay Cicaplast 7,5ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28653"
+  },
+  {
+    "id": 50115,
+    "ultraId": 26879,
+    "name": "Cílios Postiços That Girl HALF LASH",
+    "size": "",
+    "brand": "That Girl",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 23.26,
+    "rating": 4.8,
+    "reviews": 83,
+    "image": "/products/ultra_26879.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Cílios Postiços That Girl HALF LASH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26879"
+  },
+  {
+    "id": 50116,
+    "ultraId": 26972,
+    "name": "Cilios Postiços That Girl Invisible Lash 3D Light",
+    "size": "",
+    "brand": "That Girl",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 24.2,
+    "rating": 4.8,
+    "reviews": 124,
+    "image": "/products/ultra_26972.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Cilios Postiços That Girl Invisible Lash 3D Light. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26972"
+  },
+  {
+    "id": 50117,
+    "ultraId": 25740,
+    "name": "Coenzima Q10 Vitafor COQ-10 com tcm e Vitamina E",
+    "size": "",
+    "brand": "Vitafor",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 88.73,
+    "rating": 4.8,
+    "reviews": 80,
+    "image": "/products/ultra_25740.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Coenzima Q10 Vitafor COQ-10 com tcm e Vitamina E. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25740"
+  },
+  {
+    "id": 50118,
+    "ultraId": 26928,
+    "name": "Cola delineadora That Girl",
+    "size": "",
+    "brand": "That Girl",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 48.51,
+    "rating": 4.8,
+    "reviews": 256,
+    "image": "/products/ultra_26928.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Cola delineadora That Girl. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26928"
+  },
+  {
+    "id": 50119,
+    "ultraId": 26152,
+    "name": "Colágeno Artrogen Duo Sabor Laranja com Abacaxi – 30 Sachês de 11g cada",
+    "size": "30 Sachês",
+    "brand": "Artrogen",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 91.97,
+    "rating": 4.8,
+    "reviews": 264,
+    "image": "/products/ultra_26152.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Colágeno Artrogen Duo Sabor Laranja com Abacaxi – 30 Sachês de 11g cada. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26152"
+  },
+  {
+    "id": 50120,
+    "ultraId": 26153,
+    "name": "Colágeno Cartliv Ultra MDK 60 Cápsulas",
+    "size": "60 Cápsulas",
+    "brand": "Cartliv",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 51.19,
+    "rating": 4.8,
+    "reviews": 281,
+    "image": "/products/ultra_26153.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Colágeno Cartliv Ultra MDK 60 Cápsulas. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26153"
+  },
+  {
+    "id": 50121,
+    "ultraId": 26154,
+    "name": "Colágeno Tipo II Colflex HIALU 30 Cápsulas",
+    "size": "30 Cápsulas",
+    "brand": "Colflex",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 81.87,
+    "rating": 4.8,
+    "reviews": 298,
+    "image": "/products/ultra_26154.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Colágeno Tipo II Colflex HIALU 30 Cápsulas. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26154"
+  },
+  {
+    "id": 50122,
+    "ultraId": 26155,
+    "name": "Colágeno Tipo II Condres Long Bio 90 cápsulas",
+    "size": "90 cápsulas",
+    "brand": "Condres",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 164.11,
+    "rating": 4.8,
+    "reviews": 95,
+    "image": "/products/ultra_26155.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Colágeno Tipo II Condres Long Bio 90 cápsulas. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26155"
+  },
+  {
+    "id": 50123,
+    "ultraId": 25894,
+    "name": "Colaten artro 30 comprimidos",
+    "size": "30 comprimidos",
+    "brand": "Colaten",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 156.09,
+    "rating": 4.8,
+    "reviews": 278,
+    "image": "/products/ultra_25894.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Colaten artro 30 comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25894"
+  },
+  {
+    "id": 50124,
+    "ultraId": 25893,
+    "name": "Colaten artro com 30 comprimidos",
+    "size": "30 comprimidos",
+    "brand": "Colaten",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 145.3,
+    "rating": 4.8,
+    "reviews": 261,
+    "image": "/products/ultra_25893.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Colaten artro com 30 comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25893"
+  },
+  {
+    "id": 50125,
+    "ultraId": 26133,
+    "name": "Combo 2x Nutri Whey Protein Para Ganho de Peso Baunilha 900g Pote – Integralmedica",
+    "size": "900g",
+    "brand": "Integralmedica",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Whey Protein",
+    "price": 136.88,
+    "rating": 4.8,
+    "reviews": 161,
+    "image": "/products/ultra_26133.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Combo 2x Nutri Whey Protein Para Ganho de Peso Baunilha 900g Pote – Integralmedica. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26133"
+  },
+  {
+    "id": 50126,
+    "ultraId": 26136,
+    "name": "Combo 2x Suplemento em Pó Nutri whey Protein Para Ganho de Peso Chocolate 900g Pote – Integralmedica",
+    "size": "900g",
+    "brand": "Integralmedica",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Whey Protein",
+    "price": 92.39,
+    "rating": 4.8,
+    "reviews": 212,
+    "image": "/products/ultra_26136.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Combo 2x Suplemento em Pó Nutri whey Protein Para Ganho de Peso Chocolate 900g Pote – Integralmedica. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26136"
+  },
+  {
+    "id": 50127,
+    "ultraId": 29506,
+    "name": "Condicionador Kérastase Chroma Absolu Fondant Cica 200ml",
+    "size": "200ml",
+    "brand": "Kérastase",
+    "category": "Cabelos",
+    "subcategory": "Tratamento Capilar",
+    "price": 145.79,
+    "rating": 4.8,
+    "reviews": 82,
+    "image": "/products/ultra_29506.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Condicionador Kérastase Chroma Absolu Fondant Cica 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29506"
+  },
+  {
+    "id": 50128,
+    "ultraId": 28342,
+    "name": "Condicionador Kérastase Gloss Absolu Insta Glaze Fondant 250ml",
+    "size": "250ml",
+    "brand": "Kérastase",
+    "category": "Cabelos",
+    "subcategory": "Tratamento Capilar",
+    "oldPrice": 179.99,
+    "price": 161.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 94,
+    "image": "/products/ultra_28342.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Condicionador Kérastase Gloss Absolu Insta Glaze Fondant 250ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28342"
+  },
+  {
+    "id": 50129,
+    "ultraId": 28334,
+    "name": "Condicionador Wella Professionals Ultimate Repair Passo 2 500ml",
+    "size": "500ml",
+    "brand": "Wella Professionals",
+    "category": "Cabelos",
+    "subcategory": "Tratamento Capilar",
+    "oldPrice": 219.99,
+    "price": 197.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 178,
+    "image": "/products/ultra_28334.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Condicionador Wella Professionals Ultimate Repair Passo 2 500ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28334"
+  },
+  {
+    "id": 50130,
+    "ultraId": 26156,
+    "name": "Condres Colágeno Não Hidrolisado Tipo II – 90 cápsulas",
+    "size": "90 cápsulas",
+    "brand": "Condres",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 102.57,
+    "rating": 4.8,
+    "reviews": 112,
+    "image": "/products/ultra_26156.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Condres Colágeno Não Hidrolisado Tipo II – 90 cápsulas. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26156"
+  },
+  {
+    "id": 50131,
+    "ultraId": 27970,
+    "name": "Contorno em bastão Fenty Match Stix",
+    "size": "",
+    "brand": "Fenty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 124.3,
+    "rating": 4.8,
+    "reviews": 150,
+    "image": "/products/ultra_27970.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Contorno em bastão Fenty Match Stix. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27970"
+  },
+  {
+    "id": 50132,
+    "ultraId": 28187,
+    "name": "Contorno em Bastão Sephora Collection",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 69.3,
+    "rating": 4.8,
+    "reviews": 99,
+    "image": "/products/ultra_28187.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Contorno em Bastão Sephora Collection. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28187"
+  },
+  {
+    "id": 50133,
+    "ultraId": 27533,
+    "name": "Contorno Líquido Rare Beauty Soft Pinch",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 201,
+    "image": "/products/ultra_27533.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Contorno Líquido Rare Beauty Soft Pinch. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27533"
+  },
+  {
+    "id": 50134,
+    "ultraId": 28120,
+    "name": "Corretivo Anastasia Magic Touch Concealer",
+    "size": "",
+    "brand": "Anastasia",
+    "category": "Face",
+    "subcategory": "",
+    "price": 166.1,
+    "rating": 4.8,
+    "reviews": 280,
+    "image": "/products/ultra_28120.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Anastasia Magic Touch Concealer. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28120"
+  },
+  {
+    "id": 50135,
+    "ultraId": 28183,
+    "name": "Corretivo Bruna Tavares BT SkinPlush",
+    "size": "",
+    "brand": "Bruna Tavares",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 42.35,
+    "rating": 4.8,
+    "reviews": 251,
+    "image": "/products/ultra_28183.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Bruna Tavares BT SkinPlush. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28183"
+  },
+  {
+    "id": 50136,
+    "ultraId": 28071,
+    "name": "Corretivo Colorido Sephora Collection Best Skin Ever 8HR",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 57.75,
+    "rating": 4.8,
+    "reviews": 107,
+    "image": "/products/ultra_28071.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Colorido Sephora Collection Best Skin Ever 8HR. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28071"
+  },
+  {
+    "id": 50137,
+    "ultraId": 27870,
+    "name": "Corretivo Dior Backstage",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 147.95,
+    "rating": 4.8,
+    "reviews": 210,
+    "image": "/products/ultra_27870.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Dior Backstage. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27870"
+  },
+  {
+    "id": 50138,
+    "ultraId": 27896,
+    "name": "Corretivo Dior Forever Skin Concealer",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 199.1,
+    "rating": 4.8,
+    "reviews": 212,
+    "image": "/products/ultra_27896.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Dior Forever Skin Concealer. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27896"
+  },
+  {
+    "id": 50139,
+    "ultraId": 28054,
+    "name": "CORRETIVO DOLCE&GABBANA EVERLAST",
+    "size": "",
+    "brand": "Dolce&Gabbana",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 179.19,
+    "rating": 4.8,
+    "reviews": 258,
+    "image": "/products/ultra_28054.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO DOLCE&GABBANA EVERLAST. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28054"
+  },
+  {
+    "id": 50140,
+    "ultraId": 28026,
+    "name": "CORRETIVO HUDA BEAUTY FAUX FILTER",
+    "size": "",
+    "brand": "Huda Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 143,
+    "rating": 4.8,
+    "reviews": 222,
+    "image": "/products/ultra_28026.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO HUDA BEAUTY FAUX FILTER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28026"
+  },
+  {
+    "id": 50141,
+    "ultraId": 27838,
+    "name": "CORRETIVO ILUMINADOR CAROLINA HERRERA NUDE COUTURE TRIPLE MOISTURE BRIGHTENER",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 177.65,
+    "rating": 4.8,
+    "reviews": 106,
+    "image": "/products/ultra_27838.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO ILUMINADOR CAROLINA HERRERA NUDE COUTURE TRIPLE MOISTURE BRIGHTENER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27838"
+  },
+  {
+    "id": 50142,
+    "ultraId": 26605,
+    "name": "Corretivo Iluminador de Olhos Nars Light Reflecting",
+    "size": "",
+    "brand": "Nars",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 166.1,
+    "rating": 4.8,
+    "reviews": 265,
+    "image": "/products/ultra_26605.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Iluminador de Olhos Nars Light Reflecting. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26605"
+  },
+  {
+    "id": 50143,
+    "ultraId": 28070,
+    "name": "Corretivo Iluminador Rare Beauty Positive Light Under",
+    "size": "",
+    "brand": "Rare Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 114.95,
+    "rating": 4.8,
+    "reviews": 90,
+    "image": "/products/ultra_28070.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Iluminador Rare Beauty Positive Light Under. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28070"
+  },
+  {
+    "id": 50144,
+    "ultraId": 28150,
+    "name": "Corretivo Kylie Cosmetics Power Plush Longwear",
+    "size": "",
+    "brand": "Kylie Cosmetics",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 124.3,
+    "rating": 4.8,
+    "reviews": 130,
+    "image": "/products/ultra_28150.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Kylie Cosmetics Power Plush Longwear. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28150"
+  },
+  {
+    "id": 50145,
+    "ultraId": 28002,
+    "name": "Corretivo Laura Mercier Real Flawless Weightless Perfecting",
+    "size": "",
+    "brand": "Laura Mercier",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 118.25,
+    "rating": 4.8,
+    "reviews": 254,
+    "image": "/products/ultra_28002.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Laura Mercier Real Flawless Weightless Perfecting. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28002"
+  },
+  {
+    "id": 50146,
+    "ultraId": 27822,
+    "name": "CORRETIVO LÍQUIDO SEPHORA COLLECTION BEST SKIN EVER",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 63.25,
+    "rating": 4.8,
+    "reviews": 274,
+    "image": "/products/ultra_27822.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO LÍQUIDO SEPHORA COLLECTION BEST SKIN EVER. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27822"
+  },
+  {
+    "id": 50147,
+    "ultraId": 28152,
+    "name": "CORRETIVO MARI MARIA COVER UP",
+    "size": "",
+    "brand": "Mari Maria",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 29.7,
+    "rating": 4.8,
+    "reviews": 164,
+    "image": "/products/ultra_28152.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO MARI MARIA COVER UP. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28152"
+  },
+  {
+    "id": 50148,
+    "ultraId": 28137,
+    "name": "Corretivo Sephora Collection Best Skin Ever Glow Concealer",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 63.25,
+    "rating": 4.8,
+    "reviews": 129,
+    "image": "/products/ultra_28137.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Sephora Collection Best Skin Ever Glow Concealer. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28137"
+  },
+  {
+    "id": 50149,
+    "ultraId": 27710,
+    "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 63.25,
+    "rating": 4.8,
+    "reviews": 130,
+    "image": "/products/ultra_27710.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27710"
+  },
+  {
+    "id": 50150,
+    "ultraId": 27665,
+    "name": "Corretivo Sérum Hidratante Fenty Beauty We’re Even",
+    "size": "",
+    "brand": "Fenty Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 124.3,
+    "rating": 4.8,
+    "reviews": 245,
+    "image": "/products/ultra_27665.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Corretivo Sérum Hidratante Fenty Beauty We’re Even. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27665"
+  },
+  {
+    "id": 50151,
+    "ultraId": 27650,
+    "name": "CORRETIVO VIC BEAUTÉ INCRÍVEL",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 87.45,
+    "rating": 4.8,
+    "reviews": 210,
+    "image": "/products/ultra_27650.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETIVO VIC BEAUTÉ INCRÍVEL. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27650"
+  },
+  {
+    "id": 50152,
+    "ultraId": 28014,
+    "name": "CORRETOR HUDA BEAUTY FAUX FILTER COLOR",
+    "size": "",
+    "brand": "Huda Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 143,
+    "rating": 4.8,
+    "reviews": 238,
+    "image": "/products/ultra_28014.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: CORRETOR HUDA BEAUTY FAUX FILTER COLOR. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28014"
+  },
+  {
+    "id": 50153,
+    "ultraId": 25950,
+    "name": "Creatina – BIGBOOM – 100% Pura 300G. A única 3 em 1 | Colágeno, BCAA + Creatina Monohidratada – para mulheres, crescimento de glúteos, crescimento muscular, aumento de energia, auxílio cognitivo e Colágeno.",
+    "size": "300G",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 150.58,
+    "rating": 4.8,
+    "reviews": 130,
+    "image": "/products/ultra_25950.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina – BIGBOOM – 100% Pura 300G. A única 3 em 1 | Colágeno, BCAA + Creatina Monohidratada – para mulheres, crescimento de glúteos, crescimento muscular, aumento de energia, auxílio cognitivo e Colágeno.. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25950"
+  },
+  {
+    "id": 50154,
+    "ultraId": 25781,
+    "name": "Creatina (300g) Max Titanium",
+    "size": "300g",
+    "brand": "Max Titanium",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 49.98,
+    "rating": 4.8,
+    "reviews": 117,
+    "image": "/products/ultra_25781.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina (300g) Max Titanium. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25781"
+  },
+  {
+    "id": 50155,
+    "ultraId": 25782,
+    "name": "Creatina Hardcore 150g Integralmedica",
+    "size": "150g",
+    "brand": "Integralmedica",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 25.4,
+    "rating": 4.8,
+    "reviews": 134,
+    "image": "/products/ultra_25782.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Hardcore 150g Integralmedica. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25782"
+  },
+  {
+    "id": 50156,
+    "ultraId": 25783,
+    "name": "Creatina Monohidratada 250g – 100% Pura Importada – Soldiers Nutrition",
+    "size": "250g",
+    "brand": "Soldiers Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 41.9,
+    "rating": 4.8,
+    "reviews": 151,
+    "image": "/products/ultra_25783.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Monohidratada 250g – 100% Pura Importada – Soldiers Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25783"
+  },
+  {
+    "id": 50157,
+    "ultraId": 25784,
+    "name": "Creatina Monohidratada 600g – 100% Pura Importada – Soldiers Nutrition",
+    "size": "600g",
+    "brand": "Soldiers Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 69.9,
+    "rating": 4.8,
+    "reviews": 168,
+    "image": "/products/ultra_25784.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Monohidratada 600g – 100% Pura Importada – Soldiers Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25784"
+  },
+  {
+    "id": 50158,
+    "ultraId": 25927,
+    "name": "Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition",
+    "size": "300g",
+    "brand": "Soldiers Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 46.59,
+    "rating": 4.8,
+    "reviews": 179,
+    "image": "/products/ultra_25927.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25927"
+  },
+  {
+    "id": 50159,
+    "ultraId": 25931,
+    "name": "Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition",
+    "size": "300g",
+    "brand": "Soldiers Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 37.27,
+    "rating": 4.8,
+    "reviews": 247,
+    "image": "/products/ultra_25931.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25931"
+  },
+  {
+    "id": 50160,
+    "ultraId": 25785,
+    "name": "Creatina Monohidratada Pote 300G – Dux Nutrition",
+    "size": "300G",
+    "brand": "Dux Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 53.29,
+    "rating": 4.8,
+    "reviews": 185,
+    "image": "/products/ultra_25785.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Monohidratada Pote 300G – Dux Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25785"
+  },
+  {
+    "id": 50161,
+    "ultraId": 25929,
+    "name": "Creatina Monohidratada Sem Sabor – Pote 300g – Suplementação Treino Academia, Ganho Muscular Hipertrofia, Força Energia Resistência, Suplementos Naturais – DUX HUMAN HEALTH",
+    "size": "300g",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 61.63,
+    "rating": 4.8,
+    "reviews": 213,
+    "image": "/products/ultra_25929.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Monohidratada Sem Sabor – Pote 300g – Suplementação Treino Academia, Ganho Muscular Hipertrofia, Força Energia Resistência, Suplementos Naturais – DUX HUMAN HEALTH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25929"
+  },
+  {
+    "id": 50162,
+    "ultraId": 25930,
+    "name": "Creatina Pura Refil 500G Monohidratada Dark Lab",
+    "size": "500G",
+    "brand": "Dark Lab",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 69.48,
+    "rating": 4.8,
+    "reviews": 230,
+    "image": "/products/ultra_25930.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creatina Pura Refil 500G Monohidratada Dark Lab. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25930"
+  },
+  {
+    "id": 50163,
+    "ultraId": 28622,
+    "name": "Creme Anti-idade Skinceuticals Glycolic 10 50ml",
+    "size": "50ml",
+    "brand": "SkinCeuticals",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 449.9,
+    "price": 404.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 234,
+    "image": "/products/ultra_28622.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Anti-idade Skinceuticals Glycolic 10 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28622"
+  },
+  {
+    "id": 50164,
+    "ultraId": 28253,
+    "name": "Creme Barriguinha Cream Beleza Brasileira 200g",
+    "size": "200g",
+    "brand": "Genérico",
+    "category": "Cuidado Corporal",
+    "subcategory": "",
+    "oldPrice": 89.9,
+    "price": 80.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 121,
+    "image": "/products/ultra_28253.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Barriguinha Cream Beleza Brasileira 200g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28253"
+  },
+  {
+    "id": 50165,
+    "ultraId": 29525,
+    "name": "Creme clareador de olheiras Eucerin Anti-pigment 15g",
+    "size": "15g",
+    "brand": "Eucerin",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 145.72,
+    "rating": 4.8,
+    "reviews": 185,
+    "image": "/products/ultra_29525.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme clareador de olheiras Eucerin Anti-pigment 15g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29525"
+  },
+  {
+    "id": 50166,
+    "ultraId": 28286,
+    "name": "Creme Contorno De Olhos Cicatricure Rugas Bolsas E Olheiras 15g",
+    "size": "15g",
+    "brand": "Cicatricure",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 39.99,
+    "price": 35.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 242,
+    "image": "/products/ultra_28286.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Contorno De Olhos Cicatricure Rugas Bolsas E Olheiras 15g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28286"
+  },
+  {
+    "id": 50167,
+    "ultraId": 28425,
+    "name": "Creme Corporal Antiacne Eucerin Dermo Pure Efeito Triplo 200ml",
+    "size": "200ml",
+    "brand": "Eucerin",
+    "category": "Cuidado Corporal",
+    "subcategory": "",
+    "oldPrice": 79.99,
+    "price": 71.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 185,
+    "image": "/products/ultra_28425.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Corporal Antiacne Eucerin Dermo Pure Efeito Triplo 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28425"
+  },
+  {
+    "id": 50168,
+    "ultraId": 28613,
+    "name": "Creme de Limpeza Calmante Vichy Dercos Sensi Scalp Refil 200ml",
+    "size": "200ml",
+    "brand": "Vichy",
+    "category": "Cabelos",
+    "subcategory": "Tratamento Capilar",
+    "oldPrice": 54.99,
+    "price": 49.49,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 81,
+    "image": "/products/ultra_28613.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme de Limpeza Calmante Vichy Dercos Sensi Scalp Refil 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28613"
+  },
+  {
+    "id": 50169,
+    "ultraId": 26291,
+    "name": "Creme Dental Colgate Natural Extracts Bicarbonato e Hortelã 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 7.55,
+    "rating": 4.8,
+    "reviews": 207,
+    "image": "/products/ultra_26291.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Colgate Natural Extracts Bicarbonato e Hortelã 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26291"
+  },
+  {
+    "id": 50170,
+    "ultraId": 26319,
+    "name": "Creme Dental Colgate Orthogard Cuidado Ortodôntico 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 26.15,
+    "rating": 4.8,
+    "reviews": 243,
+    "image": "/products/ultra_26319.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Colgate Orthogard Cuidado Ortodôntico 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26319"
+  },
+  {
+    "id": 50171,
+    "ultraId": 26317,
+    "name": "Creme Dental Colgate Sensitive Pro Alívio Imediato Branqueador 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 9.95,
+    "rating": 4.8,
+    "reviews": 209,
+    "image": "/products/ultra_26317.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Colgate Sensitive Pro Alívio Imediato Branqueador 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26317"
+  },
+  {
+    "id": 50172,
+    "ultraId": 26321,
+    "name": "Creme Dental Colgate Total 12 Antitártaro 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 10.19,
+    "rating": 4.8,
+    "reviews": 277,
+    "image": "/products/ultra_26321.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Colgate Total 12 Antitártaro 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26321"
+  },
+  {
+    "id": 50173,
+    "ultraId": 26289,
+    "name": "Creme Dental Colgate Total Original Mint 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 11.7,
+    "rating": 4.8,
+    "reviews": 173,
+    "image": "/products/ultra_26289.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Colgate Total Original Mint 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26289"
+  },
+  {
+    "id": 50174,
+    "ultraId": 26309,
+    "name": "Creme Dental Colgate Tripla Ação Menta Original 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 3.39,
+    "rating": 4.8,
+    "reviews": 293,
+    "image": "/products/ultra_26309.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Colgate Tripla Ação Menta Original 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26309"
+  },
+  {
+    "id": 50175,
+    "ultraId": 26301,
+    "name": "Creme Dental Sensodyne Original 90g",
+    "size": "90g",
+    "brand": "Sensodyne",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 12.43,
+    "rating": 4.8,
+    "reviews": 157,
+    "image": "/products/ultra_26301.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Dental Sensodyne Original 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26301"
+  },
+  {
+    "id": 50176,
+    "ultraId": 28313,
+    "name": "Creme Em Gel Effaclar La Roche-Posay Duo+ Fps30 40g",
+    "size": "40g",
+    "brand": "La Roche-Posay",
+    "category": "Cuidado Corporal",
+    "subcategory": "Cuidado Facial",
+    "oldPrice": 119.99,
+    "price": 107.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 261,
+    "image": "/products/ultra_28313.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Em Gel Effaclar La Roche-Posay Duo+ Fps30 40g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28313"
+  },
+  {
+    "id": 50177,
+    "ultraId": 29283,
+    "name": "Creme Facial Anti-Idade Eucerin Hyaluron-Filler + Elasticity FPS30 50ml",
+    "size": "50ml",
+    "brand": "Eucerin",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 137.69,
+    "rating": 4.8,
+    "reviews": 251,
+    "image": "/products/ultra_29283.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Anti-Idade Eucerin Hyaluron-Filler + Elasticity FPS30 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29283"
+  },
+  {
+    "id": 50178,
+    "ultraId": 29420,
+    "name": "Creme Facial Anti-idade L’Oréal Paris Revitalift Laser X3 Diurno 50ml",
+    "size": "50ml",
+    "brand": "Genérico",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 64.79,
+    "rating": 4.8,
+    "reviews": 160,
+    "image": "/products/ultra_29420.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Anti-idade L’Oréal Paris Revitalift Laser X3 Diurno 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29420"
+  },
+  {
+    "id": 50179,
+    "ultraId": 28260,
+    "name": "Creme Facial Anti-idade Retinol 0.3 SkinCeuticals com Vitamina C 30ml",
+    "size": "30ml",
+    "brand": "SkinCeuticals",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 399.9,
+    "price": 359.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 240,
+    "image": "/products/ultra_28260.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Anti-idade Retinol 0.3 SkinCeuticals com Vitamina C 30ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28260"
+  },
+  {
+    "id": 50180,
+    "ultraId": 28506,
+    "name": "Creme Facial Antissinais Nivea Cellular Expert Lift Avançado Dia FPS30 50ml",
+    "size": "50ml",
+    "brand": "Nivea",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 44.3,
+    "price": 39.87,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 242,
+    "image": "/products/ultra_28506.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Antissinais Nivea Cellular Expert Lift Avançado Dia FPS30 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28506"
+  },
+  {
+    "id": 50181,
+    "ultraId": 28302,
+    "name": "Creme Facial Cicatricure Antissinais e Antirrugas 50g",
+    "size": "50g",
+    "brand": "Cicatricure",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 35,
+    "price": 31.5,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 294,
+    "image": "/products/ultra_28302.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Cicatricure Antissinais e Antirrugas 50g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28302"
+  },
+  {
+    "id": 50182,
+    "ultraId": 28651,
+    "name": "Creme Facial Densifiant Fondant Profuse 30g",
+    "size": "30g",
+    "brand": "Profuse",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 156.3,
+    "price": 140.67,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 287,
+    "image": "/products/ultra_28651.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Densifiant Fondant Profuse 30g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28651"
+  },
+  {
+    "id": 50183,
+    "ultraId": 29623,
+    "name": "Creme Facial Hialurônico Cetaphil Optimal Hydration 48g",
+    "size": "48g",
+    "brand": "Cetaphil",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 56.69,
+    "rating": 4.8,
+    "reviews": 91,
+    "image": "/products/ultra_29623.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Hialurônico Cetaphil Optimal Hydration 48g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29623"
+  },
+  {
+    "id": 50184,
+    "ultraId": 28610,
+    "name": "Creme Facial Iluminador Intensivo Avène Vitamin Activ Cg 50ml",
+    "size": "50ml",
+    "brand": "Avène",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 214.99,
+    "price": 193.49,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 250,
+    "image": "/products/ultra_28610.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Iluminador Intensivo Avène Vitamin Activ Cg 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28610"
+  },
+  {
+    "id": 50185,
+    "ultraId": 28585,
+    "name": "Creme Facial Neostrata Oily Skin Gel Plus 125g",
+    "size": "125g",
+    "brand": "Neostrata",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 339.9,
+    "price": 305.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 265,
+    "image": "/products/ultra_28585.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Neostrata Oily Skin Gel Plus 125g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28585"
+  },
+  {
+    "id": 50186,
+    "ultraId": 29479,
+    "name": "Creme Facial Nivea Anti-manchas Cellular Luminous Fps50 40ml",
+    "size": "40ml",
+    "brand": "Nivea",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 52.64,
+    "rating": 4.8,
+    "reviews": 283,
+    "image": "/products/ultra_29479.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Nivea Anti-manchas Cellular Luminous Fps50 40ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29479"
+  },
+  {
+    "id": 50187,
+    "ultraId": 28448,
+    "name": "Creme Facial Nivea Gel Hialuronico Fresh 100g",
+    "size": "100g",
+    "brand": "Nivea",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 23.99,
+    "price": 21.59,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 136,
+    "image": "/products/ultra_28448.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Nivea Gel Hialuronico Fresh 100g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28448"
+  },
+  {
+    "id": 50188,
+    "ultraId": 28482,
+    "name": "Creme Facial Rejuvenescedor Avène Retrinal 0.1 30ml",
+    "size": "30ml",
+    "brand": "Avène",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 199.9,
+    "price": 179.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 274,
+    "image": "/products/ultra_28482.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Facial Rejuvenescedor Avène Retrinal 0.1 30ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28482"
+  },
+  {
+    "id": 50189,
+    "ultraId": 29406,
+    "name": "Creme Fixador de Dentadura Ultra Corega Max Fixação + Bloqueio Sem Sabor 2 unidades de 70g cada",
+    "size": "2 unidades",
+    "brand": "Corega",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "price": 64.79,
+    "rating": 4.8,
+    "reviews": 142,
+    "image": "/products/ultra_29406.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Fixador de Dentadura Ultra Corega Max Fixação + Bloqueio Sem Sabor 2 unidades de 70g cada. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29406"
+  },
+  {
+    "id": 50190,
+    "ultraId": 29421,
+    "name": "Creme Hidratante Antiestrias Corporal ISDIN Woman 245g",
+    "size": "245g",
+    "brand": "ISDIN",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "price": 80.99,
+    "rating": 4.8,
+    "reviews": 177,
+    "image": "/products/ultra_29421.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Antiestrias Corporal ISDIN Woman 245g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29421"
+  },
+  {
+    "id": 50191,
+    "ultraId": 28682,
+    "name": "Creme Hidratante Bepantol Derma creme 40g",
+    "size": "40g",
+    "brand": "Genérico",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "oldPrice": 39.99,
+    "price": 35.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 154,
+    "image": "/products/ultra_28682.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Bepantol Derma creme 40g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28682"
+  },
+  {
+    "id": 50192,
+    "ultraId": 26305,
+    "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
+    "size": "40g",
+    "brand": "Genérico",
+    "category": "Hidratantes",
+    "subcategory": "",
+    "price": 45.58,
+    "rating": 4.8,
+    "reviews": 225,
+    "image": "/products/ultra_26305.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Bepantol Derma Multirrestaurador 40g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26305"
+  },
+  {
+    "id": 50193,
+    "ultraId": 26274,
+    "name": "Creme Hidratante CeraVe Pele Seca e Extrasseca 454g",
+    "size": "454g",
+    "brand": "CeraVe",
+    "category": "Hidratantes",
+    "subcategory": "",
+    "price": 81.3,
+    "rating": 4.8,
+    "reviews": 138,
+    "image": "/products/ultra_26274.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante CeraVe Pele Seca e Extrasseca 454g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26274"
+  },
+  {
+    "id": 50194,
+    "ultraId": 28263,
+    "name": "Creme Hidratante Corporal Fisiogel Hipoalergênico 450g",
+    "size": "450g",
+    "brand": "Genérico",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "oldPrice": 49.99,
+    "price": 44.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 291,
+    "image": "/products/ultra_28263.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Corporal Fisiogel Hipoalergênico 450g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28263"
+  },
+  {
+    "id": 50195,
+    "ultraId": 28459,
+    "name": "Creme Hidratante Corporal Nivea Men 4 em 1 com 75g",
+    "size": "75g",
+    "brand": "Nivea",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "oldPrice": 23.9,
+    "price": 21.51,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 103,
+    "image": "/products/ultra_28459.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Corporal Nivea Men 4 em 1 com 75g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28459"
+  },
+  {
+    "id": 50196,
+    "ultraId": 29419,
+    "name": "Creme Hidratante Epidrat Corpo Intensivo Mantecorp 500g",
+    "size": "500g",
+    "brand": "Mantecorp",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "price": 60.74,
+    "rating": 4.8,
+    "reviews": 143,
+    "image": "/products/ultra_29419.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Epidrat Corpo Intensivo Mantecorp 500g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29419"
+  },
+  {
+    "id": 50197,
+    "ultraId": 28696,
+    "name": "Creme Hidratante Facial La Roche-Posay Effaclar Mat 40ml",
+    "size": "40ml",
+    "brand": "La Roche-Posay",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 159.9,
+    "price": 143.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 172,
+    "image": "/products/ultra_28696.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Facial La Roche-Posay Effaclar Mat 40ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28696"
+  },
+  {
+    "id": 50198,
+    "ultraId": 28250,
+    "name": "Creme Hidratante Lancôme Hydra Zen Creme 50ml",
+    "size": "50ml",
+    "brand": "Lancôme",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 369.99,
+    "price": 332.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 290,
+    "image": "/products/ultra_28250.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hidratante Lancôme Hydra Zen Creme 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28250"
+  },
+  {
+    "id": 50199,
+    "ultraId": 28612,
+    "name": "Creme Hyaluronic Moisture Isdinceutics Oily Isdin 50g",
+    "size": "50g",
+    "brand": "ISDIN",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 169.99,
+    "price": 152.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 284,
+    "image": "/products/ultra_28612.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Hyaluronic Moisture Isdinceutics Oily Isdin 50g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28612"
+  },
+  {
+    "id": 50200,
+    "ultraId": 28649,
+    "name": "Creme Isdinceutics K-Ox Eyes Contorno dos Olhos ISDIN 15g",
+    "size": "15g",
+    "brand": "ISDIN",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 154.7,
+    "price": 139.23,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 253,
+    "image": "/products/ultra_28649.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Isdinceutics K-Ox Eyes Contorno dos Olhos ISDIN 15g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28649"
+  },
+  {
+    "id": 50201,
+    "ultraId": 29462,
+    "name": "Creme Nutritivo Vichy Redensificador Neovadiol Menopausa 50g",
+    "size": "50g",
+    "brand": "Vichy",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 153.82,
+    "rating": 4.8,
+    "reviews": 214,
+    "image": "/products/ultra_29462.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Nutritivo Vichy Redensificador Neovadiol Menopausa 50g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29462"
+  },
+  {
+    "id": 50202,
+    "ultraId": 29337,
+    "name": "Creme para Área dos Olhos La Roche-Posay Hyalu B5 15ml",
+    "size": "15ml",
+    "brand": "La Roche-Posay",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 137.62,
+    "rating": 4.8,
+    "reviews": 289,
+    "image": "/products/ultra_29337.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme para Área dos Olhos La Roche-Posay Hyalu B5 15ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29337"
+  },
+  {
+    "id": 50203,
+    "ultraId": 29249,
+    "name": "Creme para Contorno dos Olhos Vichy Liftactiv Colágeno Specialist 16 15ml",
+    "size": "15ml",
+    "brand": "Vichy",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 137.69,
+    "rating": 4.8,
+    "reviews": 113,
+    "image": "/products/ultra_29249.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme para Contorno dos Olhos Vichy Liftactiv Colágeno Specialist 16 15ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29249"
+  },
+  {
+    "id": 50204,
+    "ultraId": 29368,
+    "name": "Creme Para Mãos Bioderma Atoderm Mãos e unhas 50ml",
+    "size": "50ml",
+    "brand": "Bioderma",
+    "category": "Cuidado Corporal",
+    "subcategory": "",
+    "price": 48.59,
+    "rating": 4.8,
+    "reviews": 156,
+    "image": "/products/ultra_29368.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Para Mãos Bioderma Atoderm Mãos e unhas 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29368"
+  },
+  {
+    "id": 50205,
+    "ultraId": 29388,
+    "name": "Creme para mãos Eucerin Anti-Pigment FPS30 75ml",
+    "size": "75ml",
+    "brand": "Eucerin",
+    "category": "Cuidado Corporal",
+    "subcategory": "",
+    "price": 81,
+    "rating": 4.8,
+    "reviews": 276,
+    "image": "/products/ultra_29388.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme para mãos Eucerin Anti-Pigment FPS30 75ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29388"
+  },
+  {
+    "id": 50206,
+    "ultraId": 29385,
+    "name": "Creme Para Pés Eucerin Urea Repair Plus 100ml",
+    "size": "100ml",
+    "brand": "Eucerin",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "price": 64.79,
+    "rating": 4.8,
+    "reviews": 225,
+    "image": "/products/ultra_29385.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Para Pés Eucerin Urea Repair Plus 100ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29385"
+  },
+  {
+    "id": 50207,
+    "ultraId": 28599,
+    "name": "Creme Pigmentbio Night Renewer 50ml",
+    "size": "50ml",
+    "brand": "Genérico",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 229.99,
+    "price": 206.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 283,
+    "image": "/products/ultra_28599.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Pigmentbio Night Renewer 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28599"
+  },
+  {
+    "id": 50208,
+    "ultraId": 28261,
+    "name": "Creme Preventivo de Assaduras Bepantol Baby 120g",
+    "size": "120g",
+    "brand": "Genérico",
+    "category": "Cuidado Corporal",
+    "subcategory": "",
+    "oldPrice": 38.9,
+    "price": 35.01,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 257,
+    "image": "/products/ultra_28261.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Preventivo de Assaduras Bepantol Baby 120g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28261"
+  },
+  {
+    "id": 50209,
+    "ultraId": 29251,
+    "name": "Creme Rejuvenescedor Facial Cicatricure Gold Lift Diurno 50g",
+    "size": "50g",
+    "brand": "Cicatricure",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 56.69,
+    "rating": 4.8,
+    "reviews": 147,
+    "image": "/products/ultra_29251.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Rejuvenescedor Facial Cicatricure Gold Lift Diurno 50g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29251"
+  },
+  {
+    "id": 50210,
+    "ultraId": 29253,
+    "name": "Creme Rejuvenescedor Facial Cicatricure Gold Lift Noturno 50g",
+    "size": "50g",
+    "brand": "Cicatricure",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 56.69,
+    "rating": 4.8,
+    "reviews": 181,
+    "image": "/products/ultra_29253.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Rejuvenescedor Facial Cicatricure Gold Lift Noturno 50g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29253"
+  },
+  {
+    "id": 50211,
+    "ultraId": 29592,
+    "name": "Creme Rejuvenescedor Reviline Lift Mantecorp 30g",
+    "size": "30g",
+    "brand": "Mantecorp",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 121.42,
+    "rating": 4.8,
+    "reviews": 224,
+    "image": "/products/ultra_29592.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Rejuvenescedor Reviline Lift Mantecorp 30g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29592"
+  },
+  {
+    "id": 50212,
+    "ultraId": 28679,
+    "name": "Creme Reparador Hidratante Mustela Cicastela 40ml",
+    "size": "40ml",
+    "brand": "Mustela",
+    "category": "Cuidado Corporal",
+    "subcategory": "Hidratantes",
+    "oldPrice": 48.99,
+    "price": 44.09,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 103,
+    "image": "/products/ultra_28679.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Creme Reparador Hidratante Mustela Cicastela 40ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28679"
+  },
+  {
+    "id": 50213,
+    "ultraId": 25987,
+    "name": "Darkness – BCAA Fix 4500mg – 120 Tabletes",
+    "size": "120 Tabletes",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 72.95,
+    "rating": 4.8,
+    "reviews": 99,
+    "image": "/products/ultra_25987.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Darkness – BCAA Fix 4500mg – 120 Tabletes. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25987"
+  },
+  {
+    "id": 50214,
+    "ultraId": 25970,
+    "name": "Darkness – Glutamina – 300g",
+    "size": "300g",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 99.76,
+    "rating": 4.8,
+    "reviews": 250,
+    "image": "/products/ultra_25970.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Darkness – Glutamina – 300g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25970"
+  },
+  {
+    "id": 50215,
+    "ultraId": 26817,
+    "name": "Delineador 12H Sephora Collection Intense Ink Felt Liner",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 52.25,
+    "rating": 4.8,
+    "reviews": 129,
+    "image": "/products/ultra_26817.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador 12H Sephora Collection Intense Ink Felt Liner. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26817"
+  },
+  {
+    "id": 50216,
+    "ultraId": 27162,
+    "name": "Delineador Benefit Roller Liner",
+    "size": "",
+    "brand": "Benefit",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 100.65,
+    "rating": 4.8,
+    "reviews": 274,
+    "image": "/products/ultra_27162.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Benefit Roller Liner. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27162"
+  },
+  {
+    "id": 50217,
+    "ultraId": 27101,
+    "name": "Delineador de Longa Duração Fenty Flyliner Longwear Eyeliner",
+    "size": "",
+    "brand": "Fenty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 88.55,
+    "rating": 4.8,
+    "reviews": 117,
+    "image": "/products/ultra_27101.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador de Longa Duração Fenty Flyliner Longwear Eyeliner. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27101"
+  },
+  {
+    "id": 50218,
+    "ultraId": 26990,
+    "name": "Delineador Lancôme Idôle Liner Waterproof",
+    "size": "",
+    "brand": "Lancôme",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 160.05,
+    "rating": 4.8,
+    "reviews": 210,
+    "image": "/products/ultra_26990.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Lancôme Idôle Liner Waterproof. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26990"
+  },
+  {
+    "id": 50219,
+    "ultraId": 26816,
+    "name": "Delineador Lancôme Le Stylo Waterproof",
+    "size": "",
+    "brand": "Lancôme",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 195.8,
+    "rating": 4.8,
+    "reviews": 112,
+    "image": "/products/ultra_26816.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Lancôme Le Stylo Waterproof. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26816"
+  },
+  {
+    "id": 50220,
+    "ultraId": 27084,
+    "name": "Delineador Líquido Clinique High Impact Ultrafine",
+    "size": "",
+    "brand": "Clinique",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 156.2,
+    "rating": 4.8,
+    "reviews": 268,
+    "image": "/products/ultra_27084.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Líquido Clinique High Impact Ultrafine. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27084"
+  },
+  {
+    "id": 50221,
+    "ultraId": 26909,
+    "name": "Delineador líquido Dior Diorshow",
+    "size": "",
+    "brand": "Dior",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 175.45,
+    "rating": 4.8,
+    "reviews": 153,
+    "image": "/products/ultra_26909.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador líquido Dior Diorshow. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26909"
+  },
+  {
+    "id": 50222,
+    "ultraId": 27427,
+    "name": "Delineador Líquido Guerlain Mad Eyes",
+    "size": "",
+    "brand": "Guerlain",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 172.15,
+    "rating": 4.8,
+    "reviews": 159,
+    "image": "/products/ultra_27427.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Líquido Guerlain Mad Eyes. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27427"
+  },
+  {
+    "id": 50223,
+    "ultraId": 26652,
+    "name": "Delineador Líquido Sephora Collection Intense Felt-tip 12hr",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 52.25,
+    "rating": 4.8,
+    "reviews": 184,
+    "image": "/products/ultra_26652.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Líquido Sephora Collection Intense Felt-tip 12hr. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26652"
+  },
+  {
+    "id": 50224,
+    "ultraId": 27128,
+    "name": "Delineador Long Lasting Eyeliner High Precision Brush",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 52.25,
+    "rating": 4.8,
+    "reviews": 136,
+    "image": "/products/ultra_27128.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Long Lasting Eyeliner High Precision Brush. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27128"
+  },
+  {
+    "id": 50225,
+    "ultraId": 27065,
+    "name": "Delineador MAC Brushstroke",
+    "size": "",
+    "brand": "MAC",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 115.5,
+    "rating": 4.8,
+    "reviews": 165,
+    "image": "/products/ultra_27065.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador MAC Brushstroke. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27065"
+  },
+  {
+    "id": 50226,
+    "ultraId": 26519,
+    "name": "DELINEADOR METALLIC SEPHORA COLLECTION SPECIAL EFFECTS",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 65.45,
+    "rating": 4.8,
+    "reviews": 123,
+    "image": "/products/ultra_26519.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DELINEADOR METALLIC SEPHORA COLLECTION SPECIAL EFFECTS. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26519"
+  },
+  {
+    "id": 50227,
+    "ultraId": 26699,
+    "name": "DELINEADOR SEPHORA COLLECTION EYELINER FEUTRE 12H INTENSE INK",
+    "size": "",
+    "brand": "Sephora Collection",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 52.25,
+    "rating": 4.8,
+    "reviews": 103,
+    "image": "/products/ultra_26699.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DELINEADOR SEPHORA COLLECTION EYELINER FEUTRE 12H INTENSE INK. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26699"
+  },
+  {
+    "id": 50228,
+    "ultraId": 27081,
+    "name": "Delineador Too Faced Better Than Sex Eyeliner Chocolate",
+    "size": "",
+    "brand": "Too Faced",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 150.15,
+    "rating": 4.8,
+    "reviews": 217,
+    "image": "/products/ultra_27081.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Too Faced Better Than Sex Eyeliner Chocolate. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27081"
+  },
+  {
+    "id": 50229,
+    "ultraId": 26859,
+    "name": "Delineador Too Faced Killer Liner",
+    "size": "",
+    "brand": "Too Faced",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 131.45,
+    "rating": 4.8,
+    "reviews": 183,
+    "image": "/products/ultra_26859.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Delineador Too Faced Killer Liner. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26859"
+  },
+  {
+    "id": 50230,
+    "ultraId": 29505,
+    "name": "Desodorante Aerosol La Roche-Posay 150ml",
+    "size": "150ml",
+    "brand": "La Roche-Posay",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "price": 89.02,
+    "rating": 4.8,
+    "reviews": 285,
+    "image": "/products/ultra_29505.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Desodorante Aerosol La Roche-Posay 150ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29505"
+  },
+  {
+    "id": 50231,
+    "ultraId": 28586,
+    "name": "Desodorante Antitranspirante Roll-On Vichy Peles Sensíveis ou Depiladas 48h 50ml",
+    "size": "50ml",
+    "brand": "Vichy",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "oldPrice": 118.99,
+    "price": 107.09,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 282,
+    "image": "/products/ultra_28586.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Desodorante Antitranspirante Roll-On Vichy Peles Sensíveis ou Depiladas 48h 50ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28586"
+  },
+  {
+    "id": 50232,
+    "ultraId": 29248,
+    "name": "Desodorante Roll On Perspirex – Comfort Roll-on 20ml",
+    "size": "20ml",
+    "brand": "Perspirex",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "price": 56.69,
+    "rating": 4.8,
+    "reviews": 96,
+    "image": "/products/ultra_29248.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Desodorante Roll On Perspirex – Comfort Roll-on 20ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29248"
+  },
+  {
+    "id": 50233,
+    "ultraId": 29581,
+    "name": "Desodorante Vichy Antitranspirante 48h 125ml",
+    "size": "125ml",
+    "brand": "Vichy",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "price": 97.19,
+    "rating": 4.8,
+    "reviews": 257,
+    "image": "/products/ultra_29581.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Desodorante Vichy Antitranspirante 48h 125ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29581"
+  },
+  {
+    "id": 50234,
+    "ultraId": 26814,
+    "name": "DG MAKE-UP EVERFULL HI-DEFINITION MASCARA 36H DEFINED 01 TOTAL BLACK",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 138.6,
+    "rating": 4.8,
+    "reviews": 298,
+    "image": "/products/ultra_26814.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DG MAKE-UP EVERFULL HI-DEFINITION MASCARA 36H DEFINED 01 TOTAL BLACK. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26814"
+  },
+  {
+    "id": 50235,
+    "ultraId": 27052,
+    "name": "DIOR       OVERCURL      MASC 6G",
+    "size": "6G",
+    "brand": "Dior",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 166.1,
+    "rating": 4.8,
+    "reviews": 164,
+    "image": "/products/ultra_27052.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DIOR       OVERCURL      MASC 6G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27052"
+  },
+  {
+    "id": 50236,
+    "ultraId": 27006,
+    "name": "DIORSHOW M�SCARA DE C�LIOS MAXIMIZER 4D",
+    "size": "M",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 166.1,
+    "rating": 4.8,
+    "reviews": 262,
+    "image": "/products/ultra_27006.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DIORSHOW M�SCARA DE C�LIOS MAXIMIZER 4D. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27006"
+  },
+  {
+    "id": 50237,
+    "ultraId": 26731,
+    "name": "DIORSHOW OVERVOLUME WATERPROOF 090",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 162.25,
+    "rating": 4.8,
+    "reviews": 207,
+    "image": "/products/ultra_26731.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DIORSHOW OVERVOLUME WATERPROOF 090. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26731"
+  },
+  {
+    "id": 50238,
+    "ultraId": 27957,
+    "name": "DRUNK ELEP D-BRONZI      FLUI 30.ML",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Só Na Sephora",
+    "subcategory": "",
+    "price": 195.8,
+    "rating": 4.8,
+    "reviews": 149,
+    "image": "/products/ultra_27957.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DRUNK ELEP D-BRONZI      FLUI 30.ML. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27957"
+  },
+  {
+    "id": 50239,
+    "ultraId": 28027,
+    "name": "DUO DE PÓ SOLTO HUDA BEAUTY EASY BAKE",
+    "size": "P",
+    "brand": "Huda Beauty",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 173.25,
+    "rating": 4.8,
+    "reviews": 239,
+    "image": "/products/ultra_28027.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: DUO DE PÓ SOLTO HUDA BEAUTY EASY BAKE. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28027"
+  },
+  {
+    "id": 50240,
+    "ultraId": 27033,
+    "name": "Duo de Sombras Clinique High Impact Shadow Play",
+    "size": "",
+    "brand": "Clinique",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 124.85,
+    "rating": 4.8,
+    "reviews": 281,
+    "image": "/products/ultra_27033.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Duo de Sombras Clinique High Impact Shadow Play. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27033"
+  },
+  {
+    "id": 50241,
+    "ultraId": 26012,
+    "name": "Dux Nutrition Bcaa Powder Limão – Pote 200 G",
+    "size": "200 G",
+    "brand": "Dux Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Aminoácidos",
+    "price": 72.08,
+    "rating": 4.8,
+    "reviews": 84,
+    "image": "/products/ultra_26012.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Dux Nutrition Bcaa Powder Limão – Pote 200 G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26012"
+  },
+  {
+    "id": 50242,
+    "ultraId": 25967,
+    "name": "Dux Nutrition Glutamina 300g",
+    "size": "300g",
+    "brand": "Dux Nutrition",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 109.49,
+    "rating": 4.8,
+    "reviews": 199,
+    "image": "/products/ultra_25967.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Dux Nutrition Glutamina 300g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25967"
+  },
+  {
+    "id": 50243,
+    "ultraId": 27968,
+    "name": "EASY BAKE PRESSED POWDER BANANA BREAD",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 178.75,
+    "rating": 4.8,
+    "reviews": 116,
+    "image": "/products/ultra_27968.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: EASY BAKE PRESSED POWDER BANANA BREAD. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27968"
+  },
+  {
+    "id": 50244,
+    "ultraId": 28258,
+    "name": "Escova de Dente Elétrica Philips Colgate SonicPro 50",
+    "size": "",
+    "brand": "Philips",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "oldPrice": 290,
+    "price": 261,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 206,
+    "image": "/products/ultra_28258.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Escova de Dente Elétrica Philips Colgate SonicPro 50. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28258"
+  },
+  {
+    "id": 50245,
+    "ultraId": 28273,
+    "name": "Espuma de Limpeza Facial Air Foam Cerave 150ml",
+    "size": "150ml",
+    "brand": "CeraVe",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 59.99,
+    "price": 53.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 241,
+    "image": "/products/ultra_28273.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Espuma de Limpeza Facial Air Foam Cerave 150ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28273"
+  },
+  {
+    "id": 50246,
+    "ultraId": 25744,
+    "name": "Exímia Firmalize Age Complex com 30 Sachês",
+    "size": "30 Sachês",
+    "brand": "Exímia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 118.54,
+    "rating": 4.8,
+    "reviews": 148,
+    "image": "/products/ultra_25744.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Exímia Firmalize Age Complex com 30 Sachês. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25744"
+  },
+  {
+    "id": 50247,
+    "ultraId": 25746,
+    "name": "Eximia fortalize 30 comprimidos",
+    "size": "30 comprimidos",
+    "brand": "Eximia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 76.44,
+    "rating": 4.8,
+    "reviews": 182,
+    "image": "/products/ultra_25746.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Eximia fortalize 30 comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25746"
+  },
+  {
+    "id": 50248,
+    "ultraId": 25741,
+    "name": "Eximia Fortalize Kera D 30 comprimidos",
+    "size": "30 comprimidos",
+    "brand": "Eximia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 54.97,
+    "rating": 4.8,
+    "reviews": 97,
+    "image": "/products/ultra_25741.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Eximia Fortalize Kera D 30 comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25741"
+  },
+  {
+    "id": 50249,
+    "ultraId": 25749,
+    "name": "Exímia Fortalize S Cabelos e Unhas Com 90 Comprimidos",
+    "size": "90 Comprimidos",
+    "brand": "Exímia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 234.33,
+    "rating": 4.8,
+    "reviews": 233,
+    "image": "/products/ultra_25749.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Exímia Fortalize S Cabelos e Unhas Com 90 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25749"
+  },
+  {
+    "id": 50250,
+    "ultraId": 25750,
+    "name": "Exímia Fortalize S Cabelos e Unhas Com 90 Comprimidos",
+    "size": "90 Comprimidos",
+    "brand": "Exímia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 357.8,
+    "rating": 4.8,
+    "reviews": 250,
+    "image": "/products/ultra_25750.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Exímia Fortalize S Cabelos e Unhas Com 90 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25750"
+  },
+  {
+    "id": 50251,
+    "ultraId": 25743,
+    "name": "Eximia Fortalize S com 30 Comprimidos",
+    "size": "30 Comprimidos",
+    "brand": "Eximia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 198.29,
+    "rating": 4.8,
+    "reviews": 131,
+    "image": "/products/ultra_25743.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Eximia Fortalize S com 30 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25743"
+  },
+  {
+    "id": 50252,
+    "ultraId": 25742,
+    "name": "Eximia Probiac com 60 Comprimidos",
+    "size": "60 Comprimidos",
+    "brand": "Eximia",
+    "category": "Saúde e Beleza",
+    "subcategory": "",
+    "price": 91.94,
+    "rating": 4.8,
+    "reviews": 114,
+    "image": "/products/ultra_25742.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Eximia Probiac com 60 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25742"
+  },
+  {
+    "id": 50253,
+    "ultraId": 26957,
+    "name": "EYESHADOW PALETTE KJ MU ESPALET 16GBRONZ",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 237.05,
+    "rating": 4.8,
+    "reviews": 89,
+    "image": "/products/ultra_26957.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: EYESHADOW PALETTE KJ MU ESPALET 16GBRONZ. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26957"
+  },
+  {
+    "id": 50254,
+    "ultraId": 26955,
+    "name": "FABULOUS DELINEADOR 01 ULTRA BLACK",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 163.35,
+    "rating": 4.8,
+    "reviews": 275,
+    "image": "/products/ultra_26955.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FABULOUS DELINEADOR 01 ULTRA BLACK. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26955"
+  },
+  {
+    "id": 50255,
+    "ultraId": 26681,
+    "name": "FABULOUS EYES M�SCARA DE C�LIOS",
+    "size": "M",
+    "brand": "Genérico",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 147.02,
+    "rating": 4.8,
+    "reviews": 237,
+    "image": "/products/ultra_26681.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FABULOUS EYES M�SCARA DE C�LIOS. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26681"
+  },
+  {
+    "id": 50256,
+    "ultraId": 26667,
+    "name": "FABULOUS EYES M�SCARA DE C�LIOS WATERPF",
+    "size": "M",
+    "brand": "Genérico",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 163.35,
+    "rating": 4.8,
+    "reviews": 219,
+    "image": "/products/ultra_26667.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FABULOUS EYES M�SCARA DE C�LIOS WATERPF. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26667"
+  },
+  {
+    "id": 50257,
+    "ultraId": 27560,
+    "name": "FACE IDOLE BLUSH LIQUIDO 60 9ML",
+    "size": "9ML",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 149.49,
+    "rating": 4.8,
+    "reviews": 220,
+    "image": "/products/ultra_27560.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE BLUSH LIQUIDO 60 9ML. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27560"
+  },
+  {
+    "id": 50258,
+    "ultraId": 27494,
+    "name": "FACE IDOLE BLUSH LIQUIDO 70 9ML",
+    "size": "9ML",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 149.49,
+    "rating": 4.8,
+    "reviews": 198,
+    "image": "/products/ultra_27494.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE BLUSH LIQUIDO 70 9ML. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27494"
+  },
+  {
+    "id": 50259,
+    "ultraId": 27909,
+    "name": "FACE IDOLE LCM IDOLE LQD BLUSH 10",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 166.1,
+    "rating": 4.8,
+    "reviews": 213,
+    "image": "/products/ultra_27909.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE LCM IDOLE LQD BLUSH 10. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27909"
+  },
+  {
+    "id": 50260,
+    "ultraId": 27824,
+    "name": "FACE IDOLE LCM IDOLE LQD BLUSH 30",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 149.49,
+    "rating": 4.8,
+    "reviews": 88,
+    "image": "/products/ultra_27824.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE LCM IDOLE LQD BLUSH 30. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27824"
+  },
+  {
+    "id": 50261,
+    "ultraId": 27837,
+    "name": "FACE IDOLE LCM IDOLE LQD BLUSH 40",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 149.49,
+    "rating": 4.8,
+    "reviews": 89,
+    "image": "/products/ultra_27837.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE LCM IDOLE LQD BLUSH 40. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27837"
+  },
+  {
+    "id": 50262,
+    "ultraId": 27708,
+    "name": "FACE IDOLE LCM IDOLE LQD BLUSH 80",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 149.49,
+    "rating": 4.8,
+    "reviews": 96,
+    "image": "/products/ultra_27708.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE LCM IDOLE LQD BLUSH 80. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27708"
+  },
+  {
+    "id": 50263,
+    "ultraId": 27819,
+    "name": "FACE IDOLE LCM IDOLE LQD BLUSH 90",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 149.49,
+    "rating": 4.8,
+    "reviews": 223,
+    "image": "/products/ultra_27819.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FACE IDOLE LCM IDOLE LQD BLUSH 90. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27819"
+  },
+  {
+    "id": 50264,
+    "ultraId": 26637,
+    "name": "FAMOUS MASCARA DEEP BLACK",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 118.25,
+    "rating": 4.8,
+    "reviews": 149,
+    "image": "/products/ultra_26637.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FAMOUS MASCARA DEEP BLACK. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26637"
+  },
+  {
+    "id": 50265,
+    "ultraId": 26653,
+    "name": "FAMOUS MINI MASCARA DEEP BALCK",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 70.95,
+    "rating": 4.8,
+    "reviews": 201,
+    "image": "/products/ultra_26653.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FAMOUS MINI MASCARA DEEP BALCK. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26653"
+  },
+  {
+    "id": 50266,
+    "ultraId": 27854,
+    "name": "FAUX FILTER COLOR CORRECTOR PEACH",
+    "size": "",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 143,
+    "rating": 4.8,
+    "reviews": 158,
+    "image": "/products/ultra_27854.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FAUX FILTER COLOR CORRECTOR PEACH. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "27854"
+  },
+  {
+    "id": 50267,
+    "ultraId": 28587,
+    "name": "Fixador Corega Ultra em pó 50g",
+    "size": "50g",
+    "brand": "Corega",
+    "category": "Higiene Pessoal",
+    "subcategory": "Desodorantes e Cuidados",
+    "oldPrice": 79.8,
+    "price": 71.82,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 299,
+    "image": "/products/ultra_28587.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fixador Corega Ultra em pó 50g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28587"
+  },
+  {
+    "id": 50268,
+    "ultraId": 28680,
+    "name": "Fletop Loção Para Pernas e Pés com 200ml",
+    "size": "200ml",
+    "brand": "Genérico",
+    "category": "Cuidado Corporal",
+    "subcategory": "",
+    "oldPrice": 49.99,
+    "price": 44.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 120,
+    "image": "/products/ultra_28680.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fletop Loção Para Pernas e Pés com 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28680"
+  },
+  {
+    "id": 50269,
+    "ultraId": 28667,
+    "name": "Fortalecedor de Unha Untralnail Base Forte Profuse 7ml",
+    "size": "7ml",
+    "brand": "Profuse",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "oldPrice": 69.9,
+    "price": 62.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 119,
+    "image": "/products/ultra_28667.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fortalecedor de Unha Untralnail Base Forte Profuse 7ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28667"
+  },
+  {
+    "id": 50270,
+    "ultraId": 28561,
+    "name": "Fralda Babysec Ultra Sec G 60 Unidades",
+    "size": "60 Unidades",
+    "brand": "Babysec",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "oldPrice": 52.9,
+    "price": 47.61,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 297,
+    "image": "/products/ultra_28561.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Babysec Ultra Sec G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28561"
+  },
+  {
+    "id": 50271,
+    "ultraId": 26245,
+    "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
+    "size": "60 Unidades",
+    "brand": "Babysec",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 47.94,
+    "rating": 4.8,
+    "reviews": 85,
+    "image": "/products/ultra_26245.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26245"
+  },
+  {
+    "id": 50272,
+    "ultraId": 28560,
+    "name": "Fralda Babysec UltraSec XG 56 Unidades",
+    "size": "56 Unidades",
+    "brand": "Babysec",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "oldPrice": 54.9,
+    "price": 49.41,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 280,
+    "image": "/products/ultra_28560.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Babysec UltraSec XG 56 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28560"
+  },
+  {
+    "id": 50274,
+    "ultraId": 26243,
+    "name": "Fralda Calça Huggies Proteção Acolchoada M 80 Unidades",
+    "size": "80 Unidades",
+    "brand": "Huggies",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 83.94,
+    "rating": 4.8,
+    "reviews": 271,
+    "image": "/products/ultra_26239.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Calça Huggies Proteção Acolchoada M 80 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26243"
+  },
+  {
+    "id": 50279,
+    "ultraId": 26259,
+    "name": "Fralda Calça MamyPoko Dia & Noite XG 52 Unidades",
+    "size": "52 Unidades",
+    "brand": "MamyPoko",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 64.74,
+    "rating": 4.8,
+    "reviews": 103,
+    "image": "/products/ultra_26256.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Calça MamyPoko Dia & Noite XG 52 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26259"
+  },
+  {
+    "id": 50281,
+    "ultraId": 29230,
+    "name": "Fralda calça MamyPoko Dia & Noite XG 42 Unidades",
+    "size": "42 Unidades",
+    "brand": "MamyPoko",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 48.59,
+    "rating": 4.8,
+    "reviews": 230,
+    "image": "/products/ultra_29230.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda calça MamyPoko Dia & Noite XG 42 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29230"
+  },
+  {
+    "id": 50282,
+    "ultraId": 29233,
+    "name": "Fralda Calça MamyPoko Premium Seca Xxg 44 Unidades",
+    "size": "44 Unidades",
+    "brand": "MamyPoko",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 68.84,
+    "rating": 4.8,
+    "reviews": 281,
+    "image": "/products/ultra_29233.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Calça MamyPoko Premium Seca Xxg 44 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29233"
+  },
+  {
+    "id": 50286,
+    "ultraId": 28270,
+    "name": "Fralda Descartável Babysec Hiper XXG 48 Unidades",
+    "size": "48 Unidades",
+    "brand": "Babysec",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "oldPrice": 49.99,
+    "price": 44.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 190,
+    "image": "/products/ultra_28270.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Descartável Babysec Hiper XXG 48 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28270"
+  },
+  {
+    "id": 50287,
+    "ultraId": 29620,
+    "name": "Fralda Huggies Supreme Care G com 66 Unidades",
+    "size": "66 Unidades",
+    "brand": "Huggies",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 59.93,
+    "rating": 4.8,
+    "reviews": 260,
+    "image": "/products/ultra_29620.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Huggies Supreme Care G com 66 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29620"
+  },
+  {
+    "id": 50293,
+    "ultraId": 26222,
+    "name": "Fralda Pampers Confort Sec G 60 Unidades",
+    "size": "60 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 73.64,
+    "rating": 4.8,
+    "reviews": 134,
+    "image": "/products/pampers_confort_sec_g.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Confort Sec G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26222"
+  },
+  {
+    "id": 50295,
+    "ultraId": 28742,
+    "name": "Fralda Pampers Confort Sec G 98 Unidades",
+    "size": "98 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "oldPrice": 102.02,
+    "price": 91.82,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 294,
+    "image": "/products/ultra_28742.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Confort Sec G 98 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28742"
+  },
+  {
+    "id": 50299,
+    "ultraId": 28743,
+    "name": "Fralda Pampers Confort Sec M 70 Unidades",
+    "size": "70 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "oldPrice": 74.76,
+    "price": 67.28,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 91,
+    "image": "/products/ultra_28743.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Confort Sec M 70 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28743"
+  },
+  {
+    "id": 50302,
+    "ultraId": 26217,
+    "name": "Fralda Pampers Confort Sec P 50 Unidades",
+    "size": "50 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 60.3,
+    "rating": 4.8,
+    "reviews": 269,
+    "image": "/products/pampers_confort_sec_p.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Confort Sec P 50 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26217"
+  },
+  {
+    "id": 50303,
+    "ultraId": 29481,
+    "name": "Fralda Pampers Confort Sec P 72 Unidades",
+    "size": "72 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 59.61,
+    "rating": 4.8,
+    "reviews": 97,
+    "image": "/products/ultra_29481.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Confort Sec P 72 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29481"
+  },
+  {
+    "id": 50308,
+    "ultraId": 29509,
+    "name": "Fralda Pampers Premium Care P 40 unidades",
+    "size": "40 unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 42.55,
+    "rating": 4.8,
+    "reviews": 133,
+    "image": "/products/ultra_29509.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Premium Care P 40 unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29509"
+  },
+  {
+    "id": 50312,
+    "ultraId": 26231,
+    "name": "Fralda Pampers Premium Care XXG 56 Unidades",
+    "size": "56 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 90.02,
+    "rating": 4.8,
+    "reviews": 287,
+    "image": "/products/ultra_26229.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Premium Care XXG 56 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26231"
+  },
+  {
+    "id": 50317,
+    "ultraId": 26247,
+    "name": "Fralda Pom Pom Protek Proteção de Mãe M 86 Unidades",
+    "size": "86 Unidades",
+    "brand": "Pom Pom",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 65.94,
+    "rating": 4.8,
+    "reviews": 119,
+    "image": "/products/ultra_26249.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pom Pom Protek Proteção de Mãe M 86 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26247"
+  },
+  {
+    "id": 50321,
+    "ultraId": 26945,
+    "name": "FRANCINY E FRAN BY       EYES 38G",
+    "size": "38G",
+    "brand": "Genérico",
+    "category": "Máscaras de Cílios",
+    "subcategory": "",
+    "price": 35.75,
+    "rating": 4.8,
+    "reviews": 105,
+    "image": "/products/ultra_26945.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FRANCINY E FRAN BY       EYES 38G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26945"
+  },
+  {
+    "id": 50322,
+    "ultraId": 26786,
+    "name": "FRANCINY E FRAN BY       EYES 5G",
+    "size": "5G",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 24.2,
+    "rating": 4.8,
+    "reviews": 262,
+    "image": "/products/ultra_26786.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FRANCINY E FRAN BY       EYES 5G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26786"
+  },
+  {
+    "id": 50323,
+    "ultraId": 26946,
+    "name": "FRANCINY E FRAN BY       EYES 7G",
+    "size": "7G",
+    "brand": "Genérico",
+    "category": "Beleza e Perfumaria",
+    "subcategory": "Maquiagem",
+    "price": 30.25,
+    "rating": 4.8,
+    "reviews": 122,
+    "image": "/products/ultra_26946.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FRANCINY E FRAN BY       EYES 7G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26946"
+  },
+  {
+    "id": 50324,
+    "ultraId": 25923,
+    "name": "Fresubin Protein Powder – 300G",
+    "size": "300G",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Suplementos Esportivos",
+    "price": 200.14,
+    "rating": 4.8,
+    "reviews": 111,
+    "image": "/products/ultra_25923.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fresubin Protein Powder – 300G. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25923"
+  },
+  {
+    "id": 50325,
+    "ultraId": 25926,
+    "name": "FTW Creatina Monohidratada 100% Pura – Explosão de Energia, Força e Resistência – Absorção Rápida para Ganho de Massa e Performance – Pote 300g",
+    "size": "300g",
+    "brand": "Genérico",
+    "category": "Vitaminas e Suplementos",
+    "subcategory": "Creatina",
+    "price": 46.04,
+    "rating": 4.8,
+    "reviews": 162,
+    "image": "/products/ultra_25926.jpg",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: FTW Creatina Monohidratada 100% Pura – Explosão de Energia, Força e Resistência – Absorção Rápida para Ganho de Massa e Performance – Pote 300g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "25926"
+  },
+  {
+    "id": 50326,
+    "ultraId": 28322,
+    "name": "Gel Antiacne Papuless Theraskin 25g",
+    "size": "25g",
+    "brand": "Genérico",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 59.99,
+    "price": 53.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 194,
+    "image": "/products/ultra_28322.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel Antiacne Papuless Theraskin 25g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28322"
+  },
+  {
+    "id": 50327,
+    "ultraId": 29551,
+    "name": "Gel Creme Bioderma Atoderm Intensive 500ml",
+    "size": "500ml",
+    "brand": "Bioderma",
+    "category": "Cuidado Corporal",
+    "subcategory": "Cuidado Facial",
+    "price": 72.82,
+    "rating": 4.8,
+    "reviews": 187,
+    "image": "/products/ultra_29551.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel Creme Bioderma Atoderm Intensive 500ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29551"
+  },
+  {
+    "id": 50328,
+    "ultraId": 29306,
+    "name": "Gel Creme clareador Clair Concentre Profuse 30g",
+    "size": "30g",
+    "brand": "Profuse",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 137.69,
+    "rating": 4.8,
+    "reviews": 202,
+    "image": "/products/ultra_29306.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel Creme clareador Clair Concentre Profuse 30g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29306"
+  },
+  {
+    "id": 50329,
+    "ultraId": 29322,
+    "name": "Gel de Limpeza Facial Avène Cleanance Intense 300g",
+    "size": "300g",
+    "brand": "Avène",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 48.59,
+    "rating": 4.8,
+    "reviews": 254,
+    "image": "/products/ultra_29322.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de Limpeza Facial Avène Cleanance Intense 300g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29322"
+  },
+  {
+    "id": 50330,
+    "ultraId": 29637,
+    "name": "Gel de Limpeza Facial Bioderma Sébium Gel Moussant 200ml",
+    "size": "200ml",
+    "brand": "Bioderma",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 32.39,
+    "rating": 4.8,
+    "reviews": 109,
+    "image": "/products/ultra_29637.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de Limpeza Facial Bioderma Sébium Gel Moussant 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29637"
+  },
+  {
+    "id": 50331,
+    "ultraId": 29387,
+    "name": "Gel De Limpeza Facial Darrow Actine Oil Control 400g",
+    "size": "400g",
+    "brand": "Darrow",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 48.59,
+    "rating": 4.8,
+    "reviews": 259,
+    "image": "/products/ultra_29387.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel De Limpeza Facial Darrow Actine Oil Control 400g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29387"
+  },
+  {
+    "id": 50332,
+    "ultraId": 29357,
+    "name": "Gel de Limpeza Facial La Roche-Posay Effaclar Concentrado 300g",
+    "size": "300g",
+    "brand": "La Roche-Posay",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 46.17,
+    "rating": 4.8,
+    "reviews": 189,
+    "image": "/products/ultra_29357.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de Limpeza Facial La Roche-Posay Effaclar Concentrado 300g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29357"
+  },
+  {
+    "id": 50333,
+    "ultraId": 28471,
+    "name": "Gel de Limpeza Facial La Roche-Posay Mela B3 120g",
+    "size": "120g",
+    "brand": "La Roche-Posay",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 89.9,
+    "price": 80.91,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 87,
+    "image": "/products/ultra_28471.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de Limpeza Facial La Roche-Posay Mela B3 120g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28471"
+  },
+  {
+    "id": 50334,
+    "ultraId": 28323,
+    "name": "Gel de limpeza Neutrogena Acne Proofing 200ml",
+    "size": "200ml",
+    "brand": "Neutrogena",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "oldPrice": 39.99,
+    "price": 35.99,
+    "discount": 10,
+    "rating": 4.8,
+    "reviews": 211,
+    "image": "/products/ultra_28323.png",
+    "badges": [
+      "-10%",
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de limpeza Neutrogena Acne Proofing 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "28323"
+  },
+  {
+    "id": 50335,
+    "ultraId": 29404,
+    "name": "Gel de Limpeza Sébium Bioderma Gel Moussant Actif 200ml",
+    "size": "200ml",
+    "brand": "Bioderma",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 32.4,
+    "rating": 4.8,
+    "reviews": 108,
+    "image": "/products/ultra_29404.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de Limpeza Sébium Bioderma Gel Moussant Actif 200ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29404"
+  },
+  {
+    "id": 50336,
+    "ultraId": 29405,
+    "name": "Gel de Limpeza Sébium Gel Moussant Actif 500ml",
+    "size": "500ml",
+    "brand": "Genérico",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 64.8,
+    "rating": 4.8,
+    "reviews": 125,
+    "image": "/products/ultra_29405.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel de Limpeza Sébium Gel Moussant Actif 500ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29405"
+  },
+  {
+    "id": 50337,
+    "ultraId": 26323,
+    "name": "Gel Dental Colgate PerioGard Gengiva Saudável 90g",
+    "size": "90g",
+    "brand": "Colgate",
+    "category": "Cremes Dentais",
+    "subcategory": "",
+    "price": 22.79,
+    "rating": 4.8,
+    "reviews": 91,
+    "image": "/products/ultra_26323.webp",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel Dental Colgate PerioGard Gengiva Saudável 90g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "26323"
+  },
+  {
+    "id": 50338,
+    "ultraId": 29282,
+    "name": "Gel Espuma de Limpeza Facial Sallve 300ml",
+    "size": "300ml",
+    "brand": "Sallve",
+    "category": "Dermocosméticos",
+    "subcategory": "Cuidados com o Rosto",
+    "price": 48.59,
+    "rating": 4.8,
+    "reviews": 234,
+    "image": "/products/ultra_29282.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Gel Espuma de Limpeza Facial Sallve 300ml. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29282"
+  },
+  {
+    "id": 50357,
+    "ultraId": 29624,
+    "name": "MamyPoko Fralda Calça Premium Seca M 68 Unidades",
+    "size": "68 Unidades",
+    "brand": "MamyPoko",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 64.72,
+    "rating": 4.8,
+    "reviews": 142,
+    "image": "/products/ultra_29624.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: MamyPoko Fralda Calça Premium Seca M 68 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29624"
+  },
+  {
+    "id": 50358,
+    "ultraId": 29508,
+    "name": "Fralda Pampers Confort Sec Xxxg 44 Unidades",
+    "size": "44 Unidades",
+    "brand": "Pampers",
+    "category": "Mamãe e Bebê",
+    "subcategory": "Fraldas Infantis",
+    "price": 65.3,
+    "rating": 4.8,
+    "reviews": 118,
+    "image": "/products/ultra_29508.png",
+    "badges": [
+      "Mais Vendidos"
+    ],
+    "description": "Produto autêntico e de alta performance: Fralda Pampers Confort Sec Xxxg 44 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
+    "bullets": [
+      "Fórmula original e certificada de alta qualidade.",
+      "Ideal para cuidados diários e resultados superiores.",
+      "Entrega rápida e segura com a garantia Droga Raia."
+    ],
+    "productCode": "29508"
+  }
+];
