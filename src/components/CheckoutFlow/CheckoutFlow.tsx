@@ -2107,9 +2107,6 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
             <div
               className="cart-page__pickup-card"
               onClick={() => {
-                try {
-                  localStorage.setItem('drogaraia_delivery_mode', 'pickup');
-                } catch {}
                 onProceed();
               }}
               style={{ cursor: 'pointer' }}
@@ -2123,7 +2120,18 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
             </div>
 
             {/* Receber no endereço */}
-            <div className="cart-page__delivery-card">
+            <div
+              className="cart-page__delivery-card"
+              onClick={() => {
+                try {
+                  localStorage.setItem('drogaraia_delivery_mode', 'address');
+                } catch {}
+                onProceed();
+              }}
+              style={{ cursor: 'pointer' }}
+              role="button"
+              tabIndex={0}
+            >
               <h3 className="cart-page__delivery-title">Receber no endereço</h3>
 
               <div className="cart-page__delivery-item">
@@ -2196,7 +2204,16 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
                 <span className="cart-page__bottom-price">{fmt(subtotal)}</span>
                 <span className="cart-page__bottom-installment">1x s/ juros de {fmt(subtotal)}</span>
               </div>
-              <button className="cart-page__prosseguir-btn" onClick={onProceed} id="cart-prosseguir-btn">
+              <button
+                className="cart-page__prosseguir-btn"
+                onClick={() => {
+                  try {
+                    localStorage.setItem('drogaraia_delivery_mode', 'address');
+                  } catch {}
+                  onProceed();
+                }}
+                id="cart-prosseguir-btn"
+              >
                 Prosseguir
               </button>
             </div>
@@ -2209,20 +2226,23 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
 
 /* ── Step1 (Exact match to Droga Raia official screenshot) ── */
 const Step1: React.FC<{
+  initialMode?: DeliveryMode;
   onBack: () => void;
   onContinue: (m: DeliveryMode, t: DeliveryType) => void;
-}> = ({ onBack, onContinue }) => {
+}> = ({ initialMode = 'address', onBack, onContinue }) => {
   const { items, subtotal, couponDiscount, montaDiscount, showToast, cepAddress, setCepAddress, userAddress } = useCart();
   const displayItems = items.length > 0 ? items : [{ product: fraldasProducts[0], quantity: 1 }];
   const currentSubtotal = subtotal > 0 ? subtotal : 125.90;
   const rates = getShippingRates(currentSubtotal);
-  const [mode, setMode] = useState<DeliveryMode>(() => {
+  const [mode, setMode] = useState<DeliveryMode>('address');
+
+  useEffect(() => {
+    setMode('address');
+    setTargetMode('address');
     try {
-      const saved = localStorage.getItem('drogaraia_delivery_mode');
-      if (saved === 'address' || saved === 'pickup') return saved;
+      localStorage.setItem('drogaraia_delivery_mode', 'address');
     } catch {}
-    return 'pickup'; // Default to pickup so it is NEVER blank!
-  });
+  }, []);
   const [showModal, setShowModal] = useState(false);
   const [showCepSheet, setShowCepSheet] = useState(false);
   const [targetMode, setTargetMode] = useState<DeliveryMode>('address');
@@ -4890,9 +4910,21 @@ const CheckoutFlow: React.FC = () => {
 
   return (
     <div className="checkout-flow-root" ref={ref}>
-      {step === 'cart' && <CartPage onProceed={() => setStep('step1')} onClose={close} />}
+      {step === 'cart' && (
+        <CartPage
+          onProceed={() => {
+            setDMode('address');
+            try {
+              localStorage.setItem('drogaraia_delivery_mode', 'address');
+            } catch {}
+            setStep('step1');
+          }}
+          onClose={close}
+        />
+      )}
       {step === 'step1' && (
         <Step1
+          initialMode="address"
           onBack={() => setStep('cart')}
           onContinue={(m, t) => {
             setDMode(m);
