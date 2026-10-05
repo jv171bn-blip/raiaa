@@ -67,6 +67,7 @@ type DeliveryType = 'express' | 'scheduled' | 'normal' | null;
 type PaymentMethod = 'pix' | 'googlepay' | 'nupay' | 'credit' | null;
 
 const fmt = (v: number) => 'R$ ' + v.toFixed(2).replace('.', ',');
+const PIX_DISCOUNT_RATE = 0.1;
 
 export const getShippingRates = (subtotal: number) => {
   const isFreeShipping = subtotal >= 149.90;
@@ -3784,6 +3785,7 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
     displaySubtotal = Number((subtotal + savings).toFixed(2));
     total = Math.max(0, subtotal + fee);
   }
+  const pixDiscount = Number((total * PIX_DISCOUNT_RATE).toFixed(2));
 
   const handleCouponApplied = (_code: string) => {
     setShowCouponModal(false);
@@ -3871,7 +3873,7 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
 
             {method === 'pix' && (
               <div className="checkout-payment__pix-promo-box checkout-payment__pix-promo-box--green">
-                Ganhe 10% de desconto no PIX e economize +{fmt(total * 0.1)}
+                Ganhe 10% de desconto no PIX e economize +{fmt(pixDiscount)}
               </div>
             )}
           </div>
@@ -3988,9 +3990,16 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
           </div>
         )}
 
+        {method === 'pix' && pixDiscount > 0 && (
+          <div className="checkout-step__summary-line checkout-step__summary-line--savings" style={{ marginBottom: 6 }}>
+            <span>Desconto Pix (10%)</span>
+            <span>- {fmt(pixDiscount)}</span>
+          </div>
+        )}
+
         <div className="checkout-step__bottom-total">
           <span className="checkout-step__bottom-total-label">Total a pagar</span>
-          <span className="checkout-step__bottom-total-value">{fmt(total)}</span>
+          <span className="checkout-step__bottom-total-value">{fmt(method === 'pix' ? total - pixDiscount : total)}</span>
         </div>
 
         <div className="checkout-step__bottom-actions">
@@ -4198,7 +4207,9 @@ const Step3: React.FC<{
     ? 0
     : (deliveryType === 'normal' ? rates.normalPrice : deliveryType === 'scheduled' ? rates.scheduledPrice : rates.expressPrice);
   const discounts = (couponDiscount || 0) + (montaDiscount || 0);
-  const total = Math.max(0, subtotal - discounts + fee);
+  const baseTotal = Math.max(0, subtotal - discounts + fee);
+  const pixDiscount = isPix ? Number((baseTotal * PIX_DISCOUNT_RATE).toFixed(2)) : 0;
+  const total = Math.max(0, baseTotal - pixDiscount);
 
   const [activePix, setActivePix] = useState<FlevoTransactionResponse | null>(() => {
     if (pixTransactionData) return pixTransactionData;
@@ -4563,6 +4574,12 @@ const Step3: React.FC<{
               <strong className="co-success__green">- {fmt(discounts)}</strong>
             </div>
           )}
+          {pixDiscount > 0 && (
+            <div className="co-success__values-row">
+              <span className="co-success__green">Desconto Pix (10%)</span>
+              <strong className="co-success__green">- {fmt(pixDiscount)}</strong>
+            </div>
+          )}
           <div className="co-success__values-row co-success__values-row--total">
             <span>Total pago</span>
             <strong>{fmt(total)}</strong>
@@ -4818,7 +4835,8 @@ const CheckoutFlow: React.FC = () => {
         ? 0
         : (dType === 'normal' ? rates.normalPrice : dType === 'scheduled' ? rates.scheduledPrice : rates.expressPrice);
       const discounts = (couponDiscount || 0) + (montaDiscount || 0);
-      const total = Math.max(0, subtotal - discounts + fee);
+      const baseTotal = Math.max(0, subtotal - discounts + fee);
+      const total = Math.max(0, baseTotal - Number((baseTotal * PIX_DISCOUNT_RATE).toFixed(2)));
       const amountCents = Math.round(total * 100);
 
       let addressObj: any = undefined;
