@@ -30,6 +30,7 @@ import {
   todosProdutosExpandidos,
 } from '../../data/products';
 import { ultraBrasilProducts } from '../../data/ultraBrasilProducts';
+import { novosKitsCarvalhoUltra } from '../../data/novosKitsCarvalhoUltra';
 import { montaProducts } from '../../data/montaOffers';
 import MobileMenuSheet from '../MobileMenuSheet/MobileMenuSheet';
 import './Header.css';
@@ -37,6 +38,7 @@ import './Header.css';
 // Combine all products for live search
 const allProducts: Product[] = deduplicateProducts([
   ...ultraBrasilProducts,
+  ...novosKitsCarvalhoUltra,
   ...mostBought,
   ...blackDayProducts,
   ...weekHighlights,

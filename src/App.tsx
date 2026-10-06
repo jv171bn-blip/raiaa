@@ -25,6 +25,7 @@ import MontaQueDescontaPage from './components/MontaQueDescontaPage/MontaQueDesc
 import AllProductsPage from './components/AllProductsPage/AllProductsPage';
 import { suggestionProducts } from './components/SuggestionsCarousel/SuggestionsCarousel';
 import SearchResultsPage from './components/SearchResultsPage/SearchResultsPage';
+import PrivacyPolicyPage from './components/PrivacyPolicyPage/PrivacyPolicyPage';
 import CheckoutFlow, { AddedToCartModal } from './components/CheckoutFlow/CheckoutFlow';
 
 import {
@@ -52,6 +53,7 @@ import { montaProducts } from './data/montaOffers';
 import { todosProdutosExpandidos } from './data/catalogExpanded';
 import { novosProdutosCatalogo } from './data/novosProdutosCatalogo';
 import { ultraBrasilProducts } from './data/ultraBrasilProducts';
+import { novosKitsCarvalhoUltra } from './data/novosKitsCarvalhoUltra';
 import { generateHomepageRotatingData, HomepageRotatingData, isAllowedOnHomepage } from './data/trendingProducts';
 
 import { X } from 'lucide-react';
@@ -60,6 +62,7 @@ import './App.css';
 
 const allProducts: Product[] = deduplicateProducts([
   ...ultraBrasilProducts,
+  ...novosKitsCarvalhoUltra,
   ...mostBought,
   ...blackDayProducts,
   ...weekHighlights,
@@ -212,6 +215,7 @@ const PageContent: React.FC = () => {
     isMontaPage,
     isSearchPage,
     isCartPage,
+    isPrivacyPage,
     searchQuery,
     activeModal,
     setActiveModal,
@@ -250,7 +254,7 @@ const PageContent: React.FC = () => {
       {/* Category Navigation */}
       <CategoryNavigation />
 
-      {/* Main Content (Homepage, Product Detail Page, Offers Page, All Products Page, Monta que Desconta Page, or Search Results Page) */}
+      {/* Main Content (Homepage, Product Detail Page, Offers Page, All Products Page, Monta que Desconta Page, Privacy Page, or Search Results Page) */}
       {selectedProduct ? (
         <ProductPage product={selectedProduct} allProducts={allProducts} />
       ) : isOffersPage ? (
@@ -259,6 +263,8 @@ const PageContent: React.FC = () => {
         <MontaQueDescontaPage />
       ) : isAllProductsPage ? (
         <AllProductsPage allProducts={allProducts} />
+      ) : isPrivacyPage ? (
+        <PrivacyPolicyPage />
       ) : showSearchPage ? (
         <SearchResultsPage allProducts={allProducts} />
       ) : (

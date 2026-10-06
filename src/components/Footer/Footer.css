@@ -1,5 +1,9 @@
+/* ========================================================
+   FOOTER STYLES (OFICIAL DROGARIA PORTAL LTDA)
+   ======================================================== */
+
 .footer {
-  margin-top: 16px;
+  margin-top: 24px;
   background-color: transparent;
   width: 100%;
 }
@@ -10,12 +14,12 @@
   padding: 0 16px;
 }
 
-/* Light Gray Rounded Container */
+/* Light Gray Rounded Container (Support & App) */
 .footer__support-box {
   background-color: #f1f3f4;
   border-radius: 24px;
   padding: 24px 20px 28px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .footer__support-grid {
@@ -39,15 +43,15 @@
 }
 
 .footer-support-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .footer-support-card__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .footer-support-card__phone-icon-wrap {
@@ -81,14 +85,14 @@
   margin: 0;
 }
 
-/* RD Saúde Logo Section */
+/* RD Saúde Section */
 .footer__rdsaude {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 24px;
-  margin-bottom: 18px;
+  margin-top: 22px;
+  margin-bottom: 16px;
 }
 
 .footer__rd-label {
@@ -151,30 +155,465 @@
   transform: scale(0.98);
 }
 
-/* ANVISA Section */
-.footer__anvisa-section {
+
+/* ========================================================
+   PORTAL FOOTER (BLUE 5-COLUMNS OFICIAIS DA IMAGEM)
+   ======================================================== */
+
+.portal-footer {
+  background: linear-gradient(180deg, #00335e 0%, #002747 100%);
+  color: #ffffff;
+  width: 100%;
+  padding: 44px 0 28px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.portal-footer__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 5 Columns Grid */
+.portal-footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.05fr 0.95fr 1.35fr 1.15fr;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+
+.portal-col {
   display: flex;
   flex-direction: column;
+}
+
+/* Column Titles */
+.portal-col__title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+/* Column 1: Brand & Contact Info */
+.portal-col--brand {
+  padding-right: 12px;
+}
+
+.portal-brand {
+  cursor: pointer;
+  margin-bottom: 14px;
+  display: inline-block;
+  transition: opacity 0.15s ease;
+}
+
+.portal-brand:hover {
+  opacity: 0.92;
+}
+
+.portal-logo-raia {
+  height: 42px;
+  width: auto;
+  max-width: 170px;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0) invert(1);
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.portal-logo-raia:hover {
+  opacity: 0.88;
+  transform: scale(1.02);
+}
+
+.portal-logo-svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.portal-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #e2e8f0;
+}
+
+.portal-address {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.portal-phone,
+.portal-email,
+.portal-cnpj,
+.portal-legal-name {
+  margin: 0;
+}
+
+.portal-contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.portal-contact-info a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.portal-cnpj-badge {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  display: inline-block;
+}
+
+.portal-legal-name strong {
+  color: #ffffff;
+}
+
+/* Columns 2 & 3: Navigation Links */
+.portal-col__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portal-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.portal-link-btn:hover {
+  color: #ffffff;
+  transform: translateX(2px);
+  text-decoration: underline;
+}
+
+.portal-link-btn--highlight {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Column 4: SELO DE PAGAMENTO */
+.portal-col--payments {
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-security-badge-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.portal-shield-icon {
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
+.portal-security-badge-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.portal-security-badge-text strong {
+  font-size: 11.5px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+}
+
+.portal-security-badge-text span {
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+/* Payment Methods Badges Row */
+.portal-payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.portal-pay-pill {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 24px 0 44px 0;
-  text-align: center;
+  height: 28px;
+  min-width: 44px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  user-select: none;
 }
 
-.footer__anvisa-text {
-  font-size: 13px;
-  color: #666666;
-  margin-bottom: 12px;
-  font-weight: 400;
+.portal-pay-label {
+  color: #32BCAD;
+  font-size: 11px;
+  font-weight: 800;
+  margin-left: 2px;
+  text-transform: lowercase;
 }
 
-.footer__anvisa-logo {
-  width: 52px;
-  height: 60px;
+.portal-visa-text {
+  color: #1a1f71;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.portal-mc-circles {
+  display: flex;
+  align-items: center;
+}
+
+.portal-mc-red,
+.portal-mc-orange {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.portal-mc-red {
+  background: #EB001B;
+  z-index: 1;
+}
+
+.portal-mc-orange {
+  background: #F79E1B;
+  margin-left: -6px;
+}
+
+.portal-pay-pill--mp {
+  padding: 4px 6px;
+  gap: 2px;
+}
+
+.portal-mp-text {
+  color: #009ee3;
+  font-size: 9.5px;
+  font-weight: 800;
+}
+
+/* Guarantees Box */
+.portal-guarantees-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.portal-guarantee-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.25;
+}
+
+.portal-icon-cyan {
+  color: #38bdf8;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.portal-guarantee-row strong {
+  display: block;
+  font-size: 11px;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+.portal-guarantee-row span {
+  font-size: 9.5px;
+  color: #cbd5e1;
+}
+
+/* Column 5: SELO DE SEGURANÇA */
+.portal-col--security {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Big Security Box Matching Reference */
+.portal-security-box {
+  background: #ffffff;
+  border: 2px solid #0284c7;
+  border-radius: 12px;
+  padding: 14px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+}
+
+.portal-security-box__shield {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portal-security-box__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.portal-security-box__headline {
+  font-size: 13.5px;
+  font-weight: 900;
+  color: #00335e;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.portal-security-box__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 3px 0 2px;
+}
+
+.portal-micro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0284c7;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 4px;
+  border-radius: 4px;
+  letter-spacing: 0.2px;
+}
+
+.portal-security-verified {
+  font-size: 10px;
+  color: #10b981;
+  font-weight: 600;
+}
+
+/* ANVISA Badge in Column 5 */
+.portal-anvisa-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.portal-anvisa-text {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.portal-anvisa-logo {
+  height: 34px;
+  width: auto;
   object-fit: contain;
+  background: #ffffff;
+  padding: 3px 6px;
+  border-radius: 4px;
 }
 
-/* Responsive adjustments */
+/* Bottom Copyright Bar */
+.portal-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 22px;
+}
+
+.portal-footer__copyright {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.portal-copyright-main {
+  font-size: 12.5px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.portal-copyright-main strong {
+  color: #38bdf8;
+}
+
+.portal-copyright-sub,
+.portal-copyright-address {
+  font-size: 11px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.45;
+}
+
+
+/* ========================================================
+   RESPONSIVE LAYOUT
+   ======================================================== */
+
+@media (max-width: 1120px) {
+  .portal-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+
+  .portal-col--brand {
+    grid-column: span 2;
+  }
+
+  .portal-col--security {
+    grid-column: span 2;
+  }
+}
+
 @media (max-width: 680px) {
   .footer__support-grid {
     grid-template-columns: 1fr 1fr;
@@ -205,41 +644,36 @@
     margin-bottom: 10px;
   }
 
-  .footer__rdsaude {
-    margin-top: 18px;
-    margin-bottom: 14px;
-    gap: 6px;
+  .portal-footer {
+    padding: 32px 0 24px;
   }
 
-  .footer__rd-label {
-    font-size: 12.5px;
+  .portal-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
-  .footer__rd-symbol {
-    height: 20px;
+  .portal-col--brand,
+  .portal-col--security {
+    grid-column: span 1;
   }
 
-  .footer__rd-text-main,
-  .footer__rd-text-sub {
-    font-size: 20px;
+  .portal-security-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 12px;
   }
 
-  .footer__back-to-top {
-    padding: 7px 24px;
-    font-size: 12.5px;
+  .portal-security-box__badges {
+    justify-content: center;
   }
 
-  .footer__anvisa-section {
-    margin: 20px 0 36px 0;
-  }
-
-  .footer__anvisa-text {
-    font-size: 12px;
-    margin-bottom: 10px;
+  .portal-anvisa-badge {
+    align-items: center;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   .footer__support-grid {
     grid-template-columns: 1fr;
   }

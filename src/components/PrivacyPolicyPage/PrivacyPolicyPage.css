@@ -1,0 +1,629 @@
+/* ========================================================
+   INSTITUTIONAL PAGES & ÁREA DO CLIENTE
+   ======================================================== */
+
+.inst-page {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* 1. Header Preto */
+.inst-header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 56px 20px 48px;
+  text-align: center;
+  width: 100%;
+}
+
+.inst-header__inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.inst-header__title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin: 0 0 14px 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.15;
+}
+
+.inst-header__breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.inst-breadcrumb-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+
+.inst-breadcrumb-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.inst-breadcrumb-sep {
+  opacity: 0.6;
+}
+
+.inst-breadcrumb-current {
+  opacity: 0.95;
+}
+
+/* 2. Conteúdo em Fundo Branco */
+.inst-body {
+  background-color: #ffffff;
+  padding: 56px 20px 64px;
+}
+
+.inst-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.inst-lead {
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 1.55;
+  color: #1a1a1a;
+  margin: 0 0 28px 0;
+}
+
+.inst-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inst-paragraph {
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #555555;
+  margin: 0;
+}
+
+/* Caixa com dados da empresa */
+.inst-company-box {
+  margin-top: 40px;
+  padding: 18px 22px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.inst-company-box p {
+  margin: 0 0 4px 0;
+}
+
+.inst-company-box p:last-child {
+  margin-bottom: 0;
+}
+
+.inst-company-box strong {
+  color: #1e293b;
+}
+
+.inst-cnpj-text {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ========================================================
+   CARDS DE FORMULÁRIO (ÁREA DO CLIENTE: MINHA CONTA, ETC.)
+   ======================================================== */
+
+.inst-form-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 38px 34px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.inst-form-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  text-align: center;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.3px;
+}
+
+.inst-form-subtitle {
+  font-size: 13.5px;
+  color: #64748b;
+  text-align: center;
+  margin: 0 0 24px 0;
+  line-height: 1.45;
+}
+
+/* Banner de Erro em Destaque */
+.inst-error-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: #fef2f2;
+  border: 1.5px solid #fecaca;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  color: #991b1b;
+  animation: instShake 0.35s ease;
+}
+
+@keyframes instShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.inst-error-icon {
+  color: #dc2626;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.inst-error-text strong {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 2px;
+}
+
+.inst-error-text p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #991b1b;
+}
+
+/* Formulário e Campos */
+.inst-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inst-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inst-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.inst-field input {
+  width: 100%;
+  height: 46px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.inst-field input:focus {
+  border-color: #00335e;
+  box-shadow: 0 0 0 3px rgba(0, 51, 94, 0.12);
+}
+
+.inst-field input.input-error {
+  border-color: #ef4444 !important;
+  background-color: #fffafb;
+}
+
+.inst-password-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.inst-toggle-pwd {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inst-form-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: #475569;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.inst-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.inst-link-text {
+  background: none;
+  border: none;
+  color: #0284c7;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.15s ease;
+}
+
+.inst-link-text:hover {
+  color: #0369a1;
+}
+
+.inst-btn-submit {
+  width: 100%;
+  height: 48px;
+  background-color: #00335e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  margin-top: 6px;
+  font-family: inherit;
+}
+
+.inst-btn-submit:hover {
+  background-color: #00223e;
+}
+
+.inst-btn-submit:active {
+  transform: scale(0.99);
+}
+
+.inst-btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.inst-form-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.inst-link-bold {
+  background: none;
+  border: none;
+  color: #00335e;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  font: inherit;
+}
+
+/* ========================================================
+   CARRINHO MOCKUP
+   ======================================================== */
+
+.inst-cart-mock-box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inst-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.inst-cart-item-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.inst-cart-item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.inst-cart-item-details strong {
+  color: #1e293b;
+  font-size: 13.5px;
+}
+
+.inst-cart-item-details span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.inst-cart-item-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: #00335e;
+}
+
+.inst-cart-cep-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.inst-cep-row {
+  display: flex;
+  gap: 8px;
+}
+
+.inst-cep-row input {
+  flex: 1;
+  height: 42px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13.5px;
+  outline: none;
+  font-family: inherit;
+}
+
+.inst-btn-cep {
+  background-color: #f1f5f9;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.inst-btn-cep:hover {
+  background-color: #e2e8f0;
+}
+
+.inst-cart-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid #e2e8f0;
+  font-size: 13.5px;
+  color: #475569;
+}
+
+.inst-cart-summary-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inst-cart-summary-row--total {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+  padding-top: 6px;
+  border-top: 1px dashed #cbd5e1;
+}
+
+/* ========================================================
+   LISTA DE DESEJOS MOCKUP
+   ======================================================== */
+
+.inst-empty-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 8px;
+}
+
+.inst-empty-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.inst-empty-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+}
+
+.inst-empty-card p {
+  font-size: 13.5px;
+  color: #64748b;
+  margin: 0;
+  max-width: 380px;
+  line-height: 1.45;
+}
+
+.inst-wish-search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.inst-wish-search input {
+  width: 100%;
+  height: 44px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 14px;
+  font-size: 13.5px;
+  outline: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* ========================================================
+   3. FAIXA DE BENEFÍCIOS (IDENTICA À IMAGEM)
+   ======================================================== */
+
+.inst-benefits {
+  background-color: #f7fafd;
+  border-top: 1px solid #e8eff6;
+  border-bottom: 1px solid #e8eff6;
+  padding: 30px 20px;
+}
+
+.inst-benefits__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.inst-benefit-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.inst-benefit-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.inst-benefit-icon {
+  color: #00335e;
+}
+
+.inst-benefit-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.inst-benefit-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #00335e;
+  letter-spacing: 0.3px;
+  margin-bottom: 2px;
+}
+
+.inst-benefit-sub {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .inst-header {
+    padding: 40px 16px 36px;
+  }
+
+  .inst-header__title {
+    font-size: 32px;
+  }
+
+  .inst-body {
+    padding: 36px 16px 44px;
+  }
+
+  .inst-form-card {
+    padding: 26px 18px;
+    border-radius: 12px;
+  }
+
+  .inst-lead {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .inst-benefits__inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .inst-benefit-card {
+    justify-content: flex-start;
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}

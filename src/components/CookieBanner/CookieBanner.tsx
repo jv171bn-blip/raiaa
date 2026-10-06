@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { X, Check } from 'lucide-react';
+import { useCart } from '../../context/CartContext';
 import './CookieBanner.css';
 
 const CookieBanner: React.FC = () => {
+  const { goToPrivacyPage } = useCart();
   const [isVisible, setIsVisible] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [cookiePrefs, setCookiePrefs] = useState({
@@ -47,14 +49,14 @@ const CookieBanner: React.FC = () => {
           <div className="cookie-banner__inner">
             <p className="cookie-banner__text">
               Durante sua navegação, podemos utilizar cookies para: confirmar sua identidade; personalizar seu acesso; e acompanhar a utilização de nossos websites, visando o aprimoramento de sua funcionalidade. Alguns cookies são essenciais para nossos serviços, outros opcionais. Você poderá gerenciar os cookies que utilizamos de acordo com suas preferências.{' '}
-              <a
-                href="https://rdsaude.com.br/wp-content/uploads/2025/10/Politica-de-Cookies.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
+                onClick={() => goToPrivacyPage('privacidade')}
                 className="cookie-banner__link"
+                style={{ background: 'none', border: 'none', padding: 0, textDecoration: 'underline', cursor: 'pointer', font: 'inherit', color: 'inherit' }}
               >
                 Nossa Política de Privacidade e Cookies
-              </a>
+              </button>
             </p>
 
             <div className="cookie-banner__actions">

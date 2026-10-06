@@ -302,9 +302,12 @@ function resolveCuratedSection(
 }
 
 import { ultraBrasilProducts } from './ultraBrasilProducts';
+import { novosKitsCarvalhoUltra } from './novosKitsCarvalhoUltra';
+
+const allAvailableProducts = [...ultraBrasilProducts, ...novosKitsCarvalhoUltra];
 
 /**
- * Helper para selecionar e alternar produtos da lista Ultra Brasil por categoria
+ * Helper para selecionar e alternar produtos por categoria
  */
 function pickUltraItems(
   pool: Product[],
@@ -429,7 +432,7 @@ function separateDiapers(list: Product[], minSeparation = 2): Product[] {
  * (Fraldas Pampers P, M e G intercaladas, Whey Protein, Creatinas, Pomada Bepantol Baby, CeraVe, Bioderma, Gillette Mach3, etc.)
  */
 export function getRandomMaisComprados(allProducts: Product[], count = 16): Product[] {
-  const source = allProducts && allProducts.length ? allProducts.filter(isAllowedOnHomepage) : ultraBrasilProducts.filter(isAllowedOnHomepage);
+  const source = allProducts && allProducts.length ? allProducts.filter(isAllowedOnHomepage) : allAvailableProducts.filter(isAllowedOnHomepage);
   const used = new Set<number>();
 
   // Pacotes de fralda Pampers tamanhos P, M e G solicitados explicitamente
@@ -466,7 +469,7 @@ export function getRandomMaisComprados(allProducts: Product[], count = 16): Prod
  * (Inclui as ofertas de Pampers Confort Sec M e G com desconto de -10%, espalhadas entre os itens)
  */
 export function getRandomBlackDoDia(allProducts: Product[], count = 14): Product[] {
-  const source = ultraBrasilProducts.filter(isAllowedOnHomepage);
+  const source = (allProducts && allProducts.length ? allProducts : allAvailableProducts).filter(isAllowedOnHomepage);
   const discounted = source.filter(p => (p.discount && p.discount > 0) || (p.oldPrice && p.oldPrice > p.price));
 
   // Ofertas com desconto de fraldas Pampers Confort Sec (-10% M 70un e G 98un)
@@ -487,7 +490,7 @@ export function getRandomBlackDoDia(allProducts: Product[], count = 14): Product
  * 3. Destaques da Semana: Fraldas Pampers P, M e G espalhadas, Saúde, Tratamento Capilar e Skincare
  */
 export function getRandomDestaquesSemana(allProducts: Product[], count = 14): Product[] {
-  const source = allProducts && allProducts.length ? allProducts.filter(isAllowedOnHomepage) : ultraBrasilProducts.filter(isAllowedOnHomepage);
+  const source = allProducts && allProducts.length ? allProducts.filter(isAllowedOnHomepage) : allAvailableProducts.filter(isAllowedOnHomepage);
   const used = new Set<number>();
 
   // Pacotes de fralda Pampers tamanhos P, M e G solicitados explicitamente
@@ -521,7 +524,7 @@ export function getRandomDestaquesSemana(allProducts: Product[], count = 14): Pr
  * (Pampers, Huggies, MamyPoko, CeraVe, Bioderma, Avène, Max Titanium, Integralmedica, Colgate, Sensodyne, Wella, etc.)
  */
 export function getRandomMarcasFavoritas(allProducts: Product[], count = 14): Product[] {
-  const source = ultraBrasilProducts.filter(isAllowedOnHomepage);
+  const source = (allProducts && allProducts.length ? allProducts : allAvailableProducts).filter(isAllowedOnHomepage);
   const topBrands = [
     'pampers', 'huggies', 'mamypoko', 'cerave', 'bioderma', 'avène', 'avene',
     'max titanium', 'integralmedica', 'colgate', 'sensodyne', 'wella', 'vichy',
@@ -545,7 +548,7 @@ export function getRandomMarcasFavoritas(allProducts: Product[], count = 14): Pr
  * (Bases, Batons, Paletas e Skincare de Alta Tecnologia: Rare Beauty, Fenty Beauty, Dior, YSL, Huda Beauty, Too Faced, Benefit, Nars, Shiseido, etc.)
  */
 export function getRandomBelezaAsiatica(allProducts: Product[], asianBeautyList: Product[], count = 9): Product[] {
-  const source = ultraBrasilProducts.filter(isAllowedOnHomepage);
+  const source = (allProducts && allProducts.length ? allProducts : allAvailableProducts).filter(isAllowedOnHomepage);
   const beautyItems = source.filter(p => {
     const c = (p.category || '').toLowerCase();
     const n = (p.name || '').toLowerCase();
