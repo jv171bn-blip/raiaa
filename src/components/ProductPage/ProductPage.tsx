@@ -14,7 +14,7 @@ import {
   Headphones,
   Smartphone,
 } from 'lucide-react';
-import { Product, quemComprouTambem, getSimilarProducts, isCosmeticOrPersonalCare, fraldasProducts } from '../../data/products';
+import { Product, quemComprouTambem, getSimilarProducts, isCosmeticOrPersonalCare, fraldasProducts, deduplicateProducts } from '../../data/products';
 import { getProductReviewsData } from '../../data/productReviewsData';
 import { useCart } from '../../context/CartContext';
 import { handleImageError } from '../../utils/imageFallback';
@@ -92,7 +92,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
       if (result.length >= 10) break;
     }
 
-    return result.length > 0 ? result : quemComprouTambem;
+    return deduplicateProducts(result.length > 0 ? result : quemComprouTambem);
   }, [product, allProducts]);
 
   const [selectedOption, setSelectedOption] = useState<'oferta-raia' | 'leve-pague'>('oferta-raia');

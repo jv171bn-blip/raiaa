@@ -1,4 +1,5 @@
-import { Product } from './products';
+import { Product, deduplicateProducts } from './products';
+import { novosProdutosCatalogo } from './novosProdutosCatalogo';
 
 /**
  * Palavras-chave e marcas pesquisadas na web como campeões de vendas e produtos em alta
@@ -331,10 +332,11 @@ function pickUltraItems(
 /**
  * Seleciona pacotes EXCLUSIVAMENTE de fralda Pampers Confort Sec nos tamanhos P, M e G
  * priorizando especificamente as ofertas solicitadas (M 70 Unidades e G 98 Unidades).
+ * Nunca reutiliza um ID já presente em usedIds.
  */
 function pickPampersSizes(pool: Product[], usedIds: Set<number>): Product[] {
   const pampers = pool.filter(p => {
-    if (!p || !p.name) return false;
+    if (!p || !p.name || usedIds.has(p.id)) return false;
     const n = p.name.toLowerCase();
     const b = (p.brand || '').toLowerCase();
     const isPampers = n.includes('pampers') || b.includes('pampers');
@@ -350,8 +352,7 @@ function pickPampersSizes(pool: Product[], usedIds: Set<number>): Product[] {
 
   // P (prioriza pacotes autênticos como 72un ou 50un)
   const availableP = pItems.filter(p => !usedIds.has(p.id));
-  const poolP = availableP.length ? availableP : pItems;
-  const chosenP = shuffleArray(poolP)[0];
+  const chosenP = shuffleArray(availableP)[0];
   if (chosenP) {
     picked.push(chosenP);
     usedIds.add(chosenP.id);
@@ -359,9 +360,8 @@ function pickPampersSizes(pool: Product[], usedIds: Set<number>): Product[] {
 
   // M (prioriza especificamente a oferta de 70 unidades solicitada pelo usuário)
   const availableM = mItems.filter(p => !usedIds.has(p.id));
-  const poolM = availableM.length ? availableM : mItems;
-  const preferredM = poolM.filter(p => p.name.includes('70'));
-  const chosenM = shuffleArray(preferredM.length ? preferredM : poolM)[0];
+  const preferredM = availableM.filter(p => p.name.includes('70'));
+  const chosenM = shuffleArray(preferredM.length ? preferredM : availableM)[0];
   if (chosenM) {
     picked.push(chosenM);
     usedIds.add(chosenM.id);
@@ -369,9 +369,8 @@ function pickPampersSizes(pool: Product[], usedIds: Set<number>): Product[] {
 
   // G (prioriza especificamente a oferta de 98 unidades solicitada pelo usuário)
   const availableG = gItems.filter(p => !usedIds.has(p.id));
-  const poolG = availableG.length ? availableG : gItems;
-  const preferredG = poolG.filter(p => p.name.includes('98'));
-  const chosenG = shuffleArray(preferredG.length ? preferredG : poolG)[0];
+  const preferredG = availableG.filter(p => p.name.includes('98'));
+  const chosenG = shuffleArray(preferredG.length ? preferredG : availableG)[0];
   if (chosenG) {
     picked.push(chosenG);
     usedIds.add(chosenG.id);
@@ -382,7 +381,7 @@ function pickPampersSizes(pool: Product[], usedIds: Set<number>): Product[] {
 
 /**
  * Intercala itens de forma espaçada em uma lista base para que nunca fiquem
- * adjacentes ("um ao lado do outro"), distribuindo-os uniformemente pelo carrossel.
+ * adjacentes ("um ao lado do outro"), garantindo deduplicação estrita de produtos.
  */
 function scatterItems(
   baseList: Product[],
@@ -390,15 +389,18 @@ function scatterItems(
   startOffset = 1,
   interval = 4
 ): Product[] {
+  const existingIds = new Set(baseList.map(p => p.id));
+  const uniqueScatter = (itemsToScatter || []).filter(item => item && !existingIds.has(item.id));
   const result: Product[] = [...baseList];
-  if (!itemsToScatter || itemsToScatter.length === 0) return result;
+  if (uniqueScatter.length === 0) return deduplicateProducts(result);
 
-  itemsToScatter.forEach((item, idx) => {
+  uniqueScatter.forEach((item, idx) => {
     const targetIndex = Math.min(startOffset + idx * (interval + 1), result.length);
     result.splice(targetIndex, 0, item);
+    existingIds.add(item.id);
   });
 
-  return result;
+  return deduplicateProducts(result);
 }
 
 /**
@@ -431,12 +433,13 @@ function separateDiapers(list: Product[], minSeparation = 2): Product[] {
  * 1. Mais Comprados: Campeões absolutos da lista Ultra Brasil e Pampers P, M e G espalhados
  * (Fraldas Pampers P, M e G intercaladas, Whey Protein, Creatinas, Pomada Bepantol Baby, CeraVe, Bioderma, Gillette Mach3, etc.)
  */
-export function getRandomMaisComprados(allProducts: Product[], count = 16): Product[] {
+export function getRandomMaisComprados(allProducts: Product[], count = 16, usedHomepageIds?: Set<number>): Product[] {
   const source = allProducts && allProducts.length ? allProducts.filter(isAllowedOnHomepage) : allAvailableProducts.filter(isAllowedOnHomepage);
-  const used = new Set<number>();
+  const used = new Set<number>(usedHomepageIds || []);
 
   // Pacotes de fralda Pampers tamanhos P, M e G solicitados explicitamente
   const pampersPmg = pickPampersSizes(source, used);
+  pampersPmg.forEach(p => used.add(p.id));
 
   const baseItems: Product[] = [
     // Suplementos campeões (Whey, Creatina, BCAA)
@@ -461,40 +464,59 @@ export function getRandomMaisComprados(allProducts: Product[], count = 16): Prod
 
   // Intercala os pacotes Pampers P, M e G espalhados pela seção (nunca um ao lado do outro)
   const list = scatterItems(baseItems, pampersPmg, 1, 4);
-  return separateDiapers(list).slice(0, count);
+  const result = deduplicateProducts(separateDiapers(list)).slice(0, count);
+  result.forEach(p => usedHomepageIds?.add(p.id));
+  return result;
 }
 
 /**
  * 2. Black do Dia Com até 70%: Ofertas com desconto da lista Ultra Brasil
- * (Inclui as ofertas de Pampers Confort Sec M e G com desconto de -10%, espalhadas entre os itens)
+ * (Itens únicos com desconto real, sem repetir ofertas já exibidas em outras seções)
  */
-export function getRandomBlackDoDia(allProducts: Product[], count = 14): Product[] {
+export function getRandomBlackDoDia(allProducts: Product[], count = 14, usedHomepageIds?: Set<number>): Product[] {
   const source = (allProducts && allProducts.length ? allProducts : allAvailableProducts).filter(isAllowedOnHomepage);
-  const discounted = source.filter(p => (p.discount && p.discount > 0) || (p.oldPrice && p.oldPrice > p.price));
+  const used = new Set<number>(usedHomepageIds || []);
+  const discounted = source.filter(p => !used.has(p.id) && ((p.discount && p.discount > 0) || (p.oldPrice && p.oldPrice > p.price)));
 
-  // Ofertas com desconto de fraldas Pampers Confort Sec (-10% M 70un e G 98un)
+  // Ofertas com desconto de fraldas Pampers Confort Sec ainda não utilizadas
   const pampersDiscounted = discounted.filter(p => {
     const n = (p.name || '').toLowerCase();
     return n.includes('pampers') && n.includes('confort sec');
-  });
+  }).slice(0, 1);
+  pampersDiscounted.forEach(p => used.add(p.id));
 
-  const otherDiscounted = shuffleArray(discounted.filter(p => !isSizedDiaperProduct(p)));
+  const otherDiscounted = shuffleArray(discounted.filter(p => !used.has(p.id) && !isSizedDiaperProduct(p)));
   const baseItems = otherDiscounted.slice(0, Math.max(0, count - pampersDiscounted.length));
+  baseItems.forEach(p => used.add(p.id));
+
+  // Completa se necessário com itens com desconto disponíveis no catálogo
+  if (baseItems.length + pampersDiscounted.length < count) {
+    const fallbackDiscounted = shuffleArray(source.filter(p => !used.has(p.id) && !isSizedDiaperProduct(p)));
+    for (const p of fallbackDiscounted) {
+      if (baseItems.length + pampersDiscounted.length >= count) break;
+      baseItems.push(p);
+      used.add(p.id);
+    }
+  }
 
   // Espalha as ofertas de fraldas Pampers entre os demais produtos com desconto
   const list = scatterItems(baseItems, pampersDiscounted, 2, 4);
-  return separateDiapers(list).slice(0, count);
+  const result = deduplicateProducts(separateDiapers(list)).slice(0, count);
+  result.forEach(p => usedHomepageIds?.add(p.id));
+  return result;
 }
 
 /**
- * 3. Destaques da Semana: Fraldas Pampers P, M e G espalhadas, Saúde, Tratamento Capilar e Skincare
+ * 3. Destaques da Semana: Saúde, Tratamento Capilar, Dermocosméticos e Skincare sem duplicidade
  */
-export function getRandomDestaquesSemana(allProducts: Product[], count = 14): Product[] {
+export function getRandomDestaquesSemana(allProducts: Product[], count = 14, usedHomepageIds?: Set<number>): Product[] {
   const source = allProducts && allProducts.length ? allProducts.filter(isAllowedOnHomepage) : allAvailableProducts.filter(isAllowedOnHomepage);
-  const used = new Set<number>();
+  const used = new Set<number>(usedHomepageIds || []);
 
-  // Pacotes de fralda Pampers tamanhos P, M e G solicitados explicitamente
-  const pampersPmg = pickPampersSizes(source, used);
+  // Pacotes de fralda Pampers tamanhos P, M e G (apenas se houver variantes ainda não usadas na home)
+  const availableDiapers = source.filter(p => !used.has(p.id) && isAllowedOnHomepage(p) && isSizedDiaperProduct(p));
+  const pampersPmg = pickPampersSizes(availableDiapers, used);
+  pampersPmg.forEach(p => used.add(p.id));
 
   const baseItems: Product[] = [
     // Saúde das articulações e bem-estar (Colaten, Colflex, Cartliv, Exímia)
@@ -514,17 +536,19 @@ export function getRandomDestaquesSemana(allProducts: Product[], count = 14): Pr
     used.add(p.id);
   }
 
-  // Intercala os pacotes Pampers P, M e G espalhados pela seção (ordem alternada, nunca lado a lado)
+  // Intercala os pacotes Pampers P, M e G espalhados pela seção
   const list = scatterItems(baseItems, shuffleArray(pampersPmg), 2, 3);
-  return separateDiapers(list).slice(0, count);
+  const result = deduplicateProducts(separateDiapers(list)).slice(0, count);
+  result.forEach(p => usedHomepageIds?.add(p.id));
+  return result;
 }
 
 /**
- * 4. Marcas Favoritas: Marcas consagradas presentes na lista Ultra Brasil
- * (Pampers, Huggies, MamyPoko, CeraVe, Bioderma, Avène, Max Titanium, Integralmedica, Colgate, Sensodyne, Wella, etc.)
+ * 4. Marcas Favoritas: Marcas consagradas presentes na lista Ultra Brasil (100% exclusivas nesta página)
  */
-export function getRandomMarcasFavoritas(allProducts: Product[], count = 14): Product[] {
+export function getRandomMarcasFavoritas(allProducts: Product[], count = 14, usedHomepageIds?: Set<number>): Product[] {
   const source = (allProducts && allProducts.length ? allProducts : allAvailableProducts).filter(isAllowedOnHomepage);
+  const used = new Set<number>(usedHomepageIds || []);
   const topBrands = [
     'pampers', 'huggies', 'mamypoko', 'cerave', 'bioderma', 'avène', 'avene',
     'max titanium', 'integralmedica', 'colgate', 'sensodyne', 'wella', 'vichy',
@@ -532,33 +556,49 @@ export function getRandomMarcasFavoritas(allProducts: Product[], count = 14): Pr
   ];
 
   const brandMatches = source.filter(p => {
+    if (used.has(p.id)) return false;
     const b = (p.brand || '').toLowerCase();
     const n = (p.name || '').toLowerCase();
     return topBrands.some(tb => b.includes(tb) || n.includes(tb));
   });
 
   const shuffled = separateDiapers(shuffleArray(brandMatches));
-  if (shuffled.length >= count) return shuffled.slice(0, count);
-
-  return separateDiapers(shuffleArray(source)).slice(0, count);
+  let result: Product[] = [];
+  if (shuffled.length >= count) {
+    result = shuffled.slice(0, count);
+  } else {
+    const fallback = source.filter(p => !used.has(p.id));
+    result = separateDiapers(shuffleArray([...shuffled, ...fallback])).slice(0, count);
+  }
+  const deduplicated = deduplicateProducts(result);
+  deduplicated.forEach(p => usedHomepageIds?.add(p.id));
+  return deduplicated;
 }
 
 /**
- * 5. Beleza Asiática / Maquiagem & Skincare Premium da lista Ultra Brasil
- * (Bases, Batons, Paletas e Skincare de Alta Tecnologia: Rare Beauty, Fenty Beauty, Dior, YSL, Huda Beauty, Too Faced, Benefit, Nars, Shiseido, etc.)
+ * 5. Beleza Asiática / Maquiagem & Skincare Premium da lista Ultra Brasil (exclusivos)
  */
-export function getRandomBelezaAsiatica(allProducts: Product[], asianBeautyList: Product[], count = 9): Product[] {
+export function getRandomBelezaAsiatica(allProducts: Product[], asianBeautyList: Product[], count = 9, usedHomepageIds?: Set<number>): Product[] {
   const source = (allProducts && allProducts.length ? allProducts : allAvailableProducts).filter(isAllowedOnHomepage);
+  const used = new Set<number>(usedHomepageIds || []);
   const beautyItems = source.filter(p => {
+    if (used.has(p.id)) return false;
     const c = (p.category || '').toLowerCase();
     const n = (p.name || '').toLowerCase();
     return c.includes('maquiag') || c.includes('beleza') || n.includes('base') || n.includes('blush') || n.includes('delineador') || n.includes('batom') || n.includes('bronzer') || n.includes('máscara') || n.includes('shiseido');
   });
 
   const shuffled = shuffleArray(beautyItems);
-  if (shuffled.length >= count) return shuffled.slice(0, count);
-
-  return shuffleArray(source).slice(0, count);
+  let result: Product[] = [];
+  if (shuffled.length >= count) {
+    result = shuffled.slice(0, count);
+  } else {
+    const fallback = source.filter(p => !used.has(p.id));
+    result = shuffleArray([...shuffled, ...fallback]).slice(0, count);
+  }
+  const deduplicated = deduplicateProducts(result);
+  deduplicated.forEach(p => usedHomepageIds?.add(p.id));
+  return deduplicated;
 }
 
 export interface HomepageRotatingData {
@@ -571,17 +611,28 @@ export interface HomepageRotatingData {
 }
 
 /**
- * Gera um conjunto exclusivo de produtos da lista Ultra Brasil para todas as seções
- * da página inicial, alternando dinamicamente entre eles com fotos 100% autênticas
- * e validação estrita de fraldas (somente tamanhos M e G).
+ * Gera um conjunto exclusivo e sem produtos duplicados para todas as seções
+ * da página inicial. Mantém um registro global `usedHomepageIds` para que nenhum
+ * produto apareça em mais de um carrossel na mesma página.
  */
 export function generateHomepageRotatingData(allProducts: Product[], asianBeautyList: Product[]): HomepageRotatingData {
+  const usedHomepageIds = new Set<number>();
+
+  // Exclui produtos que já possuem carrossel exclusivo dedicado (Perfumaria Importada)
+  novosProdutosCatalogo.forEach(p => usedHomepageIds.add(p.id));
+
+  const maisComprados = getRandomMaisComprados(allProducts, 16, usedHomepageIds);
+  const blackDoDia = getRandomBlackDoDia(allProducts, 14, usedHomepageIds);
+  const destaquesSemana = getRandomDestaquesSemana(allProducts, 14, usedHomepageIds);
+  const marcasFavoritas = getRandomMarcasFavoritas(allProducts, 14, usedHomepageIds);
+  const belezaAsiatica = getRandomBelezaAsiatica(allProducts, asianBeautyList, 9, usedHomepageIds);
+
   return {
-    maisComprados: getRandomMaisComprados(allProducts, 16).filter(isAllowedOnHomepage),
-    blackDoDia: getRandomBlackDoDia(allProducts, 14).filter(isAllowedOnHomepage),
-    destaquesSemana: getRandomDestaquesSemana(allProducts, 14).filter(isAllowedOnHomepage),
-    marcasFavoritas: getRandomMarcasFavoritas(allProducts, 14).filter(isAllowedOnHomepage),
-    belezaAsiatica: getRandomBelezaAsiatica(allProducts, asianBeautyList, 9).filter(isAllowedOnHomepage),
+    maisComprados,
+    blackDoDia,
+    destaquesSemana,
+    marcasFavoritas,
+    belezaAsiatica,
     generatedAt: new Date(),
   };
 }

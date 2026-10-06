@@ -1,7 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useMemo } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import ProductCard from '../ProductCard/ProductCard';
-import { Product } from '../../data/products';
+import { Product, deduplicateProducts } from '../../data/products';
 import { useCart } from '../../context/CartContext';
 import './ProductCarousel.css';
 
@@ -16,6 +16,8 @@ const ProductCarousel: React.FC<Props> = ({ title, products, id }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
+
+  const uniqueProducts = useMemo(() => deduplicateProducts(products || []), [products]);
 
   const CARD_WIDTH = 207; // 195px card + 12px gap
 
@@ -69,7 +71,7 @@ const ProductCarousel: React.FC<Props> = ({ title, products, id }) => {
         ref={trackRef}
         onScroll={updateArrows}
       >
-        {products.map(p => (
+        {uniqueProducts.map(p => (
           <ProductCard key={p.id} product={p} />
         ))}
 

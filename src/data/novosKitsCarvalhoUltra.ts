@@ -1,9 +1,9 @@
 import { Product } from './products';
 
 /**
- * Catálogo de novos kits e produtos com fotos 100% autênticas
- * e preços com 5% de desconto especial aplicados.
- * Total de itens: 160
+ * Catálogo de novos kits e produtos com fotos 100% autênticas,
+ * preços com desconto especial e SKUs únicos rigorosamente deduplicados.
+ * Total de itens: 150
  */
 export const novosKitsCarvalhoUltra: Product[] = [
   {
@@ -407,31 +407,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "500ml"
   },
   {
-    "id": 60017,
-    "name": "Kit Barba Goot - Óleo + Balm + Shampoo Barba Embaixador 200ml",
-    "brand": "Goot",
-    "category": "Homem",
-    "subcategory": "Barba e Cabelo",
-    "price": 83.5,
-    "oldPrice": 87.9,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 277,
-    "image": "/products/kit_60017.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Barba Goot - Óleo + Balm + Shampoo Barba Embaixador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60017",
-    "size": "200ml"
-  },
-  {
     "id": 60018,
     "name": "Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g",
     "brand": "Eudora Siàge",
@@ -480,31 +455,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60019",
     "size": "250ml"
-  },
-  {
-    "id": 60020,
-    "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 185.68,
-    "oldPrice": 195.45,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 280,
-    "image": "/products/kit_60020.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60020",
-    "size": "Kit"
   },
   {
     "id": 60021,
@@ -579,31 +529,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Entrega rápida e segura garantida pela Droga Raia."
     ],
     "productCode": "60023",
-    "size": "200ml"
-  },
-  {
-    "id": 60024,
-    "name": "Kit Barba Goot Wood - Óleo + Balm + Shampoo Barba Embaixador 200ml",
-    "brand": "Goot",
-    "category": "Homem",
-    "subcategory": "Barba e Cabelo",
-    "price": 79.7,
-    "oldPrice": 83.9,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 284,
-    "image": "/products/kit_60024.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Barba Goot Wood - Óleo + Balm + Shampoo Barba Embaixador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60024",
     "size": "200ml"
   },
   {
@@ -732,31 +657,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "350ml"
   },
   {
-    "id": 60030,
-    "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
-    "brand": "Dove",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 28.49,
-    "oldPrice": 29.99,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 290,
-    "image": "/products/kit_60030.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60030",
-    "size": "350ml"
-  },
-  {
     "id": 60031,
     "name": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml",
     "brand": "Eudora Siàge",
@@ -804,56 +704,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Entrega rápida e segura garantida pela Droga Raia."
     ],
     "productCode": "60032",
-    "size": "250ml"
-  },
-  {
-    "id": 60033,
-    "name": "Kit Elseve Reparação Total 5 Shampoo 375ml + Condicionador 170ml",
-    "brand": "L'Oréal Paris",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 19.82,
-    "oldPrice": 20.86,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 293,
-    "image": "/products/kit_60033.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Elseve Reparação Total 5 Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60033",
-    "size": "375ml"
-  },
-  {
-    "id": 60034,
-    "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
-    "brand": "Eudora Siàge",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 82.64,
-    "oldPrice": 86.99,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 294,
-    "image": "/products/kit_60034.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60034",
     "size": "250ml"
   },
   {
@@ -955,31 +805,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60038",
     "size": "350ml"
-  },
-  {
-    "id": 60039,
-    "name": "Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml",
-    "brand": "Dolce Pet",
-    "category": "Pet",
-    "subcategory": "Higiene Pet",
-    "price": 154.87,
-    "oldPrice": 163.02,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 299,
-    "image": "/products/kit_60039.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60039",
-    "size": "500 Ml"
   },
   {
     "id": 60040,
@@ -1105,31 +930,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60044",
     "size": "1kg"
-  },
-  {
-    "id": 60045,
-    "name": "Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g",
-    "brand": "Eudora Siàge",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 56.75,
-    "oldPrice": 59.74,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 115,
-    "image": "/products/kit_60045.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60045",
-    "size": "300ml"
   },
   {
     "id": 60046,
@@ -1258,7 +1058,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   },
   {
     "id": 60051,
-    "name": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)",
+    "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
     "brand": "Wella Professionals",
     "category": "Cabelos",
     "subcategory": "Kits de Tratamento",
@@ -1272,7 +1072,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
@@ -1982,31 +1782,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "1kg"
   },
   {
-    "id": 60080,
-    "name": "Kit Braé Divine Duo (2 Produtos)",
-    "brand": "Braé",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 47.34,
-    "oldPrice": 49.83,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 150,
-    "image": "/products/kit_60080.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Braé Divine Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60080",
-    "size": "2 Produtos"
-  },
-  {
     "id": 60081,
     "name": "Kit TRUSS Color Duo (2 Produtos)",
     "brand": "TRUSS",
@@ -2582,56 +2357,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "Kit"
   },
   {
-    "id": 60104,
-    "name": "Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve)",
-    "brand": "Amazonleve",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 72.11,
-    "oldPrice": 75.9,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 174,
-    "image": "/products/kit_60104.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60104",
-    "size": "20Ml"
-  },
-  {
-    "id": 60105,
-    "name": "Kit Kérastase Genesis Duo (2 Produtos)",
-    "brand": "Kérastase",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 221.93,
-    "oldPrice": 233.61,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 175,
-    "image": "/products/kit_60105.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Kérastase Genesis Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60105",
-    "size": "2 Produtos"
-  },
-  {
     "id": 60106,
     "name": "Kit Redken All Soft Heavy (3 Produtos)",
     "brand": "Redken",
@@ -2755,31 +2480,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60110",
     "size": "100Ml"
-  },
-  {
-    "id": 60111,
-    "name": "Kit Kérastase Genesis Trio (3 Produtos)",
-    "brand": "Kérastase",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 381.83,
-    "oldPrice": 401.93,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 181,
-    "image": "/products/kit_60111.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Kérastase Genesis Trio (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60111",
-    "size": "3 Produtos"
   },
   {
     "id": 60112,
@@ -3107,56 +2807,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "6kg"
   },
   {
-    "id": 60125,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 180.49,
-    "oldPrice": 189.99,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 195,
-    "image": "/products/kit_60125.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60125",
-    "size": "1000ml"
-  },
-  {
-    "id": 60126,
-    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
-    "brand": "Imecap Hair",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 75.14,
-    "oldPrice": 79.1,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 196,
-    "image": "/products/kit_60126.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60126",
-    "size": "Kit"
-  },
-  {
     "id": 60127,
     "name": "Kit 2 Ora-Pro-Nóbis + Cúrcuma + Gengibre 240Cáps 500mg Status Verde",
     "brand": "Status Verde",
@@ -3205,131 +2855,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60128",
     "size": "3 Produtos"
-  },
-  {
-    "id": 60129,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 256.49,
-    "oldPrice": 269.99,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 199,
-    "image": "/products/kit_60129.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60129",
-    "size": "3 Produtos"
-  },
-  {
-    "id": 60130,
-    "name": "Kit Loreal Absolut Repair Shampoo 750ml e Condicionador 750ml",
-    "brand": "L'Oréal Paris",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 256.49,
-    "oldPrice": 269.99,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 200,
-    "image": "/products/kit_60130.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Loreal Absolut Repair Shampoo 750ml e Condicionador 750ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60130",
-    "size": "750ml"
-  },
-  {
-    "id": 60131,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 162.44,
-    "oldPrice": 170.99,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 201,
-    "image": "/products/kit_60131.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60131",
-    "size": "1000ml"
-  },
-  {
-    "id": 60132,
-    "name": "Kit Sabonete em Barra Nivea Creme Care 90g com 6 unidades",
-    "brand": "Nivea",
-    "category": "Higiene Pessoal",
-    "subcategory": "Cuidados Pessoais",
-    "price": 17.09,
-    "oldPrice": 17.99,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 202,
-    "image": "/products/kit_60132.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Sabonete em Barra Nivea Creme Care 90g com 6 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60132",
-    "size": "90g"
-  },
-  {
-    "id": 60133,
-    "name": "3PC MINI KITS SOFT & WARM NUDES 3PC KIT",
-    "brand": "Droga Raia",
-    "category": "Beleza",
-    "subcategory": "Maquiagem",
-    "price": 107.11,
-    "oldPrice": 112.75,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 203,
-    "image": "/products/kit_60133.jpg",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "3PC MINI KITS SOFT & WARM NUDES 3PC KIT. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60133",
-    "size": "Kit"
   },
   {
     "id": 60134,
@@ -3430,31 +2955,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60137",
     "size": "1UNID"
-  },
-  {
-    "id": 60138,
-    "name": "3PC MINI KITS NUDE METALLICS EYE KIT",
-    "brand": "Droga Raia",
-    "category": "Beleza e Perfumaria",
-    "subcategory": "Kits Especiais",
-    "price": 107.11,
-    "oldPrice": 112.75,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 208,
-    "image": "/products/kit_60138.jpg",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "3PC MINI KITS NUDE METALLICS EYE KIT. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60138",
-    "size": "Kit"
   },
   {
     "id": 60139,
@@ -3757,81 +3257,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "740g"
   },
   {
-    "id": 60151,
-    "name": "Kit 2x Hipercalórico 6 Six Bulking Baunilha 6kg – Bodybuilders",
-    "brand": "Bodybuilders",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 157.83,
-    "oldPrice": 166.14,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 221,
-    "image": "/products/kit_60151.jpeg",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit 2x Hipercalórico 6 Six Bulking Baunilha 6kg – Bodybuilders. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60151",
-    "size": "6kg"
-  },
-  {
-    "id": 60152,
-    "name": "Kit 2 Ora-Pro-Nóbis + Cúrcuma + Gengibre 240Cáps 500mg Status Verde",
-    "brand": "Status Verde",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 72.98,
-    "oldPrice": 76.82,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 222,
-    "image": "/products/kit_60152.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit 2 Ora-Pro-Nóbis + Cúrcuma + Gengibre 240Cáps 500mg Status Verde. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60152",
-    "size": "Kit"
-  },
-  {
-    "id": 60153,
-    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
-    "brand": "Imecap Hair",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 75.14,
-    "oldPrice": 79.1,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 223,
-    "image": "/products/kit_60153.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60153",
-    "size": "Kit"
-  },
-  {
     "id": 60154,
     "name": "Nutren a-z Multi Vitamínico E Mineral 60 Caps. Gel – Nestlé",
     "brand": "Nutren",
@@ -3980,30 +3405,5 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60159",
     "size": "Kit"
-  },
-  {
-    "id": 60160,
-    "name": "Nutren a-z Multi Vitamínico E Mineral 60 Caps. Gel – Nestlé",
-    "brand": "Nutren",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 43.57,
-    "oldPrice": 45.86,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 230,
-    "image": "/products/kit_60160.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Nutren a-z Multi Vitamínico E Mineral 60 Caps. Gel – Nestlé. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60160",
-    "size": "60 Caps"
   }
 ];

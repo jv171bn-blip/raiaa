@@ -49,40 +49,12 @@ import {
   getPersonalizedRecommendations,
   deduplicateProducts,
 } from './data/products';
-import { montaProducts } from './data/montaOffers';
-import { todosProdutosExpandidos } from './data/catalogExpanded';
+import { allProducts } from './data/allProducts';
 import { novosProdutosCatalogo } from './data/novosProdutosCatalogo';
-import { ultraBrasilProducts } from './data/ultraBrasilProducts';
-import { novosKitsCarvalhoUltra } from './data/novosKitsCarvalhoUltra';
 import { generateHomepageRotatingData, HomepageRotatingData, isAllowedOnHomepage } from './data/trendingProducts';
 
 import { X } from 'lucide-react';
 import './App.css';
-
-
-const allProducts: Product[] = deduplicateProducts([
-  ...ultraBrasilProducts,
-  ...novosKitsCarvalhoUltra,
-  ...mostBought,
-  ...blackDayProducts,
-  ...weekHighlights,
-  ...favoriteBrands,
-  ...fraldasProducts,
-  ...remediosProducts,
-  ...dermocosmeticosProducts,
-  ...vitaminasSuplementosProducts,
-  ...higieneBucalPersonalProducts,
-  ...asianBeauty,
-  ...montaProducts,
-  ...quemComprouTambem,
-  ...similaresVocePode,
-  ...hairCareProducts,
-  ...suggestionProducts,
-  ...todosProdutosExpandidos,
-  ...novosProdutosCatalogo,
-  viterganZincoProduct,
-  flexoneProduct,
-]);
 
 const editorialCards = [
   {
@@ -127,8 +99,16 @@ const MainContent: React.FC = () => {
 
   const personalizedBrands = useMemo(() => {
     const recs = getPersonalizedRecommendations(viewedProducts, allProducts, rotatingData.marcasFavoritas);
-    return recs.filter(isAllowedOnHomepage);
-  }, [viewedProducts, rotatingData.marcasFavoritas]);
+    const existingIds = new Set<number>([
+      ...rotatingData.maisComprados.map(p => p.id),
+      ...rotatingData.blackDoDia.map(p => p.id),
+      ...rotatingData.destaquesSemana.map(p => p.id),
+      ...rotatingData.belezaAsiatica.map(p => p.id),
+      ...novosProdutosCatalogo.map(p => p.id),
+    ]);
+    const filtered = recs.filter(p => isAllowedOnHomepage(p) && !existingIds.has(p.id));
+    return deduplicateProducts(filtered.length >= 8 ? filtered : rotatingData.marcasFavoritas);
+  }, [viewedProducts, rotatingData]);
 
   return (
     <main className="main">

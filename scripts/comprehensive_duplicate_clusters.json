@@ -1,0 +1,2370 @@
+[
+  {
+    "clusterId": 1,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50002,
+        "name": "3 Caixas Colaten Artro – Suplemento Para Articulações – 30 Comprimidos",
+        "brand": "Colaten",
+        "price": 236.28,
+        "image": "/products/ultra_26137.webp",
+        "reviews": 229
+      },
+      {
+        "id": 50123,
+        "name": "Colaten artro 30 comprimidos",
+        "brand": "Colaten",
+        "price": 156.09,
+        "image": "/products/ultra_25894.png",
+        "reviews": 278
+      }
+    ]
+  },
+  {
+    "clusterId": 2,
+    "totalItems": 6,
+    "items": [
+      {
+        "id": 50007,
+        "name": "ABH GLIDR SHADOW STICK – BLUE ICE",
+        "brand": "Genérico",
+        "price": 131.45,
+        "image": "/products/ultra_26575.jpg",
+        "reviews": 195
+      },
+      {
+        "id": 50008,
+        "name": "ABH GLIDR SHADOW STICK- AMETHYST",
+        "brand": "Genérico",
+        "price": 131.45,
+        "image": "/products/ultra_26512.jpg",
+        "reviews": 224
+      },
+      {
+        "id": 50011,
+        "name": "ABH GLIDR SHADOW STICK- MYSTIC",
+        "brand": "Genérico",
+        "price": 131.45,
+        "image": "/products/ultra_26523.jpg",
+        "reviews": 191
+      },
+      {
+        "id": 50012,
+        "name": "ABH GLIDR SHADOW STICK- PETAL",
+        "brand": "Genérico",
+        "price": 131.45,
+        "image": "/products/ultra_26559.jpg",
+        "reviews": 143
+      },
+      {
+        "id": 50009,
+        "name": "ABH GLIDR SHADOW STICK- COCOA DRIP",
+        "brand": "Genérico",
+        "price": 131.45,
+        "image": "/products/ultra_26528.jpg",
+        "reviews": 276
+      },
+      {
+        "id": 50010,
+        "name": "ABH GLIDR SHADOW STICK- HOT SAND",
+        "brand": "Genérico",
+        "price": 131.45,
+        "image": "/products/ultra_26544.jpg",
+        "reviews": 108
+      }
+    ]
+  },
+  {
+    "clusterId": 3,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50015,
+        "name": "Água Micelar Bioderma Sébium H2O 250ml",
+        "brand": "Bioderma",
+        "price": 63.99,
+        "image": "/products/ultra_29604.png",
+        "reviews": 208
+      },
+      {
+        "id": 50016,
+        "name": "Água Micelar Clareadora Bioderma Pigmentbio H2O 250ml",
+        "brand": "Bioderma",
+        "price": 64.79,
+        "image": "/products/ultra_29482.png",
+        "reviews": 114
+      }
+    ]
+  },
+  {
+    "clusterId": 4,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 50030,
+        "name": "BADGAL M�SCARA DE C�LIOS BLUE",
+        "brand": "Genérico",
+        "price": 130.35,
+        "image": "/products/ultra_27018.jpg",
+        "reviews": 246
+      },
+      {
+        "id": 50031,
+        "name": "BADGAL M�SCARA DE C�LIOS BROWN",
+        "brand": "Genérico",
+        "price": 130.35,
+        "image": "/products/ultra_26830.jpg",
+        "reviews": 130
+      },
+      {
+        "id": 50032,
+        "name": "BADGAL M�SCARA DE C�LIOS PLUM",
+        "brand": "Genérico",
+        "price": 130.35,
+        "image": "/products/ultra_26958.jpg",
+        "reviews": 106
+      }
+    ]
+  },
+  {
+    "clusterId": 5,
+    "totalItems": 8,
+    "items": [
+      {
+        "id": 50136,
+        "name": "Corretivo Colorido Sephora Collection Best Skin Ever 8HR",
+        "brand": "Sephora Collection",
+        "price": 57.75,
+        "image": "/products/ultra_28071.jpg",
+        "reviews": 107
+      },
+      {
+        "id": 50146,
+        "name": "CORRETIVO LÍQUIDO SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_27822.jpg",
+        "reviews": 274
+      },
+      {
+        "id": 50034,
+        "name": "Base em Pó Sephora Collection Best Skin Ever Matte",
+        "brand": "Sephora Collection",
+        "price": 67.1,
+        "image": "/products/ultra_28093.jpg",
+        "reviews": 261
+      },
+      {
+        "id": 50035,
+        "name": "BASE EM STICK SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "image": "/products/ultra_27954.jpg",
+        "reviews": 98
+      },
+      {
+        "id": 50046,
+        "name": "BASE LÍQUIDA SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "image": "/products/ultra_28096.jpg",
+        "reviews": 92
+      },
+      {
+        "id": 50052,
+        "name": "Base Sephora Collection Best Skin Ever Glow",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "image": "/products/ultra_28094.jpg",
+        "reviews": 278
+      },
+      {
+        "id": 50148,
+        "name": "Corretivo Sephora Collection Best Skin Ever Glow Concealer",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_28137.jpg",
+        "reviews": 129
+      },
+      {
+        "id": 50149,
+        "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_27710.jpg",
+        "reviews": 130
+      }
+    ]
+  },
+  {
+    "clusterId": 6,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50038,
+        "name": "Base Kylie Cosmetics Power Plush Longwear",
+        "brand": "Kylie Cosmetics",
+        "price": 160.05,
+        "image": "/products/ultra_28041.jpg",
+        "reviews": 257
+      },
+      {
+        "id": 50144,
+        "name": "Corretivo Kylie Cosmetics Power Plush Longwear",
+        "brand": "Kylie Cosmetics",
+        "price": 124.3,
+        "image": "/products/ultra_28150.jpg",
+        "reviews": 130
+      }
+    ]
+  },
+  {
+    "clusterId": 7,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50039,
+        "name": "Base Laura Mercier Real Flawless Weightless Perfecting Foundation",
+        "brand": "Laura Mercier",
+        "price": 189.75,
+        "image": "/products/ultra_28001.jpg",
+        "reviews": 237
+      },
+      {
+        "id": 50145,
+        "name": "Corretivo Laura Mercier Real Flawless Weightless Perfecting",
+        "brand": "Laura Mercier",
+        "price": 118.25,
+        "image": "/products/ultra_28002.jpg",
+        "reviews": 254
+      }
+    ]
+  },
+  {
+    "clusterId": 8,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50040,
+        "name": "BASE LÍQUIDA DIOR FOREVER SKIN GLOW",
+        "brand": "Dior",
+        "price": 270.6,
+        "image": "/products/ultra_27677.jpg",
+        "reviews": 229
+      },
+      {
+        "id": 50041,
+        "name": "BASE LIQUIDA DIOR FOREVER SKIN WEAR",
+        "brand": "Dior",
+        "price": 270.6,
+        "image": "/products/ultra_27746.jpg",
+        "reviews": 82
+      }
+    ]
+  },
+  {
+    "clusterId": 9,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50050,
+        "name": "Base Nars Light Reflecting",
+        "brand": "Nars",
+        "price": 237.05,
+        "image": "/products/ultra_27866.jpg",
+        "reviews": 142
+      },
+      {
+        "id": 50142,
+        "name": "Corretivo Iluminador de Olhos Nars Light Reflecting",
+        "brand": "Nars",
+        "price": 166.1,
+        "image": "/products/ultra_26605.jpg",
+        "reviews": 265
+      }
+    ]
+  },
+  {
+    "clusterId": 10,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50060,
+        "name": "BENEFIT    MINI THEY’RE  MASC",
+        "brand": "Benefit",
+        "price": 70.95,
+        "image": "/products/ultra_27184.jpg",
+        "reviews": 208
+      },
+      {
+        "id": 50062,
+        "name": "BENEFIT    THEY’RE REAL  MASC 1UNID",
+        "brand": "Benefit",
+        "price": 130.35,
+        "image": "/products/ultra_27064.jpg",
+        "reviews": 148
+      }
+    ]
+  },
+  {
+    "clusterId": 11,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50074,
+        "name": "Blush em pó Dior Rosy Glow",
+        "brand": "Dior",
+        "price": 211.2,
+        "image": "/products/ultra_27911.jpg",
+        "reviews": 247
+      },
+      {
+        "id": 50091,
+        "name": "Blush Stick Dior Rosy Glow",
+        "brand": "Dior",
+        "price": 225.5,
+        "image": "/products/ultra_27941.jpg",
+        "reviews": 97
+      }
+    ]
+  },
+  {
+    "clusterId": 12,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50076,
+        "name": "Blush em pó YSL Make Me Blush",
+        "brand": "YSL",
+        "price": 296.45,
+        "image": "/products/ultra_27770.jpg",
+        "reviews": 270
+      },
+      {
+        "id": 50086,
+        "name": "Blush Líquido YSL Make Me Blush",
+        "brand": "YSL",
+        "price": 219.45,
+        "image": "/products/ultra_28110.jpg",
+        "reviews": 110
+      }
+    ]
+  },
+  {
+    "clusterId": 13,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50079,
+        "name": "Blush Iluminador em Pó Rare Beauty Soft Pinch",
+        "brand": "Rare Beauty",
+        "price": 109.45,
+        "image": "/products/ultra_27466.jpg",
+        "reviews": 162
+      },
+      {
+        "id": 50089,
+        "name": "Blush Rare Beauty Soft Pinch Matte Bouncy",
+        "brand": "Rare Beauty",
+        "price": 120.45,
+        "image": "/products/ultra_27636.jpg",
+        "reviews": 192
+      }
+    ]
+  },
+  {
+    "clusterId": 14,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50087,
+        "name": "BLUSH MULTIUSO SEPHORA COLLECTION CHEEK & LIP TINT",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_27852.jpg",
+        "reviews": 124
+      },
+      {
+        "id": 50090,
+        "name": "BLUSH SEPHORA COLLECTION MULTIUSE",
+        "brand": "Sephora Collection",
+        "price": 57.75,
+        "image": "/products/ultra_27689.jpg",
+        "reviews": 213
+      }
+    ]
+  },
+  {
+    "clusterId": 15,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50096,
+        "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+        "brand": "Too Faced",
+        "price": 162.8,
+        "image": "/products/ultra_28011.jpg",
+        "reviews": 187
+      },
+      {
+        "id": 50099,
+        "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
+        "brand": "Too Faced",
+        "price": 175.45,
+        "image": "/products/ultra_27884.jpg",
+        "reviews": 228
+      }
+    ]
+  },
+  {
+    "clusterId": 16,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50100,
+        "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas",
+        "brand": "New Millen",
+        "price": 70.96,
+        "image": "/products/ultra_25916.webp",
+        "reviews": 212
+      },
+      {
+        "id": 50101,
+        "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Tangerina)",
+        "brand": "New Millen",
+        "price": 70.96,
+        "image": "/products/ultra_25917.webp",
+        "reviews": 229
+      }
+    ]
+  },
+  {
+    "clusterId": 17,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 11013,
+        "name": "Loção Hidratante Corporal CeraVe Pele Seca a Extra Seca Hidratação Prolongada 473ml",
+        "brand": "CeraVe",
+        "price": 99.9,
+        "oldPrice": 133.9,
+        "image": "/products/cerave_locao_473ml.jpg",
+        "reviews": 597
+      },
+      {
+        "id": 50110,
+        "name": "CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca",
+        "brand": "CeraVe",
+        "price": 89.9,
+        "image": "/products/ultra_25216.jpg",
+        "reviews": 192
+      },
+      {
+        "id": 1305,
+        "name": "Loção Hidratante Corporal CeraVe 473ml",
+        "brand": "CeraVe",
+        "price": 89.9,
+        "oldPrice": 109.9,
+        "image": "/products/cerave_locao_473ml.jpg",
+        "reviews": 320
+      }
+    ]
+  },
+  {
+    "clusterId": 18,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50111,
+        "name": "Chapinha Lizze Profissional 480 Extreme 110v Cinza",
+        "brand": "Lizze",
+        "price": 359.99,
+        "oldPrice": 399.99,
+        "image": "/products/ultra_28271.png",
+        "reviews": 207
+      },
+      {
+        "id": 50112,
+        "name": "Chapinha Lizze Profissional 480 Extreme 220v Cinza",
+        "brand": "Lizze",
+        "price": 359.99,
+        "oldPrice": 399.99,
+        "image": "/products/ultra_28271.png",
+        "reviews": 224
+      }
+    ]
+  },
+  {
+    "clusterId": 19,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50115,
+        "name": "Cílios Postiços That Girl HALF LASH",
+        "brand": "That Girl",
+        "price": 23.26,
+        "image": "/products/ultra_26879.jpg",
+        "reviews": 83
+      },
+      {
+        "id": 50116,
+        "name": "Cilios Postiços That Girl Invisible Lash 3D Light",
+        "brand": "That Girl",
+        "price": 24.2,
+        "image": "/products/ultra_26972.jpg",
+        "reviews": 124
+      }
+    ]
+  },
+  {
+    "clusterId": 20,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50125,
+        "name": "Combo 2x Nutri Whey Protein Para Ganho de Peso Baunilha 900g Pote – Integralmedica",
+        "brand": "Integralmedica",
+        "price": 136.88,
+        "image": "/products/ultra_26133.jpg",
+        "reviews": 161
+      },
+      {
+        "id": 50126,
+        "name": "Combo 2x Suplemento em Pó Nutri whey Protein Para Ganho de Peso Chocolate 900g Pote – Integralmedica",
+        "brand": "Integralmedica",
+        "price": 92.39,
+        "image": "/products/ultra_26136.jpg",
+        "reviews": 212
+      }
+    ]
+  },
+  {
+    "clusterId": 21,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50140,
+        "name": "CORRETIVO HUDA BEAUTY FAUX FILTER",
+        "brand": "Huda Beauty",
+        "price": 143,
+        "image": "/products/ultra_28026.jpg",
+        "reviews": 222
+      },
+      {
+        "id": 50152,
+        "name": "CORRETOR HUDA BEAUTY FAUX FILTER COLOR",
+        "brand": "Huda Beauty",
+        "price": 143,
+        "image": "/products/ultra_28014.jpg",
+        "reviews": 238
+      }
+    ]
+  },
+  {
+    "clusterId": 22,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 50156,
+        "name": "Creatina Monohidratada 250g – 100% Pura Importada – Soldiers Nutrition",
+        "brand": "Soldiers Nutrition",
+        "price": 41.9,
+        "image": "/products/ultra_25783.webp",
+        "reviews": 151
+      },
+      {
+        "id": 50157,
+        "name": "Creatina Monohidratada 600g – 100% Pura Importada – Soldiers Nutrition",
+        "brand": "Soldiers Nutrition",
+        "price": 69.9,
+        "image": "/products/ultra_25784.webp",
+        "reviews": 168
+      },
+      {
+        "id": 50158,
+        "name": "Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition",
+        "brand": "Soldiers Nutrition",
+        "price": 46.59,
+        "image": "/products/ultra_25927.jpg",
+        "reviews": 179
+      }
+    ]
+  },
+  {
+    "clusterId": 23,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50160,
+        "name": "Creatina Monohidratada Pote 300G – Dux Nutrition",
+        "brand": "Dux Nutrition",
+        "price": 53.29,
+        "image": "/products/ultra_25785.webp",
+        "reviews": 185
+      },
+      {
+        "id": 50242,
+        "name": "Dux Nutrition Glutamina 300g",
+        "brand": "Dux Nutrition",
+        "price": 109.49,
+        "image": "/products/ultra_25967.jpg",
+        "reviews": 199
+      }
+    ]
+  },
+  {
+    "clusterId": 24,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50172,
+        "name": "Creme Dental Colgate Total 12 Antitártaro 90g",
+        "brand": "Colgate",
+        "price": 10.19,
+        "image": "/products/ultra_26321.webp",
+        "reviews": 277
+      },
+      {
+        "id": 50173,
+        "name": "Creme Dental Colgate Total Original Mint 90g",
+        "brand": "Colgate",
+        "price": 11.7,
+        "image": "/products/ultra_26289.webp",
+        "reviews": 173
+      }
+    ]
+  },
+  {
+    "clusterId": 25,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50175,
+        "name": "Creme Dental Sensodyne Original 90g",
+        "brand": "Sensodyne",
+        "price": 12.43,
+        "image": "/products/ultra_26301.webp",
+        "reviews": 157
+      },
+      {
+        "id": 2061,
+        "name": "Creme Dental Sensodyne Limpeza Profunda Ação Desensibilizante 90g",
+        "brand": "Sensodyne",
+        "price": 21.9,
+        "oldPrice": 26.9,
+        "image": "/products/sensodyne_repair_protect_100g.jpg",
+        "reviews": 310
+      }
+    ]
+  },
+  {
+    "clusterId": 26,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50189,
+        "name": "Creme Fixador de Dentadura Ultra Corega Max Fixação + Bloqueio Sem Sabor 2 unidades de 70g cada",
+        "brand": "Corega",
+        "price": 64.79,
+        "image": "/products/ultra_29406.png",
+        "reviews": 142
+      },
+      {
+        "id": 50267,
+        "name": "Fixador Corega Ultra em pó 50g",
+        "brand": "Corega",
+        "price": 71.82,
+        "oldPrice": 79.8,
+        "image": "/products/ultra_28587.png",
+        "reviews": 299
+      }
+    ]
+  },
+  {
+    "clusterId": 27,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50191,
+        "name": "Creme Hidratante Bepantol Derma creme 40g",
+        "brand": "Genérico",
+        "price": 35.99,
+        "oldPrice": 39.99,
+        "image": "/products/ultra_28682.png",
+        "reviews": 154
+      },
+      {
+        "id": 50192,
+        "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
+        "brand": "Genérico",
+        "price": 45.58,
+        "image": "/products/ultra_26305.webp",
+        "reviews": 225
+      }
+    ]
+  },
+  {
+    "clusterId": 28,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50209,
+        "name": "Creme Rejuvenescedor Facial Cicatricure Gold Lift Diurno 50g",
+        "brand": "Cicatricure",
+        "price": 56.69,
+        "image": "/products/ultra_29251.png",
+        "reviews": 147
+      },
+      {
+        "id": 50210,
+        "name": "Creme Rejuvenescedor Facial Cicatricure Gold Lift Noturno 50g",
+        "brand": "Cicatricure",
+        "price": 56.69,
+        "image": "/products/ultra_29253.png",
+        "reviews": 181
+      }
+    ]
+  },
+  {
+    "clusterId": 29,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50215,
+        "name": "Delineador 12H Sephora Collection Intense Ink Felt Liner",
+        "brand": "Sephora Collection",
+        "price": 52.25,
+        "image": "/products/ultra_26817.jpg",
+        "reviews": 129
+      },
+      {
+        "id": 50227,
+        "name": "DELINEADOR SEPHORA COLLECTION EYELINER FEUTRE 12H INTENSE INK",
+        "brand": "Sephora Collection",
+        "price": 52.25,
+        "image": "/products/ultra_26699.jpg",
+        "reviews": 103
+      }
+    ]
+  },
+  {
+    "clusterId": 30,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50218,
+        "name": "Delineador Lancôme Idôle Liner Waterproof",
+        "brand": "Lancôme",
+        "price": 160.05,
+        "image": "/products/ultra_26990.jpg",
+        "reviews": 210
+      },
+      {
+        "id": 50219,
+        "name": "Delineador Lancôme Le Stylo Waterproof",
+        "brand": "Lancôme",
+        "price": 195.8,
+        "image": "/products/ultra_26816.jpg",
+        "reviews": 112
+      }
+    ]
+  },
+  {
+    "clusterId": 31,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50231,
+        "name": "Desodorante Antitranspirante Roll-On Vichy Peles Sensíveis ou Depiladas 48h 50ml",
+        "brand": "Vichy",
+        "price": 107.09,
+        "oldPrice": 118.99,
+        "image": "/products/ultra_28586.png",
+        "reviews": 282
+      },
+      {
+        "id": 50233,
+        "name": "Desodorante Vichy Antitranspirante 48h 125ml",
+        "brand": "Vichy",
+        "price": 97.19,
+        "image": "/products/ultra_29581.png",
+        "reviews": 257
+      }
+    ]
+  },
+  {
+    "clusterId": 32,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 50247,
+        "name": "Eximia fortalize 30 comprimidos",
+        "brand": "Eximia",
+        "price": 76.44,
+        "image": "/products/ultra_25746.webp",
+        "reviews": 182
+      },
+      {
+        "id": 50248,
+        "name": "Eximia Fortalize Kera D 30 comprimidos",
+        "brand": "Eximia",
+        "price": 54.97,
+        "image": "/products/ultra_25741.webp",
+        "reviews": 97
+      },
+      {
+        "id": 50251,
+        "name": "Eximia Fortalize S com 30 Comprimidos",
+        "brand": "Eximia",
+        "price": 198.29,
+        "image": "/products/ultra_25743.webp",
+        "reviews": 131
+      }
+    ]
+  },
+  {
+    "clusterId": 33,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50255,
+        "name": "FABULOUS EYES M�SCARA DE C�LIOS",
+        "brand": "Genérico",
+        "price": 147.02,
+        "image": "/products/ultra_26681.jpg",
+        "reviews": 237
+      },
+      {
+        "id": 50256,
+        "name": "FABULOUS EYES M�SCARA DE C�LIOS WATERPF",
+        "brand": "Genérico",
+        "price": 163.35,
+        "image": "/products/ultra_26667.jpg",
+        "reviews": 219
+      }
+    ]
+  },
+  {
+    "clusterId": 34,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50257,
+        "name": "FACE IDOLE BLUSH LIQUIDO 60 9ML",
+        "brand": "Genérico",
+        "price": 149.49,
+        "image": "/products/ultra_27560.jpg",
+        "reviews": 220
+      },
+      {
+        "id": 50258,
+        "name": "FACE IDOLE BLUSH LIQUIDO 70 9ML",
+        "brand": "Genérico",
+        "price": 149.49,
+        "image": "/products/ultra_27494.jpg",
+        "reviews": 198
+      }
+    ]
+  },
+  {
+    "clusterId": 35,
+    "totalItems": 5,
+    "items": [
+      {
+        "id": 50259,
+        "name": "FACE IDOLE LCM IDOLE LQD BLUSH 10",
+        "brand": "Genérico",
+        "price": 166.1,
+        "image": "/products/ultra_27909.jpg",
+        "reviews": 213
+      },
+      {
+        "id": 50260,
+        "name": "FACE IDOLE LCM IDOLE LQD BLUSH 30",
+        "brand": "Genérico",
+        "price": 149.49,
+        "image": "/products/ultra_27824.jpg",
+        "reviews": 88
+      },
+      {
+        "id": 50261,
+        "name": "FACE IDOLE LCM IDOLE LQD BLUSH 40",
+        "brand": "Genérico",
+        "price": 149.49,
+        "image": "/products/ultra_27837.jpg",
+        "reviews": 89
+      },
+      {
+        "id": 50262,
+        "name": "FACE IDOLE LCM IDOLE LQD BLUSH 80",
+        "brand": "Genérico",
+        "price": 149.49,
+        "image": "/products/ultra_27708.jpg",
+        "reviews": 96
+      },
+      {
+        "id": 50263,
+        "name": "FACE IDOLE LCM IDOLE LQD BLUSH 90",
+        "brand": "Genérico",
+        "price": 149.49,
+        "image": "/products/ultra_27819.jpg",
+        "reviews": 223
+      }
+    ]
+  },
+  {
+    "clusterId": 36,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50264,
+        "name": "FAMOUS MASCARA DEEP BLACK",
+        "brand": "Genérico",
+        "price": 118.25,
+        "image": "/products/ultra_26637.jpg",
+        "reviews": 149
+      },
+      {
+        "id": 50265,
+        "name": "FAMOUS MINI MASCARA DEEP BALCK",
+        "brand": "Genérico",
+        "price": 70.95,
+        "image": "/products/ultra_26653.jpg",
+        "reviews": 201
+      }
+    ]
+  },
+  {
+    "clusterId": 37,
+    "totalItems": 8,
+    "items": [
+      {
+        "id": 50271,
+        "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
+        "brand": "Babysec",
+        "price": 47.94,
+        "image": "/products/ultra_26245.webp",
+        "reviews": 85
+      },
+      {
+        "id": 50270,
+        "name": "Fralda Babysec Ultra Sec G 60 Unidades",
+        "brand": "Babysec",
+        "price": 47.61,
+        "oldPrice": 52.9,
+        "image": "/products/ultra_28561.png",
+        "reviews": 297
+      },
+      {
+        "id": 50272,
+        "name": "Fralda Babysec UltraSec XG 56 Unidades",
+        "brand": "Babysec",
+        "price": 49.41,
+        "oldPrice": 54.9,
+        "image": "/products/ultra_28560.png",
+        "reviews": 280
+      },
+      {
+        "id": 21108,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper M 68 Unidades",
+        "brand": "Babysec",
+        "price": 64.9,
+        "oldPrice": 79.9,
+        "image": "/products/babysec_ultrasec_m.jpg",
+        "reviews": 110
+      },
+      {
+        "id": 1109,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper G 60 Unidades",
+        "brand": "Babysec",
+        "price": 69.9,
+        "oldPrice": 84.9,
+        "image": "/products/babysec_ultrasec_g.jpg",
+        "reviews": 94
+      },
+      {
+        "id": 21112,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XG 56 Unidades",
+        "brand": "Babysec",
+        "price": 74.9,
+        "oldPrice": 89.9,
+        "image": "/products/babysec_ultrasec_xg.jpg",
+        "reviews": 88
+      },
+      {
+        "id": 21113,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XXG 48 Unidades",
+        "brand": "Babysec",
+        "price": 79.9,
+        "oldPrice": 94.9,
+        "image": "/products/babysec_ultrasec_xxg.jpg",
+        "reviews": 74
+      },
+      {
+        "id": 50286,
+        "name": "Fralda Descartável Babysec Hiper XXG 48 Unidades",
+        "brand": "Babysec",
+        "price": 44.99,
+        "oldPrice": 49.99,
+        "image": "/products/ultra_28270.png",
+        "reviews": 190
+      }
+    ]
+  },
+  {
+    "clusterId": 38,
+    "totalItems": 7,
+    "items": [
+      {
+        "id": 50279,
+        "name": "Fralda Calça MamyPoko Dia & Noite XG 52 Unidades",
+        "brand": "MamyPoko",
+        "price": 64.74,
+        "image": "/products/ultra_26256.webp",
+        "reviews": 103
+      },
+      {
+        "id": 50281,
+        "name": "Fralda calça MamyPoko Dia & Noite XG 42 Unidades",
+        "brand": "MamyPoko",
+        "price": 48.59,
+        "image": "/products/ultra_29230.png",
+        "reviews": 230
+      },
+      {
+        "id": 21118,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite P 22 Unidades",
+        "brand": "MamyPoko",
+        "price": 48.59,
+        "oldPrice": 94.9,
+        "image": "/products/mamypoko_calca_p.jpg",
+        "reviews": 120
+      },
+      {
+        "id": 21119,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite M 18 Unidades",
+        "brand": "MamyPoko",
+        "price": 64.72,
+        "oldPrice": 89.9,
+        "image": "/products/mamypoko_calca_m.jpg",
+        "reviews": 140
+      },
+      {
+        "id": 1111,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite G 30 Unidades",
+        "brand": "MamyPoko",
+        "price": 94.9,
+        "oldPrice": 114.9,
+        "image": "/products/mamypoko_calca_g.jpg",
+        "reviews": 156
+      },
+      {
+        "id": 21120,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite XG 26 Unidades",
+        "brand": "MamyPoko",
+        "price": 99.9,
+        "oldPrice": 119.9,
+        "image": "/products/mamypoko_calca_xg.jpg",
+        "reviews": 135
+      },
+      {
+        "id": 21121,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite XXG 22 Unidades",
+        "brand": "MamyPoko",
+        "price": 104.9,
+        "oldPrice": 124.9,
+        "image": "/products/mamypoko_calca_xxg.jpg",
+        "reviews": 110
+      }
+    ]
+  },
+  {
+    "clusterId": 39,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50282,
+        "name": "Fralda Calça MamyPoko Premium Seca Xxg 44 Unidades",
+        "brand": "MamyPoko",
+        "price": 68.84,
+        "image": "/products/ultra_29233.png",
+        "reviews": 281
+      },
+      {
+        "id": 50357,
+        "name": "MamyPoko Fralda Calça Premium Seca M 68 Unidades",
+        "brand": "MamyPoko",
+        "price": 64.72,
+        "image": "/products/ultra_29624.png",
+        "reviews": 142
+      }
+    ]
+  },
+  {
+    "clusterId": 40,
+    "totalItems": 6,
+    "items": [
+      {
+        "id": 50287,
+        "name": "Fralda Huggies Supreme Care G com 66 Unidades",
+        "brand": "Huggies",
+        "price": 59.93,
+        "image": "/products/ultra_29620.png",
+        "reviews": 260
+      },
+      {
+        "id": 20390,
+        "name": "Fralda Huggies Natural Care Tamanho P 36 Unidades",
+        "brand": "Huggies",
+        "price": 69.9,
+        "oldPrice": 84.9,
+        "image": "/products/huggies_natural_care_p.jpg",
+        "reviews": 180
+      },
+      {
+        "id": 20391,
+        "name": "Fralda Huggies Natural Care Tamanho M 78 Unidades",
+        "brand": "Huggies",
+        "price": 119.9,
+        "oldPrice": 139.9,
+        "image": "/products/huggies_natural_care_m.jpg",
+        "reviews": 260
+      },
+      {
+        "id": 20392,
+        "name": "Fralda Huggies Natural Care Tamanho G 66 Unidades",
+        "brand": "Huggies",
+        "price": 124.9,
+        "oldPrice": 144.9,
+        "image": "/products/huggies_natural_care_g.jpg",
+        "reviews": 310
+      },
+      {
+        "id": 20393,
+        "name": "Fralda Huggies Natural Care Tamanho XG 58 Unidades",
+        "brand": "Huggies",
+        "price": 129.9,
+        "oldPrice": 149.9,
+        "image": "/products/huggies_natural_care_xg.jpg",
+        "reviews": 220
+      },
+      {
+        "id": 20394,
+        "name": "Fralda Huggies Natural Care Tamanho XXG 54 Unidades",
+        "brand": "Huggies",
+        "price": 134.9,
+        "oldPrice": 154.9,
+        "image": "/products/huggies_natural_care_xxg.jpg",
+        "reviews": 175
+      }
+    ]
+  },
+  {
+    "clusterId": 41,
+    "totalItems": 8,
+    "items": [
+      {
+        "id": 50293,
+        "name": "Fralda Pampers Confort Sec G 60 Unidades",
+        "brand": "Pampers",
+        "price": 73.64,
+        "image": "/products/pampers_confort_sec_g.webp",
+        "reviews": 134
+      },
+      {
+        "id": 50295,
+        "name": "Fralda Pampers Confort Sec G 98 Unidades",
+        "brand": "Pampers",
+        "price": 91.82,
+        "oldPrice": 102.02,
+        "image": "/products/ultra_28742.png",
+        "reviews": 294
+      },
+      {
+        "id": 50299,
+        "name": "Fralda Pampers Confort Sec M 70 Unidades",
+        "brand": "Pampers",
+        "price": 67.28,
+        "oldPrice": 74.76,
+        "image": "/products/ultra_28743.png",
+        "reviews": 91
+      },
+      {
+        "id": 50302,
+        "name": "Fralda Pampers Confort Sec P 50 Unidades",
+        "brand": "Pampers",
+        "price": 60.3,
+        "image": "/products/pampers_confort_sec_p.webp",
+        "reviews": 269
+      },
+      {
+        "id": 50303,
+        "name": "Fralda Pampers Confort Sec P 72 Unidades",
+        "brand": "Pampers",
+        "price": 59.61,
+        "image": "/products/ultra_29481.png",
+        "reviews": 97
+      },
+      {
+        "id": 50358,
+        "name": "Fralda Pampers Confort Sec Xxxg 44 Unidades",
+        "brand": "Pampers",
+        "price": 65.3,
+        "image": "/products/ultra_29508.png",
+        "reviews": 118
+      },
+      {
+        "id": 1250309,
+        "name": "Fralda Pampers Confort Sec Tamanho XG 92 Unidades",
+        "brand": "Pampers",
+        "price": 134.43,
+        "oldPrice": 157.83,
+        "image": "/products/pampers_confort_sec_xg.webp",
+        "reviews": 310
+      },
+      {
+        "id": 1250310,
+        "name": "Fralda Pampers Confort Sec Tamanho XXG 88 Unidades",
+        "brand": "Pampers",
+        "price": 140.28,
+        "oldPrice": 163.68,
+        "image": "/products/pampers_confort_sec_xxg.jpg",
+        "reviews": 215
+      }
+    ]
+  },
+  {
+    "clusterId": 42,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50308,
+        "name": "Fralda Pampers Premium Care P 40 unidades",
+        "brand": "Pampers",
+        "price": 42.55,
+        "image": "/products/ultra_29509.png",
+        "reviews": 133
+      },
+      {
+        "id": 50312,
+        "name": "Fralda Pampers Premium Care XXG 56 Unidades",
+        "brand": "Pampers",
+        "price": 90.02,
+        "image": "/products/ultra_26229.webp",
+        "reviews": 287
+      }
+    ]
+  },
+  {
+    "clusterId": 43,
+    "totalItems": 5,
+    "items": [
+      {
+        "id": 50317,
+        "name": "Fralda Pom Pom Protek Proteção de Mãe M 86 Unidades",
+        "brand": "Pom Pom",
+        "price": 65.94,
+        "image": "/products/ultra_26249.webp",
+        "reviews": 119
+      },
+      {
+        "id": 21115,
+        "name": "Fralda Pom Pom Protek Proteção de Mãe M 28 Unidades",
+        "brand": "Pom Pom",
+        "price": 44.9,
+        "oldPrice": 54.9,
+        "image": "/products/pompom_protek_m.jpg",
+        "reviews": 90
+      },
+      {
+        "id": 1110,
+        "name": "Fralda Pom Pom Protek Proteção de Mãe G 24 Unidades",
+        "brand": "Pom Pom",
+        "price": 49.9,
+        "oldPrice": 59.9,
+        "image": "/products/pompom_protek_g.jpg",
+        "reviews": 72
+      },
+      {
+        "id": 21116,
+        "name": "Fralda Pom Pom Protek Proteção de Mãe XG 20 Unidades",
+        "brand": "Pom Pom",
+        "price": 54.9,
+        "oldPrice": 64.9,
+        "image": "/products/pompom_protek_xg.jpg",
+        "reviews": 80
+      },
+      {
+        "id": 21117,
+        "name": "Fralda Pom Pom Protek Proteção de Mãe XXG 18 Unidades",
+        "brand": "Pom Pom",
+        "price": 59.9,
+        "oldPrice": 69.9,
+        "image": "/products/pompom_protek_xxg.jpg",
+        "reviews": 62
+      }
+    ]
+  },
+  {
+    "clusterId": 44,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 50321,
+        "name": "FRANCINY E FRAN BY       EYES 38G",
+        "brand": "Genérico",
+        "price": 35.75,
+        "image": "/products/ultra_26945.jpg",
+        "reviews": 105
+      },
+      {
+        "id": 50322,
+        "name": "FRANCINY E FRAN BY       EYES 5G",
+        "brand": "Genérico",
+        "price": 24.2,
+        "image": "/products/ultra_26786.jpg",
+        "reviews": 262
+      },
+      {
+        "id": 50323,
+        "name": "FRANCINY E FRAN BY       EYES 7G",
+        "brand": "Genérico",
+        "price": 30.25,
+        "image": "/products/ultra_26946.jpg",
+        "reviews": 122
+      }
+    ]
+  },
+  {
+    "clusterId": 45,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 50330,
+        "name": "Gel de Limpeza Facial Bioderma Sébium Gel Moussant 200ml",
+        "brand": "Bioderma",
+        "price": 32.39,
+        "image": "/products/ultra_29637.png",
+        "reviews": 109
+      },
+      {
+        "id": 50335,
+        "name": "Gel de Limpeza Sébium Bioderma Gel Moussant Actif 200ml",
+        "brand": "Bioderma",
+        "price": 32.4,
+        "image": "/products/ultra_29404.png",
+        "reviews": 108
+      }
+    ]
+  },
+  {
+    "clusterId": 46,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 50331,
+        "name": "Gel De Limpeza Facial Darrow Actine Oil Control 400g",
+        "brand": "Darrow",
+        "price": 48.59,
+        "image": "/products/ultra_29387.png",
+        "reviews": 259
+      },
+      {
+        "id": 115,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
+        "brand": "Darrow",
+        "price": 48.59,
+        "oldPrice": 84.9,
+        "image": "/products/darrow_actine_400g_frasco.jpg",
+        "reviews": 340
+      },
+      {
+        "id": 2028,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+        "brand": "Darrow",
+        "price": 74.9,
+        "oldPrice": 89.9,
+        "image": "/products/darrow_actine_400g_frasco.jpg",
+        "reviews": 295
+      }
+    ]
+  },
+  {
+    "clusterId": 47,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60002,
+        "name": "Kit Shampoo Antiqueda Alpecin Caffeine C1 250ml 2 unidades",
+        "brand": "Alpecin",
+        "price": 170.98,
+        "oldPrice": 179.98,
+        "image": "/products/kit_60002.webp",
+        "reviews": 262
+      },
+      {
+        "id": 60005,
+        "name": "Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades",
+        "brand": "Alpecin",
+        "price": 189.98,
+        "oldPrice": 199.98,
+        "image": "/products/kit_60005.webp",
+        "reviews": 265
+      }
+    ]
+  },
+  {
+    "clusterId": 48,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60004,
+        "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
+        "brand": "Dove",
+        "price": 17.91,
+        "oldPrice": 18.85,
+        "image": "/products/kit_60004.webp",
+        "reviews": 264
+      },
+      {
+        "id": 60030,
+        "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
+        "brand": "Dove",
+        "price": 28.49,
+        "oldPrice": 29.99,
+        "image": "/products/kit_60030.webp",
+        "reviews": 290
+      }
+    ]
+  },
+  {
+    "clusterId": 49,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60006,
+        "name": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Baby Cães e Gatos",
+        "brand": "Droga Raia",
+        "price": 180.87,
+        "oldPrice": 190.39,
+        "image": "/products/kit_60006.webp",
+        "reviews": 266
+      },
+      {
+        "id": 60008,
+        "name": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Cereja e Avelã Cães e Gatos",
+        "brand": "Droga Raia",
+        "price": 180.87,
+        "oldPrice": 190.39,
+        "image": "/products/kit_60008.webp",
+        "reviews": 268
+      }
+    ]
+  },
+  {
+    "clusterId": 50,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60007,
+        "name": "Kit Shampoo Anticaspa Darrow Doctar Plus Intensivo 2 Unidades com 240ml cada",
+        "brand": "Darrow",
+        "price": 47.02,
+        "oldPrice": 49.5,
+        "image": "/products/kit_60007.webp",
+        "reviews": 267
+      },
+      {
+        "id": 118,
+        "name": "Shampoo Anticaspa Darrow Doctar Plus 120ml",
+        "brand": "Darrow",
+        "price": 58.9,
+        "oldPrice": 72.9,
+        "image": "/products/darrow_doctar_plus_140ml.jpg",
+        "reviews": 145
+      }
+    ]
+  },
+  {
+    "clusterId": 51,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60011,
+        "name": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml",
+        "brand": "Dolce Pet",
+        "price": 154.87,
+        "oldPrice": 163.02,
+        "image": "/products/kit_60011.webp",
+        "reviews": 271
+      },
+      {
+        "id": 60039,
+        "name": "Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml",
+        "brand": "Dolce Pet",
+        "price": 154.87,
+        "oldPrice": 163.02,
+        "image": "/products/kit_60039.webp",
+        "reviews": 299
+      }
+    ]
+  },
+  {
+    "clusterId": 52,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60014,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 39.9,
+        "oldPrice": 42,
+        "image": "/products/kit_60014.webp",
+        "reviews": 274
+      },
+      {
+        "id": 60045,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 56.75,
+        "oldPrice": 59.74,
+        "image": "/products/kit_60045.webp",
+        "reviews": 115
+      }
+    ]
+  },
+  {
+    "clusterId": 53,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 60017,
+        "name": "Kit Barba Goot - Óleo + Balm + Shampoo Barba Embaixador 200ml",
+        "brand": "Goot",
+        "price": 83.5,
+        "oldPrice": 87.9,
+        "image": "/products/kit_60017.webp",
+        "reviews": 277
+      },
+      {
+        "id": 60024,
+        "name": "Kit Barba Goot Wood - Óleo + Balm + Shampoo Barba Embaixador 200ml",
+        "brand": "Goot",
+        "price": 79.7,
+        "oldPrice": 83.9,
+        "image": "/products/kit_60024.webp",
+        "reviews": 284
+      },
+      {
+        "id": 60043,
+        "name": "Kit Óleo para Barba Goot Wood + Shampoo Barba Goot Embaixador 200ml",
+        "brand": "Goot",
+        "price": 48.35,
+        "oldPrice": 50.9,
+        "image": "/products/kit_60043.webp",
+        "reviews": 113
+      }
+    ]
+  },
+  {
+    "clusterId": 54,
+    "totalItems": 7,
+    "items": [
+      {
+        "id": 60018,
+        "name": "Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 23.75,
+        "oldPrice": 25,
+        "image": "/products/kit_60018.webp",
+        "reviews": 278
+      },
+      {
+        "id": 60031,
+        "name": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 31.82,
+        "oldPrice": 33.49,
+        "image": "/products/kit_60031.webp",
+        "reviews": 291
+      },
+      {
+        "id": 60032,
+        "name": "Kit Eudora Siàge Hidratação Micelar Shampoo 250ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 26.36,
+        "oldPrice": 27.75,
+        "image": "/products/kit_60032.webp",
+        "reviews": 292
+      },
+      {
+        "id": 60048,
+        "name": "Kit Eudora Siàge Cauterização dos Lisos Shampoo 250ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 61.74,
+        "oldPrice": 64.99,
+        "image": "/products/kit_60048.webp",
+        "reviews": 118
+      },
+      {
+        "id": 60034,
+        "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 82.64,
+        "oldPrice": 86.99,
+        "image": "/products/kit_60034.webp",
+        "reviews": 294
+      },
+      {
+        "id": 60035,
+        "name": "Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 38.94,
+        "oldPrice": 40.99,
+        "image": "/products/kit_60035.webp",
+        "reviews": 295
+      },
+      {
+        "id": 60037,
+        "name": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml",
+        "brand": "Eudora Siàge",
+        "price": 20.41,
+        "oldPrice": 21.48,
+        "image": "/products/kit_60037.webp",
+        "reviews": 297
+      }
+    ]
+  },
+  {
+    "clusterId": 55,
+    "totalItems": 5,
+    "items": [
+      {
+        "id": 60019,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 250ml + Máscara 150ml",
+        "brand": "Wella Professionals",
+        "price": 74.53,
+        "oldPrice": 78.45,
+        "image": "/products/kit_60019.webp",
+        "reviews": 279
+      },
+      {
+        "id": 60020,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
+        "brand": "Wella Professionals",
+        "price": 185.68,
+        "oldPrice": 195.45,
+        "image": "/products/kit_60020.webp",
+        "reviews": 280
+      },
+      {
+        "id": 60051,
+        "name": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)",
+        "brand": "Wella Professionals",
+        "price": 94.98,
+        "oldPrice": 99.98,
+        "image": "/products/kit_60051.webp",
+        "reviews": 121
+      },
+      {
+        "id": 60125,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
+        "brand": "Wella Professionals",
+        "price": 180.49,
+        "oldPrice": 189.99,
+        "image": "/products/kit_60125.png",
+        "reviews": 195
+      },
+      {
+        "id": 60128,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos",
+        "brand": "Wella Professionals",
+        "price": 256.49,
+        "oldPrice": 269.99,
+        "image": "/products/kit_60128.png",
+        "reviews": 198
+      }
+    ]
+  },
+  {
+    "clusterId": 56,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60022,
+        "name": "Kit Tio Nacho Engrossador Shampoo 415ml + Condicionador 200ml",
+        "brand": "Tio Nacho",
+        "price": 52.05,
+        "oldPrice": 54.79,
+        "image": "/products/kit_60022.webp",
+        "reviews": 282
+      },
+      {
+        "id": 60050,
+        "name": "Kit Tio Nacho Reconstrutor Total Shampoo 415ml + Condicionador 200ml",
+        "brand": "Tio Nacho",
+        "price": 14.25,
+        "oldPrice": 15,
+        "image": "/products/kit_60050.webp",
+        "reviews": 120
+      }
+    ]
+  },
+  {
+    "clusterId": 57,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60027,
+        "name": "Kit Wella Professionals Shampoo Oil Reflections 1l – 2 unidades",
+        "brand": "Wella Professionals",
+        "price": 158.13,
+        "oldPrice": 166.45,
+        "image": "/products/kit_60027.webp",
+        "reviews": 287
+      },
+      {
+        "id": 60055,
+        "name": "Kit Wella Professionals Oil Reflections Shampoo 250ml + Máscara 150ml",
+        "brand": "Wella Professionals",
+        "price": 42.73,
+        "oldPrice": 44.98,
+        "image": "/products/kit_60055.webp",
+        "reviews": 125
+      }
+    ]
+  },
+  {
+    "clusterId": 58,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 60029,
+        "name": "Kit Pantene Pro-V Hidratação Shampoo 350ml + Condicionador 175ml",
+        "brand": "Pantene",
+        "price": 42.74,
+        "oldPrice": 44.99,
+        "image": "/products/kit_60029.webp",
+        "reviews": 289
+      },
+      {
+        "id": 60038,
+        "name": "Kit Pantene Pro-V Liso Extremo Shampoo 350ml + Condicionador 175ml",
+        "brand": "Pantene",
+        "price": 42.74,
+        "oldPrice": 44.99,
+        "image": "/products/kit_60038.webp",
+        "reviews": 298
+      },
+      {
+        "id": 60053,
+        "name": "Kit Pantene Pro-V Brilhos Extremo Shampoo 400ml + Condicionador 175ml",
+        "brand": "Pantene",
+        "price": 42.74,
+        "oldPrice": 44.99,
+        "image": "/products/kit_60053.webp",
+        "reviews": 123
+      }
+    ]
+  },
+  {
+    "clusterId": 59,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60033,
+        "name": "Kit Elseve Reparação Total 5 Shampoo 375ml + Condicionador 170ml",
+        "brand": "L'Oréal Paris",
+        "price": 19.82,
+        "oldPrice": 20.86,
+        "image": "/products/kit_60033.webp",
+        "reviews": 293
+      },
+      {
+        "id": 60056,
+        "name": "Kit L’Oréal Paris Reparação Total 5 Shampoo 375ml + Condicionador 170ml",
+        "brand": "L'Oréal Paris",
+        "price": 17.05,
+        "oldPrice": 17.95,
+        "image": "/products/kit_60056.webp",
+        "reviews": 126
+      }
+    ]
+  },
+  {
+    "clusterId": 60,
+    "totalItems": 6,
+    "items": [
+      {
+        "id": 60078,
+        "name": "Kit 6x Bebida Láctea Chocolate",
+        "brand": "Droga Raia",
+        "price": 28.53,
+        "oldPrice": 30.03,
+        "image": "/products/kit_60078.webp",
+        "reviews": 148
+      },
+      {
+        "id": 60076,
+        "name": "Kit 6x Bebida Láctea Baunilha",
+        "brand": "Droga Raia",
+        "price": 25.93,
+        "oldPrice": 27.3,
+        "image": "/products/kit_60076.jpg",
+        "reviews": 146
+      },
+      {
+        "id": 60073,
+        "name": "Kit 6x Bebida Láctea Morango",
+        "brand": "Droga Raia",
+        "price": 31.39,
+        "oldPrice": 33.04,
+        "image": "/products/kit_60073.jpg",
+        "reviews": 143
+      },
+      {
+        "id": 60075,
+        "name": "Kit 12x Bebida Láctea Morango",
+        "brand": "Droga Raia",
+        "price": 55,
+        "oldPrice": 57.89,
+        "image": "/products/kit_60075.jpg",
+        "reviews": 145
+      },
+      {
+        "id": 60077,
+        "name": "Kit 12x Bebida Láctea Baunilha",
+        "brand": "Droga Raia",
+        "price": 45.45,
+        "oldPrice": 47.84,
+        "image": "/products/kit_60077.jpg",
+        "reviews": 147
+      },
+      {
+        "id": 60083,
+        "name": "Kit 12x Bebida Láctea Chocolate",
+        "brand": "Droga Raia",
+        "price": 49.99,
+        "oldPrice": 52.62,
+        "image": "/products/kit_60083.jpg",
+        "reviews": 153
+      }
+    ]
+  },
+  {
+    "clusterId": 61,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 60091,
+        "name": "Kit C/ 3 Lip Oil - Epidrat Hyalu Berry",
+        "brand": "Mantecorp Skincare",
+        "price": 152.56,
+        "oldPrice": 160.59,
+        "image": "/products/kit_60091.webp",
+        "reviews": 161
+      },
+      {
+        "id": 60092,
+        "name": "Kit C/ 3 Lip Oil - Epidrat Hyalu Choco",
+        "brand": "Mantecorp Skincare",
+        "price": 152.56,
+        "oldPrice": 160.59,
+        "image": "/products/kit_60092.webp",
+        "reviews": 162
+      },
+      {
+        "id": 60103,
+        "name": "Kit C/ 3 Lip Oil - Epidrat Hyalu sem Cor",
+        "brand": "Mantecorp Skincare",
+        "price": 152.56,
+        "oldPrice": 160.59,
+        "image": "/products/kit_60103.webp",
+        "reviews": 173
+      }
+    ]
+  },
+  {
+    "clusterId": 62,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60094,
+        "name": "Kit Técnica Loc Dedoliss – Soul Power",
+        "brand": "Soul Power",
+        "price": 19.93,
+        "oldPrice": 20.98,
+        "image": "/products/kit_60094.webp",
+        "reviews": 164
+      },
+      {
+        "id": 60109,
+        "name": "Kit Técnica Loc Curl Clump – Soul Power",
+        "brand": "Soul Power",
+        "price": 19.93,
+        "oldPrice": 20.98,
+        "image": "/products/kit_60109.webp",
+        "reviews": 179
+      }
+    ]
+  },
+  {
+    "clusterId": 63,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 60104,
+        "name": "Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve)",
+        "brand": "Amazonleve",
+        "price": 72.11,
+        "oldPrice": 75.9,
+        "image": "/products/kit_60104.webp",
+        "reviews": 174
+      },
+      {
+        "id": 60107,
+        "name": "Kit. 10Un – Ov Sucupira 20Ml – (Amazonleve)",
+        "brand": "Amazonleve",
+        "price": 30.86,
+        "oldPrice": 32.48,
+        "image": "/products/kit_60107.webp",
+        "reviews": 177
+      },
+      {
+        "id": 60108,
+        "name": "Kit. 08Un – Ov Sucupira 20Ml (Amazonleve)",
+        "brand": "Amazonleve",
+        "price": 25.16,
+        "oldPrice": 26.48,
+        "image": "/products/kit_60108.webp",
+        "reviews": 178
+      }
+    ]
+  },
+  {
+    "clusterId": 64,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 60126,
+        "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
+        "brand": "Imecap Hair",
+        "price": 75.14,
+        "oldPrice": 79.1,
+        "image": "/products/kit_60126.webp",
+        "reviews": 196
+      },
+      {
+        "id": 60159,
+        "name": "Imecap Hair Cabelos e Unhas com 90 Cápsulas",
+        "brand": "Imecap Hair",
+        "price": 33.61,
+        "oldPrice": 35.38,
+        "image": "/products/kit_60159.webp",
+        "reviews": 229
+      }
+    ]
+  },
+  {
+    "clusterId": 65,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 14951,
+        "name": "Colírio Hyabak 0,15% 10ml",
+        "brand": "Hyabak",
+        "price": 74.5,
+        "oldPrice": 78.9,
+        "image": "/products/hyabak_10ml.jpg"
+      },
+      {
+        "id": 1213,
+        "name": "Colírio Hyabak 0,15% Hidratante Ocular 10ml",
+        "brand": "Hyabak",
+        "price": 59.9,
+        "oldPrice": 69.9,
+        "image": "/products/hyabak_10ml.jpg"
+      }
+    ]
+  },
+  {
+    "clusterId": 66,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 11003,
+        "name": "Novalgina Dipirona 1g 20 comprimidos",
+        "brand": "Novalgina",
+        "price": 34.99,
+        "oldPrice": 47.02,
+        "image": "/products/novalgina_1g_20comp.webp"
+      },
+      {
+        "id": 1204,
+        "name": "Novalgina Dipirona Monoidratada 1g 20 Comprimidos",
+        "brand": "Novalgina",
+        "price": 34.9,
+        "oldPrice": 39.9,
+        "image": "/products/novalgina_1g_20comp.webp"
+      }
+    ]
+  },
+  {
+    "clusterId": 67,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 11005,
+        "name": "Buscopan Composto Butilbrometo de Escopolamina 10mg + Dipirona Sódica 250mg 20 comprimidos",
+        "brand": "Buscopan",
+        "price": 23.9,
+        "oldPrice": 29.49,
+        "image": "/products/buscopan_composto_20comp.webp"
+      },
+      {
+        "id": 1208,
+        "name": "Buscopan Composto 20 Comprimidos Revestidos",
+        "brand": "Buscopan",
+        "price": 23.9,
+        "oldPrice": 28.5,
+        "image": "/products/buscopan_composto_20comp.webp"
+      }
+    ]
+  },
+  {
+    "clusterId": 68,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 11006,
+        "name": "Probiótico Enterogermina 10 frascos de 5ml",
+        "brand": "Enterogermina",
+        "price": 51.99,
+        "image": "/products/enterogermina_10flac.jpg"
+      },
+      {
+        "id": 1212,
+        "name": "Enterogermina Probiótico 2 Bilhões 10 Flaconetes 5ml",
+        "brand": "Enterogermina",
+        "price": 49.9,
+        "oldPrice": 58.9,
+        "image": "/products/enterogermina_10flac.jpg"
+      }
+    ]
+  },
+  {
+    "clusterId": 69,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 11016,
+        "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+        "brand": "Eucerin",
+        "price": 260.61,
+        "oldPrice": 299.9,
+        "image": "/products/eucerin_dual_anti_pigment.jpg",
+        "reviews": 174
+      },
+      {
+        "id": 1308,
+        "name": "Sérum Clareador Facial Eucerin Anti-Pigment Dual Sérum 30ml",
+        "brand": "Eucerin",
+        "price": 219.9,
+        "oldPrice": 249.9,
+        "image": "/products/eucerin_dual_anti_pigment.jpg",
+        "reviews": 134
+      }
+    ]
+  },
+  {
+    "clusterId": 70,
+    "totalItems": 3,
+    "items": [
+      {
+        "id": 2047,
+        "name": "Cereal Infantil Mucilon Milho Nestlé 600g",
+        "brand": "Mucilon",
+        "price": 27.99,
+        "oldPrice": 32.9,
+        "image": "/products/mucilon_milho.jpg",
+        "reviews": 460
+      },
+      {
+        "id": 2048,
+        "name": "Cereal Infantil Mucilon Arroz e Aveia Nestlé 600g",
+        "brand": "Mucilon",
+        "price": 27.99,
+        "oldPrice": 32.9,
+        "image": "/products/mucilon_arroz_aveia.jpg",
+        "reviews": 520
+      },
+      {
+        "id": 2049,
+        "name": "Cereal Infantil Mucilon Multicereais Nestlé 600g",
+        "brand": "Mucilon",
+        "price": 27.99,
+        "oldPrice": 32.9,
+        "image": "/products/mucilon_multicereais_600g.webp",
+        "reviews": 380
+      }
+    ]
+  },
+  {
+    "clusterId": 71,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 20490,
+        "name": "Composto Lácteo Ninho Fases 1+ Prebio 1 Nestlé 800g",
+        "brand": "Ninho",
+        "price": 44.9,
+        "oldPrice": 52.9,
+        "image": "/products/ninho_fases_1.jpg",
+        "reviews": 580
+      },
+      {
+        "id": 1112,
+        "name": "Composto Lácteo Ninho Fases 1+ Nestlé 800g",
+        "brand": "Ninho",
+        "price": 44.9,
+        "oldPrice": 51.9,
+        "image": "/products/ninho_fases_1.jpg",
+        "reviews": 340
+      }
+    ]
+  },
+  {
+    "clusterId": 72,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 103,
+        "name": "Desodorante Antitranspirante Aerosol Rexona Men Sem Perfume 72h 150ml",
+        "brand": "Rexona",
+        "price": 14.75,
+        "oldPrice": 19.9,
+        "image": "/products/rexona_men_sem_perfume_aerosol.jpg",
+        "reviews": 48
+      },
+      {
+        "id": 1502,
+        "name": "Desodorante Antitranspirante Rexona Men Sem Perfume Roll-on 50ml",
+        "brand": "Rexona",
+        "price": 13.9,
+        "oldPrice": 16.9,
+        "image": "/products/rexona_men_sem_perfume_rollon.jpg",
+        "reviews": 175
+      }
+    ]
+  },
+  {
+    "clusterId": 73,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 109,
+        "name": "Protetor Solar Facial Needs Beauty FPS 70 40g",
+        "brand": "Needs",
+        "price": 31.49,
+        "oldPrice": 44.9,
+        "image": "/products/needs_beauty_fps70.jpg",
+        "reviews": 164
+      },
+      {
+        "id": 2031,
+        "name": "Protetor Solar Facial Needs FPS 70 Toque Seco 40g",
+        "brand": "Needs",
+        "price": 42.9,
+        "oldPrice": 49.9,
+        "image": "/products/needs_beauty_fps70.jpg",
+        "reviews": 165
+      }
+    ]
+  },
+  {
+    "clusterId": 74,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 116,
+        "name": "Enxaguante Bucal Listerine Cool Mint 500ml Leve Mais Pague Menos",
+        "brand": "Listerine",
+        "price": 21.9,
+        "oldPrice": 28.9,
+        "image": "/products/listerine_cool_mint_500ml.jpg",
+        "reviews": 190
+      },
+      {
+        "id": 1501,
+        "name": "Enxaguante Bucal Listerine Cool Mint 500ml",
+        "brand": "Listerine",
+        "price": 22.9,
+        "oldPrice": 27.9,
+        "image": "/products/listerine_cool_mint_500ml.jpg",
+        "reviews": 320
+      }
+    ]
+  },
+  {
+    "clusterId": 75,
+    "totalItems": 5,
+    "items": [
+      {
+        "id": 1104,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho P 50 Unidades",
+        "brand": "Pampers",
+        "price": 93.48,
+        "oldPrice": 111.03,
+        "image": "/products/pampers_pants_p.webp",
+        "reviews": 142
+      },
+      {
+        "id": 501,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho M 78 Unidades",
+        "brand": "Pampers",
+        "price": 140.28,
+        "oldPrice": 163.68,
+        "image": "/products/pampers_pants_m.webp",
+        "reviews": 160
+      },
+      {
+        "id": 2040,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho G 72 Unidades",
+        "brand": "Pampers",
+        "price": 146.13,
+        "oldPrice": 169.53,
+        "image": "/products/pampers_pants_g.webp",
+        "reviews": 410
+      },
+      {
+        "id": 20404,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho XG 64 Unidades",
+        "brand": "Pampers",
+        "price": 151.98,
+        "oldPrice": 175.38,
+        "image": "/products/pampers_pants_xg.webp",
+        "reviews": 290
+      },
+      {
+        "id": 20405,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho XXG 74 Unidades",
+        "brand": "Pampers",
+        "price": 157.83,
+        "oldPrice": 181.23,
+        "image": "/products/pampers_pants_xxg.jpg",
+        "reviews": 210
+      }
+    ]
+  },
+  {
+    "clusterId": 76,
+    "totalItems": 4,
+    "items": [
+      {
+        "id": 1096086,
+        "name": "Fralda Huggies Máxima Proteção Tamanho M 104 Unidades",
+        "brand": "Huggies",
+        "price": 114.9,
+        "oldPrice": 134.9,
+        "image": "/products/huggies_pants_m.jpg",
+        "reviews": 210
+      },
+      {
+        "id": 1096087,
+        "name": "Fralda Huggies Máxima Proteção Tamanho G 136 Unidades",
+        "brand": "Huggies",
+        "price": 119.9,
+        "oldPrice": 139.9,
+        "image": "/products/huggies_pants_g.jpg",
+        "reviews": 295
+      },
+      {
+        "id": 1096088,
+        "name": "Fralda Huggies Máxima Proteção Tamanho XG 82 Unidades",
+        "brand": "Huggies",
+        "price": 129.9,
+        "oldPrice": 149.9,
+        "image": "/products/huggies_pants_xg.jpg",
+        "reviews": 160
+      },
+      {
+        "id": 1096089,
+        "name": "Fralda Huggies Máxima Proteção Tamanho XXG 80 Unidades",
+        "brand": "Huggies",
+        "price": 134.9,
+        "oldPrice": 154.9,
+        "image": "/products/huggies_pants_xxg.jpg",
+        "reviews": 185
+      }
+    ]
+  },
+  {
+    "clusterId": 77,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 1201,
+        "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+        "brand": "Dorflex",
+        "price": 25.99,
+        "oldPrice": 29.9,
+        "image": "/products/dorflex_36.jpg"
+      },
+      {
+        "id": 2016,
+        "name": "Dorflex Relaxante Muscular e Analgésico Sanofi 36 Comprimidos",
+        "brand": "Dorflex",
+        "price": 36.9,
+        "oldPrice": 42.9,
+        "image": "/products/dorflex_36.jpg"
+      }
+    ]
+  },
+  {
+    "clusterId": 78,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 603,
+        "name": "Polivitamínico Vitergan Zinco 30 Comprimidos revestidos",
+        "brand": "Vitergan Zinco",
+        "price": 110,
+        "oldPrice": 115,
+        "image": "/products/vitergan_zinco_30comp.jpg"
+      },
+      {
+        "id": 140081,
+        "name": "Polivitamínico Vitergan Zinco PL 30 Comprimidos",
+        "brand": "Vitergan Zinco",
+        "price": 119.9,
+        "oldPrice": 139.9,
+        "image": "/products/vitergan_zinco_30comp.jpg"
+      }
+    ]
+  },
+  {
+    "clusterId": 79,
+    "totalItems": 2,
+    "items": [
+      {
+        "id": 77001,
+        "name": "Xerjoff Erba Pura Eau de Parfum Unissex-100 Ml",
+        "brand": "Xerjoff",
+        "price": 1077.3,
+        "oldPrice": 1539,
+        "image": "/products/xerjoff_erba_pura.jpg",
+        "reviews": 142
+      },
+      {
+        "id": 77017,
+        "name": "Erba Gold Xerjoff Eau de Parfum Unissex-100 Ml",
+        "brand": "Xerjoff",
+        "price": 1427.3,
+        "oldPrice": 2039,
+        "image": "/products/xerjoff_erba_gold.jpg",
+        "reviews": 89
+      }
+    ]
+  }
+]

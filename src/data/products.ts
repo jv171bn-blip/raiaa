@@ -2642,7 +2642,7 @@ export function getSimilarProducts(
     .slice(0, limit)
     .map(({ product }) => product);
 
-  return scored;
+  return deduplicateProducts(scored);
 }
 
 /**
@@ -2795,7 +2795,7 @@ export function getPersonalizedRecommendations(
     }
   }
 
-  return uniqueRecs;
+  return deduplicateProducts(uniqueRecs);
 }
 
 export const healthSpace: Array<{ id: number; title: string; description: string; image: string; tag: string }> = [
@@ -2846,12 +2846,13 @@ export const bebeMaisVendidos: Product[] = [
  * with a canonical ID and price, preventing duplicate cards and conflicting prices.
  */
 export const deduplicateProducts = (products: Product[]): Product[] => {
+  if (!products || !Array.isArray(products)) return [];
   const seenIds = new Set<number>();
   const seenNormalizedKeys = new Set<string>();
   const result: Product[] = [];
 
   for (const p of products) {
-    if (!p || !p.id) continue;
+    if (!p || typeof p.id !== 'number') continue;
     if (seenIds.has(p.id)) continue;
 
     const normKey = (p.name || '')
@@ -2859,8 +2860,14 @@ export const deduplicateProducts = (products: Product[]): Product[] => {
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(/\btamanho\b/g, '')
+      .replace(/\btam\b/g, '')
       .replace(/\bdescartavel\b/g, '')
+      .replace(/\bdescartaveis\b/g, '')
       .replace(/\bcom\b/g, '')
+      .replace(/\bunidades\b/g, 'un')
+      .replace(/\bunidade\b/g, 'un')
+      .replace(/\bfrasco\b/g, '')
+      .replace(/\bpacote\b/g, '')
       .replace(/[^a-z0-9]/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();

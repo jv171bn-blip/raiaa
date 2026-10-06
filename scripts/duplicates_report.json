@@ -1,0 +1,832 @@
+[
+  {
+    "groupIndex": 1,
+    "normalizedKey": "30comp eximia fortalize",
+    "type": "Exact Normalized Match",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50247,
+        "name": "Eximia fortalize 30 comprimidos",
+        "brand": "Eximia",
+        "price": 76.44,
+        "reviews": 182,
+        "rating": 4.8,
+        "image": "/products/ultra_25746.webp"
+      },
+      {
+        "id": 50251,
+        "name": "Eximia Fortalize S com 30 Comprimidos",
+        "brand": "Eximia",
+        "price": 198.29,
+        "reviews": 131,
+        "rating": 4.8,
+        "image": "/products/ultra_25743.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 2,
+    "normalizedKey": "1l 1l condicionador enrich invigo nutri shampoo wella",
+    "type": "Exact Normalized Match",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 60020,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
+        "brand": "Wella Professionals",
+        "price": 185.68,
+        "oldPrice": 195.45,
+        "discount": 5,
+        "reviews": 280,
+        "rating": 5,
+        "image": "/products/kit_60020.webp"
+      },
+      {
+        "id": 60125,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
+        "brand": "Wella Professionals",
+        "price": 180.49,
+        "oldPrice": 189.99,
+        "discount": 5,
+        "reviews": 195,
+        "rating": 5,
+        "image": "/products/kit_60125.png"
+      }
+    ]
+  },
+  {
+    "groupIndex": 3,
+    "normalizedKey": "Fuzzy Match (~base best collection ever sephora skin stick)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 3,
+    "products": [
+      {
+        "id": 50035,
+        "name": "BASE EM STICK SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "reviews": 98,
+        "rating": 4.8,
+        "image": "/products/ultra_27954.jpg"
+      },
+      {
+        "id": 50046,
+        "name": "BASE LÍQUIDA SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "reviews": 92,
+        "rating": 4.8,
+        "image": "/products/ultra_28096.jpg"
+      },
+      {
+        "id": 50052,
+        "name": "Base Sephora Collection Best Skin Ever Glow",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "reviews": 278,
+        "rating": 4.8,
+        "image": "/products/ultra_28094.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 4,
+    "normalizedKey": "Fuzzy Match (~bastao bronzer chocolate faced soleil too)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50096,
+        "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+        "brand": "Too Faced",
+        "price": 162.8,
+        "reviews": 187,
+        "rating": 4.8,
+        "image": "/products/ultra_28011.jpg"
+      },
+      {
+        "id": 50099,
+        "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
+        "brand": "Too Faced",
+        "price": 175.45,
+        "reviews": 228,
+        "rating": 4.8,
+        "image": "/products/ultra_27884.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 5,
+    "normalizedKey": "Fuzzy Match (~225g beta c4 extreme frutas millen new pre pump roxas workout)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50100,
+        "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas",
+        "brand": "New Millen",
+        "price": 70.96,
+        "reviews": 212,
+        "rating": 4.8,
+        "image": "/products/ultra_25916.webp"
+      },
+      {
+        "id": 50101,
+        "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Tangerina)",
+        "brand": "New Millen",
+        "price": 70.96,
+        "reviews": 229,
+        "rating": 4.8,
+        "image": "/products/ultra_25917.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 6,
+    "normalizedKey": "Fuzzy Match (~110v 480 chapinha cinza extreme lizze profissional)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50111,
+        "name": "Chapinha Lizze Profissional 480 Extreme 110v Cinza",
+        "brand": "Lizze",
+        "price": 359.99,
+        "oldPrice": 399.99,
+        "discount": 10,
+        "reviews": 207,
+        "rating": 4.8,
+        "image": "/products/ultra_28271.png"
+      },
+      {
+        "id": 50112,
+        "name": "Chapinha Lizze Profissional 480 Extreme 220v Cinza",
+        "brand": "Lizze",
+        "price": 359.99,
+        "oldPrice": 399.99,
+        "discount": 10,
+        "reviews": 224,
+        "rating": 4.8,
+        "image": "/products/ultra_28271.png"
+      }
+    ]
+  },
+  {
+    "groupIndex": 7,
+    "normalizedKey": "Fuzzy Match (~best collection corretivo ever liquido sephora skin)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50146,
+        "name": "CORRETIVO LÍQUIDO SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "reviews": 274,
+        "rating": 4.8,
+        "image": "/products/ultra_27822.jpg"
+      },
+      {
+        "id": 50149,
+        "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "reviews": 130,
+        "rating": 4.8,
+        "image": "/products/ultra_27710.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 8,
+    "normalizedKey": "Fuzzy Match (~100 250g creatina importada monohidratada nutrition pura soldiers)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50156,
+        "name": "Creatina Monohidratada 250g – 100% Pura Importada – Soldiers Nutrition",
+        "brand": "Soldiers Nutrition",
+        "price": 41.9,
+        "reviews": 151,
+        "rating": 4.8,
+        "image": "/products/ultra_25783.webp"
+      },
+      {
+        "id": 50157,
+        "name": "Creatina Monohidratada 600g – 100% Pura Importada – Soldiers Nutrition",
+        "brand": "Soldiers Nutrition",
+        "price": 69.9,
+        "reviews": 168,
+        "rating": 4.8,
+        "image": "/products/ultra_25784.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 9,
+    "normalizedKey": "Fuzzy Match (~40g bepantol creme creme derma hidratante)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50191,
+        "name": "Creme Hidratante Bepantol Derma creme 40g",
+        "brand": "Genérico",
+        "price": 35.99,
+        "oldPrice": 39.99,
+        "discount": 10,
+        "reviews": 154,
+        "rating": 4.8,
+        "image": "/products/ultra_28682.png"
+      },
+      {
+        "id": 50192,
+        "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
+        "brand": "Genérico",
+        "price": 45.58,
+        "reviews": 225,
+        "rating": 4.8,
+        "image": "/products/ultra_26305.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 10,
+    "normalizedKey": "Fuzzy Match (~50g cicatricure creme diurno facial gold lift rejuvenescedor)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50209,
+        "name": "Creme Rejuvenescedor Facial Cicatricure Gold Lift Diurno 50g",
+        "brand": "Cicatricure",
+        "price": 56.69,
+        "reviews": 147,
+        "rating": 4.8,
+        "image": "/products/ultra_29251.png"
+      },
+      {
+        "id": 50210,
+        "name": "Creme Rejuvenescedor Facial Cicatricure Gold Lift Noturno 50g",
+        "brand": "Cicatricure",
+        "price": 56.69,
+        "reviews": 181,
+        "rating": 4.8,
+        "image": "/products/ultra_29253.png"
+      }
+    ]
+  },
+  {
+    "groupIndex": 11,
+    "normalizedKey": "Fuzzy Match (~eyes fabulous lios scara)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50255,
+        "name": "FABULOUS EYES M�SCARA DE C�LIOS",
+        "brand": "Genérico",
+        "price": 147.02,
+        "reviews": 237,
+        "rating": 4.8,
+        "image": "/products/ultra_26681.jpg"
+      },
+      {
+        "id": 50256,
+        "name": "FABULOUS EYES M�SCARA DE C�LIOS WATERPF",
+        "brand": "Genérico",
+        "price": 163.35,
+        "reviews": 219,
+        "rating": 4.8,
+        "image": "/products/ultra_26667.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 12,
+    "normalizedKey": "Fuzzy Match (~60un babysec fralda galinha pintadinha ultrasec)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50271,
+        "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
+        "brand": "Babysec",
+        "price": 47.94,
+        "reviews": 85,
+        "rating": 4.8,
+        "image": "/products/ultra_26245.webp"
+      },
+      {
+        "id": 1109,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper G 60 Unidades",
+        "brand": "Babysec",
+        "price": 69.9,
+        "oldPrice": 84.9,
+        "discount": 18,
+        "reviews": 94,
+        "rating": 4.7,
+        "image": "/products/babysec_ultrasec_g.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 13,
+    "normalizedKey": "Fuzzy Match (~52un calca dia fralda mamypoko noite xg)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 3,
+    "products": [
+      {
+        "id": 50279,
+        "name": "Fralda Calça MamyPoko Dia & Noite XG 52 Unidades",
+        "brand": "MamyPoko",
+        "price": 64.74,
+        "reviews": 103,
+        "rating": 4.8,
+        "image": "/products/ultra_26256.webp"
+      },
+      {
+        "id": 50281,
+        "name": "Fralda calça MamyPoko Dia & Noite XG 42 Unidades",
+        "brand": "MamyPoko",
+        "price": 48.59,
+        "reviews": 230,
+        "rating": 4.8,
+        "image": "/products/ultra_29230.png"
+      },
+      {
+        "id": 21120,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite XG 26 Unidades",
+        "brand": "MamyPoko",
+        "price": 99.9,
+        "oldPrice": 119.9,
+        "discount": 17,
+        "reviews": 135,
+        "rating": 4.9,
+        "image": "/products/mamypoko_calca_xg.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 14,
+    "normalizedKey": "Fuzzy Match (~200ml bioderma facial gel gel limpeza moussant sebium)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 50330,
+        "name": "Gel de Limpeza Facial Bioderma Sébium Gel Moussant 200ml",
+        "brand": "Bioderma",
+        "price": 32.39,
+        "reviews": 109,
+        "rating": 4.8,
+        "image": "/products/ultra_29637.png"
+      },
+      {
+        "id": 50335,
+        "name": "Gel de Limpeza Sébium Bioderma Gel Moussant Actif 200ml",
+        "brand": "Bioderma",
+        "price": 32.4,
+        "reviews": 108,
+        "rating": 4.8,
+        "image": "/products/ultra_29404.png"
+      }
+    ]
+  },
+  {
+    "groupIndex": 15,
+    "normalizedKey": "Fuzzy Match (~150ml 350ml bond condicionador dove peptideo repair shampoo)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 60004,
+        "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
+        "brand": "Dove",
+        "price": 17.91,
+        "oldPrice": 18.85,
+        "discount": 5,
+        "reviews": 264,
+        "rating": 4.9,
+        "image": "/products/kit_60004.webp"
+      },
+      {
+        "id": 60030,
+        "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
+        "brand": "Dove",
+        "price": 28.49,
+        "oldPrice": 29.99,
+        "discount": 5,
+        "reviews": 290,
+        "rating": 4.8,
+        "image": "/products/kit_60030.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 16,
+    "normalizedKey": "Fuzzy Match (~500ml avela caes cereja condicionador dolce gatos pet shampoo suave topazio)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 60011,
+        "name": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml",
+        "brand": "Dolce Pet",
+        "price": 154.87,
+        "oldPrice": 163.02,
+        "discount": 5,
+        "reviews": 271,
+        "rating": 5,
+        "image": "/products/kit_60011.webp"
+      },
+      {
+        "id": 60039,
+        "name": "Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml",
+        "brand": "Dolce Pet",
+        "price": 154.87,
+        "oldPrice": 163.02,
+        "discount": 5,
+        "reviews": 299,
+        "rating": 4.8,
+        "image": "/products/kit_60039.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 17,
+    "normalizedKey": "Fuzzy Match (~250g 300ml dermohair mascara shampoo siage)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 60014,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 39.9,
+        "oldPrice": 42,
+        "discount": 5,
+        "reviews": 274,
+        "rating": 5,
+        "image": "/products/kit_60014.webp"
+      },
+      {
+        "id": 60045,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 56.75,
+        "oldPrice": 59.74,
+        "discount": 5,
+        "reviews": 115,
+        "rating": 4.8,
+        "image": "/products/kit_60045.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 18,
+    "normalizedKey": "Fuzzy Match (~200ml balm barba barba embaixador goot oleo shampoo)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 3,
+    "products": [
+      {
+        "id": 60017,
+        "name": "Kit Barba Goot - Óleo + Balm + Shampoo Barba Embaixador 200ml",
+        "brand": "Goot",
+        "price": 83.5,
+        "oldPrice": 87.9,
+        "discount": 5,
+        "reviews": 277,
+        "rating": 5,
+        "image": "/products/kit_60017.webp"
+      },
+      {
+        "id": 60024,
+        "name": "Kit Barba Goot Wood - Óleo + Balm + Shampoo Barba Embaixador 200ml",
+        "brand": "Goot",
+        "price": 79.7,
+        "oldPrice": 83.9,
+        "discount": 5,
+        "reviews": 284,
+        "rating": 4.8,
+        "image": "/products/kit_60024.webp"
+      },
+      {
+        "id": 60043,
+        "name": "Kit Óleo para Barba Goot Wood + Shampoo Barba Goot Embaixador 200ml",
+        "brand": "Goot",
+        "price": 48.35,
+        "oldPrice": 50.9,
+        "discount": 5,
+        "reviews": 113,
+        "rating": 4.9,
+        "image": "/products/kit_60043.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 19,
+    "normalizedKey": "Fuzzy Match (~125ml 250ml condicionador eudora hair plastia shampoo siage)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 60034,
+        "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 82.64,
+        "oldPrice": 86.99,
+        "discount": 5,
+        "reviews": 294,
+        "rating": 4.9,
+        "image": "/products/kit_60034.webp"
+      },
+      {
+        "id": 60037,
+        "name": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml",
+        "brand": "Eudora Siàge",
+        "price": 20.41,
+        "oldPrice": 21.48,
+        "discount": 5,
+        "reviews": 297,
+        "rating": 4.9,
+        "image": "/products/kit_60037.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 20,
+    "normalizedKey": "Fuzzy Match (~90caps cabelos hair imecap max unhas)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 60126,
+        "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
+        "brand": "Imecap Hair",
+        "price": 75.14,
+        "oldPrice": 79.1,
+        "discount": 5,
+        "reviews": 196,
+        "rating": 4.8,
+        "image": "/products/kit_60126.webp"
+      },
+      {
+        "id": 60159,
+        "name": "Imecap Hair Cabelos e Unhas com 90 Cápsulas",
+        "brand": "Imecap Hair",
+        "price": 33.61,
+        "oldPrice": 35.38,
+        "discount": 5,
+        "reviews": 229,
+        "rating": 4.8,
+        "image": "/products/kit_60159.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 21,
+    "normalizedKey": "Fuzzy Match (~1g 20comp dipirona novalgina)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 11003,
+        "name": "Novalgina Dipirona 1g 20 comprimidos",
+        "brand": "Novalgina",
+        "price": 34.99,
+        "oldPrice": 47.02,
+        "discount": 26,
+        "image": "/products/novalgina_1g_20comp.webp"
+      },
+      {
+        "id": 1204,
+        "name": "Novalgina Dipirona Monoidratada 1g 20 Comprimidos",
+        "brand": "Novalgina",
+        "price": 34.9,
+        "oldPrice": 39.9,
+        "discount": 13,
+        "image": "/products/novalgina_1g_20comp.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 22,
+    "normalizedKey": "Fuzzy Match (~30ml anti clareador dual eucerin facial pigment serum)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 11016,
+        "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+        "brand": "Eucerin",
+        "price": 260.61,
+        "oldPrice": 299.9,
+        "discount": 13,
+        "reviews": 174,
+        "rating": 4.8,
+        "image": "/products/eucerin_dual_anti_pigment.jpg"
+      },
+      {
+        "id": 1308,
+        "name": "Sérum Clareador Facial Eucerin Anti-Pigment Dual Sérum 30ml",
+        "brand": "Eucerin",
+        "price": 219.9,
+        "oldPrice": 249.9,
+        "discount": 12,
+        "reviews": 134,
+        "rating": 4.8,
+        "image": "/products/eucerin_dual_anti_pigment.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 23,
+    "normalizedKey": "Fuzzy Match (~800g composto fases lacteo nestle ninho prebio)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 20490,
+        "name": "Composto Lácteo Ninho Fases 1+ Prebio 1 Nestlé 800g",
+        "brand": "Ninho",
+        "price": 44.9,
+        "oldPrice": 52.9,
+        "discount": 15,
+        "reviews": 580,
+        "rating": 4.9,
+        "image": "/products/ninho_fases_1.jpg"
+      },
+      {
+        "id": 1112,
+        "name": "Composto Lácteo Ninho Fases 1+ Nestlé 800g",
+        "brand": "Ninho",
+        "price": 44.9,
+        "oldPrice": 51.9,
+        "discount": 13,
+        "reviews": 340,
+        "rating": 4.9,
+        "image": "/products/ninho_fases_1.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 24,
+    "normalizedKey": "Fuzzy Match (~400g acneica actine darrow facial gel limpeza pele)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 115,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
+        "brand": "Darrow",
+        "price": 48.59,
+        "oldPrice": 84.9,
+        "discount": 20,
+        "reviews": 340,
+        "rating": 4.9,
+        "image": "/products/darrow_actine_400g_frasco.jpg"
+      },
+      {
+        "id": 2028,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+        "brand": "Darrow",
+        "price": 74.9,
+        "oldPrice": 89.9,
+        "discount": 17,
+        "reviews": 295,
+        "rating": 4.8,
+        "image": "/products/darrow_actine_400g_frasco.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 25,
+    "normalizedKey": "Fuzzy Match (~50un ajuste calca fralda pampers pants tamanho total)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 3,
+    "products": [
+      {
+        "id": 1104,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho P 50 Unidades",
+        "brand": "Pampers",
+        "price": 93.48,
+        "oldPrice": 111.03,
+        "discount": 16,
+        "reviews": 142,
+        "rating": 4.8,
+        "image": "/products/pampers_pants_p.webp"
+      },
+      {
+        "id": 501,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho M 78 Unidades",
+        "brand": "Pampers",
+        "price": 140.28,
+        "oldPrice": 163.68,
+        "discount": 14,
+        "reviews": 160,
+        "rating": 4.8,
+        "image": "/products/pampers_pants_m.webp"
+      },
+      {
+        "id": 2040,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho G 72 Unidades",
+        "brand": "Pampers",
+        "price": 146.13,
+        "oldPrice": 169.53,
+        "discount": 14,
+        "reviews": 410,
+        "rating": 4.9,
+        "image": "/products/pampers_pants_g.webp"
+      }
+    ]
+  },
+  {
+    "groupIndex": 26,
+    "normalizedKey": "Fuzzy Match (~22un calca dia fralda fralda mamypoko noite)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 21118,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite P 22 Unidades",
+        "brand": "MamyPoko",
+        "price": 48.59,
+        "oldPrice": 94.9,
+        "discount": 16,
+        "reviews": 120,
+        "rating": 4.9,
+        "image": "/products/mamypoko_calca_p.jpg"
+      },
+      {
+        "id": 21121,
+        "name": "Fralda MamyPoko Fralda-Calça Dia e Noite XXG 22 Unidades",
+        "brand": "MamyPoko",
+        "price": 104.9,
+        "oldPrice": 124.9,
+        "discount": 16,
+        "reviews": 110,
+        "rating": 4.9,
+        "image": "/products/mamypoko_calca_xxg.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 27,
+    "normalizedKey": "Fuzzy Match (~36comp analgesico dorflex muscular relaxante)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 1201,
+        "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+        "brand": "Dorflex",
+        "price": 25.99,
+        "oldPrice": 29.9,
+        "discount": 13,
+        "image": "/products/dorflex_36.jpg"
+      },
+      {
+        "id": 2016,
+        "name": "Dorflex Relaxante Muscular e Analgésico Sanofi 36 Comprimidos",
+        "brand": "Dorflex",
+        "price": 36.9,
+        "oldPrice": 42.9,
+        "discount": 14,
+        "image": "/products/dorflex_36.jpg"
+      }
+    ]
+  },
+  {
+    "groupIndex": 28,
+    "normalizedKey": "Fuzzy Match (~100ml eau erba parfum pura unissex xerjoff)",
+    "type": "Fuzzy High Similarity",
+    "productsCount": 2,
+    "products": [
+      {
+        "id": 77001,
+        "name": "Xerjoff Erba Pura Eau de Parfum Unissex-100 Ml",
+        "brand": "Xerjoff",
+        "price": 1077.3,
+        "oldPrice": 1539,
+        "discount": 30,
+        "reviews": 142,
+        "rating": 5,
+        "image": "/products/xerjoff_erba_pura.jpg"
+      },
+      {
+        "id": 77017,
+        "name": "Erba Gold Xerjoff Eau de Parfum Unissex-100 Ml",
+        "brand": "Xerjoff",
+        "price": 1427.3,
+        "oldPrice": 2039,
+        "discount": 30,
+        "reviews": 89,
+        "rating": 5,
+        "image": "/products/xerjoff_erba_gold.jpg"
+      }
+    ]
+  }
+]

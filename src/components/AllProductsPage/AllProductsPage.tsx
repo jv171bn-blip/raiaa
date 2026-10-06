@@ -7,7 +7,7 @@ import {
   Package,
   ArrowUp,
 } from 'lucide-react';
-import { Product } from '../../data/products';
+import { Product, deduplicateProducts } from '../../data/products';
 import { useCart } from '../../context/CartContext';
 import ProductCard from '../ProductCard/ProductCard';
 import './AllProductsPage.css';
@@ -43,10 +43,10 @@ const AllProductsPage: React.FC<AllProductsPageProps> = ({ allProducts }) => {
 
   // Filter products by search input
   const filteredProducts = useMemo(() => {
-    if (!searchFilter.trim()) return allProducts;
+    if (!searchFilter.trim()) return deduplicateProducts(allProducts);
 
     const query = normalize(searchFilter.trim());
-    return allProducts.filter((product) => {
+    const matched = allProducts.filter((product) => {
       const name = normalize(product.name);
       const brand = normalize(product.brand);
       const cat = normalize(product.category || '');
@@ -58,6 +58,7 @@ const AllProductsPage: React.FC<AllProductsPageProps> = ({ allProducts }) => {
         sub.includes(query)
       );
     });
+    return deduplicateProducts(matched);
   }, [allProducts, searchFilter]);
 
   // Sort products - Default 'relevance' places newly added (ultraId) products FIRST!

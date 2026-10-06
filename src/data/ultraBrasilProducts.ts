@@ -1,10 +1,9 @@
 import { Product } from './products';
 
 /**
- * Catálogo dos produtos campeões de vendas (Mais Vendidos / Mais Vistos / Novos)
- * fornecidos pela rede Ultra Brasil, com fotos 100% autênticas dos próprios produtos
- * e preços rigorosamente sincronizados.
- * Total de itens: 338
+ * Catálogo dos produtos campeões de vendas fornecidos pela rede Ultra Brasil,
+ * com fotos 100% autênticas e SKUs únicos rigorosamente deduplicados.
+ * Total de itens: 303
  */
 export const ultraBrasilProducts: Product[] = [
   {
@@ -1443,29 +1442,6 @@ export const ultraBrasilProducts: Product[] = [
     "productCode": "27064"
   },
   {
-    "id": 50063,
-    "ultraId": 27067,
-    "name": "BENEFIT    THEY’RE REAL  MASC 1UNID",
-    "size": "1UNID",
-    "brand": "Benefit",
-    "category": "Máscaras de Cílios",
-    "subcategory": "",
-    "price": 70.95,
-    "rating": 4.8,
-    "reviews": 199,
-    "image": "/products/ultra_27067.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: BENEFIT    THEY’RE REAL  MASC 1UNID. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "27067"
-  },
-  {
     "id": 50064,
     "ultraId": 26055,
     "name": "Best Whey – 450g Achocolatado Toddy – Atlhetica Nutrition",
@@ -2274,29 +2250,6 @@ export const ultraBrasilProducts: Product[] = [
     "productCode": "27586"
   },
   {
-    "id": 50099,
-    "ultraId": 27884,
-    "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
-    "size": "",
-    "brand": "Too Faced",
-    "category": "Beleza e Perfumaria",
-    "subcategory": "Maquiagem",
-    "price": 175.45,
-    "rating": 4.8,
-    "reviews": 228,
-    "image": "/products/ultra_27884.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: BRONZER TOO FACED CHOCOLATE SOLEIL. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "27884"
-  },
-  {
     "id": 50100,
     "ultraId": 25916,
     "name": "C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas",
@@ -2531,29 +2484,6 @@ export const ultraBrasilProducts: Product[] = [
       "Entrega rápida e segura com a garantia Droga Raia."
     ],
     "productCode": "26139"
-  },
-  {
-    "id": 50110,
-    "ultraId": 25216,
-    "name": "CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca",
-    "size": "",
-    "brand": "CeraVe",
-    "category": "Geral",
-    "subcategory": "",
-    "price": 89.9,
-    "rating": 4.8,
-    "reviews": 192,
-    "image": "/products/ultra_25216.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25216"
   },
   {
     "id": 50111,
@@ -3445,29 +3375,6 @@ export const ultraBrasilProducts: Product[] = [
     "productCode": "28137"
   },
   {
-    "id": 50149,
-    "ultraId": 27710,
-    "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
-    "size": "",
-    "brand": "Sephora Collection",
-    "category": "Beleza e Perfumaria",
-    "subcategory": "Maquiagem",
-    "price": 63.25,
-    "rating": 4.8,
-    "reviews": 130,
-    "image": "/products/ultra_27710.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "27710"
-  },
-  {
     "id": 50150,
     "ultraId": 27665,
     "name": "Corretivo Sérum Hidratante Fenty Beauty We’re Even",
@@ -3673,29 +3580,6 @@ export const ultraBrasilProducts: Product[] = [
       "Entrega rápida e segura com a garantia Droga Raia."
     ],
     "productCode": "25927"
-  },
-  {
-    "id": 50159,
-    "ultraId": 25931,
-    "name": "Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition",
-    "size": "300g",
-    "brand": "Soldiers Nutrition",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Creatina",
-    "price": 37.27,
-    "rating": 4.8,
-    "reviews": 247,
-    "image": "/products/ultra_25931.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25931"
   },
   {
     "id": 50160,
@@ -4477,29 +4361,6 @@ export const ultraBrasilProducts: Product[] = [
       "Entrega rápida e segura com a garantia Droga Raia."
     ],
     "productCode": "28682"
-  },
-  {
-    "id": 50192,
-    "ultraId": 26305,
-    "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
-    "size": "40g",
-    "brand": "Genérico",
-    "category": "Hidratantes",
-    "subcategory": "",
-    "price": 45.58,
-    "rating": 4.8,
-    "reviews": 225,
-    "image": "/products/ultra_26305.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: Creme Hidratante Bepantol Derma Multirrestaurador 40g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "26305"
   },
   {
     "id": 50193,
@@ -5849,52 +5710,6 @@ export const ultraBrasilProducts: Product[] = [
     "productCode": "25749"
   },
   {
-    "id": 50250,
-    "ultraId": 25750,
-    "name": "Exímia Fortalize S Cabelos e Unhas Com 90 Comprimidos",
-    "size": "90 Comprimidos",
-    "brand": "Exímia",
-    "category": "Saúde e Beleza",
-    "subcategory": "",
-    "price": 357.8,
-    "rating": 4.8,
-    "reviews": 250,
-    "image": "/products/ultra_25750.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: Exímia Fortalize S Cabelos e Unhas Com 90 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25750"
-  },
-  {
-    "id": 50251,
-    "ultraId": 25743,
-    "name": "Eximia Fortalize S com 30 Comprimidos",
-    "size": "30 Comprimidos",
-    "brand": "Eximia",
-    "category": "Saúde e Beleza",
-    "subcategory": "",
-    "price": 198.29,
-    "rating": 4.8,
-    "reviews": 131,
-    "image": "/products/ultra_25743.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: Eximia Fortalize S com 30 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25743"
-  },
-  {
     "id": 50252,
     "ultraId": 25742,
     "name": "Eximia Probiac com 60 Comprimidos",
@@ -6342,29 +6157,6 @@ export const ultraBrasilProducts: Product[] = [
       "Entrega rápida e segura com a garantia Droga Raia."
     ],
     "productCode": "28561"
-  },
-  {
-    "id": 50271,
-    "ultraId": 26245,
-    "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
-    "size": "60 Unidades",
-    "brand": "Babysec",
-    "category": "Mamãe e Bebê",
-    "subcategory": "Fraldas Infantis",
-    "price": 47.94,
-    "rating": 4.8,
-    "reviews": 85,
-    "image": "/products/ultra_26245.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "26245"
   },
   {
     "id": 50272,

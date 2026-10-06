@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Search } from 'lucide-react';
-import { Product } from '../../data/products';
+import { Product, deduplicateProducts } from '../../data/products';
 import { useCart } from '../../context/CartContext';
 import SearchResultCard from '../SearchResultCard/SearchResultCard';
 import FilterDrawer, { FilterState } from '../FilterDrawer/FilterDrawer';
@@ -115,11 +115,11 @@ const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ allProducts }) =>
   // 1. Text search across all fields
   const textFiltered = useMemo(() => {
     const raw = searchQuery.trim();
-    if (!raw) return allProducts;
+    if (!raw) return deduplicateProducts(allProducts);
 
     const queryTokens = normalize(raw).split(/\s+/).filter(Boolean);
 
-    return allProducts.filter(p => {
+    const filtered = allProducts.filter(p => {
       const pName = normalize(p.name || '');
       const pBrand = normalize(p.brand || '');
       const pCat = normalize(p.category || '');
@@ -132,6 +132,8 @@ const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ allProducts }) =>
 
       return queryTokens.every(token => fullHaystack.includes(token));
     });
+
+    return deduplicateProducts(filtered);
   }, [searchQuery, allProducts]);
 
   // Extract available brands and categories from the search result set
@@ -153,7 +155,7 @@ const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ allProducts }) =>
 
   // 2. Apply advanced filters from FilterDrawer
   const filteredProducts = useMemo(() => {
-    return textFiltered.filter(p => {
+    const list = textFiltered.filter(p => {
       // Seller
       if (filters.seller && filters.seller === 'Raia') {
         // All Drogaraia products qualify as Raia
@@ -228,6 +230,7 @@ const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ allProducts }) =>
 
       return true;
     });
+    return deduplicateProducts(list);
   }, [textFiltered, filters]);
 
   // 3. Sort products

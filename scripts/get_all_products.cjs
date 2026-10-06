@@ -3700,7 +3700,7 @@ function getSimilarProducts(current, candidates, limit = 8) {
     score += Math.min(sharedTokens.length, 3);
     return { product: p, score };
   }).filter(({ score }) => score > 0).sort((a, b) => b.score - a.score).slice(0, limit).map(({ product }) => product);
-  return scored;
+  return deduplicateProducts(scored);
 }
 function getPersonalizedRecommendations(viewedIds, allProducts, fallbackProducts = favoriteBrands, limit = 12) {
   if (!viewedIds || viewedIds.length === 0) {
@@ -3806,7 +3806,7 @@ function getPersonalizedRecommendations(viewedIds, allProducts, fallbackProducts
       }
     }
   }
-  return uniqueRecs;
+  return deduplicateProducts(uniqueRecs);
 }
 var healthSpace = [
   {
@@ -3850,13 +3850,14 @@ var bebeMaisVendidos = [
   ...mostBought.filter((p) => p.category === "Mam\xE3e e Beb\xEA" || p.category === "Mam\xE3e & Beb\xEA")
 ].filter(Boolean);
 var deduplicateProducts = (products) => {
+  if (!products || !Array.isArray(products)) return [];
   const seenIds = /* @__PURE__ */ new Set();
   const seenNormalizedKeys = /* @__PURE__ */ new Set();
   const result = [];
   for (const p of products) {
-    if (!p || !p.id) continue;
+    if (!p || typeof p.id !== "number") continue;
     if (seenIds.has(p.id)) continue;
-    const normKey = (p.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\btamanho\b/g, "").replace(/\bdescartavel\b/g, "").replace(/\bcom\b/g, "").replace(/[^a-z0-9]/g, " ").replace(/\s+/g, " ").trim();
+    const normKey = (p.name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\btamanho\b/g, "").replace(/\btam\b/g, "").replace(/\bdescartavel\b/g, "").replace(/\bdescartaveis\b/g, "").replace(/\bcom\b/g, "").replace(/\bunidades\b/g, "un").replace(/\bunidade\b/g, "un").replace(/\bfrasco\b/g, "").replace(/\bpacote\b/g, "").replace(/[^a-z0-9]/g, " ").replace(/\s+/g, " ").trim();
     if (normKey && seenNormalizedKeys.has(normKey)) {
       continue;
     }
@@ -5303,29 +5304,6 @@ var ultraBrasilProducts = [
       "Entrega r\xE1pida e segura com a garantia Droga Raia."
     ],
     "productCode": "27064"
-  },
-  {
-    "id": 50063,
-    "ultraId": 27067,
-    "name": "BENEFIT    THEY\u2019RE REAL  MASC 1UNID",
-    "size": "1UNID",
-    "brand": "Benefit",
-    "category": "M\xE1scaras de C\xEDlios",
-    "subcategory": "",
-    "price": 70.95,
-    "rating": 4.8,
-    "reviews": 199,
-    "image": "/products/ultra_27067.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: BENEFIT    THEY\u2019RE REAL  MASC 1UNID. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "27067"
   },
   {
     "id": 50064,
@@ -7537,29 +7515,6 @@ var ultraBrasilProducts = [
     "productCode": "25927"
   },
   {
-    "id": 50159,
-    "ultraId": 25931,
-    "name": "Creatina Monohidratada Pote 300g \u2013 100% Pura Importada \u2013 Soldiers Nutrition",
-    "size": "300g",
-    "brand": "Soldiers Nutrition",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Creatina",
-    "price": 37.27,
-    "rating": 4.8,
-    "reviews": 247,
-    "image": "/products/ultra_25931.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: Creatina Monohidratada Pote 300g \u2013 100% Pura Importada \u2013 Soldiers Nutrition. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25931"
-  },
-  {
     "id": 50160,
     "ultraId": 25785,
     "name": "Creatina Monohidratada Pote 300G \u2013 Dux Nutrition",
@@ -9709,29 +9664,6 @@ var ultraBrasilProducts = [
       "Entrega r\xE1pida e segura com a garantia Droga Raia."
     ],
     "productCode": "25749"
-  },
-  {
-    "id": 50250,
-    "ultraId": 25750,
-    "name": "Ex\xEDmia Fortalize S Cabelos e Unhas Com 90 Comprimidos",
-    "size": "90 Comprimidos",
-    "brand": "Ex\xEDmia",
-    "category": "Sa\xFAde e Beleza",
-    "subcategory": "",
-    "price": 357.8,
-    "rating": 4.8,
-    "reviews": 250,
-    "image": "/products/ultra_25750.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: Ex\xEDmia Fortalize S Cabelos e Unhas Com 90 Comprimidos. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25750"
   },
   {
     "id": 50251,
@@ -14259,131 +14191,6 @@ var novosKitsCarvalhoUltra = [
     "size": "3 Produtos"
   },
   {
-    "id": 60129,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 256.49,
-    "oldPrice": 269.99,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 199,
-    "image": "/products/kit_60129.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60129",
-    "size": "3 Produtos"
-  },
-  {
-    "id": 60130,
-    "name": "Kit Loreal Absolut Repair Shampoo 750ml e Condicionador 750ml",
-    "brand": "L'Or\xE9al Paris",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 256.49,
-    "oldPrice": 269.99,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 200,
-    "image": "/products/kit_60130.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Loreal Absolut Repair Shampoo 750ml e Condicionador 750ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60130",
-    "size": "750ml"
-  },
-  {
-    "id": 60131,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich \u2013 Shampoo 1000ml + Condicionador 1000ml",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 162.44,
-    "oldPrice": 170.99,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 201,
-    "image": "/products/kit_60131.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich \u2013 Shampoo 1000ml + Condicionador 1000ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60131",
-    "size": "1000ml"
-  },
-  {
-    "id": 60132,
-    "name": "Kit Sabonete em Barra Nivea Creme Care 90g com 6 unidades",
-    "brand": "Nivea",
-    "category": "Higiene Pessoal",
-    "subcategory": "Cuidados Pessoais",
-    "price": 17.09,
-    "oldPrice": 17.99,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 202,
-    "image": "/products/kit_60132.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Sabonete em Barra Nivea Creme Care 90g com 6 unidades. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60132",
-    "size": "90g"
-  },
-  {
-    "id": 60133,
-    "name": "3PC MINI KITS SOFT & WARM NUDES 3PC KIT",
-    "brand": "Droga Raia",
-    "category": "Beleza",
-    "subcategory": "Maquiagem",
-    "price": 107.11,
-    "oldPrice": 112.75,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 203,
-    "image": "/products/kit_60133.jpg",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "3PC MINI KITS SOFT & WARM NUDES 3PC KIT. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60133",
-    "size": "Kit"
-  },
-  {
     "id": 60134,
     "name": "KITS NUDE NATURAL LIPS-FOUNDERS MINI LIP",
     "brand": "Droga Raia",
@@ -14482,31 +14289,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60137",
     "size": "1UNID"
-  },
-  {
-    "id": 60138,
-    "name": "3PC MINI KITS NUDE METALLICS EYE KIT",
-    "brand": "Droga Raia",
-    "category": "Beleza e Perfumaria",
-    "subcategory": "Kits Especiais",
-    "price": 107.11,
-    "oldPrice": 112.75,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 208,
-    "image": "/products/kit_60138.jpg",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "3PC MINI KITS NUDE METALLICS EYE KIT. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60138",
-    "size": "Kit"
   },
   {
     "id": 60139,
@@ -14809,81 +14591,6 @@ var novosKitsCarvalhoUltra = [
     "size": "740g"
   },
   {
-    "id": 60151,
-    "name": "Kit 2x Hipercal\xF3rico 6 Six Bulking Baunilha 6kg \u2013 Bodybuilders",
-    "brand": "Bodybuilders",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 157.83,
-    "oldPrice": 166.14,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 221,
-    "image": "/products/kit_60151.jpeg",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit 2x Hipercal\xF3rico 6 Six Bulking Baunilha 6kg \u2013 Bodybuilders. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60151",
-    "size": "6kg"
-  },
-  {
-    "id": 60152,
-    "name": "Kit 2 Ora-Pro-N\xF3bis + C\xFArcuma + Gengibre 240C\xE1ps 500mg Status Verde",
-    "brand": "Status Verde",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 72.98,
-    "oldPrice": 76.82,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 222,
-    "image": "/products/kit_60152.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit 2 Ora-Pro-N\xF3bis + C\xFArcuma + Gengibre 240C\xE1ps 500mg Status Verde. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60152",
-    "size": "Kit"
-  },
-  {
-    "id": 60153,
-    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 C\xE1psulas",
-    "brand": "Imecap Hair",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 75.14,
-    "oldPrice": 79.1,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 223,
-    "image": "/products/kit_60153.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Imecap Hair Max Cabelos E Unhas 90 C\xE1psulas. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60153",
-    "size": "Kit"
-  },
-  {
     "id": 60154,
     "name": "Nutren a-z Multi Vitam\xEDnico E Mineral 60 Caps. Gel \u2013 Nestl\xE9",
     "brand": "Nutren",
@@ -15032,31 +14739,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60159",
     "size": "Kit"
-  },
-  {
-    "id": 60160,
-    "name": "Nutren a-z Multi Vitam\xEDnico E Mineral 60 Caps. Gel \u2013 Nestl\xE9",
-    "brand": "Nutren",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 43.57,
-    "oldPrice": 45.86,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 230,
-    "image": "/products/kit_60160.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Nutren a-z Multi Vitam\xEDnico E Mineral 60 Caps. Gel \u2013 Nestl\xE9. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60160",
-    "size": "60 Caps"
   }
 ];
 

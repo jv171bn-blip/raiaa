@@ -1,0 +1,625 @@
+[
+  {
+    "title": "Base Sephora Collection Best Skin Ever",
+    "items": [
+      {
+        "id": 50136,
+        "name": "Corretivo Colorido Sephora Collection Best Skin Ever 8HR",
+        "brand": "Sephora Collection",
+        "price": 57.75,
+        "image": "/products/ultra_28071.jpg",
+        "reviews": 107
+      },
+      {
+        "id": 50146,
+        "name": "CORRETIVO LÍQUIDO SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_27822.jpg",
+        "reviews": 274
+      },
+      {
+        "id": 50034,
+        "name": "Base em Pó Sephora Collection Best Skin Ever Matte",
+        "brand": "Sephora Collection",
+        "price": 67.1,
+        "image": "/products/ultra_28093.jpg",
+        "reviews": 261
+      },
+      {
+        "id": 50035,
+        "name": "BASE EM STICK SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "image": "/products/ultra_27954.jpg",
+        "reviews": 98
+      },
+      {
+        "id": 50046,
+        "name": "BASE LÍQUIDA SEPHORA COLLECTION BEST SKIN EVER",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "image": "/products/ultra_28096.jpg",
+        "reviews": 92
+      },
+      {
+        "id": 50052,
+        "name": "Base Sephora Collection Best Skin Ever Glow",
+        "brand": "Sephora Collection",
+        "price": 87.45,
+        "image": "/products/ultra_28094.jpg",
+        "reviews": 278
+      },
+      {
+        "id": 50148,
+        "name": "Corretivo Sephora Collection Best Skin Ever Glow Concealer",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_28137.jpg",
+        "reviews": 129
+      },
+      {
+        "id": 50149,
+        "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
+        "brand": "Sephora Collection",
+        "price": 63.25,
+        "image": "/products/ultra_27710.jpg",
+        "reviews": 130
+      }
+    ]
+  },
+  {
+    "title": "Bronzer Too Faced Chocolate Soleil",
+    "items": [
+      {
+        "id": 50096,
+        "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+        "brand": "Too Faced",
+        "price": 162.8,
+        "image": "/products/ultra_28011.jpg",
+        "reviews": 187
+      },
+      {
+        "id": 50099,
+        "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
+        "brand": "Too Faced",
+        "price": 175.45,
+        "image": "/products/ultra_27884.jpg",
+        "reviews": 228
+      }
+    ]
+  },
+  {
+    "title": "Creme Hidratante Bepantol Derma 40g",
+    "items": [
+      {
+        "id": 50191,
+        "name": "Creme Hidratante Bepantol Derma creme 40g",
+        "brand": "Genérico",
+        "price": 35.99,
+        "oldPrice": 39.99,
+        "image": "/products/ultra_28682.png",
+        "reviews": 154
+      },
+      {
+        "id": 50192,
+        "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
+        "brand": "Genérico",
+        "price": 45.58,
+        "image": "/products/ultra_26305.webp",
+        "reviews": 225
+      }
+    ]
+  },
+  {
+    "title": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
+    "items": [
+      {
+        "id": 50271,
+        "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
+        "brand": "Babysec",
+        "price": 47.94,
+        "image": "/products/ultra_26245.webp",
+        "reviews": 85
+      },
+      {
+        "id": 50270,
+        "name": "Fralda Babysec Ultra Sec G 60 Unidades",
+        "brand": "Babysec",
+        "price": 47.61,
+        "oldPrice": 52.9,
+        "image": "/products/ultra_28561.png",
+        "reviews": 297
+      },
+      {
+        "id": 50272,
+        "name": "Fralda Babysec UltraSec XG 56 Unidades",
+        "brand": "Babysec",
+        "price": 49.41,
+        "oldPrice": 54.9,
+        "image": "/products/ultra_28560.png",
+        "reviews": 280
+      },
+      {
+        "id": 21108,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper M 68 Unidades",
+        "brand": "Babysec",
+        "price": 64.9,
+        "oldPrice": 79.9,
+        "image": "/products/babysec_ultrasec_m.jpg",
+        "reviews": 110
+      },
+      {
+        "id": 1109,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper G 60 Unidades",
+        "brand": "Babysec",
+        "price": 69.9,
+        "oldPrice": 84.9,
+        "image": "/products/babysec_ultrasec_g.jpg",
+        "reviews": 94
+      },
+      {
+        "id": 21112,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XG 56 Unidades",
+        "brand": "Babysec",
+        "price": 74.9,
+        "oldPrice": 89.9,
+        "image": "/products/babysec_ultrasec_xg.jpg",
+        "reviews": 88
+      },
+      {
+        "id": 21113,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper XXG 48 Unidades",
+        "brand": "Babysec",
+        "price": 79.9,
+        "oldPrice": 94.9,
+        "image": "/products/babysec_ultrasec_xxg.jpg",
+        "reviews": 74
+      },
+      {
+        "id": 50286,
+        "name": "Fralda Descartável Babysec Hiper XXG 48 Unidades",
+        "brand": "Babysec",
+        "price": 44.99,
+        "oldPrice": 49.99,
+        "image": "/products/ultra_28270.png",
+        "reviews": 190
+      }
+    ]
+  },
+  {
+    "title": "Darrow Actine Gel de Limpeza Pele Acneica 400g",
+    "items": [
+      {
+        "id": 50331,
+        "name": "Gel De Limpeza Facial Darrow Actine Oil Control 400g",
+        "brand": "Darrow",
+        "price": 48.59,
+        "image": "/products/ultra_29387.png",
+        "reviews": 259
+      },
+      {
+        "id": 115,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
+        "brand": "Darrow",
+        "price": 48.59,
+        "oldPrice": 84.9,
+        "image": "/products/darrow_actine_400g_frasco.jpg",
+        "reviews": 340
+      },
+      {
+        "id": 2028,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+        "brand": "Darrow",
+        "price": 74.9,
+        "oldPrice": 89.9,
+        "image": "/products/darrow_actine_400g_frasco.jpg",
+        "reviews": 295
+      }
+    ]
+  },
+  {
+    "title": "Kit Dove Bond Intense Repair (Shampoo 350ml + Condicionador 150ml)",
+    "items": [
+      {
+        "id": 60004,
+        "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
+        "brand": "Dove",
+        "price": 17.91,
+        "oldPrice": 18.85,
+        "image": "/products/kit_60004.webp",
+        "reviews": 264
+      },
+      {
+        "id": 60030,
+        "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
+        "brand": "Dove",
+        "price": 28.49,
+        "oldPrice": 29.99,
+        "image": "/products/kit_60030.webp",
+        "reviews": 290
+      }
+    ]
+  },
+  {
+    "title": "Kit Dolce Pet Cereja e Avelã Cães e Gatos 500ml",
+    "items": [
+      {
+        "id": 60011,
+        "name": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml",
+        "brand": "Dolce Pet",
+        "price": 154.87,
+        "oldPrice": 163.02,
+        "image": "/products/kit_60011.webp",
+        "reviews": 271
+      },
+      {
+        "id": 60039,
+        "name": "Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml",
+        "brand": "Dolce Pet",
+        "price": 154.87,
+        "oldPrice": 163.02,
+        "image": "/products/kit_60039.webp",
+        "reviews": 299
+      }
+    ]
+  },
+  {
+    "title": "Kit Eudora Siàge Hair-Plastia (Shampoo + Condicionador)",
+    "items": [
+      {
+        "id": 60018,
+        "name": "Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 23.75,
+        "oldPrice": 25,
+        "image": "/products/kit_60018.webp",
+        "reviews": 278
+      },
+      {
+        "id": 60031,
+        "name": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 31.82,
+        "oldPrice": 33.49,
+        "image": "/products/kit_60031.webp",
+        "reviews": 291
+      },
+      {
+        "id": 60032,
+        "name": "Kit Eudora Siàge Hidratação Micelar Shampoo 250ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 26.36,
+        "oldPrice": 27.75,
+        "image": "/products/kit_60032.webp",
+        "reviews": 292
+      },
+      {
+        "id": 60048,
+        "name": "Kit Eudora Siàge Cauterização dos Lisos Shampoo 250ml + Máscara 250g",
+        "brand": "Eudora Siàge",
+        "price": 61.74,
+        "oldPrice": 64.99,
+        "image": "/products/kit_60048.webp",
+        "reviews": 118
+      },
+      {
+        "id": 60034,
+        "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 82.64,
+        "oldPrice": 86.99,
+        "image": "/products/kit_60034.webp",
+        "reviews": 294
+      },
+      {
+        "id": 60035,
+        "name": "Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml",
+        "brand": "Eudora Siàge",
+        "price": 38.94,
+        "oldPrice": 40.99,
+        "image": "/products/kit_60035.webp",
+        "reviews": 295
+      },
+      {
+        "id": 60037,
+        "name": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml",
+        "brand": "Eudora Siàge",
+        "price": 20.41,
+        "oldPrice": 21.48,
+        "image": "/products/kit_60037.webp",
+        "reviews": 297
+      }
+    ]
+  },
+  {
+    "title": "Kit Wella Invigo Nutri Enrich (Shampoo 1L + Condicionador 1L)",
+    "items": [
+      {
+        "id": 60019,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 250ml + Máscara 150ml",
+        "brand": "Wella Professionals",
+        "price": 74.53,
+        "oldPrice": 78.45,
+        "image": "/products/kit_60019.webp",
+        "reviews": 279
+      },
+      {
+        "id": 60020,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
+        "brand": "Wella Professionals",
+        "price": 185.68,
+        "oldPrice": 195.45,
+        "image": "/products/kit_60020.webp",
+        "reviews": 280
+      },
+      {
+        "id": 60051,
+        "name": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)",
+        "brand": "Wella Professionals",
+        "price": 94.98,
+        "oldPrice": 99.98,
+        "image": "/products/kit_60051.webp",
+        "reviews": 121
+      },
+      {
+        "id": 60125,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
+        "brand": "Wella Professionals",
+        "price": 180.49,
+        "oldPrice": 189.99,
+        "image": "/products/kit_60125.png",
+        "reviews": 195
+      },
+      {
+        "id": 60128,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos",
+        "brand": "Wella Professionals",
+        "price": 256.49,
+        "oldPrice": 269.99,
+        "image": "/products/kit_60128.png",
+        "reviews": 198
+      }
+    ]
+  },
+  {
+    "title": "Imecap Hair Cabelos e Unhas 90 Cápsulas",
+    "items": [
+      {
+        "id": 60126,
+        "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
+        "brand": "Imecap Hair",
+        "price": 75.14,
+        "oldPrice": 79.1,
+        "image": "/products/kit_60126.webp",
+        "reviews": 196
+      },
+      {
+        "id": 60159,
+        "name": "Imecap Hair Cabelos e Unhas com 90 Cápsulas",
+        "brand": "Imecap Hair",
+        "price": 33.61,
+        "oldPrice": 35.38,
+        "image": "/products/kit_60159.webp",
+        "reviews": 229
+      }
+    ]
+  },
+  {
+    "title": "Colírio Hyabak 0,15% 10ml",
+    "items": [
+      {
+        "id": 14951,
+        "name": "Colírio Hyabak 0,15% 10ml",
+        "brand": "Hyabak",
+        "price": 74.5,
+        "oldPrice": 78.9,
+        "image": "/products/hyabak_10ml.jpg"
+      },
+      {
+        "id": 1213,
+        "name": "Colírio Hyabak 0,15% Hidratante Ocular 10ml",
+        "brand": "Hyabak",
+        "price": 59.9,
+        "oldPrice": 69.9,
+        "image": "/products/hyabak_10ml.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Novalgina Dipirona 1g 20 Comprimidos",
+    "items": [
+      {
+        "id": 11003,
+        "name": "Novalgina Dipirona 1g 20 comprimidos",
+        "brand": "Novalgina",
+        "price": 34.99,
+        "oldPrice": 47.02,
+        "image": "/products/novalgina_1g_20comp.webp"
+      },
+      {
+        "id": 1204,
+        "name": "Novalgina Dipirona Monoidratada 1g 20 Comprimidos",
+        "brand": "Novalgina",
+        "price": 34.9,
+        "oldPrice": 39.9,
+        "image": "/products/novalgina_1g_20comp.webp"
+      }
+    ]
+  },
+  {
+    "title": "Buscopan Composto 20 Comprimidos",
+    "items": [
+      {
+        "id": 11005,
+        "name": "Buscopan Composto Butilbrometo de Escopolamina 10mg + Dipirona Sódica 250mg 20 comprimidos",
+        "brand": "Buscopan",
+        "price": 23.9,
+        "oldPrice": 29.49,
+        "image": "/products/buscopan_composto_20comp.webp"
+      },
+      {
+        "id": 1208,
+        "name": "Buscopan Composto 20 Comprimidos Revestidos",
+        "brand": "Buscopan",
+        "price": 23.9,
+        "oldPrice": 28.5,
+        "image": "/products/buscopan_composto_20comp.webp"
+      }
+    ]
+  },
+  {
+    "title": "Enterogermina Probiótico 10 Flaconetes (5ml)",
+    "items": [
+      {
+        "id": 11006,
+        "name": "Probiótico Enterogermina 10 frascos de 5ml",
+        "brand": "Enterogermina",
+        "price": 51.99,
+        "image": "/products/enterogermina_10flac.jpg"
+      },
+      {
+        "id": 1212,
+        "name": "Enterogermina Probiótico 2 Bilhões 10 Flaconetes 5ml",
+        "brand": "Enterogermina",
+        "price": 49.9,
+        "oldPrice": 58.9,
+        "image": "/products/enterogermina_10flac.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Eucerin Anti-Pigment Dual Sérum Clareador 30ml",
+    "items": [
+      {
+        "id": 11016,
+        "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+        "brand": "Eucerin",
+        "price": 260.61,
+        "oldPrice": 299.9,
+        "image": "/products/eucerin_dual_anti_pigment.jpg",
+        "reviews": 174
+      },
+      {
+        "id": 1308,
+        "name": "Sérum Clareador Facial Eucerin Anti-Pigment Dual Sérum 30ml",
+        "brand": "Eucerin",
+        "price": 219.9,
+        "oldPrice": 249.9,
+        "image": "/products/eucerin_dual_anti_pigment.jpg",
+        "reviews": 134
+      }
+    ]
+  },
+  {
+    "title": "Composto Lácteo Ninho Fases 1+ Nestlé 800g",
+    "items": [
+      {
+        "id": 20490,
+        "name": "Composto Lácteo Ninho Fases 1+ Prebio 1 Nestlé 800g",
+        "brand": "Ninho",
+        "price": 44.9,
+        "oldPrice": 52.9,
+        "image": "/products/ninho_fases_1.jpg",
+        "reviews": 580
+      },
+      {
+        "id": 1112,
+        "name": "Composto Lácteo Ninho Fases 1+ Nestlé 800g",
+        "brand": "Ninho",
+        "price": 44.9,
+        "oldPrice": 51.9,
+        "image": "/products/ninho_fases_1.jpg",
+        "reviews": 340
+      }
+    ]
+  },
+  {
+    "title": "Protetor Solar Facial Needs FPS 70 40g",
+    "items": [
+      {
+        "id": 109,
+        "name": "Protetor Solar Facial Needs Beauty FPS 70 40g",
+        "brand": "Needs",
+        "price": 31.49,
+        "oldPrice": 44.9,
+        "image": "/products/needs_beauty_fps70.jpg",
+        "reviews": 164
+      },
+      {
+        "id": 2031,
+        "name": "Protetor Solar Facial Needs FPS 70 Toque Seco 40g",
+        "brand": "Needs",
+        "price": 42.9,
+        "oldPrice": 49.9,
+        "image": "/products/needs_beauty_fps70.jpg",
+        "reviews": 165
+      }
+    ]
+  },
+  {
+    "title": "Enxaguante Bucal Listerine Cool Mint 500ml",
+    "items": [
+      {
+        "id": 116,
+        "name": "Enxaguante Bucal Listerine Cool Mint 500ml Leve Mais Pague Menos",
+        "brand": "Listerine",
+        "price": 21.9,
+        "oldPrice": 28.9,
+        "image": "/products/listerine_cool_mint_500ml.jpg",
+        "reviews": 190
+      },
+      {
+        "id": 1501,
+        "name": "Enxaguante Bucal Listerine Cool Mint 500ml",
+        "brand": "Listerine",
+        "price": 22.9,
+        "oldPrice": 27.9,
+        "image": "/products/listerine_cool_mint_500ml.jpg",
+        "reviews": 320
+      }
+    ]
+  },
+  {
+    "title": "Dorflex Analgésico 36 Comprimidos",
+    "items": [
+      {
+        "id": 1201,
+        "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+        "brand": "Dorflex",
+        "price": 25.99,
+        "oldPrice": 29.9,
+        "image": "/products/dorflex_36.jpg"
+      },
+      {
+        "id": 2016,
+        "name": "Dorflex Relaxante Muscular e Analgésico Sanofi 36 Comprimidos",
+        "brand": "Dorflex",
+        "price": 36.9,
+        "oldPrice": 42.9,
+        "image": "/products/dorflex_36.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Polivitamínico Vitergan Zinco 30 Comprimidos",
+    "items": [
+      {
+        "id": 603,
+        "name": "Polivitamínico Vitergan Zinco 30 Comprimidos revestidos",
+        "brand": "Vitergan Zinco",
+        "price": 110,
+        "oldPrice": 115,
+        "image": "/products/vitergan_zinco_30comp.jpg"
+      },
+      {
+        "id": 140081,
+        "name": "Polivitamínico Vitergan Zinco PL 30 Comprimidos",
+        "brand": "Vitergan Zinco",
+        "price": 119.9,
+        "oldPrice": 139.9,
+        "image": "/products/vitergan_zinco_30comp.jpg"
+      }
+    ]
+  }
+]

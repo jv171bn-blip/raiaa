@@ -27,34 +27,10 @@ import {
   hairCareProducts,
   Product,
   deduplicateProducts,
-  todosProdutosExpandidos,
-  novosProdutosCatalogo,
 } from '../../data/products';
-import { ultraBrasilProducts } from '../../data/ultraBrasilProducts';
-import { novosKitsCarvalhoUltra } from '../../data/novosKitsCarvalhoUltra';
-import { montaProducts } from '../../data/montaOffers';
+import { allProducts } from '../../data/allProducts';
 import MobileMenuSheet from '../MobileMenuSheet/MobileMenuSheet';
 import './Header.css';
-
-// Combine all products for live search
-const allProducts: Product[] = deduplicateProducts([
-  ...ultraBrasilProducts,
-  ...novosKitsCarvalhoUltra,
-  ...mostBought,
-  ...blackDayProducts,
-  ...weekHighlights,
-  ...favoriteBrands,
-  ...fraldasProducts,
-  ...remediosProducts,
-  ...dermocosmeticosProducts,
-  ...vitaminasSuplementosProducts,
-  ...higieneBucalPersonalProducts,
-  ...hairCareProducts,
-  ...asianBeauty,
-  ...montaProducts,
-  ...todosProdutosExpandidos,
-  ...novosProdutosCatalogo,
-]);
 
 const popularSearches = [
   'Perfumes Importados',
@@ -124,12 +100,14 @@ const Header: React.FC = () => {
   }, []);
 
   const searchResults = searchValue.trim()
-    ? allProducts.filter(p =>
-        p.name.toLowerCase().includes(searchValue.toLowerCase()) ||
-        (p.brand && p.brand.toLowerCase().includes(searchValue.toLowerCase())) ||
-        (p.category && p.category.toLowerCase().includes(searchValue.toLowerCase())) ||
-        (p.subcategory && p.subcategory.toLowerCase().includes(searchValue.toLowerCase())) ||
-        (p.badges && p.badges.some(b => b.toLowerCase().includes(searchValue.toLowerCase())))
+    ? deduplicateProducts(
+        allProducts.filter(p =>
+          p.name.toLowerCase().includes(searchValue.toLowerCase()) ||
+          (p.brand && p.brand.toLowerCase().includes(searchValue.toLowerCase())) ||
+          (p.category && p.category.toLowerCase().includes(searchValue.toLowerCase())) ||
+          (p.subcategory && p.subcategory.toLowerCase().includes(searchValue.toLowerCase())) ||
+          (p.badges && p.badges.some(b => b.toLowerCase().includes(searchValue.toLowerCase())))
+        )
       ).slice(0, 6)
     : [];
 

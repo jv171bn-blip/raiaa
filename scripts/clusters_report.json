@@ -1,0 +1,1078 @@
+[
+  {
+    "canonicalName": "Wella - Invigo Nutri Enrich 1L",
+    "brand": "Wella",
+    "items": [
+      {
+        "id": 60020,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
+        "price": 185.68,
+        "oldPrice": 195.45,
+        "size": "Kit",
+        "image": "/products/kit_60020.webp"
+      },
+      {
+        "id": 60051,
+        "name": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)",
+        "price": 94.98,
+        "oldPrice": 99.98,
+        "size": "2 Produtos",
+        "image": "/products/kit_60051.webp"
+      },
+      {
+        "id": 60125,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
+        "price": 180.49,
+        "oldPrice": 189.99,
+        "size": "1000ml",
+        "image": "/products/kit_60125.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Wella - Oil Reflections",
+    "brand": "Wella",
+    "items": [
+      {
+        "id": 60027,
+        "name": "Kit Wella Professionals Shampoo Oil Reflections 1l – 2 unidades",
+        "price": 158.13,
+        "oldPrice": 166.45,
+        "size": "2 unidades",
+        "image": "/products/kit_60027.webp"
+      },
+      {
+        "id": 60055,
+        "name": "Kit Wella Professionals Oil Reflections Shampoo 250ml + Máscara 150ml",
+        "price": 42.73,
+        "oldPrice": 44.98,
+        "size": "250ml",
+        "image": "/products/kit_60055.webp"
+      },
+      {
+        "id": 2073,
+        "name": "Óleo Capilar Wella Professionals Oil Reflections Luminous Reflective 100ml",
+        "price": 139.9,
+        "oldPrice": 159.9,
+        "size": "100ml",
+        "image": "/products/wella_oil_reflections_100ml.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Braé - Stages / Revival / Soul Color",
+    "brand": "Braé",
+    "items": [
+      {
+        "id": 60001,
+        "name": "Kit Shampoo, Máscara e Ampola Divine – Braé",
+        "price": 40.7,
+        "oldPrice": 42.84,
+        "size": "Kit",
+        "image": "/products/kit_60001.png"
+      },
+      {
+        "id": 60080,
+        "name": "Kit Braé Divine Duo (2 Produtos)",
+        "price": 47.34,
+        "oldPrice": 49.83,
+        "size": "2 Produtos",
+        "image": "/products/kit_60080.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Kérastase - Nutritive / Genesis / Resistance / Chronologiste",
+    "brand": "Kérastase",
+    "items": [
+      {
+        "id": 50127,
+        "name": "Condicionador Kérastase Chroma Absolu Fondant Cica 200ml",
+        "price": 145.79,
+        "size": "200ml",
+        "image": "/products/ultra_29506.png"
+      },
+      {
+        "id": 50128,
+        "name": "Condicionador Kérastase Gloss Absolu Insta Glaze Fondant 250ml",
+        "price": 161.99,
+        "oldPrice": 179.99,
+        "size": "250ml",
+        "image": "/products/ultra_28342.png"
+      },
+      {
+        "id": 60105,
+        "name": "Kit Kérastase Genesis Duo (2 Produtos)",
+        "price": 221.93,
+        "oldPrice": 233.61,
+        "size": "2 Produtos",
+        "image": "/products/kit_60105.png"
+      },
+      {
+        "id": 60111,
+        "name": "Kit Kérastase Genesis Trio (3 Produtos)",
+        "price": 381.83,
+        "oldPrice": 401.93,
+        "size": "3 Produtos",
+        "image": "/products/kit_60111.png"
+      },
+      {
+        "id": 60112,
+        "name": "Kit Kérastase Genesis Deux (2 Produtos)",
+        "price": 210.4,
+        "oldPrice": 221.47,
+        "size": "2 Produtos",
+        "image": "/products/kit_60112.png"
+      },
+      {
+        "id": 60114,
+        "name": "Kit Kérastase Genesis Trois (3 Produtos)",
+        "price": 381.62,
+        "oldPrice": 401.71,
+        "size": "3 Produtos",
+        "image": "/products/kit_60114.png"
+      },
+      {
+        "id": 60118,
+        "name": "Kit Kérastase Curl Manifesto (2 Produtos)",
+        "price": 226.89,
+        "oldPrice": 238.83,
+        "size": "2 Produtos",
+        "image": "/products/kit_60118.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Eudora Siàge - Hair Plastia",
+    "brand": "Eudora Siàge",
+    "items": [
+      {
+        "id": 60034,
+        "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
+        "price": 82.64,
+        "oldPrice": 86.99,
+        "size": "250ml",
+        "image": "/products/kit_60034.webp"
+      },
+      {
+        "id": 60037,
+        "name": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml",
+        "price": 20.41,
+        "oldPrice": 21.48,
+        "size": "250ml",
+        "image": "/products/kit_60037.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Eudora Siàge - DermoHair",
+    "brand": "Eudora Siàge",
+    "items": [
+      {
+        "id": 60014,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g",
+        "price": 39.9,
+        "oldPrice": 42,
+        "size": "300ml",
+        "image": "/products/kit_60014.webp"
+      },
+      {
+        "id": 60045,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g",
+        "price": 56.75,
+        "oldPrice": 59.74,
+        "size": "300ml",
+        "image": "/products/kit_60045.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Eudora Siàge - Cauterização dos Fios / Nutri Rose / Acelera o Crescimento",
+    "brand": "Eudora Siàge",
+    "items": [
+      {
+        "id": 60018,
+        "name": "Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g",
+        "price": 23.75,
+        "oldPrice": 25,
+        "size": "250ml",
+        "image": "/products/kit_60018.webp"
+      },
+      {
+        "id": 60023,
+        "name": "Kit Eudora Siàge Nutri Rose Shampoo Condicionador 250/200ml",
+        "price": 21.83,
+        "oldPrice": 22.98,
+        "size": "200ml",
+        "image": "/products/kit_60023.webp"
+      },
+      {
+        "id": 60031,
+        "name": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml",
+        "price": 31.82,
+        "oldPrice": 33.49,
+        "size": "250ml",
+        "image": "/products/kit_60031.webp"
+      },
+      {
+        "id": 60032,
+        "name": "Kit Eudora Siàge Hidratação Micelar Shampoo 250ml + Máscara 250g",
+        "price": 26.36,
+        "oldPrice": 27.75,
+        "size": "250ml",
+        "image": "/products/kit_60032.webp"
+      },
+      {
+        "id": 60035,
+        "name": "Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml",
+        "price": 38.94,
+        "oldPrice": 40.99,
+        "size": "250ml",
+        "image": "/products/kit_60035.webp"
+      },
+      {
+        "id": 60048,
+        "name": "Kit Eudora Siàge Cauterização dos Lisos Shampoo 250ml + Máscara 250g",
+        "price": 61.74,
+        "oldPrice": 64.99,
+        "size": "250ml",
+        "image": "/products/kit_60048.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Dove - Bond Intense Repair",
+    "brand": "Dove",
+    "items": [
+      {
+        "id": 60004,
+        "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
+        "price": 17.91,
+        "oldPrice": 18.85,
+        "size": "350ml",
+        "image": "/products/kit_60004.webp"
+      },
+      {
+        "id": 60030,
+        "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
+        "price": 28.49,
+        "oldPrice": 29.99,
+        "size": "350ml",
+        "image": "/products/kit_60030.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Imecap Hair - Cabelos e Unhas",
+    "brand": "Imecap Hair",
+    "items": [
+      {
+        "id": 60126,
+        "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
+        "price": 75.14,
+        "oldPrice": 79.1,
+        "size": "Kit",
+        "image": "/products/kit_60126.webp"
+      },
+      {
+        "id": 60159,
+        "name": "Imecap Hair Cabelos e Unhas com 90 Cápsulas",
+        "price": 33.61,
+        "oldPrice": 35.38,
+        "size": "Kit",
+        "image": "/products/kit_60159.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "CeraVe - Loção Hidratante Corporal",
+    "brand": "CeraVe",
+    "items": [
+      {
+        "id": 50110,
+        "name": "CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca",
+        "price": 89.9,
+        "size": "",
+        "image": "/products/ultra_25216.jpg"
+      },
+      {
+        "id": 11013,
+        "name": "Loção Hidratante Corporal CeraVe Pele Seca a Extra Seca Hidratação Prolongada 473ml",
+        "price": 99.9,
+        "oldPrice": 133.9,
+        "size": "473ml",
+        "image": "/products/cerave_locao_473ml.jpg"
+      },
+      {
+        "id": 1305,
+        "name": "Loção Hidratante Corporal CeraVe 473ml",
+        "price": 89.9,
+        "oldPrice": 109.9,
+        "size": "473ml",
+        "image": "/products/cerave_locao_473ml.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Cetaphil - Loção / Sabonete / Creme Hidratante",
+    "brand": "Cetaphil",
+    "items": [
+      {
+        "id": 50183,
+        "name": "Creme Facial Hialurônico Cetaphil Optimal Hydration 48g",
+        "price": 56.69,
+        "size": "48g",
+        "image": "/products/ultra_29623.png"
+      },
+      {
+        "id": 5250301,
+        "name": "Loção Hidratante Cetaphil Pele Sensível e Seca 473ml",
+        "price": 99.9,
+        "oldPrice": 119.9,
+        "size": "473ml",
+        "image": "/products/cetaphil_lotion.jpg"
+      },
+      {
+        "id": 5250302,
+        "name": "Creme Hidratante Corporal Cetaphil Pote 453g",
+        "price": 109.9,
+        "oldPrice": 129.9,
+        "size": "453g",
+        "image": "/products/cetaphil_pote.jpg"
+      },
+      {
+        "id": 5250303,
+        "name": "Gel de Limpeza Suave Cetaphil Facial 300ml",
+        "price": 69.9,
+        "oldPrice": 84.9,
+        "size": "300ml",
+        "image": "/monta/cetaphil_banner.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "La Roche-Posay - Cicaplast Baume B5+",
+    "brand": "La Roche-Posay",
+    "items": [
+      {
+        "id": 50114,
+        "name": "Cicaplast Reparador Labial La Roche-Posay Cicaplast 7,5ml",
+        "price": 36,
+        "oldPrice": 40,
+        "size": "5ml",
+        "image": "/products/ultra_28653.png"
+      },
+      {
+        "id": 11012,
+        "name": "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
+        "price": 79.9,
+        "oldPrice": 104.9,
+        "size": "40ml",
+        "image": "/products/cicaplast_baume_b5.jpg"
+      },
+      {
+        "id": 1303,
+        "name": "Bálsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+        "price": 36,
+        "oldPrice": 40,
+        "size": "40ml",
+        "image": "/products/cicaplast_baume_b5.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "La Roche-Posay - Effaclar",
+    "brand": "La Roche-Posay",
+    "items": [
+      {
+        "id": 50176,
+        "name": "Creme Em Gel Effaclar La Roche-Posay Duo+ Fps30 40g",
+        "price": 107.99,
+        "oldPrice": 119.99,
+        "size": "40g",
+        "image": "/products/ultra_28313.png"
+      },
+      {
+        "id": 50197,
+        "name": "Creme Hidratante Facial La Roche-Posay Effaclar Mat 40ml",
+        "price": 143.91,
+        "oldPrice": 159.9,
+        "size": "40ml",
+        "image": "/products/ultra_28696.png"
+      },
+      {
+        "id": 50332,
+        "name": "Gel de Limpeza Facial La Roche-Posay Effaclar Concentrado 300g",
+        "price": 46.17,
+        "size": "300g",
+        "image": "/products/ultra_29357.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Eucerin - Anti-Pigment Dual Sérum",
+    "brand": "Eucerin",
+    "items": [
+      {
+        "id": 50165,
+        "name": "Creme clareador de olheiras Eucerin Anti-pigment 15g",
+        "price": 145.72,
+        "size": "15g",
+        "image": "/products/ultra_29525.png"
+      },
+      {
+        "id": 50205,
+        "name": "Creme para mãos Eucerin Anti-Pigment FPS30 75ml",
+        "price": 81,
+        "size": "75ml",
+        "image": "/products/ultra_29388.png"
+      },
+      {
+        "id": 11016,
+        "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+        "price": 260.61,
+        "oldPrice": 299.9,
+        "size": "30ml",
+        "image": "/products/eucerin_dual_anti_pigment.jpg"
+      },
+      {
+        "id": 1308,
+        "name": "Sérum Clareador Facial Eucerin Anti-Pigment Dual Sérum 30ml",
+        "price": 219.9,
+        "oldPrice": 249.9,
+        "size": "30ml",
+        "image": "/products/eucerin_dual_anti_pigment.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "SkinCeuticals - P-tiox / C E Ferulic / Silymarin / Discoloration",
+    "brand": "SkinCeuticals",
+    "items": [
+      {
+        "id": 50067,
+        "name": "Blemish+ Age Defense SkinCeuticals 30ml",
+        "price": 179.99,
+        "oldPrice": 199.99,
+        "size": "30ml",
+        "image": "/products/ultra_28711.png"
+      },
+      {
+        "id": 50163,
+        "name": "Creme Anti-idade Skinceuticals Glycolic 10 50ml",
+        "price": 404.91,
+        "oldPrice": 449.9,
+        "size": "50ml",
+        "image": "/products/ultra_28622.png"
+      },
+      {
+        "id": 50179,
+        "name": "Creme Facial Anti-idade Retinol 0.3 SkinCeuticals com Vitamina C 30ml",
+        "price": 359.91,
+        "oldPrice": 399.9,
+        "size": "30ml",
+        "image": "/products/ultra_28260.png"
+      },
+      {
+        "id": 1307,
+        "name": "Sérum Facial Antirrugas Skinceuticals P-tiox 30ml",
+        "price": 469.9,
+        "oldPrice": 525.5,
+        "size": "30ml",
+        "image": "/products/skinceuticals_ptiox.jpg"
+      },
+      {
+        "id": 1318855,
+        "name": "Skinceuticals P-tiox Sérum Antirrugas 30ml",
+        "price": 469.9,
+        "oldPrice": 525.5,
+        "size": "1 unidade",
+        "image": "https://product-data.raiadrogasil.io/images/15416030.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Bioderma - Sébium Gel Moussant",
+    "brand": "Bioderma",
+    "items": [
+      {
+        "id": 50015,
+        "name": "Água Micelar Bioderma Sébium H2O 250ml",
+        "price": 63.99,
+        "size": "250ml",
+        "image": "/products/ultra_29604.png"
+      },
+      {
+        "id": 50330,
+        "name": "Gel de Limpeza Facial Bioderma Sébium Gel Moussant 200ml",
+        "price": 32.39,
+        "size": "200ml",
+        "image": "/products/ultra_29637.png"
+      },
+      {
+        "id": 50335,
+        "name": "Gel de Limpeza Sébium Bioderma Gel Moussant Actif 200ml",
+        "price": 32.4,
+        "size": "200ml",
+        "image": "/products/ultra_29404.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Darrow - Actine Gel de Limpeza",
+    "brand": "Darrow",
+    "items": [
+      {
+        "id": 50331,
+        "name": "Gel De Limpeza Facial Darrow Actine Oil Control 400g",
+        "price": 48.59,
+        "size": "400g",
+        "image": "/products/ultra_29387.png"
+      },
+      {
+        "id": 115,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
+        "price": 48.59,
+        "oldPrice": 84.9,
+        "size": "400g",
+        "image": "/products/darrow_actine_400g_frasco.jpg"
+      },
+      {
+        "id": 2028,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+        "price": 74.9,
+        "oldPrice": 89.9,
+        "size": "400g (Refil)",
+        "image": "/products/darrow_actine_400g_frasco.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Bepantol - Baby Pomada de Assaduras",
+    "brand": "Bepantol",
+    "items": [
+      {
+        "id": 50208,
+        "name": "Creme Preventivo de Assaduras Bepantol Baby 120g",
+        "price": 35.01,
+        "oldPrice": 38.9,
+        "size": "120g",
+        "image": "/products/ultra_28261.png"
+      },
+      {
+        "id": 2045,
+        "name": "Pomada Bepantol Baby Creme Preventivo de Assaduras 120g",
+        "price": 35.01,
+        "oldPrice": 38.9,
+        "size": "120g",
+        "image": "/products/bepantol_baby.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Bepantol - Derma Creme / Spray",
+    "brand": "Bepantol",
+    "items": [
+      {
+        "id": 50191,
+        "name": "Creme Hidratante Bepantol Derma creme 40g",
+        "price": 35.99,
+        "oldPrice": 39.99,
+        "size": "40g",
+        "image": "/products/ultra_28682.png"
+      },
+      {
+        "id": 50192,
+        "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
+        "price": 45.58,
+        "size": "40g",
+        "image": "/products/ultra_26305.webp"
+      },
+      {
+        "id": 1306,
+        "name": "Creme Multirrestaurador Bepantol Derma 20g",
+        "price": 34.9,
+        "oldPrice": 39.9,
+        "size": "20g",
+        "image": "/products/bepantol_derma_20g.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Pampers - Pampers Confort Sec P",
+    "brand": "Pampers",
+    "items": [
+      {
+        "id": 50302,
+        "name": "Fralda Pampers Confort Sec P 50 Unidades",
+        "price": 60.3,
+        "size": "50 Unidades",
+        "image": "/products/pampers_confort_sec_p.webp"
+      },
+      {
+        "id": 50303,
+        "name": "Fralda Pampers Confort Sec P 72 Unidades",
+        "price": 59.61,
+        "size": "72 Unidades",
+        "image": "/products/ultra_29481.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Pampers - Pampers Confort Sec G",
+    "brand": "Pampers",
+    "items": [
+      {
+        "id": 50293,
+        "name": "Fralda Pampers Confort Sec G 60 Unidades",
+        "price": 73.64,
+        "size": "60 Unidades",
+        "image": "/products/pampers_confort_sec_g.webp"
+      },
+      {
+        "id": 50295,
+        "name": "Fralda Pampers Confort Sec G 98 Unidades",
+        "price": 91.82,
+        "oldPrice": 102.02,
+        "size": "98 Unidades",
+        "image": "/products/ultra_28742.png"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Pampers - Pampers Pants Ajuste Total P/M/G",
+    "brand": "Pampers",
+    "items": [
+      {
+        "id": 1104,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho P 50 Unidades",
+        "price": 93.48,
+        "oldPrice": 111.03,
+        "size": "Tam P (50un)",
+        "image": "/products/pampers_pants_p.webp"
+      },
+      {
+        "id": 501,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho M 78 Unidades",
+        "price": 140.28,
+        "oldPrice": 163.68,
+        "size": "Tam M (78un)",
+        "image": "/products/pampers_pants_m.webp"
+      },
+      {
+        "id": 2040,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho G 72 Unidades",
+        "price": 146.13,
+        "oldPrice": 169.53,
+        "size": "Tam G (72un)",
+        "image": "/products/pampers_pants_g.webp"
+      },
+      {
+        "id": 20404,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho XG 64 Unidades",
+        "price": 151.98,
+        "oldPrice": 175.38,
+        "size": "Tam XG (64un)",
+        "image": "/products/pampers_pants_xg.webp"
+      },
+      {
+        "id": 20405,
+        "name": "Fralda-Calça Pampers Pants Ajuste Total Tamanho XXG 74 Unidades",
+        "price": 157.83,
+        "oldPrice": 181.23,
+        "size": "Tam XXG (74un)",
+        "image": "/products/pampers_pants_xxg.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Huggies - Lenço Umedecido",
+    "brand": "Huggies",
+    "items": [
+      {
+        "id": 60120,
+        "name": "Kit Lenço Umedecido Huggies Recém Nascido 192 unidades em 4 pacotes",
+        "price": 25.01,
+        "oldPrice": 26.33,
+        "size": "192 unidades",
+        "image": "/products/kit_60120.png"
+      },
+      {
+        "id": 3999,
+        "name": "Kit Lenço Umedecido Huggies Rosto e Corpo Hipoalergênico 48 unidades 4 pacotes",
+        "price": 39.9,
+        "oldPrice": 49.9,
+        "size": "192un",
+        "image": "/products/huggies_rosto_corpo.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Nestlé - Ninho Fases 1+",
+    "brand": "Nestlé",
+    "items": [
+      {
+        "id": 11015,
+        "name": "Fórmula Infantil Ninho Fases 1+ Nestlé 1 a 3 anos 800g",
+        "price": 42.99,
+        "size": "800g",
+        "image": "/products/ninho_fases_1.jpg"
+      },
+      {
+        "id": 20490,
+        "name": "Composto Lácteo Ninho Fases 1+ Prebio 1 Nestlé 800g",
+        "price": 44.9,
+        "oldPrice": 52.9,
+        "size": "800g",
+        "image": "/products/ninho_fases_1.jpg"
+      },
+      {
+        "id": 1112,
+        "name": "Composto Lácteo Ninho Fases 1+ Nestlé 800g",
+        "price": 44.9,
+        "oldPrice": 51.9,
+        "size": "800g",
+        "image": "/products/ninho_fases_1.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Nestlé - Mucilon Milho / Arroz",
+    "brand": "Nestlé",
+    "items": [
+      {
+        "id": 2047,
+        "name": "Cereal Infantil Mucilon Milho Nestlé 600g",
+        "price": 27.99,
+        "oldPrice": 32.9,
+        "size": "600g",
+        "image": "/products/mucilon_milho.jpg"
+      },
+      {
+        "id": 2048,
+        "name": "Cereal Infantil Mucilon Arroz e Aveia Nestlé 600g",
+        "price": 27.99,
+        "oldPrice": 32.9,
+        "size": "600g",
+        "image": "/products/mucilon_arroz_aveia.jpg"
+      },
+      {
+        "id": 2049,
+        "name": "Cereal Infantil Mucilon Multicereais Nestlé 600g",
+        "price": 27.99,
+        "oldPrice": 32.9,
+        "size": "600g",
+        "image": "/products/mucilon_multicereais_600g.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Soldiers Nutrition - Creatina 100% Pura",
+    "brand": "Soldiers Nutrition",
+    "items": [
+      {
+        "id": 50156,
+        "name": "Creatina Monohidratada 250g – 100% Pura Importada – Soldiers Nutrition",
+        "price": 41.9,
+        "size": "250g",
+        "image": "/products/ultra_25783.webp"
+      },
+      {
+        "id": 50157,
+        "name": "Creatina Monohidratada 600g – 100% Pura Importada – Soldiers Nutrition",
+        "price": 69.9,
+        "size": "600g",
+        "image": "/products/ultra_25784.webp"
+      },
+      {
+        "id": 50158,
+        "name": "Creatina Monohidratada Pote 300g – 100% Pura Importada – Soldiers Nutrition",
+        "price": 46.59,
+        "size": "300g",
+        "image": "/products/ultra_25927.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Max Titanium - Creatina / Whey",
+    "brand": "Max Titanium",
+    "items": [
+      {
+        "id": 50001,
+        "name": "100% Whey Refil (900G) – Baunilha – Max Titanium",
+        "price": 84.04,
+        "size": "900G",
+        "image": "/products/ultra_26035.jpg"
+      },
+      {
+        "id": 50154,
+        "name": "Creatina (300g) Max Titanium",
+        "price": 49.98,
+        "size": "300g",
+        "image": "/products/ultra_25781.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Dux Nutrition - Creatina Creapure / Whey",
+    "brand": "Dux Nutrition",
+    "items": [
+      {
+        "id": 50160,
+        "name": "Creatina Monohidratada Pote 300G – Dux Nutrition",
+        "price": 53.29,
+        "size": "300G",
+        "image": "/products/ultra_25785.webp"
+      },
+      {
+        "id": 50161,
+        "name": "Creatina Monohidratada Sem Sabor – Pote 300g – Suplementação Treino Academia, Ganho Muscular Hipertrofia, Força Energia Resistência, Suplementos Naturais – DUX HUMAN HEALTH",
+        "price": 61.63,
+        "size": "300g",
+        "image": "/products/ultra_25929.jpg"
+      },
+      {
+        "id": 50241,
+        "name": "Dux Nutrition Bcaa Powder Limão – Pote 200 G",
+        "price": 72.08,
+        "size": "200 G",
+        "image": "/products/ultra_26012.jpg"
+      },
+      {
+        "id": 50242,
+        "name": "Dux Nutrition Glutamina 300g",
+        "price": 109.49,
+        "size": "300g",
+        "image": "/products/ultra_25967.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Novalgina - Dipirona 1g Comprimidos",
+    "brand": "Novalgina",
+    "items": [
+      {
+        "id": 11003,
+        "name": "Novalgina Dipirona 1g 20 comprimidos",
+        "price": 34.99,
+        "oldPrice": 47.02,
+        "size": "20 Comprimidos",
+        "image": "/products/novalgina_1g_20comp.webp"
+      },
+      {
+        "id": 1204,
+        "name": "Novalgina Dipirona Monoidratada 1g 20 Comprimidos",
+        "price": 34.9,
+        "oldPrice": 39.9,
+        "size": "20 Comprimidos",
+        "image": "/products/novalgina_1g_20comp.webp"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Dorflex - 36 Comprimidos",
+    "brand": "Dorflex",
+    "items": [
+      {
+        "id": 1201,
+        "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+        "price": 25.99,
+        "oldPrice": 29.9,
+        "size": "36 Comprimidos",
+        "image": "/products/dorflex_36.jpg"
+      },
+      {
+        "id": 2016,
+        "name": "Dorflex Relaxante Muscular e Analgésico Sanofi 36 Comprimidos",
+        "price": 36.9,
+        "oldPrice": 42.9,
+        "size": "36 Comprimidos",
+        "image": "/products/dorflex_36.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Too Faced - Chocolate Soleil Bronzer",
+    "brand": "Too Faced",
+    "items": [
+      {
+        "id": 50096,
+        "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+        "price": 162.8,
+        "size": "",
+        "image": "/products/ultra_28011.jpg"
+      },
+      {
+        "id": 50099,
+        "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
+        "price": 175.45,
+        "size": "",
+        "image": "/products/ultra_27884.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Sephora Collection - Best Skin Ever Base / Corretivo",
+    "brand": "Sephora Collection",
+    "items": [
+      {
+        "id": 50034,
+        "name": "Base em Pó Sephora Collection Best Skin Ever Matte",
+        "price": 67.1,
+        "size": "P",
+        "image": "/products/ultra_28093.jpg"
+      },
+      {
+        "id": 50035,
+        "name": "BASE EM STICK SEPHORA COLLECTION BEST SKIN EVER",
+        "price": 87.45,
+        "size": "",
+        "image": "/products/ultra_27954.jpg"
+      },
+      {
+        "id": 50046,
+        "name": "BASE LÍQUIDA SEPHORA COLLECTION BEST SKIN EVER",
+        "price": 87.45,
+        "size": "",
+        "image": "/products/ultra_28096.jpg"
+      },
+      {
+        "id": 50052,
+        "name": "Base Sephora Collection Best Skin Ever Glow",
+        "price": 87.45,
+        "size": "",
+        "image": "/products/ultra_28094.jpg"
+      },
+      {
+        "id": 50136,
+        "name": "Corretivo Colorido Sephora Collection Best Skin Ever 8HR",
+        "price": 57.75,
+        "size": "",
+        "image": "/products/ultra_28071.jpg"
+      },
+      {
+        "id": 50146,
+        "name": "CORRETIVO LÍQUIDO SEPHORA COLLECTION BEST SKIN EVER",
+        "price": 63.25,
+        "size": "",
+        "image": "/products/ultra_27822.jpg"
+      },
+      {
+        "id": 50148,
+        "name": "Corretivo Sephora Collection Best Skin Ever Glow Concealer",
+        "price": 63.25,
+        "size": "",
+        "image": "/products/ultra_28137.jpg"
+      },
+      {
+        "id": 50149,
+        "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
+        "price": 63.25,
+        "size": "",
+        "image": "/products/ultra_27710.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Rare Beauty - Soft Pinch Blush Líquido",
+    "brand": "Rare Beauty",
+    "items": [
+      {
+        "id": 50079,
+        "name": "Blush Iluminador em Pó Rare Beauty Soft Pinch",
+        "price": 109.45,
+        "size": "P",
+        "image": "/products/ultra_27466.jpg"
+      },
+      {
+        "id": 50089,
+        "name": "Blush Rare Beauty Soft Pinch Matte Bouncy",
+        "price": 120.45,
+        "size": "",
+        "image": "/products/ultra_27636.jpg"
+      },
+      {
+        "id": 50133,
+        "name": "Contorno Líquido Rare Beauty Soft Pinch",
+        "price": 131.45,
+        "size": "",
+        "image": "/products/ultra_27533.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Fenty Beauty - Gloss Bomb / Contorno Match Stix",
+    "brand": "Fenty Beauty",
+    "items": [
+      {
+        "id": 50037,
+        "name": "Base Fenty Beauty Soft Lit Naturally Luminous Longwear",
+        "price": 172.15,
+        "size": "",
+        "image": "/products/ultra_27894.png"
+      },
+      {
+        "id": 50042,
+        "name": "Base Líquida Fenty Eaze Drop Blurring Lightweight Blurring Skin Tint",
+        "price": 142.45,
+        "size": "",
+        "image": "/products/ultra_27855.jpg"
+      },
+      {
+        "id": 50081,
+        "name": "BLUSH LIQUIDO FENTY BEAUTY SHAKE N PLAY",
+        "price": 106.7,
+        "size": "",
+        "image": "/products/ultra_27709.jpg"
+      },
+      {
+        "id": 50093,
+        "name": "BRONZER CREMOSO FENTY BEAUTY SUN STALK’R SOUFFLÉ",
+        "price": 185.35,
+        "size": "",
+        "image": "/products/ultra_27806.png"
+      },
+      {
+        "id": 50131,
+        "name": "Contorno em bastão Fenty Match Stix",
+        "price": 124.3,
+        "size": "",
+        "image": "/products/ultra_27970.jpg"
+      },
+      {
+        "id": 50150,
+        "name": "Corretivo Sérum Hidratante Fenty Beauty We’re Even",
+        "price": 124.3,
+        "size": "",
+        "image": "/products/ultra_27665.jpg"
+      },
+      {
+        "id": 50217,
+        "name": "Delineador de Longa Duração Fenty Flyliner Longwear Eyeliner",
+        "price": 88.55,
+        "size": "",
+        "image": "/products/ultra_27101.jpg"
+      }
+    ]
+  },
+  {
+    "canonicalName": "Dior - Backstage Rosy Glow / Lip Glow Oil",
+    "brand": "Dior",
+    "items": [
+      {
+        "id": 50074,
+        "name": "Blush em pó Dior Rosy Glow",
+        "price": 211.2,
+        "size": "p",
+        "image": "/products/ultra_27911.jpg"
+      },
+      {
+        "id": 50091,
+        "name": "Blush Stick Dior Rosy Glow",
+        "price": 225.5,
+        "size": "",
+        "image": "/products/ultra_27941.jpg"
+      }
+    ]
+  }
+]
