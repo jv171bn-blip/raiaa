@@ -22,6 +22,12 @@ const categories = [
     anchor: 'section-marcas-favoritas',
   },
   {
+    title: 'Perfumaria & Fragrâncias',
+    icon: Sparkles,
+    items: ['Perfumes Importados', 'Perfumes Masculinos', 'Perfumes Femininos', 'Fragrâncias de Nicho', 'Hidratantes Perfumados'],
+    anchor: 'section-perfumaria',
+  },
+  {
     title: 'Cabelos & Cuidados Diários',
     icon: Heart,
     items: ['Shampoos e Condicionadores', 'Tratamentos Capilares', 'Desodorantes', 'Sabonetes', 'Higiene Bucal'],
@@ -48,7 +54,7 @@ const categories = [
 ];
 
 const MegaMenu: React.FC<Props> = ({ isOpen, onClose }) => {
-  const { showToast } = useCart();
+  const { showToast, goToSearchPage } = useCart();
 
   if (!isOpen) return null;
 
@@ -57,6 +63,8 @@ const MegaMenu: React.FC<Props> = ({ isOpen, onClose }) => {
     const el = document.getElementById(anchor);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      goToSearchPage(name);
     }
   };
 

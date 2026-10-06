@@ -1,4 +1,4 @@
-.header {
+q.header {
   background-color: #ffffff;
   border-bottom: 1px solid #e8e8e8;
   position: relative;
@@ -421,9 +421,17 @@
 }
 
 @keyframes bump {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Mobile elements hidden on desktop */
@@ -460,6 +468,7 @@
   .header__action--desktop .header__action-text {
     display: none;
   }
+
   .header__action--desktop {
     padding: 8px;
   }
@@ -675,8 +684,13 @@
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }
 
 .header__mobile-drawer-header {

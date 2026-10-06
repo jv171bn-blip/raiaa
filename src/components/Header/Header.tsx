@@ -28,6 +28,7 @@ import {
   Product,
   deduplicateProducts,
   todosProdutosExpandidos,
+  novosProdutosCatalogo,
 } from '../../data/products';
 import { ultraBrasilProducts } from '../../data/ultraBrasilProducts';
 import { novosKitsCarvalhoUltra } from '../../data/novosKitsCarvalhoUltra';
@@ -52,9 +53,12 @@ const allProducts: Product[] = deduplicateProducts([
   ...asianBeauty,
   ...montaProducts,
   ...todosProdutosExpandidos,
+  ...novosProdutosCatalogo,
 ]);
 
 const popularSearches = [
+  'Perfumes Importados',
+  'Erba Pura',
   'Dipirona 500mg',
   'Protetor Solar Anthelios',
   'Vitamina C 1g',

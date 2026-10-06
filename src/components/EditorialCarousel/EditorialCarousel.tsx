@@ -1,4 +1,5 @@
 import React from 'react';
+import { useCart } from '../../context/CartContext';
 import './EditorialCarousel.css';
 
 interface EditorialCard {
@@ -14,6 +15,39 @@ interface Props {
 }
 
 const EditorialCarousel: React.FC<Props> = ({ title, cards, id }) => {
+  const { goToSearchPage } = useCart();
+
+  const handleCardClick = (card: EditorialCard) => {
+    const titleLower = card.title.toLowerCase();
+    if (titleLower.includes('perfume')) {
+      const el = document.getElementById('section-perfumaria');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+      goToSearchPage('Perfume');
+      return;
+    }
+    if (titleLower.includes('asiático') || titleLower.includes('asiatico')) {
+      const el = document.getElementById('section-beleza-asiatica');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+      goToSearchPage('Beleza Asiática');
+      return;
+    }
+    if (titleLower.includes('cabelo')) {
+      goToSearchPage('Cabelos');
+      return;
+    }
+    if (titleLower.includes('pele')) {
+      goToSearchPage('Cuidados com a Pele');
+      return;
+    }
+    goToSearchPage(card.title);
+  };
+
   return (
     <section className="editorial-carousel" id={id}>
       <div className="editorial-carousel__header">
@@ -22,7 +56,13 @@ const EditorialCarousel: React.FC<Props> = ({ title, cards, id }) => {
 
       <div className="editorial-carousel__track">
         {cards.map(card => (
-          <div key={card.id} className="editorial-card" id={`editorial-card-${card.id}`}>
+          <div
+            key={card.id}
+            className="editorial-card"
+            id={`editorial-card-${card.id}`}
+            onClick={() => handleCardClick(card)}
+            style={{ cursor: 'pointer' }}
+          >
             <div className="editorial-card__img-wrap">
               <img
                 src={card.image}

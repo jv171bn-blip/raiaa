@@ -3,13 +3,17 @@ import { useCart } from '../../context/CartContext';
 import './TrendingSearches.css';
 
 const terms = [
+  'Perfumes Importados',
+  'Xerjoff Erba Pura',
   'Desodorante',
   'Fralda',
   'Absorvente',
   'Shampoo',
   'Sabonete',
+  'Perfumes Masculinos',
   'Principia',
   'Cerave',
+  'Perfumes Femininos',
   'Eucerin',
   'Protetor-solar',
   'Protetor+solar+facial',

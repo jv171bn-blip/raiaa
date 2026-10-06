@@ -17,7 +17,11 @@ import {
 import { useCart } from '../../context/CartContext';
 import './Footer.css';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  hideSupportBox?: boolean;
+}
+
+const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
   const {
     openCart,
     setActiveModal,
@@ -25,6 +29,8 @@ const Footer: React.FC = () => {
     goToPrivacyPage,
     isPrivacyPage,
     goToHome,
+    selectedProduct,
+    isCartPage,
   } = useCart();
 
   const scrollToTop = () => {
@@ -41,11 +47,15 @@ const Footer: React.FC = () => {
     showToast('Aplicativo Drogaria Portal: Disponível em breve na Google Play e App Store!');
   };
 
+  // O box de suporte cinza só aparece na Home se não for solicitado esconder;
+  // Nas páginas de produtos, carrinho ou quando solicitado, exibe diretamente o rodapé azul oficial da imagem
+  const showSupportBox = !hideSupportBox && !isPrivacyPage && !selectedProduct && !isCartPage;
+
   return (
     <footer className="footer" id="footer">
-      <div className="footer__inner">
-        {/* Rounded Support Box with Light Gray Background - only on main site */}
-        {!isPrivacyPage && (
+      {/* Rounded Support Box with Light Gray Background - apenas na Home */}
+      {showSupportBox && (
+        <div className="footer__inner">
           <div className="footer__support-box">
             <div className="footer__support-grid">
               {/* Card 1: Central de Atendimento */}
@@ -120,8 +130,8 @@ const Footer: React.FC = () => {
               </button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* ===== PORTAL BLUE FOOTER SECTION (5 COLUNAS OFICIAIS) ===== */}
       <section className="portal-footer" id="portal-official-footer">

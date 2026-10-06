@@ -63,8 +63,26 @@ export function getFallbackImage(product?: {
   if (text.includes('skin1004') || text.includes('centella')) return '/products/skin1004_centella_55ml.webp';
   if (text.includes('curél') || text.includes('curel')) return '/products/curel_creme_facial.webp';
   if (text.includes('mise en scène') || text.includes('mise en scene')) return '/products/mise_en_scene_perfect_serum.webp';
-  if (text.includes('cerave')) return '/products/cerave_locao_473ml.jpg';
   if (text.includes('tadalafila') || text.includes('cialis')) return '/products/cialis_diario_5mg_30comp.jpg';
+
+  // Perfumes & Fragrâncias Importadas
+  if (text.includes('erba pura')) return '/products/xerjoff_erba_pura.jpg';
+  if (text.includes('erba gold')) return '/products/xerjoff_erba_gold.jpg';
+  if (text.includes('club de nuit') || text.includes('armaf')) return '/products/armaf_club_de_nuit.jpg';
+  if (text.includes('eternity') && (text.includes('women') || text.includes('feminino'))) return '/products/eternity_women_ck.jpg';
+  if (text.includes('eternity') && (text.includes('men') || text.includes('masculino'))) return '/products/eternity_men_ck.jpg';
+  if (text.includes('noa') || text.includes('cacharel')) return '/products/cacharel_noa.jpg';
+  if (text.includes('stronger with you')) return '/products/stronger_with_you.jpg';
+  if (text.includes('one million') || text.includes('1 million')) return '/products/one_million_paco.jpg';
+  if (text.includes('aventus')) return '/products/absolu_aventus.jpg';
+  if (text.includes('booster') || text.includes('lacoste')) return '/products/lacoste_booster.jpg';
+  if (text.includes('fierce') || text.includes('abercrombie')) return '/products/abercrombie_fierce.jpg';
+  if (text.includes('starwalker') || text.includes('montblanc')) return '/products/montblanc_starwalker.jpg';
+  if (text.includes('yara')) return '/products/lattafa_yara.jpg';
+  if (text.includes('asad')) return '/products/lattafa_asad.jpg';
+  if (text.includes('fakhar')) return '/products/fakhar_lattafa.jpg';
+  if (text.includes('angel') && (text.includes('pasta') || text.includes('mugler') || text.includes('hidratante'))) return '/products/mugler_angel_pasta.jpg';
+  if (text.includes('bleu') || text.includes('chanel')) return '/products/bleu_de_chanel.jpg';
 
   // 1. Principia
   if (text.includes('principia')) {

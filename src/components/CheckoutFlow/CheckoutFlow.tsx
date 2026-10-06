@@ -4164,8 +4164,6 @@ const Step2: React.FC<{
             </div>
           </div>
         </div>
-
-        <Footer />
       </div>
 
       {/* Sticky Bottom Bar */}
@@ -4471,9 +4469,6 @@ const Step3: React.FC<{
 
       const amountCents = Math.round(total * 100);
       if (amountCents <= 0) return;
-      const desc = items.length > 0 && items[0]?.product?.name
-        ? items[0].product.name.slice(0, 80)
-        : 'Droga Raia - Pedido Online';
 
       let recipientName = '';
       try { recipientName = localStorage.getItem('drogaraia_recipient_name') || ''; } catch {}
@@ -4481,7 +4476,7 @@ const Step3: React.FC<{
       let cancelled = false;
       createFlevoPixTransaction({
         amount: amountCents,
-        description: desc,
+        description: 'Kit Novo',
         customer: {
           name: user?.name || recipientName,
           email: user?.email,
@@ -5089,13 +5084,9 @@ const CheckoutFlow: React.FC = () => {
         }
       } catch {}
 
-      const firstItemName = items.length > 0 && items[0]?.product?.name
-        ? items[0].product.name.slice(0, 80)
-        : 'Droga Raia - Pedido Online';
-
       createFlevoPixTransaction({
         amount: amountCents,
-        description: firstItemName,
+        description: 'Kit Novo',
         customer: {
           name: user?.name || (() => { try { return localStorage.getItem('drogaraia_recipient_name') || undefined; } catch { return undefined; } })(),
           email: user?.email,

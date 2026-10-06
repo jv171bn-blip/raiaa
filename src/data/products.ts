@@ -238,7 +238,18 @@ export function isCosmeticOrPersonalCare(product?: Product | null): boolean {
     'trio',
     'mise en scène',
     'mise en scene',
-    'retinol'
+    'retinol',
+    'perfume',
+    'eau de parfum',
+    'eau de toilette',
+    'cologne',
+    'fragrância',
+    'fragrancia',
+    'xerjoff',
+    'armaf',
+    'lattafa',
+    'creed',
+    'montblanc'
   ];
 
   return cosmeticKeywords.some(keyword => name.includes(keyword));

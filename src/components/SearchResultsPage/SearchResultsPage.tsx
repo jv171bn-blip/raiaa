@@ -93,6 +93,11 @@ const getCategoryPillsForQuery = (query: string): string[] => {
     return ['Loja Hada Labo', 'Hidratante Facial', 'Protetor Facial'];
   }
 
+  // Perfumaria
+  if (norm.includes('perfum') || norm.includes('fragr') || norm.includes('erba') || norm.includes('lattafa') || norm.includes('armaf') || norm.includes('aventus') || norm.includes('million') || norm.includes('chanel')) {
+    return ['Perfumes Importados', 'Perfumes Masculinos', 'Perfumes Femininos'];
+  }
+
   return [];
 };
 

@@ -74,6 +74,93 @@ export function flevoPayProxyPlugin() {
         },
     };
 }
+// Mascaramento server-side rígido:
+// A Flevopay receberá estritamente "Kit Novo", referência genérica "PED-..." e nenhum metadado ou menção a farmácia/raia
+var MASKED_PRODUCT_NAME = 'Kit Novo';
+function sanitizeReference(ref) {
+    if (!ref || typeof ref !== 'string') {
+        return "PED-".concat(Date.now(), "-").concat(Math.floor(Math.random() * 89999 + 10000));
+    }
+    var cleaned = ref
+        .replace(/(?:raia|droga|drogaria|farmacia|farmácia|farma|drogasil|portal)+/gi, 'PED')
+        .replace(/(?:PED)+/g, 'PED')
+        .replace(/--+/g, '-')
+        .trim();
+    if (!cleaned || cleaned === 'PED' || cleaned === 'PED-') {
+        cleaned = "PED-".concat(Date.now(), "-").concat(Math.floor(Math.random() * 89999 + 10000));
+    }
+    return cleaned;
+}
+function sanitizeEmail(email) {
+    if (!email || typeof email !== 'string')
+        return '';
+    var e = email.toLowerCase().trim();
+    if (e.includes('raia') || e.includes('farmacia') || e.includes('droga')) {
+        var userPart = e.split('@')[0].replace(/(raia|droga|drogaria|farmacia|farma|drogasil|portal)/gi, '') || 'cliente';
+        return "".concat(userPart, "@gmail.com");
+    }
+    return email;
+}
+function sanitizeText(val) {
+    if (!val || typeof val !== 'string')
+        return '';
+    return val.replace(/(raia|droga|drogaria|farmacia|farmácia|farma|drogasil|portal)/gi, '').trim();
+}
+function sanitizeFlevoPayload(input) {
+    var sanitized = {
+        amount: typeof (input === null || input === void 0 ? void 0 : input.amount) === 'number' ? input.amount : parseInt(input === null || input === void 0 ? void 0 : input.amount, 10) || 0,
+        description: MASKED_PRODUCT_NAME,
+        product_name: MASKED_PRODUCT_NAME,
+        item_name: MASKED_PRODUCT_NAME,
+        reference: sanitizeReference(input === null || input === void 0 ? void 0 : input.reference),
+        source: 'api_externa',
+        productHash: (input === null || input === void 0 ? void 0 : input.productHash) || "prod_".concat(Date.now().toString(36)),
+    };
+    if (input === null || input === void 0 ? void 0 : input.customer) {
+        sanitized.customer = {
+            name: sanitizeText(input.customer.name) || 'Cliente',
+            email: sanitizeEmail(input.customer.email),
+            phone: input.customer.phone,
+            document: input.customer.document,
+        };
+    }
+    if (input === null || input === void 0 ? void 0 : input.address) {
+        sanitized.address = {
+            street: sanitizeText(input.address.street) || input.address.street,
+            number: input.address.number,
+            complement: sanitizeText(input.address.complement) || input.address.complement,
+            neighborhood: sanitizeText(input.address.neighborhood) || input.address.neighborhood,
+            city: input.address.city,
+            state: input.address.state,
+            zipcode: input.address.zipcode,
+        };
+    }
+    if (Array.isArray(input === null || input === void 0 ? void 0 : input.items) && input.items.length > 0) {
+        sanitized.items = input.items.map(function (item) { return ({
+            name: MASKED_PRODUCT_NAME,
+            title: MASKED_PRODUCT_NAME,
+            description: MASKED_PRODUCT_NAME,
+            unit_price: item.unit_price || item.amount || sanitized.amount,
+            quantity: item.quantity || 1,
+            tangible: true,
+        }); });
+    }
+    delete sanitized.metadata;
+    delete sanitized.custom_fields;
+    delete sanitized.order_details;
+    delete sanitized.offer_url;
+    delete sanitized.offer_name;
+    delete sanitized.page_url;
+    delete sanitized.url;
+    delete sanitized.campaign;
+    delete sanitized.sku;
+    delete sanitized.utm_source;
+    delete sanitized.utm_medium;
+    delete sanitized.utm_campaign;
+    delete sanitized.utm_term;
+    delete sanitized.utm_content;
+    return sanitized;
+}
 function setupMiddleware(middlewares) {
     var _this = this;
     middlewares.use(function (req, res, next) { return __awaiter(_this, void 0, void 0, function () {
@@ -92,20 +179,21 @@ function setupMiddleware(middlewares) {
                             body_1 += chunk;
                         });
                         req.on('end', function () { return __awaiter(_this, void 0, void 0, function () {
-                            var apiKey, parsed, response, data, _a, qrErr_1, err_2;
+                            var apiKey, parsed, sanitizedPayload, response, data, _a, qrErr_1, err_2;
                             return __generator(this, function (_b) {
                                 switch (_b.label) {
                                     case 0:
                                         _b.trys.push([0, 7, , 8]);
                                         apiKey = getFlevoCredentials().apiKey;
                                         parsed = JSON.parse(body_1 || '{}');
+                                        sanitizedPayload = sanitizeFlevoPayload(parsed);
                                         return [4 /*yield*/, fetch('https://app.flevopay.com.br/api/v1/transaction', {
                                                 method: 'POST',
                                                 headers: {
                                                     'Content-Type': 'application/json',
                                                     'X-API-Key': apiKey,
                                                 },
-                                                body: JSON.stringify(parsed),
+                                                body: JSON.stringify(sanitizedPayload),
                                             })];
                                     case 1:
                                         response = _b.sent();

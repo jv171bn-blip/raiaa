@@ -178,6 +178,14 @@ const MainContent: React.FC = () => {
           cards={editorialCards}
         />
 
+        {/* Perfumaria Importada com 30% OFF */}
+        <ProductCarousel
+          key="perfumaria-importada"
+          id="section-perfumaria"
+          title="Perfumaria Importada com 30% OFF"
+          products={novosProdutosCatalogo}
+        />
+
         {/* Mais das suas marcas favoritas */}
         <ProductCarousel
           key="marcas-favoritas"

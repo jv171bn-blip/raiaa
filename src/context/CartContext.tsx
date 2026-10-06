@@ -16,6 +16,7 @@ import {
   quemComprouTambem,
   similaresVocePode,
   todosProdutosExpandidos,
+  novosProdutosCatalogo,
 } from '../data/products';
 import { ultraBrasilProducts } from '../data/ultraBrasilProducts';
 import { novosKitsCarvalhoUltra } from '../data/novosKitsCarvalhoUltra';
@@ -847,6 +848,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
           ...similaresVocePode,
           ...montaProducts,
           ...todosProdutosExpandidos,
+          ...novosProdutosCatalogo,
         ];
         const found = all.find(p => p.id === targetId);
         if (found) {
