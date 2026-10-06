@@ -44,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
 
   const handleAppClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    showToast('Aplicativo Drogaria Portal: Disponível em breve na Google Play e App Store!');
+    showToast('Aplicativo Droga Raia: Disponível em breve na Google Play e App Store!');
   };
 
   // O box de suporte cinza só aparece na Home se não for solicitado esconder;
@@ -161,13 +161,10 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
                   Telefone: <a href="tel:11988251598">(11) 98825-1598</a>
                 </p>
                 <p className="portal-email">
-                  E-mail: <a href="mailto:contato@drogariaportal.com.br">contato@drogariaportal.com.br</a>
+                  E-mail: <a href="mailto:contato@rederaiassp.com">contato@rederaiassp.com</a>
                 </p>
                 <p className="portal-cnpj">
                   CNPJ: 35.307.743/0002-74
-                </p>
-                <p className="portal-legal-name">
-                  Drogaria Portal LTDA
                 </p>
               </div>
             </div>
@@ -463,7 +460,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
           <div className="portal-footer__bottom">
             <div className="portal-footer__copyright">
               <p className="portal-copyright-main">
-                &copy; {new Date().getFullYear()} <strong>Drogaria Portal LTDA</strong> - CNPJ:{' '}
+                &copy; {new Date().getFullYear()} - CNPJ:{' '}
                 <strong>35.307.743/0002-74</strong> - Todos os direitos reservados.
               </p>
               <p className="portal-copyright-sub">
@@ -473,7 +470,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
               </p>
               <p className="portal-copyright-address">
                 Avenida Cupece, 1277 - Bairro Jardim Prudencia - CEP: 04365-000 - São Paulo/SP |
-                Telefone: (11) 98825-1598 | contato@drogariaportal.com.br
+                Telefone: (11) 98825-1598 | contato@rederaiassp.com
               </p>
             </div>
           </div>

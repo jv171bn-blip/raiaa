@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>Drogaria Portal - Catálogo de Produtos</title>
+    <title>Droga Raia - Catálogo de Produtos</title>
     <link>https://portalfarmabrasil.com</link>
-    <description>Feed oficial de produtos (sem medicamentos) da Drogaria Portal para o Google Merchant Center</description>
+    <description>Feed oficial de produtos (sem medicamentos) da Droga Raia para o Google Merchant Center</description>
     <item>
       <g:id>401</g:id>
       <g:title>Tônico Facial em Disco Medicube Zero Pore Pad 2.0 70un</g:title>
@@ -282,7 +282,7 @@
       <g:image_link>https://portalfarmabrasil.com/products/needs_beauty_fps70.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>31.49 BRL</g:price>
+      <g:price>42.90 BRL</g:price>
       <g:brand>Needs</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Dermocosméticos &gt; Proteção Solar</g:product_type>
@@ -341,14 +341,14 @@
       <g:product_type>Cabelos &gt; Shampoo</g:product_type>
     </item>
     <item>
-      <g:id>1303</g:id>
-      <g:title>Bálsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml</g:title>
+      <g:id>11012</g:id>
+      <g:title>Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml</g:title>
       <g:description>Bálsamo calmante e reparador para pele ressecada, tatuada, pós-procedimentos e áreas ásperas do corpo e rosto.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=1303</g:link>
+      <g:link>https://portalfarmabrasil.com/?produto=11012</g:link>
       <g:image_link>https://portalfarmabrasil.com/products/cicaplast_baume_b5.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>36.00 BRL</g:price>
+      <g:price>79.90 BRL</g:price>
       <g:brand>La Roche-Posay</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Dermocosméticos &gt; Hidratantes Corporais</g:product_type>
@@ -861,19 +861,6 @@
       <g:brand>Rexona</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Beleza &amp; Higiene &gt; Desodorantes</g:product_type>
-    </item>
-    <item>
-      <g:id>11012</g:id>
-      <g:title>Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml</g:title>
-      <g:description>Cicaplast Baume B5+ da La Roche-Posay é um creme multirreparador calmante com fórmula inovadora que acelera a reparação da barreira cutânea desde o 1º dia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=11012</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/cicaplast_baume_b5.jpg</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>79.90 BRL</g:price>
-      <g:brand>La Roche-Posay</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Dermocosméticos &gt; Rosto</g:product_type>
     </item>
     <item>
       <g:id>14951</g:id>
@@ -2607,19 +2594,6 @@
       <g:product_type>Beleza e Perfumaria &gt; Maquiagem</g:product_type>
     </item>
     <item>
-      <g:id>50099</g:id>
-      <g:title>BRONZER TOO FACED CHOCOLATE SOLEIL</g:title>
-      <g:description>Produto autêntico e de alta performance: BRONZER TOO FACED CHOCOLATE SOLEIL. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50099</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_27884.jpg</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>175.45 BRL</g:price>
-      <g:brand>Too Faced</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Beleza e Perfumaria &gt; Maquiagem</g:product_type>
-    </item>
-    <item>
       <g:id>50100</g:id>
       <g:title>C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas</g:title>
       <g:description>Produto autêntico e de alta performance: C4 Beta Pump Extreme Pre Workout 225g – New Millen (Frutas Roxas. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
@@ -2748,19 +2722,6 @@
       <g:brand>Genérico</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Vitaminas e Suplementos &gt; Suplementos Esportivos</g:product_type>
-    </item>
-    <item>
-      <g:id>50110</g:id>
-      <g:title>CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca</g:title>
-      <g:description>Produto autêntico e de alta performance: CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50110</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_25216.jpg</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>89.90 BRL</g:price>
-      <g:brand>CeraVe</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Geral</g:product_type>
     </item>
     <item>
       <g:id>50111</g:id>
@@ -3249,19 +3210,6 @@
       <g:description>Produto autêntico e de alta performance: Corretivo Sephora Collection Best Skin Ever Glow Concealer. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
       <g:link>https://portalfarmabrasil.com/?produto=50148</g:link>
       <g:image_link>https://portalfarmabrasil.com/products/ultra_28137.jpg</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>63.25 BRL</g:price>
-      <g:brand>Sephora Collection</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Beleza e Perfumaria &gt; Maquiagem</g:product_type>
-    </item>
-    <item>
-      <g:id>50149</g:id>
-      <g:title>CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO</g:title>
-      <g:description>Produto autêntico e de alta performance: CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50149</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_27710.jpg</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>63.25 BRL</g:price>
@@ -3801,19 +3749,6 @@
       <g:brand>Genérico</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cuidado Corporal &gt; Hidratantes</g:product_type>
-    </item>
-    <item>
-      <g:id>50192</g:id>
-      <g:title>Creme Hidratante Bepantol Derma Multirrestaurador 40g</g:title>
-      <g:description>Produto autêntico e de alta performance: Creme Hidratante Bepantol Derma Multirrestaurador 40g. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50192</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_26305.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>45.58 BRL</g:price>
-      <g:brand>Genérico</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Hidratantes</g:product_type>
     </item>
     <item>
       <g:id>50193</g:id>
@@ -4557,19 +4492,6 @@
       <g:product_type>Saúde e Beleza</g:product_type>
     </item>
     <item>
-      <g:id>50251</g:id>
-      <g:title>Eximia Fortalize S com 30 Comprimidos</g:title>
-      <g:description>Produto autêntico e de alta performance: Eximia Fortalize S com 30 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50251</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_25743.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>198.29 BRL</g:price>
-      <g:brand>Eximia</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Saúde e Beleza</g:product_type>
-    </item>
-    <item>
       <g:id>50252</g:id>
       <g:title>Eximia Probiac com 60 Comprimidos</g:title>
       <g:description>Produto autêntico e de alta performance: Eximia Probiac com 60 Comprimidos. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
@@ -4802,32 +4724,6 @@
       <g:brand>Profuse</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Beleza e Perfumaria &gt; Maquiagem</g:product_type>
-    </item>
-    <item>
-      <g:id>50270</g:id>
-      <g:title>Fralda Babysec Ultra Sec G 60 Unidades</g:title>
-      <g:description>Produto autêntico e de alta performance: Fralda Babysec Ultra Sec G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50270</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_28561.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>47.61 BRL</g:price>
-      <g:brand>Babysec</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Mamãe e Bebê &gt; Fraldas Infantis</g:product_type>
-    </item>
-    <item>
-      <g:id>50271</g:id>
-      <g:title>Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades</g:title>
-      <g:description>Produto autêntico e de alta performance: Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=50271</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/ultra_26245.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>47.94 BRL</g:price>
-      <g:brand>Babysec</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Mamãe e Bebê &gt; Fraldas Infantis</g:product_type>
     </item>
     <item>
       <g:id>50272</g:id>
@@ -5324,19 +5220,6 @@
       <g:product_type>Pet &gt; Higiene Pet</g:product_type>
     </item>
     <item>
-      <g:id>60004</g:id>
-      <g:title>Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo</g:title>
-      <g:description>Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60004</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60004.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>17.91 BRL</g:price>
-      <g:brand>Dove</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
       <g:id>60005</g:id>
       <g:title>Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades</g:title>
       <g:description>Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
@@ -5493,19 +5376,6 @@
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
     </item>
     <item>
-      <g:id>60017</g:id>
-      <g:title>Kit Barba Goot - Óleo + Balm + Shampoo Barba Embaixador 200ml</g:title>
-      <g:description>Kit Barba Goot - Óleo + Balm + Shampoo Barba Embaixador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60017</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60017.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>83.50 BRL</g:price>
-      <g:brand>Goot</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Homem &gt; Barba e Cabelo</g:product_type>
-    </item>
-    <item>
       <g:id>60018</g:id>
       <g:title>Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g</g:title>
       <g:description>Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
@@ -5527,19 +5397,6 @@
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
       <g:price>74.53 BRL</g:price>
-      <g:brand>Wella Professionals</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
-      <g:id>60020</g:id>
-      <g:title>Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L</g:title>
-      <g:description>Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60020</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60020.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>185.68 BRL</g:price>
       <g:brand>Wella Professionals</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
@@ -5582,19 +5439,6 @@
       <g:brand>Eudora Siàge</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
-      <g:id>60024</g:id>
-      <g:title>Kit Barba Goot Wood - Óleo + Balm + Shampoo Barba Embaixador 200ml</g:title>
-      <g:description>Kit Barba Goot Wood - Óleo + Balm + Shampoo Barba Embaixador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60024</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60024.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>79.70 BRL</g:price>
-      <g:brand>Goot</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Homem &gt; Barba e Cabelo</g:product_type>
     </item>
     <item>
       <g:id>60025</g:id>
@@ -5701,32 +5545,6 @@
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
     </item>
     <item>
-      <g:id>60033</g:id>
-      <g:title>Kit Elseve Reparação Total 5 Shampoo 375ml + Condicionador 170ml</g:title>
-      <g:description>Kit Elseve Reparação Total 5 Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60033</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60033.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>19.82 BRL</g:price>
-      <g:brand>L&apos;Oréal Paris</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
-      <g:id>60034</g:id>
-      <g:title>Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml</g:title>
-      <g:description>Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60034</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60034.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>82.64 BRL</g:price>
-      <g:brand>Eudora Siàge</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
       <g:id>60035</g:id>
       <g:title>Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml</g:title>
       <g:description>Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
@@ -5760,7 +5578,7 @@
       <g:image_link>https://portalfarmabrasil.com/products/kit_60037.webp</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>20.41 BRL</g:price>
+      <g:price>82.64 BRL</g:price>
       <g:brand>Eudora Siàge</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
@@ -5777,19 +5595,6 @@
       <g:brand>Pantene</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
-      <g:id>60039</g:id>
-      <g:title>Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml</g:title>
-      <g:description>Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60039</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60039.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>154.87 BRL</g:price>
-      <g:brand>Dolce Pet</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Pet &gt; Higiene Pet</g:product_type>
     </item>
     <item>
       <g:id>60040</g:id>
@@ -5857,19 +5662,6 @@
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
     </item>
     <item>
-      <g:id>60045</g:id>
-      <g:title>Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g</g:title>
-      <g:description>Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60045</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60045.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>56.75 BRL</g:price>
-      <g:brand>Eudora Siàge</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
       <g:id>60046</g:id>
       <g:title>Kit Lola From Rio Rapunzel - Shampoo 250ml + Tônico 250ml + Máscara 450g</g:title>
       <g:description>Kit Lola From Rio Rapunzel - Shampoo 250ml + Tônico 250ml + Máscara 450g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
@@ -5931,19 +5723,6 @@
       <g:availability>in_stock</g:availability>
       <g:price>14.25 BRL</g:price>
       <g:brand>Tio Nacho</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
-      <g:id>60051</g:id>
-      <g:title>Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)</g:title>
-      <g:description>Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60051</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60051.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>94.98 BRL</g:price>
-      <g:brand>Wella Professionals</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
     </item>
@@ -6312,19 +6091,6 @@
       <g:product_type>Vitaminas e Suplementos &gt; Suplementos Alimentares</g:product_type>
     </item>
     <item>
-      <g:id>60080</g:id>
-      <g:title>Kit Braé Divine Duo (2 Produtos)</g:title>
-      <g:description>Kit Braé Divine Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60080</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60080.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>47.34 BRL</g:price>
-      <g:brand>Braé</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
       <g:id>60081</g:id>
       <g:title>Kit TRUSS Color Duo (2 Produtos)</g:title>
       <g:description>Kit TRUSS Color Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
@@ -6624,32 +6390,6 @@
       <g:product_type>Beleza &gt; Maquiagem</g:product_type>
     </item>
     <item>
-      <g:id>60104</g:id>
-      <g:title>Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve)</g:title>
-      <g:description>Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60104</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60104.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>72.11 BRL</g:price>
-      <g:brand>Amazonleve</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Vitaminas e Suplementos &gt; Suplementos Alimentares</g:product_type>
-    </item>
-    <item>
-      <g:id>60105</g:id>
-      <g:title>Kit Kérastase Genesis Duo (2 Produtos)</g:title>
-      <g:description>Kit Kérastase Genesis Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60105</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60105.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>221.93 BRL</g:price>
-      <g:brand>Kérastase</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
       <g:id>60106</g:id>
       <g:title>Kit Redken All Soft Heavy (3 Produtos)</g:title>
       <g:description>Kit Redken All Soft Heavy (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
@@ -6713,19 +6453,6 @@
       <g:brand>Bio Extratus</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Vitaminas e Suplementos &gt; Suplementos Alimentares</g:product_type>
-    </item>
-    <item>
-      <g:id>60111</g:id>
-      <g:title>Kit Kérastase Genesis Trio (3 Produtos)</g:title>
-      <g:description>Kit Kérastase Genesis Trio (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60111</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60111.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>381.83 BRL</g:price>
-      <g:brand>Kérastase</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
     </item>
     <item>
       <g:id>60112</g:id>
@@ -6895,32 +6622,6 @@
       <g:brand>Bodybuilders</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Vitaminas e Suplementos &gt; Suplementos Alimentares</g:product_type>
-    </item>
-    <item>
-      <g:id>60125</g:id>
-      <g:title>Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml</g:title>
-      <g:description>Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60125</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60125.png</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>180.49 BRL</g:price>
-      <g:brand>Wella Professionals</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
-    </item>
-    <item>
-      <g:id>60126</g:id>
-      <g:title>Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas</g:title>
-      <g:description>Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
-      <g:link>https://portalfarmabrasil.com/?produto=60126</g:link>
-      <g:image_link>https://portalfarmabrasil.com/products/kit_60126.webp</g:image_link>
-      <g:condition>new</g:condition>
-      <g:availability>in_stock</g:availability>
-      <g:price>75.14 BRL</g:price>
-      <g:brand>Imecap Hair</g:brand>
-      <g:identifier_exists>no</g:identifier_exists>
-      <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>
     </item>
     <item>
       <g:id>60127</g:id>
@@ -7223,13 +6924,13 @@
     </item>
     <item>
       <g:id>60159</g:id>
-      <g:title>Imecap Hair Cabelos e Unhas com 90 Cápsulas</g:title>
+      <g:title>Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas</g:title>
       <g:description>Imecap Hair Cabelos e Unhas com 90 Cápsulas. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.</g:description>
       <g:link>https://portalfarmabrasil.com/?produto=60159</g:link>
       <g:image_link>https://portalfarmabrasil.com/products/kit_60159.webp</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in_stock</g:availability>
-      <g:price>33.61 BRL</g:price>
+      <g:price>75.14 BRL</g:price>
       <g:brand>Imecap Hair</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Cabelos &gt; Kits de Tratamento</g:product_type>

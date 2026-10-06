@@ -1848,9 +1848,9 @@ var blackDayProducts = [
     id: 109,
     name: "Protetor Solar Facial Needs Beauty FPS 70 40g",
     size: "40g",
-    oldPrice: 44.9,
-    price: 31.49,
-    discount: 30,
+    oldPrice: 49.9,
+    price: 42.9,
+    discount: 14,
     options: 4,
     badges: ["Black do Dia"],
     rating: 4.8,
@@ -2196,14 +2196,14 @@ var quemComprouTambem = [
     subcategory: "Higiene do Beb\xEA"
   },
   {
-    id: 1303,
-    name: "B\xE1lsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+    id: 11012,
+    name: "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
     size: "40ml",
-    oldPrice: 48,
-    price: 36,
-    discount: 25,
+    oldPrice: 104.9,
+    price: 79.9,
+    discount: 24,
     rating: 4.9,
-    reviews: 310,
+    reviews: 410,
     image: "/products/cicaplast_baume_b5.jpg",
     brand: "La Roche-Posay",
     category: "Dermocosm\xE9ticos",
@@ -2283,9 +2283,9 @@ var quemComprouTambem = [
     id: 109,
     name: "Protetor Solar Facial Needs Beauty FPS 70 40g",
     size: "40g",
-    oldPrice: 42,
-    price: 31.49,
-    discount: 25,
+    oldPrice: 49.9,
+    price: 42.9,
+    discount: 14,
     rating: 4.6,
     reviews: 64,
     image: "/products/needs_beauty_fps70.jpg",
@@ -2366,14 +2366,14 @@ var similaresVocePode = [
     subcategory: "Vitaminas"
   },
   {
-    id: 1303,
-    name: "B\xE1lsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+    id: 11012,
+    name: "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
     size: "40ml",
-    oldPrice: 48,
-    price: 36,
-    discount: 25,
+    oldPrice: 104.9,
+    price: 79.9,
+    discount: 24,
     rating: 4.9,
-    reviews: 310,
+    reviews: 410,
     image: "/products/cicaplast_baume_b5.jpg",
     brand: "La Roche-Posay",
     category: "Dermocosm\xE9ticos",
@@ -3182,11 +3182,11 @@ var fraldasProducts = [
 var remediosProducts = [
   {
     id: 1201,
-    name: "Dorflex Analg\xE9sico e Relaxante Muscular 36 Comprimidos",
+    name: "Dorflex Relaxante Muscular e Analg\xE9sico Sanofi 36 Comprimidos",
     size: "36 Comprimidos",
-    oldPrice: 29.9,
-    price: 25.99,
-    discount: 13,
+    oldPrice: 42.9,
+    price: 36.9,
+    discount: 14,
     image: "/products/dorflex_36.jpg",
     badges: ["Mais Vendido Farm\xE1cia"],
     brand: "Dorflex",
@@ -3385,9 +3385,9 @@ var remediosProducts = [
     id: 1213,
     name: "Col\xEDrio Hyabak 0,15% Hidratante Ocular 10ml",
     size: "10ml",
-    oldPrice: 69.9,
-    price: 59.9,
-    discount: 14,
+    oldPrice: 78.9,
+    price: 74.5,
+    discount: 6,
     image: "/products/hyabak_10ml.jpg",
     badges: ["Sem Conservantes", "\xC1cido Hialur\xF4nico"],
     brand: "Hyabak",
@@ -3423,12 +3423,12 @@ var remediosProducts = [
 ];
 var dermocosmeticosProducts = [
   {
-    id: 1303,
-    name: "B\xE1lsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+    id: 11012,
+    name: "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
     size: "40ml",
-    oldPrice: 40,
-    price: 36,
-    discount: 13,
+    oldPrice: 104.9,
+    price: 79.9,
+    discount: 24,
     rating: 4.9,
     reviews: 410,
     image: "/products/cicaplast_baume_b5.jpg",
@@ -6114,29 +6114,6 @@ var ultraBrasilProducts = [
     "productCode": "27586"
   },
   {
-    "id": 50099,
-    "ultraId": 27884,
-    "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
-    "size": "",
-    "brand": "Too Faced",
-    "category": "Beleza e Perfumaria",
-    "subcategory": "Maquiagem",
-    "price": 175.45,
-    "rating": 4.8,
-    "reviews": 228,
-    "image": "/products/ultra_27884.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: BRONZER TOO FACED CHOCOLATE SOLEIL. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "27884"
-  },
-  {
     "id": 50100,
     "ultraId": 25916,
     "name": "C4 Beta Pump Extreme Pre Workout 225g \u2013 New Millen (Frutas Roxas",
@@ -6371,29 +6348,6 @@ var ultraBrasilProducts = [
       "Entrega r\xE1pida e segura com a garantia Droga Raia."
     ],
     "productCode": "26139"
-  },
-  {
-    "id": 50110,
-    "ultraId": 25216,
-    "name": "CeraVe Lo\xE7\xE3o Hidratante Corporal com \xC1cido Hialur\xF4nico \u2013 Hidrata\xE7\xE3o Profunda para Pele Seca",
-    "size": "",
-    "brand": "CeraVe",
-    "category": "Geral",
-    "subcategory": "",
-    "price": 89.9,
-    "rating": 4.8,
-    "reviews": 192,
-    "image": "/products/ultra_25216.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: CeraVe Lo\xE7\xE3o Hidratante Corporal com \xC1cido Hialur\xF4nico \u2013 Hidrata\xE7\xE3o Profunda para Pele Seca. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25216"
   },
   {
     "id": 50111,
@@ -7283,29 +7237,6 @@ var ultraBrasilProducts = [
       "Entrega r\xE1pida e segura com a garantia Droga Raia."
     ],
     "productCode": "28137"
-  },
-  {
-    "id": 50149,
-    "ultraId": 27710,
-    "name": "CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO",
-    "size": "",
-    "brand": "Sephora Collection",
-    "category": "Beleza e Perfumaria",
-    "subcategory": "Maquiagem",
-    "price": 63.25,
-    "rating": 4.8,
-    "reviews": 130,
-    "image": "/products/ultra_27710.jpg",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: CORRETIVO SEPHORA COLLECTION BEST SKIN EVER MICRO. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "27710"
   },
   {
     "id": 50150,
@@ -8294,29 +8225,6 @@ var ultraBrasilProducts = [
       "Entrega r\xE1pida e segura com a garantia Droga Raia."
     ],
     "productCode": "28682"
-  },
-  {
-    "id": 50192,
-    "ultraId": 26305,
-    "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
-    "size": "40g",
-    "brand": "Gen\xE9rico",
-    "category": "Hidratantes",
-    "subcategory": "",
-    "price": 45.58,
-    "rating": 4.8,
-    "reviews": 225,
-    "image": "/products/ultra_26305.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: Creme Hidratante Bepantol Derma Multirrestaurador 40g. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "26305"
   },
   {
     "id": 50193,
@@ -9666,29 +9574,6 @@ var ultraBrasilProducts = [
     "productCode": "25749"
   },
   {
-    "id": 50251,
-    "ultraId": 25743,
-    "name": "Eximia Fortalize S com 30 Comprimidos",
-    "size": "30 Comprimidos",
-    "brand": "Eximia",
-    "category": "Sa\xFAde e Beleza",
-    "subcategory": "",
-    "price": 198.29,
-    "rating": 4.8,
-    "reviews": 131,
-    "image": "/products/ultra_25743.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: Eximia Fortalize S com 30 Comprimidos. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "25743"
-  },
-  {
     "id": 50252,
     "ultraId": 25742,
     "name": "Eximia Probiac com 60 Comprimidos",
@@ -10110,55 +9995,6 @@ var ultraBrasilProducts = [
       "Entrega r\xE1pida e segura com a garantia Droga Raia."
     ],
     "productCode": "28667"
-  },
-  {
-    "id": 50270,
-    "ultraId": 28561,
-    "name": "Fralda Babysec Ultra Sec G 60 Unidades",
-    "size": "60 Unidades",
-    "brand": "Babysec",
-    "category": "Mam\xE3e e Beb\xEA",
-    "subcategory": "Fraldas Infantis",
-    "oldPrice": 52.9,
-    "price": 47.61,
-    "discount": 10,
-    "rating": 4.8,
-    "reviews": 297,
-    "image": "/products/ultra_28561.png",
-    "badges": [
-      "-10%",
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: Fralda Babysec Ultra Sec G 60 Unidades. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "28561"
-  },
-  {
-    "id": 50271,
-    "ultraId": 26245,
-    "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
-    "size": "60 Unidades",
-    "brand": "Babysec",
-    "category": "Mam\xE3e e Beb\xEA",
-    "subcategory": "Fraldas Infantis",
-    "price": 47.94,
-    "rating": 4.8,
-    "reviews": 85,
-    "image": "/products/ultra_26245.webp",
-    "badges": [
-      "Mais Vendidos"
-    ],
-    "description": "Produto aut\xEAntico e de alta performance: Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades. F\xF3rmula com m\xE1xima pureza, efic\xE1cia comprovada e proced\xEAncia garantida.",
-    "bullets": [
-      "F\xF3rmula original e certificada de alta qualidade.",
-      "Ideal para cuidados di\xE1rios e resultados superiores.",
-      "Entrega r\xE1pida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "26245"
   },
   {
     "id": 50272,
@@ -11066,31 +10902,6 @@ var novosKitsCarvalhoUltra = [
     "size": "Kit"
   },
   {
-    "id": 60004,
-    "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Pept\xEDdeo",
-    "brand": "Dove",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 17.91,
-    "oldPrice": 18.85,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 264,
-    "image": "/products/kit_60004.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Pept\xEDdeo. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60004",
-    "size": "350ml"
-  },
-  {
     "id": 60005,
     "name": "Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades",
     "brand": "Alpecin",
@@ -11391,31 +11202,6 @@ var novosKitsCarvalhoUltra = [
     "size": "500ml"
   },
   {
-    "id": 60017,
-    "name": "Kit Barba Goot - \xD3leo + Balm + Shampoo Barba Embaixador 200ml",
-    "brand": "Goot",
-    "category": "Homem",
-    "subcategory": "Barba e Cabelo",
-    "price": 83.5,
-    "oldPrice": 87.9,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 277,
-    "image": "/products/kit_60017.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Barba Goot - \xD3leo + Balm + Shampoo Barba Embaixador 200ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60017",
-    "size": "200ml"
-  },
-  {
     "id": 60018,
     "name": "Kit Eudora Si\xE0ge Glow Expert Shampoo 250ml + M\xE1scara 250g",
     "brand": "Eudora Si\xE0ge",
@@ -11464,31 +11250,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60019",
     "size": "250ml"
-  },
-  {
-    "id": 60020,
-    "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 185.68,
-    "oldPrice": 195.45,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 280,
-    "image": "/products/kit_60020.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60020",
-    "size": "Kit"
   },
   {
     "id": 60021,
@@ -11563,31 +11324,6 @@ var novosKitsCarvalhoUltra = [
       "Entrega r\xE1pida e segura garantida pela Droga Raia."
     ],
     "productCode": "60023",
-    "size": "200ml"
-  },
-  {
-    "id": 60024,
-    "name": "Kit Barba Goot Wood - \xD3leo + Balm + Shampoo Barba Embaixador 200ml",
-    "brand": "Goot",
-    "category": "Homem",
-    "subcategory": "Barba e Cabelo",
-    "price": 79.7,
-    "oldPrice": 83.9,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 284,
-    "image": "/products/kit_60024.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Barba Goot Wood - \xD3leo + Balm + Shampoo Barba Embaixador 200ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60024",
     "size": "200ml"
   },
   {
@@ -11724,7 +11460,7 @@ var novosKitsCarvalhoUltra = [
     "price": 28.49,
     "oldPrice": 29.99,
     "discount": 5,
-    "rating": 4.8,
+    "rating": 5,
     "reviews": 290,
     "image": "/products/kit_60030.webp",
     "badges": [
@@ -11791,56 +11527,6 @@ var novosKitsCarvalhoUltra = [
     "size": "250ml"
   },
   {
-    "id": 60033,
-    "name": "Kit Elseve Repara\xE7\xE3o Total 5 Shampoo 375ml + Condicionador 170ml",
-    "brand": "L'Or\xE9al Paris",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 19.82,
-    "oldPrice": 20.86,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 293,
-    "image": "/products/kit_60033.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Elseve Repara\xE7\xE3o Total 5 Shampoo 375ml + Condicionador 170ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60033",
-    "size": "375ml"
-  },
-  {
-    "id": 60034,
-    "name": "Kit Si\xE0ge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
-    "brand": "Eudora Si\xE0ge",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 82.64,
-    "oldPrice": 86.99,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 294,
-    "image": "/products/kit_60034.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Si\xE0ge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60034",
-    "size": "250ml"
-  },
-  {
     "id": 60035,
     "name": "Kit Si\xE0ge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml",
     "brand": "Eudora Si\xE0ge",
@@ -11896,8 +11582,8 @@ var novosKitsCarvalhoUltra = [
     "brand": "Eudora Si\xE0ge",
     "category": "Cabelos",
     "subcategory": "Kits de Tratamento",
-    "price": 20.41,
-    "oldPrice": 21.48,
+    "price": 82.64,
+    "oldPrice": 86.99,
     "discount": 5,
     "rating": 4.9,
     "reviews": 297,
@@ -11939,31 +11625,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60038",
     "size": "350ml"
-  },
-  {
-    "id": 60039,
-    "name": "Kit 2 Shampoo Suave Cereja e Avel\xE3 Dolce Pet C\xE3es e Gatos - 500 Ml",
-    "brand": "Dolce Pet",
-    "category": "Pet",
-    "subcategory": "Higiene Pet",
-    "price": 154.87,
-    "oldPrice": 163.02,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 299,
-    "image": "/products/kit_60039.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit 2 Shampoo Suave Cereja e Avel\xE3 Dolce Pet C\xE3es e Gatos - 500 Ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60039",
-    "size": "500 Ml"
   },
   {
     "id": 60040,
@@ -12091,31 +11752,6 @@ var novosKitsCarvalhoUltra = [
     "size": "1kg"
   },
   {
-    "id": 60045,
-    "name": "Kit Si\xE0ge DermoHair Shampoo 300ml + Condicionador 20ml + M\xE1scara 250g",
-    "brand": "Eudora Si\xE0ge",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 56.75,
-    "oldPrice": 59.74,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 115,
-    "image": "/products/kit_60045.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Si\xE0ge DermoHair Shampoo 300ml + Condicionador 20ml + M\xE1scara 250g. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60045",
-    "size": "300ml"
-  },
-  {
     "id": 60046,
     "name": "Kit Lola From Rio Rapunzel - Shampoo 250ml + T\xF4nico 250ml + M\xE1scara 450g",
     "brand": "Lola From Rio",
@@ -12239,31 +11875,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60050",
     "size": "415ml"
-  },
-  {
-    "id": 60051,
-    "name": "Kit Wella Professionals Invigo Nutri-enrich \u2013 Shampoo 1l (2 Produtos)",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 94.98,
-    "oldPrice": 99.98,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 121,
-    "image": "/products/kit_60051.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri-enrich \u2013 Shampoo 1l (2 Produtos). Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60051",
-    "size": "2 Produtos"
   },
   {
     "id": 60052,
@@ -12966,31 +12577,6 @@ var novosKitsCarvalhoUltra = [
     "size": "1kg"
   },
   {
-    "id": 60080,
-    "name": "Kit Bra\xE9 Divine Duo (2 Produtos)",
-    "brand": "Bra\xE9",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 47.34,
-    "oldPrice": 49.83,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 150,
-    "image": "/products/kit_60080.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Bra\xE9 Divine Duo (2 Produtos). Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60080",
-    "size": "2 Produtos"
-  },
-  {
     "id": 60081,
     "name": "Kit TRUSS Color Duo (2 Produtos)",
     "brand": "TRUSS",
@@ -13566,56 +13152,6 @@ var novosKitsCarvalhoUltra = [
     "size": "Kit"
   },
   {
-    "id": 60104,
-    "name": "Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve)",
-    "brand": "Amazonleve",
-    "category": "Vitaminas e Suplementos",
-    "subcategory": "Suplementos Alimentares",
-    "price": 72.11,
-    "oldPrice": 75.9,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 174,
-    "image": "/products/kit_60104.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit. 06Un - Ov Sucupira 20Ml - (Amazonleve). Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60104",
-    "size": "20Ml"
-  },
-  {
-    "id": 60105,
-    "name": "Kit K\xE9rastase Genesis Duo (2 Produtos)",
-    "brand": "K\xE9rastase",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 221.93,
-    "oldPrice": 233.61,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 175,
-    "image": "/products/kit_60105.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit K\xE9rastase Genesis Duo (2 Produtos). Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60105",
-    "size": "2 Produtos"
-  },
-  {
     "id": 60106,
     "name": "Kit Redken All Soft Heavy (3 Produtos)",
     "brand": "Redken",
@@ -13739,31 +13275,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60110",
     "size": "100Ml"
-  },
-  {
-    "id": 60111,
-    "name": "Kit K\xE9rastase Genesis Trio (3 Produtos)",
-    "brand": "K\xE9rastase",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 381.83,
-    "oldPrice": 401.93,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 181,
-    "image": "/products/kit_60111.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit K\xE9rastase Genesis Trio (3 Produtos). Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60111",
-    "size": "3 Produtos"
   },
   {
     "id": 60112,
@@ -14089,56 +13600,6 @@ var novosKitsCarvalhoUltra = [
     ],
     "productCode": "60124",
     "size": "6kg"
-  },
-  {
-    "id": 60125,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich \u2013 Shampoo 1000ml + Condicionador 1000ml",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 180.49,
-    "oldPrice": 189.99,
-    "discount": 5,
-    "rating": 5,
-    "reviews": 195,
-    "image": "/products/kit_60125.png",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich \u2013 Shampoo 1000ml + Condicionador 1000ml. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60125",
-    "size": "1000ml"
-  },
-  {
-    "id": 60126,
-    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 C\xE1psulas",
-    "brand": "Imecap Hair",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 75.14,
-    "oldPrice": 79.1,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 196,
-    "image": "/products/kit_60126.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Imecap Hair Max Cabelos E Unhas 90 C\xE1psulas. Produto aut\xEAntico de proced\xEAncia garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "F\xF3rmula de alta performance e proced\xEAncia original comprovada.",
-      "Kit completo com excelente custo-benef\xEDcio.",
-      "Entrega r\xE1pida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60126",
-    "size": "Kit"
   },
   {
     "id": 60127,
@@ -14717,12 +14178,12 @@ var novosKitsCarvalhoUltra = [
   },
   {
     "id": 60159,
-    "name": "Imecap Hair Cabelos e Unhas com 90 C\xE1psulas",
+    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 C\xE1psulas",
     "brand": "Imecap Hair",
     "category": "Cabelos",
     "subcategory": "Kits de Tratamento",
-    "price": 33.61,
-    "oldPrice": 35.38,
+    "price": 75.14,
+    "oldPrice": 79.1,
     "discount": 5,
     "rating": 4.8,
     "reviews": 229,

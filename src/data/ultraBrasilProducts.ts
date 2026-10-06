@@ -6132,32 +6132,7 @@ export const ultraBrasilProducts: Product[] = [
     ],
     "productCode": "28667"
   },
-  {
-    "id": 50270,
-    "ultraId": 28561,
-    "name": "Fralda Babysec Ultra Sec G 60 Unidades",
-    "size": "60 Unidades",
-    "brand": "Babysec",
-    "category": "Mamãe e Bebê",
-    "subcategory": "Fraldas Infantis",
-    "oldPrice": 52.9,
-    "price": 47.61,
-    "discount": 10,
-    "rating": 4.8,
-    "reviews": 297,
-    "image": "/products/ultra_28561.png",
-    "badges": [
-      "-10%",
-      "Mais Vendidos"
-    ],
-    "description": "Produto autêntico e de alta performance: Fralda Babysec Ultra Sec G 60 Unidades. Fórmula com máxima pureza, eficácia comprovada e procedência garantida.",
-    "bullets": [
-      "Fórmula original e certificada de alta qualidade.",
-      "Ideal para cuidados diários e resultados superiores.",
-      "Entrega rápida e segura com a garantia Droga Raia."
-    ],
-    "productCode": "28561"
-  },
+
   {
     "id": 50272,
     "ultraId": 28560,

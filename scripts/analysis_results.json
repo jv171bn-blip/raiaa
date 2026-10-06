@@ -1,0 +1,521 @@
+[
+  {
+    "groupId": 1,
+    "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+    "count": 2,
+    "prices": [
+      162.8,
+      175.45
+    ],
+    "items": [
+      {
+        "id": 50096,
+        "name": "Bronzer em Bastão Too Faced Chocolate Soleil",
+        "price": 162.8
+      },
+      {
+        "id": 50099,
+        "name": "BRONZER TOO FACED CHOCOLATE SOLEIL",
+        "price": 175.45
+      }
+    ],
+    "action": "KEEP_CLOSE_PAIR",
+    "priceDiffRatio": 0.07770270270270256
+  },
+  {
+    "groupId": 2,
+    "name": "CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca",
+    "count": 3,
+    "prices": [
+      89.9,
+      89.9,
+      99.9
+    ],
+    "items": [
+      {
+        "id": 50110,
+        "name": "CeraVe Loção Hidratante Corporal com Ácido Hialurônico – Hidratação Profunda para Pele Seca",
+        "price": 89.9
+      },
+      {
+        "id": 11013,
+        "name": "Loção Hidratante Corporal CeraVe Pele Seca a Extra Seca Hidratação Prolongada 473ml",
+        "price": 99.9,
+        "oldPrice": 133.9
+      },
+      {
+        "id": 1305,
+        "name": "Loção Hidratante Corporal CeraVe 473ml",
+        "price": 89.9,
+        "oldPrice": 109.9
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS"
+  },
+  {
+    "groupId": 3,
+    "name": "Creme Hidratante Bepantol Derma creme 40g",
+    "count": 2,
+    "prices": [
+      35.99,
+      45.58
+    ],
+    "items": [
+      {
+        "id": 50191,
+        "name": "Creme Hidratante Bepantol Derma creme 40g",
+        "price": 35.99,
+        "oldPrice": 39.99
+      },
+      {
+        "id": 50192,
+        "name": "Creme Hidratante Bepantol Derma Multirrestaurador 40g",
+        "price": 45.58
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 0.26646290636287845
+  },
+  {
+    "groupId": 4,
+    "name": "Eximia fortalize 30 comprimidos",
+    "count": 3,
+    "prices": [
+      54.97,
+      76.44,
+      198.29
+    ],
+    "items": [
+      {
+        "id": 50247,
+        "name": "Eximia fortalize 30 comprimidos",
+        "price": 76.44
+      },
+      {
+        "id": 50248,
+        "name": "Eximia Fortalize Kera D 30 comprimidos",
+        "price": 54.97
+      },
+      {
+        "id": 50251,
+        "name": "Eximia Fortalize S com 30 Comprimidos",
+        "price": 198.29
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS"
+  },
+  {
+    "groupId": 5,
+    "name": "Fralda Babysec Ultra Sec G 60 Unidades",
+    "count": 3,
+    "prices": [
+      47.61,
+      47.94,
+      69.9
+    ],
+    "items": [
+      {
+        "id": 50270,
+        "name": "Fralda Babysec Ultra Sec G 60 Unidades",
+        "price": 47.61,
+        "oldPrice": 52.9
+      },
+      {
+        "id": 50271,
+        "name": "Fralda Babysec UltraSec Galinha Pintadinha G 60 Unidades",
+        "price": 47.94
+      },
+      {
+        "id": 1109,
+        "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper G 60 Unidades",
+        "price": 69.9,
+        "oldPrice": 84.9
+      }
+    ],
+    "action": "DELETE_OUTLIER",
+    "outlierToDelete": {
+      "id": 1109,
+      "name": "Fralda Babysec Ultrasec Galinha Pintadinha Hiper G 60 Unidades",
+      "price": 69.9,
+      "oldPrice": 84.9
+    }
+  },
+  {
+    "groupId": 6,
+    "name": "Gel De Limpeza Facial Darrow Actine Oil Control 400g",
+    "count": 3,
+    "prices": [
+      48.59,
+      48.59,
+      74.9
+    ],
+    "items": [
+      {
+        "id": 50331,
+        "name": "Gel De Limpeza Facial Darrow Actine Oil Control 400g",
+        "price": 48.59
+      },
+      {
+        "id": 115,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica 400g",
+        "price": 48.59,
+        "oldPrice": 84.9
+      },
+      {
+        "id": 2028,
+        "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+        "price": 74.9,
+        "oldPrice": 89.9
+      }
+    ],
+    "action": "DELETE_OUTLIER",
+    "outlierToDelete": {
+      "id": 2028,
+      "name": "Gel de Limpeza Facial Darrow Actine Pele Acneica Refil Econômico 400g",
+      "price": 74.9,
+      "oldPrice": 89.9
+    }
+  },
+  {
+    "groupId": 7,
+    "name": "Kit Shampoo, Máscara e Ampola Divine – Braé",
+    "count": 2,
+    "prices": [
+      40.7,
+      47.34
+    ],
+    "items": [
+      {
+        "id": 60001,
+        "name": "Kit Shampoo, Máscara e Ampola Divine – Braé",
+        "price": 40.7,
+        "oldPrice": 42.84
+      },
+      {
+        "id": 60080,
+        "name": "Kit Braé Divine Duo (2 Produtos)",
+        "price": 47.34,
+        "oldPrice": 49.83
+      }
+    ],
+    "action": "KEEP_CLOSE_PAIR",
+    "priceDiffRatio": 0.16314496314496316
+  },
+  {
+    "groupId": 8,
+    "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
+    "count": 2,
+    "prices": [
+      17.91,
+      28.49
+    ],
+    "items": [
+      {
+        "id": 60004,
+        "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
+        "price": 17.91,
+        "oldPrice": 18.85
+      },
+      {
+        "id": 60030,
+        "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
+        "price": 28.49,
+        "oldPrice": 29.99
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 0.5907314349525404
+  },
+  {
+    "groupId": 9,
+    "name": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml",
+    "count": 2,
+    "prices": [
+      154.87,
+      154.87
+    ],
+    "items": [
+      {
+        "id": 60011,
+        "name": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml",
+        "price": 154.87,
+        "oldPrice": 163.02
+      },
+      {
+        "id": 60039,
+        "name": "Kit 2 Shampoo Suave Cereja e Avelã Dolce Pet Cães e Gatos - 500 Ml",
+        "price": 154.87,
+        "oldPrice": 163.02
+      }
+    ],
+    "action": "KEEP_CLOSE_PAIR",
+    "priceDiffRatio": 0
+  },
+  {
+    "groupId": 10,
+    "name": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g",
+    "count": 2,
+    "prices": [
+      39.9,
+      56.75
+    ],
+    "items": [
+      {
+        "id": 60014,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g",
+        "price": 39.9,
+        "oldPrice": 42
+      },
+      {
+        "id": 60045,
+        "name": "Kit Siàge DermoHair Shampoo 300ml + Condicionador 20ml + Máscara 250g",
+        "price": 56.75,
+        "oldPrice": 59.74
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 0.42230576441102763
+  },
+  {
+    "groupId": 11,
+    "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
+    "count": 3,
+    "prices": [
+      94.98,
+      180.49,
+      185.68
+    ],
+    "items": [
+      {
+        "id": 60020,
+        "name": "Kit Wella Invigo Nutri Enrich Shampoo 1L + Condicionador 1L",
+        "price": 185.68,
+        "oldPrice": 195.45
+      },
+      {
+        "id": 60051,
+        "name": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)",
+        "price": 94.98,
+        "oldPrice": 99.98
+      },
+      {
+        "id": 60125,
+        "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
+        "price": 180.49,
+        "oldPrice": 189.99
+      }
+    ],
+    "action": "DELETE_OUTLIER",
+    "outlierToDelete": {
+      "id": 60051,
+      "name": "Kit Wella Professionals Invigo Nutri-enrich – Shampoo 1l (2 Produtos)",
+      "price": 94.98,
+      "oldPrice": 99.98
+    }
+  },
+  {
+    "groupId": 12,
+    "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
+    "count": 2,
+    "prices": [
+      20.41,
+      82.64
+    ],
+    "items": [
+      {
+        "id": 60034,
+        "name": "Kit Siàge Eudora Hair Plastia Shampoo 250ml + Condicionador 125ml",
+        "price": 82.64,
+        "oldPrice": 86.99
+      },
+      {
+        "id": 60037,
+        "name": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml",
+        "price": 20.41,
+        "oldPrice": 21.48
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 3.0489955903968644
+  },
+  {
+    "groupId": 13,
+    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
+    "count": 2,
+    "prices": [
+      33.61,
+      75.14
+    ],
+    "items": [
+      {
+        "id": 60126,
+        "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
+        "price": 75.14,
+        "oldPrice": 79.1
+      },
+      {
+        "id": 60159,
+        "name": "Imecap Hair Cabelos e Unhas com 90 Cápsulas",
+        "price": 33.61,
+        "oldPrice": 35.38
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 1.2356441535257365
+  },
+  {
+    "groupId": 14,
+    "name": "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
+    "count": 2,
+    "prices": [
+      36,
+      79.9
+    ],
+    "items": [
+      {
+        "id": 11012,
+        "name": "Creme Multirreparador Calmante La Roche-Posay Cicaplast Baume B5+ 40ml",
+        "price": 79.9,
+        "oldPrice": 104.9
+      },
+      {
+        "id": 1303,
+        "name": "Bálsamo Reparador Cicaplast Baume B5+ La Roche-Posay 40ml",
+        "price": 36,
+        "oldPrice": 40
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 1.2194444444444446
+  },
+  {
+    "groupId": 15,
+    "name": "Novalgina Dipirona 1g 20 comprimidos",
+    "count": 2,
+    "prices": [
+      34.9,
+      34.99
+    ],
+    "items": [
+      {
+        "id": 11003,
+        "name": "Novalgina Dipirona 1g 20 comprimidos",
+        "price": 34.99,
+        "oldPrice": 47.02
+      },
+      {
+        "id": 1204,
+        "name": "Novalgina Dipirona Monoidratada 1g 20 Comprimidos",
+        "price": 34.9,
+        "oldPrice": 39.9
+      }
+    ],
+    "action": "KEEP_CLOSE_PAIR",
+    "priceDiffRatio": 0.0025787965616046824
+  },
+  {
+    "groupId": 16,
+    "name": "Fórmula Infantil Ninho Fases 1+ Nestlé 1 a 3 anos 800g",
+    "count": 3,
+    "prices": [
+      42.99,
+      44.9,
+      44.9
+    ],
+    "items": [
+      {
+        "id": 11015,
+        "name": "Fórmula Infantil Ninho Fases 1+ Nestlé 1 a 3 anos 800g",
+        "price": 42.99
+      },
+      {
+        "id": 20490,
+        "name": "Composto Lácteo Ninho Fases 1+ Prebio 1 Nestlé 800g",
+        "price": 44.9,
+        "oldPrice": 52.9
+      },
+      {
+        "id": 1112,
+        "name": "Composto Lácteo Ninho Fases 1+ Nestlé 800g",
+        "price": 44.9,
+        "oldPrice": 51.9
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS"
+  },
+  {
+    "groupId": 17,
+    "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+    "count": 2,
+    "prices": [
+      219.9,
+      260.61
+    ],
+    "items": [
+      {
+        "id": 11016,
+        "name": "Sérum Facial Clareador Eucerin Dual Anti-Pigment 30ml",
+        "price": 260.61,
+        "oldPrice": 299.9
+      },
+      {
+        "id": 1308,
+        "name": "Sérum Clareador Facial Eucerin Anti-Pigment Dual Sérum 30ml",
+        "price": 219.9,
+        "oldPrice": 249.9
+      }
+    ],
+    "action": "KEEP_CLOSE_PAIR",
+    "priceDiffRatio": 0.18512960436562076
+  },
+  {
+    "groupId": 18,
+    "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+    "count": 2,
+    "prices": [
+      25.99,
+      36.9
+    ],
+    "items": [
+      {
+        "id": 1201,
+        "name": "Dorflex Analgésico e Relaxante Muscular 36 Comprimidos",
+        "price": 25.99,
+        "oldPrice": 29.9
+      },
+      {
+        "id": 2016,
+        "name": "Dorflex Relaxante Muscular e Analgésico Sanofi 36 Comprimidos",
+        "price": 36.9,
+        "oldPrice": 42.9
+      }
+    ],
+    "action": "SEND_FOR_USER_ANALYSIS",
+    "priceDiffRatio": 0.4197768372450943
+  },
+  {
+    "groupId": 19,
+    "name": "Sérum Facial Antirrugas Skinceuticals P-tiox 30ml",
+    "count": 2,
+    "prices": [
+      469.9,
+      469.9
+    ],
+    "items": [
+      {
+        "id": 1307,
+        "name": "Sérum Facial Antirrugas Skinceuticals P-tiox 30ml",
+        "price": 469.9,
+        "oldPrice": 525.5
+      },
+      {
+        "id": 1318855,
+        "name": "Skinceuticals P-tiox Sérum Antirrugas 30ml",
+        "price": 469.9,
+        "oldPrice": 525.5
+      }
+    ],
+    "action": "KEEP_CLOSE_PAIR",
+    "priceDiffRatio": 0
+  }
+]

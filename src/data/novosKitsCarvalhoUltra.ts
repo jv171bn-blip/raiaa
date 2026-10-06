@@ -82,31 +82,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "Kit"
   },
   {
-    "id": 60004,
-    "name": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo",
-    "brand": "Dove",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 17.91,
-    "oldPrice": 18.85,
-    "discount": 5,
-    "rating": 4.9,
-    "reviews": 264,
-    "image": "/products/kit_60004.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Shampoo 350ml + Condicionador 150ml Dove Bond Repair+ Peptídeo. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60004",
-    "size": "350ml"
-  },
-  {
     "id": 60005,
     "name": "Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades",
     "brand": "Alpecin",
@@ -657,6 +632,31 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "size": "350ml"
   },
   {
+    "id": 60030,
+    "name": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml",
+    "brand": "Dove",
+    "category": "Cabelos",
+    "subcategory": "Kits de Tratamento",
+    "price": 28.49,
+    "oldPrice": 29.99,
+    "discount": 5,
+    "rating": 5,
+    "reviews": 290,
+    "image": "/products/kit_60030.webp",
+    "badges": [
+      "Oferta",
+      "Destaque"
+    ],
+    "description": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "bullets": [
+      "Fórmula de alta performance e procedência original comprovada.",
+      "Kit completo com excelente custo-benefício.",
+      "Entrega rápida e segura garantida pela Droga Raia."
+    ],
+    "productCode": "60030",
+    "size": "350ml"
+  },
+  {
     "id": 60031,
     "name": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml",
     "brand": "Eudora Siàge",
@@ -762,8 +762,8 @@ export const novosKitsCarvalhoUltra: Product[] = [
     "brand": "Eudora Siàge",
     "category": "Cabelos",
     "subcategory": "Kits de Tratamento",
-    "price": 20.41,
-    "oldPrice": 21.48,
+    "price": 82.64,
+    "oldPrice": 86.99,
     "discount": 5,
     "rating": 4.9,
     "reviews": 297,
@@ -1055,31 +1055,6 @@ export const novosKitsCarvalhoUltra: Product[] = [
     ],
     "productCode": "60050",
     "size": "415ml"
-  },
-  {
-    "id": 60051,
-    "name": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml",
-    "brand": "Wella Professionals",
-    "category": "Cabelos",
-    "subcategory": "Kits de Tratamento",
-    "price": 94.98,
-    "oldPrice": 99.98,
-    "discount": 5,
-    "rating": 4.8,
-    "reviews": 121,
-    "image": "/products/kit_60051.webp",
-    "badges": [
-      "Oferta",
-      "Destaque"
-    ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich – Shampoo 1000ml + Condicionador 1000ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
-    "bullets": [
-      "Fórmula de alta performance e procedência original comprovada.",
-      "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
-    ],
-    "productCode": "60051",
-    "size": "2 Produtos"
   },
   {
     "id": 60052,
@@ -3383,12 +3358,12 @@ export const novosKitsCarvalhoUltra: Product[] = [
   },
   {
     "id": 60159,
-    "name": "Imecap Hair Cabelos e Unhas com 90 Cápsulas",
+    "name": "Kit Imecap Hair Max Cabelos E Unhas 90 Cápsulas",
     "brand": "Imecap Hair",
     "category": "Cabelos",
     "subcategory": "Kits de Tratamento",
-    "price": 33.61,
-    "oldPrice": 35.38,
+    "price": 75.14,
+    "oldPrice": 79.10,
     "discount": 5,
     "rating": 4.8,
     "reviews": 229,

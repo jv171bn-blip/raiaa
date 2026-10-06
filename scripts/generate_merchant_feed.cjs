@@ -33,9 +33,9 @@ function escapeXml(unsafe) {
 let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>Drogaria Portal - Catálogo de Produtos</title>
+    <title>Droga Raia - Catálogo de Produtos</title>
     <link>${BASE_URL}</link>
-    <description>Feed oficial de produtos (sem medicamentos) da Drogaria Portal para o Google Merchant Center</description>
+    <description>Feed oficial de produtos (sem medicamentos) da Droga Raia para o Google Merchant Center</description>
 `;
 
 for (const p of products) {
