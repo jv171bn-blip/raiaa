@@ -299,6 +299,15 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
       // Ignore storage errors
     }
   };
+
+  const isMobileDevice = (): boolean => {
+    if (typeof window === 'undefined') return false;
+    const ua = navigator.userAgent || navigator.vendor || (window as any).opera || '';
+    const isMobileUA = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+    const isSmallScreen = window.innerWidth > 0 && window.innerWidth <= 768;
+    return isMobileUA || isSmallScreen;
+  };
+
   const [activeModal, setActiveModal] = useState<ActiveModalType>(null);
   const [lastAddedProduct, setLastAddedProduct] = useState<Product | null>(null);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
@@ -307,7 +316,17 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (typeof window === 'undefined') return false;
     const p = window.location.pathname.toLowerCase().replace(/\/+$/, '');
     const h = window.location.hash.toLowerCase();
-    return p === '/inicio' || h === '#inicio';
+    if (p === '/inicio' || h === '#inicio') return true;
+
+    // Se for mobile entrando na raiz do domínio (onde abriria Quem Somos):
+    // Se o usuário NÃO clicou expressamente na sessão Quem Somos, redireciona para /inicio
+    if (isMobileDevice() && (p === '' || p === '/') && !h.includes('quem-somos') && !h.includes('sobre')) {
+      const userClicked = typeof sessionStorage !== 'undefined' && sessionStorage.getItem('clicked_quem_somos') === 'true';
+      if (!userClicked) {
+        return true;
+      }
+    }
+    return false;
   });
   const [isOffersPage, setIsOffersPage] = useState<boolean>(() => {
     return typeof window !== 'undefined' && window.location.hash === '#ofertas';
@@ -349,7 +368,15 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const searchParams = new URLSearchParams(window.location.search);
     if (searchParams.get('produto') || searchParams.get('id')) return false;
 
-    // A página principal padrão (ex: "/") é a aba Quem Somos!
+    // Se for mobile entrando na raiz sem ter clicado na sessão Quem Somos, vai para /inicio
+    if (isMobileDevice() && (p === '' || p === '/') && !h.includes('quem-somos') && !h.includes('sobre')) {
+      const userClicked = typeof sessionStorage !== 'undefined' && sessionStorage.getItem('clicked_quem_somos') === 'true';
+      if (!userClicked) {
+        return false;
+      }
+    }
+
+    // A página principal padrão no Desktop (ex: "/") é a aba Quem Somos!
     return true;
   });
   const [institutionalTab, setInstitutionalTab] = useState<string>(() => {
@@ -722,6 +749,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const goToPrivacyPage = (tab: string = 'sobre') => {
+    try {
+      sessionStorage.setItem('clicked_quem_somos', 'true');
+    } catch (e) {}
     setSelectedProduct(null);
     setIsOffersPage(false);
     setIsAllProductsPage(false);
@@ -734,7 +764,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
     try {
       let targetPath = '#politica-de-privacidade';
-      if (tab === 'sobre' || tab === 'quem-somos') targetPath = '/';
+      if (tab === 'sobre' || tab === 'quem-somos') targetPath = '#quem-somos';
       else if (tab === 'trocas' || tab === 'trocas-e-devolucoes') targetPath = '#trocas-e-devolucoes';
       else if (tab === 'reembolso' || tab === 'politica-de-reembolso') targetPath = '#politica-de-reembolso';
       else if (tab === 'envio' || tab === 'politica-de-envio') targetPath = '#politica-de-envio';
@@ -746,6 +776,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const goToInicio = () => {
+    try {
+      sessionStorage.removeItem('clicked_quem_somos');
+    } catch (e) {}
     setSelectedProduct(null);
     setIsOffersPage(false);
     setIsAllProductsPage(false);
@@ -933,6 +966,26 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setIsInicioPage(true);
           return;
         }
+
+        // Se for mobile na raiz sem ter clicado na sessão Quem Somos, vai para /inicio
+        if (isMobileDevice() && (p === '' || p === '/')) {
+          const userClicked = typeof sessionStorage !== 'undefined' && sessionStorage.getItem('clicked_quem_somos') === 'true';
+          if (!userClicked) {
+            setSelectedProduct(null);
+            setIsOffersPage(false);
+            setIsAllProductsPage(false);
+            setIsMontaPage(false);
+            setIsSearchPage(false);
+            setIsCartPage(false);
+            setIsPrivacyPage(false);
+            setIsInicioPage(true);
+            try {
+              window.history.replaceState({ page: 'inicio' }, '', '/inicio');
+            } catch (e) {}
+            return;
+          }
+        }
+
         setSelectedProduct(null);
         setIsOffersPage(false);
         setIsAllProductsPage(false);
@@ -946,6 +999,19 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
 
     checkHash();
+
+    // Se for mobile na raiz sem ter clicado em Quem Somos, garante que a URL no navegador seja /inicio
+    const pInit = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+    const hInit = window.location.hash.toLowerCase();
+    if (isMobileDevice() && (pInit === '' || pInit === '/') && !hInit.includes('quem-somos') && !hInit.includes('sobre')) {
+      const userClicked = typeof sessionStorage !== 'undefined' && sessionStorage.getItem('clicked_quem_somos') === 'true';
+      if (!userClicked) {
+        try {
+          window.history.replaceState({ page: 'inicio' }, '', '/inicio');
+        } catch (e) {}
+      }
+    }
+
     window.addEventListener('popstate', checkHash);
     window.addEventListener('hashchange', checkHash);
     return () => {
