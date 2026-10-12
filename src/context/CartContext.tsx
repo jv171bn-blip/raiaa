@@ -113,6 +113,12 @@ interface CartContextType {
   goToProductPage: (product: Product) => void;
   goToHome: () => void;
 
+  // Store Products Home (/inicio) Navigation
+  isInicioPage: boolean;
+  setIsInicioPage: (isInicio: boolean) => void;
+  goToInicio: () => void;
+  goToQuemSomos: () => void;
+
   // Offers Page Navigation
   isOffersPage: boolean;
   setIsOffersPage: (isOffers: boolean) => void;
@@ -297,6 +303,12 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [lastAddedProduct, setLastAddedProduct] = useState<Product | null>(null);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [isInicioPage, setIsInicioPage] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
+    const p = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+    const h = window.location.hash.toLowerCase();
+    return p === '/inicio' || h === '#inicio';
+  });
   const [isOffersPage, setIsOffersPage] = useState<boolean>(() => {
     return typeof window !== 'undefined' && window.location.hash === '#ofertas';
   });
@@ -319,28 +331,29 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return typeof window !== 'undefined' && (window.location.hash === '#carrinho' || window.location.hash === '#cesta');
   });
   const [isPrivacyPage, setIsPrivacyPage] = useState<boolean>(() => {
-    if (typeof window === 'undefined') return false;
+    if (typeof window === 'undefined') return true;
+    const p = window.location.pathname.toLowerCase().replace(/\/+$/, '');
     const h = window.location.hash.toLowerCase();
-    return (
-      h.startsWith('#politica') ||
-      h.startsWith('#privacidade') ||
-      h.startsWith('#termos') ||
-      h.startsWith('#trocas') ||
-      h.startsWith('#reembolso') ||
-      h.startsWith('#envio') ||
-      h.startsWith('#quem-somos') ||
-      h.startsWith('#institucional') ||
-      h.startsWith('#minha-conta') ||
-      h.startsWith('#conta') ||
-      h.startsWith('#carrinho') ||
-      h.startsWith('#lista-de-desejos') ||
-      h.startsWith('#desejos') ||
-      h.startsWith('#meus-pedidos') ||
-      h.startsWith('#pedidos')
-    );
+    if (p === '/inicio' || h === '#inicio') return false;
+    if (
+      h === '#ofertas' ||
+      h === '#todos-os-produtos' ||
+      h.startsWith('#monta-que-desconta') ||
+      h.startsWith('#busca=') ||
+      h === '#carrinho' ||
+      h === '#cesta' ||
+      h.startsWith('#produto-')
+    ) {
+      return false;
+    }
+    const searchParams = new URLSearchParams(window.location.search);
+    if (searchParams.get('produto') || searchParams.get('id')) return false;
+
+    // A página principal padrão (ex: "/") é a aba Quem Somos!
+    return true;
   });
   const [institutionalTab, setInstitutionalTab] = useState<string>(() => {
-    if (typeof window === 'undefined') return 'privacidade';
+    if (typeof window === 'undefined') return 'sobre';
     const h = window.location.hash.toLowerCase();
     if (h.includes('termo')) return 'termos';
     if (h.includes('troca')) return 'trocas';
@@ -351,7 +364,9 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (h.includes('carrinho')) return 'carrinho';
     if (h.includes('desejo') || h.includes('favorit')) return 'lista-de-desejos';
     if (h.includes('pedido')) return 'meus-pedidos';
-    return 'privacidade';
+    if (h.includes('privacidade') || h.includes('politica')) return 'privacidade';
+    // Padrão da página principal:
+    return 'sobre';
   });
   const [searchQuery, setSearchQuery] = useState(() => {
     if (typeof window !== 'undefined' && window.location.hash.startsWith('#busca=')) {
@@ -623,6 +638,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsSearchPage(false);
     setIsCartPage(false);
     setIsPrivacyPage(false);
+    setIsInicioPage(false);
     setActiveModal(null);
     setSelectedProduct(product);
     addViewedProduct(product.id);
@@ -641,6 +657,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsSearchPage(false);
     setIsCartPage(false);
     setIsPrivacyPage(false);
+    setIsInicioPage(false);
     setIsOffersPage(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     try {
@@ -657,6 +674,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsSearchPage(false);
     setIsCartPage(false);
     setIsPrivacyPage(false);
+    setIsInicioPage(false);
     setIsAllProductsPage(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     try {
@@ -673,6 +691,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsSearchPage(false);
     setIsCartPage(false);
     setIsPrivacyPage(false);
+    setIsInicioPage(false);
     setIsMontaPage(true);
     setSelectedMontaBrand(brandId || null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -691,6 +710,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsMontaPage(false);
     setIsCartPage(false);
     setIsPrivacyPage(false);
+    setIsInicioPage(false);
     setIsSearchPage(true);
     setSearchQuery(query);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -701,30 +721,31 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const goToPrivacyPage = (tab: string = 'privacidade') => {
+  const goToPrivacyPage = (tab: string = 'sobre') => {
     setSelectedProduct(null);
     setIsOffersPage(false);
     setIsAllProductsPage(false);
     setIsMontaPage(false);
     setIsSearchPage(false);
     setIsCartPage(false);
+    setIsInicioPage(false);
     setInstitutionalTab(tab);
     setIsPrivacyPage(true);
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
     try {
-      let hash = '#politica-de-privacidade';
-      if (tab === 'sobre' || tab === 'quem-somos') hash = '#quem-somos';
-      else if (tab === 'trocas' || tab === 'trocas-e-devolucoes') hash = '#trocas-e-devolucoes';
-      else if (tab === 'reembolso' || tab === 'politica-de-reembolso') hash = '#politica-de-reembolso';
-      else if (tab === 'envio' || tab === 'politica-de-envio') hash = '#politica-de-envio';
-      else if (tab === 'termos' || tab === 'termos-e-condicoes') hash = '#termos-e-condicoes';
-      window.history.pushState({ page: 'institucional', tab }, '', hash);
+      let targetPath = '#politica-de-privacidade';
+      if (tab === 'sobre' || tab === 'quem-somos') targetPath = '/';
+      else if (tab === 'trocas' || tab === 'trocas-e-devolucoes') targetPath = '#trocas-e-devolucoes';
+      else if (tab === 'reembolso' || tab === 'politica-de-reembolso') targetPath = '#politica-de-reembolso';
+      else if (tab === 'envio' || tab === 'politica-de-envio') targetPath = '#politica-de-envio';
+      else if (tab === 'termos' || tab === 'termos-e-condicoes') targetPath = '#termos-e-condicoes';
+      window.history.pushState({ page: 'institucional', tab }, '', targetPath);
     } catch (e) {
       console.warn('History pushState error', e);
     }
   };
 
-  const goToHome = () => {
+  const goToInicio = () => {
     setSelectedProduct(null);
     setIsOffersPage(false);
     setIsAllProductsPage(false);
@@ -732,20 +753,43 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setIsSearchPage(false);
     setIsCartPage(false);
     setIsPrivacyPage(false);
+    setIsInicioPage(true);
     setSearchQuery('');
     setSelectedMontaBrand(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
     try {
-      window.history.pushState({}, '', window.location.pathname);
+      window.history.pushState({ page: 'inicio' }, '', '/inicio');
     } catch (e) {
       console.warn('History pushState error', e);
     }
   };
 
+  const goToQuemSomos = () => {
+    goToPrivacyPage('sobre');
+  };
+
+  const goToHome = () => {
+    goToInicio();
+  };
+
   // Support browser Back/Forward navigation & direct hash navigation
   useEffect(() => {
     const checkHash = () => {
+      const p = window.location.pathname.toLowerCase().replace(/\/+$/, '');
       const hash = window.location.hash;
+
+      if (p === '/inicio' || hash === '#inicio') {
+        setSelectedProduct(null);
+        setIsOffersPage(false);
+        setIsAllProductsPage(false);
+        setIsMontaPage(false);
+        setIsSearchPage(false);
+        setIsCartPage(false);
+        setIsPrivacyPage(false);
+        setIsInicioPage(true);
+        return;
+      }
+
       if (
         hash.startsWith('#politica') ||
         hash.startsWith('#privacidade') ||
@@ -769,6 +813,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsMontaPage(false);
         setIsSearchPage(false);
         setIsCartPage(false);
+        setIsInicioPage(false);
         const lower = hash.toLowerCase();
         if (lower.includes('termo')) setInstitutionalTab('termos');
         else if (lower.includes('troca')) setInstitutionalTab('trocas');
@@ -790,6 +835,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsMontaPage(false);
         setIsSearchPage(false);
         setIsPrivacyPage(false);
+        setIsInicioPage(false);
         setIsCartPage(true);
         return;
       }
@@ -799,6 +845,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsMontaPage(false);
         setIsCartPage(false);
         setIsPrivacyPage(false);
+        setIsInicioPage(false);
         setIsOffersPage(true);
         return;
       }
@@ -809,6 +856,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsCartPage(false);
         setIsPrivacyPage(false);
         setIsSearchPage(false);
+        setIsInicioPage(false);
         setIsAllProductsPage(true);
         return;
       }
@@ -817,6 +865,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsOffersPage(false);
         setIsAllProductsPage(false);
         setIsPrivacyPage(false);
+        setIsInicioPage(false);
         setIsMontaPage(true);
         if (hash.startsWith('#monta-que-desconta-')) {
           setSelectedMontaBrand(hash.replace('#monta-que-desconta-', ''));
@@ -857,6 +906,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setIsAllProductsPage(false);
           setIsMontaPage(false);
           setIsPrivacyPage(false);
+          setIsInicioPage(false);
           return;
         }
       }
@@ -866,18 +916,32 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setIsAllProductsPage(false);
         setIsMontaPage(false);
         setIsPrivacyPage(false);
+        setIsInicioPage(false);
         setIsSearchPage(true);
         setSearchQuery(decodeURIComponent(hash.replace('#busca=', '')));
         return;
       }
       if (!hash || hash === '#') {
+        if (p === '/inicio') {
+          setSelectedProduct(null);
+          setIsOffersPage(false);
+          setIsAllProductsPage(false);
+          setIsMontaPage(false);
+          setIsSearchPage(false);
+          setIsCartPage(false);
+          setIsPrivacyPage(false);
+          setIsInicioPage(true);
+          return;
+        }
         setSelectedProduct(null);
         setIsOffersPage(false);
         setIsAllProductsPage(false);
         setIsMontaPage(false);
-        setIsPrivacyPage(false);
         setIsSearchPage(false);
         setSearchQuery('');
+        setIsInicioPage(false);
+        setInstitutionalTab('sobre');
+        setIsPrivacyPage(true);
       }
     };
 
@@ -934,6 +998,10 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setSelectedProduct,
         goToProductPage,
         goToHome,
+        isInicioPage,
+        setIsInicioPage,
+        goToInicio,
+        goToQuemSomos,
         isOffersPage,
         setIsOffersPage,
         goToOffersPage,

@@ -62,6 +62,7 @@ const Header: React.FC = () => {
     addToCart,
     goToProductPage,
     goToHome,
+    goToInicio,
     searchQuery,
     setSearchQuery,
     goToSearchPage,
@@ -214,13 +215,13 @@ const Header: React.FC = () => {
         <div className="header__top-row">
           {/* Logo */}
           <a
-            href="/"
+            href="/inicio"
             className="header__logo"
             id="header-logo"
             title="Droga Raia"
             onClick={e => {
               e.preventDefault();
-              goToHome();
+              goToInicio ? goToInicio() : goToHome();
             }}
           >
             <img

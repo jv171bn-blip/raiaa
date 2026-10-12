@@ -204,6 +204,7 @@ const PageContent: React.FC = () => {
     isSearchPage,
     isCartPage,
     isPrivacyPage,
+    isInicioPage,
     searchQuery,
     activeModal,
     setActiveModal,
@@ -242,7 +243,7 @@ const PageContent: React.FC = () => {
       {/* Category Navigation */}
       <CategoryNavigation />
 
-      {/* Main Content (Homepage, Product Detail Page, Offers Page, All Products Page, Monta que Desconta Page, Privacy Page, or Search Results Page) */}
+      {/* Main Content (Página de Produtos no /inicio, Quem Somos na Home /, ou páginas dedicadas) */}
       {selectedProduct ? (
         <ProductPage product={selectedProduct} allProducts={allProducts} />
       ) : isOffersPage ? (
@@ -251,12 +252,14 @@ const PageContent: React.FC = () => {
         <MontaQueDescontaPage />
       ) : isAllProductsPage ? (
         <AllProductsPage allProducts={allProducts} />
+      ) : isInicioPage ? (
+        <MainContent />
       ) : isPrivacyPage ? (
         <PrivacyPolicyPage />
       ) : showSearchPage ? (
         <SearchResultsPage allProducts={allProducts} />
       ) : (
-        <MainContent />
+        <PrivacyPolicyPage />
       )}
 
       {/* Footer em todas as páginas */}

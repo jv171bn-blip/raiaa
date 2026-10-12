@@ -103,9 +103,9 @@ const SESSIONS: Record<string, PageSession> = {
 };
 
 const PrivacyPolicyPage: React.FC = () => {
-  const { institutionalTab, goToHome } = useCart();
+  const { institutionalTab, goToHome, goToInicio } = useCart();
 
-  const currentKey = institutionalTab || 'privacidade';
+  const currentKey = institutionalTab || 'sobre';
 
   // State para Minha Conta
   const [accountEmail, setAccountEmail] = useState('');
@@ -238,11 +238,11 @@ const PrivacyPolicyPage: React.FC = () => {
           <nav className="inst-header__breadcrumb" aria-label="Navegação">
             <button
               type="button"
-              onClick={goToHome}
+              onClick={goToInicio || goToHome}
               className="inst-breadcrumb-link"
               id="inst-breadcrumb-casa"
             >
-              CASA
+              INÍCIO
             </button>
             <span className="inst-breadcrumb-sep">/</span>
             <span className="inst-breadcrumb-current">
@@ -554,6 +554,34 @@ const PrivacyPolicyPage: React.FC = () => {
                 </p>
                 <p>Telefone: (11) 98825-1598 | E-mail: contato@rederaiassp.com</p>
               </div>
+
+              {/* Botão de Acesso à Loja Virtual (/inicio) */}
+              {currentKey === 'sobre' && (
+                <div style={{ marginTop: '28px', textAlign: 'center' }}>
+                  <button
+                    type="button"
+                    onClick={goToInicio || goToHome}
+                    id="btn-acessar-loja-inicio"
+                    style={{
+                      background: 'linear-gradient(135deg, #00335e 0%, #0284c7 100%)',
+                      color: '#ffffff',
+                      border: 'none',
+                      padding: '14px 28px',
+                      borderRadius: '999px',
+                      fontSize: '15px',
+                      fontWeight: 700,
+                      cursor: 'pointer',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      boxShadow: '0 4px 14px rgba(2, 132, 199, 0.35)',
+                    }}
+                  >
+                    <ShoppingBag size={18} />
+                    ACESSAR CATÁLOGO DE PRODUTOS
+                  </button>
+                </div>
+              )}
             </>
           )}
         </div>
