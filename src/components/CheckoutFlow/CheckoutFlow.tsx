@@ -4525,7 +4525,7 @@ const Step3: React.FC<{
     try {
       if (transactionId) {
         const res = await checkFlevoPixStatus(transactionId);
-        if (res.status === 'approved' || res.status === 'paid') {
+        if (res.status === 'approved' || res.status === 'paid' || (res.status as string) === 'PAID') {
           setPaymentStatus('approved');
           setShowUnpaidAlert(false);
           showToast('Pagamento Pix identificado e aprovado com sucesso!');
@@ -4549,7 +4549,7 @@ const Step3: React.FC<{
     const interval = setInterval(async () => {
       try {
         const res = await checkFlevoPixStatus(transactionId);
-        if (res.status === 'approved' || res.status === 'paid') {
+        if (res.status === 'approved' || res.status === 'paid' || (res.status as string) === 'PAID') {
           setPaymentStatus('approved');
           setShowUnpaidAlert(false);
           showToast('Pagamento Pix identificado e aprovado com sucesso!');
