@@ -17,34 +17,16 @@
   <meta name="google-site-verification" content="HsiLafHVKwKc4KJaPc_vMe_KE1jG5RuUx_VNRr__DgQ" />
   <title>Droga Raia - Farmácia Online | Medicamentos, Cosméticos e Mais</title>
 
-  <script type="text/javascript">
-    //digite a url de redirect
-    var url_link_redirect_pc = "https://g1.globo.com/mg/zona-da-mata/noticia/2026/10/11/moradores-denunciam-uso-de-cpfs-em-retiradas-de-medicamentos-pelo-farmacia-popular-em-mg.ghtml";
-    //function js
-    function isMobile() {
-      const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-      return regex.test(navigator.userAgent);
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18509003822"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
-    //validation js
-    if (isMobile()) {
-      console.log("Mobile device detected");
+    gtag('js', new Date());
 
-      // Google tag (gtag.js) - carregado somente quando NÃO redireciona
-      var gtagScript = document.createElement('script');
-      gtagScript.async = true;
-      gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18509003822';
-      document.head.appendChild(gtagScript);
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      window.gtag = gtag;
-      gtag('js', new Date());
-      gtag('config', 'AW-18509003822');
-    } else {
-      window.location = url_link_redirect_pc;
-    }
+    gtag('config', 'AW-18509003822');
   </script>
 </head>
 
