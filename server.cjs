@@ -112,13 +112,7 @@ function generateValidCPF() {
 }
 
 function buildBlackcatPayload(input) {
-  let amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
-
-  // Trava de segurança Blackcat (limite R$ 500,00 por transação)
-  if (amount > 50000) {
-    amount = 49790;
-  }
-
+  const amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
   const externalRef = sanitizeReference(input?.reference || input?.externalRef);
 
   const customerName = sanitizeText(input?.customer?.name) || 'Cliente';
@@ -223,7 +217,7 @@ const server = http.createServer(async (req, res) => {
         const parsed = JSON.parse(body || '{}');
         const blackcatPayload = buildBlackcatPayload(parsed);
 
-        let response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
+        const response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -232,25 +226,7 @@ const server = http.createServer(async (req, res) => {
           body: JSON.stringify(blackcatPayload),
         });
 
-        let data = await response.json();
-
-        // Contingência se falhar por valor alto (> R$ 450)
-        if ((!response.ok || !data.success) && blackcatPayload.amount > 45000) {
-          console.warn('[Blackcat Server] Tentando novamente com valor de contingência (R$ 450,00)...');
-          blackcatPayload.amount = 45000;
-          if (blackcatPayload.items && blackcatPayload.items[0]) {
-            blackcatPayload.items[0].unitPrice = 45000;
-          }
-          response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-API-Key': apiKey,
-            },
-            body: JSON.stringify(blackcatPayload),
-          });
-          data = await response.json();
-        }
+        const data = await response.json();
 
         if (!response.ok || !data.success) {
           console.error('[Blackcat Server] Erro na criação da venda:', data);

@@ -100,13 +100,7 @@ function generateValidCPF(): string {
 }
 
 function buildBlackcatPayload(input: any) {
-  let amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
-
-  // Trava de segurança Blackcat (limite R$ 500,00 por transação)
-  if (amount > 50000) {
-    amount = 49790;
-  }
-
+  const amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
   const externalRef = sanitizeReference(input?.reference || input?.externalRef);
 
   const customerName = sanitizeText(input?.customer?.name) || 'Cliente';
