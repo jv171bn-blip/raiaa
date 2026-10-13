@@ -189,8 +189,8 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [toast, setToast] = useState<{ show: boolean; message: string; product?: Product } | null>(null);
   const [user, setUser] = useState<UserProfile | null>(() => {
     try {
-      const saved = localStorage.getItem('drogaraia_user');
-      return saved ? JSON.parse(saved) : null;
+      localStorage.removeItem('drogaraia_user');
+      return null;
     } catch {
       return null;
     }
@@ -633,15 +633,19 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
 
-  const loginUser = (name: string, email: string, cpf?: string) => {
-    setUser({ name, email, cpf });
+  const loginUser = (_name?: string, _email?: string, _cpf?: string) => {
+    setUser(null);
+    try {
+      localStorage.removeItem('drogaraia_user');
+    } catch {}
     setActiveModal(null);
-    showToast(`Bem-vindo(a), ${name}!`);
   };
 
   const logoutUser = () => {
     setUser(null);
-    showToast('Você saiu da sua conta.');
+    try {
+      localStorage.removeItem('drogaraia_user');
+    } catch {}
   };
 
   const closeModal = () => {

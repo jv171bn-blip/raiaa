@@ -147,8 +147,8 @@ const PrivacyPolicyPage: React.FC = () => {
     setAccountError('');
     setTimeout(() => {
       setAccountLoading(false);
-      const name = accountEmail.split('@')[0] || 'Cliente Raia';
-      if (loginUser) loginUser(name, accountEmail);
+      setAccountEmail('');
+      setAccountPassword('');
       if (goToInicio) {
         goToInicio();
       } else if (goToHome) {

@@ -76,6 +76,17 @@ const Modals: React.FC = () => {
     };
   }, []);
 
+  // Limpa campos sempre que o modal de login é fechado ou alternado
+  useEffect(() => {
+    if (activeModal !== 'login') {
+      setEmailInput('');
+      setPasswordInput('');
+      setNameInput('');
+      setCpfInput('');
+      setLoginLoading(false);
+    }
+  }, [activeModal]);
+
   // Prescription State
   const [prescriptionFile, setPrescriptionFile] = useState<string | null>(null);
   const [prescriptionSent, setPrescriptionSent] = useState(false);
@@ -162,12 +173,13 @@ const Modals: React.FC = () => {
     setLoginLoading(true);
 
     loginTimeoutRef.current = setTimeout(() => {
-      if (loginTab === 'login') {
-        const name = emailInput.split('@')[0] || 'Cliente Raia';
-        loginUser(name, emailInput || 'cliente@raia.com.br');
-      } else {
-        loginUser(nameInput || 'Novo Cliente', emailInput, cpfInput);
-      }
+      // Limpa todos os dados digitados para não salvar nem exibir nada
+      setEmailInput('');
+      setPasswordInput('');
+      setNameInput('');
+      setCpfInput('');
+
+      // Volta pro início sem autenticar nenhum usuário
       setLoginLoading(false);
       closeModal();
       goToInicio();
@@ -340,7 +352,7 @@ const Modals: React.FC = () => {
                   </button>
                 </div>
 
-                <form onSubmit={handleLoginSubmit} className="modal-form">
+                <form onSubmit={handleLoginSubmit} className="modal-form" autoComplete="off">
                   {loginTab === 'register' && (
                     <>
                       <label className="modal-label">Nome Completo</label>
@@ -351,6 +363,7 @@ const Modals: React.FC = () => {
                         onChange={e => setNameInput(e.target.value)}
                         className="modal-input-full"
                         disabled={loginLoading}
+                        autoComplete="off"
                         required
                       />
                       <label className="modal-label">CPF</label>
@@ -361,6 +374,7 @@ const Modals: React.FC = () => {
                         onChange={e => setCpfInput(e.target.value)}
                         className="modal-input-full"
                         disabled={loginLoading}
+                        autoComplete="off"
                         required
                       />
                     </>
@@ -374,6 +388,7 @@ const Modals: React.FC = () => {
                     onChange={e => setEmailInput(e.target.value)}
                     className="modal-input-full"
                     disabled={loginLoading}
+                    autoComplete="off"
                     required
                   />
 
@@ -385,6 +400,7 @@ const Modals: React.FC = () => {
                     onChange={e => setPasswordInput(e.target.value)}
                     className="modal-input-full"
                     disabled={loginLoading}
+                    autoComplete="new-password"
                     required
                   />
 
