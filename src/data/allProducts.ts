@@ -30,6 +30,25 @@ import { carvalhoCatalog } from './carvalhoCatalog';
  * Aplica deduplicação rigorosa por ID e por nome normalizado para
  * garantir que nenhum produto duplicado exista na aplicação.
  */
+/**
+ * Normaliza qualquer produto com preço acima de R$ 1000 para a faixa de
+ * R$ 950 a R$ 999 com centavos quebrados.
+ */
+function normalizePriceCeiling(product: Product): Product {
+  if (product && product.price > 1000) {
+    const hash = Math.abs(Number(product.id) || 0);
+    const centsList = [0.49, 0.79, 0.89, 0.90, 0.95, 0.85, 0.70, 0.65, 0.50, 0.80];
+    const cents = centsList[hash % centsList.length];
+    const intPart = 950 + (hash % 49); // 950 a 998
+    const newPrice = Number((intPart + cents).toFixed(2));
+    return {
+      ...product,
+      price: newPrice,
+    };
+  }
+  return product;
+}
+
 export const allProducts: Product[] = deduplicateProducts([
   ...ultraBrasilProducts,
   ...novosKitsCarvalhoUltra,
@@ -53,6 +72,6 @@ export const allProducts: Product[] = deduplicateProducts([
   ...carvalhoCatalog,
   viterganZincoProduct,
   flexoneProduct,
-]);
+]).map(normalizePriceCeiling);
 
 export { deduplicateProducts };

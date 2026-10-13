@@ -225,13 +225,13 @@ export const novosProdutosCatalogo: Product[] = [
     "brand": "Creed",
     "size": "100ml",
     "oldPrice": 4479,
-    "price": 2508.24,
-    "discount": 44,
+    "price": 997.80,
+    "discount": 78,
     "rating": 5,
     "reviews": 96,
     "image": "/products/absolu_aventus.jpg",
     "badges": [
-      "44% OFF",
+      "78% OFF",
       "Alta Perfumaria",
       "Importado"
     ],
@@ -579,13 +579,13 @@ export const novosProdutosCatalogo: Product[] = [
     "brand": "Xerjoff",
     "size": "100ml",
     "oldPrice": 2039,
-    "price": 1141.84,
-    "discount": 44,
+    "price": 968.90,
+    "discount": 52,
     "rating": 5,
     "reviews": 89,
     "image": "/products/xerjoff_erba_gold.jpg",
     "badges": [
-      "44% OFF",
+      "52% OFF",
       "Alta Joalheria",
       "Importado"
     ],
