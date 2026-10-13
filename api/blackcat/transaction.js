@@ -127,6 +127,26 @@ function buildBlackcatPayload(input) {
   return payload;
 }
 
+const BLACKCAT_ACQUIRERS = [
+  'payzu',
+  'suitpay',
+  'asaas',
+  'ezzebank',
+  'celcoin',
+  'primepag',
+  'voluti',
+  'mercadopago',
+  'bspay',
+  'fitbank',
+  'iugu',
+  'woovi',
+  'starkbank',
+  'santsbank',
+  'fyhub',
+  'pagsmile',
+  null,
+];
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -151,59 +171,90 @@ export default async function handler(req, res) {
 
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
-    const blackcatPayload = buildBlackcatPayload(body);
+    const basePayload = buildBlackcatPayload(body);
 
-    const response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-API-Key': apiKey,
-      },
-      body: JSON.stringify(blackcatPayload),
-    });
+    const acquirersToTry = body.acquirer
+      ? [body.acquirer, ...BLACKCAT_ACQUIRERS.filter((a) => a !== body.acquirer)]
+      : BLACKCAT_ACQUIRERS;
 
-    const data = await response.json();
+    let lastError = null;
+    let lastData = null;
+    let lastStatus = 500;
 
-    if (!response.ok || !data.success) {
-      console.error('[Blackcat Vercel] Erro na resposta:', data);
-      return res.status(response.status).json({
-        success: false,
-        error: data.message || data.error || 'Erro ao criar venda na Blackcat',
-        raw: data,
-      });
-    }
+    for (const acquirer of acquirersToTry) {
+      const currentPayload = { ...basePayload };
+      if (acquirer) {
+        currentPayload.acquirer = acquirer;
+      } else {
+        delete currentPayload.acquirer;
+      }
 
-    const qrCode = data.data?.paymentData?.copyPaste || data.data?.paymentData?.qrCode || '';
-    let qrCodeBase64 = data.data?.paymentData?.qrCodeBase64 || null;
-
-    if ((!qrCodeBase64 || qrCodeBase64 === '') && qrCode) {
       try {
-        qrCodeBase64 = await QRCode.toDataURL(qrCode, {
-          width: 320,
-          margin: 1,
-          color: { dark: '#000000', light: '#ffffff' },
+        console.log(`[Blackcat Vercel] Tentando adquirente: ${acquirer || 'padrão'}`);
+        const response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-API-Key': apiKey,
+          },
+          body: JSON.stringify(currentPayload),
         });
-      } catch (qrErr) {
-        console.error('[Blackcat Vercel] Erro ao gerar QR Code base64:', qrErr);
+
+        const data = await response.json();
+
+        if (response.ok && data.success && data.data) {
+          const qrCode = data.data?.paymentData?.copyPaste || data.data?.paymentData?.qrCode || '';
+          let qrCodeBase64 = data.data?.paymentData?.qrCodeBase64 || null;
+
+          if ((!qrCodeBase64 || qrCodeBase64 === '') && qrCode) {
+            try {
+              qrCodeBase64 = await QRCode.toDataURL(qrCode, {
+                width: 320,
+                margin: 1,
+                color: { dark: '#000000', light: '#ffffff' },
+              });
+            } catch (qrErr) {
+              console.error('[Blackcat Vercel] Erro ao gerar QR Code base64:', qrErr);
+            }
+          }
+
+          const formatted = {
+            success: true,
+            status: 'success',
+            payment_status: data.data?.status?.toLowerCase() || 'pending',
+            transaction_id: data.data?.transactionId || '',
+            id: data.data?.transactionId || basePayload.externalRef,
+            qr_code: qrCode,
+            qr_code_base64: qrCodeBase64,
+            amount: data.data?.amount || basePayload.amount,
+            expires_at: data.data?.paymentData?.expiresAt || null,
+            acquirer: acquirer || 'default',
+            raw: data.data,
+          };
+
+          console.log(`[Blackcat Vercel] Sucesso com adquirente ${acquirer || 'padrão'}! TxID: ${formatted.transaction_id}`);
+          return res.status(201).json({ success: true, data: formatted });
+        }
+
+        console.warn(`[Blackcat Vercel] Adquirente ${acquirer || 'padrão'} falhou (Status ${response.status}):`, data.message || data.error);
+        lastError = data.message || data.error || 'Erro ao processar adquirente na Blackcat';
+        lastData = data;
+        lastStatus = response.status || 500;
+      } catch (subErr) {
+        console.warn(`[Blackcat Vercel] Exceção na adquirente ${acquirer || 'padrão'}:`, subErr.message);
+        lastError = subErr.message;
       }
     }
 
-    const formatted = {
-      success: true,
-      status: 'success',
-      payment_status: data.data?.status?.toLowerCase() || 'pending',
-      transaction_id: data.data?.transactionId || '',
-      id: data.data?.transactionId || blackcatPayload.externalRef,
-      qr_code: qrCode,
-      qr_code_base64: qrCodeBase64,
-      amount: data.data?.amount || blackcatPayload.amount,
-      expires_at: data.data?.paymentData?.expiresAt || null,
-      raw: data.data,
-    };
-
-    return res.status(201).json({ success: true, data: formatted });
+    console.error('[Blackcat Vercel] Todas as adquirentes falharam. Último erro:', lastError);
+    return res.status(lastStatus).json({
+      success: false,
+      error: lastError || 'Erro ao criar venda na Blackcat após tentar todas as adquirentes',
+      raw: lastData,
+    });
   } catch (err) {
-    console.error('[Blackcat Vercel] Erro na transação:', err);
+    console.error('[Blackcat Vercel] Erro interno:', err);
     return res.status(500).json({ success: false, error: err.message || 'Erro interno no proxy Blackcat' });
   }
 }
+
