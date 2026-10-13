@@ -23,6 +23,7 @@ import { ultraBrasilProducts } from './ultraBrasilProducts';
 import { novosKitsCarvalhoUltra } from './novosKitsCarvalhoUltra';
 import { novosProdutosCatalogo } from './novosProdutosCatalogo';
 import { montaProducts } from './montaOffers';
+import { carvalhoCatalog } from './carvalhoCatalog';
 
 /**
  * Catálogo canônico e centralizado de todos os produtos do sistema.
@@ -49,6 +50,7 @@ export const allProducts: Product[] = deduplicateProducts([
   ...suggestionProducts,
   ...todosProdutosExpandidos,
   ...novosProdutosCatalogo,
+  ...carvalhoCatalog,
   viterganZincoProduct,
   flexoneProduct,
 ]);

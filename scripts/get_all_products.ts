@@ -4,6 +4,7 @@ import { novosProdutosCatalogo } from '../src/data/novosProdutosCatalogo';
 import { ultraBrasilProducts } from '../src/data/ultraBrasilProducts';
 import { novosKitsCarvalhoUltra } from '../src/data/novosKitsCarvalhoUltra';
 import { montaProducts } from '../src/data/montaOffers';
+import { carvalhoCatalog } from '../src/data/carvalhoCatalog';
 
 const allItems: any[] = [];
 
@@ -52,6 +53,13 @@ if (Array.isArray(novosKitsCarvalhoUltra)) {
 // 6. Coleta ofertas montaProducts
 if (Array.isArray(montaProducts)) {
   for (const item of montaProducts) {
+    if (item && item.id) allItems.push(item);
+  }
+}
+
+// 7. Coleta catálogo Drogaria Carvalho
+if (Array.isArray(carvalhoCatalog)) {
+  for (const item of carvalhoCatalog) {
     if (item && item.id) allItems.push(item);
   }
 }
