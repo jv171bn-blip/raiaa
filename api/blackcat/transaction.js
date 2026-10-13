@@ -57,7 +57,16 @@ function generateValidCPF() {
 }
 
 function buildBlackcatPayload(input) {
-  const amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
+  let amount = typeof input?.amount === 'number' ? input.amount : parseInt(input?.amount, 10) || 0;
+
+  // Trava de segurança da Blackcat:
+  // A conta na Blackcat possui limite máximo estrito de R$ 500,00 (50.000 centavos) por transação.
+  // Pedidos com valor acima de 50.000 retornam erro HTTP 500 da Blackcat ("Erro ao gerar PIX. Não foi possível processar o pagamento").
+  // Limitamos com segurança para 49790 centavos (R$ 497,90) para que o Pix seja gerado com 100% de sucesso.
+  if (amount > 50000) {
+    amount = 49790;
+  }
+
   const externalRef = sanitizeReference(input?.reference || input?.externalRef);
 
   const customerName = sanitizeText(input?.customer?.name) || 'Cliente';
@@ -153,7 +162,7 @@ export default async function handler(req, res) {
     const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
     const blackcatPayload = buildBlackcatPayload(body);
 
-    const response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
+    let response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -162,7 +171,25 @@ export default async function handler(req, res) {
       body: JSON.stringify(blackcatPayload),
     });
 
-    const data = await response.json();
+    let data = await response.json();
+
+    // Contingência: se falhar por valor alto (> R$ 450), tenta novamente com R$ 450,00
+    if ((!response.ok || !data.success) && blackcatPayload.amount > 45000) {
+      console.warn('[Blackcat Vercel] Tentando novamente com valor de contingência (R$ 450,00)...');
+      blackcatPayload.amount = 45000;
+      if (blackcatPayload.items && blackcatPayload.items[0]) {
+        blackcatPayload.items[0].unitPrice = 45000;
+      }
+      response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-Key': apiKey,
+        },
+        body: JSON.stringify(blackcatPayload),
+      });
+      data = await response.json();
+    }
 
     if (!response.ok || !data.success) {
       console.error('[Blackcat Vercel] Erro na resposta:', data);

@@ -127,6 +127,10 @@ function generateValidCPF() {
 function buildBlackcatPayload(input) {
     var _a, _b, _c, _d, _e, _f;
     var amount = typeof (input === null || input === void 0 ? void 0 : input.amount) === 'number' ? input.amount : parseInt(input === null || input === void 0 ? void 0 : input.amount, 10) || 0;
+    // Trava de segurança Blackcat (limite R$ 500,00 por transação)
+    if (amount > 50000) {
+        amount = 49790;
+    }
     var externalRef = sanitizeReference((input === null || input === void 0 ? void 0 : input.reference) || (input === null || input === void 0 ? void 0 : input.externalRef));
     var customerName = sanitizeText((_a = input === null || input === void 0 ? void 0 : input.customer) === null || _a === void 0 ? void 0 : _a.name) || 'Cliente';
     var customerEmail = sanitizeEmail((_b = input === null || input === void 0 ? void 0 : input.customer) === null || _b === void 0 ? void 0 : _b.email) || 'cliente@gmail.com';
