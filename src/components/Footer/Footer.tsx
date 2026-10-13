@@ -155,7 +155,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
 
               <div className="portal-contact-info">
                 <p className="portal-address">
-                  Avenida Cupece, 1277 Bairro: Jardim Prudencia CEP: 04365-000 Município: São Paulo Estado: São Paulo
+                  RUA SILVIA 110 ANDAR, 13 CEP 01331-902 - BELA VISTA - SAO PAULO/SP
                 </p>
                 <p className="portal-phone">
                   Telefone: <a href="tel:11988251598">(11) 98825-1598</a>
@@ -164,7 +164,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
                   E-mail: <a href="mailto:contato@rederaiassp.com">contato@rederaiassp.com</a>
                 </p>
                 <p className="portal-cnpj">
-                  CNPJ: 35.307.743/0002-74
+                  CNPJ: 47.732.462/0001-67
                 </p>
               </div>
             </div>
@@ -461,7 +461,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
             <div className="portal-footer__copyright">
               <p className="portal-copyright-main">
                 &copy; {new Date().getFullYear()} - CNPJ:{' '}
-                <strong>35.307.743/0002-74</strong> - Todos os direitos reservados.
+                <strong>47.732.462/0001-67</strong> - Todos os direitos reservados.
               </p>
               <p className="portal-copyright-sub">
                 Preços e condições de pagamento exclusivos para compras via internet. Ofertas válidas
@@ -469,7 +469,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
                 de dados.
               </p>
               <p className="portal-copyright-address">
-                Avenida Cupece, 1277 - Bairro Jardim Prudencia - CEP: 04365-000 - São Paulo/SP |
+                RUA SILVIA 110 ANDAR, 13 CEP 01331-902 - BELA VISTA - SAO PAULO/SP |
                 Telefone: (11) 98825-1598 | contato@rederaiassp.com
               </p>
             </div>

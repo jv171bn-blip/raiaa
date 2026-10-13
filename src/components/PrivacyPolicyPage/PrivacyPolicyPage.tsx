@@ -547,15 +547,14 @@ const PrivacyPolicyPage: React.FC = () => {
                 ))}
               </div>
 
-              {/* Dados Fictícios / Oficiais da Empresa */}
+              {/* Dados Oficiais da Empresa */}
               <div className="inst-company-box">
                 <p>
                   CNPJ:{' '}
-                  <span className="inst-cnpj-text">35.307.743/0002-74</span>
+                  <span className="inst-cnpj-text">47.732.462/0001-67</span>
                 </p>
                 <p>
-                  Avenida Cupece, 1277 Bairro: Jardim Prudencia CEP: 04365-000 Município: São Paulo
-                  Estado: São Paulo
+                  RUA SILVIA 110 ANDAR, 13 CEP 01331-902 - BELA VISTA - SAO PAULO/SP
                 </p>
                 <p>Telefone: (11) 98825-1598 | E-mail: contato@rederaiassp.com</p>
               </div>
