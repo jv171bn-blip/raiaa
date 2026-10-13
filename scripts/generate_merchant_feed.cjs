@@ -17,7 +17,7 @@ const { uniqueProducts } = require('./get_all_products.cjs');
 const products = uniqueProducts;
 console.log(`Total de produtos aprovados para o feed (sem remédios): ${products.length}`);
 
-const BASE_URL = 'https://portalbrasilfarma.site';
+const BASE_URL = 'https://brasilfarmaportal.site';
 
 function escapeXml(unsafe) {
   if (!unsafe) return '';
