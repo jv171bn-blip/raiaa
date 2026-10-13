@@ -752,14 +752,14 @@ var novosProdutosCatalogo = [
     "name": "Xerjoff Erba Pura Eau de Parfum Unissex-100 Ml",
     "brand": "Xerjoff",
     "size": "100ml",
-    "oldPrice": 1539,
+    "oldPrice": 989.9,
     "price": 861.84,
-    "discount": 44,
+    "discount": 13,
     "rating": 5,
     "reviews": 142,
     "image": "/products/xerjoff_erba_pura.jpg",
     "badges": [
-      "44% OFF",
+      "13% OFF",
       "Nicho",
       "Importado"
     ],
@@ -929,14 +929,14 @@ var novosProdutosCatalogo = [
     "name": "Paco Rabanne One Million Eau de Toilette - Perfume Masculino 200ml",
     "brand": "Paco Rabanne",
     "size": "200ml",
-    "oldPrice": 1137,
+    "oldPrice": 979.9,
     "price": 636.72,
-    "discount": 44,
+    "discount": 35,
     "rating": 4.9,
     "reviews": 540,
     "image": "/products/one_million_paco.jpg",
     "badges": [
-      "44% OFF",
+      "35% OFF",
       "Best Seller",
       "Importado"
     ],
@@ -965,14 +965,14 @@ var novosProdutosCatalogo = [
     "name": "Absolu Aventus Eau de Parfum Masculino -100 Ml",
     "brand": "Creed",
     "size": "100ml",
-    "oldPrice": 4479,
-    "price": 997.8,
-    "discount": 78,
+    "oldPrice": 998.9,
+    "price": 954.8,
+    "discount": 4,
     "rating": 5,
     "reviews": 96,
     "image": "/products/absolu_aventus.jpg",
     "badges": [
-      "78% OFF",
+      "4% OFF",
       "Alta Perfumaria",
       "Importado"
     ],
@@ -1248,14 +1248,14 @@ var novosProdutosCatalogo = [
     "name": "Pasta Angel Mugler Hidratante Corporal Unissex-200 Ml",
     "brand": "Mugler",
     "size": "200ml",
-    "oldPrice": 1079,
+    "oldPrice": 969.9,
     "price": 604.24,
-    "discount": 44,
+    "discount": 38,
     "rating": 5,
     "reviews": 112,
     "image": "/products/mugler_angel_pasta.jpg",
     "badges": [
-      "44% OFF",
+      "38% OFF",
       "Luxo Absoluto",
       "Importado"
     ],
@@ -1283,14 +1283,14 @@ var novosProdutosCatalogo = [
     "name": "Bleu de Chanel Eau de Toilette Masculino-100 Ml",
     "brand": "Chanel",
     "size": "100ml",
-    "oldPrice": 1009,
+    "oldPrice": 959.9,
     "price": 565.04,
-    "discount": 44,
+    "discount": 41,
     "rating": 5,
     "reviews": 680,
     "image": "/products/bleu_de_chanel.jpg",
     "badges": [
-      "44% OFF",
+      "41% OFF",
       "Obra-Prima",
       "Importado"
     ],
@@ -1319,14 +1319,14 @@ var novosProdutosCatalogo = [
     "name": "Erba Gold Xerjoff Eau de Parfum Unissex-100 Ml",
     "brand": "Xerjoff",
     "size": "100ml",
-    "oldPrice": 2039,
-    "price": 968.9,
-    "discount": 52,
+    "oldPrice": 998.9,
+    "price": 958.4,
+    "discount": 4,
     "rating": 5,
     "reviews": 89,
     "image": "/products/xerjoff_erba_gold.jpg",
     "badges": [
-      "52% OFF",
+      "4% OFF",
       "Alta Joalheria",
       "Importado"
     ],
@@ -3822,12 +3822,12 @@ function getSimilarProducts(current, candidates, limit = 8) {
   }).filter(({ score }) => score > 0).sort((a, b) => b.score - a.score).slice(0, limit).map(({ product }) => product);
   return deduplicateProducts(scored);
 }
-function getPersonalizedRecommendations(viewedIds, allProducts, fallbackProducts = favoriteBrands, limit = 12) {
+function getPersonalizedRecommendations(viewedIds, allProducts2, fallbackProducts = favoriteBrands, limit = 12) {
   if (!viewedIds || viewedIds.length === 0) {
     return fallbackProducts;
   }
   const viewedMap = /* @__PURE__ */ new Map();
-  allProducts.forEach((p) => viewedMap.set(p.id, p));
+  allProducts2.forEach((p) => viewedMap.set(p.id, p));
   const viewedList = [];
   for (const id of viewedIds) {
     const p = viewedMap.get(id);
@@ -3876,7 +3876,7 @@ function getPersonalizedRecommendations(viewedIds, allProducts, fallbackProducts
     });
   });
   const viewedSet = new Set(viewedIds);
-  const scored = allProducts.map((prod) => {
+  const scored = allProducts2.map((prod) => {
     let score = 0;
     const cat = (prod.category || "").toLowerCase().trim();
     const sub = (prod.subcategory || "").toLowerCase().trim();
@@ -140100,6 +140100,156 @@ var carvalhoCatalog = [
   }
 ];
 
+// src/data/suggestionsData.ts
+var suggestionsData = [
+  {
+    id: 1318855,
+    name: "Skinceuticals P-tiox S\xE9rum Antirrugas 30ml",
+    partner: "Loja parceira Raia",
+    discount: 11,
+    oldPrice: 525.5,
+    price: 469.9,
+    rating: 4.5,
+    reviews: 6,
+    image: "https://product-data.raiadrogasil.io/images/15416030.webp",
+    inStock: true
+  },
+  {
+    id: 841965,
+    name: "Papel Depilat\xF3rio Santa Clara 10fls",
+    partner: "Loja parceira Raia",
+    price: 3.77,
+    rating: 0,
+    reviews: 0,
+    image: "https://product-data.raiadrogasil.io/images/4644087.webp",
+    inStock: true
+  },
+  {
+    id: 1207394,
+    name: "Hidratante Labotrat Rosto e Corpo Capim-lim\xE3o Dia a Dia 190ml",
+    partner: "Loja parceira Raia",
+    price: 0,
+    rating: 0,
+    reviews: 0,
+    image: "/suggestions/labotrat_capim_limao.jpg",
+    inStock: false
+  },
+  {
+    id: 1246579,
+    name: "\xC1gua Micelar Prebi\xF3tica + Mousse Micelar Limpa E Demaquila",
+    partner: "Loja parceira Raia",
+    discount: 0,
+    oldPrice: 118.81,
+    price: 118.8,
+    rating: 4.5,
+    reviews: 19,
+    image: "/suggestions/agua_micelar_prebiotica.jpg",
+    inStock: true
+  },
+  {
+    id: 1481580,
+    name: "Victorias Secret Cashmere Fleur - Body Splash 250Ml",
+    partner: "Loja parceira Raia",
+    discount: 17,
+    oldPrice: 209,
+    price: 174,
+    rating: 0,
+    reviews: 0,
+    image: "/suggestions/victorias_secret_cashmere.jpg",
+    inStock: true
+  },
+  {
+    id: 1356794,
+    name: "Kit Lonkoom Beauty Edp 100ml + Body Splash Beauty 250ml",
+    partner: "Loja parceira Raia",
+    discount: 7,
+    oldPrice: 239.97,
+    price: 223.17,
+    rating: 0,
+    reviews: 0,
+    image: "/suggestions/kit_lonkoom_beauty.jpg",
+    inStock: true
+  }
+];
+var suggestionProducts = suggestionsData.map((item) => ({
+  id: item.id,
+  name: item.name,
+  size: "1 unidade",
+  price: item.price,
+  oldPrice: item.oldPrice,
+  discount: item.discount,
+  rating: item.rating,
+  reviews: item.reviews,
+  image: item.image,
+  brand: item.partner,
+  consultStock: !item.inStock
+}));
+
+// src/data/allProducts.ts
+function normalizePriceCeiling(product) {
+  if (!product) return product;
+  const p = { ...product };
+  const hash = Math.abs(Number(p.id) || 0);
+  const centsList = [0.49, 0.79, 0.89, 0.9, 0.95, 0.85, 0.7, 0.65, 0.5, 0.8];
+  const cents = centsList[hash % centsList.length];
+  if (p.price >= 1e3) {
+    const intPart = 950 + hash % 49;
+    p.price = Number((intPart + cents).toFixed(2));
+  }
+  if (p.oldPrice && p.oldPrice >= 1e3) {
+    if (p.price < 950) {
+      const intPart = 950 + (hash + 7) % 49;
+      p.oldPrice = Number((intPart + cents).toFixed(2));
+      if (p.oldPrice <= p.price) {
+        p.oldPrice = Number(Math.min(999.9, p.price + 50 + cents).toFixed(2));
+      }
+    } else {
+      if (p.price < 995) {
+        p.oldPrice = 998.9;
+      } else {
+        delete p.oldPrice;
+      }
+    }
+    if (p.oldPrice && p.oldPrice > p.price) {
+      p.discount = Math.round((1 - p.price / p.oldPrice) * 100);
+      if (p.badges) {
+        p.badges = p.badges.map((b) => b.includes("% OFF") ? `${p.discount}% OFF` : b);
+      }
+    } else {
+      delete p.oldPrice;
+      delete p.discount;
+      if (p.badges) {
+        p.badges = p.badges.filter((b) => !b.includes("% OFF"));
+      }
+    }
+  }
+  return p;
+}
+var allProducts = deduplicateProducts([
+  ...ultraBrasilProducts,
+  ...novosKitsCarvalhoUltra,
+  ...mostBought,
+  ...blackDayProducts,
+  ...weekHighlights,
+  ...favoriteBrands,
+  ...fraldasProducts,
+  ...remediosProducts,
+  ...dermocosmeticosProducts,
+  ...vitaminasSuplementosProducts,
+  ...higieneBucalPersonalProducts,
+  ...asianBeauty,
+  ...montaProducts,
+  ...quemComprouTambem,
+  ...similaresVocePode,
+  ...hairCareProducts,
+  ...suggestionProducts,
+  ...todosProdutosExpandidos,
+  ...novosProdutosCatalogo,
+  ...carvalhoCatalog,
+  viterganZincoProduct,
+  flexoneProduct
+]).map(normalizePriceCeiling);
+
 // scripts/get_all_products.ts
 var allItems = [];
 for (const key of Object.keys(products_exports)) {
@@ -140213,7 +140363,7 @@ var map = /* @__PURE__ */ new Map();
 for (const p of allItems) {
   if (p && p.id && !map.has(p.id)) {
     if (!isRemedio(p)) {
-      map.set(p.id, p);
+      map.set(p.id, normalizePriceCeiling(p));
     }
   }
 }

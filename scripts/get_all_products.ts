@@ -110,12 +110,14 @@ function isRemedio(p: any): boolean {
   return false;
 }
 
+import { normalizePriceCeiling } from '../src/data/allProducts';
+
 // Deduplicação por ID e exclusão de remédios
 const map = new Map<number, any>();
 for (const p of allItems) {
   if (p && p.id && !map.has(p.id)) {
     if (!isRemedio(p)) {
-      map.set(p.id, p);
+      map.set(p.id, normalizePriceCeiling(p));
     }
   }
 }
