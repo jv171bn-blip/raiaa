@@ -549,6 +549,9 @@ const PrivacyPolicyPage: React.FC = () => {
 
               {/* Dados Oficiais da Empresa */}
               <div className="inst-company-box">
+                <p style={{ fontWeight: 700, fontSize: '0.95rem', color: '#111' }}>
+                  SPE INTEGRA S/A
+                </p>
                 <p>
                   CNPJ:{' '}
                   <span className="inst-cnpj-text">47.732.462/0001-67</span>

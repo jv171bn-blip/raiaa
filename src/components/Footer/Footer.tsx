@@ -154,6 +154,12 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
               </div>
 
               <div className="portal-contact-info">
+                <p className="portal-company-name" style={{ fontWeight: 700, color: '#333', marginBottom: '4px' }}>
+                  SPE INTEGRA S/A
+                </p>
+                <p className="portal-cnpj">
+                  CNPJ: 47.732.462/0001-67
+                </p>
                 <p className="portal-address">
                   RUA SILVIA 110 ANDAR, 13 CEP 01331-902 - BELA VISTA - SAO PAULO/SP
                 </p>
@@ -162,9 +168,6 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
                 </p>
                 <p className="portal-email">
                   E-mail: <a href="mailto:contato@rederaiassp.com">contato@rederaiassp.com</a>
-                </p>
-                <p className="portal-cnpj">
-                  CNPJ: 47.732.462/0001-67
                 </p>
               </div>
             </div>
@@ -460,7 +463,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
           <div className="portal-footer__bottom">
             <div className="portal-footer__copyright">
               <p className="portal-copyright-main">
-                &copy; {new Date().getFullYear()} - CNPJ:{' '}
+                &copy; {new Date().getFullYear()} - SPE INTEGRA S/A - CNPJ:{' '}
                 <strong>47.732.462/0001-67</strong> - Todos os direitos reservados.
               </p>
               <p className="portal-copyright-sub">
@@ -469,7 +472,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
                 de dados.
               </p>
               <p className="portal-copyright-address">
-                RUA SILVIA 110 ANDAR, 13 CEP 01331-902 - BELA VISTA - SAO PAULO/SP |
+                SPE INTEGRA S/A | RUA SILVIA 110 ANDAR, 13 CEP 01331-902 - BELA VISTA - SAO PAULO/SP |
                 Telefone: (11) 98825-1598 | contato@rederaiassp.com
               </p>
             </div>
