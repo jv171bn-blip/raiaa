@@ -827,3 +827,17 @@
   font-size: 0.85rem;
   color: #444;
 }
+
+@keyframes spinModal {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: spinModal 0.8s linear infinite;
+}
+

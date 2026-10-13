@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
   MapPin,
@@ -18,6 +18,7 @@ import {
   Package,
   Sparkles,
   Smartphone,
+  Loader2,
 } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 import { isCosmeticOrPersonalCare } from '../../data/products';
@@ -43,6 +44,7 @@ const Modals: React.FC = () => {
     finalTotal,
     setUserAddress,
     userAddress,
+    goToInicio,
   } = useCart();
 
   // CEP State
@@ -63,6 +65,16 @@ const Modals: React.FC = () => {
   const [passwordInput, setPasswordInput] = useState('');
   const [nameInput, setNameInput] = useState('');
   const [cpfInput, setCpfInput] = useState('');
+  const [loginLoading, setLoginLoading] = useState(false);
+  const loginTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (loginTimeoutRef.current) {
+        clearTimeout(loginTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Prescription State
   const [prescriptionFile, setPrescriptionFile] = useState<string | null>(null);
@@ -144,19 +156,22 @@ const Modals: React.FC = () => {
     }
   };
 
-  // Quick Demo Login
-  const handleDemoLogin = () => {
-    loginUser('Carlos Eduardo Silva', 'carlos.silva@email.com', '123.456.789-00');
-  };
-
   const handleLoginSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (loginTab === 'login') {
-      const name = emailInput.split('@')[0] || 'Cliente Raia';
-      loginUser(name, emailInput || 'cliente@raia.com.br');
-    } else {
-      loginUser(nameInput || 'Novo Cliente', emailInput, cpfInput);
-    }
+    if (loginLoading) return;
+    setLoginLoading(true);
+
+    loginTimeoutRef.current = setTimeout(() => {
+      if (loginTab === 'login') {
+        const name = emailInput.split('@')[0] || 'Cliente Raia';
+        loginUser(name, emailInput || 'cliente@raia.com.br');
+      } else {
+        loginUser(nameInput || 'Novo Cliente', emailInput, cpfInput);
+      }
+      setLoginLoading(false);
+      closeModal();
+      goToInicio();
+    }, 5000);
   };
 
   // Handle Prescription Upload
@@ -178,14 +193,19 @@ const Modals: React.FC = () => {
   };
 
   return (
-    <div className="modal-overlay" onClick={closeModal}>
+    <div className="modal-overlay" onClick={loginLoading ? undefined : closeModal}>
       <div
         className="modal-card"
         onClick={e => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
       >
-        <button className="modal-close-btn" onClick={closeModal} aria-label="Fechar modal">
+        <button
+          className="modal-close-btn"
+          onClick={loginLoading ? undefined : closeModal}
+          aria-label="Fechar modal"
+          disabled={loginLoading}
+        >
           <X size={20} />
         </button>
 
@@ -303,14 +323,18 @@ const Modals: React.FC = () => {
               <>
                 <div className="login-tabs">
                   <button
+                    type="button"
                     className={`login-tab ${loginTab === 'login' ? 'login-tab--active' : ''}`}
-                    onClick={() => setLoginTab('login')}
+                    onClick={() => !loginLoading && setLoginTab('login')}
+                    disabled={loginLoading}
                   >
                     Já sou cadastrado
                   </button>
                   <button
+                    type="button"
                     className={`login-tab ${loginTab === 'register' ? 'login-tab--active' : ''}`}
-                    onClick={() => setLoginTab('register')}
+                    onClick={() => !loginLoading && setLoginTab('register')}
+                    disabled={loginLoading}
                   >
                     Criar nova conta
                   </button>
@@ -326,6 +350,7 @@ const Modals: React.FC = () => {
                         value={nameInput}
                         onChange={e => setNameInput(e.target.value)}
                         className="modal-input-full"
+                        disabled={loginLoading}
                         required
                       />
                       <label className="modal-label">CPF</label>
@@ -335,6 +360,7 @@ const Modals: React.FC = () => {
                         value={cpfInput}
                         onChange={e => setCpfInput(e.target.value)}
                         className="modal-input-full"
+                        disabled={loginLoading}
                         required
                       />
                     </>
@@ -347,6 +373,7 @@ const Modals: React.FC = () => {
                     value={emailInput}
                     onChange={e => setEmailInput(e.target.value)}
                     className="modal-input-full"
+                    disabled={loginLoading}
                     required
                   />
 
@@ -357,27 +384,34 @@ const Modals: React.FC = () => {
                     value={passwordInput}
                     onChange={e => setPasswordInput(e.target.value)}
                     className="modal-input-full"
+                    disabled={loginLoading}
                     required
                   />
 
-                  <button type="submit" className="modal-primary-btn" style={{ marginTop: '14px' }}>
-                    {loginTab === 'login' ? 'Entrar' : 'Concluir cadastro'}
+                  <button
+                    type="submit"
+                    disabled={loginLoading}
+                    className="modal-primary-btn"
+                    style={{
+                      marginTop: '14px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '8px',
+                      opacity: loginLoading ? 0.8 : 1,
+                      cursor: loginLoading ? 'not-allowed' : 'pointer'
+                    }}
+                  >
+                    {loginLoading ? (
+                      <>
+                        <Loader2 size={18} className="spin-animation" />
+                        <span>Carregando...</span>
+                      </>
+                    ) : (
+                      loginTab === 'login' ? 'Entrar' : 'Concluir cadastro'
+                    )}
                   </button>
                 </form>
-
-                <div className="login-divider">
-                  <span>ou para testar rápido</span>
-                </div>
-
-                <button
-                  type="button"
-                  className="modal-demo-btn"
-                  onClick={handleDemoLogin}
-                  id="demo-login-btn"
-                >
-                  <Sparkles size={16} />
-                  <span>Acessar com Perfil de Demonstração</span>
-                </button>
               </>
             )}
           </div>

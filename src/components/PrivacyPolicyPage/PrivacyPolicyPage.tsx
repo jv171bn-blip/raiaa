@@ -103,7 +103,7 @@ const SESSIONS: Record<string, PageSession> = {
 };
 
 const PrivacyPolicyPage: React.FC = () => {
-  const { institutionalTab, goToHome, goToInicio } = useCart();
+  const { institutionalTab, goToHome, goToInicio, loginUser, setActiveModal } = useCart();
 
   const currentKey = institutionalTab || 'sobre';
 
@@ -139,17 +139,22 @@ const PrivacyPolicyPage: React.FC = () => {
     setOrderError('');
   }, [currentKey]);
 
-  // Handlers que simulam ação e SEMPRE retornam erro como solicitado
+  // Handlers para submit de Minha Conta com 5 segundos de espera e redirecionamento para o início
   const handleAccountSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (accountLoading) return;
     setAccountLoading(true);
     setAccountError('');
     setTimeout(() => {
       setAccountLoading(false);
-      setAccountError(
-        'Erro na autenticação: Não foi possível conectar ao servidor de contas. O sistema está temporariamente indisponível. Tente novamente mais tarde. (Código: ERR_AUTH_503)'
-      );
-    }, 600);
+      const name = accountEmail.split('@')[0] || 'Cliente Raia';
+      if (loginUser) loginUser(name, accountEmail);
+      if (goToInicio) {
+        goToInicio();
+      } else if (goToHome) {
+        goToHome();
+      }
+    }, 5000);
   };
 
   const handleCartSubmit = (e: React.FormEvent) => {
@@ -333,7 +338,7 @@ const PrivacyPolicyPage: React.FC = () => {
                   className="inst-btn-submit"
                   id="btn-entrar-conta"
                 >
-                  {accountLoading ? 'AUTENTICANDO...' : 'ENTRAR NA CONTA'}
+                  {accountLoading ? 'CARREGANDO...' : 'ENTRAR NA CONTA'}
                 </button>
 
                 <div className="inst-form-footer">
@@ -341,11 +346,11 @@ const PrivacyPolicyPage: React.FC = () => {
                   <button
                     type="button"
                     className="inst-link-bold"
-                    onClick={() =>
-                      setAccountError(
-                        'Erro no cadastro: O módulo de novos cadastros está em manutenção técnica. Tente novamente mais tarde.'
-                      )
-                    }
+                    onClick={() => {
+                      if (setActiveModal) {
+                        setActiveModal('login');
+                      }
+                    }}
                   >
                     Criar nova conta
                   </button>
