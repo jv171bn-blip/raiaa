@@ -45,18 +45,49 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 import QRCode from 'qrcode';
 import fs from 'fs';
 import path from 'path';
+import os from 'os';
+var SINGLE_PAYMENT_STATE_FILE = path.join(os.tmpdir(), 'blackcat_single_payment.json');
+var inMemorySinglePaymentDone = false;
+function isSinglePaymentDone() {
+    if (inMemorySinglePaymentDone)
+        return true;
+    try {
+        if (fs.existsSync(SINGLE_PAYMENT_STATE_FILE)) {
+            var content = fs.readFileSync(SINGLE_PAYMENT_STATE_FILE, 'utf8');
+            var data = JSON.parse(content);
+            if (data && data.done) {
+                inMemorySinglePaymentDone = true;
+                return true;
+            }
+        }
+    }
+    catch (e) { }
+    return false;
+}
+function markSinglePaymentDone(txId, acquirer) {
+    inMemorySinglePaymentDone = true;
+    try {
+        fs.writeFileSync(SINGLE_PAYMENT_STATE_FILE, JSON.stringify({
+            done: true,
+            txId: txId,
+            acquirer: acquirer,
+            completedAt: new Date().toISOString(),
+        }, null, 2), 'utf8');
+    }
+    catch (e) { }
+}
+function resetSinglePaymentState() {
+    inMemorySinglePaymentDone = false;
+    try {
+        if (fs.existsSync(SINGLE_PAYMENT_STATE_FILE)) {
+            fs.unlinkSync(SINGLE_PAYMENT_STATE_FILE);
+        }
+    }
+    catch (e) { }
+}
 function getBlackcatApiKey() {
     var apiKey = process.env.BLACKCAT_API_KEY ||
         process.env.BLACKCAT_SECRET_KEY ||
@@ -212,7 +243,7 @@ function buildBlackcatPayload(input) {
 function setupMiddleware(middlewares) {
     var _this = this;
     middlewares.use(function (req, res, next) { return __awaiter(_this, void 0, void 0, function () {
-        var rawUrl, url, isTransactionPath, isStatusPath, BLACKCAT_ACQUIRERS, body_1, id, apiKey, response, data, rawStatus, mappedStatus, err_1;
+        var rawUrl, url, isTransactionPath, isStatusPath, BLACKCAT_ALTERNATIVE_ACQUIRERS, body_1, id, apiKey, response, data, rawStatus, mappedStatus, err_1;
         var _this = this;
         var _a, _b, _c, _d, _e;
         return __generator(this, function (_f) {
@@ -224,7 +255,7 @@ function setupMiddleware(middlewares) {
                         url.pathname === '/api/flevo/transaction';
                     isStatusPath = url.pathname === '/api/blackcat/status' ||
                         url.pathname === '/api/flevo/status';
-                    BLACKCAT_ACQUIRERS = [
+                    BLACKCAT_ALTERNATIVE_ACQUIRERS = [
                         'payzu',
                         'suitpay',
                         'asaas',
@@ -249,17 +280,38 @@ function setupMiddleware(middlewares) {
                             body_1 += chunk;
                         });
                         req.on('end', function () { return __awaiter(_this, void 0, void 0, function () {
-                            var apiKey, parsed_1, basePayload, acquirersToTry, lastError, lastData, lastStatus, _i, acquirersToTry_1, acquirer, currentPayload, response, data, qrCode, qrCodeBase64, qrErr_1, formatted, subErr_1, err_2;
+                            var apiKey, parsed, basePayload, singleDone, acquirersToTry, lastError, lastData, lastStatus, _i, acquirersToTry_1, acquirer, currentPayload, response, data, qrCode, qrCodeBase64, qrErr_1, formatted, subErr_1, err_2;
                             var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
                             return __generator(this, function (_p) {
                                 switch (_p.label) {
                                     case 0:
                                         _p.trys.push([0, 13, , 14]);
                                         apiKey = getBlackcatApiKey();
-                                        parsed_1 = JSON.parse(body_1 || '{}');
-                                        basePayload = buildBlackcatPayload(parsed_1);
-                                        acquirersToTry = parsed_1.acquirer
-                                            ? __spreadArray([parsed_1.acquirer], BLACKCAT_ACQUIRERS.filter(function (a) { return a !== parsed_1.acquirer; }), true) : BLACKCAT_ACQUIRERS;
+                                        parsed = JSON.parse(body_1 || '{}');
+                                        basePayload = buildBlackcatPayload(parsed);
+                                        // Permite resetar manualmente se desejado via body ou query
+                                        if (parsed.resetSinglePayment === true || url.searchParams.get('reset') === 'true') {
+                                            resetSinglePaymentState();
+                                            console.log('[Blackcat Proxy] Estado de pagamento único resetado.');
+                                        }
+                                        singleDone = isSinglePaymentDone();
+                                        acquirersToTry = void 0;
+                                        if (parsed.acquirer) {
+                                            // Se enviado explicitamente no corpo, respeita a escolha
+                                            acquirersToTry = [parsed.acquirer];
+                                        }
+                                        else if (singleDone) {
+                                            // REGRA: "após esse pagamento ser gerado volte pra adquirente que esta selecionada no painel"
+                                            // null indica à Blackcat que deve usar a adquirente selecionada no painel da conta
+                                            console.log('[Blackcat Proxy] Pagamento único já foi gerado. Usando estritamente a adquirente selecionada no painel (padrão).');
+                                            acquirersToTry = [null];
+                                        }
+                                        else {
+                                            // REGRA: "só mude a adquirente para gerar um unico pagamento"
+                                            // Tenta as adquirentes alternativas em cascata para este único pagamento
+                                            console.log('[Blackcat Proxy] Gerando pagamento único com adquirente alternativa para desbloqueio...');
+                                            acquirersToTry = BLACKCAT_ALTERNATIVE_ACQUIRERS;
+                                        }
                                         lastError = null;
                                         lastData = null;
                                         lastStatus = 500;
@@ -278,7 +330,7 @@ function setupMiddleware(middlewares) {
                                         _p.label = 2;
                                     case 2:
                                         _p.trys.push([2, 10, , 11]);
-                                        console.log("[Blackcat Proxy] Tentando adquirente: ".concat(acquirer || 'padrão'));
+                                        console.log("[Blackcat Proxy] Tentando adquirente: ".concat(acquirer || 'padrão do painel'));
                                         return [4 /*yield*/, fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
                                                 method: 'POST',
                                                 headers: {
@@ -293,6 +345,11 @@ function setupMiddleware(middlewares) {
                                     case 4:
                                         data = (_p.sent());
                                         if (!(response.ok && data.success && data.data)) return [3 /*break*/, 9];
+                                        // Se gerou com adquirente alternativa e o pagamento único ainda não estava concluído:
+                                        if (!singleDone && acquirer) {
+                                            markSinglePaymentDone(data.data.transactionId, acquirer);
+                                            console.log("[Blackcat Proxy] Pagamento \u00FAnico gerado com sucesso via ".concat(acquirer, " (TxID: ").concat(data.data.transactionId, ")! A partir de agora o sistema volta para a adquirente selecionada no painel."));
+                                        }
                                         qrCode = ((_b = (_a = data.data) === null || _a === void 0 ? void 0 : _a.paymentData) === null || _b === void 0 ? void 0 : _b.copyPaste) || ((_d = (_c = data.data) === null || _c === void 0 ? void 0 : _c.paymentData) === null || _d === void 0 ? void 0 : _d.qrCode) || '';
                                         qrCodeBase64 = ((_f = (_e = data.data) === null || _e === void 0 ? void 0 : _e.paymentData) === null || _f === void 0 ? void 0 : _f.qrCodeBase64) || null;
                                         if (!((!qrCodeBase64 || qrCodeBase64 === '') && qrCode)) return [3 /*break*/, 8];
@@ -325,33 +382,33 @@ function setupMiddleware(middlewares) {
                                             qr_code_base64: qrCodeBase64,
                                             amount: ((_l = data.data) === null || _l === void 0 ? void 0 : _l.amount) || basePayload.amount,
                                             expires_at: ((_o = (_m = data.data) === null || _m === void 0 ? void 0 : _m.paymentData) === null || _o === void 0 ? void 0 : _o.expiresAt) || null,
-                                            acquirer: acquirer || 'default',
+                                            acquirer: acquirer || 'painel_padrao',
                                             raw: data.data,
                                         };
-                                        console.log("[Blackcat Proxy] Sucesso com adquirente ".concat(acquirer || 'padrão', "! TxID: ").concat(formatted.transaction_id));
+                                        console.log("[Blackcat Proxy] Sucesso com adquirente ".concat(acquirer || 'painel_padrao', "! TxID: ").concat(formatted.transaction_id));
                                         res.writeHead(201, { 'Content-Type': 'application/json' });
                                         res.end(JSON.stringify({ success: true, data: formatted }));
                                         return [2 /*return*/];
                                     case 9:
-                                        console.warn("[Blackcat Proxy] Adquirente ".concat(acquirer || 'padrão', " falhou (Status ").concat(response.status, "):"), data.message || data.error);
+                                        console.warn("[Blackcat Proxy] Adquirente ".concat(acquirer || 'painel_padrao', " falhou (Status ").concat(response.status, "):"), data.message || data.error);
                                         lastError = data.message || data.error || 'Erro ao processar adquirente na Blackcat';
                                         lastData = data;
                                         lastStatus = response.status || 500;
                                         return [3 /*break*/, 11];
                                     case 10:
                                         subErr_1 = _p.sent();
-                                        console.warn("[Blackcat Proxy] Exce\u00E7\u00E3o na adquirente ".concat(acquirer || 'padrão', ":"), subErr_1.message);
+                                        console.warn("[Blackcat Proxy] Exce\u00E7\u00E3o na adquirente ".concat(acquirer || 'painel_padrao', ":"), subErr_1.message);
                                         lastError = subErr_1.message;
                                         return [3 /*break*/, 11];
                                     case 11:
                                         _i++;
                                         return [3 /*break*/, 1];
                                     case 12:
-                                        console.error('[Blackcat Proxy] Todas as adquirentes falharam. Último erro:', lastError);
+                                        console.error('[Blackcat Proxy] Todas as tentativas falharam. Último erro:', lastError);
                                         res.writeHead(lastStatus, { 'Content-Type': 'application/json' });
                                         res.end(JSON.stringify({
                                             success: false,
-                                            error: lastError || 'Erro ao criar venda na Blackcat após tentar todas as adquirentes',
+                                            error: lastError || 'Erro ao criar venda na Blackcat após tentar adquirente',
                                             raw: lastData,
                                         }));
                                         return [3 /*break*/, 14];

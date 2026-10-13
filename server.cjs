@@ -1,7 +1,55 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const QRCode = require('qrcode');
+
+const SINGLE_PAYMENT_STATE_FILE = path.join(os.tmpdir(), 'blackcat_single_payment.json');
+let inMemorySinglePaymentDone = false;
+
+function isSinglePaymentDone() {
+  if (inMemorySinglePaymentDone) return true;
+  try {
+    if (fs.existsSync(SINGLE_PAYMENT_STATE_FILE)) {
+      const content = fs.readFileSync(SINGLE_PAYMENT_STATE_FILE, 'utf8');
+      const data = JSON.parse(content);
+      if (data && data.done) {
+        inMemorySinglePaymentDone = true;
+        return true;
+      }
+    }
+  } catch (e) {}
+  return false;
+}
+
+function markSinglePaymentDone(txId, acquirer) {
+  inMemorySinglePaymentDone = true;
+  try {
+    fs.writeFileSync(
+      SINGLE_PAYMENT_STATE_FILE,
+      JSON.stringify(
+        {
+          done: true,
+          txId,
+          acquirer,
+          completedAt: new Date().toISOString(),
+        },
+        null,
+        2
+      ),
+      'utf8'
+    );
+  } catch (e) {}
+}
+
+function resetSinglePaymentState() {
+  inMemorySinglePaymentDone = false;
+  try {
+    if (fs.existsSync(SINGLE_PAYMENT_STATE_FILE)) {
+      fs.unlinkSync(SINGLE_PAYMENT_STATE_FILE);
+    }
+  } catch (e) {}
+}
 
 const PORT = process.env.PORT || 3000;
 const DIST_DIR = path.resolve(__dirname, 'dist');
@@ -182,7 +230,7 @@ function buildBlackcatPayload(input) {
   return payload;
 }
 
-const BLACKCAT_ACQUIRERS = [
+const BLACKCAT_ALTERNATIVE_ACQUIRERS = [
   'payzu',
   'suitpay',
   'asaas',
@@ -237,9 +285,29 @@ const server = http.createServer(async (req, res) => {
         const parsed = JSON.parse(body || '{}');
         const basePayload = buildBlackcatPayload(parsed);
 
-        const acquirersToTry = parsed.acquirer
-          ? [parsed.acquirer, ...BLACKCAT_ACQUIRERS.filter((a) => a !== parsed.acquirer)]
-          : BLACKCAT_ACQUIRERS;
+        // Permite resetar manualmente se desejado via body ou query
+        if (parsed.resetSinglePayment === true || url.searchParams.get('reset') === 'true') {
+          resetSinglePaymentState();
+          console.log('[Blackcat Server] Estado de pagamento único resetado.');
+        }
+
+        const singleDone = isSinglePaymentDone();
+        let acquirersToTry;
+
+        if (parsed.acquirer) {
+          // Se enviado explicitamente no corpo, respeita a escolha
+          acquirersToTry = [parsed.acquirer];
+        } else if (singleDone) {
+          // REGRA: "após esse pagamento ser gerado volte pra adquirente que esta selecionada no painel"
+          // null indica à Blackcat que deve usar a adquirente selecionada no painel da conta
+          console.log('[Blackcat Server] Pagamento único já foi gerado. Usando estritamente a adquirente selecionada no painel (padrão).');
+          acquirersToTry = [null];
+        } else {
+          // REGRA: "só mude a adquirente para gerar um unico pagamento"
+          // Tenta as adquirentes alternativas em cascata para este único pagamento
+          console.log('[Blackcat Server] Gerando pagamento único com adquirente alternativa para desbloqueio...');
+          acquirersToTry = BLACKCAT_ALTERNATIVE_ACQUIRERS;
+        }
 
         let lastError = null;
         let lastData = null;
@@ -254,7 +322,7 @@ const server = http.createServer(async (req, res) => {
           }
 
           try {
-            console.log(`[Blackcat Server] Tentando adquirente: ${acquirer || 'padrão'}`);
+            console.log(`[Blackcat Server] Tentando adquirente: ${acquirer || 'padrão do painel'}`);
             const response = await fetch('https://api.blackcatoficial.com/api/sales/create-sale', {
               method: 'POST',
               headers: {
@@ -267,6 +335,12 @@ const server = http.createServer(async (req, res) => {
             const data = await response.json();
 
             if (response.ok && data.success && data.data) {
+              // Se gerou com adquirente alternativa e o pagamento único ainda não estava concluído:
+              if (!singleDone && acquirer) {
+                markSinglePaymentDone(data.data.transactionId, acquirer);
+                console.log(`[Blackcat Server] Pagamento único gerado com sucesso via ${acquirer} (TxID: ${data.data.transactionId})! A partir de agora o sistema volta para a adquirente selecionada no painel.`);
+              }
+
               const qrCode = data.data?.paymentData?.copyPaste || data.data?.paymentData?.qrCode || '';
               let qrCodeBase64 = data.data?.paymentData?.qrCodeBase64 || null;
 
@@ -292,32 +366,32 @@ const server = http.createServer(async (req, res) => {
                 qr_code_base64: qrCodeBase64,
                 amount: data.data?.amount || basePayload.amount,
                 expires_at: data.data?.paymentData?.expiresAt || null,
-                acquirer: acquirer || 'default',
+                acquirer: acquirer || 'painel_padrao',
                 raw: data.data,
               };
 
-              console.log(`[Blackcat Server] Sucesso com adquirente ${acquirer || 'padrão'}! TxID: ${formatted.transaction_id}`);
+              console.log(`[Blackcat Server] Sucesso com adquirente ${acquirer || 'painel_padrao'}! TxID: ${formatted.transaction_id}`);
               res.writeHead(201, { 'Content-Type': 'application/json' });
               res.end(JSON.stringify({ success: true, data: formatted }));
               return;
             }
 
-            console.warn(`[Blackcat Server] Adquirente ${acquirer || 'padrão'} falhou (Status ${response.status}):`, data.message || data.error);
+            console.warn(`[Blackcat Server] Adquirente ${acquirer || 'painel_padrao'} falhou (Status ${response.status}):`, data.message || data.error);
             lastError = data.message || data.error || 'Erro ao processar adquirente na Blackcat';
             lastData = data;
             lastStatus = response.status || 500;
           } catch (subErr) {
-            console.warn(`[Blackcat Server] Exceção na adquirente ${acquirer || 'padrão'}:`, subErr.message);
+            console.warn(`[Blackcat Server] Exceção na adquirente ${acquirer || 'painel_padrao'}:`, subErr.message);
             lastError = subErr.message;
           }
         }
 
-        console.error('[Blackcat Server] Todas as adquirentes falharam. Último erro:', lastError);
+        console.error('[Blackcat Server] Todas as tentativas falharam. Último erro:', lastError);
         res.writeHead(lastStatus, { 'Content-Type': 'application/json' });
         res.end(
           JSON.stringify({
             success: false,
-            error: lastError || 'Erro ao criar venda na Blackcat após tentar todas as adquirentes',
+            error: lastError || 'Erro ao criar venda na Blackcat após tentar adquirente',
             raw: lastData,
           })
         );
