@@ -105,7 +105,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
         <span className="product-card__size">{product.size}</span>
       )}
 
-      {/* 5. Avaliação por estrelas (Oculto para medicamentos e itens de saúde - ANVISA / Droga Raia) */}
+      {/* 5. Avaliação por estrelas (Oculto para medicamentos e itens de saúde - ANVISA / Farmácia) */}
       {isCosmeticOrPersonalCare(product) ? (
         <StarRating rating={product.rating || 4.8} reviews={product.reviews || 626} />
       ) : null}

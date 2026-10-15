@@ -218,15 +218,14 @@ const Header: React.FC = () => {
             href="/inicio"
             className="header__logo"
             id="header-logo"
-            title="Droga Raia"
             onClick={e => {
               e.preventDefault();
               goToInicio ? goToInicio() : goToHome();
             }}
           >
             <img
-              src="/raia-logo.png"
-              alt="Raia"
+              src="/favicon.png"
+              alt="Farmácia"
               className="header__logo-img"
             />
           </a>
@@ -237,7 +236,7 @@ const Header: React.FC = () => {
               <input
                 type="text"
                 className="header__search-input"
-                placeholder="Buscar na Raia"
+                placeholder="Buscar produtos"
                 value={searchValue}
                 onChange={e => {
                   setSearchValue(e.target.value);
@@ -419,7 +418,7 @@ const Header: React.FC = () => {
               ref={mobileSearchInputRef}
               type="text"
               className="header__search-input"
-              placeholder="Buscar na Raia"
+              placeholder="Buscar produtos"
               value={searchValue}
               onChange={e => {
                 setSearchValue(e.target.value);
@@ -480,7 +479,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Bottom Sheet (matching Droga Raia official app without login/register) */}
+      {/* Mobile Menu Bottom Sheet (matching Farmácia official app without login/register) */}
       <MobileMenuSheet
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}

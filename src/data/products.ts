@@ -1302,7 +1302,7 @@ export const similaresVocePode: Product[] = [
 export const hairCareProducts: Product[] = [];
 
 // ===========================================================================
-// FRALDAS & MAMÃE E BEBÊ (Produtos e Imagens Oficiais Droga Raia)
+// FRALDAS & MAMÃE E BEBÊ (Produtos e Imagens Oficiais Farmácia)
 // ===========================================================================
 export const fraldasProducts: Product[] = [
   {
@@ -2062,7 +2062,7 @@ export const fraldasProducts: Product[] = [
 ];
 
 // ===========================================================================
-// REMÉDIOS & MEDICAMENTOS (Produtos e Imagens Oficiais Droga Raia)
+// REMÉDIOS & MEDICAMENTOS (Produtos e Imagens Oficiais Farmácia)
 // ===========================================================================
 export const remediosProducts: Product[] = [
   {
@@ -2308,7 +2308,7 @@ export const remediosProducts: Product[] = [
 ];
 
 // ===========================================================================
-// DERMOCOSMÉTICOS & BELEZA (Produtos e Imagens Oficiais Droga Raia)
+// DERMOCOSMÉTICOS & BELEZA (Produtos e Imagens Oficiais Farmácia)
 // ===========================================================================
 export const dermocosmeticosProducts: Product[] = [
   {
@@ -2418,7 +2418,7 @@ export const dermocosmeticosProducts: Product[] = [
   },];
 
 // ===========================================================================
-// VITAMINAS & SUPLEMENTOS (Produtos e Imagens Oficiais Droga Raia)
+// VITAMINAS & SUPLEMENTOS (Produtos e Imagens Oficiais Farmácia)
 // ===========================================================================
 export const vitaminasSuplementosProducts: Product[] = [
   {
@@ -2452,20 +2452,20 @@ export const vitaminasSuplementosProducts: Product[] = [
     rating: 4.8,
     reviews: 145,
     image: "/products/dimagnesio_malato_bwell.webp",
-    badges: ["Exclusivo Droga Raia"],
+    badges: ["Exclusivo"],
     brand: "bwell",
     category: "Vida Saudável",
     subcategory: "Vitaminas & Minerais",
     bullets: [
       "Magnésio ligado a moléculas de ácido málico para máxima biodisponibilidade.",
       "Auxilia na função muscular, prevenção de câimbras e energia celular.",
-      "Marca exclusiva de saúde e bem-estar da Droga Raia.",
+      "Marca exclusiva de saúde e bem-estar da Farmácia.",
     ],
     description: "Magnésio de alta absorção e biodisponibilidade que auxilia no funcionamento muscular, neuromuscular e no metabolismo energético.",
   },];
 
 // ===========================================================================
-// HIGIENE, BUCAL & CABELOS (Produtos e Imagens Oficiais Droga Raia)
+// HIGIENE, BUCAL & CABELOS (Produtos e Imagens Oficiais Farmácia)
 // ===========================================================================
 export const higieneBucalPersonalProducts: Product[] = [
   {
@@ -2830,9 +2830,9 @@ export const healthSpace: Array<{ id: number; title: string; description: string
   {
     id: 5,
     title: "Espaço Farmacêutico & Vacinas",
-    description: "Serviços de saúde, testes rápidos, aferição de pressão e vacinação na sua loja Raia.",
+    description: "Serviços de saúde, testes rápidos, aferição de pressão e vacinação na sua loja.",
     image: "/banners/cards/card_05_raia_conceito.webp",
-    tag: "Serviços Raia"
+    tag: "Serviços de Saúde"
   }
 ];
 

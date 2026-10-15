@@ -3,7 +3,7 @@ import { novosProdutosCatalogo } from './novosProdutosCatalogo';
 
 /**
  * Palavras-chave e marcas pesquisadas na web como campeões de vendas e produtos em alta
- * nas principais farmácias do Brasil (Droga Raia / Raia Drogasil):
+ * nas principais farmácias do Brasil (Farmácia / Raia Drogasil):
  *
  * 1. Medicamentos crônicos e de alta rotatividade: Glifage, Losartana, Tadalafila, Cialis,
  *    Dorflex, Neosaldina, Dipirona, Paracetamol, Tylenol, Neosoro, Torsilax, Benegrip,
@@ -236,7 +236,7 @@ export function getTrendingPool(allProducts: Product[]): Product[] {
 }
 
 /**
- * Resolve uma lista curada de produtos autênticos da Droga Raia para cada seção,
+ * Resolve uma lista curada de produtos autênticos da Farmácia para cada seção,
  * garantindo ordenação por relevância real de farmácia e validação de tamanho de fraldas (apenas M e G).
  */
 function resolveCuratedSection(

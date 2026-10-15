@@ -3541,7 +3541,7 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   Cadastrar Endereço – Bottom Sheet Modal (Droga Raia Exact)
+   Cadastrar Endereço – Bottom Sheet Modal (Farmácia Exact)
    ══════════════════════════════════════════════════════════ */
 .cadastrar-cep-overlay {
   position: fixed;
@@ -3831,7 +3831,7 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   Farmácias Droga Raia e Drogasil mais próximas (Retirada/Envio)
+   Farmácias e Drogasil mais próximas (Retirada/Envio)
    ══════════════════════════════════════════════════════════ */
 .cadastrar-cep-pharmacies-wrap {
   margin-top: 14px;
@@ -3878,7 +3878,7 @@
   line-height: 1.35;
 }
 
-/* Filter pills (Todas / Droga Raia / Drogasil) */
+/* Filter pills (Todas / Farmácia / Drogasil) */
 .cadastrar-cep-filter-row {
   display: flex;
   gap: 8px;
@@ -4343,7 +4343,7 @@
 }
 
 /* ══════════════════════════════════════════════════════════
-   Passo 1 – Farmácia Selecionada (Exact Official Droga Raia Look)
+   Passo 1 – Farmácia Selecionada (Exact Official Farmácia Look)
    ══════════════════════════════════════════════════════════ */
 .checkout-step__pickup-container {
   margin-top: 6px;
@@ -6603,7 +6603,7 @@
   to { transform: translateY(0); }
 }
 
-/* ─── EMPTY CART PAGE (Exact replica of Droga Raia official mobile screen) ─── */
+/* ─── EMPTY CART PAGE (Exact replica of Farmácia official mobile screen) ─── */
 .cart-empty-section {
   display: flex;
   flex-direction: column;
@@ -6676,7 +6676,7 @@
   margin: 0 16px 8px;
 }
 
-/* ── ScheduledDeliverySheet (Exact match to Droga Raia mobile screens) ── */
+/* ── ScheduledDeliverySheet (Exact match to Farmácia mobile screens) ── */
 .scheduled-sheet-overlay {
   position: fixed;
   inset: 0;

@@ -112,7 +112,7 @@ export async function fetchAddressByCep(inputCep: string): Promise<AddressLookup
 
 export interface PharmacyStore {
   id: string;
-  brand: 'raia' | 'drogasil' | 'Droga Raia' | 'Drogasil';
+  brand: 'raia' | 'drogasil' | 'Farmácia' | 'Drogasil';
   name: string;
   address: string;
   neighborhood: string;
@@ -143,7 +143,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-rj-copa',
         brand: 'raia',
-        name: 'Droga Raia - Copacabana',
+        name: 'Farmácia - Copacabana',
         address: 'Av. Nossa Senhora de Copacabana, 777',
         neighborhood: 'Copacabana',
         city: 'Rio de Janeiro',
@@ -169,7 +169,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-rj-leblon',
         brand: 'raia',
-        name: 'Droga Raia - Leblon',
+        name: 'Farmácia - Leblon',
         address: 'Av. Ataulfo de Paiva, 566',
         neighborhood: 'Leblon',
         city: 'Rio de Janeiro',
@@ -199,7 +199,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-bh-savassi',
         brand: 'raia',
-        name: 'Droga Raia - Savassi',
+        name: 'Farmácia - Savassi',
         address: 'Av. Getúlio Vargas, 1420',
         neighborhood: 'Savassi',
         city: 'Belo Horizonte',
@@ -230,7 +230,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-cwb-batel',
         brand: 'raia',
-        name: 'Droga Raia - Batel',
+        name: 'Farmácia - Batel',
         address: 'Av. Sete de Setembro, 4518',
         neighborhood: 'Batel',
         city: 'Curitiba',
@@ -262,7 +262,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-cps-cambui',
         brand: 'raia',
-        name: 'Droga Raia - Cambuí',
+        name: 'Farmácia - Cambuí',
         address: 'Av. Cel. Silva Telles, 485',
         neighborhood: 'Cambuí',
         city: 'Campinas',
@@ -293,7 +293,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-paulista-2073',
         brand: 'raia',
-        name: 'Droga Raia - Conjunto Nacional',
+        name: 'Farmácia - Conjunto Nacional',
         address: 'Av. Paulista, 2073',
         neighborhood: 'Bela Vista',
         city: 'São Paulo',
@@ -319,7 +319,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-brigadeiro',
         brand: 'raia',
-        name: 'Droga Raia - Brigadeiro Luís Antônio',
+        name: 'Farmácia - Brigadeiro Luís Antônio',
         address: 'Av. Brigadeiro Luís Antônio, 2120',
         neighborhood: 'Bela Vista',
         city: 'São Paulo',
@@ -349,7 +349,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-teodoro',
         brand: 'raia',
-        name: 'Droga Raia - Teodoro Sampaio',
+        name: 'Farmácia - Teodoro Sampaio',
         address: 'Rua Teodoro Sampaio, 2043',
         neighborhood: 'Pinheiros',
         city: 'São Paulo',
@@ -374,7 +374,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-faria-lima',
         brand: 'raia',
-        name: 'Droga Raia - Faria Lima',
+        name: 'Farmácia - Faria Lima',
         address: 'Av. Brg. Faria Lima, 2232',
         neighborhood: 'Jardim Paulistano',
         city: 'São Paulo',
@@ -404,7 +404,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-ibirapuera',
         brand: 'raia',
-        name: 'Droga Raia - Ibirapuera',
+        name: 'Farmácia - Ibirapuera',
         address: 'Av. Ibirapuera, 3103',
         neighborhood: 'Moema',
         city: 'São Paulo',
@@ -429,7 +429,7 @@ export function getNearbyPharmacies(
       {
         id: 'store-raia-domingos',
         brand: 'raia',
-        name: 'Droga Raia - Domingos de Morais',
+        name: 'Farmácia - Domingos de Morais',
         address: 'Rua Domingos de Morais, 2064',
         neighborhood: 'Vila Mariana',
         city: 'São Paulo',
@@ -455,7 +455,7 @@ export function getNearbyPharmacies(
   }
 
   // 8. DEFAULT / ZONA NORTE DE SÃO PAULO (Jardim Ataliba Leonel, Tremembé, Tucuruvi, Santana, Parada Inglesa, etc.)
-  // Real, 100% verified existing Droga Raia and Drogasil branches:
+  // Real, 100% verified existing Farmácia and Drogasil branches:
   return [
     {
       id: 'store-drogasil-ataliba',
@@ -473,7 +473,7 @@ export function getNearbyPharmacies(
     {
       id: 'store-raia-cantareira-978',
       brand: 'raia',
-      name: 'Droga Raia - Nova Cantareira / Tucuruvi',
+      name: 'Farmácia - Nova Cantareira / Tucuruvi',
       address: 'Av. Nova Cantareira, 978',
       neighborhood: 'Tucuruvi',
       city: 'São Paulo',
@@ -510,7 +510,7 @@ export function getNearbyPharmacies(
     {
       id: 'store-raia-cantareira-3245',
       brand: 'raia',
-      name: 'Droga Raia - Tremembé Cantareira',
+      name: 'Farmácia - Tremembé Cantareira',
       address: 'Av. Nova Cantareira, 3245',
       neighborhood: 'Tremembé',
       city: 'São Paulo',
@@ -522,7 +522,7 @@ export function getNearbyPharmacies(
     {
       id: 'store-raia-voluntarios-4037',
       brand: 'raia',
-      name: 'Droga Raia - Voluntários da Pátria',
+      name: 'Farmácia - Voluntários da Pátria',
       address: 'Rua Voluntários da Pátria, 4037',
       neighborhood: 'Santana',
       city: 'São Paulo',
@@ -535,7 +535,7 @@ export function getNearbyPharmacies(
     {
       id: 'store-raia-braz-leme',
       brand: 'raia',
-      name: 'Droga Raia - Braz Leme',
+      name: 'Farmácia - Braz Leme',
       address: 'Av. Braz Leme, 2097',
       neighborhood: 'Santana',
       city: 'São Paulo',

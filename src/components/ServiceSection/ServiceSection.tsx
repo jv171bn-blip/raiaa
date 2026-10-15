@@ -5,7 +5,7 @@ const services = [
   {
     id: 1,
     title: 'Vacina contra gripe',
-    desc: 'Na Raia você encontra vacina tetravalente contra a gripe.',
+    desc: 'Você encontra vacina tetravalente contra a gripe.',
     cta: 'Consultar vacinas',
     ctaId: 'cta-vacinas',
   },

@@ -46,7 +46,7 @@ const categories = [
     anchor: 'section-destaque-semana',
   },
   {
-    title: 'Serviços de Saúde Raia',
+    title: 'Serviços de Saúde',
     icon: ShieldAlert,
     items: ['Aplicação de Vacinas', 'Testes Rápidos Covid/Gripe', 'Aferição de Pressão', 'Bioimpedância', 'Programa Parar de Fumar'],
     anchor: 'service-section',

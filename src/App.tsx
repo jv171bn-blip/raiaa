@@ -92,7 +92,7 @@ const editorialCards = [
 const MainContent: React.FC = () => {
   const { viewedProducts, userAddress, setActiveModal, showToast } = useCart();
 
-  // Curated authentic Droga Raia homepage sections data
+  // Curated authentic Farmácia homepage sections data
   const [rotatingData] = useState<HomepageRotatingData>(() =>
     generateHomepageRotatingData(allProducts, asianBeauty)
   );
@@ -286,7 +286,7 @@ const PageContent: React.FC = () => {
       {/* Global Modals Manager (CEP, Login, Orders, Prescriptions, Coupons, PBM, QuickView, Checkout) */}
       <Modals />
 
-      {/* Official Droga Raia Cookies Consent Banner */}
+      {/* Official Farmácia Cookies Consent Banner */}
       <CookieBanner />
     </div>
   );

@@ -25,10 +25,10 @@ const DrogasilIcon: React.FC = () => (
   </svg>
 );
 
-const RaiaIcon: React.FC = () => (
+const StoreIcon: React.FC = () => (
   <img
-    src="/raia-symbol.png"
-    alt="Raia"
+    src="/favicon.png"
+    alt="Loja"
     className="nearby-pharmacy-card__raia-symbol-img"
   />
 );
@@ -132,7 +132,7 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
         if (!isMounted) return;
         setUserLocation(location);
 
-        // 2. Locate closest Droga Raia & Drogasil units
+        // 2. Locate closest Drogasil units
         const { pharmacies: nearby } = await findNearbyPharmacies(location.latitude, location.longitude);
         if (!isMounted) return;
 
@@ -178,7 +178,7 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
     setSelectedId(pharmacy.id);
     const storeObj = {
       id: pharmacy.id,
-      brand: pharmacy.brand === 'Droga Raia' ? 'raia' : 'drogasil',
+      brand: pharmacy.brand === 'Farmácia' ? 'raia' : 'drogasil',
       name: pharmacy.name,
       address: pharmacy.address,
       neighborhood: pharmacy.neighborhood || '',
@@ -198,7 +198,7 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
 
   const renderPharmacyCard = (pharmacy: Pharmacy, isAvailable: boolean, isClosest: boolean) => {
     const isSelected = isAvailable && pharmacy.id === selectedId;
-    const isRaia = pharmacy.brand === 'Droga Raia';
+    const isRaia = pharmacy.brand === 'Farmácia';
 
     return (
       <div
@@ -219,8 +219,8 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
         <div className="nearby-pharmacy-card__brand-row">
           {isRaia ? (
             <div className="nearby-pharmacy-card__raia-brand">
-              <RaiaIcon />
-              <span className="nearby-pharmacy-card__raia-name">Raia</span>
+              <StoreIcon />
+              <span className="nearby-pharmacy-card__raia-name">Farmácia</span>
             </div>
           ) : (
             <div className="nearby-pharmacy-card__raia-brand">
@@ -339,7 +339,7 @@ export const NearbyPharmacies: React.FC<NearbyPharmaciesProps> = ({
         <div className="nearby-pharmacies-empty-box">
           <AlertCircle size={32} className="nearby-pharmacies-empty-icon" />
           <h4 className="nearby-pharmacies-empty-title">
-            Não encontramos unidades Droga Raia ou Drogasil próximas a este endereço.
+            Não encontramos unidades ou Drogasil próximas a este endereço.
           </h4>
           <p className="nearby-pharmacies-empty-desc">
             Tente buscar por outro CEP ou conferir o endereço digitado.

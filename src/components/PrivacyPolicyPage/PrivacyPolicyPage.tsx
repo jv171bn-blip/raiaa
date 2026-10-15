@@ -28,7 +28,7 @@ const SESSIONS: Record<string, PageSession> = {
     title: 'Quem Somos',
     breadcrumb: 'CASA / QUEM SOMOS',
     leadText:
-      'A Droga Raia é uma loja online dedicada a oferecer produtos para saúde, bem-estar, higiene, beleza e cuidados pessoais, sempre priorizando qualidade, segurança e praticidade em cada compra.',
+      'A Farmácia é uma loja online dedicada a oferecer produtos para saúde, bem-estar, higiene, beleza e cuidados pessoais, sempre priorizando qualidade, segurança e praticidade em cada compra.',
     paragraphs: [
       'Trabalhamos com medicamentos, vitaminas, suplementos alimentares, dermocosméticos, produtos de higiene e diversas outras categorias, reunindo marcas reconhecidas e produtos originais para atender às necessidades de nossos clientes.',
       'Nosso compromisso é proporcionar uma experiência de compra segura, com atendimento de qualidade, preços competitivos e um processo de compra simples e transparente. Buscamos oferecer soluções que contribuam para o cuidado com a saúde e o bem-estar de toda a família.',
@@ -41,11 +41,11 @@ const SESSIONS: Record<string, PageSession> = {
     title: 'Política de Privacidade',
     breadcrumb: 'CASA / POLÍTICA DE PRIVACIDADE',
     leadText:
-      'A Droga Raia preza pela privacidade, sigilo e segurança dos dados de cada cliente, garantindo total transparência no tratamento de suas informações em conformidade com a LGPD (Lei nº 13.709/2018).',
+      'A Farmácia preza pela privacidade, sigilo e segurança dos dados de cada cliente, garantindo total transparência no tratamento de suas informações em conformidade com a LGPD (Lei nº 13.709/2018).',
     paragraphs: [
       'Coletamos dados cadastrais como nome completo, CPF, e-mail, telefone e endereço de entrega exclusivamente para viabilizar o faturamento, emissão de Nota Fiscal Eletrônica e entrega correta das suas compras.',
       'Todas as informações de pagamento são processadas em ambiente 100% criptografado através de certificados digitais SSL/TLS e intermediadores homologados com o padrão internacional de segurança PCI-DSS. Nós não armazenamos dados de cartões de crédito em nossos servidores.',
-      'A Droga Raia não comercializa, não aluga e não compartilha dados pessoais de clientes com terceiros. O compartilhamento ocorre única e exclusivamente com operadores essenciais à operação (como Correios, transportadoras e gateways bancários).',
+      'A Farmácia não comercializa, não aluga e não compartilha dados pessoais de clientes com terceiros. O compartilhamento ocorre única e exclusivamente com operadores essenciais à operação (como Correios, transportadoras e gateways bancários).',
       'Em total cumprimento às exigências da ANVISA, eventuais dados de prescrições médicas enviadas para a dispensação de medicamentos controlados são arquivados sob rigoroso sigilo profissional farmacêutico pelo período determinado na legislação sanitária.',
       'Você possui o direito garantido de consultar, atualizar ou solicitar a eliminação dos seus dados a qualquer momento, bastando entrar em contato com nossa equipe pelo e-mail contato@rederaiassp.com.',
     ],
@@ -79,7 +79,7 @@ const SESSIONS: Record<string, PageSession> = {
     title: 'Política de Envio (Frete)',
     breadcrumb: 'CASA / POLÍTICA DE ENVIO (FRETE)',
     leadText:
-      'A Droga Raia entrega para todo o território brasileiro com rapidez, segurança e embalagens adequadas para garantir a integridade dos seus produtos.',
+      'A Farmácia entrega para todo o território brasileiro com rapidez, segurança e embalagens adequadas para garantir a integridade dos seus produtos.',
     paragraphs: [
       'Prazos e Modalidades: O prazo de entrega é calculado automaticamente no carrinho com base no CEP informado e na modalidade escolhida (Envio Rápido ou Frete Econômico). O prazo passa a contar no primeiro dia útil após a confirmação do pagamento.',
       'Código de Rastreamento: Assim que o seu pedido for despachado, você receberá o código de rastreamento por e-mail para acompanhar todas as etapas da entrega em tempo real.',
@@ -91,13 +91,13 @@ const SESSIONS: Record<string, PageSession> = {
     title: 'Termos e Condições de Uso',
     breadcrumb: 'CASA / TERMOS E CONDIÇÕES DE USO',
     leadText:
-      'Estes Termos e Condições regem a navegação e as compras realizadas na plataforma digital da Droga Raia, garantindo transparência e segurança jurídica para o consumidor.',
+      'Estes Termos e Condições regem a navegação e as compras realizadas na plataforma digital da Farmácia, garantindo transparência e segurança jurídica para o consumidor.',
     paragraphs: [
       'Ao acessar ou comprar no site, você concorda expressamente com os termos estabelecidos e com a legislação brasileira aplicável, incluindo o Código de Defesa do Consumidor e o Marco Civil da Internet.',
       'Cadastro e Conta: As informações cadastradas devem ser exatas e verídicas. O usuário é o único responsável pela guarda e sigilo de suas credenciais e senha de acesso.',
       'Preços e Promoções: Os valores e promoções são exclusivos para compras efetuadas em nossa loja virtual e válidos durante a vigência da campanha ou enquanto durarem os estoques.',
       'Venda de Medicamentos: A dispensação de remédios sujeitos a controle especial segue rigorosamente as resoluções da ANVISA, sendo obrigatória a apresentação e retenção de receita médica válida.',
-      'Propriedade Intelectual: Todo o conteúdo do site (marcas, logotipos, textos e imagens) é de propriedade exclusiva da Droga Raia ou de seus fornecedores licenciados, sendo proibida a reprodução sem autorização.',
+      'Propriedade Intelectual: Todo o conteúdo do site (marcas, logotipos, textos e imagens) é de propriedade exclusiva da Farmácia ou de seus fornecedores licenciados, sendo proibida a reprodução sem autorização.',
     ],
   },
 };
@@ -595,7 +595,7 @@ const PrivacyPolicyPage: React.FC = () => {
       </main>
 
       {/* 3. Faixa de Benefícios idêntica à imagem de referência */}
-      <section className="inst-benefits" aria-label="Benefícios Droga Raia">
+      <section className="inst-benefits" aria-label="Benefícios Farmácia">
         <div className="inst-benefits__inner">
           {/* Card 1: Envio Rápido */}
           <div className="inst-benefit-card">

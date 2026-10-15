@@ -158,10 +158,10 @@ const FilterDrawer: React.FC<FilterDrawerProps> = ({
               <div className="filter-drawer__accordion-content">
                 <button
                   type="button"
-                  className={`filter-drawer__pill ${filters.seller === 'Raia' ? 'filter-drawer__pill--active' : ''}`}
-                  onClick={() => handleSellerToggle('Raia')}
+                  className={`filter-drawer__pill ${filters.seller === 'Farmácia' ? 'filter-drawer__pill--active' : ''}`}
+                  onClick={() => handleSellerToggle('Farmácia')}
                 >
-                  Raia
+                  Farmácia
                 </button>
               </div>
             )}

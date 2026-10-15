@@ -194,7 +194,7 @@ const MontaQueDescontaPage: React.FC = () => {
           <Zap size={24} className="monta-page__benefit-icon" />
           <div>
             <strong>Frete Grátis</strong>
-            <p>Frete grátis em pedidos acima de R$ 149,90 ou retire na Droga Raia mais próxima.</p>
+            <p>Frete grátis em pedidos acima de R$ 149,90 ou retire na Farmácia mais próxima.</p>
           </div>
         </div>
       </div>

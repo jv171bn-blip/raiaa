@@ -14,7 +14,7 @@ export const RaiaLoadingBasket: React.FC = () => {
           </clipPath>
         </defs>
 
-        {/* Soft cream background circle matching Drogaraia app */}
+        {/* Soft cream background circle matching the app theme */}
         <circle cx="100" cy="100" r="95" fill="#F4EFE6" />
 
         {/* Clipped content so nothing bleeds outside the circle */}
@@ -27,7 +27,7 @@ export const RaiaLoadingBasket: React.FC = () => {
             <rect x="46" y="80" width="22" height="14" rx="2" fill="#FFFFFF" opacity="0.9" />
             <line x1="49" y1="85" x2="65" y2="85" stroke="#E2E8F0" strokeWidth="2" strokeLinecap="round" />
 
-            {/* Droga Raia Medicine / Care Box (Teal & White) */}
+            {/* Farmácia Medicine / Care Box (Teal & White) */}
             <rect x="66" y="66" width="34" height="54" rx="4" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1" />
             <rect x="66" y="66" width="34" height="13" rx="3" fill="#007F91" />
             {/* Raia Cross */}

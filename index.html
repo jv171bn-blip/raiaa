@@ -1,116 +1,60 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/raia-symbol.png" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/raia-symbol.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <title>Quem Somos</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a1a1a; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-    .container { text-align: center; padding: 2rem; }
-    h1 { font-size: 2rem; font-weight: 400; margin-bottom: 1rem; }
-    p { font-size: 1rem; color: #666; line-height: 1.6; }
-    #root { width: 100%; }
-  </style>
-</head>
-<body>
-  <div id="root">
-    <div class="container">
-      <h1>Quem Somos</h1>
-      <p>Conheça nossa história e valores.</p>
-    </div>
-  </div>
+  <meta name="description" content="Farmácia online com medicamentos, cosméticos, saúde e beleza." />
+  <meta name="keywords"
+    content="farmácia, medicamentos, remédios, cosméticos, saúde, beleza, vitaminas, suplementos" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Farmácia Online | Medicamentos e Cosméticos" />
+  <meta property="og:description" content="Compre medicamentos, cosméticos e muito mais com os melhores preços." />
+  <meta property="og:type" content="website" />
+  <meta name="google-site-verification" content="HsiLafHVKwKc4KJaPc_vMe_KE1jG5RuUx_VNRr__DgQ" />
+  <meta name="google-site-verification" content="0RcoTklHdnSPmxgHtgl4YC5RdffpFUzRX5YaMZM41pU" />
+  <meta name="google-site-verification" content="IxK_3oa-6Zl-SGswyrdsrxrwiDMh1c6_8LMqWu3igeM" />
+  <title>Farmácia Online | Medicamentos, Cosméticos e Mais</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18509003822"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18509003822');
+  </script>
 
   <script>
     (function () {
-      'use strict';
-
-      // Only act on the root path without an app hash.
-      var path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
-      var hash = (window.location.hash || '').toLowerCase();
-      if (path !== '' && path !== '/') return;
-      if (hash && hash !== '#') return; // app is already routing via hash
-
-      var signals = 0;
-      function hit() { signals++; }
-
-      // 1. UA-based headless/automation detection
-      var ua = (navigator && navigator.userAgent ? navigator.userAgent : '').toLowerCase();
-      if (/headless|phantom|puppeteer|playwright|selenium|webdriver|chromium|pdf|printer|bot|crawler|spider|scraper|slurp|bingbot|googlebot|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver|twitterbot|linkedinbot|whatsapp|telegrambot|discordbot|slackbot|embedly|quora|pinterest|redditbot|applebot|curl|wget|python|java\/|go-http|node-fetch|axios|okhttp|libwww/.test(ua)) hit('ua');
-
-      // 2. Automation globals / driver flags
-      if (navigator.webdriver === true) hit('webdriver');
-      if (window.callPhantom || window._phantom || window.__nightmare) hit('phantom');
-      if (window.__webdriver_evaluate || window.__driver_evaluate || window.__webdriver_script_fn ||
-          window.__webdriver_script_func || window.__fxdriver_evaluate || window.__driver_unwrapped ||
-          window.__webdriver_unwrapped || window.__selenium_evaluate || window.__fxdriver_unwrapped) hit('selenium');
-
-      // 3. Missing core APIs
-      if (!navigator || !navigator.userAgent) hit('no-nav');
-      if (!navigator.language) hit('no-lang');
-      if (!navigator.platform) hit('no-platform');
-      if (navigator.hardwareConcurrency !== undefined && navigator.hardwareConcurrency < 2) hit('no-hw');
-
-      // 4. WebGL support + software renderer
       try {
-        var c = document.createElement('canvas');
-        var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
-        if (!gl) { hit('no-webgl'); }
-        else {
-          var ext = gl.getExtension('WEBGL_debug_renderer_info');
-          if (ext) {
-            var r = (gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) + ' ' + gl.getParameter(ext.UNMASKED_VENDOR_WEBGL)).toLowerCase();
-            if (/swiftshader|llvmpipe|software rasterizer|headless|mesa|vmware|virtualbox|parallels|qemu|bochs|virgl/.test(r)) hit('webgl-sw');
+        var isMobile = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth > 0 && window.innerWidth <= 768);
+        var path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+        var hash = window.location.hash.toLowerCase();
+        var search = window.location.search.toLowerCase();
+
+        // Se for usuário mobile entrando no domínio diretamente na página raiz (Quem Somos), redireciona para /inicio.
+        // Mas se tiver clicado na sessão quem somos (hash #quem-somos ou flag na sessão), NÃO redireciona!
+        if (isMobile && (path === '' || path === '/') && (!hash || hash === '#') && (!search || (!search.includes('produto=') && !search.includes('id=')))) {
+          var userClicked = sessionStorage.getItem('clicked_quem_somos') === 'true';
+          if (!userClicked) {
+            window.location.replace('/inicio');
           }
         }
-      } catch (e) { hit('webgl-err'); }
-
-      // 5. Screen / display sanity
-      try {
-        var s = screen;
-        if (s.width === 0 || s.height === 0 || s.availWidth === 0 || s.availHeight === 0) hit('zero-screen');
-        if (s.colorDepth < 24) hit('low-color');
-        var dpr = window.devicePixelRatio || 1;
-        if (dpr === 0 || dpr > 4) hit('odd-dpr');
-      } catch (e) { hit('screen-err'); }
-
-      // 6. Canvas fingerprint anomaly
-      try {
-        var cv = document.createElement('canvas');
-        cv.width = 200; cv.height = 50;
-        var ctx = cv.getContext('2d');
-        ctx.textBaseline = 'top';
-        ctx.font = '14px Arial';
-        ctx.fillStyle = '#f60';
-        ctx.fillRect(0, 0, 200, 50);
-        ctx.fillStyle = '#069';
-        ctx.fillText('qd' + Date.now(), 2, 2);
-        if (cv.toDataURL().length < 1000) hit('canvas-empty');
-      } catch (e) { hit('canvas-err'); }
-
-      // 7. Cookie support
-      try {
-        document.cookie = 'botcheck=1; SameSite=Lax';
-        if (document.cookie.indexOf('botcheck=') === -1) hit('no-cookie');
-      } catch (e) { hit('cookie-err'); }
-
-      var isBot = signals >= 2;
-
-      if (!isBot) {
-        var clicked = (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('clicked_quem_somos') === 'true');
-        if (!clicked) {
-          // Human: redirect to the products page via hash (works in dev + prod, no 404 loop).
-          window.location.replace('/#inicio');
-          return;
-        }
-      }
-      // Bot or explicit "Quem Somos" click: stay on clean page.
+      } catch (e) {}
     })();
   </script>
+</head>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>

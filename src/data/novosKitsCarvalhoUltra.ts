@@ -22,11 +22,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo, Máscara e Ampola Divine – Braé. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo, Máscara e Ampola Divine – Braé. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60001",
     "size": "Kit"
@@ -47,11 +47,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Antiqueda Alpecin Caffeine C1 250ml 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Antiqueda Alpecin Caffeine C1 250ml 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60002",
     "size": "250ml"
@@ -72,11 +72,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Suave + Condicionador + Deo Colônia Melancia Dolce Pet. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Suave + Condicionador + Deo Colônia Melancia Dolce Pet. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60003",
     "size": "Kit"
@@ -97,11 +97,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Antiqueda Alpecin Caffeine Black Edition 250ml 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60005",
     "size": "250ml"
@@ -109,7 +109,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60006,
     "name": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Baby Cães e Gatos",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Pet",
     "subcategory": "Higiene Pet",
     "price": 180.87,
@@ -122,11 +122,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Baby Cães e Gatos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Baby Cães e Gatos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60006",
     "size": "Kit"
@@ -147,11 +147,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Anticaspa Darrow Doctar Plus Intensivo 2 Unidades com 240ml cada. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Anticaspa Darrow Doctar Plus Intensivo 2 Unidades com 240ml cada. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60007",
     "size": "2 Unidades"
@@ -159,7 +159,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60008,
     "name": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Cereja e Avelã Cães e Gatos",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Pet",
     "subcategory": "Higiene Pet",
     "price": 180.87,
@@ -172,11 +172,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Cereja e Avelã Cães e Gatos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Suave + Condicionador Topázio + Deo Colônia Cereja e Avelã Cães e Gatos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60008",
     "size": "Kit"
@@ -197,11 +197,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo 250ml + Condicionador 230ml + 1 Cartela De Adesivos Divertidamente 2 Nutriex. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo 250ml + Condicionador 230ml + 1 Cartela De Adesivos Divertidamente 2 Nutriex. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60009",
     "size": "250ml"
@@ -222,11 +222,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo 2 Em 1 250ml + Sabonete Liquido 250ml + 1 Cartela De Adesivos Toy Story Nutriex. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo 2 Em 1 250ml + Sabonete Liquido 250ml + 1 Cartela De Adesivos Toy Story Nutriex. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60010",
     "size": "250ml"
@@ -247,11 +247,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo Suave + Condicionador Topázio Cereja e Avelã Dolce Pet para Cães e Gatos - 500Ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60011",
     "size": "500Ml"
@@ -272,11 +272,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Shampoo 360ml + Condicionador 360ml + Máscara de Hidratação 3 Minute Miracle 236ml Aussie Btx Effect. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Shampoo 360ml + Condicionador 360ml + Máscara de Hidratação 3 Minute Miracle 236ml Aussie Btx Effect. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60012",
     "size": "360ml"
@@ -297,11 +297,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kerasys Kit (Shampoo Revitalizing + Condicionador Repairing) 180Ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kerasys Kit (Shampoo Revitalizing + Condicionador Repairing) 180Ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60013",
     "size": "180Ml"
@@ -322,11 +322,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Siàge DermoHair Shampoo 300ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60014",
     "size": "300ml"
@@ -347,11 +347,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Seda Ceramidas Shampoo 300ml + Condicionador 190ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Seda Ceramidas Shampoo 300ml + Condicionador 190ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60015",
     "size": "300ml"
@@ -372,11 +372,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Widi Care Juba Shampoo 500ml + Condicionador 500ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Widi Care Juba Shampoo 500ml + Condicionador 500ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60016",
     "size": "500ml"
@@ -397,11 +397,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Eudora Siàge Glow Expert Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60018",
     "size": "250ml"
@@ -422,11 +422,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Wella Invigo Nutri Enrich Shampoo 250ml + Máscara 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Wella Invigo Nutri Enrich Shampoo 250ml + Máscara 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60019",
     "size": "250ml"
@@ -447,11 +447,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Elseve Glycolic Gloss Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Elseve Glycolic Gloss Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60021",
     "size": "375ml"
@@ -472,11 +472,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Tio Nacho Engrossador Shampoo 415ml + Condicionador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Tio Nacho Engrossador Shampoo 415ml + Condicionador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60022",
     "size": "415ml"
@@ -497,11 +497,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Eudora Siàge Nutri Rose Shampoo Condicionador 250/200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Eudora Siàge Nutri Rose Shampoo Condicionador 250/200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60023",
     "size": "200ml"
@@ -522,11 +522,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Elseve Liso dos Sonhos Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Elseve Liso dos Sonhos Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60025",
     "size": "375ml"
@@ -547,11 +547,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit TRESemmé Brilho Lamelar Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit TRESemmé Brilho Lamelar Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60026",
     "size": "350ml"
@@ -572,11 +572,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Wella Professionals Shampoo Oil Reflections 1l – 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Wella Professionals Shampoo Oil Reflections 1l – 2 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60027",
     "size": "2 unidades"
@@ -597,11 +597,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Loreal Absolut Repair Shampoo 750ml e Condicionador 750ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Loreal Absolut Repair Shampoo 750ml e Condicionador 750ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60028",
     "size": "750ml"
@@ -622,11 +622,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Pantene Pro-V Hidratação Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Pantene Pro-V Hidratação Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60029",
     "size": "350ml"
@@ -647,11 +647,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Dove Bond Intense Repair Shampoo 350ml + Condicionador 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60030",
     "size": "350ml"
@@ -672,11 +672,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Siàge Eudora Glow Expert Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60031",
     "size": "250ml"
@@ -697,11 +697,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Eudora Siàge Hidratação Micelar Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Eudora Siàge Hidratação Micelar Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60032",
     "size": "250ml"
@@ -722,11 +722,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Siàge Eudora Liso Intenso Shampoo 250ml + Condicionador 125ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60035",
     "size": "250ml"
@@ -747,11 +747,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Wella Professionals Fusion Double Salon – Shampoo (2 Unidades). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Wella Professionals Fusion Double Salon – Shampoo (2 Unidades). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60036",
     "size": "2 Unidades"
@@ -772,11 +772,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Eudora Siage Hair-plastia Shampoo 250ml Condicionador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60037",
     "size": "250ml"
@@ -797,11 +797,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Pantene Pro-V Liso Extremo Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Pantene Pro-V Liso Extremo Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60038",
     "size": "350ml"
@@ -822,11 +822,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Vichy Dercos Anticaspa Cabelos Secos Shampoo 300g + Refil 200g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Vichy Dercos Anticaspa Cabelos Secos Shampoo 300g + Refil 200g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60040",
     "size": "300g"
@@ -847,11 +847,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Bebê Natureza Shampoo 230ml + Condicionador 100ml + Colônia 30ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Bebê Natureza Shampoo 230ml + Condicionador 100ml + Colônia 30ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60041",
     "size": "230ml"
@@ -872,11 +872,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Elseve Óleo Extraordinário Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Elseve Óleo Extraordinário Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60042",
     "size": "375ml"
@@ -897,11 +897,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Óleo para Barba Goot Wood + Shampoo Barba Goot Embaixador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Óleo para Barba Goot Wood + Shampoo Barba Goot Embaixador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60043",
     "size": "200ml"
@@ -922,11 +922,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Bio Extratus Umectante Óleo de Coco Shampoo Condicionador 1kg. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Bio Extratus Umectante Óleo de Coco Shampoo Condicionador 1kg. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60044",
     "size": "1kg"
@@ -947,11 +947,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Lola From Rio Rapunzel - Shampoo 250ml + Tônico 250ml + Máscara 450g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Lola From Rio Rapunzel - Shampoo 250ml + Tônico 250ml + Máscara 450g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60046",
     "size": "250ml"
@@ -972,11 +972,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit TRESemmé Hidratação Profunda Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit TRESemmé Hidratação Profunda Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60047",
     "size": "350ml"
@@ -997,11 +997,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Eudora Siàge Cauterização dos Lisos Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Eudora Siàge Cauterização dos Lisos Shampoo 250ml + Máscara 250g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60048",
     "size": "250ml"
@@ -1022,11 +1022,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Senscience Smooth – Shampoo 280ml + Condicionador 240ml + C.P.R 25ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Senscience Smooth – Shampoo 280ml + Condicionador 240ml + C.P.R 25ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60049",
     "size": "280ml"
@@ -1047,11 +1047,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Tio Nacho Reconstrutor Total Shampoo 415ml + Condicionador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Tio Nacho Reconstrutor Total Shampoo 415ml + Condicionador 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60050",
     "size": "415ml"
@@ -1072,11 +1072,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit TRESemmé Reconstrução e Força Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit TRESemmé Reconstrução e Força Shampoo 350ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60052",
     "size": "350ml"
@@ -1097,11 +1097,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Pantene Pro-V Brilhos Extremo Shampoo 400ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Pantene Pro-V Brilhos Extremo Shampoo 400ml + Condicionador 175ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60053",
     "size": "400ml"
@@ -1122,11 +1122,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit King C. Gillette para Barba Shampoo 241ml + Sérum Preenchedor 50ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit King C. Gillette para Barba Shampoo 241ml + Sérum Preenchedor 50ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60054",
     "size": "241ml"
@@ -1147,11 +1147,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Wella Professionals Oil Reflections Shampoo 250ml + Máscara 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Wella Professionals Oil Reflections Shampoo 250ml + Máscara 150ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60055",
     "size": "250ml"
@@ -1172,11 +1172,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit L’Oréal Paris Reparação Total 5 Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit L’Oréal Paris Reparação Total 5 Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60056",
     "size": "375ml"
@@ -1197,11 +1197,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Principia Antiqueda (2 Produtos) – Shampoo 250ml + Condicionador 250ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Principia Antiqueda (2 Produtos) – Shampoo 250ml + Condicionador 250ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60057",
     "size": "2 Produtos"
@@ -1222,11 +1222,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit L’Oréal Elseve Hidra Hialurônico Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit L’Oréal Elseve Hidra Hialurônico Shampoo 375ml + Condicionador 170ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60058",
     "size": "375ml"
@@ -1247,11 +1247,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Hidratei SHRP Shampoo 250ml + Condicionador 200ml + Mini Proteína 10g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Hidratei SHRP Shampoo 250ml + Condicionador 200ml + Mini Proteína 10g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60059",
     "size": "250ml"
@@ -1272,11 +1272,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Vuelo Shampoo Liso +Leave-In Explosão de Encantos para Cães e Gatos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Vuelo Shampoo Liso +Leave-In Explosão de Encantos para Cães e Gatos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60060",
     "size": "Kit"
@@ -1284,7 +1284,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60061,
     "name": "Kit Definição",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza e Perfumaria",
     "subcategory": "Kits Especiais",
     "price": 105.27,
@@ -1297,11 +1297,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Definição. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Definição. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60061",
     "size": "Kit"
@@ -1309,7 +1309,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60062,
     "name": "Kit Ps-03 + Lh-01",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Dermocosméticos",
     "subcategory": "Cuidados Faciais",
     "price": 91.25,
@@ -1322,11 +1322,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Ps-03 + Lh-01. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Ps-03 + Lh-01. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60062",
     "size": "Kit"
@@ -1334,7 +1334,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60063,
     "name": "Kit Base Completa",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Dermocosméticos",
     "subcategory": "Cuidados Faciais",
     "price": 118.16,
@@ -1347,11 +1347,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Base Completa. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Base Completa. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60063",
     "size": "Kit"
@@ -1359,7 +1359,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60064,
     "name": "Kit Treino Noturno",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 85.22,
@@ -1372,11 +1372,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Treino Noturno. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Treino Noturno. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60064",
     "size": "Kit"
@@ -1384,7 +1384,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60065,
     "name": "Kit Imunidade Homem",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 94.52,
@@ -1397,11 +1397,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Imunidade Homem. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Imunidade Homem. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60065",
     "size": "Kit"
@@ -1422,11 +1422,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Blancy Cis + Olhos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Blancy Cis + Olhos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60066",
     "size": "Kit"
@@ -1434,7 +1434,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60067,
     "name": "Kit Creatina G-Gummy",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 135.9,
@@ -1447,11 +1447,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Creatina G-Gummy. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Creatina G-Gummy. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60067",
     "size": "Kit"
@@ -1459,7 +1459,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60068,
     "name": "Kit Foco e Desempenho",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 32.44,
@@ -1472,11 +1472,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Foco e Desempenho. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Foco e Desempenho. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60068",
     "size": "Kit"
@@ -1484,7 +1484,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60069,
     "name": "Kit Longevidade Ativa",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 127.97,
@@ -1497,11 +1497,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Longevidade Ativa. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Longevidade Ativa. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60069",
     "size": "Kit"
@@ -1509,7 +1509,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60070,
     "name": "Kit Produtividade Diária",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 129.98,
@@ -1522,11 +1522,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Produtividade Diária. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Produtividade Diária. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60070",
     "size": "Kit"
@@ -1534,7 +1534,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60071,
     "name": "Kit Creatina Creapure 500g",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 124.07,
@@ -1547,11 +1547,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Creatina Creapure 500g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Creatina Creapure 500g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60071",
     "size": "500g"
@@ -1572,11 +1572,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Higiene Dental Azul Kuka. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Higiene Dental Azul Kuka. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60072",
     "size": "Kit"
@@ -1584,7 +1584,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60073,
     "name": "Kit 6x Bebida Láctea Morango",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 31.39,
@@ -1597,11 +1597,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 6x Bebida Láctea Morango. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 6x Bebida Láctea Morango. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60073",
     "size": "Kit"
@@ -1609,7 +1609,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60074,
     "name": "Kit Digestão -formulados Farma",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 22.75,
@@ -1622,11 +1622,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Digestão -formulados Farma. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Digestão -formulados Farma. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60074",
     "size": "Kit"
@@ -1634,7 +1634,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60075,
     "name": "Kit 12x Bebida Láctea Morango",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 55,
@@ -1647,11 +1647,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 12x Bebida Láctea Morango. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 12x Bebida Láctea Morango. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60075",
     "size": "Kit"
@@ -1659,7 +1659,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60076,
     "name": "Kit 6x Bebida Láctea Baunilha",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 25.93,
@@ -1672,11 +1672,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 6x Bebida Láctea Baunilha. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 6x Bebida Láctea Baunilha. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60076",
     "size": "Kit"
@@ -1684,7 +1684,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60077,
     "name": "Kit 12x Bebida Láctea Baunilha",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 45.45,
@@ -1697,11 +1697,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 12x Bebida Láctea Baunilha. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 12x Bebida Láctea Baunilha. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60077",
     "size": "Kit"
@@ -1709,7 +1709,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60078,
     "name": "Kit 6x Bebida Láctea Chocolate",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 28.53,
@@ -1722,11 +1722,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 6x Bebida Láctea Chocolate. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 6x Bebida Láctea Chocolate. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60078",
     "size": "Kit"
@@ -1734,7 +1734,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60079,
     "name": "Kit Creatina Monohidratada 1kg",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 94.51,
@@ -1747,11 +1747,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Creatina Monohidratada 1kg. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Creatina Monohidratada 1kg. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60079",
     "size": "1kg"
@@ -1772,11 +1772,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit TRUSS Color Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit TRUSS Color Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60081",
     "size": "2 Produtos"
@@ -1797,11 +1797,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit TRUSS Blond Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit TRUSS Blond Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60082",
     "size": "2 Produtos"
@@ -1809,7 +1809,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60083,
     "name": "Kit 12x Bebida Láctea Chocolate",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Vitaminas e Suplementos",
     "subcategory": "Suplementos Alimentares",
     "price": 49.99,
@@ -1822,11 +1822,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 12x Bebida Láctea Chocolate. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 12x Bebida Láctea Chocolate. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60083",
     "size": "Kit"
@@ -1834,7 +1834,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60084,
     "name": "Kit Força Feminina: Purple Berry",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza e Perfumaria",
     "subcategory": "Kits Especiais",
     "price": 130.97,
@@ -1847,11 +1847,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Força Feminina: Purple Berry. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Força Feminina: Purple Berry. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60084",
     "size": "Kit"
@@ -1872,11 +1872,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 4 Fresubin Lp Baunilha 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 4 Fresubin Lp Baunilha 200ml. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60085",
     "size": "200ml"
@@ -1897,11 +1897,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Essencial Avancado Principia. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Essencial Avancado Principia. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60086",
     "size": "Kit"
@@ -1922,11 +1922,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit TRUSS Miracle Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit TRUSS Miracle Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60087",
     "size": "2 Produtos"
@@ -1947,11 +1947,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit C/ 2 Epidrat Lábios Fps - 30 5,5g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit C/ 2 Epidrat Lábios Fps - 30 5,5g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60088",
     "size": "5g"
@@ -1972,11 +1972,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 4 Fresubin Creme Baunilha 125g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 4 Fresubin Creme Baunilha 125g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60089",
     "size": "125g"
@@ -1997,11 +1997,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 5X L-Glutamine – 120G – Probiótica. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 5X L-Glutamine – 120G – Probiótica. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60090",
     "size": "120G"
@@ -2022,11 +2022,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit C/ 3 Lip Oil - Epidrat Hyalu Berry. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit C/ 3 Lip Oil - Epidrat Hyalu Berry. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60091",
     "size": "Kit"
@@ -2047,11 +2047,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit C/ 3 Lip Oil - Epidrat Hyalu Choco. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit C/ 3 Lip Oil - Epidrat Hyalu Choco. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60092",
     "size": "Kit"
@@ -2072,11 +2072,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Needs 1 Pincel Kabuki + 1 Esponja. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Needs 1 Pincel Kabuki + 1 Esponja. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60093",
     "size": "Kit"
@@ -2097,11 +2097,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Técnica Loc Dedoliss – Soul Power. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Técnica Loc Dedoliss – Soul Power. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60094",
     "size": "Kit"
@@ -2122,11 +2122,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 2 Osso Pro Km – 30 Cpr – Kley Hertz. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 2 Osso Pro Km – 30 Cpr – Kley Hertz. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60095",
     "size": "30 Cpr"
@@ -2147,11 +2147,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Antissinais Intensivo Principia. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Antissinais Intensivo Principia. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60096",
     "size": "Kit"
@@ -2172,11 +2172,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Para Nebulizador Infantil Omron. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Para Nebulizador Infantil Omron. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60097",
     "size": "Kit"
@@ -2197,11 +2197,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Pente de Cabelo Needs 2 Unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Pente de Cabelo Needs 2 Unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60098",
     "size": "2 Unidades"
@@ -2222,11 +2222,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Dia a Dia Labotrat Pêssego C/2un. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Dia a Dia Labotrat Pêssego C/2un. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60099",
     "size": "Kit"
@@ -2247,11 +2247,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Para Nebulizador Infantil G-tech. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Para Nebulizador Infantil G-tech. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60100",
     "size": "Kit"
@@ -2272,11 +2272,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Para Nebulizador Infantil Nevoni. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Para Nebulizador Infantil Nevoni. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60101",
     "size": "Kit"
@@ -2284,7 +2284,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60102,
     "name": "Kit Proteção Completa Ps03 + Ps01 + Cm-01",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Dermocosméticos",
     "subcategory": "Cuidados Faciais",
     "price": 126.92,
@@ -2297,11 +2297,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Proteção Completa Ps03 + Ps01 + Cm-01. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Proteção Completa Ps03 + Ps01 + Cm-01. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60102",
     "size": "Kit"
@@ -2322,11 +2322,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit C/ 3 Lip Oil - Epidrat Hyalu sem Cor. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit C/ 3 Lip Oil - Epidrat Hyalu sem Cor. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60103",
     "size": "Kit"
@@ -2347,11 +2347,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Redken All Soft Heavy (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Redken All Soft Heavy (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60106",
     "size": "3 Produtos"
@@ -2372,11 +2372,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit. 10Un – Ov Sucupira 20Ml – (Amazonleve). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit. 10Un – Ov Sucupira 20Ml – (Amazonleve). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60107",
     "size": "20Ml"
@@ -2397,11 +2397,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit. 08Un – Ov Sucupira 20Ml (Amazonleve). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit. 08Un – Ov Sucupira 20Ml (Amazonleve). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60108",
     "size": "20Ml"
@@ -2422,11 +2422,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Técnica Loc Curl Clump – Soul Power. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Técnica Loc Curl Clump – Soul Power. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60109",
     "size": "Kit"
@@ -2447,11 +2447,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 3 Vitamina A + e 100Ml Bio Extratus. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 3 Vitamina A + e 100Ml Bio Extratus. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60110",
     "size": "100Ml"
@@ -2472,11 +2472,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Kérastase Genesis Deux (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Kérastase Genesis Deux (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60112",
     "size": "2 Produtos"
@@ -2497,11 +2497,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Cutelaria Mundial Alicate + Espátula. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Cutelaria Mundial Alicate + Espátula. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60113",
     "size": "Kit"
@@ -2522,11 +2522,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Kérastase Genesis Trois (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Kérastase Genesis Trois (3 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60114",
     "size": "3 Produtos"
@@ -2547,11 +2547,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 3x: Psyllium Sem Glúten Vitalin 100g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 3x: Psyllium Sem Glúten Vitalin 100g. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60115",
     "size": "100g"
@@ -2572,11 +2572,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Pinças Belliz Enox Ponta Dourada C/3. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Pinças Belliz Enox Ponta Dourada C/3. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60116",
     "size": "Kit"
@@ -2597,11 +2597,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Sebastian Penetraitt Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Sebastian Penetraitt Duo (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60117",
     "size": "2 Produtos"
@@ -2622,11 +2622,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Kérastase Curl Manifesto (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Kérastase Curl Manifesto (2 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60118",
     "size": "2 Produtos"
@@ -2647,11 +2647,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Lowell Cacho Mágico Full (6 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Lowell Cacho Mágico Full (6 Produtos). Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60119",
     "size": "6 Produtos"
@@ -2672,11 +2672,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Lenço Umedecido Huggies Recém Nascido 192 unidades em 4 pacotes. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Lenço Umedecido Huggies Recém Nascido 192 unidades em 4 pacotes. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60120",
     "size": "192 unidades"
@@ -2697,11 +2697,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Inoar Cicatrifios Kit com Shampoo 1L + Condicionador 1L. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Inoar Cicatrifios Kit com Shampoo 1L + Condicionador 1L. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60121",
     "size": "Kit"
@@ -2722,11 +2722,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit de Escovas De Dentes Colgate Slim Soft Black Com 4 Unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit de Escovas De Dentes Colgate Slim Soft Black Com 4 Unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60122",
     "size": "4 Unidades"
@@ -2747,11 +2747,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Sabonete em Barra Nivea Creme Care 90g com 6 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Sabonete em Barra Nivea Creme Care 90g com 6 unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60123",
     "size": "90g"
@@ -2772,11 +2772,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 2x Hipercalórico 6 Six Bulking Baunilha 6kg – Bodybuilders. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 2x Hipercalórico 6 Six Bulking Baunilha 6kg – Bodybuilders. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60124",
     "size": "6kg"
@@ -2797,11 +2797,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit 2 Ora-Pro-Nóbis + Cúrcuma + Gengibre 240Cáps 500mg Status Verde. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit 2 Ora-Pro-Nóbis + Cúrcuma + Gengibre 240Cáps 500mg Status Verde. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60127",
     "size": "Kit"
@@ -2822,11 +2822,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Wella Professionals Invigo Nutri Enrich Salon Trio 3 Produtos. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60128",
     "size": "3 Produtos"
@@ -2834,7 +2834,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60134,
     "name": "KITS NUDE NATURAL LIPS-FOUNDERS MINI LIP",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza",
     "subcategory": "Maquiagem",
     "price": 112.34,
@@ -2847,11 +2847,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KITS NUDE NATURAL LIPS-FOUNDERS MINI LIP. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KITS NUDE NATURAL LIPS-FOUNDERS MINI LIP. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60134",
     "size": "Kit"
@@ -2872,11 +2872,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT DE BLUSH NARS ORGASM MATTE & GLOW. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT DE BLUSH NARS ORGASM MATTE & GLOW. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60135",
     "size": "Kit"
@@ -2897,11 +2897,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT BENEFIT THE POREFESSIONAL MATTE MAKERS. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT BENEFIT THE POREFESSIONAL MATTE MAKERS. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60136",
     "size": "Kit"
@@ -2922,11 +2922,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "THAT GIRL KITTEN EYES 1UNID. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "THAT GIRL KITTEN EYES 1UNID. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60137",
     "size": "1UNID"
@@ -2947,11 +2947,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT MÁSCARA DE CILIOS E BLUSH RARE BEAUTY. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT MÁSCARA DE CILIOS E BLUSH RARE BEAUTY. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60139",
     "size": "Kit"
@@ -2959,7 +2959,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60140,
     "name": "KIT FANFEST BOOSTER 12",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza e Perfumaria",
     "subcategory": "Kits Especiais",
     "price": 140.55,
@@ -2972,11 +2972,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT FANFEST BOOSTER 12. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT FANFEST BOOSTER 12. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60140",
     "size": "Kit"
@@ -2997,11 +2997,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT PRESENTEÁVEL SEPHORA COLLECTION CRUSH ON YOU. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT PRESENTEÁVEL SEPHORA COLLECTION CRUSH ON YOU. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60141",
     "size": "Kit"
@@ -3009,7 +3009,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60142,
     "name": "KIT MASCARA DE CILIOS E LAPIS CHOCOEYES",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza",
     "subcategory": "Maquiagem",
     "price": 49.64,
@@ -3022,11 +3022,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT MASCARA DE CILIOS E LAPIS CHOCOEYES. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT MASCARA DE CILIOS E LAPIS CHOCOEYES. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60142",
     "size": "Kit"
@@ -3047,11 +3047,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT PARA OS OLHOS ESTÉE LAUDER. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT PARA OS OLHOS ESTÉE LAUDER. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60143",
     "size": "Kit"
@@ -3059,7 +3059,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60144,
     "name": "KITS NUDE BEACH 6PC EYE PENCIL PALETTE",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza",
     "subcategory": "Maquiagem",
     "price": 248.19,
@@ -3072,11 +3072,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KITS NUDE BEACH 6PC EYE PENCIL PALETTE. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KITS NUDE BEACH 6PC EYE PENCIL PALETTE. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60144",
     "size": "Kit"
@@ -3097,11 +3097,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Essenciais de Skincare e Maquiagem Clinique. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Essenciais de Skincare e Maquiagem Clinique. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60145",
     "size": "Kit"
@@ -3122,11 +3122,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT DELINEADOR + MÁSCARA DE CÍLIOS MAC METAMORPHOSIS. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT DELINEADOR + MÁSCARA DE CÍLIOS MAC METAMORPHOSIS. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60146",
     "size": "Kit"
@@ -3147,11 +3147,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT BENEFIT GET ROLLIN. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT BENEFIT GET ROLLIN. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60147",
     "size": "Kit"
@@ -3172,11 +3172,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT BENEFIT POP, LOCK & LASH IT. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT BENEFIT POP, LOCK & LASH IT. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60148",
     "size": "Kit"
@@ -3197,11 +3197,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "KIT BENEFIT BAD & BOUNCY. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "KIT BENEFIT BAD & BOUNCY. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60149",
     "size": "Kit"
@@ -3222,11 +3222,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Kit Nutren Senior Baunilha 740g com 2 Unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Kit Nutren Senior Baunilha 740g com 2 Unidades. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60150",
     "size": "740g"
@@ -3247,11 +3247,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Nutren a-z Multi Vitamínico E Mineral 60 Caps. Gel – Nestlé. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Nutren a-z Multi Vitamínico E Mineral 60 Caps. Gel – Nestlé. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60154",
     "size": "60 Caps"
@@ -3259,7 +3259,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60155,
     "name": "SOFT PINCH MINI LIP AND CHEEK SET",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza",
     "subcategory": "Maquiagem",
     "price": 140.55,
@@ -3272,11 +3272,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "SOFT PINCH MINI LIP AND CHEEK SET. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "SOFT PINCH MINI LIP AND CHEEK SET. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60155",
     "size": "Kit"
@@ -3284,7 +3284,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60156,
     "name": "RAMADAN SETS PINK LINK 7.20G + 20.6ML",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza e Perfumaria",
     "subcategory": "Kits Especiais",
     "price": 196.98,
@@ -3297,11 +3297,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "RAMADAN SETS PINK LINK 7.20G + 20.6ML. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "RAMADAN SETS PINK LINK 7.20G + 20.6ML. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60156",
     "size": "20G"
@@ -3309,7 +3309,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60157,
     "name": "POREFESSIONAL PRIME E HOLD SET 52ML",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza",
     "subcategory": "Maquiagem",
     "price": 149.96,
@@ -3322,11 +3322,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "POREFESSIONAL PRIME E HOLD SET 52ML. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "POREFESSIONAL PRIME E HOLD SET 52ML. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60157",
     "size": "52ML"
@@ -3334,7 +3334,7 @@ export const novosKitsCarvalhoUltra: Product[] = [
   {
     "id": 60158,
     "name": "MAKEUP BAG MVP’S 22ML + 1",
-    "brand": "Droga Raia",
+    "brand": "Farmácia",
     "category": "Beleza",
     "subcategory": "Maquiagem",
     "price": 187.16,
@@ -3347,11 +3347,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "MAKEUP BAG MVP’S 22ML + 1. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "MAKEUP BAG MVP’S 22ML + 1. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60158",
     "size": "22ML"
@@ -3372,11 +3372,11 @@ export const novosKitsCarvalhoUltra: Product[] = [
       "Oferta",
       "Destaque"
     ],
-    "description": "Imecap Hair Cabelos e Unhas com 90 Cápsulas. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Droga Raia.",
+    "description": "Imecap Hair Cabelos e Unhas com 90 Cápsulas. Produto autêntico de procedência garantida. Ideal para cuidados completos e resultados profissionais com a garantia e pontualidade Farmácia.",
     "bullets": [
       "Fórmula de alta performance e procedência original comprovada.",
       "Kit completo com excelente custo-benefício.",
-      "Entrega rápida e segura garantida pela Droga Raia."
+      "Entrega rápida e segura garantida pela Farmácia."
     ],
     "productCode": "60159",
     "size": "Kit"

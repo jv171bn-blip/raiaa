@@ -28,8 +28,8 @@ const MobileAppBanner: React.FC = () => {
           {/* Raia App Icon */}
           <div className="mobile-app-banner__icon-box">
             <img
-              src="/raia-symbol.png"
-              alt="Droga Raia"
+              src="/favicon.png"
+              alt="Farmácia"
               className="mobile-app-banner__icon-img"
             />
           </div>
@@ -78,7 +78,7 @@ const MobileAppBanner: React.FC = () => {
             <h3 className="mobile-app-error-title">Serviço temporariamente indisponível</h3>
 
             <p className="mobile-app-error-message">
-              O servidor de distribuição do aplicativo Droga Raia está passando por uma manutenção programada de segurança no momento. Você pode continuar aproveitando todos os mesmos descontos e benefícios da semana diretamente pelo nosso site.
+              O servidor de distribuição do aplicativo está passando por uma manutenção programada de segurança no momento. Você pode continuar aproveitando todos os mesmos descontos e benefícios da semana diretamente pelo nosso site.
             </p>
 
             <div className="mobile-app-error-code">

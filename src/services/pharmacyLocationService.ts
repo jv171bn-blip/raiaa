@@ -1,6 +1,6 @@
 /**
  * Pharmacy Location Service
- * Complete, production-grade system for locating real Droga Raia & Drogasil stores
+ * Complete, production-grade system for locating real Farmácia & Drogasil stores
  * based on user address, coordinates, geocoding, and Haversine distance.
  */
 
@@ -25,7 +25,7 @@ export interface GeocodedLocation {
 
 export interface Pharmacy {
   id: string;
-  brand: "Drogasil" | "Droga Raia";
+  brand: "Drogasil" | "Farmácia";
   name: string;
   address: string;
   neighborhood?: string;
@@ -86,7 +86,7 @@ export function formatDistance(meters: number): string {
 }
 
 /* ══════════════════════════════════════════════════════════
-   3. Verified Official Droga Raia & Drogasil Registry (RD Saúde)
+   3. Verified Official Farmácia & Drogasil Registry (RD Saúde)
    All units are 100% genuine, verified physical establishments
    with real GPS coordinates, CNES/ANVISA registry & phones.
    ══════════════════════════════════════════════════════════ */
@@ -111,8 +111,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-cantareira-978',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Tucuruvi Cantareira',
+    brand: 'Farmácia',
+    name: 'Farmácia - Tucuruvi Cantareira',
     address: 'Av. Nova Cantareira, 978',
     neighborhood: 'Tucuruvi',
     city: 'São Paulo',
@@ -160,8 +160,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-cantareira-3245',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Tremembé Cantareira',
+    brand: 'Farmácia',
+    name: 'Farmácia - Tremembé Cantareira',
     address: 'Av. Nova Cantareira, 3245',
     neighborhood: 'Tremembé',
     city: 'São Paulo',
@@ -176,8 +176,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-voluntarios-4037',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Voluntários da Pátria',
+    brand: 'Farmácia',
+    name: 'Farmácia - Voluntários da Pátria',
     address: 'Rua Voluntários da Pátria, 4037',
     neighborhood: 'Santana',
     city: 'São Paulo',
@@ -193,8 +193,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-braz-leme-2097',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Santana Braz Leme',
+    brand: 'Farmácia',
+    name: 'Farmácia - Santana Braz Leme',
     address: 'Av. Braz Leme, 2097',
     neighborhood: 'Santana',
     city: 'São Paulo',
@@ -211,8 +211,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── SÃO PAULO - PAULISTA / BELA VISTA / CENTRO ──
   {
     id: 'rd-raia-paulista-2073',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Conjunto Nacional',
+    brand: 'Farmácia',
+    name: 'Farmácia - Conjunto Nacional',
     address: 'Av. Paulista, 2073',
     neighborhood: 'Bela Vista',
     city: 'São Paulo',
@@ -245,8 +245,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-brigadeiro-2120',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Brigadeiro Luís Antônio',
+    brand: 'Farmácia',
+    name: 'Farmácia - Brigadeiro Luís Antônio',
     address: 'Av. Brigadeiro Luís Antônio, 2120',
     neighborhood: 'Bela Vista',
     city: 'São Paulo',
@@ -279,8 +279,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── SÃO PAULO - PINHEIROS / FARIA LIMA / JARDINS ──
   {
     id: 'rd-raia-teodoro-2043',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Teodoro Sampaio',
+    brand: 'Farmácia',
+    name: 'Farmácia - Teodoro Sampaio',
     address: 'Rua Teodoro Sampaio, 2043',
     neighborhood: 'Pinheiros',
     city: 'São Paulo',
@@ -312,8 +312,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-faria-lima-2232',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Faria Lima / Iguatemi',
+    brand: 'Farmácia',
+    name: 'Farmácia - Faria Lima / Iguatemi',
     address: 'Av. Brg. Faria Lima, 2232',
     neighborhood: 'Jardim Paulistano',
     city: 'São Paulo',
@@ -330,8 +330,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── SÃO PAULO - MOEMA / VILA MARIANA / IBIRAPUERA ──
   {
     id: 'rd-raia-ibirapuera-3103',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Ibirapuera',
+    brand: 'Farmácia',
+    name: 'Farmácia - Ibirapuera',
     address: 'Av. Ibirapuera, 3103',
     neighborhood: 'Moema',
     city: 'São Paulo',
@@ -363,8 +363,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   },
   {
     id: 'rd-raia-domingos-2064',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Domingos de Morais',
+    brand: 'Farmácia',
+    name: 'Farmácia - Domingos de Morais',
     address: 'Rua Domingos de Morais, 2064',
     neighborhood: 'Vila Mariana',
     city: 'São Paulo',
@@ -381,8 +381,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── SÃO PAULO - TATUAPÉ / MOOCA / ZONA LESTE ──
   {
     id: 'rd-raia-tuiuti-2099',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Tatuapé Tuiuti',
+    brand: 'Farmácia',
+    name: 'Farmácia - Tatuapé Tuiuti',
     address: 'Rua Tuiuti, 2099',
     neighborhood: 'Tatuapé',
     city: 'São Paulo',
@@ -415,8 +415,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── RIO DE JANEIRO (Copacabana / Ipanema / Leblon / Centro) ──
   {
     id: 'rd-raia-rj-copa-777',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Copacabana',
+    brand: 'Farmácia',
+    name: 'Farmácia - Copacabana',
     address: 'Av. Nossa Senhora de Copacabana, 777',
     neighborhood: 'Copacabana',
     city: 'Rio de Janeiro',
@@ -451,8 +451,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── BELO HORIZONTE (Savassi / Funcionários) ──
   {
     id: 'rd-raia-bh-savassi-1420',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Savassi',
+    brand: 'Farmácia',
+    name: 'Farmácia - Savassi',
     address: 'Av. Getúlio Vargas, 1420',
     neighborhood: 'Savassi',
     city: 'Belo Horizonte',
@@ -486,8 +486,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── CURITIBA (Batel / Centro) ──
   {
     id: 'rd-raia-cwb-batel-4518',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Batel',
+    brand: 'Farmácia',
+    name: 'Farmácia - Batel',
     address: 'Av. Sete de Setembro, 4518',
     neighborhood: 'Batel',
     city: 'Curitiba',
@@ -521,8 +521,8 @@ export const VERIFIED_REAL_PHARMACIES: Array<Omit<Pharmacy, 'distanceMeters' | '
   // ── CAMPINAS (Cambuí / Guanabara) ──
   {
     id: 'rd-raia-cps-cambui-485',
-    brand: 'Droga Raia',
-    name: 'Droga Raia - Cambuí',
+    brand: 'Farmácia',
+    name: 'Farmácia - Cambuí',
     address: 'Av. Cel. Silva Telles, 485',
     neighborhood: 'Cambuí',
     city: 'Campinas',
@@ -747,12 +747,12 @@ export async function geocodeUserAddress(address: UserAddress): Promise<Geocoded
 /* ══════════════════════════════════════════════════════════
    5. Brand detection & helpers
    ══════════════════════════════════════════════════════════ */
-type Brand = 'Droga Raia' | 'Drogasil';
+type Brand = 'Farmácia' | 'Drogasil';
 
 function detectBrand(...texts: Array<string | undefined>): Brand | null {
   const joined = texts.filter(Boolean).join(' ');
   if (/drogasil/i.test(joined)) return 'Drogasil';
-  if (/\b(droga\s*)?raia\b/i.test(joined)) return 'Droga Raia';
+  if (/\b(droga\s*)?raia\b/i.test(joined)) return 'Farmácia';
   return null;
 }
 
@@ -780,7 +780,7 @@ function buildViewbox(lat: number, lng: number, radiusKm: number): string {
    - Only real POIs (amenity/shop/healthcare), never streets
    - Requests are serialized to respect Nominatim's rate limit
    ══════════════════════════════════════════════════════════ */
-const NOMINATIM_TERMS = ['Drogasil', 'Droga Raia', 'Raia', 'Farmácia Drogasil', 'Farmácia Raia'];
+const NOMINATIM_TERMS = ['Drogasil', 'Farmácia', 'Raia', 'Farmácia Drogasil', 'Farmácia Raia'];
 const NOMINATIM_PAGE_SIZE = 40;
 const NOMINATIM_MAX_PAGES = 3;
 const NOMINATIM_SPACING_MS = 400;
@@ -922,7 +922,7 @@ async function fetchFromGooglePlaces(userLat: number, userLng: number, radiusKm:
 
   const out: Pharmacy[] = [];
 
-  for (const textQuery of ['Drogasil', 'Droga Raia']) {
+  for (const textQuery of ['Drogasil', 'Farmácia']) {
     let pageToken: string | undefined;
     for (let page = 0; page < 3; page++) {
       try {
@@ -1032,7 +1032,7 @@ function dedupePharmacies(list: Pharmacy[]): Pharmacy[] {
 }
 
 /* ══════════════════════════════════════════════════════════
-   9. Progressive Search: Locate ALL nearby Raia & Drogasil
+   9. Progressive Search: Locate ALL nearby Farmácia & Drogasil
    Starts at 10 km (shows every unit in the area) and widens
    to 25 km → 50 km only when the area has very few stores.
    ══════════════════════════════════════════════════════════ */

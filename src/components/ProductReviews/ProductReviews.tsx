@@ -65,7 +65,7 @@ const ProductReviews: React.FC<ProductReviewsProps> = ({ product }) => {
       return;
     }
 
-    const authorName = newAuthor.trim() || 'Cliente Raia';
+    const authorName = newAuthor.trim() || 'Cliente';
     const today = new Date();
     const formattedDate = `${String(today.getDate()).padStart(2, '0')}/${String(
       today.getMonth() + 1

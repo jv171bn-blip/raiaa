@@ -39,18 +39,18 @@ export const heroSlides: HeroSlide[] = [
   },
   {
     id: 4,
-    title: 'Aniversário Raia',
+    title: 'Aniversário',
     image: '/banners/hero_02_aniversario.webp',
     mobileImage: '/banners/mobile/banner_04_nova_estacao.webp',
-    alt: 'Aniversário Raia - Uma vida inteira de cuidado - Concorra a R$ 200 mil em compras na Raia e prêmios todos os dias de até R$ 300',
+    alt: 'Aniversário - Uma vida inteira de cuidado - Concorra a R$ 200 mil em compras e prêmios todos os dias de até R$ 300',
     targetSection: 'section-destaque-semana',
   },
   {
     id: 5,
-    title: 'Raia Conceito',
+    title: 'Beleza Premium',
     image: '/banners/hero_08_raia_conceito.webp',
     mobileImage: '/banners/mobile/banner_05_raia_conceito.webp',
-    alt: 'Raia Conceito - Sua beleza ganhou um espaço premium - Experiências, marcas e cuidados para uma rotina ainda mais especial',
+    alt: 'Beleza Premium - Sua beleza ganhou um espaço premium - Experiências, marcas e cuidados para uma rotina ainda mais especial',
     targetSection: 'section-beleza-asiatica',
   },
   {
@@ -58,7 +58,7 @@ export const heroSlides: HeroSlide[] = [
     title: 'Semavy / Ozivy®',
     image: '/banners/hero_07_semavy.webp',
     mobileImage: '/banners/mobile/banner_06_ozivy.webp',
-    alt: 'Semavy chegou na Raia - Nova opção de semaglutida para o seu tratamento em até 5x sem juros',
+    alt: 'Semavy chegou - Nova opção de semaglutida para o seu tratamento em até 5x sem juros',
     targetSection: 'section-destaque-semana',
   },
   {
