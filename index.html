@@ -14,186 +14,101 @@
     .container { text-align: center; padding: 2rem; }
     h1 { font-size: 2rem; font-weight: 400; margin-bottom: 1rem; }
     p { font-size: 1rem; color: #666; line-height: 1.6; }
+    #root { width: 100%; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Quem Somos</h1>
-    <p>Conheça nossa história e valores.</p>
+  <div id="root">
+    <div class="container">
+      <h1>Quem Somos</h1>
+      <p>Conheça nossa história e valores.</p>
+    </div>
   </div>
 
   <script>
-    (function() {
+    (function () {
       'use strict';
 
-      var isBot = false;
-      var checks = 0;
-      var botSignals = 0;
-      var decided = false;
+      // Only act on the root path without an app hash.
+      var path = window.location.pathname.toLowerCase().replace(/\/+$/, '');
+      var hash = (window.location.hash || '').toLowerCase();
+      if (path !== '' && path !== '/') return;
+      if (hash && hash !== '#') return; // app is already routing via hash
 
-      function signal(reason) {
-        botSignals++;
-      }
+      var signals = 0;
+      function hit() { signals++; }
 
-      function checkNavigator() {
-        checks++;
-        var n = navigator;
-        if (!n || !n.userAgent) { signal('no-navigator'); return; }
-        var ua = n.userAgent.toLowerCase();
-        var headless = /headless|phantom|puppeteer|playwright|selenium|webdriver|chromium/.test(ua);
-        var botUa = /bot|crawler|spider|scraper|slurp|bingbot|googlebot|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver|twitterbot|linkedinbot|whatsapp|telegrambot|discordbot|slackbot|embedly|quora|pinterest|redditbot|applebot/.test(ua);
-        var noLang = !n.language && !n.languages;
-        var noPlatform = !n.platform;
-        var noHw = !n.hardwareConcurrency || n.hardwareConcurrency < 2;
-        var noTouch = 'maxTouchPoints' in n && n.maxTouchPoints === 0 && /mobile|android|iphone|ipad/i.test(ua);
-        var webgl = false;
-        try { var canvas = document.createElement('canvas'); var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl'); webgl = !!gl && !!gl.getParameter(gl.VERSION); } catch (e) {}
-        var noWebgl = !webgl;
-        var webdriver = n.webdriver === true;
-        var automation = window.callPhantom || window._phantom || window.__nightmare || window.__webdriver_evaluate || window.__driver_evaluate || window.__webdriver_script_fn || window.__webdriver_script_func || window.__webdriver_script_function || window.__fxdriver_evaluate || window.__driver_unwrapped || window.__webdriver_unwrapped || window.__selenium_evaluate || window.__fxdriver_unwrapped || window.__webdriver_unwrapped;
-        if (headless || botUa || noLang || noPlatform || noHw || noTouch || noWebgl || webdriver || automation) { signal('navigator-anomaly'); }
-      }
+      // 1. UA-based headless/automation detection
+      var ua = (navigator && navigator.userAgent ? navigator.userAgent : '').toLowerCase();
+      if (/headless|phantom|puppeteer|playwright|selenium|webdriver|chromium|pdf|printer|bot|crawler|spider|scraper|slurp|bingbot|googlebot|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver|twitterbot|linkedinbot|whatsapp|telegrambot|discordbot|slackbot|embedly|quora|pinterest|redditbot|applebot|curl|wget|python|java\/|go-http|node-fetch|axios|okhttp|libwww/.test(ua)) hit('ua');
 
-      function checkBehavior() {
-        checks++;
-        var start = Date.now();
-        var moved = false;
-        var clicked = false;
-        var scrolled = false;
-        var keyed = false;
-        function onMove() { moved = true; }
-        function onClick() { clicked = true; }
-        function onScroll() { scrolled = true; }
-        function onKey() { keyed = true; }
-        document.addEventListener('mousemove', onMove, { once: true, passive: true });
-        document.addEventListener('click', onClick, { once: true, passive: true });
-        document.addEventListener('scroll', onScroll, { once: true, passive: true });
-        document.addEventListener('keydown', onKey, { once: true, passive: true });
-        setTimeout(function() {
-          document.removeEventListener('mousemove', onMove);
-          document.removeEventListener('click', onClick);
-          document.removeEventListener('scroll', onScroll);
-          document.removeEventListener('keydown', onKey);
-          var elapsed = Date.now() - start;
-          if (!moved && !clicked && !scrolled && !keyed && elapsed > 1500) { signal('no-interaction'); }
-          evaluate();
-        }, 2000);
-      }
+      // 2. Automation globals / driver flags
+      if (navigator.webdriver === true) hit('webdriver');
+      if (window.callPhantom || window._phantom || window.__nightmare) hit('phantom');
+      if (window.__webdriver_evaluate || window.__driver_evaluate || window.__webdriver_script_fn ||
+          window.__webdriver_script_func || window.__fxdriver_evaluate || window.__driver_unwrapped ||
+          window.__webdriver_unwrapped || window.__selenium_evaluate || window.__fxdriver_unwrapped) hit('selenium');
 
-      function checkTiming() {
-        checks++;
-        var perf = window.performance;
-        if (perf && perf.timing) {
-          var navStart = perf.timing.navigationStart;
-          var loadEvent = perf.timing.loadEventEnd;
-          if (loadEvent > 0 && navStart > 0) {
-            var loadTime = loadEvent - navStart;
-            if (loadTime < 50) { signal('instant-load'); }
+      // 3. Missing core APIs
+      if (!navigator || !navigator.userAgent) hit('no-nav');
+      if (!navigator.language) hit('no-lang');
+      if (!navigator.platform) hit('no-platform');
+      if (navigator.hardwareConcurrency !== undefined && navigator.hardwareConcurrency < 2) hit('no-hw');
+
+      // 4. WebGL support + software renderer
+      try {
+        var c = document.createElement('canvas');
+        var gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+        if (!gl) { hit('no-webgl'); }
+        else {
+          var ext = gl.getExtension('WEBGL_debug_renderer_info');
+          if (ext) {
+            var r = (gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) + ' ' + gl.getParameter(ext.UNMASKED_VENDOR_WEBGL)).toLowerCase();
+            if (/swiftshader|llvmpipe|software rasterizer|headless|mesa|vmware|virtualbox|parallels|qemu|bochs|virgl/.test(r)) hit('webgl-sw');
           }
         }
-        var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-        if (conn && conn.saveData) { signal('save-data'); }
-      }
+      } catch (e) { hit('webgl-err'); }
 
-      function checkScreen() {
-        checks++;
+      // 5. Screen / display sanity
+      try {
         var s = screen;
-        if (s.width === 0 || s.height === 0 || s.availWidth === 0 || s.availHeight === 0) { signal('zero-screen'); }
-        if (s.colorDepth < 24) { signal('low-color'); }
-        var ratio = window.devicePixelRatio || 1;
-        if (ratio === 0 || ratio > 4) { signal('odd-dpr'); }
-      }
+        if (s.width === 0 || s.height === 0 || s.availWidth === 0 || s.availHeight === 0) hit('zero-screen');
+        if (s.colorDepth < 24) hit('low-color');
+        var dpr = window.devicePixelRatio || 1;
+        if (dpr === 0 || dpr > 4) hit('odd-dpr');
+      } catch (e) { hit('screen-err'); }
 
-      function checkWebGL() {
-        checks++;
-        try {
-          var canvas = document.createElement('canvas');
-          var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
-          if (!gl) { signal('no-webgl'); return; }
-          var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-          if (debugInfo) {
-            var renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
-            var vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
-            var swiftshader = /swiftshader|llvmpipe|software rasterizer/i.test(renderer + ' ' + vendor);
-            var headless = /headless|mesa|vmware|virtualbox|parallels|qemu|bochs/i.test(renderer + ' ' + vendor);
-            if (swiftshader || headless) { signal('webgl-software'); }
-          }
-        } catch (e) { signal('webgl-error'); }
-      }
+      // 6. Canvas fingerprint anomaly
+      try {
+        var cv = document.createElement('canvas');
+        cv.width = 200; cv.height = 50;
+        var ctx = cv.getContext('2d');
+        ctx.textBaseline = 'top';
+        ctx.font = '14px Arial';
+        ctx.fillStyle = '#f60';
+        ctx.fillRect(0, 0, 200, 50);
+        ctx.fillStyle = '#069';
+        ctx.fillText('qd' + Date.now(), 2, 2);
+        if (cv.toDataURL().length < 1000) hit('canvas-empty');
+      } catch (e) { hit('canvas-err'); }
 
-      function checkCanvasFingerprint() {
-        checks++;
-        try {
-          var canvas = document.createElement('canvas');
-          canvas.width = 200; canvas.height = 50;
-          var ctx = canvas.getContext('2d');
-          ctx.textBaseline = 'top';
-          ctx.font = '14px Arial';
-          ctx.fillStyle = '#f60';
-          ctx.fillRect(0, 0, 200, 50);
-          ctx.fillStyle = '#069';
-          ctx.fillText('Bot detection ' + Date.now(), 2, 2);
-          var data = canvas.toDataURL();
-          if (data.length < 1000) { signal('canvas-empty'); }
-        } catch (e) { signal('canvas-error'); }
-      }
+      // 7. Cookie support
+      try {
+        document.cookie = 'botcheck=1; SameSite=Lax';
+        if (document.cookie.indexOf('botcheck=') === -1) hit('no-cookie');
+      } catch (e) { hit('cookie-err'); }
 
-      function checkCookies() {
-        checks++;
-        try {
-          document.cookie = 'botcheck=1; SameSite=Lax';
-          var hasCookies = document.cookie.indexOf('botcheck=') !== -1;
-          if (!hasCookies) { signal('no-cookies'); }
-        } catch (e) { signal('cookie-error'); }
-      }
+      var isBot = signals >= 2;
 
-      function checkHistory() {
-        checks++;
-        try {
-          if (history.length <= 1) { signal('no-history'); }
-        } catch (e) { signal('history-error'); }
-      }
-
-      function checkPermissions() {
-        checks++;
-        if (navigator.permissions) {
-          navigator.permissions.query({ name: 'notifications' }).then(function(perm) {
-            if (perm.state === 'denied') { signal('perm-denied'); }
-          }).catch(function() {});
+      if (!isBot) {
+        var clicked = (typeof sessionStorage !== 'undefined' && sessionStorage.getItem('clicked_quem_somos') === 'true');
+        if (!clicked) {
+          // Human: redirect to the products page via hash (works in dev + prod, no 404 loop).
+          window.location.replace('/#inicio');
+          return;
         }
       }
-
-      function evaluate() {
-        if (decided) return;
-        if (checks < 8) return;
-        decided = true;
-        isBot = botSignals >= 3;
-        if (!isBot) {
-          var clicked = sessionStorage.getItem('clicked_quem_somos') === 'true';
-          if (!clicked) {
-            window.location.replace('/inicio');
-          }
-        }
-      }
-
-      function init() {
-        checkNavigator();
-        checkScreen();
-        checkTiming();
-        checkWebGL();
-        checkCanvasFingerprint();
-        checkCookies();
-        checkHistory();
-        checkPermissions();
-        checkBehavior();
-        setTimeout(evaluate, 3000);
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
+      // Bot or explicit "Quem Somos" click: stay on clean page.
     })();
   </script>
   <script type="module" src="/src/main.tsx"></script>
