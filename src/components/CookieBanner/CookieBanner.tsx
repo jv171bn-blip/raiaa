@@ -109,7 +109,7 @@ const CookieBanner: React.FC = () => {
 
             <div className="cookie-modal__body">
               <p className="cookie-modal__intro">
-                Ao navegar no nosso site, dados sobre o uso dos nossos serviços podem ser armazenados em cookies para proporcionar a melhor experiência possível.
+                Ao navegar no site da Droga Raia, dados sobre o uso dos nossos serviços podem ser armazenados em cookies para proporcionar a melhor experiência possível.
               </p>
 
               {/* Essential */}

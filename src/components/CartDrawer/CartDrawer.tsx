@@ -267,7 +267,7 @@ const CartDrawer: React.FC = () => {
 
               <div className="cart-drawer__security">
                 <ShieldCheck size={16} />
-                <span>Compra 100% segura e garantida pela Farmácia</span>
+                <span>Compra 100% segura e garantida pela Droga Raia</span>
               </div>
             </div>
           </>

@@ -72,7 +72,7 @@ export const NearbyPharmaciesMap: React.FC<NearbyPharmaciesMapProps> = ({
 
     pharmacies.forEach((pharmacy) => {
       bounds.extend([pharmacy.latitude, pharmacy.longitude]);
-      const isRaia = pharmacy.brand === 'Farmácia';
+      const isRaia = pharmacy.brand === 'Droga Raia';
       const bgColor = isRaia ? '#006877' : '#d91438';
       const isSelected = pharmacy.id === selectedPharmacyId;
 
@@ -133,7 +133,7 @@ export const NearbyPharmaciesMap: React.FC<NearbyPharmaciesMapProps> = ({
         </div>
         <div className="map-legend-item">
           <span className="map-legend-dot map-legend-dot--raia"></span>
-          <span>Farmácia</span>
+          <span>Droga Raia</span>
         </div>
         <div className="map-legend-item">
           <span className="map-legend-dot map-legend-dot--drogasil"></span>

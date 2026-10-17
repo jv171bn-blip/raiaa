@@ -384,7 +384,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
   const boughtTrackRef = useRef<HTMLDivElement>(null);
   const similarTrackRef = useRef<HTMLDivElement>(null);
 
-  // Track visibility of the buy options section ("Oferta" / "Leve + Pague -")
+  // Track visibility of the buy options section ("Oferta Raia" / "Leve + Pague -")
   const buyOptionsRef = useRef<HTMLDivElement>(null);
   const [isBuyOptionsVisible, setIsBuyOptionsVisible] = useState(false);
 
@@ -647,10 +647,10 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
             )}
           </div>
 
-          {/* 5. "Vendido e entregue pela nossa farmácia" (Image 1 & 2) */}
+          {/* 5. "Vendido e entregue por Raia" (Image 1 & 2) */}
           <div className="pdp-seller-line">
             <span>Vendido e entregue por </span>
-            <strong className="pdp-seller-raia">Farmácia</strong>
+            <strong className="pdp-seller-raia">Raia</strong>
           </div>
 
           {/* 5.1 Size Selection Card (Matches exact user screenshot - "mantenha do jeito que estava") */}
@@ -692,7 +692,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
 
           {/* 6. Buy Box Option Cards (Image 2) */}
           <div className="pdp-buy-options" id="ofertas" ref={buyOptionsRef}>
-            {/* Option 1: Oferta (Default Selected) */}
+            {/* Option 1: Oferta Raia (Default Selected) */}
             <div
               className={`pdp-option-card ${selectedOption === 'oferta-raia' ? 'pdp-option-card--selected' : 'pdp-option-card--unselected'}`}
               onClick={() => setSelectedOption('oferta-raia')}
@@ -704,7 +704,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
                   <div className={`pdp-radio__outer ${selectedOption === 'oferta-raia' ? 'pdp-radio__outer--checked' : ''}`}>
                     {selectedOption === 'oferta-raia' && <div className="pdp-radio__inner" />}
                   </div>
-                  <span className="pdp-option-card__title">Oferta</span>
+                  <span className="pdp-option-card__title">Oferta Raia</span>
                 </div>
               </div>
 
@@ -877,7 +877,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
                 <div className="pdp-shipping-option">
                   <Store size={16} color="#007f91" />
                   <div className="pdp-shipping-opt-info">
-                    <strong>Retire na Loja</strong>
+                    <strong>Retire na Loja Raia</strong>
                     <span>Pronto em 30 minutos</span>
                   </div>
                   <span className="pdp-shipping-opt-price pdp-shipping-opt-price--free">Grátis</span>
@@ -1009,7 +1009,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
         </svg>
       </button>
 
-      {/* 12. Fixed Sticky Bottom Bar on Mobile (only when "Oferta" or "Leve + Pague -" is NOT visible) */}
+      {/* 12. Fixed Sticky Bottom Bar on Mobile (only when "Oferta Raia" or "Leve + Pague -" is NOT visible) */}
       <div
         className={`pdp-sticky-bar ${!isBuyOptionsVisible ? 'pdp-sticky-bar--visible' : ''}`}
         id="pdp-sticky-bar"
@@ -1026,7 +1026,7 @@ const ProductPage: React.FC<Props> = ({ product, allProducts }) => {
             </>
           ) : (
             <>
-              <span className="pdp-sticky-bar__title">Oferta</span>
+              <span className="pdp-sticky-bar__title">Oferta Raia</span>
               <span className="pdp-sticky-bar__sub">Até 3x de R$ {installmentPrice} sem juros</span>
               <div className="pdp-sticky-bar__price-row">
                 <strong className="pdp-sticky-bar__price">R$ {formattedPrice}</strong>

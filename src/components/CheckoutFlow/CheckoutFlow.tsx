@@ -765,7 +765,7 @@ const DeliveryModal: React.FC<{
   );
 };
 
-/* ── ScheduledDeliverySheet (Exact match to Farmácia "Entrega agendada" screenshots) ── */
+/* ── ScheduledDeliverySheet (Exact match to Droga Raia "Entrega agendada" screenshots) ── */
 const ScheduledDeliverySheet: React.FC<{
   isOpen: boolean;
   onClose: () => void;
@@ -991,7 +991,7 @@ const CadastrarEnderecoSheet: React.FC<{
   const inputRef = useRef<HTMLInputElement>(null);
   const numeroInputRef = useRef<HTMLInputElement>(null);
 
-  // Dynamic nearby real Farmácia and Drogasil pharmacies based on user's address
+  // Dynamic nearby real Droga Raia and Drogasil pharmacies based on user's address
   const nearbyStores = React.useMemo(() => {
     const neigh = bairro || resolvedAddress?.neighborhood || '';
     const cit = cidade || resolvedAddress?.city || 'São Paulo';
@@ -1512,7 +1512,7 @@ const CadastrarEnderecoSheet: React.FC<{
                 setSelectedStoreId(pharmacy.id);
                 setSelectedPharmacyObj({
                   id: pharmacy.id,
-                  brand: pharmacy.brand === 'Farmácia' ? 'raia' : 'drogasil',
+                  brand: pharmacy.brand === 'Droga Raia' ? 'raia' : 'drogasil',
                   name: pharmacy.name,
                   address: pharmacy.address,
                   neighborhood: pharmacy.neighborhood || '',
@@ -1852,7 +1852,7 @@ const CartQuantitySelector: React.FC<{
   );
 };
 
-/* ── EmptyBasketIllustration (Exact match to Drogasil empty cart basket) ── */
+/* ── EmptyBasketIllustration (Exact match to Droga Raia empty cart basket) ── */
 const EmptyBasketIllustration: React.FC = () => (
   <svg
     width="160"
@@ -1959,7 +1959,7 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
         <div className="co-topbar__content">
           <div className="co-topbar__app">
             <div className="co-topbar__app-icon-wrap">
-              <img src="/raia-symbol.png" alt="Aplicativo" className="co-topbar__app-icon" />
+              <img src="/raia-symbol.png" alt="App Raia" className="co-topbar__app-icon" />
             </div>
             <div className="co-topbar__app-text">
               <p className="co-topbar__app-title">Use o app e economize</p>
@@ -1972,8 +1972,8 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
 
       {/* 2. Header row: Logo Raia + Icons */}
       <div className="co-header">
-        <div className="co-logo" onClick={onClose} role="button" tabIndex={0} style={{ cursor: 'pointer' }} title="Farmácia">
-          <img src="/raia-logo.png" alt="Farmácia" className="co-logo__img" />
+        <div className="co-logo" onClick={onClose} role="button" tabIndex={0} style={{ cursor: 'pointer' }} title="Droga Raia">
+          <img src="/raia-logo.png" alt="Raia" className="co-logo__img" />
         </div>
         <div className="co-header__icons">
           <button className="co-header__icon-btn" aria-label="Cesta" type="button">
@@ -2084,7 +2084,7 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
         <>
           <div className="checkout-flow-body cart-page__body">
             <h2 className="cart-page__entrega-title">Entrega 1</h2>
-            <p className="cart-page__entrega-sub">Vendido e entregue por <strong>Farmácia</strong></p>
+            <p className="cart-page__entrega-sub">Vendido e entregue por <strong>Raia</strong></p>
 
             {/* Free Shipping Bar */}
             <ShippingBar subtotal={subtotal} />
@@ -2254,7 +2254,7 @@ const CartPage: React.FC<{ onProceed: () => void; onClose: () => void }> = ({ on
   );
 };
 
-/* ── Step1 (Exact match to Farmácia official screenshot) ── */
+/* ── Step1 (Exact match to Droga Raia official screenshot) ── */
 const Step1: React.FC<{
   initialMode?: DeliveryMode;
   onBack: () => void;
@@ -2518,7 +2518,7 @@ const Step1: React.FC<{
         localStorage.setItem('drogaraia_delivery_mode', 'pickup');
       } catch {}
       setShowCepSheet(false);
-      showToast(`Retirada em ${store?.name || 'Farmácia'} confirmada!`);
+      showToast(`Retirada em ${store?.name || 'Droga Raia'} confirmada!`);
     }
     setShowCepSheet(false);
   };
@@ -2528,7 +2528,7 @@ const Step1: React.FC<{
       {/* 1. Header with Centered Raia Logo */}
       <div className="checkout-step__top-header">
         <div className="co-logo">
-          <img src="/raia-logo.png" alt="Farmácia" className="co-logo__img" />
+          <img src="/raia-logo.png" alt="Raia" className="co-logo__img" />
         </div>
       </div>
 
@@ -2546,7 +2546,7 @@ const Step1: React.FC<{
       <div className="checkout-flow-body checkout-step1-body">
         <h2 className="checkout-step__page-title">Como deseja a entrega?</h2>
         <p className="checkout-step__page-sub">
-          Vendido e entregue por <strong>Farmácia</strong>
+          Vendido e entregue por <strong>Raia</strong>
         </p>
 
         {/* Delivery Mode Grid (2 Columns, left-aligned text & icons) */}
@@ -2675,8 +2675,8 @@ const Step1: React.FC<{
               <div className="checkout-step__pickup-brand-row">
                 {isRaia ? (
                   <div className="checkout-step__pickup-brand-left">
-                    <img src="/raia-symbol.png" alt="Farmácia" className="checkout-step__pickup-brand-logo-raia" />
-                    <span className="checkout-step__pickup-brand-name">Farmácia</span>
+                    <img src="/raia-symbol.png" alt="Raia" className="checkout-step__pickup-brand-logo-raia" />
+                    <span className="checkout-step__pickup-brand-name">Raia</span>
                   </div>
                 ) : (
                   <div className="checkout-step__pickup-brand-left">
@@ -2970,7 +2970,7 @@ const Step1: React.FC<{
 
             <div
               className="checkout-step__support-card"
-              onClick={() => showToast('Abra o app para ofertas exclusivas!')}
+              onClick={() => showToast('Abra o app Raia para ofertas exclusivas!')}
               role="button"
               tabIndex={0}
             >
@@ -3019,7 +3019,7 @@ const Step1: React.FC<{
 
         {/* 7. ANVISA Compliance Section (Matching user screenshot) */}
         <div className="checkout-step__anvisa-section">
-          <span className="checkout-step__anvisa-text">A farmácia segue as determinações da</span>
+          <span className="checkout-step__anvisa-text">A Raia segue as determinações da</span>
           <img src="/anvisa-logo.svg" alt="ANVISA" className="checkout-step__anvisa-logo" />
         </div>
       </div>
@@ -3049,7 +3049,7 @@ const Step1: React.FC<{
               <span>{fmt(displaySubtotal)}</span>
             </div>
             <div className="checkout-step__summary-line">
-              <span>{mode === 'pickup' ? 'Retirada - Farmácia' : 'Entrega - Farmácia'}</span>
+              <span>{mode === 'pickup' ? 'Retirada - Raia' : 'Entrega - Raia'}</span>
               <span>{fee === 0 ? 'Grátis' : fmt(fee)}</span>
             </div>
             <div className="checkout-step__summary-line checkout-step__summary-line--savings">
@@ -3725,7 +3725,7 @@ export const CuponsSheet: React.FC<{
           <div className="cupons-sheet-banner-right">
             <img
               src="/payment-logos/coupon-person.png"
-              alt="Cupons"
+              alt="Cupons Droga Raia"
               className="cupons-sheet-banner-img"
             />
           </div>
@@ -3791,7 +3791,7 @@ export const CuponsSheet: React.FC<{
         <p className="cupons-sheet-body-desc">
           {activeTab === 'meus'
             ? 'Aqui estão seus cupons exclusivos prontos para você aproveitar. Você pode ativar um cupom por vez!'
-            : 'Cupons e benefícios disponíveis para aproveitar na nossa farmácia.'}
+            : 'Cupons e benefícios disponíveis para aproveitar na Droga Raia.'}
         </p>
 
         {/* Active Applied Coupon Card (if present) */}
@@ -3985,7 +3985,7 @@ const Step2: React.FC<{
       {/* Top Header */}
       <div className="checkout-step__top-header">
         <div className="co-logo">
-          <img src="/raia-logo.png" alt="Farmácia" className="co-logo__img" />
+          <img src="/raia-logo.png" alt="Raia" className="co-logo__img" />
         </div>
       </div>
 
@@ -4192,7 +4192,7 @@ const Step2: React.FC<{
               <span>{fmt(displaySubtotal)}</span>
             </div>
             <div className="checkout-step__summary-line">
-              <span>{deliveryMode === 'pickup' ? 'Retirada - Farmácia' : (deliveryType === 'scheduled' ? 'Entrega Agendada - Farmácia' : 'Entrega - Farmácia')}</span>
+              <span>{deliveryMode === 'pickup' ? 'Retirada - Raia' : (deliveryType === 'scheduled' ? 'Entrega Agendada - Raia' : 'Entrega - Raia')}</span>
               <span>{fee === 0 ? 'Grátis' : fmt(fee)}</span>
             </div>
             <div className="checkout-step__summary-line checkout-step__summary-line--savings">
@@ -4302,7 +4302,7 @@ const OrderProcessingScreen: React.FC<{ onDone: () => void; duration?: number }>
       {/* Top Header */}
       <div className="order-processing__top-header">
         <div className="co-logo">
-          <img src="/raia-logo.png" alt="Farmácia" className="co-logo__img" />
+          <img src="/raia-logo.png" alt="Raia" className="co-logo__img" />
         </div>
       </div>
 
@@ -4348,7 +4348,7 @@ const OrderProcessingScreen: React.FC<{ onDone: () => void; duration?: number }>
 
             <div
               className="order-processing__support-card"
-              onClick={() => showToast('Abra o app para ofertas exclusivas!')}
+              onClick={() => showToast('Abra o app Raia para ofertas exclusivas!')}
               role="button"
               tabIndex={0}
               id="op-support-app"
@@ -4591,7 +4591,7 @@ const Step3: React.FC<{
   return (
     <div className="checkout-flow-page co-success">
       <div className="checkout-step__top-header">
-        <div className="co-logo"><img src="/raia-logo.png" alt="Farmácia" className="co-logo__img" /></div>
+        <div className="co-logo"><img src="/raia-logo.png" alt="Raia" className="co-logo__img" /></div>
       </div>
       <div className="checkout-step__progress-wrap">
         <span className="checkout-step__progress-label">Passo 3 de 3</span>
@@ -4819,7 +4819,7 @@ const Step3: React.FC<{
             </div>
             <div
               className="checkout-step__support-card"
-              onClick={() => showToast('Abra o app para ofertas exclusivas!')}
+              onClick={() => showToast('Abra o app Raia para ofertas exclusivas!')}
               role="button"
               tabIndex={0}
               id="step3-support-app"

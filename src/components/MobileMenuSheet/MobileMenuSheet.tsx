@@ -47,7 +47,7 @@ const MobileMenuSheet: React.FC<MobileMenuSheetProps> = ({
     if (action === 'servicos') {
       const el = document.getElementById('service-section');
       if (el) el.scrollIntoView({ behavior: 'smooth' });
-      else showToast('Conheça os Serviços de Saúde da Farmácia!');
+      else showToast('Conheça os Serviços de Saúde da Droga Raia!');
     } else if (action === 'descontos') {
       setActiveModal('coupons');
     } else if (action === 'lojas-parceiras') {
@@ -55,19 +55,19 @@ const MobileMenuSheet: React.FC<MobileMenuSheetProps> = ({
       if (el) el.scrollIntoView({ behavior: 'smooth' });
       else showToast('Confira as Lojas Parceiras e Ofertas!');
     } else if (action === 'ofertas-app' || action === 'baixe-app') {
-      showToast('Baixe o App Farmácia na Google Play ou App Store e ganhe benefícios exclusivos!');
+      showToast('Baixe o App Droga Raia na Google Play ou App Store e ganhe benefícios exclusivos!');
     } else if (action === 'blog') {
       const el = document.getElementById('section-cuidados');
       if (el) el.scrollIntoView({ behavior: 'smooth' });
-      else showToast('Acesse o Blog Farmácia para dicas de saúde e bem-estar!');
+      else showToast('Acesse o Blog Droga Raia para dicas de saúde e bem-estar!');
     } else if (action === 'farmacias') {
-      showToast('Encontre a Farmácia mais próxima no nosso localizador de lojas!');
+      showToast('Encontre a Droga Raia mais próxima no nosso localizador de lojas!');
     } else if (action === 'sac') {
-      showToast('Central de Atendimento Farmácia: (11) 3003-7242');
+      showToast('Central de Atendimento Droga Raia: (11) 3003-7242');
     } else if (action === 'trabalhe') {
       showToast('Venha fazer parte da RD Saúde! Acesse nossas oportunidades em trabalheconosco.vagas.com.br/rd');
     } else if (action === 'historia') {
-      showToast('Farmácia: Cuidando da saúde e bem-estar dos brasileiros desde 1905.');
+      showToast('Droga Raia: Cuidando da saúde e bem-estar dos brasileiros desde 1905.');
     } else if (action === 'seguranca') {
       showToast('Segurança digital: Seus dados estão 100% protegidos pela LGPD.');
     } else if (toastMsg) {
@@ -87,8 +87,8 @@ const MobileMenuSheet: React.FC<MobileMenuSheetProps> = ({
         <div className="mobile-sheet__top-bar">
           <div className="mobile-sheet__logo-wrap">
             <img
-              src="/favicon.png"
-              alt="Farmácia"
+              src="/raia-symbol.png"
+              alt="Droga Raia"
               className="mobile-sheet__logo"
             />
           </div>
@@ -285,7 +285,7 @@ const MobileMenuSheet: React.FC<MobileMenuSheetProps> = ({
             >
               <div className="mobile-sheet__item-left">
                 <img
-                  src="/favicon.png"
+                  src="/raia-symbol.png"
                   alt=""
                   className="mobile-sheet__raia-icon-dark"
                 />
@@ -302,7 +302,7 @@ const MobileMenuSheet: React.FC<MobileMenuSheetProps> = ({
             >
               <div className="mobile-sheet__item-left">
                 <img
-                  src="/favicon.png"
+                  src="/raia-symbol.png"
                   alt=""
                   className="mobile-sheet__raia-icon-dark"
                 />

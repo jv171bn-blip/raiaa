@@ -157,8 +157,8 @@ const SearchResultsPage: React.FC<SearchResultsPageProps> = ({ allProducts }) =>
   const filteredProducts = useMemo(() => {
     const list = textFiltered.filter(p => {
       // Seller
-      if (filters.seller && filters.seller === 'Farmácia') {
-        // All products qualify
+      if (filters.seller && filters.seller === 'Raia') {
+        // All Drogaraia products qualify as Raia
       }
 
       // Highlight

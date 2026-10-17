@@ -1,8 +1,8 @@
 import type { Product } from './products';
 
 /**
- * Catálogo Expandido
- * Produtos autênticos pesquisados a fundo no ecossistema de produtos:
+ * Catálogo Expandido Droga Raia
+ * Produtos autênticos pesquisados a fundo no ecossistema Droga Raia:
  * Medicamentos, Dermocosméticos, Mamãe & Bebê, Vitaminas & Suplementos,
  * Higiene Bucal & Pessoal, Cabelos, Primeiros Socorros e Marcas Exclusivas (Needs e bwell).
  */
@@ -275,7 +275,7 @@ export const dermocosmeticosExpandidos: Product[] = [
     rating: 4.7,
     reviews: 165,
     image: "/products/needs_beauty_fps70.jpg",
-    badges: ["Exclusivo", "FPS 70"],
+    badges: ["Exclusivo Droga Raia", "FPS 70"],
     bullets: [
       "Altíssima proteção contra raios solares UVA e UVB com FPS 70.",
       "Toque seco com rápida absorção e efeito matte prolongado.",
@@ -682,7 +682,7 @@ export const saudeEquipamentosExpandidos: Product[] = [
     price: 11.90,
     discount: 18,
     image: "/products/nexcare_micropore_branca.jpg",
-    badges: ["Exclusivo", "Hipoalergênica"],
+    badges: ["Exclusivo Droga Raia", "Hipoalergênica"],
     bullets: [
       "Fita microporosa que permite a respiração da pele sem causar irritação.",
       "Remoção indolor sem puxar os pelos ou agredir a epiderme.",

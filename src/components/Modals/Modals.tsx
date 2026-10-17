@@ -485,7 +485,7 @@ const Modals: React.FC = () => {
 
                 <div className="prescription-security-note">
                   <ShieldCheck size={16} color="#008a5b" />
-                  <span>Seus dados de saúde são protegidos com sigilo médico pela Farmácia</span>
+                  <span>Seus dados de saúde são protegidos com sigilo médico pela Droga Raia</span>
                 </div>
               </div>
             )}
@@ -581,7 +581,7 @@ const Modals: React.FC = () => {
                 {
                   code: 'BEMVINDO',
                   discount: '15% OFF',
-                  desc: 'Desconto de boas-vindas',
+                  desc: 'Desconto de boas-vindas Raia',
                   tag: 'Imperdível',
                 },
               ].map(coupon => (
@@ -632,7 +632,7 @@ const Modals: React.FC = () => {
             </div>
             <h2 className="modal-title">Descontos Univers & Convênios de Saúde</h2>
             <p className="modal-desc">
-              A Farmácia possui parceria com centenas de empresas e operadoras de saúde (SulAmérica,
+              A Droga Raia possui parceria com centenas de empresas e operadoras de saúde (SulAmérica,
               Bradesco Saúde, Amil, Unimed, etc.) para você economizar até 60% em medicamentos contínuos!
             </p>
 
@@ -668,7 +668,7 @@ const Modals: React.FC = () => {
               </div>
               <div className="pbm-benefit">
                 <CheckCircle2 size={16} color="#008a5b" />
-                <span>Válido em todas as lojas físicas e no site</span>
+                <span>Válido em todas as lojas físicas e no site Raia</span>
               </div>
             </div>
           </div>
@@ -692,7 +692,7 @@ const Modals: React.FC = () => {
               </div>
 
               <div className="quickview-info-col">
-                <span className="quickview-brand">Farmácia Oficial</span>
+                <span className="quickview-brand">Droga Raia Oficial</span>
                 <h2 className="quickview-title">{quickViewProduct.name}</h2>
                 <span className="quickview-size">{quickViewProduct.size}</span>
 
@@ -779,7 +779,7 @@ const Modals: React.FC = () => {
             </div>
             <h2 className="modal-title">Pedido Confirmado! 🎉</h2>
             <p className="modal-desc">
-              Obrigado por comprar na Farmácia. Seu pedido foi enviado para a farmácia mais próxima!
+              Obrigado por comprar na Droga Raia. Seu pedido foi enviado para a farmácia mais próxima!
             </p>
 
             <div className="success-order-box">

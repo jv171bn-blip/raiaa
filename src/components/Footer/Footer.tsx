@@ -31,7 +31,10 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
     goToHome,
     selectedProduct,
     isCartPage,
+    institutionalTab,
   } = useCart();
+
+  const isQuemSomos = Boolean(isPrivacyPage && (institutionalTab === 'sobre' || institutionalTab === 'quem-somos'));
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -44,7 +47,11 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
 
   const handleAppClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    showToast('Aplicativo disponível em breve na Google Play e App Store!');
+    showToast(
+      isQuemSomos
+        ? 'Aplicativo disponível em breve na Google Play e App Store!'
+        : 'Aplicativo Droga Raia: Disponível em breve na Google Play e App Store!'
+    );
   };
 
   // O box de suporte cinza só aparece na Home se não for solicitado esconder;
@@ -112,7 +119,7 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
             <div className="footer__rdsaude">
               <span className="footer__rd-label">Uma empresa</span>
               <div className="footer__rd-logo">
-                <img src="/favicon.png" alt="RD" className="footer__rd-symbol" />
+                <img src={isQuemSomos ? '/favicon.png' : '/raia-symbol.png'} alt="RD" className="footer__rd-symbol" />
                 <strong className="footer__rd-text-main">RD</strong>
                 <span className="footer__rd-text-sub">saúde</span>
               </div>
@@ -144,11 +151,11 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
                 onClick={goToHome}
                 role="button"
                 tabIndex={0}
-                title="Farmácia"
+                title={isQuemSomos ? 'Farmácia' : 'Droga Raia'}
               >
                 <img
-                  src="/favicon.png"
-                  alt="Farmácia"
+                  src={isQuemSomos ? '/favicon.png' : '/raia-logo.png'}
+                  alt={isQuemSomos ? 'Farmácia' : 'Droga Raia'}
                   className="portal-logo-raia"
                 />
               </div>
@@ -449,7 +456,9 @@ const Footer: React.FC<FooterProps> = ({ hideSupportBox = false }) => {
 
               {/* Anvisa Compliance Badge in Column 5 */}
               <div className="portal-anvisa-badge">
-                <span className="portal-anvisa-text">A farmácia segue as determinações da</span>
+                <span className="portal-anvisa-text">
+                  {isQuemSomos ? 'A farmácia segue as determinações da' : 'A Raia segue as determinações da'}
+                </span>
                 <img
                   src="/anvisa-logo.svg"
                   alt="ANVISA"

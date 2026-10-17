@@ -69,7 +69,11 @@ const Header: React.FC = () => {
     cepAddress,
     addressDisplay,
     isSearchPage,
+    isPrivacyPage,
+    institutionalTab,
   } = useCart();
+
+  const isQuemSomos = Boolean(isPrivacyPage && (institutionalTab === 'sobre' || institutionalTab === 'quem-somos'));
 
   // Sync input value with searchQuery when navigating to search
   useEffect(() => {
@@ -218,14 +222,15 @@ const Header: React.FC = () => {
             href="/inicio"
             className="header__logo"
             id="header-logo"
+            title={isQuemSomos ? 'Farmácia' : 'Droga Raia'}
             onClick={e => {
               e.preventDefault();
               goToInicio ? goToInicio() : goToHome();
             }}
           >
             <img
-              src="/favicon.png"
-              alt="Farmácia"
+              src={isQuemSomos ? '/favicon.png' : '/raia-logo.png'}
+              alt={isQuemSomos ? 'Farmácia' : 'Raia'}
               className="header__logo-img"
             />
           </a>
@@ -236,7 +241,7 @@ const Header: React.FC = () => {
               <input
                 type="text"
                 className="header__search-input"
-                placeholder="Buscar produtos"
+                placeholder={isQuemSomos ? 'Buscar produtos' : 'Buscar na Raia'}
                 value={searchValue}
                 onChange={e => {
                   setSearchValue(e.target.value);
@@ -418,7 +423,7 @@ const Header: React.FC = () => {
               ref={mobileSearchInputRef}
               type="text"
               className="header__search-input"
-              placeholder="Buscar produtos"
+              placeholder={isQuemSomos ? 'Buscar produtos' : 'Buscar na Raia'}
               value={searchValue}
               onChange={e => {
                 setSearchValue(e.target.value);
